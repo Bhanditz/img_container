@@ -1,0 +1,524 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supernova Casino</title>
+
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link href="/css/css1.css" rel="stylesheet" type="text/css">
+	<link href="/css/cssPromotions.css" rel="stylesheet" type="text/css">
+
+	<!--<link href="<?/*=$RootLink*/?>/css/<?/*=$CSSSpecialFile*/?>.css" rel="stylesheet" type="text/css" />-->
+	<link href="/css/bxslider/jquery.bxslider.css" rel="stylesheet">
+	<script type="text/javascript">
+		<!--
+		function toggle_visibility(id) {
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+				e.style.display = 'none';
+			else
+				e.style.display = 'block';
+		}
+
+		rootlink = '/en';
+		curslide = 1;
+
+//-->
+</script>
+ 
+
+
+<style>
+	@font-face {
+		font-family: 'CenturyGothic-Bold';
+		src: url('css/fonts/CenturyGothic-Bold.eot');
+		src: url('css/fonts/CenturyGothic-Bold.woff') format('woff'),
+		url('css/fonts/CenturyGothic-Bold.ttf') format('truetype'),
+		url('css/fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+	}
+	.slider{
+		width: 100%;
+		overflow: hidden;
+		/*height: 344px;*/
+		position: relative;
+		text-align: center;
+	}
+
+	.slider-wrapper{
+		position:relative;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.slide{
+		float: left;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		transition: opacity 500ms linear;
+	}
+
+	
+	.heading-slide img{
+		max-width: 100%;
+	}
+
+	.slider-wrapper > .slide:first-child {
+		opacity: 1;
+	}
+
+	
+	.slider-nav{
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: auto;
+	}
+
+	.slide-btn{
+		width: 210px;
+		height: 58px;
+		border-radius: 10px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		cursor:pointer;
+		font:21px/58px "CenturyGothic-Bold",sans-serif;
+		margin-top: 10px;
+	}
+
+	.btn-download{
+		border:1px solid #d30303;
+		margin-right: 10px;
+		text-shadow: 1px 1px 1px #000;
+		color:#fff;
+		background: #dc3737;
+		background: -moz-linear-gradient(top, #dc3737 0%, #dc3737 50%, #960606 50%, #960606 100%);
+		background: -webkit-linear-gradient(top, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: -o-linear-gradient(top, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: -ms-linear-gradient(top, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: linear-gradient(top, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		box-shadow:0 3px 0 1px #690000;
+	}
+
+	.btn-download:hover{
+		background: #dc3737;
+		background: -moz-linear-gradient(bottom, #dc3737 0%, #dc3737 50%, #960606 50%, #960606 100%);
+		background: -webkit-linear-gradient(bottom, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: -o-linear-gradient(bottom, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: -ms-linear-gradient(bottom, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		background: linear-gradient(bottom, #dc3737 0%,#dc3737 50%,#960606 50%,#960606 100%);
+		box-shadow:0 3px 0 1px #690000;
+	}
+
+	.btn-play{
+		border:1px solid #ecbc25;
+		color:#000;
+		background: #dc3737;
+		background: -moz-linear-gradient(top, #f6e2a6 0%, #f1cf6a 50%, #e9c032 50%, #c09c37 100%);
+		background: -webkit-linear-gradient(top, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: -o-linear-gradient(top, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: -ms-linear-gradient(top, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: linear-gradient(top, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		box-shadow:0 3px 0 1px #693b00;
+	}
+
+	.btn-play:hover{
+		border:1px solid #ecbc25;
+		color:#000;
+		background: #dc3737;
+		background: -moz-linear-gradient(bottom, #f6e2a6 0%, #f1cf6a 50%, #e9c032 50%, #c09c37 100%);
+		background: -webkit-linear-gradient(bottom, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: -o-linear-gradient(bottom, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: -ms-linear-gradient(bottom, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		background: linear-gradient(bottom, #f6e2a6 0%,#f1cf6a 50%,#e9c032 50%,#c09c37 100%);
+		box-shadow:0 3px 0 1px #693b00;
+	}
+	.slider-wrapper .slide > img {
+		position: relative;
+		left: 50%;
+		top: 0;
+		margin-left: -950px;
+		display: block;
+		width: 1900px;
+		height: auto;
+	}
+	
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="https://chat.casinocontroller.com/chat/css/styles.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="<?/*=$RootLink*/?>/css/chat.css" />-->
+
+<script type="text/javascript" src="https://chat.casinocontroller.com/assets/js/sockjs-0.3.min.js"></script>
+<script type="text/javascript" src="https://chat.casinocontroller.com/config.js"></script>		
+<script type="text/javascript" src="https://chat.casinocontroller.com/assets/js/chat-library.js"></script>
+<script type="text/javascript" src="https://chat.casinocontroller.com/chat/js/chatStub.js"></script>
+<script type="text/javascript">
+function StartChat() {
+	var chatelem = document.getElementById('lcv2Stub');
+	if (chatelem.style.display == 'none'){
+		chatelem.style.display = 'block';
+	}else{chatelem.style.display = 'none';}
+}
+var request = {};
+request.stubId = 'lcv2Stub',
+request.customMarkup = '<span class=\"btn-title\">Start Live Chat</span>',
+request.locationDesc = 'Short description';
+request.locale = 'en';
+request.hash = '';
+request.chatCredentialUrl =
+'https://casinocontroller.com/supernova/engine/Chat/LiveChatService.php';
+cs = new ChatSetup();
+cs.setupChatStub(request,'stub');
+</script><script src="https://casinocontroller.com/supernova/engine/Chat/LiveChatService.php?jsoncall=getUserCredentials&amp;jsonp=cs.getChatServiceCredentials&amp;locale=en"></script>
+		<script>
+	!window.LoadAction && (window.LoadAction = function(){});
+</script>
+<base href="/">
+</head>
+<body onload="LoadAction();"> 
+	<div id="header">
+		<div class="center clearfix">
+			<div id="logo"><a href="/"><img src="/images/header/header-logo.png"></a>
+			<!--<div class="decorations"><img src="/images/header/ch-decorations.png" alt=""></div>-->
+			<!--<div class="decorations">
+                <div class="decoration1 deco_ani_swing"></div>
+                <div class="decoration2 deco_ani_swing2"></div>
+                <div class="decoration3 deco_ani_swing"></div>
+			</div>-->
+			
+			
+			</div>
+			
+			<div class="phone-number"> 
+				<!-- <img src="/en/images/phone.png" id="phonenumber"> -->
+				<span>+1 855 721 72 19</span>
+ 			</div>
+			<form action="" id="dd" class="language-switcher">
+				<span class="icon icon-en"><span class="lang">English</span><span class="lang-sm en">En</span><span class="lang-sm fr">Fr</span></span>
+				<ul class="dropdown">
+					<li>
+						<a href="/fra/default/" class="icon icon-fr">
+							<span class="lang">Français</span><span class="lang-sm en">En</span><span class="lang-sm fr">Fr</span>
+						</a>
+					</li>
+				</ul>
+			</form>
+			<div class="top_menu-btn-wrapper">
+				<a href="/eng/play/" class="top_menu_sign-up">
+					<span>
+						sign-up					</span>
+				</a>
+				<a href="/eng/play/" class="top_menu_login">
+					<span>
+						login	
+					</span>
+				</a>
+			</div>
+			<div id="topLinks"> 
+				<ul>
+					<li class="topLinks-item"><a href="/eng/default/">
+						<img class="left_diamond" src="/images/header/diamond.png"><span class="promotions_color">HOME</span><img class="right_diamond" src="/images/header/diamond.png">					</a></li> 
+					<li class="topLinks-item"><a href="/eng/about/">
+						ABOUT US					</a></li>
+					<li class="topLinks-item"><a href="/eng/promotions/">
+						PROMOTIONS					</a></li> 
+					<li class="topLinks-item"><a href="/eng/games/">
+						PREVIEW GAMES					</a></li>
+					<li class="topLinks-item"><a href="/eng/banking/">
+						BANKING					</a></li>
+										<li class="topLinks-item"><a href="/eng/play/">
+						DOWNLOAD					</a></li>
+									</ul>				
+			</div>
+		</div>
+		
+		<div class="toggle-menu">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div> <!-- //  header-->
+	<div id="container">
+		<a href="/eng/play/" class="btn-play-now">play now!</a>
+		<div class="slider" id="main-slider">
+			<div class="slider-wrapper">
+				<div class="slide">
+		
+				</div>
+				<div class="slide">
+				
+				</div>
+				<div class="slide">
+					<!-- <img src="/en/images/slider_new/slider3.jpg" alt="Third" /> -->
+					<!-- <div class="heading-slide"><img src="/en/images/slider_new/slider3-text.png" alt=""></div> -->
+					
+				</div>
+			</div>
+			<div class="slider-nav">
+				<!-- <a href="/eng/play/">
+					<div class="slide-btn btn-download">
+						download now					</div>
+				</a>
+				<a href="/eng/play/">
+					<div class="slide-btn btn-play">
+						instant play					</div>
+				</a> -->
+				<!-- <a href="/" class="btn-play-now fadeInUp">play now!</a> -->
+			</div>
+		</div>
+		<script>
+			(function() {
+
+				function SlideShow(element){
+					this.el = document.querySelector(element);
+					this.init();
+				};
+
+				SlideShow.prototype = {
+					init: function(){
+						this.slides = this.el.querySelectorAll( ".slide" );
+						this.index = 0;
+						this.action();
+						this.stopStart();
+					},
+
+					slideAnimate: function(slide){
+						var currentSlide = this.slides[slide];
+						currentSlide.style.opacity = 1;
+						var currentHeadingSlide = currentSlide.querySelector(".heading-slide");
+						if(currentHeadingSlide){
+							currentHeadingSlide.classList.add("fadeInUp");
+						};
+						
+						for(var i = 0; i < this.slides.length; i++){
+							var slide = this.slides[i];
+							if( slide !== currentSlide ) {
+								slide.style.opacity = 0;
+								var headingSlide = slide.querySelector(".heading-slide");
+								if(headingSlide){
+									headingSlide.classList.remove("fadeInUp");	
+								};							
+							}
+						}
+					},
+
+					action: function (){
+						var self = this;
+						self.timer = setInterval(function(){
+							self.index++;
+							if( self.index == self.slides.length ) {
+								self.index = 0;
+							}
+							self.slideAnimate(self.index);
+						},4000);
+					},
+
+					stopStart:function(){
+						var self = this;
+						self.el.addEventListener( "mouseover", function() {
+							clearInterval( self.timer );
+							self.timer = null;
+
+						}, false);
+						self.el.addEventListener( "mouseout", function() {
+							self.action();
+
+						}, false);
+					}
+
+
+				}
+
+				document.addEventListener ("DOMContentLoaded",function(){
+					if(document.getElementById('main-slider'))
+						var slider = new SlideShow("#main-slider");
+
+					if(document.getElementById('body-slides'))
+						var sliderBg = new SlideShow("#body-slides");
+				});
+
+
+			})();
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="/css/bxslider/jquery.bxslider.min.js"></script>
+		<script src="/css/bxslider/plugins/jquery.easing.1.3.js"></script>
+		<script src="/css/playerCount.js"></script>
+
+		<script>
+          function toggleClass(element, className){
+          if (!element || !className){
+              return;
+          }
+
+          var classString = element.className, 
+                nameIndex = classString.indexOf(className);
+
+          if (nameIndex == -1) {
+              classString += ' ' + className;
+          }
+          else {
+              classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+          }
+          element.className = classString;
+      }
+
+      // Custom Select 
+
+        function DropDown(el){
+          this.dd = el;
+          this.placeholder = this.dd.children[0];
+          this.opts = this.dd.querySelectorAll('ul.dropdown > li');
+          this.initEvents();
+        }
+
+        DropDown.prototype = {
+          initEvents: function(){
+             var obj = this;
+
+             obj.dd.addEventListener("click",function(event){
+             	event.stopPropagation();
+                toggleClass(this,"active");
+             });
+          }
+        }
+
+        document.addEventListener ("DOMContentLoaded",function(){
+            var d = new DropDown(document.querySelector("#dd"));
+        });
+
+        document.querySelector(".toggle-menu").addEventListener("click",function(){
+          toggleClass(document.querySelector("#topLinks"),"active");
+        });
+
+        document.addEventListener("click",function(event){
+        	var thisEl = document.querySelector("#dd");
+        	if(thisEl.classList.contains("active")){
+        		thisEl.classList.remove("active");
+        	}
+       });
+
+//         $(window).scroll(function(){
+// 		if($(window).scrollTop()>=120){
+// 			$(".btn-play-now").addClass("sticky");
+// 		}
+// 		else{
+// 			$(".btn-play-now").removeClass("sticky");	
+// 		}
+// });
+
+    </script>
+	</div> <!-- // container -->
+
+
+<div id="home_content" class="content">
+<!--<div class="ch-main_content"></div>
+<div class="ch-main_sides ch-main_side-l"></div>
+<div class="ch-main_sides ch-main_side-r"></div>-->
+	<div id="games">
+    <h2 class="games-heading">best games</h2>
+  	 <div id="games_content">
+         <ul class="bxslider">
+            <li class="game-slider-item">
+				<a href="/eng/play-206/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/206.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Diggin' Deep</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-254/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/254.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Golden Gorilla</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-262/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/262.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Coins Of Olympus</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-264/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/264.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Scary Rich 3</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-266/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/266.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Gnome Sweet Home</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-324/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/324.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Blazin' Buffalo</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-327/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/327.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Lion's Roar</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-813/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/813.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Whale O' Winnings</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-814/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/814.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Arabian Tales</div>
+				</a>
+			</li><li class="game-slider-item">
+				<a href="/eng/play-828/">
+					<div class="game-preview-img">
+						<img src="./images/gamescroll/828.jpg">
+						<div class="hover-mask">
+							<div class="game-preview-btn">play now</div>
+						</div>
+					</div>
+					<div class="game-preview-name">Loco 7's Loco 7's</div></a></li></ul></div></div></div></body></html>

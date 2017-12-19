@@ -1,0 +1,734 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="ru"><!--<![endif]--><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="http://static.siteheart.com/widget/shembed/544662/en/20170904112052/20170904112052/widget.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="http://widget.siteheart.com/widget/sh/544662/en/widget.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <title>ADMIRAL-X - игровой клуб адмирал-х</title>
+    <meta name="description" content="Играйте в новом клубе от игровой платформы GAMINATOR NOVOMATIC у нас на ADMIRAL-X">
+    <meta name="keywords" content="ADMIRAL-X, ADMIRAL, CLUB ADMIRAL, адмирал-х, адмирал, адмирал клуб">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="yandex-verification" content="474f8edc36563865">
+
+        <meta property="og:title" content="Admiral-x Novomatic">
+	
+	<meta property="og:url" content="http://ru.admiral-x.men/">
+	<meta property="og:image" content="http://admiral-x.win/media/img/open_graph/image.jpg">
+	
+	
+	
+	<meta property="og:description" content="Я получил выплату в проверенном онлайн игровом клубе! Рекомендую!">
+	<meta property="fb:admins" content="">
+	
+	    
+                        <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/css/normalize.css" rel="stylesheet">
+                    <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/css/main.css?99.777" rel="stylesheet">
+                    <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/vendor/jquery-ui-1.10.3.custom/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+                    <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/vendor/ajaxLoader/jquery.ajaxLoader.css" rel="stylesheet">
+                    <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/vendor/cowndown/css/counter.css" rel="stylesheet">
+                    <link type="text/css" href="https://cdn-adx.deliverinfo.space/media/css/flags.css" rel="stylesheet">
+            
+                        <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/jquery-1.10.2.min.js"></script> 
+                    <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/modernizr-2.6.2.min.js"></script> 
+                    <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/seo.js?v1"></script> 
+            
+        <!--[if IE 9]>
+    <link rel="stylesheet" href="https://cdn-adx.deliverinfo.space/media/css/ie9.css"/>
+    <![endif]-->
+    <script src="https://cdn-adx.deliverinfo.space/media/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico?v1" type="image/x-icon">
+    
+    <meta name="yandex-verification" content="f389f0188aebac51"><script src="/locale?callback=CallbackRegistry.cb606113"></script><link rel="stylesheet" type="text/css" media="screen" href="//static.siteheart.com/widget/sh/20170904112052/css/purple.css"></head>
+<body class="has-amazing-bg amazing-bg-number-2">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgradeyour browser</a> to improve your experience.</p>
+<![endif]-->
+
+<link type="text/css" href="/media/css/stretching/new_adm.css?v5" rel="stylesheet"><div id="stretching">
+    <div class="stretching_content stretching_content_two">
+        <a href="http://777-888.ru/go.php?sid=427&amp;tds-page=lottery/super&amp;id=lotterysuper"></a>
+    </div>
+</div>
+<script>
+    $(function() {
+        $(document).ready(function() {
+            setInterval(aaa, 800);
+            function aaa() {
+            $('#stretching .stretching_content').toggleClass( "stretching_content_two" );
+            }
+        });
+    });
+</script>
+
+<div class="wrapper">
+    <header class="main">
+    <div id="roof">
+        <div id="current-users">
+Сейчас играют: <strong>682</strong></div>
+        <div id="roof_img">
+            <a href="/" title="ru.admiral-x.men">
+                                    <img src="https://cdn-adx.deliverinfo.space/media/img/logo.png" width="513" height="93">
+                            </a>
+        </div>
+            <div id="user-login-box">
+        <form action="/login" method="post">
+            <input id="login" name="login" placeholder="Логин" required="required" type="text">
+            <input id="password" name="password" placeholder="Пароль" required="required" type="password">
+            <input class="btn-red" name="submit" value="Войти" type="submit">
+        </form>
+        <a id="remind" href="/remind">Напомнить пароль</a>
+        <a id="register" href="/register">Регистрация</a>
+    </div>
+    </div>
+    <nav class="main">
+    <menu>
+                                    <li class="games"><a href="/games/mashina">Игры</a></li>
+                                                <li class="bonus"><a href="/bonus">Бонусы</a></li>
+                                                <li class="about"><a href="/about">О игровом клубе</a></li>
+                                                <li class="banking"><a href="/cash">Касса</a></li>
+                        </menu>
+</nav>
+        <div id="country_container" style="display: block;">
+        <div style="height: 0px; overflow: hidden; position: absolute;" class="ddOutOfVision" id="countries_msddHolder"><select name="countries" id="countries" tabindex="-1">
+            <option value="cn" data-image="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag cn" data-title="China">CH</option>
+            <option value="ru" data-image="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag ru" data-title="Russian" selected="selected">RU</option>
+            <option value="en" data-image="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag en" data-title="English">EN</option>
+            <option value="kz" data-image="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag kz" data-title="Kazakh">KZ</option>
+        </select></div><div class="dd ddcommon borderRadius" style="width: 54px;" id="countries_msdd" tabindex="0"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="ddArrow arrowoff"></span><span class="ddTitleText " id="countries_title"><img src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" class="flag ru fnone"><span class="ddlabel">RU</span><span class="description" style="display: none;"></span></span></div><input id="countries_titleText" autocomplete="off" class="text shadow borderRadius" style="display: none;" type="text"><div class="ddChild ddchild_ border shadow" id="countries_child" style="z-index: 9999; display: none; position: absolute; visibility: visible; height: 111px;"><ul><li class="enabled _msddli_" title="China"><img src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" class="flag cn fnone"><span class="ddlabel">CH</span><div class="clear"></div></li><li class="enabled _msddli_ selected" title="Russian"><img src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" class="flag ru fnone"><span class="ddlabel">RU</span><div class="clear"></div></li><li class="enabled _msddli_" title="English"><img src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" class="flag en fnone"><span class="ddlabel">EN</span><div class="clear"></div></li><li class="enabled _msddli_" title="Kazakh"><img src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/images/msdropdown/icons/blank.gif" class="flag kz fnone"><span class="ddlabel">KZ</span><div class="clear"></div></li></ul></div></div>
+    </div>
+</header>    <div id="carousel-holder">
+            <div id="small-jcarousel">
+        <div class="jcarousel" data-jcarousel="true" data-jcarouselautoscroll="true">
+            <ul style="transition-duration: 0s; transition-timing-function: ease; transition-property: all; transform: translate3d(-4002px, 0px, 0px);">
+                
+                <li style="width: 667px;">
+                    <div id="small-slide-2" class="small-slide transition250">
+                        <a href="/bonus" class="btn-green transition250">Подробнее</a>
+                    </div>
+                </li>
+                <li style="width: 667px;">
+                    <div id="small-slide-3" class="small-slide transition250">
+                        <a href="/game/2414" class="btn-green transition250">Играть</a>
+                    </div>
+                </li>
+                <li style="width: 667px;">
+                    <div id="small-slide-4" class="small-slide transition250">
+                        <a href="/game/694" class="btn-green transition250">Играть</a>
+                    </div>
+                </li>
+                <li style="width: 667px;">
+                    <div id="small-slide-5" class="small-slide transition250">
+                        <a href="/game/2038" class="btn-green transition250">Играть</a>
+                    </div>
+                </li>
+                <li style="width: 667px;">
+                    <div id="small-slide-6" class="small-slide transition250">
+                        <a href="/game/2318" class="btn-green transition250">Играть</a>
+                    </div>
+                </li>
+                <li style="width: 667px;">
+                    <div id="small-slide-7" class="small-slide transition250">
+                        <a href="/game/787" class="btn-green transition250">Играть</a>
+                    </div>
+                </li>
+            <li style="width: 667px;">
+                    <div id="small-slide-1" class="small-slide transition250">
+                        <a href="/game/1" class="btn-green transition250">Играть</a>
+                    </div>
+                </li></ul>
+            <p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="#1" class="active">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><a href="#6" class="">6</a><a href="#7" class="">7</a></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.jcarousel').click(function (e) {
+            var target = $(e.target);
+            if(target.hasClass('small-slide'))
+            {
+                document.location.href = target.find('a').attr('href');
+            }
+        });
+    </script>
+                    <div id="reg-bonus">
+            <a id="reg-bonus-btn" href="/register"></a>
+        </div>
+        </div>
+    <div class="container">
+        <div class="jp">
+    <div id="cd-jp-max" class="" style="width: 169px; height: 35px;"><div class="counter_marker" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/marker.png&quot;); width: 169px; height: 35px;"></div><div id="cd-jp-max_0" class="counter_character counter_character_left" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -140px;"></div><div id="cd-jp-max_1" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -140px;"></div><div id="cd-jp-max_2" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -175px;"></div><div id="cd-jp-max_thousand_3" class="counter_character counter_text counter_character_inner" style="width: 15px; height: 35px; top: -35px;">,</div><div id="cd-jp-max_3" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -210px;"></div><div id="cd-jp-max_4" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -245px;"></div><div id="cd-jp-max_5" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -210px;"></div><div id="cd-jp-max_decimal" class="counter_character counter_text counter_character_inner" style="width: 15px; height: 35px; top: -35px;">.</div><div id="cd-jp-max_6" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -105px;"></div><div id="cd-jp-max_7" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -35px;"></div></div>
+    <div id="cd-jp-min" class="" style="width: 152px; height: 35px;"><div class="counter_marker" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/marker.png&quot;); width: 152px; height: 35px;"></div><div id="cd-jp-min_0" class="counter_character counter_character_left" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -70px;"></div><div id="cd-jp-min_1" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -245px;"></div><div id="cd-jp-min_thousand_2" class="counter_character counter_text counter_character_inner" style="width: 15px; height: 35px; top: -35px;">,</div><div id="cd-jp-min_2" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px 0px;"></div><div id="cd-jp-min_3" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -315px;"></div><div id="cd-jp-min_4" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -105px;"></div><div id="cd-jp-min_decimal" class="counter_character counter_text counter_character_inner" style="width: 15px; height: 35px; top: -35px;">.</div><div id="cd-jp-min_5" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -175px;"></div><div id="cd-jp-min_6" class="counter_character counter_character_inner" style="background-image: url(&quot;http://ru.admiral-x.men/media/vendor/cowndown/img/num.png&quot;); width: 15px; height: 35px; top: -35px; background-position: 0px -245px;"></div></div>
+    <div id="currency_max">₽</div>
+    <div id="currency_min">₽</div>
+</div>        <header class="games">
+    <form id="search">
+        <input name="search" placeholder="Искать игру" autocomplete="off" type="text"><!--Комментарий не убирать
+        --><button type="submit"><img src="/media/img/search.png"></button>
+        <div class="search_games_help_div" id="search_games_help_div"></div>
+    </form>
+    <nav class="games">
+        <ul>
+                                                <li class=" active"><a href="/" title="Популярные">Популярные</a></li>
+                                                                <li class=""><a href="/games/new" title="Новые">Новые</a></li>
+                                                                <li class=""><a href="/games/mashina" title="Слоты">Слоты</a></li>
+                                                                <li class=""><a href="/games/end" title="Endorphina">Endorphina</a></li>
+                                                                <li class=""><a href="/games/am" title="Amatic">Amatic</a></li>
+                                                                <li class=""><a href="/games/bts" title="BetSoft">BetSoft</a></li>
+                                    </ul>
+    </nav>
+    <div class="line"></div>
+</header>
+<div class="main-holder rows-4">
+    <section class="games">
+        <h3 class="par">Популярные</h3>
+        <div class="game-holder">
+            <aside class="main">
+                                    <div class="side-banner">
+                                                    <a href="/register">
+                                <img class="img-responsive" src="https://cdn-adx.deliverinfo.space/media/img/swf/banner_new_236.gif" width="220" height="580">
+                            </a>
+                                            </div>
+                            </aside>
+            <!--
+                            --><div class="mashina">
+                    <header>NVM BOOK OF RA 'DELUXE'</header>
+                                    <a class="game-img" href="/game/1" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/1.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/1">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>MULTIWIN</header>
+                                    <a class="game-img" href="/game/636" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/636.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/636">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM ANGRY BIRDS</header>
+                                    <a class="game-img" href="/game/5" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/5.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/5">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM LUCKY LADY'S CHARM 'DELUXE' BTD</header>
+                                    <a class="game-img" href="/game/106" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/106.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/106">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>FOOTBALL</header>
+                                    <a class="game-img" href="/game/567" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/567.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/567">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM BOOK OF RA</header>
+                                    <a class="game-img" href="/game/15" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/15.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/15">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>ART 5DRAGONS</header>
+                                    <a class="game-img" href="/game/8" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/8.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/8">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM SIZZLING HOT</header>
+                                    <a class="game-img" href="/game/58" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/58.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/58">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>IGS RESIDENT</header>
+                                    <a class="game-img" href="/game/3" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/3.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/3">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>IGS CRAZY MONKEY</header>
+                                    <a class="game-img" href="/game/11" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/11.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/11">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM LUCKY LADY'S CHARM</header>
+                                    <a class="game-img" href="/game/107" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/107.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/107">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>EGT RISE OF RA</header>
+                                    <a class="game-img" href="/game/172" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/172.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/172">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>ART CHOY SUN DOA</header>
+                                    <a class="game-img" href="/game/22" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/22.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/22">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM THREEE!</header>
+                                    <a class="game-img" href="/game/35" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/35.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/35">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>ALP LUCKY MAGIC</header>
+                                    <a class="game-img" href="/game/61" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/61.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/61">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM DOLPHIN'S PEARL 'DELUXE'</header>
+                                    <a class="game-img" href="/game/40" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/40.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/40">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>IGS FRUIT COCKTAIL</header>
+                                    <a class="game-img" href="/game/14" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/14.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/14">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM ANGRY BIRDS CHRISTMAS</header>
+                                    <a class="game-img" href="/game/2" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/2.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/2">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM BOOK OF RA BTD</header>
+                                    <a class="game-img" href="/game/104" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/104.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/104">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM JEWELS 4 ALL</header>
+                                    <a class="game-img" href="/game/45" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/45.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/45">Fun</a>
+                                        </footer>
+                                </div><!--
+                            --><div class="mashina">
+                    <header>NVM BANANAS GO BAHAMAS</header>
+                                    <a class="game-img" href="/game/26" style="background: url(https://cdn-adx.deliverinfo.space/media/img/index/games/list/new/26.png?v2)"></a>
+                    <footer>
+                                            <a class="play-btn btn-orange" href="/register">Играть</a>
+                        <a class="fun-btn" href="/game/26">Fun</a>
+                                        </footer>
+                                </div><!--
+                        -->
+        </div>
+                <div class="pagination-holder">
+            <div class="pagination">
+    <ul class="pages">
+			<li class="active"><a>«</a></li>
+	
+			<li class="active"><a>‹</a></li>
+	
+	        
+        					<li class="active"><a>1</a></li>
+		        
+	        
+        					<li><a href="/?page=2">2</a></li>
+		        
+	
+			<li><a href="/?page=2">›</a></li>
+	
+			<li><a href="/?page=2">»</a></li>
+	    </ul>
+</div><!-- .pagination -->        </div>
+            </section>
+</div>
+<script type="text/javascript">
+    $(function() {
+        var inputSearch = $('form#search input[name="search"]');
+        inputSearch.keyup(function(){
+            var search = inputSearch.val();
+            var gamesHelpDiv = $("#search_games_help_div");
+            $.post('/index-ajax/searchGamesHelp', {search: search}, function(data) {
+                gamesHelpDiv.html(data);
+                gamesHelpDiv.css('display','block');
+            });
+
+            return false;
+        });
+
+        $('#search_games_help_div').on("click", ".games_help_game", function(){
+            inputSearch.val($(this).children("input").val());
+            $("#search_games_help_div").css('display','none');
+            $("form#search").submit();
+        });
+    });
+</script>    </div>
+    <footer class="main">
+    <nav class="bottom">
+        <ul>
+            <li><a href="/games/mashina">Игры</a></li>
+            <li><a href="/bonus">Бонусы</a></li>
+            <li><a href="/about">О игровом клубе</a></li>
+                            <li><a href="/cash/payin">Касса</a></li>
+                    </ul>
+    </nav>
+    <div id="mirror-next" class="pay-systems">
+        <img src="https://cdn-adx.deliverinfo.space/media/img/pay_systems.png" width="975" height="74">
+    </div>
+    <div id="carusel" style="overflow: hidden; height: 120px;">
+        <div id="scrolled" style="width: 5194px;">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_01.jpg" style="" width="258px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_02.jpg" style="" width="244px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_03.jpg" style="" width="232px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_04.jpg" style="" width="188px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_05.jpg" style="" width="214px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_06.jpg" style="" width="217px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_07.jpg" style="" width="241px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_08.jpg" style="" width="168px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_09.jpg" style="" width="238px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_10.jpg" style="" width="169px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_11.jpg" style="" width="182px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_12.jpg" style="" width="233px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_13.jpg" style="" width="207px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_14.jpg" style="" width="205px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_15.jpg" style="" width="262px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_16.jpg" style="" width="253px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_17.jpg" style="" width="261px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_18.jpg" style="" width="173px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_19.jpg" style="" width="181px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_20.jpg" style="" width="240px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_21.jpg" style="" width="242px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_22.jpg" style="" width="170px" height="100px"><img src="https://cdn-adx.deliverinfo.space/media/img/footer/admiral_23.jpg" style="" width="209px" height="100px">
+        </div>
+    </div>
+    <div class="webmoney">
+        <img src="https://cdn-adx.deliverinfo.space/media/img/webmoney.png" width="268" height="29">
+        <h3 id="ggmashina">Gaminator Mashina</h3>
+    </div>
+    <nav class="bottom_article">
+        <ul>
+                        <li class="in_right"><a href="/rules">Политика и правила игрового клуба</a></li>
+        </ul>
+    </nav>
+    <nav class="bottom_article helpful-administration-mails">
+        <ul>
+            <li>Техническая поддержка:&nbsp;<a href="mailto:support@admiral-x.win" target="_blank">suрроrt@аdmirаl-х.win</a>&nbsp;|&nbsp;</li>
+            <li>Администрация казино:&nbsp;<a href="mailto:administration@admiral-x.win" target="_blank">аdministrаtiоn@аdmiral-х.win</a>&nbsp;|&nbsp;</li>
+            <li>Жалобы и предложения:&nbsp;<a href="mailto:ccs@admiral-x.win" target="_blank">ссs@аdmirаl-х.win</a></li>
+        </ul>
+    </nav>
+    <div id="about">
+                    Admiral-x - игровой дом
+Добро пожаловать в наше уважаемое и молодое заведение! Почему вы должны остаться здесь? Наша молодая команда как никто знает, какие онлайн игры популярны в сфере онлайн гемблинга и как создать действительно безопасную среду для игроков. Только здесь вы найдете лучшее программное обеспечение для развлечений, щедрые бонусы и отличный сервис. Вы сможете получать удовольствие от игрового процесса. Наш игровой дом предлагает всем игрокам попробовать сорвать настоящий прогрессивный джек-пот, который вы найдете только в лучших онлайн заведениях. Всего несколько нажатий мышкой и вы получите онлайн веселье и различные игры. Лучшие машинаы, рулетка и видео-покер - и это еще не все предложения. Игроки получат доступ к Vip-программе, бонусным предложениям, которые подарят деньги для реальных ставок! Удачной игры, мы рады именно Вам!            </div>
+</footer>
+    <style>
+    .sh_header {  background: #7B1FA2;  }
+    .sh_button:hover {  background: #7B1FA2;  }
+    .sh_button {  color: #fff;  border: 1px solid #7B1FA2;  background: #7B1FA2;  }
+    .sh_chat{  border: 1px solid #7B1FA2;  }
+    .sh_top_buttons {  border-left: 1px solid #7B1FA2;  }
+    .shc.sh_title_text {  border: none !important;  }
+    .shc .sh_title_text::before {
+        content: 'Онлайн поддержка  ▾';
+        display: block;
+    }
+    #sh_button:hover {
+        bottom: -2px;
+    }
+    #sh_button img{
+        display: none;
+    }
+    #sh_button {
+        padding: 4px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        background: #7B1FA2;
+        right: 80px !important
+    }
+</style>
+<!-- Start SiteHeart code -->
+<script>
+    (function(){
+        var widget_id = 544662;
+        _shcp =[{widget_id : widget_id, template: "purple"}];
+        var lang =(navigator.language || navigator.systemLanguage
+        || navigator.userLanguage ||"en")
+            .substr(0,2).toLowerCase();
+        var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+        var hcc = document.createElement("script");
+        hcc.type ="text/javascript";
+        hcc.async =true;
+        hcc.src =("https:"== document.location.protocol ?"https":"http")
+        +"://"+ url;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hcc, s.nextSibling);
+    })();
+</script>
+<!-- End SiteHeart code -->            <link type="text/css" href="/media/css/widgets/lotteryNewAdmiral.css?v4" rel="stylesheet"><div class="lotteryNewAdmiral">
+    <a href="http://777-888.ru/go.php?sid=427&amp;tds-page=&amp;id=popup-admiral-x"></a>
+</div>
+    <script type="text/javascript" src="/media/js/widgets/lotteryNewAdmiral.js"></script> </div>
+
+<!--PopUp-->
+<script>
+    $(document).ready(function () {
+        $('#close_popup_lock_game').on('click', function() {
+            $( '#lock_game' ).css({display: 'none'});
+        });
+    });
+</script>
+<div id="lock_game">
+    <div class="lock_game_block">
+        <a id="close_popup_lock_game"></a>
+        <div class="alert-icon"></div>
+        <div class="text-lock_game">Этот автомат не доступен для игры на бонусные средства.Чтобы играть совершите депозит!</div>
+        <a id="payin-btn-bonus-merch">ПОПОЛНИТЬ</a>
+    </div>
+</div>
+<!--PopUp-->
+
+                                    <style>
+    #captcha-form{
+        text-align: center;
+    }
+    #captcha-form label{
+        font-size: 15px;
+        display: block;
+        margin: 0 0 25px 0;
+    }
+    #captcha-form .captcha-x{
+        display: inline-block;
+    }
+    #captcha-form input{
+        display: inline-block;
+
+    }
+    #captcha-dialog-form input[type="text"] {
+        background: #563972;
+        border: 2px solid #785a90;
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        color: #a77fcf;
+        font-family: Tahoma;
+        font-size: 0.75em;
+        font-weight: bold;
+        padding: 0 10px;
+        vertical-align: top;
+        height: 50px;
+        width: 160px;
+    }
+    #captcha-form button {
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        display: block;
+        font-size: 1.05em;
+        font-weight: bold;
+        border: none;
+        margin: 20px auto 0 auto;
+        height: 50px;
+        width: 315px;
+    }
+    #captcha-form .message{
+        color: red;
+        font-size: 9pt;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        width: 315px;
+    }
+</style>
+                <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/jquery.form.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/ajaxLoader/jquery.ajaxLoader.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/jcarousel/jquery.jcarousel.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/jcarousel/jquery.jcarousel-autoscroll.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/jcarousel.js?v2"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/scrole_footer.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/jp.js?v7"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/main.js?v23"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/cowndown/js/counter_mini.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/ms-Dropdown/js/msdropdown/jquery.dd.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/locale.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/vendor/intl-tel-input-master/build/js/intlTelInput.min.js"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/reg.js?v10"></script> 
+            <script type="text/javascript" src="https://cdn-adx.deliverinfo.space/media/js/retarget/index.js?v4"></script> 
+    <div id="flash_message">
+    </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter25688873 = new Ya.Metrika({
+                    id:25688873,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- /Yandex.Metrika counter --><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"42307a35cb","applicationID":"46732660","transactionName":"NlJUMRZZChADBRBaDg8YdwYQUQsNTSEFXgQSGF8LAF0c","queueTime":0,"applicationTime":215,"atts":"GhVXR15DGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front reg-gift-modal" style="display: none;" tabindex="-1" role="dialog" aria-describedby="reg-gift-modal" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="reg-gift-modal" class="ui-dialog-content ui-widget-content">
+    <div class="step-1 active"><div>Подарок</div></div>
+    <div class="step-2"><div>Регистрация</div></div>
+    <div class="step-3"><div>Играть</div></div>
+    <div class="gift-block active">
+        <div class="block-title">Выберите свой подарок!</div>
+        <div class="msg-error">Сначала сделайте выбор!</div>
+        <div class="item first"><div class="gift-value-1">3788 rub</div><div class="gift-image-1"></div></div>
+        <div class="item"><div class="gift-value-2">300 бонусов</div><div class="gift-image-2"></div></div>
+        <div class="item"><div class="gift-value-3">х2 депозит</div><div class="gift-image-3"></div></div>
+        <div class="info">Выбранный бонус будет моментально начислен на ваш счет</div>
+        <button class="btn-next"><div>Далее</div></button>
+        <div class="registered">Я уже зарегистрирован <div class="btn-enter">Войти</div></div>
+    </div>
+    <div class="register-block">
+        <div class="reg-phone active">Регистрация через телефон</div>
+        <div class="reg-email">Регистрация через e-mail</div>
+        <div class="reg-phone-content active">
+            <form class="register-box-mobile-modal" action="/register" method="POST">
+            <input name="action" value="register" type="hidden">
+            <div class="msg-error">Введите номер мобильного телефона!</div>
+            <div class="selected-gift">
+                <div>Ваш подарок</div>
+                <div class="selected-gift-image"></div>
+                <div class="change-selected">Изменить выбор</div>
+            </div>
+            <div class="input-group">
+                <div class="phone-top-text">Укажите номер своего мобильного телефона</div>
+                <div class="intl-tel-input"><input id="reg-phone-number" name="mobile" type="tel"><div class="flag-dropdown"><div class="selected-flag" title="Russia (Россия): +7"><div class="flag ru"><div class="arrow"></div></div></div><ul class="country-list hide"><li class="country" data-dial-code="374" data-country-code="am"><div class="flag am"></div><span class="country-name">Armenia (Հայաստան)</span><span class="dial-code">+374</span></li><li class="country" data-dial-code="994" data-country-code="az"><div class="flag az"></div><span class="country-name">Azerbaijan (Azərbaycan)</span><span class="dial-code">+994</span></li><li class="country" data-dial-code="375" data-country-code="by"><div class="flag by"></div><span class="country-name">Belarus (Беларусь)</span><span class="dial-code">+375</span></li><li class="country" data-dial-code="372" data-country-code="ee"><div class="flag ee"></div><span class="country-name">Estonia (Eesti)</span><span class="dial-code">+372</span></li><li class="country" data-dial-code="995" data-country-code="ge"><div class="flag ge"></div><span class="country-name">Georgia (საქართველო)</span><span class="dial-code">+995</span></li><li class="country" data-dial-code="7" data-country-code="kz"><div class="flag kz"></div><span class="country-name">Kazakhstan (Казахстан)</span><span class="dial-code">+7</span></li><li class="country" data-dial-code="996" data-country-code="kg"><div class="flag kg"></div><span class="country-name">Kyrgyzstan (Кыргызстан)</span><span class="dial-code">+996</span></li><li class="country" data-dial-code="371" data-country-code="lv"><div class="flag lv"></div><span class="country-name">Latvia (Latvija)</span><span class="dial-code">+371</span></li><li class="country" data-dial-code="370" data-country-code="lt"><div class="flag lt"></div><span class="country-name">Lithuania (Lietuva)</span><span class="dial-code">+370</span></li><li class="country" data-dial-code="373" data-country-code="md"><div class="flag md"></div><span class="country-name">Moldova (Republica Moldova)</span><span class="dial-code">+373</span></li><li class="country active" data-dial-code="7" data-country-code="ru"><div class="flag ru"></div><span class="country-name">Russia (Россия)</span><span class="dial-code">+7</span></li><li class="country" data-dial-code="992" data-country-code="tj"><div class="flag tj"></div><span class="country-name">Tajikistan</span><span class="dial-code">+992</span></li><li class="country" data-dial-code="993" data-country-code="tm"><div class="flag tm"></div><span class="country-name">Turkmenistan</span><span class="dial-code">+993</span></li><li class="country" data-dial-code="998" data-country-code="uz"><div class="flag uz"></div><span class="country-name">Uzbekistan (Oʻzbekiston)</span><span class="dial-code">+998</span></li></ul></div></div>
+                <div class="phone-bottom-text">На этот телефон придет БЕСПЛАТНОЕ СМС с логином и паролем.</div>
+            </div>
+
+            <div class="grey-line"></div>
+                        <div class="promocode-block">
+                <input name="promocode" class="promocode-input" type="text">
+                <div class="enter-promocode">Введите промокод (если есть)</div>
+            </div>
+
+            <div class="rules">
+                <input name="rule" checked="checked" type="checkbox">
+                <div>Я ознакомлен/а с <a href="/rules">Правилами и условиями</a> игровой клуб</div>
+            </div>
+            <button class="btn-next" type="submit"><div>Далее</div></button>
+            <div class="registered">Я уже зарегистрирован <div class="btn-enter">Войти</div></div>
+            </form>
+        </div>
+        <div class="reg-email-content">
+            <form class="register-box-email-modal" action="/register" method="POST">
+            <input name="action" value="register" type="hidden">
+            <div class="msg-error fill-filds">Сначала заполните поля!</div>
+            <div class="msg-error invalid-email">E-mail введен неверно.</div>
+            <div class="msg-error invalid-pass">Пароль введен неверно.</div>
+            <div class="msg-error enter-captcha">Введите капчу</div>
+            <div class="selected-gift">
+                <div class="alert-img"></div>
+                <div>Регистрация данным способом не предусматривает подарок или бонус!</div>
+            </div>
+            <div class="input-group">
+                <input name="email" placeholder="E-mail" type="email">
+                <div class="phone-bottom-text">На ваш почтовый адрес будет выслано письмо, содержащее ссылку для подтверждения вашего e-mail</div>
+                <input name="password" type="password">
+                <div class="phone-bottom-text">Укажите Ваш пароль.(Цифры и латинские символы. От 6 до 18)</div>
+            </div>
+
+            <div class="grey-line"></div>
+            <div class="currency-block">
+                            </div>
+            <div class="promocode-block">
+                <input name="promocode" class="promocode-input" type="text">
+                <div class="enter-promocode">Введите промокод (если есть)</div>
+            </div>
+            <img src="/captcha/default" onclick="this.src=this.src" title="reload image" alt="Captcha" class="captcha" width="150" height="50">            <input name="captcha" class="captcha-input" type="text">
+            <div class="captcha-input-label">Введите символы с картинки</div>
+            <div class="rules">
+                <input name="rule" checked="checked" type="checkbox">
+                <div>Я ознакомлен/а с <a href="/rules">Правилами и условиями</a> игровой клуб</div>
+            </div>
+            <button class="btn-next"><div>Далее</div></button>
+            <div class="registered">Я уже зарегистрирован <div class="btn-enter">Войти</div></div>
+            </form>
+        </div>
+    </div>
+    <div class="game-block-1">
+        <div class="block-title">Поздравляем! <p>Вы успешно зарегистрировались в нашем игровом клубе!</p></div>
+        <div class="recommend-game">
+            <div class="game-title">Рекомендуем! 100% хит игра TEMPLE CATS</div>
+            <a href="/game/588">
+                <div class="to-play">
+                    <img src="/media/img/index/games/list/temple-cats.png">
+                    <div>Играть</div>
+                </div>
+            </a>
+            <a href="/"><div class="btn-grey">Другие игры</div></a>
+        </div>
+    </div>
+    <div class="game-block-2">
+        <div class="block-title">Вход в игровой клуба</div>
+        <div class="msg-error">Заполните все поля!</div>
+        <div class="msg-success">Регистрация прошла успешно!</div>
+        <div class="top-info">Осталось только ввести логин и пароль который Вам прислали в СМС</div>
+        <form role="form" class="reg-login-box-modal" action="/login" method="post">
+            <input name="login" type="text">
+            <input name="password" style="margin-bottom: 50px;" type="password">
+            <input class="btn-next" name="submit" value="Играть" type="submit">
+        </form>
+        <div class="btn-grey prev">Назад</div>
+    </div>
+</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front captcha" style="display: none;" tabindex="-1" role="dialog" aria-describedby="captcha-dialog-form" aria-labelledby="ui-id-2"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">Верификация</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="captcha-dialog-form" class="form-register ui-dialog-content ui-widget-content">
+    <div class="captcha-x"></div>
+</div></div><div id="sh_button" class="shc sh_btn sh_btn_bottom sh_btn_bottom_right sh_monitor"><img rel="logo" style="margin: 6px;" class="shc sh_logo_btn sh_logo_img" src="//static.siteheart.com/widget/sh/20170904112052/img/logo.png"><div class="shc sh_title_text" rel="title">Онлайн поддержка</div><div class="shc sh_block_counter" title="Visitors to the site"><span rel="counter">0</span></div></div><iframe src="//static.siteheart.com/widget/sh/20170904112052/html/a.html?s=ru.admiral-x.men" scrolling="no" style="position:absolute;width:0;height:0;left:-14444;" frameborder="0"></iframe></body></html>

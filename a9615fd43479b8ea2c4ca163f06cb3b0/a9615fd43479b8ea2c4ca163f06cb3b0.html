@@ -1,0 +1,345 @@
+<html><head>
+    <title></title>
+  </head>
+  <body>
+    
+<script>
+   
+    var lobby = {};
+    /* global window,lobby,jQuery*/
+/**
+* Device Detection
+* @class lobby.device
+*/
+(function (global, lobby, undefined) {
+  /**
+   * Sets all requirements needed for this object
+   * @object lobby
+   */
+  lobby = lobby || (global.lobby = {});
+  lobby.device = lobby.device || {};
+
+  lobby.device.motionDetected = false;
+
+  /**
+  * Initialise the device detection. Checks that the device info cookie is correct.
+  * @method init
+  */
+  lobby.device.init = function () {
+    lobby.requireLoaded('device', 'lobby.loaded');
+    lobby.logging.logDebug('Device Detection component initialised');
+  };
+
+  /**
+* Identifies whether or not cookies are enabled.
+* @method detectCookiesEnabled
+* @private
+* @return {boolean} returns true or false
+*/
+  var detectCookiesEnabled = function () {
+    lobby.device.setCookie('testingCookie', 'test', 1);
+    if (lobby.device.getCookie('testingCookie')) {
+      lobby.device.deleteCookie('testingCookie');
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  lobby.device.checkCookie = function () {
+    if (detectCookiesEnabled()) {
+      var oldCookie = lobby.device.getCookie('DeviceInfo');
+      var newCookie = lobby.device.setDeviceCookie();
+      if (newCookie !== oldCookie) {
+        lobby.utils.reload(true);
+      }
+    }
+  };
+
+  /**
+  * Sets a cookie. Included here instead of referencing existing utilities because this file is sometimes used without access to the utilities.
+  * @method setCookie
+  * @param {string} cName The name to use for the cookie
+  * @param {string} value The contents of the cookie
+  * @param {int} expiresInDays The cookie should expire in this many days time
+  */
+  lobby.device.setCookie = function (cName, value, expiresInDays) {
+    var expiryDate = new Date(), cValue;
+    expiryDate.setDate(expiryDate.getDate() + expiresInDays);
+
+    // Make sure to set the path to / so it can be sent from any page. See wiki:
+    cValue = global.escape(value) + ((expiresInDays === null) ? '' : '; expires=' + expiryDate.toUTCString()) + '; path=/;';
+    global.document.cookie = cName + '=' + cValue;
+  };
+
+  /**
+  * Gets ba cookie. Included here instead of referencing existing utilities because this file is sometimes used without access to the utilities.
+  * @method getCookie
+  * @param {string} cookieName The name of the cookie
+  * @return {object} returns the global unescape or null
+  */
+  lobby.device.getCookie = function (cookieName) {
+    var nameEQ = cookieName + '=', c, i, cookies = [];
+    if (global.document.cookie) {
+      cookies = global.document.cookie.split(';');
+    }
+
+    for (i = 0; i < cookies.length; i++) {
+      c = cookies[i];
+      while (c.charAt(0) === ' ') {
+        c = c.substring(1, c.length);
+      }
+
+      if (c.indexOf(nameEQ) === 0) {
+        return global.unescape(c.substring(nameEQ.length, c.length));
+      }
+    }
+
+    return null;
+  };
+
+  /**
+  * Deletes a cookie. 
+  * @method deleteCookie
+  * @param {string} cookieName The name of the cookie
+  */
+  lobby.device.deleteCookie = function (cookieName) {
+    // Make sure to set the path to / so it will be overwritten from any page. See wiki:
+    global.document.cookie = cookieName + '=; expires=' + new Date(1970, 1, 1).toUTCString() + '; path=/;';
+  };
+
+  /**
+  * Detects the type of device based on a range of device quirks
+  * @method detectDeviceType
+  * @param {string} ua The user agent string
+  * @param {string} screen The screen
+  * @param {string} devicePixelRatio The device pixel ratio
+  * @private
+  * @return {string} returns the detected device
+  */
+  var detectDeviceType = function (ua, screen, devicePixelRatio) {
+    // look for iPod touch
+    if (ua.match(/iPod/i) !== null) {
+      if (screen.height >= 568) {
+        return 'iPodTouch5';
+      }
+
+      return 'iPodTouch4';
+    }
+
+    // look for iPads
+    if (ua.match(/iPad/i) !== null) {
+      if (devicePixelRatio === 2) {
+        return 'iPad3/iPad4/iPadMiniRetina/iPadAir/iPadAir2';
+      }
+
+      // iPad 2 has the motion event which would have fired.
+      if (lobby.device.motionDetected) {
+        try {
+          var AudioConstructor = global.AudioContext || global.webkitAudioContext;
+          if (AudioConstructor) {
+            /* jslint nonew: false */
+            new AudioConstructor(); // eslint-disable-line no-new
+          }
+        } catch (e) {
+          // iPad Mini will always have web audio because it came with iOS 6, this has to be an iPad2
+          return 'iPad2';
+        }
+
+        return 'iPad2/Mini';
+      }
+
+      return 'iPad1';
+    }
+
+    // look for iPhones
+    if (ua.match(/iPhone/i)) {
+      // iPhone 6 plus check first
+      if (devicePixelRatio === 3) {
+        if (screen.height >= 736) {
+          return 'iPhone6Plus';
+        }
+
+        // iPhone 6 Plus Zoom
+        if (screen.height >= 667) {
+          return 'iPhone6PlusZoom';
+        }
+      } else if (devicePixelRatio === 2) {  // use device pixel ratio to device
+        // iPhone6 check first
+        if (screen.height >= 667) {
+          return 'iPhone6';
+        }
+
+        // http://www.mobilexweb.com/blog/iphone-5-ios-6-html5-developers
+        if (screen.height >= 568) {
+          return 'iPhone5/iPhone6Zoom';
+        }
+
+        return 'iPhone4';
+      }
+
+      return 'iPhone3';
+    }
+
+    // look for Android devices
+    if (ua.match(/Android/i) || ua.match(/Silk/i)) {
+      return 'Android';
+    }
+
+    // look for Windows Phones
+    if (ua.match(/Windows\s+Phone/i)) {
+      return 'WindowsPhone';
+    }
+
+    // look for Windows PCs
+    if (ua.match(/Windows\s+NT/)) {
+      return 'Desktop';
+    }
+
+    // look for Macintosh
+    if (ua.match(/Macintosh/i)) {
+      return 'Desktop';
+    }
+
+    // look for BlackBerry
+    if (ua.match(/BlackBerry/i)) {
+      var match = ua.match(/(.*BlackBerry\s+)([^\;]+)(\;\s)/im);
+      if (match) {
+        return 'BlackBerry' + match[2];
+      } else {
+        return 'BlackBerry';
+      }
+    }
+
+    // don't know this device
+    return 'Unknown';
+  };
+
+  /**
+  * Identifies the width of the screen.
+  * @method detectResolutionWidth
+  * @private
+  * @param {string} screen The screen
+  * @param {string} pixelRatio The pixel ratio
+  * @return {number} returns the resolution width
+  */
+  var detectResolutionWidth = function (screen, pixelRatio) {
+    var width = (screen.width > screen.height) ? screen.width : screen.height;
+    return width * pixelRatio;
+  };
+
+  /**
+  * Identifies the height of the screen.
+  * @method detectResolutionHeight
+  * @private
+  * @param {string} screen The screen
+  * @param {string} pixelRatio The pixel ratio
+  * @return {number} returns the resolution height
+  */
+  var detectResolutionHeight = function (screen, pixelRatio) {
+    var height = (screen.width < screen.height) ? screen.width : screen.height;
+    return height * pixelRatio;
+  };
+
+  /**
+  * Identifies whether or not the Apple device is running in full screen mode (homescreen)
+  * @method isFullScreenOnAppleDevice
+  * @private
+  * @param  {object} navigator the navigator
+  * @return {boolean} returns true or false
+  */
+  var isFullScreenOnAppleDevice = function (navigator) {
+    // Case 78060, fixed the script from the internet, standalone means you are not in the browser and the Safari check was unreliable so removed.
+    if ('standalone' in navigator && navigator.standalone && (/iphone|ipod|ipad/gi).test(navigator.platform)) {
+      return true;
+    }
+    return false;
+  };
+
+  // To improve the accuracy of detection on iPads, we can check the device motion event, iPad1 will never fire this.
+  if ('ondeviceorientation' in global && global.navigator.userAgent.match(/iPad/i) !== null) {
+    var deviceOrientationEvent = function () {
+      global.removeEventListener('deviceorientation', deviceOrientationEvent);
+      lobby.device.motionDetected = true;
+    };
+
+    global.addEventListener('deviceorientation', deviceOrientationEvent);
+  }
+
+  /**
+  * Sets the cookie with the current device information, and returns the data.
+  * Pass in the dependant values to make it testable
+  * @method setDeviceCookie
+  * @param {string} ua The user agent string
+  * @param {string} screen The screen
+  * @param {string} devicePixelRatio The device pixel ratio
+  * @param  {object} navigator the navigator
+  * @return {object} returns the the device info
+  */
+  lobby.device.setDeviceCookie = function (ua, screen, devicePixelRatio, navigator) {
+    ua = ua || global.navigator.userAgent;
+    screen = screen || global.screen;
+    devicePixelRatio = devicePixelRatio || global.devicePixelRatio || 1;
+    navigator = navigator || global.navigator;
+
+    // Get the Device Type
+    var dt = detectDeviceType(ua, screen, devicePixelRatio);
+    var deviceInfo = 'DeviceType=' + dt;
+
+    // add the device count to metrics
+    if (lobby.metrics) {
+      lobby.metrics.count('deviceType.' + dt);
+    }
+
+    // get the pixel ratio of the device
+    deviceInfo += '&DevicePixelRatio=' + devicePixelRatio;
+
+    // get the screen size
+    deviceInfo += '&ScreenHeight=' + detectResolutionHeight(screen, devicePixelRatio);
+    deviceInfo += '&ScreenWidth=' + detectResolutionWidth(screen, devicePixelRatio);
+
+    // Set the cookie disabled
+    deviceInfo += '&CookiesEnabled=' + detectCookiesEnabled().toString();
+
+    // Get whether this is an Apple Home Screen app
+    deviceInfo += '&IsHomeScreen=' + isFullScreenOnAppleDevice(navigator).toString();
+
+    // Set to expire in 5475 days because this is the upper limit that some IOS devices will accept. Over that, and they expire immediately.
+    lobby.device.setCookie('DeviceInfo', deviceInfo, 5475);
+    
+    return deviceInfo;
+  };
+
+  // Add to the required components to set when the components are loaded
+  if (lobby.require) {
+    lobby.require('device', 'lobby.loaded');
+  }
+}(window, lobby));
+
+    // Tiny delay so that motion detection can kick in so we can tell the difference between iPad1 and 2.
+    window.setTimeout(function () {
+        // Get the Device Type
+        var deviceInfo = lobby.device.setDeviceCookie(window.navigator.userAgent, window.screen);
+        //if we are POST'ing, send the form
+        
+        if (!lobby.device.getCookie('DeviceInfo') && (window.location.href.indexOf('DeviceType') === -1)) {
+            // The user's cookies are disabled so add resolution to query string.
+            // Get the hash and replace it afterwards, format must be pathname + querystring + hash
+            var uri = window.location.href.split("#")[0];
+            var hash = window.location.href.split("#")[1];
+            if (typeof hash !== 'undefined') {
+                hash = "#" + hash;
+            } else {
+                hash = '';
+            }
+            window.location.href = uri + (window.location.href.indexOf('?') === -1 ? '?' : '&') + deviceInfo + hash;
+        } else {
+            // Reload the page with same url to then let server use the cookie.
+            window.location.reload(true);
+        }
+        
+    }, 500);
+</script>
+
+  
+</body></html>

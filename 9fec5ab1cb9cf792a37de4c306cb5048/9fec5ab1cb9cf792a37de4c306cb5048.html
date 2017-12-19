@@ -1,0 +1,1143 @@
+<html data-ng-app="progressPlayApp" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <meta charset="utf-8">
+        <title>DukesCasino.com</title>
+        <meta name="keywords" content="Progress Play">
+        <meta name="description" content="Progress Play">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Type" content="text/html">
+		<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" id="viewport">
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Casino">
+        <meta name="format-detection" content="telephone=no">
+        <!-- iOS Icons and Splash Screens: ------------------------------------------------------------------------------- -->
+        <link href="" rel="apple-touch-icon" id="appleTouchIcon">
+        <link id="splash_iphone4" rel="apple-touch-startup-image" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" href="">
+        <link id="splash_iphone5" rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="">
+        <link id="splash_ipad12_portrait" rel="apple-touch-startup-image" media="(device-width: 768px) and (orientation: portrait)" href="">
+        <link id="splash_ipad12_landscape" rel="apple-touch-startup-image" media="(device-width: 768px) and (orientation: landscape)" href="">
+        <link id="splash_ipad34_portrait" rel="apple-touch-startup-image" media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="">
+        <link id="splash_ipad34_landscape" rel="apple-touch-startup-image" media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="">
+        <!-- /iOS Icons and Splash Screens << -->
+
+
+        <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://chatserver.comm100.com/livechat.ashx?siteId=226068"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://datasrv.progressplay.net/content/general/lexicon/lexiconEN.js?v=555"></script>
+        <script src="https://data.progressplay.net/content/general/lexicon/lexiconSV.js?v=555"></script>
+        <script src="https://data.progressplay.net/content/general/lexicon/lexiconDE.js?v=555"></script>
+
+        <link href="/Content/complete.css?v=1111" rel="stylesheet">
+	    <link href="/Content/icon.css?v=555" rel="stylesheet">
+	    <link href="/Content/anim.css?v=555" rel="stylesheet">
+        <link rel="stylesheet" href="/lib/ngDialog-theme-default.css?v=2">
+        <link rel="stylesheet" href="/lib/ngDialog.css">
+        <link id="colorCss" rel="stylesheet" href="https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.css?v=584">
+        <link id="iconLink" rel="icon" href="https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.ico" type="image/x-icon">
+		<script>
+			var currentForm;
+			var playerObj;
+			dataLayer = [];
+			document.addEventListener('invalid', (function () {
+				return function (e) {
+					e.preventDefault();
+				};
+			})(), true);
+        </script>		
+    <script src="https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.js?v=567" type="text/javascript"></script></head>
+    <body resizable="" ng-class="bodyClass">
+        <div class="main">
+            <!-- ngInclude: headerTemplate --><div ng-include="headerTemplate" class="ng-scope"><div ng-controller="headerController" class="ng-scope">
+    <header id="header" class="header_container headerMaxWidth" ng-show="globalParams.showHeaderFooter" ng-init="init()" set-class-when-at-top="header_container_fixed" offset-top="1">
+        <div class="header_inner_container">
+            <div class="header_logo" data-ng-click="setForm('lobby')" title="Lobby" ng-style="{'background-image': 'url(https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.png?v=567)'}" style="background-image: url(&quot;https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.png?v=567&quot;);"></div>
+            <div class="header_menu menu_behaviour">
+                <ul>
+                    <li class="header_account ng-hide" ng-class="{selected: (currentForm == 'cashier-menu')}" data-ng-click="setForm('cashier-menu')" data-ng-show="globalParams.userLoggedIn" translate="cashier">Cashier</li>
+                    <li class="header_cashier ng-hide" ng-class="{selected: (currentForm == 'account-menu')}" data-ng-click="setForm('account-menu')" data-ng-show="globalParams.userLoggedIn" translate="myAccount">Account</li>
+
+
+                    <li class="header_promotions" ng-class="{selected: (currentForm == 'promotions')}" data-ng-click="setForm('promotions', '', 'modal_content_wide')" translate="promotions">Promotions</li>
+                    <li class="header_support" ng-class="{selected: (currentForm == 'contact-us')}" data-ng-click="setForm('contact-us')" translate="support">Support</li>
+
+
+                    <li ng-class="{selected: (currentForm.indexOf('registration') == 0)}" data-ng-click="setForm('registration1')" data-ng-show="!globalParams.userLoggedIn" translate="joinNow" class="header_join input_field_lobby">Join now</li>
+
+                    <li class="show_in_mobile" ng-class="{selected: (currentForm == 'login')}" data-ng-click="setForm('login')" data-ng-show="!globalParams.userLoggedIn" translate="login">Login</li>
+
+
+                    <li data-ng-click="logout()" data-ng-show="globalParams.userLoggedIn" title="Logout" class="ng-hide"><span class="icon-logout"></span></li>
+
+                </ul>
+            </div>
+            <div class="header_login ng-scope" ng-controller="loginController" data-ng-show="!globalParams.userLoggedIn" ng-init="init('header')">
+                <form name="form_login" novalidate="" autocomplete="off" class="ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern">
+                    <div class="input_container" ng-class="{input_invalid: (form_login.email.$invalid &amp;&amp; (form_login.email.$touched || formSubmitted)), input_valid: (form_login.email.$valid &amp;&amp; (form_login.email.$dirty || formSubmitted))}">
+                        <div class="input_field_lobby">
+                            <input name="email" placeholder="Email*" ng-model="userEmail" ng-focus="eventServices.onInputFocus($event)" ng-blur="eventServices.onInputBlur($event);saveUserData()" ng-required="true" class="ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required" required="required" type="email">
+                        </div>
+                    </div>
+                    <div class="input_container" ng-class="{input_invalid: (form_login.password.$invalid &amp;&amp; (form_login.password.$touched || formSubmitted)), input_valid: (form_login.password.$valid &amp;&amp; (form_login.password.$dirty || formSubmitted))}">
+                        <div class="input_field_lobby">
+                            <input name="password" ng-pattern="/^(?=.*?[A-Za-z])(?=.*?[0-9]).{6,}$/" placeholder="Password*" ng-model="userPassword" ng-required="true" ng-focus="eventServices.onInputFocus($event)" ng-blur="eventServices.onInputBlur($event);saveUserData()" value="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern" required="required" type="password">
+                        </div>
+                    </div>
+                    <button class="input_field_lobby button_form" ng-click="loginSubmit(form_login)" translate="login">Login</button>
+                   
+                </form>
+                <a href="" class="header_link" ng-click="setForm('forgot-password')" translate="password_forgot">Forgot your password?</a>
+            </div>
+            <!-- ngIf: globalParams.userLoggedIn -->
+
+            <div class="menu_icon_container show_in_mobile">
+                <div id="menu_icon" ng-class="{open: sideMenuOpen}" class="menu_icon" ng-click="toggleSideMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="fixed_menu" ng-show="globalParams.showHeaderFooter">
+        <ul>
+            <li ng-class="{selected: chatOpen}" data-ng-click="toggleChat();" class="icon-chat" title="Chat"></li>
+            <li data-ng-click="setForm('contact-us')" class="icon-email" title="Contact Us"></li>
+            <li ng-class="{selected: (currentForm == 'promotions')}" data-ng-click="setForm('promotions', '', 'modal_content_wide')" class="icon-promotions" title="Promotions"></li>
+            <li data-ng-click="toggleFullscreen()" class="icon-fullscreen" ng-show="!globalParams.fullScreen" title="Fullscreen"></li>
+            <li data-ng-click="toggleFullscreen()" class="icon-fullscreenoff ng-hide" ng-show="globalParams.fullScreen" title="Normal screen"></li>
+
+            <!-- ngIf: globalParams.showHeaderFooter && !globalParams.userLoggedIn --><li class="fixed_menu_languages ng-scope" ng-mouseover="showLanguages = true" ng-mouseleave="showLanguages = false" ng-class="{fixed_menu_open: showLanguages}" ng-if="globalParams.showHeaderFooter &amp;&amp; !globalParams.userLoggedIn">
+                <ul>
+                    <li class="lang_item lang_icon lang_en" ng-class="{lang_en : language == 'en', lang_de : language == 'de', lang_sv : language == 'sv' }"></li>
+                    <li data-ng-click="changeLanguage('en')" class="lang_item lang_icon lang_en ng-hide" ng-show="showLanguages &amp;&amp; language != 'en'"></li>
+                    <li data-ng-click="changeLanguage('de')" class="lang_item lang_icon lang_de ng-hide" ng-show="showLanguages &amp;&amp; language != 'de'"></li>
+                    <li data-ng-click="changeLanguage('sv')" class="lang_item lang_icon lang_sv ng-hide" ng-show="showLanguages &amp;&amp; language != 'sv'"></li>
+                </ul>
+
+            </li><!-- end ngIf: globalParams.showHeaderFooter && !globalParams.userLoggedIn -->
+        </ul>
+    </div>
+
+    <script language="javascript" type="text/javascript" src="https://progressplay-static.casinomodule.com/gameinclusion/library/gameinclusion.js"></script>
+</div></div>
+            <div id="main"><!-- ngView:  --><div ng-view="" class="ng-scope"><div class="background ng-scope" id="backgroundLeft"></div>
+<div class="background ng-scope" id="backgroundRight"></div>
+<div class="lobby ng-scope" ng-controller="lobbyController" ng-init="init()">
+    <div class="lobby_banner bannerMaxWidth">
+        <div pc-promotions="" mode="lobby" class="ng-isolate-scope"><div class="promotion_lobby" ng-controller="promotionsController" ng-init="init()">
+
+
+    <div class="promotions_menu ng-hide" ng-show="mode == 'page' &amp;&amp; !promotionOpen &amp;&amp; !singleMode">
+
+        <div class="sub_menu_header vertical">
+            <div class="menu_close" ng-click="closePromotions()">×</div>
+        </div>
+        <!-- ngRepeat: (key, promotion) in promotions --><div ng-repeat="(key, promotion) in promotions" class="promotions_menu_item ng-scope" ng-click="openPromotion(promotion)">
+            <div class="promotion_image" ng-style="{ 'background-image': 'url(' + promotionImageUrl(promotion) + ')' }" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/Welcome.jpg&quot;);">
+                <div class="promotion_main">
+                    <div class="promotion_title ng-binding" ng-bind="promotion.title">Amazing Welcome Package Up To £/$/€1000</div>
+                    
+                </div>
+                <div ng-show="promotion.isWelcome" class="promotion_disclaimer"><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></div>
+            </div>
+        </div><!-- end ngRepeat: (key, promotion) in promotions --><div ng-repeat="(key, promotion) in promotions" class="promotions_menu_item ng-scope" ng-click="openPromotion(promotion)">
+            <div class="promotion_image" ng-style="{ 'background-image': 'url(' + promotionImageUrl(promotion) + ')' }" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/Divine_Fortune_Jackpot_WinSep_17.jpg&quot;);">
+                <div class="promotion_main">
+                    <div class="promotion_title ng-binding" ng-bind="promotion.title">£131,105 Winner!</div>
+                    
+                </div>
+                <div ng-show="promotion.isWelcome" class="promotion_disclaimer ng-hide"><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></div>
+            </div>
+        </div><!-- end ngRepeat: (key, promotion) in promotions --><div ng-repeat="(key, promotion) in promotions" class="promotions_menu_item ng-scope" ng-click="openPromotion(promotion)">
+            <div class="promotion_image" ng-style="{ 'background-image': 'url(' + promotionImageUrl(promotion) + ')' }" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/MonthlyPromoDecember2017.jpg&quot;);">
+                <div class="promotion_main">
+                    <div class="promotion_title ng-binding" ng-bind="promotion.title">CHRISTMAS UNWRAPPED</div>
+                    
+                </div>
+                <div ng-show="promotion.isWelcome" class="promotion_disclaimer ng-hide"><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></div>
+            </div>
+        </div><!-- end ngRepeat: (key, promotion) in promotions --><div ng-repeat="(key, promotion) in promotions" class="promotions_menu_item ng-scope" ng-click="openPromotion(promotion)">
+            <div class="promotion_image" ng-style="{ 'background-image': 'url(' + promotionImageUrl(promotion) + ')' }" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/WeeklyBonus.jpg&quot;);">
+                <div class="promotion_main">
+                    <div class="promotion_title ng-binding" ng-bind="promotion.title">Weekly Surprise</div>
+                    
+                </div>
+                <div ng-show="promotion.isWelcome" class="promotion_disclaimer ng-hide"><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></div>
+            </div>
+        </div><!-- end ngRepeat: (key, promotion) in promotions -->
+    </div>
+
+    <div id="lobbyPromotion" class="promotion_image" ng-mouseenter="pauseSlide()" ng-mouseleave="continueSlide()" ng-style="{ 'background-image': 'url(' + promotionImageUrl(currPromotion) + ')' }" ng-show="mode != 'page' &amp;&amp; !promotionOpen" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/Welcome.jpg&quot;);">
+        <div class="promotion_main">
+            <div class="promotion_title ng-binding" ng-bind="currPromotion.title">Amazing Welcome Package Up To £/$/€1000</div>
+            <div class="promotion_sub_title ng-binding" ng-bind="currPromotion.subTitle">Join today, make your first deposit and you'll instantly receive a 100% welcome match bonus up to £/$/€200 - as part of a welcome package of a maximum £/$/€1000!</div>
+            <div class="promotion_buttons">
+                <button class="promotion_action ng-binding" ng-bind="promotionAction" ng-click="promotionClicked()">Join now</button>
+                <div class="promotion_link">
+                    <a class="promotion_details_link ng-binding" ng-bind="detailsCaption" ng-click="openPromotions(currPromotion)">More details...</a>
+                </div>
+            </div>
+            <div ng-show="currPromotion.isWelcome &amp;&amp; mode != 'game'" class="promotion_disclaimer"><span><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></span></div>
+
+        </div>
+
+        <div ng-class="{show_icon: showArrows, hide_icon: !showArrows}" class="promotion_lobby_scroll_button left icon-arrow-left hide_icon" ng-click="slide(-1)"></div>
+        <div ng-class="{show_icon: showArrows, hide_icon: !showArrows}" class="promotion_lobby_scroll_button right icon-arrow hide_icon" ng-click="slide(1)"></div>
+
+        <div class="bigwinners_container" ng-show="!promotionOpen &amp;&amp; mode == 'lobby'">
+            <marquee>
+                <div class="bigwinners">
+                    <!-- ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Giovannantonio S.&nbsp;<span class="winner_country ng-binding">(United Kingdom)</span><span translate="won"> won </span><span class="winner_amount ng-binding">£74392.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Secrets of Atlantis</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Sean H.&nbsp;<span class="winner_country ng-binding">(United Kingdom)</span><span translate="won"> won </span><span class="winner_amount ng-binding">£24375.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Premier Roulette</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners --><span class="winner_container ng-binding ng-scope" ng-repeat="winner in BigWinners">
+                        Kai K.&nbsp;<span class="winner_country ng-binding">(Germany)</span><span translate="won"> won </span><span class="winner_amount ng-binding">€20000.00</span><span translate="on"> on </span><span class="winner_game ng-binding" ng-click="openGame(winner.serverGameID)">Live Blackjack</span>
+                    </span><!-- end ngRepeat: winner in BigWinners -->
+                </div>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="promotion_view ng-hide" ng-show="promotionOpen">
+        <div class="sub_menu_header vertical">
+            <div class="menu_close" ng-click="openPromotion()">×</div>
+        </div>
+        <div ng-show="promotionOpen" class="promotion_scroll_button left icon-arrow-left ng-hide" ng-click="slide(-1)"></div>
+        <div ng-show="promotionOpen" class="promotion_scroll_button right icon-arrow ng-hide" ng-click="slide(1)"></div>
+
+        <div ng-class="promotionClass">
+            <div class="promotion_image" ng-style="{ 'background-image': 'url(' + promotionImageUrl(currPromotion) + ')' }" style="background-image: url(&quot;https://data.progressplay.net/content/general/promotions/Welcome.jpg&quot;);">
+                <div class="promotion_main">
+                    <div class="promotion_title ng-binding" ng-bind="currPromotion.title">Amazing Welcome Package Up To £/$/€1000</div>
+                    
+                    
+                </div>
+                <div ng-show="currPromotion.isWelcome" class="promotion_disclaimer"><span translate="welcomeBonus_disclaimer">50X Wagering the bonus amount before withdraw. Valid for 90 Days from receipt. Subject to site full</span> <a class="promotion_disclaimer_link" translate="bonusPolicy" ng-click="openInfo('bonus')">Bonus Policy</a></div>
+            </div>
+
+            <div ng-class="{show: showArrows}" class="promotion_lobby_scroll_button left icon-arrow-left" ng-click="slide(-1)"></div>
+            <div ng-class="{show: showArrows}" class="promotion_lobby_scroll_button right icon-arrow" ng-click="slide(1)"></div>
+           
+            <div class="promotion_content" id="promotionContent">
+                <div class="promotion_content_sub_title ng-binding" ng-bind="currPromotion.subTitle">Join today, make your first deposit and you'll instantly receive a 100% welcome match bonus up to £/$/€200 - as part of a welcome package of a maximum £/$/€1000!</div>
+                <div bind-html-compile="currPromotion.htmlSummary"><div class="promotion ng-scope">
+<p style="font-family: Verdana, Geneva, sans-serif; margin: 20px 10px; font-size: 16px; line-height: 22px;"><span style="font-weight: bold; text-decoration: underline;">1st deposit</span><br><br> Get a 100% up to&nbsp;£/$/€200.<br><br> 100% welcome match bonus on your first deposit - instantly - up to a maximum of £/$/€200. <br><br>So if you deposit £/$/€10 you'll get £/$/€10 bonus. <br><br>Deposit £/$/€50 and you will get £/$/€50 bonus, and if you put in £/$/€200 we'll give you another £/$/€200 bonus! <br><br>So you'll be DOUBLING your chances to win big.<br><br> Plus! on your next 2 deposits, you'll get up to&nbsp;£/$/€800 bonus:<br><br> <span style="text-decoration: underline; font-weight: bold;">2nd deposit</span><br><br> Get a 25% up to&nbsp;£/$/€300 bonus<br><br> <span style="text-decoration: underline; font-weight: bold;">3rd deposit</span><br><br> Get a 50% up to&nbsp;£/$/€500 bonus</p>
+<center>
+<div link-action="form" link-param="deposit" title="Deposit" class="action_button"><span class="btnJoin" style="width: 240px;">DEPOSIT NOW</span></div>
+</center></div>
+<h4 style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; line-height: 16px;" class="ng-scope">Terms &amp; Conditions:</h4>
+<ol style="font-family: Verdana, Geneva, sans-serif; font-size: 12px; line-height: 16px;" class="ng-scope">
+<li>Upon depositing ,players will immediately receive a bonus to their account.</li>
+<li>In order to withdraw these bonuses, an amount totalling no less than 50 times the bonus amount must be wagered.</li>
+<li>The bonuses are valid for 90 days from the date it is credited to a player's account. Players who have not used their bonuses within the foregoing time limits shall not be able to receive the expired bonuses thereafter.</li>
+<li>DukesCasino.com maintains the right to cancel this promotion at any time and without prior notice.</li>
+<li>DukesCasino.com reserves the right to disqualify any player from this promotion at its sole discretion.</li>
+<li>This promotion is subject to the DukesCasino.com's <a href="#" link-action="info-new" link-param="bonus" class="link_button" title="Bonus Policy">Bonus Policy</a>.</li>
+</ol></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+
+
+    <div class="games_section lobbyMaxWidth">
+
+
+        <div class="games_menu" set-class-when-at-top="games_menu_fixed lobbyMaxWidth" offset-top="400" ng-show="globalParams.showHeaderFooter &amp;&amp; !globalParams.inGame &amp;&amp; dataLoaded &amp;&amp; globalParams.showLobby">
+            <div class="games_scroll_button icon-arrow icon-arrow-left left" ng-class="{disabled: disableLeft}" ng-mousedown="onScrollButton(5)"></div>
+            <div id="gamesTabsFrame" class="games_methods_frame" ng-swipe-left="onScrollButton(-5)" ng-swipe-right="onScrollButton(5)">
+                <div id="gamesTabs" class="games_tabs" ng-style="{ width : tabsWidth }" style="width: 1350px;">
+                    <ul>
+                        <!-- ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope selected" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-featured"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">FEATURED</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-new"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">NEW</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-favourite"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">FAVOURITES</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-slots"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">SLOTS</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-casino"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">CASINO</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-live"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">LIVE</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-jackpots"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">JACKPOTS</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-casual"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">CASUAL</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter --><li data-ng-repeat="tab in GamesMeta.GameTypes | filter:tabsFilter" ng-style="{ width : tabWidth }" ng-click="tabClicked(tab)" ng-class="{selected: selectedTab == tab &amp;&amp; searchGame == '' }" class="ng-scope" style="width: 150px;">
+                            <div class="games_tab">
+                                <div class="tab_image icon-all"></div>
+                                <div class="tab_caption ng-binding" ng-bind="tabCaption(tab)">ALL</div>
+                            </div>
+                        </li><!-- end ngRepeat: tab in GamesMeta.GameTypes | filter:tabsFilter -->
+                    </ul>
+                </div>
+            </div>
+            <div class="games_scroll_button icon-arrow right" ng-class="{disabled: disableRight}" ng-mousedown="onScrollButton(-5)" ng-disabled="disableRight"></div>
+
+            <div class="games_menu_sub">
+                <div class="games_filters ng-hide" ng-show="selectedTab.ID > 0">
+                    <div class="game_filter">
+                        <input class="radio ng-pristine ng-untouched ng-valid ng-not-empty" name="filter" id="filterOption_all" ng-click="filterClicked('all')" value="all" ng-model="selectedFilter" type="radio">
+                        <label for="filterOption_all" class="ng-binding">All</label>
+                    </div>
+                    <!-- ngRepeat: gameFilter in GamesMeta.GameTypesFilters | filter: { GameTypeID: selectedTab.ID } -->
+                </div>
+                <div class="games_search">
+                    <!--<div class="input_field_lobby">
+                    <div class="input game_sort" ng-repeat="sortOption in sortOptions" ng-click="sortByClicked(sortOption)" ng-class="{selected: sortBy == '{{sortOption.Key}}'}">
+                        <div class="sort_caption" ng-bind="sortCaption(sortOption)"></div>
+                        <div class="sort_arrow_up" ng-show="sortBy == '{{sortOption.Key}}'" ng-class="{arrow_down: sortReverse == false}"></div>
+                    </div>
+                </div>-->
+                    <div class="input_field_lobby games_input_container">
+                        <input id="search_game" name="search_game" ng-model="searchGame" ng-class="{selected: searchGame != '' }" placeholder="Find a game..." ng-keyup="gamesChanged()" class="ng-pristine ng-untouched ng-valid ng-empty" type="text">
+
+                        <span class="clear_icon icon-close hide_icon" ng-class="{show_icon : (searchGame != ''), hide_icon : (searchGame == '')}" ng-click="clearSearch()"></span>
+                    </div>
+                    <div class="input_field_lobby games_input_container">
+                        <select class="ng-pristine ng-untouched ng-valid ng-empty" name="providers" ng-model="selectedProvider" ng-class="{selected: selectedProvider != null &amp;&amp; selectedProvider != '' }">
+                            <option class="select_option ng-binding" value="" ng-bind="allProvidersCaption">All providers</option>
+                            <!-- ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="3">NETENT</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="1">MICROGAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="6">NEXTGEN GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="10">ELK</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="11">1x2 GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="13">IRON DOG</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="14">THUNDERKICK</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="19">LIGHTNING  BOX</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="20">CHANCE INTERACTIVE</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="24">CORE GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="26">BET DIGITAL</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="27">BLUEPRINT GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="29">GAMEVY</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="31">GAMESLAB</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="41">EXTREME LIVE GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="40">SCIENTIFIC GAMES</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="43">BIG TIME GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="44">QUICKSPIN</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="45">GENESIS GAMES</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="46">RABCAT</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="47">SKILLZZ GAMES</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="48">2BY2</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="49">BIG TIME GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="50">2BY2 GAMING</option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider --><option class="select_option ng-binding ng-scope" ng-repeat="provider in GamesMeta.GamesSubProvider" value="55">GAMES WAREHOUSE </option><!-- end ngRepeat: provider in GamesMeta.GamesSubProvider -->
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="games_container" set-class-when-at-top="games_container_fixed" offset-top="400" ng-show="dataLoaded &amp;&amp; globalParams.showLobby" angular-lazy-load="">
+            <div ng-show="!globalParams.gamesFound" ng-bind="noResultsCaption" class="games_container_no_results ng-binding ng-hide">No games were found :(</div>
+            <!-- ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_70308" src="https://data.progressplay.net/games/lobby/70308.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Foxin' Wins A Very Foxin' Christmas</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_110015" src="https://data.progressplay.net/games/lobby/110015.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Taco Bros. Save Christmas</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_70220" src="https://data.progressplay.net/games/lobby/70220.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Snowflakes</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_DecktheHalls" src="https://data.progressplay.net/games/lobby/RubyDeckTheHalls.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Deck the Halls</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_flowerschristmas_not_mobile_sw" src="https://data.progressplay.net/games/lobby/flowerschristmas_not_mobile_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Flowers Christmas Edition™</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_110021" src="https://data.progressplay.net/games/lobby/110021.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Ho Ho Tower</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_secretsofchristmas_not_mobile_sw" src="https://data.progressplay.net/games/lobby/secretsofchristmas_not_mobile_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Secrets of Christmas</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_ThePhantomoftheOpera" src="https://data.progressplay.net/games/lobby/thePhantomOfTheOperaDesktop.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">The Phantom of the Opera</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_70206" src="https://data.progressplay.net/games/lobby/70206.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Bonanza</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_JurassicWorld" src="https://data.progressplay.net/games/lobby/jurassicWorldDesktop.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Jurassic World</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_starburst_not_mobile_sw" src="https://data.progressplay.net/games/lobby/starburst_not_mobile_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Starburst</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_420309" src="https://data.progressplay.net/games/lobby/420309.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo ng-hide" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Club Roulette</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_ThnderStrck2" src="https://data.progressplay.net/games/lobby/Thunderstruck2.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Thunderstruck II</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_380036" src="https://data.progressplay.net/games/lobby/380036.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Ted</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_70231" src="https://data.progressplay.net/games/lobby/70231.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Panda Pow</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_Flash_GameOfThrones_Ways" src="https://data.progressplay.net/games/lobby/GameOfThronesWays.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Game Of Thrones</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_380005" src="https://data.progressplay.net/games/lobby/380005.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Fortunes Of Sparta</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_lcblackjack_sw" src="https://data.progressplay.net/games/lobby/lcblackjack_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo ng-hide" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Live Black Jack Standard</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_500081" src="https://data.progressplay.net/games/lobby/500081.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Rainbow Riches</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_MGS_Premier_Roulette" src="https://data.progressplay.net/games/lobby/RubyPremierRoulette.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Premier Roulette</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_380013" src="https://data.progressplay.net/games/lobby/380013.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Slots O Gold</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_fairyhansel_not_mobile_sw" src="https://data.progressplay.net/games/lobby/fairyhansel_not_mobile_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Fairytale Legends: Hansel and Gretel</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_lcroulette_sw" src="https://data.progressplay.net/games/lobby/lcroulette_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo ng-hide" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Live Dealer Roulette</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_eldorado_not_mobile_sw" src="https://data.progressplay.net/games/lobby/eldorado_not_mobile_sw.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Gonzo Quest</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' --><div class="game ng-scope" data-ng-repeat="game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder'">
+                <div class="game_container">
+                    <div class="game_inner_container">
+                        <div class="game_image">
+                            <img id="img_950038" src="https://data.progressplay.net/games/lobby/950038.jpg">
+                            <div class="game_hover">
+                                <div class="play_button icon-play" ng-click="gameClicked('real', game)"></div>
+                                <div class="game_button demo" ng-show="game.DemoEnabled" translate="playDemo" ng-click="gameClicked('demo', game)">Demo play</div>
+                                <div class="game_bar">
+                                    <div class="favourite_container ng-hide" ng-show="globalParams.userLoggedIn">
+                                        <div class="not_favourite icon-favourite favourite_button" ng-click="toggleFavouriteGame(game)" ng-show="!game.IsFavourite"></div>
+                                        <div class="favourite icon-favouriteon favourite_button ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                                    </div>
+                                    <div class="game_name ng-binding">Birdz</div>
+                                </div>
+                            </div>
+                            <div class="favourite_button_outside ng-hide" ng-show="globalParams.userLoggedIn">
+                                <div class="icon-favouriteon favourite_button favourite ng-hide" ng-click="toggleFavouriteGame(game)" ng-show="game.IsFavourite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end ngRepeat: game in GamesData.Games | filter:gamesFilter | orderBy:'GameOrder' -->
+        </div>
+    </div>
+</div></div></div>
+            <!-- ngInclude: footerTemplate --><div ng-include="footerTemplate" class="ng-scope"><footer class="footer_container headerMaxWidth ng-scope" ng-show="globalParams.showHeaderFooter &amp;&amp; !globalParams.inGame">
+    <nav class="menu">
+
+        <ul class="footer_menu">
+            <li data-ng-click="openModalPopupForm('info-main', 'aboutus')" ng-class="{selected: code == 'aboutus'}" translate="aboutUs">About us</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'contact')" ng-class="{selected: code == 'contact'}" translate="contactUs">Contact us</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'faq')" ng-class="{selected: code == 'faq'}" translate="faq">FAQ</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')" ng-class="{selected: code == 'deposits'}" translate="deposits">Deposits</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'withdrawals')" ng-class="{selected: code == 'withdrawals'}" translate="withdrawals">Withdrawals</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'vip')" ng-class="{selected: code == 'vip'}" translate="vipClub">VIP Club</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'payouts')" ng-class="{selected: code == 'payouts'}" translate="payouts">Game Payouts</li>            
+            <li data-ng-click="openModalPopupForm('info-main', 'terms')" ng-class="{selected: code == 'terms'}" translate="termsAndConditions">Terms &amp; Conditions</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'responsible')" ng-class="{selected: code == 'responsible'}" translate="responsibleGaming">Play Responsibly</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'bonus')" ng-class="{selected: code == 'bonus'}" translate="bonusPolicy">Bonus Policy</li>
+            <li data-ng-click="openModalPopupForm('info-main', 'privacy')" ng-class="{selected: code == 'privacy'}" translate="privacyPolicy">Privacy Policy</li>
+        </ul>
+
+        <ul class="footer_icons">
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/VISA.png" alt="Visa {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/MASTERCARD.png" alt="MasterCard {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/MAESTRO.png" alt="Maestro {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/PAYBYPHONE.png" alt="PayByPhone {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/SOFORT.png" alt="Sofort {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/GIROPAY.png" alt="Giropay {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/NETELLER.png" alt="Neteller {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/SKRILL.png" alt="Skrill {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/PAYSAFE.png" alt="PaySafeCard {:label_name:}"></li>
+            <li data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/TRUSTLYW.png" alt="Trustly {:label_name:}"></li>
+            <li id="idealLogo" data-ng-click="openModalPopupForm('info-main', 'deposits')"><img src="https://data.progressplay.net/content/general/icons/IDEAL.png" alt="Ideal {:label_name:}"></li>
+        </ul>
+
+        <ul class="footer_icons" id="footer_icons_container">
+            <li><a href="https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39335" target="_blank" title="Gambling Commission"><img src="https://data.progressplay.net/content/general/icons/GAMBLING.png" alt="Gambling Commission"></a></li>
+            <li><a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=EN&amp;company=703df3e2-8758-49e6-8804-158981f71761&amp;details=1" target="_blank" title="MGA"><img src="https://data.progressplay.net/content/general/icons/MGA.png" alt="MGA"></a></li>
+            <li><a href="http://www.progressplay.com" target="_blank" title="Powered by Progress Play"><img src="https://data.progressplay.net/content/general/icons/PBPROGRESSPLAY.png" alt="Powered by Progress Play"></a></li>
+            <li><a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" title="PCI"><img src="https://data.progressplay.net/content/general/icons/PCI.png" alt="PCI"></a></li>
+            <li data-ng-click="setForm('info-main', 'responsible')"><img src="https://data.progressplay.net/content/general/icons/RESPONSIBLE.png" alt="As a strong supporter of responsible gaming, ProgressPlay Ltd contributes to Responsible Gambling Trust (RGT), the UK charity committed to minimising the harm associated with gambling."></li>
+            <li><a href="http://www.thawte.com/" target="_blank" title="Secured by Thawte"><img src="https://data.progressplay.net/content/general/icons/THAWTE.png" alt="Secured by Thawte"></a></li>
+            <li><a href="http://www.gambleaware.co.uk/" target="_blank" title="Gambling Awareness"><img src="https://data.progressplay.net/content/general/icons/GAMBLEAWARE.png" alt="Gambling Awareness"></a></li>
+        </ul>
+    </nav>
+    <div class="disclaimer ng-binding" ng-bind-html="footerContent"><div class="disclaimer">DukesCasino.com is operated by ProgressPlay Limited of Suite 1258, 28/19 Vincenti Buildings, Strait Street – Valletta VLT1432 – Malta. ProgressPlay is a limited liability company registered in Malta (C58305), that operates under a Class 1 on 4 license [number MGA/CL1/857/2012 issued on 16th April 2013] &amp; [number MGA/CL1/957/2014] &nbsp;issued on 19th April 2014 &amp; [number MGA/CL1/1141/2015 &nbsp;issued on 16th December 2015]&nbsp;issued by Malta Gaming Authority and is licensed and regulated by the <a href="http://www.gamblingcommission.gov.uk/" target="_blank">UK Gambling Commission</a>, License Number 000-039335-R-319313-008. UK persons wagering via the website are doing so in reliance on the license issued by the UK Gambling Commission. Gambling can be addictive. Play responsibly.</div></div>
+</footer></div>
+
+            <!-- ngInclude: popupsTemplate --><div class="popups_container ng-scope" ng-include="popupsTemplate"><script type="text/ng-template" id="dialogConfirm" class="ng-scope">
+    <div class="dialog-header">
+        <h2 class="dialog-title" ng-show="ngDialogData.title" ng-bind-html="ngDialogData.title"></h2>
+        <h3 ng-show="ngDialogData.sub_title" ng-bind-html="ngDialogData.sub_title"></h3>
+    </div>
+    <div ng-show="ngDialogData.showImage">
+        <img ng-src="{{ngDialogData.imageUrl}}" />
+    </div>
+    <div class="dialog-text">
+        <p ng-show="ngDialogData.text1" bind-html-compile="ngDialogData.text1"></p>
+        <p ng-show="ngDialogData.text2" bind-html-compile="ngDialogData.text2"></p>
+    </div>
+    <div class="dialog-buttons">
+        <button type="button" class="button_normal" ng-click="confirm(1)" ng-bind-html="ngDialogData.button1Text">Confirm</button>
+        <button type="button" class="button_normal" ng-click="confirm(2)" ng-bind-html="ngDialogData.button3Text" ng-show="ngDialogData.showButton3">Confirm</button>
+        <button type="button" class="button_normal" ng-click="closeThisDialog('button')" ng-bind-html="ngDialogData.button2Text" ng-show="ngDialogData.showButton2">Cancel</button>
+    </div>
+</script>
+<script type="text/ng-template" id="dialogMessage" class="ng-scope">
+    <div class="dialog-header">
+        <h2 class="dialog-title" ng-show="ngDialogData.title" ng-bind-html="ngDialogData.title"></h2>
+        <h3 ng-show="ngDialogData.sub_title" ng-bind-html="ngDialogData.sub_title"></h3>
+    </div>
+    <div class="dialog-text">
+        <p ng-show="ngDialogData.text1" ng-bind-html="ngDialogData.text1"></p>
+        <p ng-show="ngDialogData.text2" ng-bind-html="ngDialogData.text2"></p>
+    </div>
+    <div class="dialog-buttons">
+        <div class="dialog-chat icon-chat" ng-click="toggleChat()"><span class="dialog-chat-caption" translate="needHelp"></span></div>
+        <button type="button" class="button_normal" ng-click="closeThisDialog()" ng-bind-html="ngDialogData.button1Text">Close</button>
+    </div>
+</script>
+<script type="text/ng-template" id="dialogOptions" class="ng-scope">
+    <div class="dialog-header">
+        <h2 class="dialog-title" ng-show="ngDialogData.title" ng-bind-html="ngDialogData.title"></h2>
+        <h3 ng-show="ngDialogData.sub_title" ng-bind-html="ngDialogData.sub_title"></h3>
+    </div>
+    <div class="dialog-text">
+
+        <div class="radiobutton" ng-repeat="option in ngDialogData.options">
+            <input class="radio" name="option" type="radio" id="option_{{option.id}}" value="{{option.id}}" ng-model="ngDialogData.selectedOption">
+            <label for="option_{{option.id}}"></label>
+            <div class="radiobutton_text">{{option.text}}</div>
+        </div>
+        <p ng-show="ngDialogData.text1" ng-bind-html="ngDialogData.text1"></p>
+        <p ng-show="ngDialogData.text2" ng-bind-html="ngDialogData.text2"></p>
+    </div>
+    <div class="dialog-buttons">
+        <button type="button" class="button_normal" ng-click="confirm(ngDialogData.selectedOption)" ng-bind-html="ngDialogData.button1Text">Confirm</button>
+        <button type="button" class="button_normal" ng-click="closeThisDialog(-1)" ng-bind-html="ngDialogData.button2Text" ng-show="ngDialogData.showButton2">Cancel</button>
+    </div>
+</script>
+
+</div>
+            <!-- ngInclude: overlayTemplate --><div class="overlay_container ng-scope" ng-include="overlayTemplate"><div data-ng-controller="loadersController" class="ng-scope">
+    <div id="whiteSpreePanel" class="spreePanel ng-hide" ng-show="globalParams.showLoader">
+        <div class="header_logo loader_logo" ng-style="{'background-image': 'url(https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.png?v=567)'}" style="background-image: url(&quot;https://datasrv.progressplay.net/content/general/labels/dukescasino/dukescasino.png?v=567&quot;);"></div>
+        <div class="spinner">
+            <div class="bounce1 icon-new"></div>
+            <div class="bounce2 icon-new"></div>
+            <div class="bounce3 icon-new"></div>
+            <div class="bounce4 icon-new"></div>
+            <div class="bounce5 icon-new"></div>
+        </div>
+    </div>
+    <div id="cookieslaw" class="cookies_law cookies_law_open" ng-class="cookiesDisclaimerClass" ng-show="!acceptCookies">
+        <div class="cookies_law_message lobbyMaxWidth">
+            <div class="cookies_law_text" bind-html-compile="cookiesDisclaimer"><span class="ng-scope">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. </span><a href="#" link-action="info-new" link-param="privacy" class="ng-scope">More info</a></div>
+            <button class="cookies_law_button" ng-click="acceptCookiesDisclaimer()" translate="cookies_disclaimer_continue">Got it</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+            <div id="modalIFrame" class="iframe_container ng-hide" ng-show="iframeOpen">
+                <div class="iframe_content">
+                    <div class="form_header">
+                        <div class="form_header_left">
+                        </div>
+                        <div class="form_header_middle">
+                            <div class="form_title ng-binding" ng-bind="iframeCaption"></div>
+                        </div>
+                        <div class="form_header_right">
+                            <div class="menu_close" ng-click="closeModalIFrame()">×</div>
+                        </div>
+                    </div>
+                    <iframe id="modalIFrame" ng-class="modalIFrame" class="iframe" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div if="modalForm" class="modalForm ng-hide" ng-class="{reg_promo : currentForm.indexOf('registration1') == 0, top : gameOpen}" ng-show="formOpen" ng-style="{ top: headerHeight}">
+                <!-- ngInclude: formTemplate -->
+            </div>
+            <div if="modalPopupForm" id="modalPopupForm" class="modalForm ng-hide" ng-class="{top : gameOpen}" ng-show="formPopupOpen">
+                <!-- ngInclude: formPopupTemplate -->
+            </div>
+
+            <div id="modalFrame" class="modalFrame ng-hide" ng-show="gameOpen &amp;&amp; !formOpen">
+                <!-- ngInclude: gameViewTemplate -->
+            </div>
+
+            <div id="firstLoadOverlay" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; bottom: 0px; right: 0px; margin: 0px; z-index: 2147483647; background-color: rgb(0, 0, 0); display: none;">
+                <div class="logo loader_logo"></div>
+                <div class="loader_text">LOADING...</div>
+            </div>
+            <div id="comm100-button"></div>
+        </div>
+
+        <script src="/lib/angular/angular.min.js"></script>
+        <script src="/lib/angular/angular-route.min.js"></script>
+        <script src="/lib/angular/angular-touch.min.js"></script>
+        <script src="/lib/angular/angular-sanitize.min.js"></script>
+        <script src="/lib/angular/angular-cookies.min.js"></script>
+        <script src="/lib/angular/angular-animate.min.js"></script>
+        <script src="/lib/me-lazyload.js?v=11"></script>
+        <script src="/lib/modernizr_2.7.1.js"></script>
+        <script src="/lib/ngDialog.js"></script>
+        <script src="/Scripts/md5.js"></script>
+
+        <script src="config.js?v=557"></script>
+        <script src="/Scripts/app.js?v=558" charset="UTF-8"></script>
+		<script src="/Scripts/loader.js?v=555" charset="UTF-8"></script>
+        <script src="/Scripts/directives/directives.js?v=555"></script>
+        <script src="/Scripts/services/storageService.js?v=555"></script>
+        <script src="/Scripts/services/dataService.js?v=555"></script>
+        <script src="/Scripts/services/analyticService.js?v=555"></script>
+        <script src="/Scripts/services/contentService.js?v=555"></script>
+        <script src="/Scripts/services/generalService.js?v=555"></script>
+        <script src="/Scripts/services/httpServices.js?v=555"></script>
+        <script src="/Scripts/services/eventServices.js?v=555"></script>
+        <script src="/Scripts/services/popupServices.js?v=519"></script>
+        <script src="/Scripts/services/messagingService.js?v=555"></script>
+        <script src="/Scripts/services/lobbyServices.js?v=519"></script>
+        <script src="/Scripts/controllers/headerController.js?v=555"></script>
+        <script src="/Scripts/controllers/footerController.js?v=555"></script>
+        <script src="/Scripts/controllers/loginController.js?v=555"></script>
+        <script src="/Scripts/controllers/lobbyController.js?v=555"></script>
+        <script src="/Scripts/controllers/registrationController.js?v=556"></script>
+        <script src="/Scripts/controllers/responsibleController.js?v=555"></script>
+        <script src="/Scripts/controllers/loadersController.js?v=555"></script>
+        <script src="/Scripts/controllers/menuController.js?v=555"></script>
+        <script src="/Scripts/controllers/cashierController.js?v=555"></script>
+        <script src="/Scripts/controllers/playController.js?v=556"></script>
+        <script src="/Scripts/controllers/vipController.js?v=555"></script>
+        <script src="/Scripts/controllers/infoController.js?v=555"></script>
+        <script src="/Scripts/controllers/tableDataController.js?v=555"></script>
+        <script src="/Scripts/controllers/accountController.js?v=555"></script>
+        <script src="/Scripts/controllers/promotionsController.js?v=555"></script>
+        <script src="/Scripts/controllers/forgotPasswordController.js?v=555"></script>
+		<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js"></script>
+		<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+		  ga('create', core.getGAKey(), window.location.host);
+		  ga('send', 'pageview');
+
+		</script>
+        <script>
+            dataLayer = [];
+            document.addEventListener('invalid', (function () {
+                return function (e) {
+                    e.preventDefault();
+                };
+            })(), true);
+			
+
+			
+			
+			var chatKey = core.getChatKey(); var Comm100API=Comm100API||{};Comm100API.chatGroup = chatKey ;(function(t){function e(e){var a=document.createElement("script"),c=document.getElementsByTagName("script")[0];a.type="text/javascript",a.async=!0,a.src=e+t.site_id,c.parentNode.insertBefore(a,c)}t.chat_buttons=t.chat_buttons||[],t.chat_buttons.push({code_plan:chatKey,div_id:"comm100-button"}),t.site_id=226068,t.main_code_plan=chatKey,e("https://chatserver.comm100.com/livechat.ashx?siteId="),setTimeout(function(){t.loaded||e("https://hostedmax.comm100.com/chatserver/livechat.ashx?siteId=")},5e3)})(Comm100API||{})
+			
+			
+			
+			
+			
+            
+        </script>
+
+    
+<iframe style="display: none;" id="comm100-iframe"></iframe><div id="comm100-container"></div></body></html>

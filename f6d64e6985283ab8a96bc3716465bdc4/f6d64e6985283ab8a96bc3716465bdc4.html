@@ -1,0 +1,955 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Play casino golden, golden game, official site golden game">
+    <meta name="description" content="The entrance to the Golden Game is access to the most popular casino games, bonuses and tournaments. Play on the official website of the online casino Golden Game">
+    <meta name="title" content="Casino Golden Game | Official site of Golden Game com">
+    <title>Casino Golden Game | Official site of Golden Game com</title>
+    <link rel="icon" sizes="32x32" href="images/casino_icon_16.png">
+    <link rel="icon" sizes="16x16" href="images/casino_icon_16.png">
+    <link href="css/libs/jquery/plugins/jquery.nouislider.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet"><script>
+      var initScript = document.getElementsByTagName("script")[0];
+      var scripts = [
+        "js/libs/jquery/jquery.js",
+        "js/libs/jquery/plugins/jquery.transit.js",
+        "js/libs/jquery/plugins/jquery.nouislider.js",
+        "js/libs/ion.sound/ion.sound.js",
+        "js/common.js",
+        "js/chat.server.js",
+        "js/index.server.js",
+        "js/index.main.js",
+        "js/index.games.js"
+      ];
+      var css = [
+        "css/fonts.css"
+      ];
+      scripts.forEach(function(src) {
+        var newScript = document.createElement("script");
+        newScript.src = src;
+        newScript.async = false;
+        document.head.appendChild(newScript);
+      });
+      setTimeout(function() {
+        css.forEach(function(src) {
+          var newLink = document.createElement("link");
+          newLink.href = src;
+          newLink.rel = "stylesheet";
+          document.head.insertBefore(newLink, initScript);
+        });
+      }, 0);
+    </script><script src="js/libs/jquery/jquery.js"></script><script src="js/libs/jquery/plugins/jquery.transit.js"></script><script src="js/libs/jquery/plugins/jquery.nouislider.js"></script><script src="js/libs/ion.sound/ion.sound.js"></script><script src="js/common.js"></script><script src="js/chat.server.js"></script><script src="js/index.server.js"></script><script src="js/index.main.js"></script><script src="js/index.games.js"></script>
+  </head>
+  <body>
+    <div id="container" style="transform: translate3d(0px, 29px, 0px) scale(0.731429, 0.731429); left: 0px; top: 0px;" data-scale="0.7314285714285714">
+      <div id="modules">
+        <iframe id="module_A" allowfullscreen=""></iframe>
+        <iframe id="module_B" allowfullscreen=""></iframe>
+      </div>
+      <div id="flash_trouble">
+        <div class="trouble"></div>
+      </div>
+      <div id="game_panel">
+        <div class="button button_black button_play_fun" data-open="change_cash_type" open-lobby="" store-game="">
+          <span class="icon icon_star_2"></span>
+          <span data-lang_id="playForFun"></span>
+        </div>
+        <div class="button button_blue button_play_real" data-open="change_cash_type" open-lobby="" store-game="">
+          <span class="icon icon_star_2"></span>
+          <span data-lang_id="playForReal"></span>
+        </div>
+        <div class="button button_black button_fullscreen" id="full_screen_button">
+          <span class="icon icon_fullscreen"></span>
+        </div>
+        <div class="button button_black button_hints" id="hints_button">
+          <span class="icon icon_question"></span>
+        </div>
+        <div class="button button_black button_sound sound_button">
+          <span class="icon icon_volume"></span>
+        </div>
+        <div class="button button_black button_rules rules_button">
+          <span class="icon icon_book"></span>
+        </div>
+        <div class="button button_black button_help" data-open="help">
+          <span class="icon icon_message"></span>
+          <span data-lang_id="help"></span>
+          <span class="text_green">24/7</span>
+        </div>
+        <div class="button button_green button_chat" id="chat_button" data-open="chat:animated">
+          <span class="icon icon_message"></span>
+        </div>
+        <div class="button button_black button_events" data-open="events">
+          <div id="events_counter"></div>
+          <span data-lang_id="events"></span>
+        </div>
+        <div class="button button_black button_tournaments turnir_button" data-open="tournaments">
+          <span data-lang_id="tournaments"></span>
+        </div>
+        <div class="sound_menu" id="sound_settings_modal">
+          <div id="volume_slider" class="noUi-target noUi-rtl noUi-vertical noUi-background"><div class="noUi-base"><div class="noUi-origin" style="top: 0%;"><div class="noUi-handle noUi-handle-upper"></div></div></div></div>
+          <div class="tab_controls">
+            <div class="tab_control switch_to_sound" data-name="sound" data-lang_id="soundMusic"></div>
+            <div class="tab_control switch_to_radio" data-name="radio" data-lang_id="soundRadio"></div>
+          </div>
+          <div class="tab sound">
+            <label>
+              <input data-name="jazz" name="sound" value="1" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundJazz"></span>
+            </label>
+            <label>
+              <input data-name="reggae" name="sound" value="2" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundReggae"></span>
+            </label>
+            <label>
+              <input data-name="classic" name="sound" value="3" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundClassic"></span>
+            </label>
+            <label>
+              <input data-name="ambient" name="sound" value="4" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundAmbient"></span>
+            </label>
+            <label>
+              <input data-name="ethna" name="sound" value="5" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundEthna"></span>
+            </label>
+          </div>
+          <div class="tab radio">
+            <label>
+              <input data-name="jazz" name="radio" value="1" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundJazz"></span>
+            </label>
+            <label>
+              <input data-name="classic" name="radio" value="2" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundClassic"></span>
+            </label>
+            <label>
+              <input data-name="reggae" name="radio" value="3" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundReggae"></span>
+            </label>
+            <label>
+              <input data-name="ambient" name="radio" value="4" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundAmbient"></span>
+            </label>
+            <label>
+              <input data-name="lounge" name="radio" value="5" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundLounge"></span>
+            </label>
+            <label>
+              <input data-name="blues" name="radio" value="6" type="radio">
+              <span class="radio_button"></span>
+              <span data-lang_id="soundBlues"></span>
+            </label>
+            <audio id="radio" preload="none"></audio>
+          </div>
+          <div class="checkbox_content">
+            <label>
+              <input data-name="sound" type="checkbox">
+              <span class="checkbox_button"><span></span><span></span></span>
+              <span data-lang_id="soundSound"></span>
+              <span data-lang_id="soundOn_Off"></span>
+            </label>
+            <label>
+              <input data-name="music" type="checkbox">
+              <span class="checkbox_button"><span></span><span></span></span>
+              <span data-lang_id="soundMusic"></span>
+              <span data-lang_id="soundOn_Off"></span>
+            </label>
+          </div>
+        </div>
+        <div class="log">
+          <div class="inner game_info">
+            <div class="outlet clearfix"></div>
+          </div>
+        </div>
+        <div class="button button_blue button_history" data-open="games_history" open-lobby="" store-game="">
+          <span class="icon icon_history"></span>
+        </div>
+        <div class="balance_block">
+          <div class="label" data-lang_id="balance"></div>
+          <div class="inner">
+            <div class="balance"><span class="user_balance"></span> $</div>
+            <div class="bonus">+<span class="user_bonus"></span> bon</div>
+            <div class="fun"><span class="user_fun_balance"></span> fun</div>
+          </div>
+        </div>
+        <div class="button button_green button_cashier" data-open="cashier" open-lobby="" store-game="">
+          <span class="icon icon_coins_2"></span>
+          <span data-lang_id="cashier"></span>
+        </div>
+      </div>
+      <div class="additional_game_elements">
+        <div class="button button_black close_game_button">
+          <div>×</div>
+          <div data-lang_id="exit_game"></div>
+        </div>
+        <div class="casino_logo"><div></div></div>
+        <div id="newyear_logo"></div>
+      </div>
+      <div id="preloader" class="cover">
+        <div class="wrapper">
+          <div class="logo"></div>
+          <div class="text">Initialization</div>
+          <div class="animation"><div></div></div>
+          <div class="preloader_hint"></div>
+        </div>
+      </div>
+      <div class="modal" id="help_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="help_online"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="text"></div>
+            </div>
+            <div class="footer">
+              <div class="button button_green chat_button" data-open="select_chat" data-lang_id="online_chat"></div>
+              <div class="button button_green" data-open="cashier:callback" data-lang_id="callback"></div>
+              <div class="button button_green faq_button" data-open="select_faq" data-lang_id="faq"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="events_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="events"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="buttons">
+                <div class="button current" data-open="events:current/1">
+                  <span class="icon icon_star"></span>
+                  <span data-lang_id="event_current"></span>
+                </div>
+                <div class="button soon" data-open="events:soon/1">
+                  <span class="icon icon_history"></span>
+                  <span data-lang_id="event_soon"></span>
+                </div>
+                <div class="button finished" data-open="events:finished/1">
+                  <span class="icon icon_books"></span>
+                  <span data-lang_id="event_archive"></span>
+                </div>
+              </div>
+              <div class="events_contaier">
+                <div class="outlet"></div>
+              </div>
+            </div>
+            <div class="pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="event_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="events"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="footer">
+              <div class="button button_blue back_button" data-lang_id="back"></div>
+            </div>
+            <div class="content">
+              <div class="buttons">
+                <div class="button current" data-open="events:current/1">
+                  <span class="icon icon_star"></span>
+                  <span data-lang_id="event_current"></span>
+                </div>
+                <div class="button soon" data-open="events:soon/1">
+                  <span class="icon icon_history"></span>
+                  <span data-lang_id="event_soon"></span>
+                </div>
+                <div class="button finished" data-open="events:finished/1">
+                  <span class="icon icon_books"></span>
+                  <span data-lang_id="event_archive"></span>
+                </div>
+              </div>
+              <div class="event_container">
+                <div class="outlet"></div>
+              </div>
+            </div>
+            <div class="event_countdown">
+              <div class="countdown">
+                <div class="countdown_title"></div>
+                <div class="countdown_time">
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_days"></span>
+                    <span class="countdown_label" data-lang_id="time_shortcut_days"></span>
+                  </span>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_hours"></span>
+                    <span class="countdown_label" data-lang_id="time_shortcut_hours"></span>
+                  </span>
+                  <div class="countdown_item">:</div>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_minutes"></span>
+                    <span class="countdown_label" data-lang_id="time_shortcut_minutes"></span>
+                  </span>
+                  <div class="countdown_item">:</div>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_seconds"></span>
+                    <span class="countdown_label" data-lang_id="time_shortcut_seconds"></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="breadcrumbs"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="promo_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title"></div>
+              <div class="close close_modal"></div>
+            </div>
+            <div class="content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="rules_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="rules"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content clearfix">
+              <div class="left_side help_menu">
+                <div class="outlet">
+                  <div class="text_center">
+                    <div class="loader"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="right_side help_content">
+                <div class="outlet">
+                  <div class="text_center">
+                    <div class="loader"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button button_green button_callback only_authorized" data-open="cashier:callback">
+              <span class="icon icon_phone"></span>
+              <span data-lang_id="callback"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="games_history_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="gameHistory"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content clearfix">
+              <div class="left_side">
+                <div class="menu_outlet">
+                  <ul class="menu"></ul>
+                </div>
+              </div>
+              <div class="right_side">
+                <div class="content_outlet"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="select_chat_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="online_chat"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="button button_green button_support" data-open="chat:sup" data-lang_id="question_general"></div>
+              <div class="button button_blue button_financial" id="button_open_financial_chat" data-open="chat:fin" data-lang_id="question_financial"></div>
+            </div>
+            <div class="footer">
+              <span class="link" data-open="help" data-lang_id="previous"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="select_faq_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="faq"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="button button_green" data-open="faq:general" data-lang_id="question_general"></div>
+              <div class="button button_blue" data-open="faq:financial" data-lang_id="question_financial"></div>
+            </div>
+            <div class="footer">
+              <span class="link" data-open="help" data-lang_id="previous"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="faq_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="faq"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="outlet"></div>
+            </div>
+            <div class="footer">
+              <div class="button button_blue" data-open="select_faq" data-lang_id="previous"></div>
+              <div class="button button_blue only_autorized" data-open="select_chat" data-lang_id="online_chat"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="news_modal">
+        <div class="body" style="transform: translate3d(-50%, -50%, 0px) scale(1, 1);" data-scale="1">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="news"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content"></div>
+            <div class="footer">
+              <div class="button button_blue button_prev" data-lang_id="previous"></div>
+              <div class="button button_blue button_next" data-lang_id="next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal backdrop_no_close" id="cashier_modal">
+      <div class="body">
+        <div class="inner">
+          <div class="content">
+            <iframe src="" frameborder="0"></iframe>
+          </div>
+          <div class="header">
+            <div class="button button_blue main_cashier" data-lang_id="cashier_menu" data-open="cashier:back_to_cash"></div>
+            <div class="close close_modal">×</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal backdrop_no_close" id="chat_modal" style="transform: scale(0.731429, 0.731429);" data-scale="0.7314285714285714">
+      <div class="body">
+        <div class="inner">
+          <div class="header">
+            <div class="title" data-lang_id="online_chat"></div>
+            <div class="minimize">_</div>
+            <div class="close close_modal">×</div>
+          </div>
+          <div class="content">
+            <div class="chat_area">
+              <div class="chat_scroll_container">
+                <div class="outlet selectable">
+                  <div class="placeholder" data-lang_id="chat_placeholder"></div>
+                </div>
+              </div>
+            </div>
+            <div class="description" data-lang_id="adminRateTitle"></div>
+            <div class="stars_area">
+              <div class="star" data-open="chat_rate:5"></div>
+              <div class="star" data-open="chat_rate:4"></div>
+              <div class="star" data-open="chat_rate:3"></div>
+              <div class="star" data-open="chat_rate:2"></div>
+              <div class="star" data-open="chat_rate:1"></div>
+            </div>
+            <div class="footer">
+              <div class="message_area">
+                <div class="selectable">
+                  <textarea id="chat_text" rows="1" maxlength="500" data-placeholder="#chat_textarea_placeholder#"></textarea>
+                </div>
+              </div>
+              <div class="button button_blue submit_button">
+                <span class="icon icon_paper_plane"></span>
+                <span data-lang_id="btnSend"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="chat_rate_modal">
+        <div class="body" style="transform: scale(0.731429, 0.731429) translate3d(-50%, -50%, 0px);" data-scale="0.7314285714285714">
+          <div class="inner">
+            <div class="header">
+              <div class="title" data-lang_id="adminRateTitle"></div>
+              <div class="close close_modal">×</div>
+            </div>
+            <div class="content">
+              <div class="rate_area stars_area clearfix" data-rate="3">
+                <div class="star star_5" data-rate="5"></div>
+                <div class="star star_4" data-rate="4"></div>
+                <div class="star star_3" data-rate="3"></div>
+                <div class="star star_2" data-rate="2"></div>
+                <div class="star star_1" data-rate="1"></div>
+              </div>
+              <div class="message_area">
+                <textarea class="form_control" id="chat_rate_text" data-placeholder="#chatRateHint#"></textarea>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="button button_blue submit_button" data-lang_id="btnSend"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal" id="message_modal">
+      <div class="body" style="transform: scale(0.731429, 0.731429) translate3d(-50%, -50%, 0px);" data-scale="0.7314285714285714">
+        <div class="inner">
+          <div class="header">
+            <div class="title" data-lang_id="information"></div>
+            <div class="close close_modal">×</div>
+          </div>
+          <div class="content"></div>
+          <div class="footer">
+            <div class="button button_green submit_button"></div>
+            <div class="button button_black cancel_button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="additional_panel"></div>
+    <script type="text/template" id="events_template">
+      <% if (events.length) { events.forEach(function(event) { %>
+        <div class="event clearfix<%= (event.statement === 1 && !event.seen) ? ' new' : '' %>"
+          data-open="event:<%= event.id %>">
+          <div class="column_left">
+            <div class="image">
+              <div style="background-image:url(<%= event.image %>)"></div>
+              <% if (event.statement === 1 && !event.seen) { %>
+                <div class="label"><span>New</span></div>
+              <% } %>
+            </div>
+          </div>
+          <div class="column_center">
+            <div class="event_title">
+              <span class="text"><%= event.title %></span>
+              <span class="date">
+                <span><%= top._langData.time_from %></span>
+                <span><%= formatDate("d.m.Y", event.datetime_start) %></span>
+                <span><%= top._langData.time_to %></span>
+                <span><%= formatDate("d.m.Y", event.datetime_end) %></span>
+              </span>
+            </div>
+            <div class="description"><%= event.short_text %></div>
+          </div>
+          <div class="column_right">
+            <div class="inner">
+              <div class="countdown" <%= event.countdown ? "data-countdown='" + event.countdown + "'" : "" %>>
+                <div class="countdown_title">
+                  <%= top._langData[event.statement === 0 ? 'countdown_until_start' : 'countdown_until_end'] %>
+                </div>
+                <div class="countdown_time">
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_days"></span>
+                    <span class="countdown_label"><%= top._langData.time_shortcut_days %></span>
+                  </span>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_hours"></span>
+                    <span class="countdown_label"><%= top._langData.time_shortcut_hours %></span>
+                  </span>
+                  <div class="countdown_item">:</div>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_minutes"></span>
+                    <span class="countdown_label"><%= top._langData.time_shortcut_minutes %></span>
+                  </span>
+                  <div class="countdown_item">:</div>
+                  <span class="countdown_item">
+                    <span class="countdown_digits countdown_seconds"></span>
+                    <span class="countdown_label"><%= top._langData.time_shortcut_seconds %></span>
+                  </span>
+                </div>
+              </div>
+              <div class="button button_blue"><%= top._langData.readMore %></div>
+            </div>
+          </div>
+      </div>
+      <% }) } else { %>
+        <div class="empty"><%= top._langData.eventsEmptyState %></div>
+      <% }%>
+    </script>
+    <script type="text/template" id="games_history_menu_template">
+      <% categories.forEach(function(category) { %>
+        <li>
+          <span class="label parent">
+            <span></span> <%= top._langData["category_" + category.name] %>
+          </span>
+          <ul>
+            <% category.games.forEach(function(game) { %>
+              <li>
+                <span class="label" data-id="<%= game.server_id %>"><%= top._langData["game_" + game.name] %></span>
+              </li>
+            <% }) %>
+          </ul>
+        </li>
+      <% }) %>
+    </script>
+    <script type="text/template" id="game_history_table_template">
+      <div class="preview" state="image">
+        <div class="image">
+          <img src="lobby/images/game_icons/<%= game.name %>.jpg">
+        </div>
+        <div class="loader"></div>
+        <div class="histort_view_scroll_container">
+          <div id="history_view"></div>
+        </div>
+      </div>
+      <h3><%= top._langData["game_" + game.name] %></h3>
+      <% if (data.maxpage > 1) { %>
+        <div class="games_history_control">
+          <div class="button button_blue button_prev_page <%= offset === 0 ? 'disabled' : '' %>"
+            data-offset="0">1</div>
+          <div class="button button_blue button_prev_page <%= offset === 0 ? 'disabled' : '' %>"
+            data-offset="<%= offset - 1 %>">&lt;</div>
+          <div class="current_page"><%= offset + 1 %></div>
+          <div class="button button_blue button_prev_page <%= offset === data.maxpage - 1 ? 'disabled' : '' %>"
+            data-offset="<%= offset + 1 %>">&gt;</div>
+          <div class="button button_blue button_prev_page <%= offset === data.maxpage - 1 ? 'disabled' : '' %>"
+            data-offset="<%= data.maxpage - 1 %>"><%= data.maxpage %></div>
+        </div>
+      <% } %>
+      <% if (data.logs.length) { %>
+        <div class="table_wrapper">
+          <div class="table_border">
+            <table>
+              <thead>
+                <tr>
+                  <td rowspan="2" class="col_num">№</td>
+                  <td rowspan="2" class="col_date"><%= top._langData.date %></td>
+                  <td rowspan="2" class="col_time"><%= top._langData.time %></td>
+                  <% if (isTips) { %>
+                     <td rowspan="2"><%= top._langData.tips %></td>
+                     <td rowspan="2"><%= top._langData.video_roulette_dealer %></td>
+                  <% } else { %>
+                    <td colspan="<%= isReal ? 2 : 1 %>" class="col_bet"><%= top._langData.bet %></td>
+                    <td colspan="<%= isReal ? 2 : 1 %>" class="col_win"><%= top._langData.win %></td>
+                    <td colspan="<%= isReal ? 2 : 1 %>" class="col_balance"><%= top._langData.balance %></td>
+                  <% } %>
+                  <% if (data.logs[0].info  && !isTips && !isLives) { %>
+                    <td rowspan="2" class="col_issue"><%= top._langData.n_publicatin %></td>
+                  <% } %>
+                  <% if (data.logs[0].info || isTips) { %>
+                    <td rowspan="2" class="col_copy">
+                      <%= top._langData[game.category == "cards" ? "n_hand" : (game.category == "roulettes") ? "n_spin" : "n_game"] %>
+                    </td>
+                  <% } %>
+                  <% if (data.logs[0].info && (data.logs[0].info.cutoff != null || data.logs[0].info.pos)) { %>
+                    <td
+                      rowspan="<%= data.logs[0].info.cutoff != null ? 2 : 1 %>"
+                      colspan="<%= data.logs[0].info.pos ? data.logs[0].info.pos.length : 1 %>"
+                      class="col_cutoff">
+                      <%= top._langData.cutoff %>
+                    </td>
+                  <% } %>
+                 </tr>
+                 <% if (!isTips) { %>
+                  <tr>
+                    <td>$</td>
+                    <% if (isReal) { %>
+                      <td><%= top._langData.bonus %></td>
+                    <% } %>
+                    <td>$</td>
+                    <% if (isReal) { %>
+                      <td><%= top._langData.bonus %></td>
+                    <% } %>
+                    <td>$</td>
+                    <% if (isReal) { %>
+                      <td <%= data.logs[0].info ? '' : 'class="nrb"'%>><%= top._langData.bonus %></td>
+                    <% } %>
+                    <% if (data.logs[0].info && data.logs[0].info.pos) { %>
+                      <% data.logs[0].info.pos.forEach(function(pos, i) { %>
+                        <td class="col_position"><%= i + 1 %></td>
+                      <% }) %>
+                    <%} %>
+                  </tr>
+                <% } %>
+              </thead>
+              <tbody>
+                <% data.logs.forEach(function(log, index) { %>
+                  <tr data-id="<%= log.id %>" data-game="<%= game.name %>">
+                    <td><%= index + 1 %></td>
+                    <td><nobr><%= log.date %></nobr></td>
+                    <td><nobr><%= log.time %></nobr></td>
+                    <% if (isTips) { %>
+                      <td><%= (log.cash / 100).toFixed(2) %></td>
+                      <td><%= log.dealer %></td>
+                      <td><%= log.round %></td>
+                    <% } else { %>
+                      <td><%= ((log.bet - log.betfree) / 100).toFixed(2) %></td>
+                      <% if (isReal) { %><td><%= (log.betfree / 100).toFixed(2) %></td><% } %>
+                      <td><%= ((log.win - log.winfree) / 100).toFixed(2) %></td>
+                      <% if (isReal) { %><td><%= (log.winfree / 100).toFixed(2) %></td><% } %>
+                      <td><%= ((log.cash - log.cashfree) / 100).toFixed(2) %></td>
+                      <% if (isReal) { %><td><%= (log.cashfree / 100).toFixed(2) %></td><% } %>
+                    <% } %>
+                    <% if (log.info) { %>
+                      <% if (log.info.issue) { %>
+                        <td><%= log.info.issue %></td>
+                      <% } %>
+                      <td><%= log.info.copy %></td>
+                    <% } %>
+                    <% if (log.info && log.info.cutoff != null) { %>
+                      <td><%= log.info.cutoff %></td>
+                    <% } %>
+                    <% if (log.info && log.info.pos) { %>
+                      <% log.info.pos.forEach(function(pos) { %>
+                        <td class='pos'><%= pos %></td>
+                      <% }) %>
+                    <% } %>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      <% } else { %>
+        <h4><%= top._langData.noEntries %></h4>
+      <% } %>
+    </script>
+    <script type="text/template" id="faq_template">
+      <div class="wrapper">
+        <div class="summary">
+          <% questions.content.forEach(function(item, i) { %>
+            <a href="#faq_question_<%= i + 1 %>" class="question"><%= item.question %></a>
+          <% }) %>
+        </div>
+        <div class="detailed">
+          <% questions.content.forEach(function(item, i) { %>
+            <div id="faq_question_<%= i + 1 %>" class="question"><%= item.question %></div>
+            <div class="answer"><%= item.answer %></div>
+          <% }) %>
+        </div>
+      </div>
+    </script>
+    <script type="text/template" id="chat_messages_template">
+      <% messages.forEach(function(message) { %>
+        <div class="message <%= message.type %>">
+          <div class="meta">
+            <div class="nick"><%= message.nick %></div>
+            <div class="time"><span></span><%= message.time %></div>
+          </div>
+          <div class="text"><div class="wrap"><%= message.text %></div></div>
+        </div>
+      <% }) %>
+    </script>
+    <script type="text/template" id="rules_menu_template">
+      <ul class="menu">
+        <% help.rules.forEach(function(item, i) { %>
+          <li>
+            <div class="label<%= item.categories ? ' parent' : '' %>" data-text="<%= i %>">
+              <%= item.name %>
+            </div>
+            <% if (item.categories) { %>
+              <ul>
+                <% item.categories.forEach(function(item, k) { %>
+                  <li>
+                    <div class="label<%= item.games ? ' parent' : '' %>" data-text="<%= i + '.' + k %>">
+                      <%= item.name %>
+                    </div>
+                    <% if (item.games) { %>
+                      <ul>
+                        <% item.games.forEach(function(item, l) { %>
+                          <li>
+                            <div class="label" data-text="<%= i + '.' + k + '.' + l %>" data-id="<%= item.id %>">
+                              <%= item.name %>
+                            </div>
+                          </li>
+                        <% }) %>
+                      </ul>
+                    <% } %>
+                  </li>
+                <% }) %>
+              </ul>
+            <% } %>
+          </li>
+        <% }) %>
+      </ul>
+    </script>
+    <script type="text/template" id="hc_template">
+      <div class="honesty_control">
+        <h2 class="text_uppercase text_center"><%= top._langData.cryptedData %></h2>
+        <div class="row clearfix">
+          <div class="col_first"></div>
+          <div class="col_second text_center"><h3><%= top._langData.game %></h3></div>
+          <div class="col_third text_center"><h3><%= top._langData.NPublication %></h3></div>
+        </div>
+        <div class="row clearfix">
+          <div class="col_first">
+            <label>
+              <input type="radio" name="hc_crypt_type" id="hc_crypt_operative" checked>
+              <span class="radio_button"></span><span><%= top._langData.operative %></span>
+            </label>
+          </div>
+          <div class="col_second">
+            <select class="form_control" id="hc_crypt_operative_type_id">
+              <% for (var prop in categories) { if (prop === "3dslots" || prop === "lives") continue %>
+                <optgroup label="<%= top._langData['category_' + prop] %>">
+                  <% categories[prop].forEach(function(game) { if (game.hc_id_crypt) { %>
+                    <option value="<%= game.hc_id_crypt %>"><%= top._langData['game_' + game.name] %></option>
+                  <% } }) %>
+                </optgroup>
+              <% } %>
+            </select>
+          </div>
+          <div class="col_third">
+            <select class="form_control" name="country" id="hc_crypt_operative_publication">
+              <option value="1"><%= top._langData.current_pub %></option>
+              <option value="3"><%= top._langData.previous_pub %></option>
+              <option value="2"><%= top._langData.next_pub %></option>
+            </select>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col_first"></div>
+          <div class="col_second text_center"><h3><%= top._langData.game %></h3></div>
+          <div class="col_third text_center"><h3><%= top._langData.NPublication %></h3></div>
+        </div>
+        <div class="row clearfix">
+          <div class="col_first">
+            <label>
+              <input type="radio" name="hc_crypt_type" id="hc_crypt_arhive">
+              <span class="radio_button"></span><span><%= top._langData.arhive %></span>
+            </label>
+          </div>
+          <div class="col_second">
+            <select class="form_control" id="hc_crypt_archive_type_id">
+              <% for (var prop in categories) { if (prop === "3dslots" || prop === "lives") continue %>
+                <optgroup label="<%= top._langData['category_' + prop] %>">
+                  <% categories[prop].forEach(function(game) { if (game.hc_id_crypt) { %>
+                    <option value="<%= game.hc_id_crypt %>"><%= top._langData['game_' + game.name] %></option>
+                  <% } }) %>
+                </optgroup>
+              <% } %>
+            </select>
+          </div>
+          <div class="col_third">
+            <input type="text" class="form_control" id="hc_crypt_archive_publication" maxlength="8" restrict="0-9">
+          </div>
+        </div>
+        <div class="button_wrap text_center">
+          <div class="button button_blue hc_button_load_crypt"><%= top._langData.load %></div>
+        </div>
+        <h2 class="text_uppercase text_center"><%= top._langData.personalData %></h2>
+        <div class="row clearfix">
+          <div class="col_first"></div>
+          <div class="col_second text_center"><h3><%= top._langData.game %></h3></div>
+          <div class="col_third text_center"><h3><%= top._langData.date %></h3></div>
+        </div>
+        <div class="row clearfix">
+          <div class="col_first">
+            <label>
+              <input type="radio" name="hc_personal_type" id="hc_personal_type_one" checked>
+              <span class="radio_button"></span><span><%= top._langData.forTheGame %></span>
+            </label>
+          </div>
+          <div class="col_second">
+            <select class="form_control" id="hc_personal_game_id">
+              <% for (var prop in categories) { if (prop === "3dslots" || prop === "lives") continue %>
+                <optgroup label="<%= top._langData['category_' + prop] %>">
+                  <% categories[prop].forEach(function(game) { if (game.hc_id_crypt) { %>
+                    <option value="<%= game.hc_id_priv %>"><%= top._langData['game_' + game.name] %></option>
+                  <% } }) %>
+                </optgroup>
+              <% } %>
+            </select>
+          </div>
+          <div class="col_third">
+            <select class="form_control" name="country" id="hc_personal_date">
+              <option value="<%= formatDate('dmy') %>"><%= formatDate('d.m.Y') %></option>
+              <option value="<%= formatDate('dmy', null, - 24 * 60 * 60 * 1000) %>"><%= formatDate('d.m.Y', null, - 24 * 60 * 60 * 1000) %></option>
+              <option value="<%= formatDate('dmy', null, - 2 * 24 * 60 * 60 * 1000) %>"><%= formatDate('d.m.Y', null, - 2 * 24 * 60 * 60 * 1000) %></option>
+              <option value="<%= formatDate('dmy', null, - 3 * 24 * 60 * 60 * 1000) %>"><%= formatDate('d.m.Y', null, - 3 * 24 * 60 * 60 * 1000) %></option>
+            </select>
+          </div>
+        </div>
+        <div class="row row_type_2 clearfix">
+          <div class="col_first"></div>
+          <div class="col_second text_center"><h3><%= top._langData.NPublication %></h3></div>
+        </div>
+        <div class="row row_type_2 clearfix">
+          <div class="col_first">
+            <label>
+              <input type="radio" name="hc_personal_type" id="hc_personal_type_all">
+              <span class="radio_button"></span><span><%= top._langData.forAllGame %></span>
+            </label>
+          </div>
+          <div class="col_second">
+            <input type="text" class="form_control" maxlength="8" id="hc_personal_issue_id" restrict="0-9">
+          </div>
+          <div class="col_third text_center">
+            <div class="button button_blue button_block hc_button_load_private"><%= top._langData.load %></div>
+          </div>
+        </div>
+        <div class="row row_type_2 clearfix">
+          <div class="col_first"><h3><%= top._langData.passwordPublication %></h3></div>
+          <div class="col_second">
+            <input type="text" class="form_control" maxlength="8" id="hc_get_password_field" restrict="0-9">
+          </div>
+          <div class="col_third text_center">
+            <div class="button button_blue button_block hc_button_get_password"><%= top._langData.get %></div>
+          </div>
+        </div>
+        <h2 class="text_uppercase text_center"><%= top._langData.downloadProgramm %></h2>
+        <div class="text_center">
+          <div class="button button_blue hc_button_download_app"><%= top._langData.download %></div>
+        </div>
+      </div>
+    </script>
+    <script type="text/template" id="news_template">
+      <div class="news_window clearfix">
+        <div class="left_side">
+          <div class="news_menu">
+            <ul class="menu">
+              <% news.forEach(function(item) { %>
+                <li data-id="<%= item.id %>" class="item<%= parseInt(item.seen) === 1 ? ' seen' : '' %>">
+                  <%= item.title %>
+                  <% if (parseInt(item.seen) !== 1) { %><div class="label new"><%= top._langData.new_essence %></div><% } %>
+                </li>
+              <% }) %>
+              <li class="button_more item"><%= top._langData.more + "..." %></li>
+              <li class="spinner_row">
+                <div class="loader"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right_side">
+          <div class="news_content">
+            <div class="outlet"></div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="text/template" id="news_items_template">
+      <% news.forEach(function(item) { %>
+        <li data-id="<%= item.id %>" class="item<%= parseInt(item.seen) === 1 ? ' seen' : '' %>">
+          <%= item.title %>
+          <% if (parseInt(item.seen) !== 1) { %><div class="label new"><%= top._langData.new_essence %></div><% } %>
+        </li>
+      <% }) %>
+    </script>
+  
+</body></html>

@@ -1,0 +1,2769 @@
+<html class="ff"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+                        <style type="text/css">@font-face{font-family:kelson_sans_ruregular;src:url(/assets/fonts/kelson_sans_regular_ru-webfont.eot?v=2017-12-08);src:url(/assets/fonts/kelson_sans_regular_ru-webfont.eot?#iefix?v=2017-12-08) format('embedded-opentype'),url(/assets/fonts/kelson_sans_regular_ru-webfont.woff2?v=2017-12-08) format('woff2'),url(/assets/fonts/kelson_sans_regular_ru-webfont.woff?v=2017-12-08) format('woff'),url(/assets/fonts/kelson_sans_regular_ru-webfont.ttf?v=2017-12-08) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:kelson_sansregular;src:url(/assets/fonts/kelson_sans_regular-webfont.eot?v=2017-12-08);src:url(/assets/fonts/kelson_sans_regular-webfont.eot?#iefix?v=2017-12-08) format('embedded-opentype'),url(/assets/fonts/kelson_sans_regular-webfont.woff2?v=2017-12-08) format('woff2'),url(/assets/fonts/kelson_sans_regular-webfont.woff?v=2017-12-08) format('woff'),url(/assets/fonts/kelson_sans_regular-webfont.ttf?v=2017-12-08) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:kelson_sans_rubold;src:url(/assets/fonts/kelson_sans_bold_ru-webfont.eot?v=2017-12-08);src:url(/assets/fonts/kelson_sans_bold_ru-webfont.eot?#iefix?v=2017-12-08) format('embedded-opentype'),url(/assets/fonts/kelson_sans_bold_ru-webfont.woff2?v=2017-12-08) format('woff2'),url(/assets/fonts/kelson_sans_bold_ru-webfont.woff?v=2017-12-08) format('woff'),url(/assets/fonts/kelson_sans_bold_ru-webfont.ttf?v=2017-12-08) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:kelson_sansbold;src:url(/assets/fonts/kelson_sans_bold-webfont.eot?v=2017-12-08);src:url(/assets/fonts/kelson_sans_bold-webfont.eot?#iefix?v=2017-12-08) format('embedded-opentype'),url(/assets/fonts/kelson_sans_bold-webfont.woff2?v=2017-12-08) format('woff2'),url(/assets/fonts/kelson_sans_bold-webfont.woff?v=2017-12-08) format('woff'),url(/assets/fonts/kelson_sans_bold-webfont.ttf?v=2017-12-08) format('truetype');font-weight:400;font-style:normal}
+.grid-col__4-12{width:33.33333333%}
+.grid-col__4-12-left{margin-left:33.33333333%}
+.grid-col__5-12{width:41.66666667%}
+.grid-col__7-12{width:58.33333333%}
+.grid-col__12-12{width:100%}
+.grid-col__1-12,.grid-col__10-12,.grid-col__11-12,.grid-col__12-12,.grid-col__2-12,.grid-col__3-12,.grid-col__4-12,.grid-col__5-12,.grid-col__6-12,.grid-col__7-12,.grid-col__8-12,.grid-col__9-12{position:relative;min-height:1px}
+.grid-col__9-10{width:90%}
+.grid-col__1-10,.grid-col__10-10,.grid-col__2-10,.grid-col__3-10,.grid-col__4-10,.grid-col__5-10,.grid-col__6-10,.grid-col__7-10,.grid-col__8-10,.grid-col__9-10{position:relative;min-height:1px}
+.grid-wrapper-cols>[class^=grid-col__]{float:left;box-sizing:border-box}
+.grid-wrapper-cols.pd-sm-both,.grid-wrapper-cols.pd-sm-sides{margin-left:-7px;margin-right:-7px}
+.grid-wrapper-cols.pd-sm-both:not(._not-pad)>[class^=grid-col__]{padding:7px}
+.grid-wrapper-cell{width:100%;display:table}
+.grid-wrapper-cell>[class^=grid-col__]{float:none;display:table-cell;vertical-align:middle}
+.grid-wrapper:after,.grid-wrapper:before{content:" ";display:table}
+.grid-wrapper:after{clear:both}
+.grid-col__left{float:left;width:695px}
+.grid-col__right{float:right;width:333px}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+a{background:0;outline:0 none!important}
+a:focus{outline:0!important}
+img{border:0}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=search]{-webkit-appearance:textfield}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+table{width:100%;border-collapse:collapse;border-spacing:0}
+td,th,ul{padding:0}
+ul{margin:0;list-style-type:none}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:400;line-height:1.33;color:#fff}
+.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;margin-bottom:9.5px}
+.h1,.h2,h1,h2{font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:700;text-transform:uppercase}
+.h2,h2{font-size:18px;text-shadow:0 2px 1px rgba(0,0,0,.5),0 0 3px rgba(0,0,0,.5);margin-top:45px;margin-bottom:20px}
+.h4,h4{font-family:kelson_sansregular,kelson_sans_ruregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-size:15px;text-transform:uppercase;color:#0097ec}
+p{font-size:14px;line-height:1.4285714;color:#8da1bd;margin:0 0 15px}
+.pseudolink,a{color:#008aff}
+body,html{height:100%}
+body{background:url(/assets/img/sys/bg/pattern.jpg?v=2017-12-08) 50% 0 repeat-y #000;font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-size:14px;line-height:1.4285714}
+.bg-elem{position:fixed;z-index:1;width:1900px;height:1550px;top:0;left:50%;margin-left:-950px;background:url(/assets/img/sys/bg/head.jpg?v=2017-12-08) 50% 0 repeat-y}
+.plugin-banner~.bg-elem{margin-top:57px}
+.layout{position:relative;z-index:2;height:auto;min-height:100%;min-width:1028px;overflow:hidden}
+.layout:after{content:'';position:absolute;left:50%;margin-left:-514px;width:1026px;top:250px;bottom:50px;z-index:-1;background:url(/assets/img/sys/bg/texture-dark.jpg?v=2017-12-08) 50% 0 repeat;border:1px solid rgba(25,33,42,.75);border-radius:2px;box-shadow:inset 0 0 5px 1px rgba(0,0,0,.5)}
+.wrapper{width:1028px;float:none;display:block;margin-left:auto;margin-right:auto}
+.cnt-pt,.wrapper{box-sizing:border-box}
+.cnt-pt{border:2px solid #000;border-radius:2px;box-shadow:0 0 1px rgba(255,255,255,.1),inset 0 0 10px rgba(255,255,255,.15),inset 0 0 3px rgba(255,255,255,.05);background:url(/assets/img/sys/bg/texture-grey.jpg?v=2017-12-08) 50% 0 repeat}
+.cnt-mt{height:60px;position:relative;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) 50% 0 no-repeat;box-shadow:inset 1px 0 0 rgba(0,0,0,.5),inset -1px 0 0 rgba(0,0,0,.5)}
+.cnt-mt:after,.cnt-mt:before{content:'';position:absolute;width:10px;height:46px;top:5px;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:no-repeat}
+.cnt-mt:before{left:0;background-position:0 -65px}
+.cnt-mt:after{right:0;background-position:-11px -65px}
+.cnt-mt__neon{position:absolute;top:0;right:0;bottom:0;left:0;z-index:0}
+.cnt-mt__neon__over{z-index:-1}
+.cnt-mt__neon-bottom:after,.cnt-mt__neon-bottom:before,.cnt-mt__neon-top:after,.cnt-mt__neon-top:before{content:'';position:absolute;height:43px;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:no-repeat}
+.cnt-mt__neon-top:after,.cnt-mt__neon-top:before{top:-19px}
+.cnt-mt__neon-bottom:after,.cnt-mt__neon-bottom:before{bottom:-23px}
+.cnt-mt__neon-bottom:after,.cnt-mt__neon-top:after{right:-13px;left:50%;background-position:100% -314px}
+.cnt-mt__neon-bottom:before,.cnt-mt__neon-top:before{left:-13px;right:50%;background-position:0 -314px}
+.cnt-mt__neon-anim-bottom:after,.cnt-mt__neon-anim-bottom:before,.cnt-mt__neon-anim-top:after,.cnt-mt__neon-anim-top:before{content:'';position:absolute;height:43px;background-image:url(/assets/img/sys/anim/title.gif?v=2017-12-08);background-repeat:no-repeat}
+.cnt-mt__neon-anim-top:after,.cnt-mt__neon-anim-top:before{top:-19px}
+.cnt-mt__neon-anim-bottom:after,.cnt-mt__neon-anim-bottom:before{bottom:-23px}
+.cnt-mt__neon-anim-bottom:after,.cnt-mt__neon-anim-top:after{right:6px;left:50%;background-position:95% -263px}
+.cnt-mt__neon-anim-bottom:before,.cnt-mt__neon-anim-top:before{left:6px;right:50%;background-position:-547px -113px}
+.cnt-mt__md-btns{padding:11px}
+.poster{display:block;border:2px solid #000;border-radius:2px;text-decoration:none;background-color:#394351;box-shadow:0 0 0 1px rgba(63,72,86,.75),inset 0 -5px 5px 1px rgba(106,121,162,.31),inset 0 5px 13px rgba(111,117,128,.75);background-image:-webkit-linear-gradient(top,#3e4557 33%,#0330e6);background-image:linear-gradient(180deg,#3e4557 33%,#0330e6);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3e4557', endColorstr='#ff0330e6', GradientType=0)}
+.poster-img{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;overflow:hidden}
+.poster-img,.poster-img img{width:100%;display:block}
+.poster-img img{position:relative;-webkit-transition:all 1s ease-in-out 0s;transition:all 1s ease-in-out 0s}
+.neon-header{position:relative;height:70px;z-index:1}
+.neon-header:after,.neon-header:before{content:'';position:absolute;height:96px;top:-10px;z-index:0;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:no-repeat}
+.neon-header:after{right:-26px;left:50%;background-position:100% -217px}
+.neon-header:before{left:-26px;right:50%;background-position:-504px -120px}
+.neon-header>.h4{font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:700;color:#fff;font-size:24px;text-align:center;text-transform:uppercase;text-shadow:0 5px 5px #000,0 -2px 0 #1a60a6;line-height:65px;position:relative;z-index:2;margin:0}
+.neon-header>.h4:after,.neon-header>.h4:before{content:'';position:absolute;height:96px;top:-10px;z-index:0;background-image:url(/assets/img/sys/anim/title.gif?v=2017-12-08);background-repeat:no-repeat}
+.neon-header>.h4:after{right:-26px;left:50%;background-position:100% -217px}
+.neon-header>.h4:before{left:-26px;right:50%;background-position:-504px -120px}
+.banner{padding:0;margin:0 4px;border:3px solid #000;border-radius:2px;box-shadow:0 0 1px rgba(215,225,230,.3)}
+.banner a,.banner img{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;display:block}
+.banner img{width:100%}
+.banner .banner_640x128,.banner .banner_640x128 img{height:128px}
+.form-group{padding:0;margin:0 0 16px;border:0;min-width:0}
+.form-group__input{padding:3px 6px;background-color:#000717;border:1px solid #3b424e;outline:0;color:#fff;box-shadow:0 0 2px rgba(83,95,111,.5);width:100%;height:38px;box-sizing:border-box;border-radius:2px}
+.form-group__input-wrap{position:relative}
+.form-group__input:focus{border:1px solid #929497;box-shadow:0 0 2px rgba(255,255,255,.5)}
+.form-group__input:-moz-placeholder,.form-group__input:-ms-input-placeholder,.form-group__input::-moz-placeholder,.form-group__input::-webkit-input-placeholder{color:#fff}
+.form-error.help-block{-webkit-transition:all .4s ease-in-out 0s;transition:all .4s ease-in-out 0s;position:absolute;top:0;left:auto;right:-88%;width:90%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height:auto;padding:7px;margin:0 -6px 0 0;line-height:21px;color:#fff;font-size:14px!important;border:1px solid #db0000;background-color:#5f0d23;box-shadow:0 1px 3px 1px rgba(0,0,0,.5),0 0 0 1px #250101;z-index:5;font-weight:400;text-transform:none!important;text-shadow:0 0 0 transparent;display:none!important}
+.form-error.help-block.blue{border:1px solid #2685ff;background-color:#0b194e}
+.form-error.help-block:after,.form-error.help-block:before{content:'';position:absolute;width:0;height:0;border-style:solid}
+.form-error.help-block:before{border-width:7px 7px 7px 0;border-color:transparent #5f0d23 transparent transparent;left:-7px;top:12px;z-index:2}
+.form-error.help-block:after{border-width:9px 9px 9px 0;border-color:transparent #db0000 transparent transparent;left:-9px;top:10px;z-index:1}
+.form-error.help-block.blue:before{border-color:transparent #0b194e transparent transparent}
+.form-error.help-block.blue:after{border-color:transparent #2685ff transparent transparent}
+.top .form-error.help-block{border-radius:2px;z-index:105;display:block;visibility:visible;position:absolute;top:auto;right:auto;bottom:100%;left:-4px;margin-bottom:6px;box-sizing:border-box;padding:9px;height:auto;min-height:20px;font-size:15px;filter:alpha(opacity=0);color:#fff!important;box-shadow:0 1px 3px 1px rgba(0,0,0,.5),0 0 0 1px #250101;line-height:16px;width:auto}
+.top .form-error.help-block:before{border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #5f0d23;left:50%;margin-left:-2px;bottom:-12px;top:auto}
+.top .form-error.help-block:after{border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #d81049;left:50%;margin-left:-3px;bottom:-16px;top:auto}
+.top .form-error.help-block.blue:before{border-top:5px solid #0b194e}
+.top .form-error.help-block.blue:after{border-top:6px solid #2685ff}
+.left .form-error.help-block{bottom:auto!important;left:-90%;right:auto;top:0!important;width:90%}
+.left .form-error.help-block:before{border-left:7px solid #5f0d23;border-bottom:7px solid transparent;border-right:0;border-top:7px solid transparent;right:-7px;left:auto;top:13px}
+.left .form-error.help-block:after{border-left:8px solid #db0000;border-bottom:8px solid transparent;border-right:0;border-top:8px solid transparent;right:-9px;left:auto;top:12px}
+.left .form-error.help-block.blue:before{border-left:7px solid #0b194e}
+.left .form-error.help-block.blue:after{border-left:8px solid #2685ff}
+._show{position:relative}
+._show>.help-block.form-error{display:block!important;visibility:hidden;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .2s ease-in-out 0s;transition:all .2s ease-in-out 0s}
+._focus:focus+.help-block.form-error{visibility:visible;opacity:1;filter:alpha(opacity=100)}
+.logo{width:357px;height:155px;position:absolute;z-index:3;top:0;left:50%;margin-left:-179px;background:url(/assets/img/sys/logo_shadow.png?v=2017-12-08) 50% 100% no-repeat}
+.logo-link{display:block;width:357px;height:137px;position:relative;left:0;top:-2px;background:url(/assets/img/sys/logo.gif?v=2017-12-08) 50% 0 no-repeat}
+.logo-link:after,.logo-link:before{content:'';height:10px;z-index:-1}
+.logo-link:before{right:15px;left:15px;box-shadow:0 3px 3px rgba(0,0,0,.5)}
+.logo-link:after,.logo-link:before{position:absolute;top:auto;bottom:0}
+.logo-link:after{right:5px;left:5px;box-shadow:0 8px 8px rgba(0,0,0,.5)}
+.promo{margin:0 0 15px}
+.promo,.promo-slider{position:relative;z-index:1}
+.promo-slider{height:240px;overflow:hidden}
+.promo-panel{box-shadow:0 5px 5px rgba(0,0,0,.75);position:relative;z-index:2}
+.promo-panel .cnt-mt__md-btns{padding-left:20px;padding-right:20px}
+.promo-panel__wrapper{padding:10px 18px}
+.promo-panel__wrapper>a{display:block;text-decoration:none!important}
+.promo-panel__jackpot{float:right;width:270px;height:50px;margin:-5px 0 0 -270px;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) 0 -368px no-repeat}
+.promo-panel__jackpot+.promo-panel__title{margin-right:275px}
+.promo-panel__winners{float:right;width:185px;height:50px;margin:-5px 0 -5px -180px;padding-top:2px}
+.promo-panel__winners+.promo-panel__title{margin-right:185px}
+.promo-panel__title{padding-top:6px;font-size:15px;line-height:18px;color:#75859d;text-shadow:0 0 8px #000}
+.promo-panel .grid-col__7-12 .cnt-mt{margin-right:30px}
+.promo-panel .grid-col__5-12 .cnt-mt{margin-left:-30px}
+.header{padding:35px 0 0;position:relative}
+.header-nav{height:40px;padding:0 3px;font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:700;font-size:14px;line-height:40px;white-space:nowrap}
+.header-nav ul{display:flex}
+.header-nav li{display:inline-block}
+.header-nav li:nth-child(1){width:120px}
+.header-nav li:nth-child(2){width:110px;text-align:center}
+.header-nav li:nth-child(3){width:100px;text-align:right}
+.header-nav li:nth-child(4){width:95px;margin-left:auto}
+.header-nav li:nth-child(5){width:145px;text-align:center}
+.header-nav li:nth-child(6){width:90px;text-align:right}
+.header-nav a{color:#8da1bd;text-transform:uppercase;text-decoration:none;text-shadow:0 5px 5px rgba(0,0,0,.75),0 0 5px rgba(0,46,114,.75);position:relative;z-index:5}
+.header-nav a.active,.header-nav a:focus{color:#0097eb}
+.main{margin-right:10px}
+.content{padding:0 14px 14px;margin:0 0 20px;position:relative;z-index:2;min-height:136px;overflow:visible}
+.content:after{content:'';position:absolute;top:0;right:0;bottom:auto;left:0;height:136px;z-index:-1;opacity:.1;filter:alpha(opacity=10);background:url(/assets/img/sys/bg/cnt-light.png?v=2017-12-08) 50% 0 no-repeat}
+.sidebar{margin:0 0 20px}
+.sidebar-block{margin:0 0 15px}
+.sidebar-block .neon-header{margin-bottom:15px}
+.sidebar-block .poster{margin-bottom:10px}
+.plugin-banner{min-width:1028px}
+.cas2play-hint_container{height:50px;margin-bottom:5px;background:#033365 url(/assets/img/elements/cas2play/bg.png?v=2017-12-08) repeat-x;position:relative;z-index:999}
+.cas2play-hint_container:after,.cas2play-hint_container:before{content:'';height:6px;position:absolute;top:50px;bottom:auto;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:repeat-x;z-index:1}
+.cas2play-hint_container:before{right:50%;left:0;background-position:0 -470px}
+.cas2play-hint_container:after{left:50%;right:0;background-position:100% -470px}
+.cas2play-hint_container>.btn{margin-top:7px;position:absolute;top:0;right:10px;bottom:auto;left:auto}
+.cas2play-hint_inner{position:absolute;top:0;right:0;bottom:0;left:0;z-index:1001;width:1015px;margin:0 auto;color:#fff;text-align:center;line-height:50px}
+.cas2play-hint_title-block{display:inline-block;vertical-align:middle;padding:0;margin:0;color:#fff;font-size:18px;font-weight:400;text-shadow:0 1px 1px rgba(0,0,0,.75);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cas2play-hint_btn-block{display:inline-block;vertical-align:middle;width:293px}
+@media only screen and (max-width:1120px){.cas2play-hint_btn-block{margin-right:50px}}
+*+.cas2play-hint_btn-block{margin-left:25px}
+.carousel{position:relative;min-height:200px}
+.carousel-indicators{padding:0;font-size:0;line-height:0;list-style-type:none;text-align:center;display:inline-block;z-index:2}
+.carousel-indicators .indicator{cursor:pointer;display:inline-block;width:12px;height:12px;background-color:transparent;border:0;margin:0 6px 0 0}
+.carousel-indicators .indicator i{display:block;width:12px;height:12px;border-radius:6px;background-color:#3f5971}
+.carousel-indicators .indicator.active i{background-color:#fff}
+.carousel-inner{height:100%;position:relative;overflow:hidden;z-index:1}
+.carousel-inner .item{position:absolute;top:0;right:0;bottom:auto;left:0;opacity:0;filter:alpha(opacity=0);-webkit-transition:all 1.2s ease-in-out;transition:all 1.2s ease-in-out;z-index:0}
+.carousel-inner .active{opacity:1;filter:alpha(opacity=100);z-index:2}
+.carousel-img{position:relative;z-index:1;height:240px}
+.carousel-caption{position:absolute;top:40px;right:auto;bottom:20px;left:20px;max-width:320px;z-index:2}
+.carousel-caption .h2{margin-top:0}
+.carousel-caption .btn{width:270px}
+.header .carousel{height:100%;overflow:hidden}
+.header .carousel-indicators{position:absolute;top:auto;right:auto;bottom:20px;left:50%;width:150px;height:10px;margin-left:-75px}
+.header .carousel-inner{height:100%}
+.header .carousel-inner .item{width:100%;height:100%}
+.header .carousel-inner .item .carousel-caption .h2{height:92px;max-height:92px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.promo-panel .carousel,.promo-panel .carousel-inner{height:50px;min-height:50px}
+#main-carousel .carousel-inner{background-color:#0b0e31}
+#main-carousel .carousel-inner .item{-webkit-transition:all .35s ease-in-out;transition:all .35s ease-in-out}
+.tmb{display:block;margin-left:auto;margin-right:auto;padding:8px 7px 3px;width:193px;height:140px;border-radius:2px;box-shadow:0 0 0 1px rgba(63,72,86,.75);background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) 0 -120px no-repeat;color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.75);text-decoration:none}
+.tmb,.tmb-img{position:relative}
+.tmb-img{border:2px solid #000;border-radius:2px;box-shadow:0 0 1px rgba(121,131,153,.85);overflow:hidden}
+.tmb-img img{display:block;max-width:100%;height:auto;-webkit-transition:all 1s ease-in-out;transition:all 1s ease-in-out;position:relative;z-index:1}
+.tmb-title{margin:0 26px 0 1px;font-family:Arial,Helvetica,Verdana,Tahoma,sans-serif;font-size:14px;line-height:26px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tmb-action{position:absolute;top:0;right:0;bottom:0;left:0;z-index:3;background-color:transparent}
+.tmb-action .btn-blue,.tmb-action .btn-green{-webkit-transition:margin .3s ease-in-out;transition:margin .3s ease-in-out}
+.tmb-action .btn-green{margin-top:-70px;position:absolute;top:auto;right:30px;bottom:auto;left:30px}
+.tmb-action .btn-blue{margin-top:120px;position:absolute;top:auto;right:50px;bottom:auto;left:50px}
+.tmb-fav{position:absolute;top:auto;right:3px;bottom:3px;left:auto;width:26px;height:26px}
+.tmb-fav .ico{cursor:pointer}
+.tmb .sticker{position:absolute;top:10px;right:auto;bottom:auto;left:9px}
+.user-bar{position:relative;z-index:2}
+.user-bar__info,.user-bar__login,.user-bar__logout,.user-bar__socials{padding:11px 15px;position:relative;z-index:2}
+.user-bar__login .btn{float:right;width:100px}
+.user-bar__login .btn+.btn{width:200px;margin-right:10px}
+.user-bar__socials p{float:left;width:50px;margin-right:-50px;font-size:12px;line-height:12px;color:#75859d;text-shadow:0 0 8px #000}
+.user-bar__socials .socials-md{margin-left:53px}
+.user-bar .btn.active .ico-msg,.user-bar .btn:focus .ico-msg{background-position:-789px -90px}
+.user-bar .btn.active .ico-logout,.user-bar .btn:focus .ico-logout{background-position:-933px -65px}
+.socials-md{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;white-space:nowrap}
+.socials-md li{display:inline-block;margin:0 3px}
+.main-menu{margin-right:1px;text-transform:uppercase}
+.main-menu menu,.main-menu ul{padding:0;margin:0}
+.main-menu .grid-col__auto+.grid-col__auto .btn{border-left:1px solid #000}
+.main-menu .grid-col__auto+.grid-col__auto .btn:after{right:-5px}
+.main-menu .btn{overflow:visible;box-shadow:none}
+.main-menu .btn:after,.main-menu .btn:before{content:'';height:9px;position:absolute;top:-9px;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:no-repeat}
+.main-menu .btn:before{left:-6px;right:50%;background-position:0 -357px}
+.main-menu .btn:after{right:-6px;left:50%;background-position:100% -357px}
+.main-menu .btn span{font-size:18px!important}
+.main-menu .btn.active:after,.main-menu .btn.active:before,.main-menu .btn:focus:after,.main-menu .btn:focus:before{height:50px;width:13px;top:0;bottom:auto}
+.main-menu .btn.active:before,.main-menu .btn:focus:before{left:0!important;right:auto;background-position:-658px -64px}
+.main-menu .btn.active:after,.main-menu .btn:focus:after{right:0!important;left:auto;background-position:-671px -64px}
+.main-menu .btn.active span,.main-menu .btn:focus span{color:#000663;text-shadow:0 1px 1px rgba(158,208,241,.5),1px 0 1px rgba(158,208,241,.5),-1px 0 1px rgba(158,208,241,.5)}
+.search{padding:1px 17px 14px 15px}
+.search .form-group{height:37px;margin:0;position:relative}
+.search .form-group__input{height:37px}
+.search .form-group__input-wrap{margin-right:35px;position:relative;z-index:1}
+.search .form-group__button-wrap{position:absolute;top:0;right:0;bottom:auto;left:auto;z-index:2;width:38px;height:38px}
+.search .form-group__button-wrap .btn:focus .ico-search{background-position:-808px -64px}
+.center-block{float:none;display:block;margin-left:auto;margin-right:auto}
+.pull-right{float:right!important}
+.pull-left{float:left!important}
+.game-filters{padding:7px;margin:-7px -14px 0;height:26px;background-color:rgba(0,0,0,.35);border-bottom:1px solid #000;box-shadow:0 2px 0 rgba(255,255,255,.075)}
+.game-filters ul{height:inherit}
+.game-filters__item-icons,.game-filters__item-titles{display:inline-block;padding-top:1px;padding-bottom:1px;font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:700;font-size:0;height:24px}
+.game-filters__item-icons a,.game-filters__item-titles a{display:inline-block;height:24px;position:relative;text-decoration:none}
+.game-filters__item-icons a.active,.game-filters__item-titles a.active{color:#0097ec;text-shadow:0 1px 1px rgba(0,0,0,.75),1px 0 1px rgba(0,0,0,.5),-1px 0 1px rgba(0,0,0,.5),0 0 7px rgba(0,0,0,.95),0 0 10px rgba(0,0,0,.95),0 0 5px rgba(0,0,0,.95)}
+.game-filters__item-icons a.active .ico-filt-vis,.game-filters__item-titles a.active .ico-filt-vis{background-position:-243px -279px}
+.game-filters__item-icons a.active:after,.game-filters__item-icons a.active:before,.game-filters__item-titles a.active:after,.game-filters__item-titles a.active:before{content:'';position:absolute;top:auto;right:auto;bottom:-16px;left:50%;width:0;height:0;margin-left:-8px;border-right:8px solid transparent;border-left:8px solid transparent}
+.game-filters__item-icons a.active:before,.game-filters__item-titles a.active:before{margin-left:-8px;border-top:8px solid #000;z-index:2}
+.game-filters__item-icons a.active:after,.game-filters__item-titles a.active:after{bottom:-18px;border-top:8px solid rgba(255,255,255,.1);z-index:1}
+.game-filters__item-titles{margin:0 7px;text-transform:uppercase}
+.game-filters__item-titles a{font-size:15px;line-height:24px;color:#8da1bd;text-shadow:0 1px 1px rgba(0,0,0,.75),1px 0 1px rgba(0,0,0,.5),-1px 0 1px rgba(0,0,0,.5),0 0 7px rgba(0,0,0,.95),0 0 10px rgba(0,0,0,.95),0 0 5px rgba(0,0,0,.95)}
+.game-filters__item-titles .form-error.help-block{white-space:nowrap;font-family:kelson_sansregular,kelson_sans_ruregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:400}
+.game-filters__item-titles .form-error.help-block:after,.game-filters__item-titles .form-error.help-block:before{left:12px}
+.game-filters__item-titles:nth-child(2) .help-block:after,.game-filters__item-titles:nth-child(2) .help-block:before{left:40px}
+.game-filters__item-titles:nth-child(3) .help-block:after,.game-filters__item-titles:nth-child(3) .help-block:before{left:37px}
+.game-filters__item-titles:nth-child(4) .help-block:after,.game-filters__item-titles:nth-child(4) .help-block:before{left:25px}
+.game-filters__item-titles:nth-child(5) .help-block:after,.game-filters__item-titles:nth-child(5) .help-block:before{left:31px}
+.game-filters__item-titles:nth-child(6) .help-block:after,.game-filters__item-titles:nth-child(6) .help-block:before{left:26px}
+.game-filters__item-icons{margin-right:5px}
+.game-filters__item-icons a{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
+.game-filters__item-icons .form-error.help-block{white-space:nowrap}
+.game-filters__item-icons .form-error.help-block:after,.game-filters__item-icons .form-error.help-block:before{left:12px}
+.promo-winners{width:293px;height:215px;position:absolute;top:13px;right:20px;bottom:auto;left:auto;z-index:2;background-color:rgba(0,0,0,.4)}
+.winners-widget{height:50px}
+.winners-table{display:block;text-decoration:none!important;padding:8px 10px 7px}
+.winners-table>.form-error.help-block{margin-left:-10px;visibility:hidden;display:block!important;width:60px;left:-60px;height:30px;line-height:15px;text-align:center;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .4s ease-in-out 0s;transition:all .4s ease-in-out 0s}
+.winners-table>.form-error.help-block:after{top:6px}
+.winners-table>.form-error.help-block:before{top:8px}
+.winners-table td{padding:0 8px}
+.winners-table .winner-name{text-align:left}
+.winners-table .winner-total{text-align:right}
+.winner-item,.winner-item td{height:40px;vertical-align:middle}
+.winner-name,.winner-place,.winner-total{white-space:nowrap}
+.winner-place{width:25px;height:28px;font-family:kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;font-weight:700;font-size:30px;line-height:40px;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.5);color:#ffc000;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background:url(/assets/img/pic/sprite-num-little.png?v=2017-12-08) no-repeat 0 0}
+.winner-place._2{background-position:0 -27px}
+.winner-place._3{background-position:0 -54px}
+.winner-place._4{background-position:0 -83px}
+.winner-place._5{background-position:1px -112px}
+.winner-name,.winner-total{font-size:14px;line-height:20px;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);max-width:100px;overflow:hidden}
+.winner-name{color:#fff}
+.winner-total{color:#ffc000}
+.jackpot{text-align:center}
+.jackpot-wrap,.jackpot__money{display:inline-block}
+.jackpot__money{height:48px}
+.jackpot__money-span{display:inline-block}
+.jackpot__money-span._num{width:21px;height:35px;background:url(/assets/img/pic/numbers-jackpot.png?v=2017-12-08) no-repeat -2px 0;margin:0 -2.5px}
+.jackpot__money-span._dot{width:11px;height:18px;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) -828px -101px;background-position:-619px -407px;margin-bottom:-5px}
+.jackpot__money-span._dot._l{width:11px;height:18px;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) -854px -97px;background-position:-649px -403px;margin-bottom:-1px}
+.jackpot__money-span._show{display:inline-block!important}
+.jackpot__currency{display:inline-block;width:20px;height:44px;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) -876px -82px;background-position:-673px -397px;margin-bottom:-3px;margin-left:2px}
+.best-wheel-btn-spin.disable:before{-webkit-animation:none;animation:none;background-color:transparent;box-shadow:inset 0 0 20px 0 #000}
+.pagination__element.active,.pagination__element.active .__text{color:#fff}
+.pagination__element.active .btn-dark.btn-md{background-position:0 0}
+.btn{display:block;position:relative;overflow:hidden;background-image:url(/assets/img/sys/bg/btns.png?v=2017-12-08);background-repeat:repeat}
+button.btn{padding:0;border:0;width:100%}
+button.btn span{width:100%}
+.btn,.btn span{font-family:kelson_sans_rubold,kelson_sansbold,kelson_sans_ruregular,kelson_sansregular,Arial,Helvetica,Verdana,Tahoma,sans-serif;color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.5),1px 0 1px rgba(0,0,0,.15),-1px 0 1px rgba(0,0,0,.15);text-decoration:none;text-align:center;outline:0}
+.btn span{box-sizing:border-box;z-index:1}
+.btn span:after,.btn span:before{content:'';position:absolute;top:0;width:1px;background-color:rgba(255,255,255,.15)}
+.btn span:after{left:0}
+.btn span:before{right:0}
+.btn-green.btn-lg{background-position:0 -510px}
+.btn-green.btn-lg.active{background-position:0 -616px}
+.btn-green.btn-md{background-position:0 -117px}
+.btn-green.btn-md.active{background-position:0 -195px}
+.btn-blue.btn-lg{background-position:0 -351px}
+.btn-blue.btn-lg.active{background-position:0 -457px}
+.btn-blue.btn-md{background-position:0 0}
+.btn-blue.btn-md.active{background-position:0 -78px}
+.btn-dark.btn-md{background-position:0 -234px}
+.btn-dark.btn-md.active{background-position:0 -312px}
+.btn-lg{box-shadow:0 1px 2px 1px rgba(0,0,0,.25),0 1px 1px 1px rgba(0,0,0,.5)}
+.btn-lg,.btn-lg span{height:52px;line-height:52px;font-size:24px}
+.btn-lg span:after,.btn-lg span:before{height:48px}
+.btn-md{box-shadow:0 1px 2px 0 rgba(0,0,0,.75)}
+.btn-md,.btn-md span{height:38px;line-height:38px;font-size:18px}
+.btn-md.btn-square{height:38px;width:38px}
+.btn-md span:after,.btn-md span:before{height:36px}
+.btn-md.btn-square .ico{margin:6px 4px 6px 6px}
+.btn.active{top:1px}
+.btn.active span:after,.btn.active span:before{background-color:rgba(255,255,255,.25)}
+.btn-social{width:38px;background-position:0 -234px;box-shadow:0 1px 2px 0 rgba(0,0,0,.75)}
+.btn-social,.btn-social span{height:38px;line-height:38px;font-size:0}
+.btn-social span:after,.btn-social span:before{height:36px}
+.btn-social .ico{margin:6px 4px 6px 6px}
+.btn-fb.active{background-position:0 -708px}
+.btn-tw.active{background-position:0 -786px}
+.btn-vk.active{background-position:0 -864px}
+.btn-ok.active{background-position:0 -942px}
+.btn-ya.active{background-position:0 -1020px}
+.btn-mailru.active{background-position:0 -1098px}
+.ico{width:26px;height:24px;display:inline-block;background-image:url(/assets/img/sys/bg/sprite.png?v=2017-12-08);background-repeat:no-repeat}
+.ico-vk{background-position:-297px -279px}
+.ico-fb{background-position:-108px -278px;width:21px}
+.ico-ya{background-position:-1px -421px}
+.ico-mailru{background-position:-162px -279px}
+.ico-ok{background-position:-189px -279px}
+.ico-tw{background-position:-216px -279px}
+.ico-filt-vis{background-position:-270px -279px}
+.ico-filt-vis.active,.ico-filt-vis:focus{background-position:-243px -279px}
+.ico-filt-fav{background-position:-27px -279px}
+.ico-filt-fav.active,.ico-filt-fav:focus{background-position:0 -279px}
+.ico-filt-alph{width:33px;background-position:-716px -61px}
+.ico-filt-alph.active,.ico-filt-alph:focus{background-position:-716px -89px}
+.ico-filt-cash{width:20px;background-position:-692px -61px}
+.ico-filt-cash.active,.ico-filt-cash:focus{background-position:-692px -89px}
+.ico-tmb-fav{background-position:-81px -279px}
+.ico-search{background-position:-756px -64px}
+.ico-closepopup{background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) no-repeat -321px -279px;width:28px;height:24px;display:block;z-index:5}
+.ico-closepopup,.sticker{position:absolute;top:0;left:0}
+.sticker{right:auto;bottom:auto;z-index:2}
+.sticker span{display:block;margin-bottom:6px}
+.sticker-new{width:36px;height:18px;background:url(/assets/img/sys/bg/sprite.png?v=2017-12-08) -22px -62px no-repeat}
+.week-game .tmb{background-image:url(/assets/img/sys/bg/bg-week-game.png?v=2017-12-08);background-position:0 0;width:282px;height:204px}
+.week-game .tmb-title{margin:0 1px;font-size:18px;text-align:center}
+.week-game .tmb-img{height:178px;box-sizing:border-box}
+.week-game .tmb-img img{border:1px solid #000;width:100%;max-width:276px}
+.custom-background-preview.bg-active .custom-background-preview-img{border-color:#8f9093;box-shadow:inset 0 0 0 2px #000,1px -1px 0 rgba(143,144,148,.4)}
+.popup-inbox__center-block ._show._bg-th-par .help-block.form-error .close{display:none;opacity:0!important}
+.scrollbar-dynamic>.scroll-element.scroll-draggable .scroll-element_outer{overflow:hidden;-ms-filter:"alpha(Opacity=70)";filter:alpha(opacity=70);opacity:.7}
+.scrollbar-dynamic>.scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size{opacity:1}
+.scrollbar-dynamic>.scroll-element.scroll-draggable .scroll-element_outer .scroll-bar{height:100%;width:7px;border-radius:7px}
+.scrollbar-dynamic>.scroll-element.scroll-x.scroll-draggable .scroll-element_outer{height:8px;min-height:7px}
+.scrollbar-dynamic>.scroll-element.scroll-y.scroll-draggable .scroll-element_outer{min-width:7px;width:8px}
+.form-group:after,.form-group:before{content:" ";display:table}
+.form-group:after{clear:both}</style>
+            
+    
+                    
+                
+                
+                            <title>Казино Admiral 777: в игровые автоматы играйте бесплатно</title>
+                <meta name="description" content="Новое интернет казино Адмирал ⚓⚓⚓ презентует игровые автоматы, в которые можно играть бесплатно и без регистрации, или на реальные деньги. Играйте онлайн в клубе Admiral 777 ➥прямо сейчас !">
+                <meta name="keywords" content="казино Адмирал, Admiral казино, игровые автоматы, онлайн казино, игровой клуб">
+                    
+    
+    <meta name="google-site-verification" content="snrqUXYOREOmGy5b8L2eUqJ5ILNo9h_IgILqcjrN3qg">
+    <meta name="yandex-verification" content="6ff482085c371800">
+
+    
+    <link type="text/css" rel="stylesheet" href="https://node.yhelperinfo.net/css/faq_custom.css"><link type="text/css" rel="stylesheet" href="https://node.yhelperinfo.net/css/chat_custom.css"><link type="text/css" rel="stylesheet" href="https://node.yhelperinfo.net/css/push.css"><link type="text/css" rel="stylesheet" href="https://node.yhelperinfo.net/css/rating.css"></head>
+
+                    <body class="body--new-year-2018">
+
+    
+                                    <div class="plugin-banner">
+    <div class="cas2play-hint_container" data-cas2hint="block" id="cas2pay-banner" data-id="1" data-type="not_installed_plugin">
+        <div class="cas2play-hint_inner">
+            <div class="cas2play-hint_title-block">Установите плагин Neverblock и получите бесперебойный доступ к казино</div>
+
+                            <div class="cas2play-hint_btn-block">
+                    <a class="btn btn-green btn-md" href="/plugin" id="stretch-button">
+                        <span>Установить</span>
+                    </a>
+                </div>
+                    </div>
+        <a href="#" class="btn btn-dark btn-md btn-square" data-cas2hint="close" id="cas2pay-close">
+            <span><i class="ico ico-closepopup"></i></span>
+        </a>
+    </div>
+</div>                
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://lot.hgdat.com/tracker.js"></script><script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function(event) {
+            $('#cas2pay-close').on('click', function(){
+                $('#cas2pay-banner').slideUp(300);
+                setBannerCookie();
+            });
+
+            $('#install-plugin').on('click', setBannerCookie);
+
+            function setBannerCookie() {
+                var date = new Date();
+
+                date.setTime(date.getTime() + 3 * 24 * 60 * 60 * 1000);
+                $.cookie('cas2pay_closed', 1, { expires: date, path: '/' });
+            }
+        });
+    </script>
+
+    <div style="display: none" class="track-analytics-data" data-project="admiral"></div>
+
+<!-- Parallax Block -->
+
+
+
+<div class="bg-elem"></div>
+
+<!-- Main block -->
+
+
+<div class="layout">
+
+    <!-- Often played games widget -->
+            
+    
+    <!-- Header -->
+            <header class="header">
+    <div class="wrapper">
+
+        <div class="logo">
+            <a class="logo-link" href="/"></a>
+        </div>
+
+        <!-- Top menu -->
+        <!-- header navigation-->
+<nav class="header-nav">
+    <ul>
+        <li class="header-nav__item
+                "><a href="/igrovye-avtomaty/">Игровой зал</a></li>
+
+        <li class="header-nav__item
+                "><a href="/tournaments/">Турниры</a></li>
+
+        <li class="header-nav__item
+                "><a href="/lotteries/">Лотереи</a></li>
+
+
+        <li class="header-nav__item
+                "><a href="/news/">Новости</a></li>
+
+
+        <li class="header-nav__item
+                "><a href="/hall-of-fame/">Зал славы</a></li>
+
+                
+                                    
+        <li class="header-nav__item
+                                ">
+            <a href="/bonuses/list">
+                                Акции
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+        <!-- User bar -->
+        <div class="user-bar grid-wrapper">
+    <div class="grid-wrapper-cols">
+        <div class="grid-col__4-12">
+            <div class="cnt-mt">
+                <div class="cnt-mt__neon">
+                    <div class="cnt-mt__neon-top"></div>
+                    <div class="cnt-mt__neon-bottom"></div>
+                    <div class="cnt-mt__neon-anim-top"></div>
+                    <div class="cnt-mt__neon-anim-bottom"></div>
+
+                
+                    <!-- Userbar: socials buttons -->
+                    <div class="user-bar__socials">
+
+    <p>Вход
+        через
+        соц.сеть:</p>
+
+        <ul class="socials-md" id="ulogin1513262008" login-data="redirect_uri=https%3A%2F%2Fclub-admira1.club%2Fulogin_check;receiver=https%3A%2F%2Fclub-admira1.club%2Flogin4play.html">
+    <li>
+        <a class="btn btn-social btn-fb no-opacity" x-login-button="facebook" href="#">
+            <span><i class="ico ico-fb"></i></span>
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-social btn-tw no-opacity" x-login-button="twitter" href="#">
+            <span><i class="ico ico-tw"></i></span>
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-social btn-vk no-opacity" x-login-button="vkontakte" href="#">
+            <span><i class="ico ico-vk"></i></span>
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-social btn-ok no-opacity" x-login-button="odnoklassniki" href="#">
+            <span><i class="ico ico-ok"></i></span>
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-social btn-ya no-opacity" x-login-button="yandex" href="#">
+            <span><i class="ico ico-ya"></i></span>
+        </a>
+    </li>
+    <li>
+        <a class="btn btn-social btn-mailru no-opacity" x-login-button="mailru" href="#">
+            <span><i class="ico ico-mailru"></i></span>
+        </a>
+    </li>
+</ul>
+<script>
+    (function(){
+        var loader = setInterval(function(){
+            if (typeof login4play !== 'undefined') {
+                clearInterval(loader);
+                login4play.customInit('ulogin1513262008');
+            }
+        }, 100);
+    })();
+</script>
+</div>
+                                </div>
+            </div>
+        </div>
+
+        <div class="grid-col__4-12 grid-col__4-12-left">
+            <div class="cnt-mt">
+                <div class="cnt-mt__neon">
+                    <div class="cnt-mt__neon-top"></div>
+                    <div class="cnt-mt__neon-bottom"></div>
+                    <div class="cnt-mt__neon-anim-top"></div>
+                    <div class="cnt-mt__neon-anim-bottom"></div>
+
+                
+                    <!-- Userbar: login buttons -->
+                    <div class="user-bar__login">
+
+    <a class="btn btn-blue btn-md" href="#popup-login">
+        <span>Вход</span>
+    </a>
+    <a class="btn btn-green btn-md" href="#popup-reg">
+        <span>Зарегистрироваться</span>
+    </a>
+
+</div>
+
+                                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="promo">
+
+            <!-- main slider -->
+            <div class="promo-slider">
+
+    <div class="carousel carousel-fade slide" id="main-carousel" data-ride="carousel" data-interval="4000">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+                        <li data-target="#main-carousel" data-slide-to="0" class="active  indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="1" class=" indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="2" class=" indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="3" class=" indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="4" class=" indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="5" class=" indicator">
+                <i></i>
+            </li>
+                        <li data-target="#main-carousel" data-slide-to="6" class=" indicator">
+                <i></i>
+            </li>
+                    </ol>
+
+        <div class="carousel-inner">
+                            <div class="item active">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/2018-_tournament-jpg1512755767.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Все на борт<br>за сокровищами Севера!<br>25 наград и супер приз iPhone 8!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="/tournaments/152">
+                                                            <span>Подробнее</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/2018-min-jpg1512640880.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Новогоднее приключение<br>от Адмирала!<br>Экспедиция на Северный полюс!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="/news/new-year-main">
+                                                            <span>Подробнее</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/adm-1024x240-jpg1482771063-jpg1512759665.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Адмирал представляет<br>ТОП 8 способов <br>обхода блокировок!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="/anti-block">
+                                                            <span>Подробнее</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/antiblock-min-2_adm-jpg1490856935-jpg1512759592.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Скачиваемая версия казино<br> Admiral- Надежный доступ<br>на вашем компьютере</div>
+                        
+                        <a class="btn btn-green btn-lg" href="https://dc.club-admira1.online/release/?project_code=admiral&amp;platform=win&amp;refcode=organic-2017-12">
+                                                            <span>Скачать программу</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/1113-comp-jpeg1464695989-jpg1512759619.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2"> Курс на успех! <br> Управление бонусами <br>теперь в ваших руках!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/#popup-as-bonus">
+                                                            <span>Подробнее</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/promotions_page_slide5-comp-jpeg1464695893-jpg1513258979.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Все бонусы Адмирала<br>в едином разделе!<br>Добро пожаловать в «АКЦИИ»!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="/bonuses/list">
+                                                            <span>Получить бонус</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                            <div class="item">
+
+                    <div class="carousel-img">
+                        <img src="/uploads/slides/adm-neverblock-slide-jpg1482856471-jpg1512759647.jpeg" alt="">
+                    </div>
+                    <div class="carousel-caption">
+                                                    <div class="h2">Скачай плагин Neverblock<br> и получи стабильный доступ <br> к казино 24 часа в сутки!</div>
+                        
+                        <a class="btn btn-green btn-lg" href="/plugin">
+                                                            <span>Подробнее</span>
+                                                    </a>
+                    </div>
+
+                </div>
+                    </div>
+    </div>
+
+</div>
+
+
+
+            <!-- top 5 winners -->
+            <div class="promo-winners">
+    <a href="/hall-of-fame" class="winners-table left">
+    <table>
+    
+                            
+        <tbody><tr class="winner-item">
+            <td>
+                <div class="winner-place _1"></div>
+            </td>
+            <td>
+                <div class="winner-name">stea***</div>
+            </td>
+            <td>
+                <div class="winner-total">450,000 RUB</div>
+            </td>
+        </tr>
+    
+                            
+        <tr class="winner-item">
+            <td>
+                <div class="winner-place _2"></div>
+            </td>
+            <td>
+                <div class="winner-name">90***</div>
+            </td>
+            <td>
+                <div class="winner-total">400,000 RUB</div>
+            </td>
+        </tr>
+    
+                            
+        <tr class="winner-item">
+            <td>
+                <div class="winner-place _3"></div>
+            </td>
+            <td>
+                <div class="winner-name">90***</div>
+            </td>
+            <td>
+                <div class="winner-total">360,000 RUB</div>
+            </td>
+        </tr>
+    
+                            
+        <tr class="winner-item">
+            <td>
+                <div class="winner-place _4"></div>
+            </td>
+            <td>
+                <div class="winner-name">stea***</div>
+            </td>
+            <td>
+                <div class="winner-total">200,000 RUB</div>
+            </td>
+        </tr>
+    
+                            
+        <tr class="winner-item">
+            <td>
+                <div class="winner-place _5"></div>
+            </td>
+            <td>
+                <div class="winner-name">tim***</div>
+            </td>
+            <td>
+                <div class="winner-total">144,000 RUB</div>
+            </td>
+        </tr>
+        </tbody></table>
+    <span class="form-error help-block blue">ТОП 5</span>
+</a>
+
+</div>
+
+            <!-- promo panel -->
+            <div class="promo-panel">
+    <div class="grid-wrapper">
+
+        <div class="grid-col__left">
+
+            <div class="grid-wrapper-cols">
+                <div class="grid-col__7-12">
+                    <div class="cnt-mt">
+                        <div class="cnt-mt__neon cnt-mt__neon__over">
+                            <div class="cnt-mt__neon-top"></div>
+                        </div>
+                        <div class="promo-panel__wrapper">
+                            <a href="/jackpot">
+
+                                <!-- JACKPOT -->
+                                <script type="text/javascript">
+    var jackpotSum = 9615196;
+</script>
+<div class="promo-panel__jackpot">
+    <div class="jackpot">
+        <div class="jackpot-wrap">
+            <span class="jackpot__money" data-jackpot="jackpot" data-jackpot-height="35" jackpot-real-time="9615196.17">
+                <span class="jackpot__money-span _num _show" data-jackpot="6" style="background-position: 0px -315px; display: inline-block;"></span>
+                <span class="jackpot__money-span _dot _show" style="display: none;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="5" style="background-position: 0px -210px; display: inline-block;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="4" style="background-position: 0px -35px; display: inline-block;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="3" style="background-position: 0px -175px; display: inline-block;"></span>
+                <span class="jackpot__money-span _dot _show" style="display: none;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="2" style="background-position: 0px -35px; display: inline-block;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="1" style="background-position: 0px -315px; display: inline-block;"></span>
+                <span class="jackpot__money-span _num _show" data-jackpot="0" style="background-position: 0px -210px; display: inline-block;"></span>
+                <span class="jackpot__money-span _dot _l _decimal"></span>
+                <span class="jackpot__money-span _num _decimal" data-jackpot="-2" style="background-position: 0px -35px;"></span>
+                <span class="jackpot__money-span _num _decimal" data-jackpot="-1" style="background-position: 0px -245px;"></span>
+            </span>
+            <span class="jackpot__currency"></span>
+        </div>
+    </div>
+</div>
+<div class="promo-panel__title">Джекпот казино:</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-col__5-12">
+                    <div class="cnt-mt">
+                        <div class="cnt-mt__neon cnt-mt__neon__over">
+                            <div class="cnt-mt__neon-top"></div>
+                        </div>
+
+                        <div class="promo-panel__wrapper top">
+
+                            <!-- WINNERS NOW -->
+                            <div class="promo-panel__winners">
+    <div class="winners-widget">
+        <div class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000" id="winner-carousel">
+            <div class="carousel-inner">
+                                <div class="winner-item item active">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">1575 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">1575 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_shop">
+                        <img src="/uploads/games/fruit_shop-jpg1458658593-jpg1495090941.jpeg" alt="Fruit Shop">
+                    </a>
+                    <div class="winner-name">Vladislavkei***</div>
+                    <div class="winner-total">600 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">3000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">1500 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">5600 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">10000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_shop">
+                        <img src="/uploads/games/fruit_shop-jpg1458658593-jpg1495090941.jpeg" alt="Fruit Shop">
+                    </a>
+                    <div class="winner-name">Vladislavkei***</div>
+                    <div class="winner-total">1000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1600 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">7500 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_cocktail">
+                        <img src="/uploads/games/fruitcoctail-jpg1416563636-jpeg1479738485-jpg1512758398.jpeg" alt="Fruit Cocktail">
+                    </a>
+                    <div class="winner-name">gaidyk.ivan2***</div>
+                    <div class="winner-total">750 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">2000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">kruglov***</div>
+                    <div class="winner-total">1160 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_shop">
+                        <img src="/uploads/games/fruit_shop-jpg1458658593-jpg1495090941.jpeg" alt="Fruit Shop">
+                    </a>
+                    <div class="winner-name">Vladislavkei***</div>
+                    <div class="winner-total">8700 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">700 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">1500 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">1575 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">1575 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/elven_princesses">
+                        <img src="/uploads/games/elvenprincesses-jpg1512652709.jpeg" alt="Elven Princesses">
+                    </a>
+                    <div class="winner-name">konovalov310***</div>
+                    <div class="winner-total">1839 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/sizzling_hot_mob586cfe5d1e33b">
+                        <img src="/uploads/games/sizzling-hot-jpg1418768548-jpeg1483545232-jpg1495034900.jpeg" alt="Sizzling Hot">
+                    </a>
+                    <div class="winner-name">korma***</div>
+                    <div class="winner-total">1500 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_shop">
+                        <img src="/uploads/games/fruit_shop-jpg1458658593-jpg1495090941.jpeg" alt="Fruit Shop">
+                    </a>
+                    <div class="winner-name">Vladislavkei***</div>
+                    <div class="winner-total">6000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/gnome">
+                        <img src="/uploads/games/gnome-jpeg1487589617-jpg1495033574.jpeg" alt="Gnome">
+                    </a>
+                    <div class="winner-name">481700@admiral</div>
+                    <div class="winner-total">2400 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1600 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">2240 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">1120 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">800 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/ultra_hot_mob">
+                        <img src="/uploads/games/admiral-189x109-jpg1473239127-jpeg1483538548-jpg1495032402.jpeg" alt="Ultra Hot">
+                    </a>
+                    <div class="winner-name">499401@admiral</div>
+                    <div class="winner-total">830 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/fruit_shop">
+                        <img src="/uploads/games/fruit_shop-jpg1458658593-jpg1495090941.jpeg" alt="Fruit Shop">
+                    </a>
+                    <div class="winner-name">Vladislavkei***</div>
+                    <div class="winner-total">6000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">720 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/book_of_ra_deluxe">
+                        <img src="/uploads/games/book_of_ra_deluxe-jpg1418769406-jpeg1490948777-jpg1495032752.jpeg" alt="Book of Ra Deluxe">
+                    </a>
+                    <div class="winner-name">kirill.pospe***</div>
+                    <div class="winner-total">1000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">6800 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_drink">
+                        <img src="/uploads/games/lucky-drink-jpeg1512649853.jpeg" alt="Lucky Drink">
+                    </a>
+                    <div class="winner-name">dvaturista20***</div>
+                    <div class="winner-total">945 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1600 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">2000 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/elven_princesses">
+                        <img src="/uploads/games/elvenprincesses-jpg1512652709.jpeg" alt="Elven Princesses">
+                    </a>
+                    <div class="winner-name">konovalov310***</div>
+                    <div class="winner-total">723 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/dolphins_pearl">
+                        <img src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+                    </a>
+                    <div class="winner-name">bogus1***</div>
+                    <div class="winner-total">1200 RUB</div>
+                </div>
+                                <div class="winner-item item ">
+                    <a class="winner-item__ico" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                        <img src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+                    </a>
+                    <div class="winner-name">5076***</div>
+                    <div class="winner-total">1600 RUB</div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="promo-panel__title">Сейчас выигрывают:</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-col__right">
+            <div class="grid-wrapper">
+                <div class="grid-col__12-12">
+                    <div class="cnt-mt">
+                        <div class="cnt-mt__neon cnt-mt__neon__over">
+                            <div class="cnt-mt__neon-top"></div>
+                        </div>
+
+                            <div class="cnt-mt__md-btns">
+        <a class="btn btn-green btn-md" href="#popup-reg">
+            <span>Регистрация</span>
+        </a>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </div>
+
+    </div>
+</header>        <!-- END header -->
+
+    <!-- container -->
+    <section class="container">
+
+        <div class="wrapper">
+
+            <div class="grid-wrapper">
+
+                <div class="grid-col__left">
+
+                                        <main class="main">
+
+                        <!--  Menu    /-->
+                                                    <div class="main-menu">
+    <menu class="grid-wrapper">
+        <ul class="grid-wrapper-cell">
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg active" href="/">
+                    <span>Популярные</span>
+                </a>
+            </li>
+
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg" href="/type/new/">
+                    <span>новинки</span>
+                </a>
+            </li>
+
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg" href="/type/exclusive/">
+                    <span>Эксклюзив</span>
+                </a>
+            </li>
+
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg" href="/type/slots/">
+                    <span>слоты</span>
+                </a>
+            </li>
+
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg" href="/type/rouletts/">
+                    <span>рулетки</span>
+                </a>
+            </li>
+
+            <li class="grid-col__auto">
+                <a class="btn btn-blue btn-lg" href="/type/favourites/">
+                    <span>избранное</span>
+                </a>
+            </li>
+        </ul>
+    </menu>
+</div>                        
+                        <div class="content cnt-pt">
+                            <div class="grid-wrapper">
+
+    <div class="grid-wrapper-cols pd-sm-both game-list">
+
+        <!-- game filter -->
+
+                    <!-- game filter -->
+<div class="grid-col__12-12 filters-panel">
+    <div class="game-filters">
+
+        <ul class="pull-left">
+            <li class="developers-sort game-filters__item-titles _show top" data-developer="all">
+                <a class="active" href="#">Все</a>
+                <span class="form-error help-block blue">Все игры</span>
+            </li>
+                            <li class="developers-sort game-filters__item-titles _show top" data-developer="16">
+                    <a href="#">Novomatic</a>
+                    <span class="form-error help-block blue">Игры от Novomatic</span>
+                </li>
+                            <li class="developers-sort game-filters__item-titles _show top" data-developer="14">
+                    <a href="#">Igrosoft</a>
+                    <span class="form-error help-block blue">Игры от Igrosoft</span>
+                </li>
+                            <li class="developers-sort game-filters__item-titles _show top game-filters__item-titles__other disabled" data-developer="19">
+                    <a href="#">NetEnt</a>
+                    <span class="form-error help-block blue">Игры от NetEnt</span>
+                </li>
+                        <li class="developers-sort game-filters__item-titles _show top" data-developer="other">
+                <a href="#">Другие</a>
+                <span class="form-error help-block blue">Игры других производителей</span>
+            </li>
+        </ul>
+
+        <ul class="pull-right">
+            <li class="order-sort game-filters__item-icons _show top" data-sort="index">
+                <a href="#" class="active">
+                    <i class="ico ico-filt-vis"></i>
+                </a>
+                <span class="form-error help-block blue">По популярности</span>
+            </li>
+            <li class="order-sort game-filters__item-icons _show top" data-sort="name">
+                <a href="#">
+                    <i class="ico ico-filt-alph"></i>
+                </a>
+                <span class="form-error help-block blue">В алфавитном порядке</span>
+            </li>
+            <li class="order-sort game-filters__item-icons _show top" data-sort="payout">
+                <a href="#">
+                    <i class="ico ico-filt-cash"></i>
+                </a>
+                <span class="form-error help-block blue">По отдаче</span>
+            </li>
+            <li class="order-sort game-filters__item-icons _show top" data-sort="rating">
+                <a href="#">
+                    <i class="ico ico-filt-fav"></i>
+                </a>
+                <span class="form-error help-block blue">По рейтингу пользователей</span>
+            </li>
+        </ul>
+    </div>
+</div>        
+        <!--  Thumbs list -->
+        
+            <div class="grid-col__4-12" data-index="1000" data-item="game" data-name="Book of Ra" data-spins="1134093" data-payout="4281654" data-rating="4" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="834" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Book of Ra" src="/uploads/games/book_of_ra-jpg1418767128-jpeg1473066373-jpg1495032782.jpeg" alt="Book of Ra">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/book_of_ra">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/book_of_ra">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Book of Ra</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="999" data-item="game" data-name="Fruit Cocktail" data-spins="854013" data-payout="6454671" data-rating="9" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="876" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Fruit Cocktail" src="/uploads/games/fruitcoctail-jpg1416563636-jpeg1479738485-jpg1512758398.jpeg" alt="Fruit Cocktail">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/fruit_cocktail">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/fruit_cocktail">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Fruit Cocktail</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="998" data-item="game" data-name="Resident" data-spins="528786" data-payout="2911046" data-rating="5" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="877" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Resident" src="/uploads/games/resident-jpeg1487589148-jpg1495034767.jpeg" alt="Resident">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/resident">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/resident">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Resident</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="997" data-item="game" data-name="Book of Ra Deluxe" data-spins="1011108" data-payout="4246605" data-rating="2" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="912" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Book of Ra Deluxe" src="/uploads/games/book_of_ra_deluxe-jpg1418769406-jpeg1490948777-jpg1495032752.jpeg" alt="Book of Ra Deluxe">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/book_of_ra_deluxe">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/book_of_ra_deluxe">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Book of Ra Deluxe</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="996" data-item="game" data-name="Lucky Lady's Charm" data-spins="499884" data-payout="2348438" data-rating="2" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="862" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Lucky Lady's Charm" src="/uploads/games/lucky-lady-s-charm-novomatic-jpeg1464012651-jpg1512758462.jpeg" alt="Lucky Lady's Charm">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/lucky_ladys_charm">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/lucky_ladys_charm">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Lucky Lady's Charm</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="995" data-item="game" data-name="Bananas go Bahamas" data-spins="361814" data-payout="1669272" data-rating="1" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="928" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Bananas go Bahamas" src="/uploads/games/icon_0045_bananas_go_bahamas-jpg1418768170-jpeg149-jpg1495033772.jpeg" alt="Bananas go Bahamas">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/bananas_go_bahamas">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/bananas_go_bahamas">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Bananas go Bahamas</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="994" data-item="game" data-name="Book of Ra HD" data-spins="356552" data-payout="1295466" data-rating="9" data-developer="16">
+<div class="tmb
+                                     new            ">
+
+                
+                
+                
+                
+    <i class="sticker">
+                <span class="sticker-new"></span>
+        </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="837" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Book of Ra HD" src="/uploads/games/admiral-189x106-1-jpg1474625754-jpg1495089558.jpeg" alt="Book of Ra HD">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/book_of_ra_hd">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/book_of_ra_hd">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Book of Ra HD</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="993" data-item="game" data-name="Dolphin's Pearl" data-spins="301802" data-payout="1524100" data-rating="1" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="833" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Dolphin's Pearl" src="/uploads/games/dolphin-s-pearl-admiral777-jpeg1464012129-jpg1512758342.jpeg" alt="Dolphin's Pearl">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/dolphins_pearl">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/dolphins_pearl">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Dolphin's Pearl</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="992" data-item="game" data-name="Crazy Monkey" data-spins="476562" data-payout="3171217" data-rating="4" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="879" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Crazy Monkey" src="/uploads/games/crazymonkey-jpg1416586428-jpeg1479729976-jpg1512758177.jpeg" alt="Crazy Monkey">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/crazy_monkey">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/crazy_monkey">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Crazy Monkey</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                                        <!--  Banner -->
+                                                                    <!--  Banner /-->
+            
+        
+            <div class="grid-col__4-12" data-index="991" data-item="game" data-name="Sharky" data-spins="252362" data-payout="1324608" data-rating="2" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="901" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Sharky" src="/uploads/games/icon_0036_sharky-jpg1418767795-jpeg1490947087-jpg1495033694.jpeg" alt="Sharky">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/sharky">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/sharky">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Sharky</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="990" data-item="game" data-name="Sizzling Hot" data-spins="397280" data-payout="1838280" data-rating="4" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="861" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Sizzling Hot" src="/uploads/games/sizzling-hot-jpg1418768548-jpeg1483545232-jpg1495034900.jpeg" alt="Sizzling Hot">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/sizzling_hot_mob586cfe5d1e33b">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/sizzling_hot_mob586cfe5d1e33b">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Sizzling Hot</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="989" data-item="game" data-name="Lucky Haunter" data-spins="239111" data-payout="1309127" data-rating="6" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="878" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Lucky Haunter" src="/uploads/games/lucky-haunter-jpeg1487589268-jpg1495033980.jpeg" alt="Lucky Haunter">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/lucky_haunter">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/lucky_haunter">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Lucky Haunter</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="988" data-item="game" data-name="Fairy Land 2" data-spins="206022" data-payout="2001527" data-rating="4" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="950" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Fairy Land 2" src="/uploads/games/fairy_land_2_mob-jpeg1498138549.jpeg" alt="Fairy Land 2">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/fairy_land_2">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/fairy_land_2">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Fairy Land 2</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="987" data-item="game" data-name="Keks" data-spins="350920" data-payout="2008743" data-rating="4" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="893" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Keks" src="/uploads/games/keks-jpeg1487589522-jpg1495033949.jpeg" alt="Keks">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/keks">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/keks">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Keks</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="986" data-item="game" data-name="The Money Game" data-spins="200089" data-payout="1043724" data-rating="3" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="927" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="The Money Game" src="/uploads/games/money_game-jpg1418767380-jpeg1490949607-jpg1495034306.jpeg" alt="The Money Game">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/the_money_game">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/the_money_game">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">The Money Game</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="985" data-item="game" data-name="Lucky Lady's Charm Deluxe" data-spins="194338" data-payout="1157068" data-rating="1" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="915" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Lucky Lady's Charm Deluxe" src="/uploads/games/lucky-lady-s-charm-deluxe-jpg1418768956-jpeg149094-jpg1495034028.jpeg" alt="Lucky Lady's Charm Deluxe">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/lucky_ladys_charm_deluxe">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/lucky_ladys_charm_deluxe">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Lucky Lady's Charm Deluxe</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="984" data-item="game" data-name="Ultra Hot" data-spins="150409" data-payout="713820" data-rating="6" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="860" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Ultra Hot" src="/uploads/games/admiral-189x109-jpg1473239127-jpeg1483538548-jpg1495032402.jpeg" alt="Ultra Hot">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/ultra_hot_mob">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/ultra_hot_mob">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Ultra Hot</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="983" data-item="game" data-name="Fruit Cocktail 2" data-spins="140801" data-payout="1444083" data-rating="2" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="875" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Fruit Cocktail 2" src="/uploads/games/fruit-cocktail-2-jpeg1487589074-jpg1495033402.jpeg" alt="Fruit Cocktail 2">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/fruit_cocktail_2">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/fruit_cocktail_2">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Fruit Cocktail 2</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="982" data-item="game" data-name="Gnome" data-spins="138162" data-payout="1153397" data-rating="6" data-developer="14">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="894" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Gnome" src="/uploads/games/gnome-jpeg1487589617-jpg1495033574.jpeg" alt="Gnome">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/gnome">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/gnome">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Gnome</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="981" data-item="game" data-name="Just Jewels" data-spins="125595" data-payout="726821" data-rating="0" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="863" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Just Jewels" src="/uploads/games/just-jewels-jpg1418898080-jpeg1483545373-jpg1495033927.jpeg" alt="Just Jewels">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/just_jewels_u">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/just_jewels_u">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Just Jewels</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="980" data-item="game" data-name="Columbus" data-spins="108616" data-payout="485895" data-rating="0" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="900" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Columbus" src="/uploads/games/columbus-jpg1418768273-jpeg1490947253-jpg1495032836.jpeg" alt="Columbus">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/columbus">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/columbus">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Columbus</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="979" data-item="game" data-name="Dolphin's Pearl Deluxe" data-spins="106612" data-payout="618562" data-rating="0" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="909" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Dolphin's Pearl Deluxe" src="/uploads/games/dolphin-s-pearl-deluxe-jpg1418768440-jpeg149094868-jpg1495032943.jpeg" alt="Dolphin's Pearl Deluxe">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/dolphins_pearl_deluxe">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/dolphins_pearl_deluxe">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Dolphin's Pearl Deluxe</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="978" data-item="game" data-name="The Seventies" data-spins="96350" data-payout="856882" data-rating="2" data-developer="32">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="946" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="The Seventies" src="/uploads/games/ad-106-jpg1491997202-jpg1495031992.jpeg" alt="The Seventies">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/the_seventies_mob">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/the_seventies_mob">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">The Seventies</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+            <div class="grid-col__4-12" data-index="977" data-item="game" data-name="Banana Splash" data-spins="80856" data-payout="376557" data-rating="1" data-developer="16">
+<div class="tmb
+                                                ">
+
+                
+                
+                
+                
+    <i class="sticker">
+            </i>
+
+    <div class="tmb-fav">
+        <div class="ico ico-tmb-fav" data-game="938" title="Добавить в избранное"></div>
+    </div>
+
+    <div class="tmb-img">
+
+        <img title="Banana Splash" src="/uploads/games/icon_0044_banana-splash-jpg1418767983-jpeg14920045-jpg1495033749.jpeg" alt="Banana Splash">
+
+        <div class="tmb-action">
+                                    <a class="btn btn-green btn-lg" href="#popup-reg" data-href="/games/banana_splash">
+                    <span>Играть</span>
+                </a>
+            
+                            <a class="btn btn-blue btn-md" href="/igrovye-avtomaty/banana_splash">
+                    <span>Демо</span>
+                </a>
+                            </div>
+
+    </div>
+
+    <div class="tmb-title">Banana Splash</div>
+
+</div>
+<!-- /.thumb -->
+</div>
+
+                        
+        
+    </div>
+</div>
+
+                            
+                                
+                                <div class="col-xs-12">
+                                    <div class="cnt-pt-line"></div>
+
+                                    <div class="social_buttons text-center" style="margin: 20px 0 10px;">
+                                        <style type="text/css">
+     .socials-network-btns {
+          text-align: center;
+          padding-top: 5px;
+     }
+     .socials-network-btns a {
+          display: inline-block;
+          height: 18px;
+          width: 18px;
+          margin: 0 5px 0 0;
+          background: url("//yastatic.net/share/static/b-share-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+     }
+     .socials-network-btns .mailru {
+          background-position: 0 -84px;
+     }
+     .socials-network-btns .vk {
+          background-position: 0 2px;
+     }
+     .socials-network-btns .facebook {
+          background-position: 0 -67px;
+     }
+     .socials-network-btns .twitter {
+          background-position: 0 -50px;
+     }
+</style>
+
+
+<div class="socials-network-btns">
+
+     <a title="ВКонтакте" onclick="Share.vkontakte(socialData);" href="javascript: void(0)" class="vk"></a>
+     <a title="Мой Мир@Mail.Ru" onclick="Share.mailru(socialData);" href="javascript: void(0)" class="mailru"></a>
+     <a title="Facebook" onclick="Share.facebook(socialData);" href="javascript: void(0)" class="facebook"></a>
+     <a title="Twitter" onclick="Share.twitter(socialData);" href="javascript: void(0)" class="twitter"></a>
+
+</div>                                    </div>
+                                </div>
+                                <!-- /.col-xs-12 .social_buttons -->
+                                                    </div>
+
+                    </main>
+                    
+                </div>
+
+
+                <div class="grid-col__right">
+
+                    <!-- search -->
+                                        <!-- search -->
+<div class="search">
+
+    <form method="GET" action="/search/games" class="search-form">
+        <fieldset class="form-group">
+            <div class="form-group__button-wrap">
+                <button class="btn btn-dark btn-md btn-square" type="submit">
+                    <span><i class="ico ico-search"></i></span>
+                </button>
+            </div>
+
+            
+            <div class="form-group__input-wrap left ">
+                <input class="form-group__input" maxlength="50" name="search" placeholder="Поиск игры" active="1" data-validation="search" data-validation-error-msg="В поиск ничего не введено" type="search">
+            </div>
+        </fieldset>
+    </form>
+
+    </div>
+
+
+                    <!-- Sidebar -->
+                                            <aside class="sidebar cnt-pt">
+
+    
+    <div class="sidebar-block">
+        
+    </div>
+
+    <div class="sidebar-block">
+        <!-- TOURNAMENT NOW -->
+<div class="neon-header">
+    <div class="h4">
+            Текущий турнир
+        </div>
+</div>
+
+    <div class="grid-col__9-10 center-block">
+
+    <a href="/tournaments/152" class="poster">
+        <div class="poster-img">
+            <img src="/uploads/tournament_img/2018_292x97-min-jpg1512644574.jpeg" alt="Сокровища Севера">
+        </div>
+        <div class="poster-title">Сокровища Севера</div>
+    </a>
+
+        <div class="timer">
+        <div class="timer-wrap" data-timer-block="tournament" data-timeto="278792"><div class="timer-numbers-wrap" style="display: block;">
+            <div class="timer-numbers" data-first="">0</div>
+            <div class="timer-numbers" data-second="">3</div>
+            <div class="timer-names" data-name="">дни</div>
+        </div><div class="timer-numbers-wrap" style="display: block;">
+            <div class="timer-numbers" data-first="">0</div>
+            <div class="timer-numbers" data-second="">5</div>
+            <div class="timer-names" data-name="">часы</div>
+        </div><div class="timer-numbers-wrap" style="display: block;">
+            <div class="timer-numbers" data-first="">2</div>
+            <div class="timer-numbers" data-second="">6</div>
+            <div class="timer-names" data-name="">минуты</div>
+        </div></div>
+
+        <div class="timer-numbers-wrap" data-timer-template="tournament" style="display: none;">
+            <div class="timer-numbers" data-first=""></div>
+            <div class="timer-numbers" data-second=""></div>
+            <div class="timer-names" data-name=""></div>
+        </div>
+    </div>
+    
+
+    <div class="tournament-fond cnt-bl">
+
+        <div class="tournament-fond__title">Призовой фонд</div>
+        <div class="tournament-fond__total text-gradient-yellow">624,593 RUB</div>
+
+        <div data-name="tournament-statistic">
+
+            <table class="tournament-fond__table">
+                <tbody>
+                                <tr class="user-result">
+                    <td>
+                        <span>stea***</span>
+                    </td>
+                    <td>
+                        <span>193391110</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>90***</span>
+                    </td>
+                    <td>
+                        <span>102319500</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>00***</span>
+                    </td>
+                    <td>
+                        <span>9634400</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>alribok1***</span>
+                    </td>
+                    <td>
+                        <span>7894300</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>egorkavasili***</span>
+                    </td>
+                    <td>
+                        <span>2068570</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>19646@admiral</span>
+                    </td>
+                    <td>
+                        <span>1509210</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>viktor.kryuk***</span>
+                    </td>
+                    <td>
+                        <span>997350</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>salador***</span>
+                    </td>
+                    <td>
+                        <span>635290</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>egorka180***</span>
+                    </td>
+                    <td>
+                        <span>599710</span>
+                    </td>
+                </tr>
+                                <tr class="user-result">
+                    <td>
+                        <span>kazak_of***</span>
+                    </td>
+                    <td>
+                        <span>507540</span>
+                    </td>
+                </tr>
+                                </tbody>
+            </table>
+            <table class="tournament-fond__table tournament-fond__user-result">
+                            </table>
+
+        </div>
+
+    </div>
+
+    <div class="sidebar-btn">
+                    <a href="/tournaments/152" class="btn btn-blue btn-md">
+                <span>Подробнее</span>
+            </a>
+            </div>
+
+</div>
+
+
+    </div>
+
+    <!-- Game Week -->
+    
+                
+    <div class="sidebar-block">
+
+        <!-- GAME OF THE WEEK -->
+        <div class="neon-header">
+            <div class="h4">Игра недели</div>
+        </div>
+
+        <div class="grid-col__9-10 center-block">
+            <div class="week-game">
+                <a data-game="item" class="tmb" href="#popup-reg" data-href="/games/heroes_3">
+
+                    <i class="sticker"> </i>
+
+                    <div class="tmb-img">
+
+                        <img alt="" src="/uploads/game_week/ph-05-jpg1476182823.jpeg">
+
+                        <div class="tmb-action">
+                            <div class="btn btn-green btn-lg centered">
+                                <span>Играть сейчас</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tmb-title">Heroes 3</div>
+
+                </a></div>
+        </div>
+    </div>
+
+
+
+    <div class="sidebar-block">
+
+        <!-- LAST NEWS -->
+        <!-- LAST NEWS -->
+<div class="neon-header">
+    <div class="h4">последние новости</div>
+</div>
+
+<div class="grid-col__9-10 center-block">
+
+    <a href="/news/new-year-main" class="poster">
+        <div class="poster-img">
+                            <img src="/uploads/news/2018_292x141-min-jpg1512639849.jpeg" alt="Новогодняя экспедиция от Адмирала!">
+                    </div>
+        <div class="poster-title">Новогодняя экспедиция от Адмирала!</div>
+    </a>
+
+    <div class="sidebar-btn">
+        <a href="/news/" class="btn btn-blue btn-md">
+            <span>Посмотреть все</span>
+        </a>
+    </div>
+
+</div>
+
+
+
+    </div>
+
+</aside>                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- footer -->
+<footer class="footer">
+
+    <div class="wrapper">
+
+        <div class="footer-cnt cnt-pt">
+
+            <div class="cnt-mt">
+                <div class="footer-img">
+                    <img src="/assets/img/sys/bg/footer-payments.png" alt="">
+                </div>
+            </div>
+
+            <div class="grid-wrapper">
+
+                <div class="grid-wrapper-cols pd-md-sides pd-parent">
+
+                    <!-- footer menus -->
+                    <div class="grid-col__2-12">
+
+    <nav class="footer-list">
+        <h4 class="h4">Важное</h4>
+        <ul>
+            <li><a href="/online-casino">О нас</a></li>
+            <li><a href="/news/">Новости</a></li>
+            <li><a href="/stati/"><nobr>Полезная информация</nobr></a></li>
+            <li><a href="/terms">Правила и условия</a></li>
+            <li><a href="/plugin/">Плагин</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="grid-col__2-12">
+
+    <nav class="footer-list">
+        <h4 class="h4">&nbsp;</h4>
+        <ul>
+            <li><a href="http://www.adm1ral777.com/anti-lock.html">Антиблокировка</a></li>
+            <li><a href="/AffiliateProgram"><nobr>Партнерская программа</nobr></a></li>
+            <li><a href="/privileges"><nobr>Программа лояльности</nobr></a></li>
+            <li><a href="#popup-contacts"><nobr>Обратная связь</nobr></a></li>
+        </ul>
+    </nav>
+
+</div>
+                    <div class="grid-col__8-12">
+                        <!-- footer carousel -->
+                        <!-- footer carousel -->
+<div class="carousel carousel-fade slide" id="footer-carousel" data-ride="carousel" data-interval="5000">
+
+    
+                                                
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+                <li data-target="#footer-carousel" data-slide-to="0" class="indicator active">
+            <i></i>
+        </li>
+                <li data-target="#footer-carousel" data-slide-to="1" class="indicator">
+            <i></i>
+        </li>
+                <li data-target="#footer-carousel" data-slide-to="2" class="indicator">
+            <i></i>
+        </li>
+                <li data-target="#footer-carousel" data-slide-to="3" class="indicator">
+            <i></i>
+        </li>
+                <li data-target="#footer-carousel" data-slide-to="4" class="indicator">
+            <i></i>
+        </li>
+            </ol>
+
+        <div class="carousel-inner">
+
+                    <div class="item active">
+                                    <h1>В казино Admiral - игровые автоматы 777 в хорошем качестве</h1>
+                                <p>Адмирал казино приглашает всех и каждого незамедлительно присоединяться к увлекательному процессу игры на игровых автоматах в одном из лучших заведений сети! Здесь вы найдете не только известные всем слоты, но также и множество новинок, которые непременно покорят вас с первого спина. В интернет казино Admiral 777 вы можете в любые <a href="/igrovye-avtomaty/">игровые автоматы играть бесплатно</a> и без регистрации, ничем не рискуя.</p>
+
+            </div>
+                    <div class="item">
+                                
+<h4>Популярные игры в интернет казино Адмирал</h4>
+<p>Многие заядлые игроки с многолетним стажем считают, что игровые автоматы уже не те, что раньше, а старые добрые оффлайновые слотзалы имели свою особую атмосферу, которой онлайн казино напрочь лишены. Мы спешим развеять этот миф. Представляем вашему вниманию раздел <a href="/type/new/">Новые игры</a>, в котором вы сможете найти только самые топовые и прибыльные игровые автоматы онлайн на сегодняшний день.</p>
+<p>Мы не случайно создали эту вкладку, ведь впервые зайдя на наш сайт, игрок может растеряться от столь большого количества доступных азартных развлечений. Более того, если вы совсем недавно стали увлекаться онлайн гемблингом, данный раздел станет для вас незаменимым помощником.</p>
+
+            </div>
+                    <div class="item">
+                                
+<h4>Выбор игровых автоматов в казино Admiral – огромен!</h4>
+<p>В нашем разделе «Популярные игры» вы сможете найти самые настоящие хиты онлайн гемблинга. Вас ждут масса современных слотов, а также огромное количество классических автоматов, таких, как <a href="/games/garage58aaba1f4be7b">Гараж</a>, <a href="/igrovye-avtomaty/lucky_ladys_charm">Леди Шарм</a>, <a href="/igrovye-avtomaty/resident">Resident</a>, <a href="/igrovye-avtomaty/crazy_monkey">Crazy Monkey</a> и <a href="/igrovye-avtomaty/sharky">Sharky</a>. Каждый автомат, несомненно, обладает уникальной графикой и визуальными эффектами, до мелочей продуманными правилами и максимально щедрыми бонусами для каждого игрока. Выбирая слоты из раздела Популярные игры, вы можете не сомневаться, что автомат пленит вас с первого спина своими неоспоримыми преимуществами.</p>
+
+            </div>
+                    <div class="item">
+                                
+<h4>Игровые автоматы Адмирал онлайн для всех!</h4>
+<p>Кроме того, на нашем сайте бесплатные игровые аппараты Адмирал доступны каждому посетителю, ведь для этого нужно просто выбрать понравившуюся вам игру и нажать Спин. И пускай начнется веселье! Выбирая в казино Адмирал <a href="/type/slots/">игровые слоты бесплатно</a> вы обрекаете себя на безграничное удовольствие и отсутствие какой либо необходимости тратить собственные денежные средства.</p>
+
+            </div>
+                    <div class="item">
+                                
+<h4>Регулярное пополнение</h4>
+<p>Меню популярных игр постоянно обновляется и пополняется интересными новинками. Важно то, что именно игроки решают каким автоматам быть в этом разделе, а каким еще надо подтянуться. Благодаря вашим предпочтениям мы составляем список игр с самыми большими выигрышами и таким образом, выбирая один из популярных автоматов, вы вполне можете оказаться в Зале славы, как игрок с самым большим выигрышем. </p>
+<p>Играть бесплатно в слоты <strong>Казино Адмирал 777</strong> предлагает каждому посетителю, несмотря на то, что в нашем казино онлайн есть много других азартных развлечений, помимо слотов. Но, если вы поклонник онлайн аппаратов – раздел Популярные игры вам непременно поможет выбрать лучший автомат и сполна насладиться азартом!</p>
+            </div>
+        
+    </div>
+
+                    
+    
+</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- footer info -->
+        <!-- footer info -->
+<div class="footer-info grid-wrapper">
+    <div class="grid-wrapper-cols pd-lg-sides pd-parent">
+        <div class="grid-col__6-12">
+
+            <ul class="footer-contacts">
+                <li class="footer-contacts__item">
+                    <a href="tel:+74993460639">
+                        <i class="ico ico-contact-phone"></i>
+                        <span>+7 (499) 346-06-63</span>
+                    </a>
+                </li>
+                <li class="footer-contacts__item">
+                    <a href="mailto:support@admiral777.com">
+                        <i class="ico ico-contact-mail"></i>
+                        <span>support@admiral777.com</span>
+                    </a>
+                </li>
+                <li class="footer-contacts__item">
+                    <a href="javascript:void(0)" onclick="$('#sh_button').click();">
+                        <i class="ico ico-contact-online-help"></i>
+                        <span>Помощь онлайн</span>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer-copy">© 2017
+                                <a href="/">Казино Адмирал игровые автоматы</a>. Все права защищены.
+            </p>
+
+        </div>
+        <div class="grid-col__6-12">
+            <ul class="footer-partners">
+                <li>
+                    <a href="/AffiliateProgram" class="footer-partners__wp"></a>
+                </li>
+                <li>
+                    <span class="footer-partners__icons"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+</footer></div>
+
+
+
+    <script defer="" src="/js/compiled/loadcss.0cbfad8.js"></script>
+                                    <script>
+        ;(function() {
+            var timerLoadCss = setInterval(function() {
+                if (typeof loadCSS != 'undefined') {
+                    var stylesheetUrl = '/css/compiled/css.0cbfad8.css',
+                            stylesheet = loadCSS( stylesheetUrl );
+
+                    onloadCSS(stylesheet, function() {
+                        document.querySelector('body').classList.remove('material');
+
+                        // Set cookie
+                        var date = new Date();
+                        date.setTime(date.getTime() + 60*60*24*7 * 1000); // set cookie on one week (in ms)
+                        document.cookie = "stylesFirstLoad=true; path=/; expires=" + date.toUTCString();
+                    });
+
+                    clearInterval(timerLoadCss);
+                }
+            }, 100);
+        })();
+    </script>
+
+
+
+    <script type="text/javascript" src="/js/compiled/main.0cbfad8.js"></script>
+    <script type="text/javascript">
+                var needCheckPopup = false;
+            </script>
+
+    
+     
+    <script src="https://yhelperinfo.net/widget.js" defer=""></script>
+<script>
+    (function(){
+        var data = {
+            widget_id: 7,
+            user_id: 0,
+            signature: '49c108459cfc09e5320ac695d309d1ef7ff5721e',
+            user_info: []        };
+        var loader = setInterval(function(){
+            if (typeof YHelperChat !== 'undefined') {
+                clearInterval(loader);
+                new YHelperChat(data);
+            }
+        }, 100);
+    })();
+</script>
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60414911-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter28854700 = new Ya.Metrika({id: 28854700, enableAll: true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+
+<!-- /Yandex.Metrika counter -->
+
+    
+    
+
+
+
+
+<link rel="stylesheet" href="/css/compiled/css.0cbfad8.css" media="all"><img style="position:absolute; visibility:hidden; height: 0px; width: 0px; border: 0px;" src="https://buffer-analytics.hwtool.biz/track.png?refCode=&amp;aff_data=&amp;is_first=true&amp;user_id=0&amp;uniqueId=hzqvau0v62w&amp;action=visit&amp;project=admiral"><style type="text/css">.login4play-social-icons .login4play-tooltip-list .login4play-tooltip-item p{line-height:16px;margin:0 0 0 24px;color:#585858;font-size:14px}.login4play-social-icons-md .login4play-tooltip-list .login4play-tooltip-item p{line-height:32px;margin:0 0 0 40px;color:#585858}.login4play-tooltip-link .login4play-tooltip-list .login4play-tooltip-item span{float:left}.login4play-tooltip-link .login4play-tooltip-list:before,.login4play-tooltip-link .login4play-tooltip-list:after{border-color:transparent;border-style:solid;content:"";position:absolute}.login4play-tooltip-link .login4play-tooltip-list:before{border-bottom-color:#c7dde2;border-width:10px;margin:-20px 0 0 16px;z-index:3;position:absolute}.login4play-tooltip-link .login4play-tooltip-list{border:1px solid #c7dde2;box-shadow:0 2px 2px rgba(0, 0, 0, 0.25);display:none;margin:25px 0 0 -19px;max-width:200px;min-width:100px;position:absolute;text-align:left;z-index:1}.login4play-social-icons-md.login4play-tooltip-link .login4play-tooltip-list{margin:41px 0 0 -12px}.login4play-icon-arrow .login4play-tooltip-item{padding:9px 10px}.login4play-tooltip-item{background-color:#e9f2f4;display:block;white-space:nowrap}.login4play-social-icons{background:url("//login4play.com/img/sprite-social-icons.png") no-repeat scroll 0 0 transparent;cursor:pointer;margin:0 2px;display:inline-block;height:16px;width:16px}.login4play-icon-vkontakte{background-position:0 0}.login4play-icon-odnoklassniki{background-position:0 -23px}.login4play-icon-mailru{background-position:0 -46px}.login4play-icon-facebook{background-position:0 -69px}.login4play-icon-twitter{background-position:0 -92px}.login4play-icon-google{background-position:0 -115px}.login4play-icon-yandex{background-position:0 -138px}.login4play-icon-linkedin{background-position:0 -276px}.login4play-icon-steam{background-position:0 -345px}.login4play-social-icons.login4play-icon-arrow{background-position:0 -598px}.login4play-social-icons-md{background:url("//login4play.com/img/sprite-social-icons-medium.png") no-repeat scroll 0 0 transparent;cursor:pointer;margin:0 3px;display:inline-block;height:32px;width:32px}.login4play-icon-md-vkontakte{background-position:0 0}.login4play-icon-md-odnoklassniki{background-position:-33px 0}.login4play-icon-md-mailru{background-position:-66px 0}.login4play-icon-md-facebook{background-position:-165px 0}.login4play-icon-md-twitter{background-position:-99px 0}.login4play-icon-md-google{background-position:-198px 0}.login4play-icon-md-yandex{background-position:-792px 0}.login4play-icon-md-linkedin{background-position:-363px 0}.login4play-icon-md-steam{background-position:-594px 0}.login4play-social-icons-md.login4play-icon-arrow{background-position:-132px 0}.login4play-social-block{border:2px solid #fbbc8f;display:inline-block;margin:0 0 0 -5px;padding:8px 10px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.login4play-social-block p{color:#ff8329;display:inline-block;font:700 20px/20px Arial,sans-serif;margin:0 10px 0 0}.login4play-social-block p:last-child{margin-left:10px}.login4play-popup{width:100%;height:100%;left:0;top:0;position:absolute;z-index:999;display:none}.login4play-popup-overlay{background-color:rgba(0, 0, 0, 0.8);right:0;bottom:0;left:0;top:0;position:absolute;z-index:999}.login4play-popup-block{background-color:#fff;width:750px;margin:50px auto 0;border:1px solid #b2ccd5;position:relative;z-index:1000}.login4play-popup p{font:13px/18px Arial, sans-serif;margin:0 0 15px}.login4play-popup-header{padding:15px 45px 0;overflow:hidden;position:relative}.login4play-popup-title{font:700 25px/36px Arial, sans-serif;color:#343434;padding:0 0 15px;border-bottom:1px solid #d4e5e9;text-transform:uppercase}.login4play-popup-close{position:absolute;width:17px;height:17px;right:20px;top:17px;background:url("//login4play.com/img/sprite.png") -253px -2px no-repeat;cursor:pointer}.login4play-popup-close:hover{background-position:-273px -2px}.login4play-powered{color:#a3a3a3;font:400 13px Arial, sans-serif;position:absolute;right:45px;bottom:45px}.login4play-popup-content{background-color:#fff;padding:35px 45px}.login4play-popup-content .login4play-check-list{margin:0;padding:0;list-style:none}.login4play-popup-content .login4play-check-list li{padding:8px 10px 7px 0;float:left;width:30%;display:block;margin-bottom:15px !important;cursor:pointer}.login4play-popup-content .login4play-app-block .login4play-check-list li{padding:3px 10px 4px 0;margin:0 0 8px !important}.popup-content .app-block input[type="checkbox"] + label,.login4play-popup-content .login4play-app-block input[type="radio"] + label{margin:0 0 0 28px}.popup-content .app-block input[type="checkbox"] + label:before,.login4play-popup-content .login4play-app-block input[type="radio"] + label:before{left:-28px}.login4play-popup-content .login4play-check-list .login4play-social-icons-md{top:0 !important;float:left;margin:0 -32px 0 0}.login4play-popup-content .login4play-check-list .login4play-social-icons-md + p{margin:0 0 0 40px;line-height:32px;color:#585858;font-size:16px}</style></body></html>

@@ -1,0 +1,121 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <!-- <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/media.css"> -->
+    
+    <style>
+        .pixel {
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <!-- Google Tag Manager -->
+		<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PD5FRJ"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer',"GTM-PD5FRJ");</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body class="checking">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PD5FRJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+    <script language="JavaScript" type="text/javascript">
+    	(function (){
+    		switch(0)
+    		{
+    		case 1:
+    			checkingDomain();
+    		break;
+    		
+    		default:
+    			autoRedirect();
+    			break;
+    		}
+    		
+    	})()
+    
+    	function autoRedirect()
+    	{
+    		setTimeout(function () {location.href = "http://bet-cristal4cr.com/?&logSessionId=557091a38a4fbfdca672f53ba0e0";}, 1000);
+    	}
+    	
+    	
+        function checkingDomain () {
+            var domains = [];
+            var startTime = (new Date()).getTime();
+            var domainsLength = domains.length;
+            var needRedirect = true;
+            var arrPixel = new Array();
+            for (var k = 0; k < domainsLength; k++) {
+                var domain = domains[k];
+                var pixel = new Image();
+                var splitDomain = domain.split("://");
+                var newPath = "/"+ splitDomain[0] + "/" + splitDomain[1] + "?";
+ 	            arrPixel.push(pixel);
+ 	            loadImageAndRedirect(pixel, newPath);
+                pixel.src = domain + '/';
+            }
+
+			var timeoutShowPreloader = setTimeout(function () {
+				if (needRedirect) {
+					if (typeof showPreloaderScreen == 'function')
+						showPreloaderScreen();
+				}
+            }, 1000);
+             
+            var timeoutMilliseconds = "" * 1000;
+            setTimeout(function () {
+            	var splitDomain = domains[0].split("://"); 
+            	location.href ="/"+ splitDomain[0] + "/" + splitDomain[1] + "?";
+            	//var query = location.search + "&backurl=";
+                //window.location = (query.charAt(0)=='?' ? './no_connection' : './no_connection?') + query;
+            }, timeoutMilliseconds);
+
+            function loadImageAndRedirect(img, redirectPath) {
+                img.onload =
+                        function () {
+                            if (needRedirect) {
+                            	clearTimeout(timeoutShowPreloader);
+                                needRedirect = false;
+                                arrPixel.forEach(function(item, i, arr) {
+                                	 item.removeAttribute('src');
+                                	});
+                                setTimeout(function () {location.href = redirectPath;}, 1000);
+                            }
+                        };
+            }
+        }
+        
+        function loadStyleSheet(src) {
+            if (document.createStyleSheet){
+                document.createStyleSheet(src);
+            }
+            else {
+            	var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
+    </script>
+
+    <script language="JavaScript" type="text/javascript">
+	function showPreloaderScreen(){
+		loadStyleSheet("/css/normalize.css");
+		loadStyleSheet("/css/styles.css");
+	}
+	</script>
+ 
+    
+
+
+</body></html>
