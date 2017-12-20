@@ -1,0 +1,684 @@
+<html lang="en"><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Lottery Scams | National Lottery Scams</title>
+	<meta name="description" content="Find out about some of the different types of lottery scams online. Learn how to avoid and identify scams and what you should do if you think you've received one.">
+	<meta name="keywords" content="lottery scam, national lottery scam, scam lotto email">
+	<meta name="author" content="The Lottery Company Ltd">
+	<meta name="format-detection" content="telephone=no">
+	
+	
+
+	<meta property="og:title" content="Lottery Scams | National Lottery Scams">
+	<meta property="og:description" content="Find out about some of the different types of lottery scams online. Learn how to avoid and identify scams and what you should do if you think you've received one.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.lottery.co.uk/scams">
+	<meta property="og:site_name" content="Lottery">
+	<meta property="og:image" content="https://www.lottery.co.uk/images/open-graph/lotterycouk-og.jpg">
+	<meta property="fb:admins" content="100002871442561">
+	
+
+		<link href="/css/desktop.css?v=201712191522" rel="stylesheet" type="text/css">
+		<noscript>
+			<style type="text/css">
+				.minimised{height:auto !important;overflow:visible !important;}
+				.socialContainer{display:none;}
+			</style>
+		</noscript>
+	
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+	<link rel="canonical" href="https://www.lottery.co.uk/scams">
+
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create','UA-3838501-10','lottery.co.uk');
+			ga('require','linkid','linkid.js');
+			ga('require','displayfeatures');
+			ga('send','pageview');
+		</script>
+	
+	
+	<script type="text/javascript">
+		// Multiple window onload function
+		function addLoadEvent(e){var t=window.onload;if(typeof window.onload!="function"){window.onload=e}else{window.onload=function(){if(t){t()}e()}}}
+	</script>
+	
+	
+
+</head>
+
+<body>
+
+	<a id="top"></a>
+
+	<header>
+	
+		
+
+	<div id="login-panel" style="position: relative; margin-top:-132px">
+
+		<div class="container">
+			
+			<form id="form_login" name="form" action="/login" method="post" onsubmit="return checkloginForm();" class="horizontal-login">
+				<div class="username">
+					<input id="Email0" name="Email" placeholder="Email" tabindex="1" class="form-control" value="" type="text">
+					<span><a href="/forgotten-password" title="Forgetten Your Password?">Forgot Password?</a></span>
+				</div>
+				<div class="password">
+					<input id="Password0" name="Password" placeholder="Password" tabindex="2" class="form-control" type="password">
+				</div>
+				<div class="submit">
+					<button id="submit_login_details" type="submit" class="button-blue cont-button">Sign In</button>
+				</div>
+				<input id="Login0" name="Login" value="1" type="hidden">
+			</form>
+			
+			<div class="join">
+			
+				
+				
+					Haven't Registered? <a href="/register" title="Join Free Lottery"><div class="button-yellow">Join Now</div></a>
+					
+					<p><a href="/why-register" title="Registration Benefits">What are the benefits of registering?</a></p>
+					
+					
+					
+						<button id="panelButton" class="panel-button">Sign In</button>
+						<noscript>
+							<form method="post" action="/login" id="login_button" name="form">
+								<button class="panel-button">Sign In</button>
+							</form>
+						</noscript>
+						<a id="panel-close" onclick="return false;" style="cursor:pointer;">Close <span>X</span></a>
+					
+					
+				
+			</div>
+		
+		</div>
+		
+	</div>
+	
+
+
+<script type="text/javascript">	
+
+	
+	
+		(function() {
+			
+			var minheight = -132;
+			var maxheight = 0;
+			var time = 300;
+			var timer = null;
+			var toggled = false;
+			
+			window.onload = function() {
+				
+				if (document.getElementById('quickPick')) {
+					SelectedBalls();	
+				}
+				
+				if (document.getElementById('panelButton')) {
+					var panelBtn = document.getElementById('panelButton');
+					var panelBtnCls = document.getElementById('panel-close');
+					
+					if (panelBtn.addEventListener) {
+						panelBtn.addEventListener("click", loginSlider);
+						panelBtnCls.addEventListener("click", loginSlider);
+					} else {
+						panelBtn.attachEvent("onclick", loginSlider);
+						panelBtnCls.attachEvent("onclick", loginSlider);
+					}
+				}
+				
+				var slider = document.getElementById('login-panel');
+				slider.style.marginTop = minheight + 'px';
+				
+				function loginSlider() {
+					
+					clearInterval(timer);
+					var instanceheight = parseInt(slider.style.marginTop);
+					var init = (new Date()).getTime();
+					var height = (toggled = !toggled) ? maxheight : minheight;
+					var disp = height - parseInt(slider.style.marginTop);
+					
+					timer = setInterval(function() {
+						var instance = (new Date()).getTime() - init;
+						if (instance < time) {
+							var con = instance / time;
+							var pos = Math.floor(disp * con);
+							result = instanceheight + pos;
+							slider.style.marginTop = result + 'px';
+						} else {
+							slider.style.marginTop = height + 'px';
+							/*safety side ^^*/
+							clearInterval(timer);
+						}
+					}, 1);
+				};
+			};
+			
+		})();
+		
+	
+	
+</script>
+
+
+
+	<script type="text/javascript">
+	
+		function checkloginForm() {
+			
+			if (document.getElementById("Email0").value == "") {
+				alert("Please enter your email address.");
+				document.getElementById("Email0").focus();
+				return false;
+			} else {
+				apos = document.getElementById("Email0").value.indexOf("@");
+				dotpos = document.getElementById("Email0").value.lastIndexOf(".");
+
+				if (apos < 1 || dotpos - apos < 2) {
+					alert("Please enter a valid email address.");
+					document.getElementById("Email0").focus();
+					return false;
+				}
+			}
+			
+			if (document.getElementById("Password0").value == "") {
+				alert("Please enter a password.");
+				document.getElementById("Password0").focus();
+				return false;
+			}
+			
+			return true;
+		}
+		
+	</script>
+	
+
+	
+		<div class="hf header" style="background: url(/images/template/header-xmas.jpg) top #0076d7 no-repeat; border-top: none;">
+		
+			<div class="hf-inner">
+			
+				<a class="siteLogo" href="/" title="Lottery"><img src="/images/template/logo-xmas.png" alt="Lottery" width="311" height="51"></a>
+				
+				<div class="topRight">
+					
+					
+						<div class="dateTime">Wednesday 20th December 2017</div>
+					
+						
+				</div>
+			
+				
+				
+					<ul id="tabMenu">
+						<li><a href="/lottery-tickets" title="Buy Lottery Tickets Online" class="tickets">Lottery Tickets</a></li>
+						<li><a href="https://www.bingo-lottery.co.uk/" title="Play bingo online at Bingo-Lottery" rel="nofollow">Bingo</a></li>
+						<li><a href="https://games.lottery.co.uk/" title="Lottery Games">Lottery Games</a></li>
+						<li><a href="/results" title="View the latest lottery results">Lottery Results</a></li>
+					</ul>
+					
+					<div id="siteSearch">
+						<script type="text/javascript">
+							function validateSearch() {
+								var q = document.getElementById('q');
+								if (q.value == '' || q.value == 'Search...') return false;
+							};
+						</script>
+						<form action="/search-results" id="search" name="mainSearch" onsubmit="return validateSearch()">
+							<input name="q" id="q" class="box" value="Search..." onfocus="if(this.value=='Search...'){this.value='';this.style.width='150px'}" onblur="if(this.value==''){this.value='Search...';this.style.width='50px'}" type="text">
+							<input name="submit" value="Search" class="btn" type="submit">
+						</form>
+					</div>
+				
+				
+						
+			</div>
+	
+		</div>
+	
+	</header>
+
+
+
+	
+					<div class="promoStrap alt active">
+						<div class="strapContainer">
+							<img src="/images/promos/euro-logo.png" alt="EuroMillions Ball Logo">
+							<p>Get a FREE Scratchcard when you bet on EuroMillions*</p>
+							<div class="code">Use Promo Code: <span>CREM</span></div>
+							
+							
+							<div class="buttonCont">
+
+
+								<a href="/play/euromillions" title="Choose EuroMillions Numbers" rel="nofollow" target="_blank" class="button-yellow">Choose Numbers</a>
+							</div>
+							<a href="/promotions" title="View the terms and conditions" class="terms">*Terms and Conditions</a>
+							<div class="close" id="close-promo">×</div>
+						</div>
+					</div>
+				
+
+	
+	<div id="siteContainer">
+	
+		
+
+<div id="sidebarLeft">
+
+	<nav>
+	
+		
+		
+		<ul class="sideMenu" id="sideMenu">
+			
+				<li class="menuTitle">Main Menu</li>
+			
+			<li><a href="/" title="Lottery" class="nav-home left">Lottery.co.uk</a></li>
+			
+			<li>
+				<a href="/results" title="Lottery Results" class="nav-results subAvailable">Lottery Results</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/lotto/results" title="Lotto Results">Lotto</a></li>
+					<li><a href="/lotto/raffle/results" title="Lotto Raffle Results">Lotto Raffle</a></li>
+					<li><a href="/euromillions/results" title="EuroMillions Results">EuroMillions</a></li>
+					<li><a href="/euromillions/millionaire-maker/results" title="EuroMillions Millionaire Maker Results">Millionaire Maker</a></li>
+					<li><a href="/thunderball/results" title="Thunderball Results">Thunderball</a></li>
+					<li><a href="/lotto/hotpicks/results" title="Lotto HotPicks Results">Lotto HotPicks</a></li>
+					<li><a href="/irish-lotto/results" title="Irish Lotto Results">Irish Lotto</a></li>
+					<li><a href="/health-lottery/results" title="Health Lottery Results">Health Lottery</a></li>
+					<li><a href="/postcode-lottery/results" title="Postcode Lottery Results">Postcode Lottery</a></li>
+					<li><a href="/free-lottery/results" title="Free Lottery Results">Free Lottery</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/checker" title="Lottery Results Checker" class="nav-checker subAvailable">Checker</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/lotto/checker" title="Lotto Results Checker">Lotto</a></li>
+					<li><a href="/lotto/checker#lotto-raffle" title="Lotto Raffle Results Checker">Lotto Raffle</a></li>
+					<li><a href="/euromillions/checker" title="EuroMillions Results Checker">EuroMillions</a></li>
+					<li><a href="/euromillions/checker#millionaire-maker" title="Millionaire Maker Results Checker">Millionaire Maker</a></li>
+					<li><a href="/thunderball/checker" title="Thunderball Results Checker">Thunderball</a></li>
+					<li><a href="/irish-lotto/checker" title="Irish Lotto Results Checker">Irish Lotto</a></li>
+					<li><a href="/health-lottery/checker" title="Health Lottery Results Checker">Health Lottery</a></li>
+					<li><a href="/postcode-lottery/checker" title="Postcode Lottery Results Checker">Postcode Lottery</a></li>
+					<li><a href="/free-lottery/checker" title="Free Lottery Results Checker">Free Lottery</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/number-generator" title="Lottery Number Generator" class="nav-random subAvailable">Number Generator</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/lotto/number-generator" title="Lotto Number Generator">Lotto</a></li>
+					<li><a href="/euromillions/number-generator" title="EuroMillions Number Generator">EuroMillions</a></li>
+					<li><a href="/thunderball/number-generator" title="Thunderball Number Generator">Thunderball</a></li>
+					<li><a href="/irish-lotto/number-generator" title="Irish Lotto Number Generator">Irish Lotto</a></li>
+					<li><a href="/health-lottery/number-generator" title="Health Lottery Number Generator">Health Lottery</a></li>
+					<li><a href="/free-lottery/number-generator" title="Free Lottery Number Generator">Free Lottery</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/statistics" title="Lottery Statistics" class="nav-stats subAvailable">Statistics</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/lotto/statistics" title="Lottery Statistics">Lotto</a></li>
+					<li><a href="/euromillions/statistics" title="EuroMillions Statistics">EuroMillions</a></li>
+					<li><a href="/thunderball/statistics" title="Thunderball Statistics">Thunderball</a></li>
+					<li><a href="/irish-lotto/statistics" title="Irish Lotto Statistics">Irish Lotto</a></li>
+					<li><a href="/health-lottery/statistics" title="Health Lottery Statistics">Health Lottery</a></li>
+					<li><a href="/postcode-lottery/statistics" title="Postcode Lottery Statistics">Postcode Lottery</a></li>
+					<li><a href="/free-lottery/statistics" title="Free Lottery Statistics">Free Lottery</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="/news" title="Lottery News" class="nav-news">News</a></li>
+			<li>
+				<a href="/lotteries" title="Lotteries" class="nav-lotteries subAvailable">The Lotteries</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/lotto" title="Lotto Draw Information">Lotto</a></li>
+					<li><a href="/lotto/raffle" title="Lotto Raffle Information">Lotto Raffle</a></li>
+					<li><a href="/euromillions" title="EuroMillions Lottery Information">EuroMillions</a></li>
+					<li><a href="/euromillions/millionaire-maker" title="EuroMillions Millionaire Maker Information">Millionaire Maker</a></li>
+					<li><a href="/thunderball" title="Thunderball Information">Thunderball</a></li>
+					<li><a href="/lotto/hotpicks" title="Lotto HotPicks Information">Lotto HotPicks</a></li>
+					<li><a href="/irish-lotto" title="Irish Lotto Information">Irish Lotto</a></li>
+					<li><a href="/health-lottery" title="Health Lottery Information">Health Lottery</a></li>
+					<li><a href="/postcode-lottery" title="Postcode Lottery Information">Postcode Lottery</a></li>
+					<li><a href="/free-lottery" title="Free Lottery Information">Free Lottery</a></li>
+					<li><a href="/other-lottery-games" title="Information on other world lotteries">Other Lotteries</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/information" title="Lottery Information" class="nav-info subAvailable">Information</a>
+				
+				<ul class="subMenu" onmouseover="hover(this,'on')" onmouseout="hover(this,'off')">
+					<li><a href="/syndicates" title="Syndicate Information">Syndicates</a></li>
+					<li><a href="/winners-guide" title="Winners Guide">Winners Guide</a></li>
+					<li><a href="/lost-ticket" title="Lost Lottery Tickets">Lost Tickets</a></li>
+					<li><a href="/damaged-ticket" title="Damaged Lottery Tickets">Damaged Tickets</a></li>
+					<li><a href="/history-of-lotteries" title="History of UK Lotteries">History of Lotteries</a></li>
+					<li><a href="/good-causes" title="Lottery Funding">Good Causes</a></li>
+					<li><a href="/unclaimed-lottery-prizes" title="Lottery Unclaimed Prizes">Unclaimed Prizes</a></li>
+				</ul>
+			</li>
+			
+						<script type="text/javascript">var MenuLinks = 9;</script>
+					<li class="last"><a href="/login" title="Sign In to Lottery.co.uk" class="nav-logout">Sign In</a></li>
+			
+		</ul>
+		
+		
+		
+	</nav>
+	
+	<script type="text/javascript">
+	<!--
+		function hover(obj,state) {
+			if (state == 'on') {prevNode(obj).className+=' hovered'}
+			else {prevNode(obj).className = prevNode(obj).className.replace(' hovered','')}	
+		}
+		function prevNode(n) {
+			x = n.previousSibling
+			while (x.nodeType != 1) {
+				x = x.previousSibling;
+			} return x;
+		};
+		function nextNode(n) {
+			x = n.nextSibling
+			while (x.nodeType != 1) {
+				x = x.nextSibling;
+			} return x;
+		};
+		
+	-->	
+	</script>
+	
+	
+				<div class="casino-big">
+					
+
+	<style type="text/css">
+		.casinoSlides {position:relative;}
+		.casinoSlides .slide {position:absolute;top:0;left:0; visibility:hidden; opacity:0;transition:all ease 0.5s;}
+		.casinoSlides .slide img {margin:-10px 0 0 -30px;}
+		.casinoSlides .slide.active {visibility:visible; opacity:1; transition:all ease 0.5s;}
+		.gamesBox a {right:80px;}
+		.casino-big .casinoSlides{width:250px;display:inline-block;position:relative;border-radius:5px;overflow:hidden;height:250px;}
+		.casino-big .casinoSlides .slide img {width:250px; margin:0;}
+		.casino-big a {position: absolute;margin-top: 200px;right: 55px;padding: 0px 50px 0px 30px;z-index: 8;}	
+	</style>
+	
+	<div class="casinoSlides">
+		<div class="slide1 slide active">
+			<img src="/images/games/static/taco-brothers-saving-christmas.jpg" alt="Taco Brothers Saving Christmas">
+			<a href="/play/promo-taco-side-desktop" target="_blank" title="Play online at Lottery Games" class="button-yellow" onclick="ga('send','event','Button','Casino Banner - Taco Brothers','Desktop: Movies (no text)')">Play Now</a>
+		</div>
+		<div class="slide2 slide">
+			<img src="/images/games/static/deck-the-halls.jpg" alt="Deck The Halls">
+			<a href="/play/promo-deck-side-desktop" target="_blank" title="Play online at Lottery Games" class="button-yellow" onclick="ga('send','event','Button','Casino Banner - Deck the Halls','Desktop: Movies (no text)')">Play Now</a>
+		</div>
+
+		<div class="slide3 slide">
+			<img src="/images/games/static/secrets-of-christmas.jpg" alt="Secrests of Christmas">
+			<a href="/play/promo-secrets-side-desktop" target="_blank" title="Play online at Lottery Games" class="button-yellow" onclick="ga('send','event','Button','Casino Banner - Secrets of Christmas','Desktop: Movies (no text)')">Play Now</a>
+		</div>
+
+		<div class="slide4 slide">
+			<img src="/images/games/static/snowflakes.jpg" alt="Snowflakes">
+			<a href="/play/promo-snow-side-desktop" target="_blank" title="Play online at Lottery Games" class="button-yellow" onclick="ga('send','event','Button','Casino Banner - SnowFlakes','Desktop: Movies (no text)')">Play Now</a>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+			
+		addLoadEvent(function() {
+			setInterval(function() {
+			  var activeSlide = document.querySelector('.slide.active');
+			  activeSlide.classList.remove('active');
+			  if (activeSlide.nextElementSibling ) {
+			    activeSlide.nextElementSibling .classList.add('active');
+			  } else {
+			    activeSlide.parentElement.firstElementChild.classList.add('active')
+			  }
+			}, 3000);
+		});
+	
+	</script>
+
+
+				</div>
+			
+
+			<a id="fl-small-base" href="/free-lottery/play">
+				<div id="fl-small-bg"></div>
+				<div id="fl-small-textC1">Play for</div>
+				<div id="fl-small-textC2">FREE!</div>
+				<div id="fl-small-textD1">Win up to</div>
+				<div id="fl-small-textD2">£1 MILLION</div>
+				<div id="fl-small-textD3">Every Week!</div>
+				<div id="fl-small-button" class="button-yellow">Play</div>		
+			</a>
+
+		
+
+		<div class="centred">
+			<a href="https://www.facebook.com/latestlotteryresults.UK/" id="footerFacebook" title="Click here for our Facebook page" target="_blank"><img src="/images/template/icon-facebook.png" alt="Facebook" style="width: 40px;"></a>
+			<a href="https://twitter.com/lottery_uk" title="Click here for our Twitter page" target="_blank"><img src="/images/template/icon-twitter.png" alt="Twitter" style="width: 40px;"></a>
+			<a href="https://www.instagram.com/lottery_uk/" title="Click here for our Instagram page" target="_blank"><img src="/images/template/icon-instagram.png" alt="Instagram" style="width: 40px;"></a>
+		</div>
+
+	
+
+</div>
+
+
+		
+		<a id="content"></a>
+	
+	<div class="main">
+	
+		<h1>Lottery Scam</h1>
+
+        <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+			 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				  <a href="/" title="Lottery.co.uk Home" itemprop="item">
+				  <span itemprop="name">Lottery.co.uk</span></a>
+			 </li>
+			 <li>Lottery Scam</li>
+        </ol>
+		
+		<p>Lottery games both in the UK and across the world have strict rules in place to ensure that they are fair and fun to play. However, there are many people out there who try and use the allure of money to set up lottery scams to divert people away from legitimate games. These fraudsters take advantage of unwitting victims who are blinded by promises of receiving a life-changing amount of cash.</p>
+		<p>The scams generally rely on persuading the recipient of a bogus email, text, letter or phone call that they have won a huge amount of cash in a lottery, which will then be transferred into their bank account on payment of ‘processing fees’ or ‘taxes’. These amounts are kept by the scammers, who often request further payments, stringing the victim along. Often the fraudster asks for personal information which will then be used for the purposes of identity theft.</p>
+		<p>Responding to just one of these communications can open the door to a flood of unwanted letters, phone calls and emails trying to separate you from your money. Read this page to learn more about protecting yourself against lottery scams.</p>
+		
+		<h2>Avoiding a Lottery Scam</h2>
+		<ul class="bullet">
+		<li>If you haven’t entered a lottery, raffle, sweepstake or other competition, then you cannot win it!</li>
+		<li>To win <a href="/lotto" title="Lotto">Lotto</a>, <a href="/euromillions" title="EuroMillions">EuroMillions</a>, <a href="/postcode-lottery" title="People's Postcode Lottery">People’s Postcode Lottery</a>, <a href="/health-lottery" title="The Health Lottery">The Health Lottery</a> or any other lottery game, you must have bought a ticket for the correct draw date and you must match the winning numbers exactly on your ticket.</li>
+		<li>No legitimate lottery will randomly select email addresses or mobile phone numbers to win prizes.</li>
+		<li>Legitimate lotteries will not approach you asking you to claim a prize. You may receive an email advising you of a win and instructing you to check your online account, but it is for you to approach the lottery company in order to claim any prize that you are due.</li>
+		<li>Legitimate lotteries will not ask for any fee or upfront payment of taxes in order to process your claim.</li>
+		</ul>
+		
+		<h2>Clues to Identify a Scam</h2>
+		<p>There are plenty of signs by which you can work out whether the lottery communication you have received is fake. Your letter, email, text or phone call may have all or some of these indicators:</p>
+		<ul class="bullet">
+		<li>Often the message will claim to be from a legitimate company, but the email address used bears no resemblance to that company name. For instance, it may be sent from a free webmail address like Hotmail.com or Gmail.com.</li>
+		<li>If you receive a phone call, check the number – if it begins with +4470, it is a Personal Redirect Number, which can be used from anywhere in the world. No legitimate lottery would use this sort of phone number.</li>
+		<li>It may not refer to you by name, but rather as “Dear Winner” or something similar but still suitably vague.</li>
+		<li>Scam letters are sometimes printed on poor quality paper, often with a photocopied letterhead. Occasionally they give the address of a legitimate business to try and trick you into believing that the win is real.</li>
+		<li>They will often include a strict time limit on claiming the prize, as well as a confidentiality clause, in an effort to pressure the potential victim into parting with their money or bank details. It means that the recipient of the scam has less time to properly investigate the communication or seek advice.</li>
+		<li>Scam communications often have poor grammar and spelling mistakes.</li>
+		</ul>
+		
+		<h2>What to Do if You Receive a Scam</h2>
+		<p>If you receive any form of communication informing you of a win on a lottery that you haven’t entered, then it is recommended that you:</p>
+		<ul class="bullet">
+		<li>Do not send any money.</li>
+		<li>Do not reply to the message, as it will only encourage the scammers to send you more emails, letters and phone calls. If you have already responded, then cut off all contact straight away.</li>
+		<li>If you received an email, do not open any attachments or files that came with it, as they could contain malware or a virus.</li>
+		<li>Do not disclose your private bank or personal details. If you have already provided this information, then notify your bank or building society immediately.</li>
+		<li>Contact Action Fraud either through their website (<a href="https://www.actionfraud.police.uk/" title="Visit the Action Fraud website" rel="nofollow" target="_blank">https://www.actionfraud.police.uk/</a>) or on 0300 123 2040 for advice on what to do next.</li>
+		</ul>
+		
+		<h2>Methods of Scamming</h2>
+		<p>These are the most common types of lottery scams. You may be initially contacted through one of these means:</p>
+		<ul class="bullet">
+		<li><strong>Post</strong>: You receive a letter telling you that you have won a prize, but that you need to pay a fee to process your claim before any winnings can be paid out.</li>
+		<li><strong>Email</strong>: Similar to the postal scam, but emails from scammers can also link back to fraudulent copies of official websites in order to seem legitimate.</li>
+		<li><strong>Phone</strong>: You receive a call informing you of a lottery win and, during the call, the ‘lottery official’ will attempt to take advantage of your shock in order to obtain your bank details.</li>
+		<li><strong>Social Media</strong>: You receive a direct message telling you that your account has been selected for a lottery or raffle prize. You will then be asked to forward your financial details.</li>
+		<li><strong>Mobile</strong>: You receive an SMS informing you that your mobile phone number has been selected at random from a lottery to win a prize.</li>
+		</ul>
+		
+		<p>No matter how they get in touch with you, never give your personal and financial information over to a suspected lottery scammer. No legitimate, regulated lottery will ask you to pay a fee for your winnings. Just hang up, throw out the letters and delete the emails and messages.</p>
+		
+		<h2>Types of Scam</h2>
+		<ul class="bullet">
+		<li><strong>Second Chance Lottery</strong>: You may be contacted by a scammer claiming to act on behalf of Lotto or EuroMillions and offering you a ‘second chance’ to win a prize that has not been claimed. UK lottery games do not offer this type of draw, as any prizes left unclaimed after 180 days are then distributed to good causes.</li>
+		<li><strong>Lottery Winner Trusts</strong>: These are scam communications which take the names of previous high-profile winners and claim to be donating funds on their behalf to those less fortunate. The idea is to obtain your bank details in order to make the ‘payment’. Well-known winners whose names have been used without their knowledge in such activity include £161 million EuroMillions winners Colin and Christine Weir from Largs in Scotland, Neil Trotter from Surrey who scooped £108 million and Northern Irish woman Margaret Loughrey, who genuinely did donate a portion of her £27 million winnings to those in need, but not through any scheme like the ones listed above. </li>
+		</ul>
+		
+	</div>
+		
+	
+		<br class="clear">
+	
+	</div>
+	
+	<footer>
+			
+		<div class="hf footer">
+		
+			<div class="hf-inner">
+				
+				<a href="#top" rel="nofollow" class="topBtn" id="topBtn" onclick="smoothScroll('top'); return false"></a>
+				
+				
+				
+				<p class="copyright">
+					<img src="/images/template/logo.png" alt="Lottery.co.uk" style="position: relative; top: 13px; padding: 0 10px;" width="240" height="39"> 
+					
+					Copyright © 2017 Lottery.co.uk
+				</p>
+				
+				<div class="footerLinks">
+					<a href="/contact" title="Contact Lottery.co.uk">Contact Us</a>
+					<a href="/disclaimer" title="Lottery.co.uk disclaimer">Disclaimer</a>
+                    <a href="/privacy-policy" title="Lottery.co.uk Privacy Poilicy">Privacy Poilicy</a>
+					<a href="/cookies" title="Lottery.co.uk Cookie Policy">Cookie Policy</a>
+					<a href="/sitemap" title="Sitemap of Lottery.co.uk">Sitemap</a>
+					<a href="/terms-and-conditions" title="Lottery.co.uk Terms and Conditions">Terms and Conditions</a>
+				</div>
+				
+				
+				
+				<p class="disclaimer">The content and operations of this website have not been approved or endorsed by Camelot UK Lotteries Limited, the National Lottery Commission or SLE.</p>
+
+			</div>
+		
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+	<!--
+		//SMOOTH SCROLLING WITHOUT JQUERY
+		
+		function yPos() {
+			if (self.pageYOffset) return self.pageYOffset;
+			if (document.documentElement && document.documentElement.scrollTop) return document.documentElement.scrollTop;
+			if (document.body.scrollTop) return document.body.scrollTop;
+			return 0;
+		};
+		
+		function elYPos(eID) {
+        	var elm = document.getElementById(eID), y = elm.offsetTop, node = elm;
+        	while (node.offsetParent && node.offsetParent != document.body) {
+            	node = node.offsetParent;
+            	y += node.offsetTop;
+        	} return y;
+    	};
+
+		function smoothScroll(eID) {
+			var startY = yPos();
+			var stopY = elYPos(eID);
+			var distance = stopY > startY ? stopY - startY : startY - stopY;
+			if (distance < 100) {
+				scrollTo(0, stopY); return;
+			}
+			var speed = Math.round(distance / 100);
+			if (speed >= 20) speed = 20;
+			var step = Math.round(distance / 25);
+			var leapY = stopY > startY ? startY + step : startY - step;
+			var timer = 0;
+			if (stopY > startY) {
+				for ( var i=startY; i<stopY; i+=step ) {
+					setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+					leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+				} return;
+			}
+			for ( var i=startY; i>stopY; i-=step ) {
+				setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+				leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+			}
+		}
+
+
+		//Powerball Mini Banner Slide Down
+		function slideDown(){
+			var close = document.getElementById("close-promo");
+			var open = document.querySelector(".promoStrap");
+			open.classList.add("active");
+			close.addEventListener("click", function(){
+	    		open.classList.remove("active");
+	    		setTimeout("document.querySelector('.promoStrap').style.display = 'none'",500);
+	    		var cookieExpire = new Date();
+		  		cookieExpire.setDate(cookieExpire.getDate() + 1);
+		  		var cookieValue	= escape("promoStrap") + ( (1 == null) ? "" : "; expires="+cookieExpire.toUTCString()+"; path=/" );
+		  		document.cookie = "promoStrap" + "=" + cookieValue;
+	    	});
+		}
+		addLoadEvent(function(){slideDown()});
+
+		
+		
+		//TOP BUTTON DISPLAY
+		if (document.getElementById("sidebarLeft") && document.getElementById("siteContainer").clientHeight <= document.getElementById("sidebarLeft").clientHeight + 100) {
+			document.getElementById("topBtn").style.display = 'none';
+		}
+		
+		
+		//FIX FOR SOCIAL MEDIA BOX EXPANDING WIDTH OF SITE
+		addLoadEvent(function(){
+			var allDivs = document.getElementsByTagName("div");
+			for (i = 0; i < allDivs.length; i++) {
+				if (allDivs[i].className.indexOf("socialContainer") != -1) {
+					allDivs[i].style.overflow = "visible";	
+				}
+			}
+		});
+		
+		
+		
+	-->
+	</script>
+    
+	
+	
+
+</body></html>

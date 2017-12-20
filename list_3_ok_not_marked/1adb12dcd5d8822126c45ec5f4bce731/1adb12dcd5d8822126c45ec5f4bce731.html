@@ -1,0 +1,1933 @@
+<html><head>
+    <title>TerminalPoker</title>
+    <meta name="keywords" content="Poker, Casino and Sports">
+    <meta name="description" content="Play Poker, Casino and Sportsbetting at TerminalPoker.com">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/_theme/www.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQGCH9"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MQGCH9');</script>
+  <link rel="manifest" href="/roost_manifest.json"><style>#goroostcom-notifications p, #goroostcom-notifications li, #goroostcom-notifications span, #goroostcom-notifications h1, #goroostcom-notifications h2, #roost-notficiations h3 {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#goroostcom-bell p, #goroostcom-notifications p, #goroostcom-notifications button {
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+}
+#roost-bellprompt p {
+	line-height: 100%;
+}
+#goroostcom-bell {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	transition: 1000ms opacity linear, 0ms border-radius linear;
+	-o-transition: 1000ms opacity linear, 0ms border-radius linear;
+	-ms-transition: 1000ms opacity linear, 0ms border-radius linear;
+	-moz-transition: 1000ms opacity linear, 0ms border-radius linear;
+	-webkit-transition: 1000ms opacity linear, 0ms border-radius linear;
+	text-align: left !important;
+}
+#goroostcom-bell.hide-bell {
+	display: none !important;
+}
+#goroostcom-bell.roost-bell-fadeout {
+	opacity: 0;
+	transition: 1000ms opacity linear;
+	-o-transition: 1000ms opacity linear;
+	-ms-transition: 1000ms opacity linear;
+	-moz-transition: 1000ms opacity linear;
+	-webkit-transition: 1000ms opacity linear;
+}
+#goroostcom-bell * {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#goroostcom-bell:hover #roost-bell {
+	-webkit-animation: wiggle 0.25s ease-in 2;
+	-moz-animation: wiggle 0.25s ease-in 2;
+	animation: wiggle 0.25s ease-in 2;
+}
+#roost-bell.roost-wiggle {
+	-webkit-animation: wiggle 0.25s ease-in 2;
+	-moz-animation: wiggle 0.25s ease-in 2;
+	animation: wiggle 0.25s ease-in 2;
+}
+#goroostcom-bell.roost-inline {
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+#goroostcom-bell.roost-no-circle {
+	border-radius: 0;
+}
+#goroostcom-bell.show-coachmarks::after, #goroostcom-bell.animate-coachmarks-start::after {
+	content: '0 new updates for you';
+	position: absolute;
+	left: -184px;
+	top: 50%;
+	margin-top: -17px;
+	overflow: hidden;
+	background: #3B3B3B;
+	border-radius: 5px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	border-left-color: #3B3B3B;
+}
+#goroostcom-bell.show-coachmarks::before, #goroostcom-bell.animate-coachmarks-start::before {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 50%;
+	margin-top: -7px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid #3b3b3b;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left-color: #3B3B3B;
+}
+#goroostcom-bell.animate-coachmarks-start::after, #goroostcom-bell.animate-coachmarks-start::before {
+	width: 0;
+	opacity: 0;
+	left: 0;
+	z-index: -1;
+	transition: 200ms all linear;
+	-o-transition: 200ms all linear;
+	-ms-transition: 200ms all linear;
+	-moz-transition: 200ms all linear;
+	-webkit-transition: 200ms all linear;
+}
+#goroostcom-bell.animate-coachmarks-end::after, #goroostcom-bell.animate-coachmarks-end::before {
+	width: 175px;
+	opacity: 1;
+	left: -184px;
+	z-index: 20;
+	transition: 200ms all linear;
+	-o-transition: 200ms all linear;
+	-ms-transition: 200ms all linear;
+	-moz-transition: 200ms all linear;
+	-webkit-transition: 200ms all linear;
+}
+#goroostcom-bell.animate-coachmarks-end::before {
+	left: -12px;
+}
+#goroostcom-bell.animate-coachmarks-width::after {
+	width: 0;
+	transition: 190ms all linear;
+	-o-transition: 190ms all linear;
+	-ms-transition: 190ms all linear;
+	-moz-transition: 190ms all linear;
+	-webkit-transition: 190ms all linear;
+}
+#goroostcom-bell.animate-coachmarks-width::before {
+}
+#roost-bell {
+	width: 70%;
+	height: 70%;
+	margin: 15% 0 0 15%;
+	cursor: pointer !important;
+}
+#roost-bell * {
+	fill: #FFFFFF !important;
+}
+#goroostcom-bell.roost-inlinecircle #roost-bell {
+	width: 125%;
+	height: 125%;
+	margin: -15% 0 0 -12.5%;
+}
+#goroostcom-bell.roost-wrapper-left {
+	right: initial;
+	left: 25px;
+}
+#goroostcom-bell.roost-wrapper-top {
+	bottom: initial;
+	top: 25px;
+}
+#goroostcom-bell.roost-wrapper-left.show-coachmarks::before, #goroostcom-bell.roost-wrapper-left.animate-coachmarks-start::before {
+	left: initial;
+	right: -12px;
+	border-left-style: hidden;
+	border-right: 8px solid #3b3b3b;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+#goroostcom-bell.roost-wrapper-left.animate-coachmarks-start::after, #goroostcom-bell.roost-wrapper-left.animate-coachmarks-start::before {
+	left: initial;
+	right: 0;
+}
+#goroostcom-bell.roost-wrapper-left.animate-coachmarks-end::after, #goroostcom-bell.roost-wrapper-left.animate-coachmarks-end::before {
+	left: initial;
+	right: -184px;
+}
+#goroostcom-bell.roost-wrapper-left.animate-coachmarks-end::before {
+	left: initial;
+	right: -12px;
+}
+#roost-bubble {
+	position: absolute;
+	top: 20px;
+	right: 7px;
+	cursor: pointer !important;
+}
+#roost-bubble-count {
+	position: absolute;
+	font-size: 8px;
+	z-index: 4;
+	right: 18%;
+	top: 0%;
+	font-weight: 600;
+	border-radius: 50%;
+	border: 2px solid #3b3b3b;
+	line-height: 8px;
+	height: 35%;
+	width: 35%;
+	text-align: center;
+	margin-top: 7px;
+}
+#roost-bubble-count.roost-bubble-svg {
+	background-color: transparent !important;
+	border-style: hidden;
+}
+#roost-prompt p {
+	font-size: 3.5vh;
+	text-align: center;
+	margin: 30% 0 0 0;
+}
+#goroostcom-notifications {
+	width: 100%;
+	max-width: 400px;
+	height: 100vh !important;
+	position: fixed;
+	right: -400px;
+	top: 0px;
+	bottom: 0px !important;
+	z-index: 5;
+	overflow: hidden;
+	background: #fcfcfc;
+	transition: 100ms right ease-in;
+	-o-transition: 100ms right ease-in;
+	-ms-transition: 100ms right ease-in;
+	-moz-transition: 100ms right ease-in;
+	-webkit-transition: 100ms right ease-in;
+}
+#goroostcom-notifications * {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#roost-overlay {
+	width: 100%;
+	height: 15%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(245,245,245,0.95)), to(rgba(245,245,245,0.0)), color-stop(.55,rgba(245,245,245,1)));
+	z-index: 10;
+	pointer-events: none;
+}
+#goroostcom-notifications.roost-notes-visible {
+	display: block;
+	bottom: 0px !important;
+	width: 100%;
+	max-width: 400px;
+	height: 100vh;
+	right: 0;
+	border: 1px solid #ebebeb;
+	transition: 100ms right ease-in;
+	-o-transition: 100ms right ease-in;
+	-ms-transition: 100ms right ease-in;
+	-moz-transition: 100ms right ease-in;
+	-webkit-transition: 100ms right ease-in;
+}
+#roost-notifications-head {
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #cfcfcf;
+	text-align: left !important;
+}
+#roost-notifications-title {
+	line-height: 58px;
+	margin: 0 0 0 0;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #424242;
+	text-align: center;
+	width: 145px;
+	display: inline-block !important;
+	cursor: pointer !important;
+	border-bottom: 3px solid #424242;
+}
+.roost-settings-active #roost-notifications-title {
+	border-bottom-style: hidden;
+	color: #949494;
+}
+#roost-data {
+	padding: 0 0 100px 0;
+	margin: 0;
+	list-style-type: none;
+	height: calc(100% - 80px);
+	overflow: scroll;
+	position: relative;
+	-ms-overflow-style: none;
+}
+#roost-data::-webkit-scrollbar {
+	width: 0px !important;
+}
+#roost-data li {
+	margin: 0;
+	min-height: 75px;
+	position: relative;
+	cursor: pointer;
+	padding: 18px 125px 18px 20px;
+	background: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	list-style-type: none;
+	text-align: left !important;
+}
+#roost-data li::after {
+	content: '';
+	background: #cfcfcf;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 90%;
+	height: 1px;
+	margin: 0 0 0 -45%;
+}
+#roost-data li.dismissing {
+	overflow: hidden;
+	margin: 0 -400px 0 400px !important;
+	-moz-transition: margin-left 250ms linear, margin-right 250ms linear;
+	-ms-transition: margin-left 250ms linear, margin-right 250ms linear;
+	-o-transition: margin-left 250ms linear, margin-right 250ms linear;
+	transition: margin-left 250ms linear, margin-right 250ms linear;
+}
+#roost-data li.roost-dragging {
+	border-left: 1px solid #cbcbcb;
+	-webkit-box-shadow: -10px 0px 20px -6px rgba(59,59,59,0.4);
+	-moz-box-shadow: -10px 0px 20px -6px rgba(59,59,59,0.4);
+	box-shadow: -10px 0px 20px -6px rgba(59,59,59,0.4);
+}
+#roost-data li.roost-list-noimage {
+	padding-right: 53px;
+}
+#roost-data li.roost-list-noimage img {
+	display: none;
+}
+#roost-data li p {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	color: #666;
+	margin: 0;
+	line-height: 14px;
+	cursor: pointer;
+	max-height: 28px;
+	overflow: hidden;
+}
+#roost-data li p.roost-custom-title {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #424242;
+	-webkit-text-stroke: 0.5px;
+	height: 18px;
+}
+#roost-data li p.roost-custom-title~p:first-of-type {
+}
+#roost-data li p#roost-date {
+	font-size: 12px;
+	color: #FFF;
+	background: #a0a0a0;
+	line-height: 18px;
+	width: 90px;
+	padding: 0 0 0 5px;
+}
+#roost-settings {
+	position: absolute;
+	width: 100%;
+	max-width: 400px;
+	height: 100px;
+	right: 0;
+	display: none;
+	padding: 25px 0 0 0;
+	z-index: 5;
+	text-align: center;
+}
+#roost-close-pane {
+	cursor: pointer !important;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#roost-close {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	fill: #949494;
+}
+#roost-note-dismiss {
+	cursor: pointer !important;
+	margin: 0;
+	position: absolute;
+	right: 22px;
+	top: 15px;
+	width: 9px;
+	height: 9px;
+	fill: #949494;
+	opacity: 0;
+}
+#roost-note-dismiss.dismiss-fadein {
+	opacity: 1;
+	-webkit-transition: opacity 100ms ease-out;
+	-moz-transition: opacity 100ms ease-out;
+	-ms-transition: opacity 100ms ease-out;
+	-o-transition: opacity 100ms ease-out;
+	transition: opacity 100ms ease-out;
+}
+.roost-note-share {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin: -6px 0 0 0;
+	fill: #dadada;
+	opacity: 0.3;
+}
+#roost-gear {
+	display: inline-block;
+	width: 110px;
+	margin: 0;
+	line-height: 58px;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #949494;
+	text-align: center;
+	cursor: pointer !important;
+	border-bottom-style: hidden;
+}
+#roost-data li:hover .roost-note-share {
+	opacity: 1;
+	-webkit-transition: opacity 110ms ease-out;
+	-moz-transition: opacity 110ms ease-out;
+	-ms-transition: opacity 110ms ease-out;
+	-o-transition: opacity 110ms ease-out;
+	transition: opacity 110ms ease-out;
+}
+.roost-settings-active #roost-gear {
+	border-bottom: 3px solid #424242;
+	color: #424242;
+}
+#roost-settings.roost-settings-visible {
+	display: block;
+}
+#roost-settings.roost-settings-visible #roost-empty-wrapper {
+	display: none;
+}
+#roost-settings input, #roost-settings p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 15px;
+	line-height: 60px;
+	cursor: pointer;
+	color: #666;
+	font-size: 14px;
+}
+#roost-settings p#roost-disable-confirmation, #roost-settings p#roost-enable-confirmation {
+	width: 90%;
+	text-align: center;
+	cursor: default;
+}
+#roost-settings p#roost-disable-text {
+	max-width: 75%;
+	line-height: 120%;
+}
+#roost-settings input {
+	margin: 0;
+	width: 12px;
+}
+#roost-settings input#roost-disable {
+	-moz-appearance: checkbox;
+	-webkit-appearance: checkbox;
+}
+@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(10deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-10deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes wiggle {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(10deg);
+	}
+	50% {
+		-moz-transform: rotate(0deg);
+	}
+	75% {
+		-moz-transform: rotate(-10deg);
+	}
+	100% {
+		-moz-transform: rotate(0deg);
+	}
+}
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.roost-note-img {
+	position: absolute;
+	right: 48px;
+	bottom: 50%;
+	margin-bottom: -28px;
+	width: 56px;
+	height: 56px;
+}
+#roost-empty-wrapper {
+	text-align: center;
+	min-width: 150px;
+	min-height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#roost-empty-bell {
+	fill: rgb(205,205,205) !important;
+	width: 80px;
+	height: 80px;
+}
+#roost-empty-message {
+	font-size: 14px;
+	color: rgb(185,185,185);
+	width: 300px;
+}
+#roost-branding {
+	text-align: center;
+	font-size: 14px;
+	color: #a9a9a9;
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 100%;
+	z-index: -1;
+	font-weight: 600;
+	opacity: 0;
+}
+#roost-brand-logo {
+	vertical-align: middle;
+	width: 45px;
+	margin: 0 0 0 3px;
+	fill: #a9a9a9;
+}
+#roost-spinner {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 0 0 #a9a9a9;
+	position: absolute;
+	left: 50%;
+	top: 220px;
+	margin: -20px 0 0 -20px;
+	z-index: -1;
+	visibility: hidden;
+}
+#roost-clear-all {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #666;
+	z-index: 10;
+	cursor: pointer;
+	text-transform: uppercase;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.roost-empty-notifications #roost-clear-all {
+	visibility: hidden;
+}
+.roost-settings-active #roost-clear-all {
+	visibility: hidden;
+}
+.roost-settings-active #roost-branding {
+	opacity: 1;
+	z-index: 10;
+	cursor: pointer;
+}
+.roost-settings-active #roost-empty-wrapper {
+	display: none;
+}
+#roost-spinner.show-roost-spinner {
+	animation: 1s spin infinite linear;
+	z-index: 10;
+	visibility: visible;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);;
+	}
+}
+.roost-hide {
+	display: none !important;
+}
+.roost-visible {
+	opacity: 1.0 !important;
+}
+.roost-notes-unsub {
+	overflow: visible !important;
+}
+.roost-notes-unsub #roost-settings.roost-settings-visible ~ #roost-bellprompt {
+	display: none;
+}
+#goroostcom-notifications #roost-bellprompt {
+	background: #e6e6e6;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	padding: 0 0 0 180px;
+	border-bottom: 1px solid #cfcfcf;
+}
+#goroostcom-notifications #roost-bellprompt-image {
+	width: auto;
+	height: 110px;
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+#goroostcom-notifications .roost-bellprompt-text {
+	font-size: 18px;
+	color: #3b3b3b;
+	text-align: left;
+	font-weight: 400;
+}
+#goroostcom-notifications #roost-bellprompt-title {
+	text-align: left;
+	margin: 28px 0 15px 0;
+	font-weight: 600;
+	line-height: 120%;
+}
+#goroostcom-notifications #roost-bellprompt-body, #goroostcom-notifications #roost-bellprompt-body-2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 130%;
+	margin: 0 30px 0 0;
+}
+#roost-bellprompt-body-2 {
+	margin: 5px 0;
+}
+#roost-bellprompt-btn {
+	text-align: center;
+	width: 120px;
+	height: 35px;
+	font-size: 14px;
+	line-height: 32px;
+	color: #fff;
+	background: #686868;
+	border: none;
+	border-radius: 3px;
+	margin: 15px 0 20px 0;
+	cursor: pointer;
+	padding: 0;
+	text-transform: none;
+	display: inline-block;
+}
+#roost-bellprompt-btn:hover {
+	opacity: 0.85;
+	-webkit-transition: opacity 100ms ease-out;
+	-moz-transition: opacity 100ms ease-out;
+	-ms-transition: opacity 100ms ease-out;
+	-o-transition: opacity 100ms ease-out;
+	transition: opacity 100ms ease-out;
+}
+#roost-bellprompt-decline {
+	font-size: 11px;
+	display: inline-block;
+	cursor: pointer !important;
+	margin-left: 20px;
+	color: #3b3b3b;
+}
+#goroostcom-notifications #roost-bellprompt-image.roost-bellprompt-logo {
+	width: 60px;
+	height: 60px;
+	left: 25px;
+}
+#goroostcom-notifications #roost-bellprompt.roost-bellprompt-containslogo {
+	padding-left: 110px;
+}
+#roost-share-template {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+}
+#roost-segments-list {
+	list-style-type: none;
+	margin: 0;
+}
+.roost-segment {
+	height: 40px;
+}
+#roost-segments-head {
+	text-transform: uppercase;
+	font-size: 12px !important;
+	line-height: 20px !important;
+	margin: 25px 15px 0px 15px !important;
+	padding-top: 25px;
+	border-top: 1px solid #CFCFCF;
+	width: 370px;
+	text-align: center;
+}
+#roost-shareicon-fb, #roost-shareicon-twitter {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+}
+#roost-share-wrapper {
+	position: absolute;
+	width: 102px;
+	height: 0px;
+	right: 0;
+	bottom: -35px;
+	background: #FFF;
+	overflow: hidden;
+	z-index: 11;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.roost-share-active #roost-share-wrapper {
+	padding: 10px;
+	height: 55px;
+	border: 1px solid #a9a9a9;
+	border-radius: 5px;
+}
+#roost-share-fb, #roost-share-twitter {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	visibility: hidden;
+	float: right;
+	cursor: pointer;
+	fill: #55acee;
+}
+#roost-share-fb {
+	margin: 0 0 0 10px;
+	fill: #3b5998;
+}
+.roost-share-active #roost-share-fb, .roost-share-active #roost-share-twitter {
+	visibility: visible;
+}
+#goroostcom-notifications.roost-notes-unsub {
+	top: initial;
+	bottom: 0;
+}
+.roost-view-btn {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -15px;
+	height: 30px;
+	background: none;
+	border: 1px solid #3b3b3b;
+	border-radius: 5px;
+	cursor: pointer !important;
+	font-weight: 600;
+	opacity: 0.7;
+	color: #3b3b3b;
+	padding: 0;
+	text-transform: none;
+	font-size: 12px;
+	letter-spacing: 0;
+	width: 45px;
+}
+#roost-data li:hover .roost-view-btn {
+	background: #3b3b3b;
+	color: #FFF;
+	opacity: 0.9;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+#roost-banner {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 755px;
+	height: 95px;
+	background: #FFF;
+	border-top-left-radius: 8px;
+	-webkit-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.2);
+}
+#roost-banner-left {
+	width: 66%;
+	float: left;
+	background: #f5f5f5;
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 25px;
+	padding-left: 95px;
+	border-top-left-radius: 8px;
+}
+#roost-banner-right {
+	width: 33%;
+	height: 100%;
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	padding: 25px;
+}
+#roost-banner-title {
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	font-size: 18px;
+	margin: 0;
+	font-weight: 500;
+}
+#roost-banner-subtitle {
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	margin: 0;
+	margin-top: 5px;
+	font-size: 13px;
+}
+#roost-banner-btn {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	color: #FFF;
+	border: none;
+	background: #3b3b3b;
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	width: 100px;
+	border-radius: 5px;
+	height: 45px;
+	cursor: pointer;
+}
+#roost-banner-btn:hover {
+}
+#roost-banner-dismisstext {
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	position: absolute;
+	right: 50px;
+	bottom: 5px;
+	margin: 0;
+	cursor: pointer;
+	font-size: 11px;
+}
+#roost-banner-belltext {
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #898989;
+	width: 120px;
+	margin-top: 5px;
+}
+#roost-banner-arrow {
+	visibility: hidden;
+	z-index: -1;
+}
+#roost-banner-arrow.roost-show-arrow {
+	visibility: visible;
+	z-index: 20;
+	fill: #898989;
+	position: absolute;
+	right: 80px;
+	top: 40px;
+}
+#roost-banner-logo {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+}
+#roost-wrapper {
+	position: fixed;
+	top: 0;
+	right: -405px;
+	height: 100%;
+	width: 405px;
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	color: #666;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.98);
+	box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.4);
+	-webkit-animation: roost-slide-in 0.75s forwards;
+	-webkit-animation-delay: 2s;
+	-moz-animation: roost-slide-in 0.75s forwards;
+	-moz-animation-delay: 2s;
+	animation: roost-slide-in 0.75s forwards;
+	animation-delay: 2s;
+}
+#roost-branding:hover {
+	color: #e25351;
+	-webkit-transition: color 200ms ease-out;
+	-moz-transition: color 200ms ease-out;
+	-ms-transition: color 200ms ease-out;
+	-o-transition: color 200ms ease-out;
+	transition: color 200ms ease-out;
+}
+#roost-branding:hover #roost-brand-logo * {
+	fill: #e25351;
+	opacity: 1.0;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+#roost-share-fb:hover * {
+	fill: #3b5998;
+	opacity: 1;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+#roost-share-twitter:hover * {
+	fill: #55acee;
+	opacity: 1;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
+}
+#roost-data li p.roost-notification-timestamp {
+	color: #888888;
+	font-size: 11px;
+	margin-top: 2px;
+}
+#roost-slide-out-desc {
+	width: 280px;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 20px auto 0 auto;
+	color: #808084;
+}
+#roost-browsernote-wrapper {
+	height: 80px;
+	width: 360px;
+	position: absolute;
+	right: -380px;
+	top: 10px;
+	background: #FFF;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+	-webkit-transition: right 250ms linear;
+	-moz-transition: right 250ms linear;
+	-ms-transition: right 250ms linear;
+	-o-transition: right 250ms linear;
+	transition: right 250ms linear;
+	z-index: 10001999;
+}
+#roost-browsernote-wrapper.roost-browsernote-visible {
+	right: 10px;
+	-webkit-transition: right 250ms linear;
+	-moz-transition: right 250ms linear;
+	-ms-transition: right 250ms linear;
+	-o-transition: right 250ms linear;
+	transition: right 250ms linear;
+}
+#roost-browsernote-wrapper p {
+	font-family: Helvetica Neue;
+	margin: 0;
+	line-height: 25px;
+	font-size: 12px;
+	margin-left: 90px;
+}
+#roost-browsernote-wrapper p#roost-browsernote-title {
+	font-size: 14px;
+	margin-top: 5px;
+}
+#roost-browsernote-wrapper p#roost-browsernote-body {
+	letter-spacing: 0.5px;
+	line-height: 110%;
+	max-height: 27px;
+	margin-right: 25px;
+	overflow: hidden;
+}
+#roost-browsernote-wrapper img {
+	float: left;
+	height: 100%;
+	width: auto;
+}
+#roost-browsernote-close-wrapper {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 50%;
+}
+#roost-browsernote-close {
+	height: 40%;
+	width: 70%;
+}
+#roost-browsernote-close-wrapper.roost-browsernote-click {
+	background: #616161;
+}
+#roost-browsernote-close-wrapper.roost-browsernote-click svg * {
+	fill: #FFF;
+}
+svg#Icons {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin-top: -30px;
+	margin-right: -30px;
+}
+svg#Icons .st0 {
+	fill: #E25351;
+}
+svg#Icons .st2 {
+	fill: #FFFFFF;
+}
+.roost-bubble-mini svg#Icons {
+	display: none;
+}
+#roost-settings p#roost-email-text {
+	display: block;
+	text-align: center;
+	cursor: default;
+	margin-top: 25px;
+	border-top: 1px solid #CFCFCF;
+}
+#roost-settings input#roost-email-input {
+	width: 175px;
+	height: 35px;
+	line-height: 35px;
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	font-size: 13px;
+	padding-left: 8px;
+	cursor: text;
+}
+#roost-settings button#roost-email-submit {
+	background: none;
+	outline: none;
+	border: 1px solid #949494;
+	font-size: 13px;
+	padding: 8px;
+	border-radius: 3px;
+	font-family: "Helvetica", "Roboto-Regular", "Arial", sans-serif;
+	color: #000;
+	cursor: pointer;
+}
+#roost-settings button#roost-email-submit:hover {
+	background: #949494;
+	color: #FFF;
+	-webkit-transition: right 250ms linear;
+	-moz-transition: right 250ms linear;
+	-ms-transition: right 250ms linear;
+	-o-transition: right 250ms linear;
+	transition: right 250ms linear;
+}
+#roost-settings p#roost-email-success {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+#roost-browsernote-overflow {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 380px;
+	height: 100px;
+	overflow: hidden;
+}
+#roost-settings p#roost-email-failure, #roost-settings p#roost-email-success {
+	text-align: center;
+	width: 300px;
+	margin: 30px auto 0px auto;
+	display: block;
+	line-height: 120%;
+	margin-top: 30px;
+	font-weight: 600;
+}
+#roost-subonmain-wrapper {
+	background-color: #D8D8D8;
+	padding: 12px 0px 0px 20px;
+	height: 45px;
+}
+#roost-subonmain-box {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#roost-subonmain-text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	margin: 0;
+}
+#roost-settings.roost-settings-visible ~ #roost-subonmain-wrapper {
+	display: none;
+}
+#roost-empty-bell .st0 {
+	fill: #CDCDCD;
+}
+#roost-modal {
+	display: none;
+}
+#roost-wrapper.roost-wrapper-dismissed {
+	-webkit-animation: roost-slide-out 0.5s forwards;
+	-moz-animation: roost-slide-out 0.5s forwards;
+	animation: roost-slide-out 0.5s forwards;
+}
+#roost-slide-out-header {
+	height: 60px;
+	position: relative;
+}
+#roost-slide-out-header hr {
+	width: 90px;
+	height: 1px;
+	position: absolute;
+	background-color: #d6d6d6;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+}
+#roost-slide-out-headline {
+	position: relative;
+	top: 25px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	width: calc(100% - 90px);
+	margin: 0 auto;
+}
+#roost-qualify-dismiss {
+	position: absolute;
+	right: 18px;
+	top: 24px;
+}
+#roost-slide-out-slug {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 19px;
+	font-weight: 600;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 25px;
+}
+#roost-subscribe-button {
+	width: 146px;
+	height: 45px;
+	line-height: 45px;
+	margin: 30px auto 0;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: #1982df;
+	border-radius: 10px;
+	cursor: pointer;
+	box-sizing: content-box;
+	padding: 0 15px;
+}
+#roost-slide-out-device {
+	width: 333px;
+	height: 422px;
+	margin-top: 66px;
+	background-image: url(https://s3.amazonaws.com/roost/promptkit/laptop.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#roost-x {
+	cursor: pointer;
+}
+#roost-x img {
+	width: 13px;
+}
+@-webkit-keyframes roost-slide-in {
+	0% {
+		right: -405px;
+	}
+	95% {
+		right: -3px;
+	}
+	100% {
+		right: -5px;
+	}
+}
+@-moz-keyframes roost-slide-in {
+	0% {
+		right: -405px;
+	}
+	95% {
+		right: -3px;
+	}
+	100% {
+		right: -5px;
+	}
+}
+@keyframes roost-slide-in {
+	0% {
+		right: -405px;
+	}
+	95% {
+		right: -3px;
+	}
+	100% {
+		right: -5px;
+	}
+}
+@-webkit-keyframes roost-slide-out {
+	0% {
+		right: -5px;
+	}
+	5% {
+		right: -3px;
+	}
+	100% {
+		right: -405px;
+	}
+}
+@-moz-keyframes roost-slide-out {
+	0% {
+		right: -5px;
+	}
+	5% {
+		right: -3px;
+	}
+	100% {
+		right: -405px;
+	}
+}
+@keyframes roost-slide-out {
+	0% {
+		right: -5px;
+	}
+	5% {
+		right: -3px;
+	}
+	100% {
+		right: -405px;
+	}
+}
+#roost-reset {
+	backface-visibility: visible;
+	background: 0;
+	background-clip: border-box;
+	background-color: transparent;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-position-x: 0;
+	background-position-y: 0;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border: 0;
+	border-style: none;
+	border-width: medium;
+	border-color: inherit;
+	border-bottom: 0;
+	border-bottom-color: inherit;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	border-collapse: separate;
+	border-image: none;
+	border-left: 0;
+	border-left-color: inherit;
+	border-left-style: none;
+	border-left-width: medium;
+	border-radius: 0;
+	border-right: 0;
+	border-right-color: inherit;
+	border-right-style: none;
+	border-right-width: medium;
+	border-spacing: 0;
+	border-top: 0;
+	border-top-color: inherit;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top-style: none;
+	border-top-width: medium;
+	box-shadow: none;
+	box-sizing: content-box;
+	caption-side: top;
+	clear: none;
+	clip: auto;
+	color: inherit;
+	columns: auto;
+	column-count: auto;
+	column-fill: balance;
+	column-gap: normal;
+	column-rule: medium none currentColor;
+	column-rule-color: currentColor;
+	column-rule-style: none;
+	column-rule-width: none;
+	column-span: 1;
+	column-width: auto;
+	content: normal;
+	counter-increment: none;
+	counter-reset: none;
+	cursor: auto;
+	direction: ltr;
+	display: inline;
+	empty-cells: show;
+	float: none;
+	height: auto;
+	hyphens: none;
+	left: auto;
+	letter-spacing: normal;
+	line-height: normal;
+	list-style: none;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	max-height: none;
+	max-width: none;
+	min-height: 0;
+	min-width: 0;
+	opacity: 1;
+	orphans: 0;
+	outline: 0;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: medium;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	page-break-after: auto;
+	page-break-before: auto;
+	page-break-inside: auto;
+	perspective: none;
+	perspective-origin: 50% 50%;
+	position: static;
+	quotes: 'C' 'D' '8' '9';
+	right: auto;
+	tab-size: 8;
+	table-layout: auto;
+	text-align: inherit;
+	text-align-last: auto;
+	text-decoration: none;
+	text-decoration-color: inherit;
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	top: auto;
+	transform: none;
+	transform-style: flat;
+	transition: none;
+	transition-delay: 0s;
+	transition-duration: 0s;
+	transition-property: none;
+	transition-timing-function: ease;
+	unicode-bidi: normal;
+	vertical-align: baseline;
+	visibility: visible;
+	white-space: normal;
+	widows: 0;
+	word-spacing: normal;
+	z-index: auto;
+}
+#roost-slide-out-dontsend {
+	font-size: 14px;
+	margin-bottom: 40px;
+	font-weight: 600;
+	padding-top: 25px;
+	cursor: pointer;
+	color: #1982df;
+}
+@media screen and (max-device-width: 640px) and (orientation: portrait) {
+	#roost-wrapper {
+		width: 86%;
+		right: -86%;
+		box-shadow: none;
+	}
+	#roost-modal {
+		display: block;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		-webkit-animation: roost-fade-in 0.75s forwards;
+		-webkit-animation-delay: 2s;
+		-moz-animation: roost-fade-in 0.75s forwards;
+		-moz-animation-delay: 2s;
+		animation: roost-fade-in 0.75s forwards;
+		animation-delay: 2s;
+	}
+	#roost-modal.roost-wrapper-dismissed {
+		-webkit-animation: roost-fade-out 0.5s forwards;
+		-moz-animation: roost-fade-out 0.5s forwards;
+		animation: roost-fade-out 0.5s forwards;
+	}
+	#roost-slide-out-header {
+		height: 10%;
+	}
+	#roost-slide-out-headline {
+		top: 25%;
+		font-size: 13px;
+	}
+	#roost-qualify-dismiss {
+		right: 8%;
+		top: 27%;
+	}
+	#roost-x img {
+		width: 15px;
+	}
+	#roost-slide-out-header hr {
+		width: 20%;
+		height: 4%;
+	}
+	#roost-slide-out-slug {
+		margin-top: 10%;
+		font-size: 16px;
+	}
+	#roost-slide-out-desc {
+		margin-top: 1%;
+		font-size: 14px;
+	}
+	#roost-subscribe-button {
+		width: 50%;
+		height: 45px;
+		margin: 10% auto;
+		font-size: 14px;
+		border-radius: 10px;
+	}
+	#roost-slide-out-device {
+		width: 100%;
+		height: 284px;
+		margin-top: 0;
+		background-image: url(https://s3.amazonaws.com/roost/promptkit/mobile-phone.png;
+	}
+	@-webkit-keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@-moz-keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@-webkit-keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@-moz-keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@-webkit-keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-moz-keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes roost-fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@-moz-keyframes roost-fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes roost-fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
+@media screen and (max-device-height: 640px) and (orientation: landscape) {
+	#roost-wrapper {
+		width: 86%;
+		right: -86%;
+		box-shadow: none;
+		text-align: left;
+	}
+	#roost-modal {
+		display: block;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		-webkit-animation: roost-fade-in 0.75s forwards;
+		-webkit-animation-delay: 2s;
+		-moz-animation: roost-fade-in 0.75s forwards;
+		-moz-animation-delay: 2s;
+		animation: roost-fade-in 0.75s forwards;
+		animation-delay: 2s;
+	}
+	#roost-modal.roost-wrapper-dismissed {
+		-webkit-animation: roost-fade-out 0.5s forwards;
+		-moz-animation: roost-fade-out 0.5s forwards;
+		animation: roost-fade-out 0.5s forwards;
+	}
+	#roost-slide-out-header {
+		height: 20%;
+	}
+	#roost-slide-out-headline {
+		top: 28%;
+		font-size: 16px;
+		padding-left: 5%;
+	}
+	#roost-qualify-dismiss {
+		right: 5%;
+		top: 24%;
+	}
+	#roost-x img {
+		width: 15px;
+	}
+	#roost-slide-out-header hr {
+		width: 90%;
+		height: 2%;
+	}
+	#roost-slide-out-banner {
+		text-align: left;
+		padding-left: 5%;
+	}
+	#roost-slide-out-slug {
+		margin-top: 3%;
+		font-size: 19px;
+	}
+	#roost-slide-out-desc {
+		margin-top: 2%;
+		margin-bottom: 4%;
+		font-size: 15px;
+	}
+	#roost-subscribe-button {
+		line-height: 19px;
+		width: 33%;
+		height: 33px;
+		margin: 0;
+		padding-top: 16px;
+		font-size: 14px;
+		border-radius: 10px;
+		text-align: center;
+		position: relative;
+		z-index: 20;
+	}
+	#roost-slide-out-device {
+	}
+	@-webkit-keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@-moz-keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@keyframes roost-slide-in {
+		0% {
+			right: -86%;
+		}
+		95% {
+			right: -1%;
+		}
+		100% {
+			right: -2%;
+		}
+	}
+	@-webkit-keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@-moz-keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@keyframes roost-slide-out {
+		0% {
+			right: -2%;
+		}
+		5% {
+			right: -1%;
+		}
+		100% {
+			right: -86%;
+		}
+	}
+	@-webkit-keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-moz-keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes roost-fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes roost-fade-out {
+		0% {
+		}
+		100% {
+		}
+	}
+	@-moz-keyframes roost-fade-out {
+		0% {
+		}
+		100% {
+		}
+	}
+	@keyframes roost-fade-out {
+		0% {
+		}
+		100% {
+		}
+	}
+}
+@media (max-width: 770px) {
+	div#goroostcom-bell {
+		right: 25px;
+		bottom: 25px;
+		width: 50px;
+		height: 50px;
+	}
+	#roost-bell {
+	}
+	#roost-bubble-count {
+		right: 15%;
+		width: 35%;
+		height: 35%;
+	}
+	#goroostcom-notifications.roost-notes-visible {
+		width: 90%;
+	}
+	#roost-settings {
+		width: 100%;
+		text-align: center;
+	}
+	#roost-settings input {
+		margin: 0;
+	}
+	#roost-note-dismiss {
+		display: none;
+	}
+	#roost-data li .roost-note-share {
+		opacity: 1;
+	}
+	#goroostcom-notifications #roost-bellprompt {
+		padding-left: 130px;
+		overflow: hidden;
+	}
+	#goroostcom-notifications #roost-bellprompt-image {
+		left: -50px;
+	}
+}
+</style></head>
+  <body class="body1">
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQGCH9" height="0" width="0" style="display:none;visibility:hidden" />
+    </noscript>
+    <!--<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQGCH9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQGCH9');</script>-->
+    <!-- End Google Tag Manager --><script type="text/javascript">/*<![CDATA[*/window.cms = { urlBase: "/" }//]]></script><div id="pagewrapper"><div id="prepage"></div><div id="page"><div id="headerwrapper"><div id="preheader"></div><div id="header"><table width="100%" height="186px"><tbody><tr><td><a href="/_www"><img id="logo" src="/images/logo.png" alt="TerminalPoker" width="232" height="82"></a></td><td><div class="menuitem"><a href="/sports">Sports</a><br>             We offer many sports and you can bet both pre-game and live at fantastic odds.</div></td><td><div class="menuitem"><a href="/casino">Casino</a><br>             Try our new exciting videoslots&nbsp;<a href="https:/slots" style="font-family: arial, sans-serif; text-shadow: none; font-weight: bold; text-transform: none; font-size: 12px;"><strong>here!</strong></a></div></td><td style="padding-right: 5px;">&nbsp;</td><td style="height: 170px; position: relative; display: block;" width="200px" align="left"><p> 	          	&nbsp;</p><div class="PluginLanguageSelector"><form name="PluginLanguageSelector" id="PluginLanguageSelector" action="/_lang/setLanguage/" method="post" autocomplete="off"><input name="__RequestVerificationToken" value="8N7/e7hw8owE/MkdkzMhIP89YyhI6FLO/RuypCFgiKF0bpvTm0fNXgw6Mf7br1tCyN7IBC13gxoEi60XGESaUA==" type="hidden"><table><tbody><tr><td><select name="PluginLanguageSelectorIsoCode" id="PluginLanguageSelectorIsoCode" class="dropDown" onchange="document.PluginLanguageSelector.submit()"><option value="en" selected="selected">English</option><option value="sv">Svenska</option><option value="fi">Suomi</option></select></td><td><input name="PluginLanguageSelectorChange" id="TpLanguageSelectorChange" value="Change" class="submitBtn" type="submit"></td></tr></tbody></table></form></div><p></p></td></tr></tbody></table></div><div id="postheader"></div></div><div id="contentwrapper"><div id="precontent"></div><div id="content"><p><style type="text/css">
+div#headerwrapper,
+div#footerwrapper {
+    display: none;
+}
+
+body {
+    background: none!important;
+    color: #fff;
+}
+li {
+margin-left: 20px;
+}
+</style></p><div class="landingPageBanner newPageBanner"><h2><span style="font-size: 12px;">Dear player,</span></h2></div><div class="landingPageBanner newPageBanner"><p>We regret to inform you that TerminalPoker is no longer operational. The decision to terminate the service was taken because of the general decline of the poker market and the difficulty to find an attractive and well working poker network to partner with. Our company will continue to offer turnkey gaming services to partners and operate a few casino brands but unfortunately we have no plans to reintroduce poker.</p><p>If you had a player account with TerminalPoker your account and balance has been transferred to PokerLoco (www.pokerloco.com) and you should have received an email from them in order to set a new password. PokerLoco is a partner of Microgaming’s Poker Network and is operated by a group listed at the stock exchange in Sweden guaranteeing that funds held with them are safe. You are free to continue to play with PokerLoco or make a withdrawal through their cashier. If you have any questions related to PokerLoco we kindly ask you to contact their support by emailing: support@pokerloco.com.</p><p>If your account was registered from any of the countries listed below we have not been able to transfer your account, as PokerLoco do not accept players from these territories at present time.</p><ul><li>Belgium</li><li>Bulgaria</li><li>Curacao</li><li>Denmark</li><li>Estonia</li><li>Georgia</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Portugal</li><li>Romania</li><li>Spain</li><li>Turkey</li><li>UK</li></ul><p>If you are from any of these countries and had a balance with TerminalPoker we kindly ask you to contact support@terminalpoker.com to sort it out.</p><p>We thank you for using our service and wish you best of luck in the future!</p><p>Best regards,</p><h3>TerminalPoker</h3></div></div><div id="postcontent"></div></div><div id="footerwrapper"><div id="prefooter"></div><div id="footer"><table id="info"><tbody><tr><td width="580px" valign="top"><strong>Come play at the best online and mobile poker site</strong><br>
+            If you are a poker fan then you deserve to play at TerminalPoker®, the best online poker and mobile poker site because we all know that poker is not a game, or a sport or a hobby... It's a way of life! And why not enjoy the experience with the best of the best.<br><br><strong>At TerminalPoker® you can also enjoy our stellar rush poker, sportsbook &amp; casino</strong><br>
+            Whether you are a veteran online poker player or playing for the very first time, you will surely adore the thrill of playing fast poker online on our site. But for those of you who also enjoy the adventure of casino games online you will be pleased to know that our Casino is chockfull of amazing games like online blackjack for money or just for fun, the best online slots on the net and online roulette with no download necessary. In addition to that we also offer great odds in our sportsbook.<br><br><strong>Download our poker game and start playing now</strong><br>
+            If you are anxious to start playing poker either for money or just for fun, then all you need to do is download our poker game free and enjoy the enthralling terminal poker experience everyone is raving about.<br><br><strong>The home of Iphone Poker and Android Poker</strong><br>
+            Welcome to the home of Iphone poker and of course additionally the home of Android poker because we all know that mobile phones are becoming increasingly attached to the hip and why not take advantage by playing your favourite poker games on your mobile with the best of the best, TerminalPoker®</td><td width="30px">&nbsp;</td><td valign="top"><p>&nbsp;</p><p>Gamble responsibly and in moderation. Do not consider gambling as way of earning money, and only play with money that you can afford to lose. If you are worried about your gambling or affected by someone else's gambling, please contact GamCare or GamblersAnonymous for help.<br><br><a href="http://www.gambleaware.co.uk/"><img alt="GambleAware" src="/images/misc/gambleaware.png"></a></p></td></tr><tr><td colspan="3" style="padding: 10px 0 0 0;"><p>TerminalPoker® is operated by Elec Games Limited, Vaults 13-15, Valletta Waterfront, Malta (Org No C44158). Elec Games Limited is licensed to operate all kind of gaming in accordance with Curacao License No 1668/JAZ.</p></td></tr></tbody></table><table id="links"><tbody><tr><td width="580px" valign="top"><div><a href="/terms-and-conditions">Terms and conditions</a> | <a href="/privacy-policy">Privacy policy</a> | <a href="/responsible-gaming">Responsible Gaming</a> | <a href="/contact-us">Contact Us</a> | <a href="/_mobile">TerminalPoker Mobile</a> | <a href="/affiliates">Want to become an affiliate?</a> | <a href="/affiliate-center">Affiliate Center</a></div></td><td width="30px">&nbsp;</td><td valign="top"><strong>©Terminal Poker 2014</strong> Please Play Responsibly</td></tr></tbody></table></div><div id="postfooter"></div></div></div><div id="postpage"></div></div><!-- 
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-42134453-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+	--><style type="text/css">
+  #cxl-badge * {
+    box-sizing: content-box;
+  }
+  #cxl-badge
+  img { border: 0px; }
+  #cxl-badge {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 90122516;
+
+    background: transparent;
+  }
+  #cxl-badge > a {
+    border: 0;
+    display: block;
+    float: right;
+    width: 40px;
+    height: 50px;
+    padding: 8px 8px 4px 8px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  #cxl-badge p {
+    margin: 0;
+    padding: 0;
+    border: 0;		
+    font-size: 11px;
+    line-height: 16px;
+    font-family: verdana, sans-serif;
+  }
+  #cxl-badge  p > a {
+    padding: 15px;
+    padding-right: 2px;
+    padding-left: 12px;
+    display: block;
+    /* Light blue */
+    color: #a1b3c7;
+    text-decoration: none;
+  }
+  #cxl-badge div {
+    display: none;
+    float: right;
+  }
+  #cxl-badge:hover div {
+    display: block;
+  }
+  #cxl-badge {
+    clear: both;
+  }
+</style>
+<div id="cxl-badge"> 
+  <a target="_blank" href="http://validator.curacao-egaming.com/licenses/domain?domain=www.terminalpoker.com">
+    <img src="/badge-d92fec7a53b051132ade39feb7737b03/badge-image-transparent.png" alt="Curacao eGaming Badge" width="40" height="48">
+  </a>
+  <div>
+    <p id="curacao-egaming-description">
+      <a target="_blank" href="http://validator.curacao-egaming.com/licenses/domain?domain=www.terminalpoker.com">Curacao eGaming<br>Compliance Services</a>
+    </p> 
+  </div>
+</div>
+<!--[if lt IE 9 ]>
+  <style type="text/css"> #cxl-badge { display: none; }
+  </style>
+<![endif]-->
+
+<script type="text/javascript" id="" src="//cdn.goroost.com/roostjs/dpkenj3mneetr9ozzoiqxehbxtr5zvqv"></script><iframe style="display: none;" src="https://pageconfig.goroost.com/pageconfig?appKey=dpkenj3mneetr9ozzoiqxehbxtr5zvqv&amp;url=https%3A%2F%2Fwww.terminalpoker.com%2F"></iframe><iframe style="display: none;" src="https://pageview.goroost.com/pageview?rdt=null&amp;rid=null&amp;appKey=dpkenj3mneetr9ozzoiqxehbxtr5zvqv&amp;url=https%3A%2F%2Fwww.terminalpoker.com%2F&amp;referrer="></iframe><div style="display: block; width: 60px; height: 60px; z-index: 9999999; background: rgb(59, 59, 59) none repeat scroll 0% 0%;" id="goroostcom-bell"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="fill: rgb(255, 255, 255);" xml:space="preserve" id="roost-bell"> <style type="text/css"> .st1 { display:none;} .st2 { display:inline;} .st3 { fill: none;stroke:#A7A9AB;stroke-width:5.000000e-02;stroke-miterlimit:10;stroke-dasharray:0.1001,0.1001;} .st4 { display:inline;fill:none;stroke:#A7A9AB;stroke-width:5.000000e-02;stroke-miterlimit:10;stroke-dasharray:0.1;} </style> <g id="Layer_3"> <g> <path class="st0" d="M28,21.7c0-2.5-1.1-5.4-3.1-7.6c-1.9-2.1-3.4-1.9-3.4-3.6C21.5,9.7,20.8,9,20,9s-1.5,0.7-1.5,1.5c0,1.6-1.6,1.4-3.4,3.6c-2,2.2-3.1,5.1-3.1,7.6c0,2.7-2,2.5-2,4.3c0,2.5,3.9,4,10,4s10-1.5,10-4C30,24.2,28,24.4,28,21.7z"></path> <path class="st0" d="M22.5,30.9C21.6,31,21,31,20,31s-1.6,0-2.5-0.1c-0.1,0-0.2,0.1-0.2,0.2S18,33,20,33s2.8-1.7,2.8-1.9S22.6,30.9,22.5,30.9z"></path> </g> </g> <g id="Circles" class="st1"> <g class="st2"> <circle class="st3" cx="20" cy="30" r="3"></circle> </g> <circle class="st4" cx="28" cy="26" r="2"></circle> <circle class="st4" cx="12" cy="26" r="2"></circle> <circle class="st4" cx="20" cy="10.5" r="1.5"></circle> <circle class="st4" cx="20" cy="19" r="7"></circle> <circle class="st4" cx="17.5" cy="31.1" r="0.2"></circle> <circle class="st4" cx="22.5" cy="31.1" r="0.3"></circle> </g> </svg> <p id="roost-bubble-count" class="roost-hide undefined roost-bubble-svg" style="border-color: rgb(59, 59, 59); background: rgb(226, 83, 81) none repeat scroll 0% 0%; color: rgb(255, 255, 255); line-height: 15px;"></p></div><div style="display: none; z-index: 10000999;" id="goroostcom-notifications" class="roost-empty-notifications"><div id="roost-overlay"></div> <div id="roost-notifications-head"> <!-- CLOSE ICON --><div id="roost-close-pane"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="11" height="11" viewBox="0 0 11 11" id="roost-close"> <path d="M11.001,9.625 C11.001,9.625 9.625,11.001 9.625,11.001 C9.625,11.001 5.500,6.875 5.500,6.875 C5.500,6.875 1.375,11.001 1.375,11.001 C1.375,11.001 -0.001,9.625 -0.001,9.625 C-0.001,9.625 4.125,5.500 4.125,5.500 C4.125,5.500 -0.001,1.375 -0.001,1.375 C-0.001,1.375 1.375,-0.001 1.375,-0.001 C1.375,-0.001 5.500,4.125 5.500,4.125 C5.500,4.125 9.625,-0.001 9.625,-0.001 C9.625,-0.001 11.001,1.375 11.001,1.375 C11.001,1.375 6.875,5.500 6.875,5.500 C6.875,5.500 11.001,9.625 11.001,9.625 Z" id="path-1" class="cls-2" fill-rule="evenodd"></path> </svg></div> <!-- NOTIFICATION TITLE --> <p id="roost-notifications-title" style="font-size: 14px;">Notifications</p> <p id="roost-gear" class="roost-hide" style="font-size: 14px;">Settings</p> </div> <!-- SETTINGS MENU --> <div id="roost-settings"> <input id="roost-disable" type="checkbox"> <p id="roost-disable-text">Enable Notifications</p>  <p id="roost-email-text" class="roost-hide">Send me notifications via email</p><div id="roost-email-input-wrapper" class="roost-hide"> <input id="roost-email-input" type="text"> <button id="roost-email-submit">Submit</button> </div><p id="roost-email-success" class="roost-hide">Thanks! Check your email soon.</p><p id="roost-email-failure" class="roost-hide">There was an issue registering your email address. Is your email entered correctly?</p> <p id="roost-disable-confirmation" class="roost-hide">You've been unsubscribed</p><p id="roost-enable-confirmation" class="roost-hide">You've been subscribed. Enjoy!</p> <div id="roost-spinner"></div> </div> <!-- NOTIFICATION LIST--> <ul id="roost-data"> </ul> <!-- CLEAR ALL --> <p id="roost-clear-all">Clear All</p><!-- SHARE ICON --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="11" height="12" viewBox="0 0 11 12" id="roost-share-template"> <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMBAMAAABGh1qtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEWUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJT///95LpK7AAAADXRSTlMASeYq+OcUleuY5EqWN52rBAAAAAFiS0dEDm+9ME8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA/SURBVAjXY2BgYGBUEgCSDEx3FUCUyd0AIJneGbWBQUizPQHI1r1iwICgtq4ECwKV9ED0mUD0MYH1MXBHbQAATRQO8Wsew14AAAAASUVORK5CYII=" width="11" height="12"></image> </svg><!-- FACEBOOK ICON --><svg xmlns="http://www.w3.org/2000/svg" id="roost-shareicon-fb" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="32" height="32" viewBox="0 0 32 32">  <path d="M30.234,0.000 C30.234,0.000 1.766,0.000 1.766,0.000 C0.791,0.000 0.000,0.791 0.000,1.766 C0.000,1.766 0.000,30.234 0.000,30.234 C0.000,31.209 0.791,32.000 1.766,32.000 C1.766,32.000 17.092,32.000 17.092,32.000 C17.092,32.000 17.092,19.608 17.092,19.608 C17.092,19.608 12.922,19.608 12.922,19.608 C12.922,19.608 12.922,14.779 12.922,14.779 C12.922,14.779 17.092,14.779 17.092,14.779 C17.092,14.779 17.092,11.217 17.092,11.217 C17.092,7.084 19.616,4.833 23.304,4.833 C25.070,4.833 26.588,4.965 27.030,5.023 C27.030,5.023 27.030,9.343 27.030,9.343 C27.030,9.343 24.473,9.344 24.473,9.344 C22.468,9.344 22.079,10.297 22.079,11.695 C22.079,11.695 22.079,14.779 22.079,14.779 C22.079,14.779 26.862,14.779 26.862,14.779 C26.862,14.779 26.239,19.608 26.239,19.608 C26.239,19.608 22.079,19.608 22.079,19.608 C22.079,19.608 22.079,32.000 22.079,32.000 C22.079,32.000 30.234,32.000 30.234,32.000 C31.209,32.000 32.000,31.209 32.000,30.234 C32.000,30.234 32.000,1.766 32.000,1.766 C32.000,0.791 31.209,0.000 30.234,0.000 Z" id="path-1" class="cls-2" fill-rule="evenodd"></path> </svg> <!-- TWITTER ICON --> <svg xmlns="http://www.w3.org/2000/svg" id="roost-shareicon-twitter" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="32" height="32" viewBox="0 0 32 32"> <path d="M30.000,32.000 C30.000,32.000 2.000,32.000 2.000,32.000 C0.895,32.000 -0.000,31.105 -0.000,30.000 C-0.000,30.000 -0.000,2.000 -0.000,2.000 C-0.000,0.895 0.895,0.000 2.000,0.000 C2.000,0.000 30.000,0.000 30.000,0.000 C31.105,0.000 32.000,0.895 32.000,2.000 C32.000,2.000 32.000,30.000 32.000,30.000 C32.000,31.105 31.105,32.000 30.000,32.000 ZM26.829,7.195 C25.968,7.724 25.015,8.108 24.000,8.315 C23.187,7.418 22.029,6.857 20.748,6.857 C18.288,6.857 16.293,8.924 16.293,11.473 C16.293,11.835 16.332,12.187 16.408,12.525 C12.706,12.333 9.423,10.495 7.226,7.702 C6.842,8.384 6.623,9.177 6.623,10.023 C6.623,11.624 7.409,13.037 8.604,13.865 C7.874,13.841 7.187,13.633 6.587,13.288 C6.586,13.307 6.586,13.326 6.586,13.346 C6.586,15.582 8.122,17.448 10.160,17.872 C9.786,17.978 9.392,18.034 8.986,18.034 C8.699,18.034 8.420,18.005 8.148,17.951 C8.715,19.785 10.360,21.120 12.310,21.157 C10.785,22.395 8.864,23.133 6.777,23.133 C6.417,23.133 6.063,23.112 5.714,23.069 C7.686,24.379 10.027,25.143 12.543,25.143 C20.738,25.143 25.219,18.109 25.219,12.009 C25.219,11.808 25.214,11.609 25.206,11.411 C26.076,10.760 26.831,9.947 27.429,9.022 C26.630,9.389 25.771,9.637 24.870,9.749 C25.790,9.177 26.496,8.273 26.829,7.195 Z" id="path-1" class="cls-2" fill-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="7" height="14" viewBox="0 0 7 14" id="roost-banner-arrow"> <defs> <style> .cls-2 {fill: #3b3b3b; opacity: 0.6; } </style> </defs> <path d="M7.012,7.420 C7.012,7.420 1.420,14.012 1.420,14.012 C1.420,14.012 -0.012,12.580 -0.012,12.580 C-0.012,12.580 3.875,7.000 3.875,7.000 C3.875,7.000 -0.012,1.420 -0.012,1.420 C-0.012,1.420 1.420,-0.012 1.420,-0.012 C1.420,-0.012 7.012,6.580 7.012,6.580 C7.012,6.580 6.300,7.000 6.300,7.000 C6.300,7.000 7.012,7.420 7.012,7.420 Z" id="path-1" class="cls-2" fill-rule="evenodd"></path> </svg><!-- BRANDING --><p id="roost-branding">Powered by <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="62" height="35" viewBox="0 0 62 35" id="roost-brand-logo"> <path d="M61.968,10.987 C61.524,12.545 60.338,12.825 58.148,13.077 C57.200,15.330 56.462,17.635 56.012,20.841 C55.493,24.541 57.441,23.891 57.779,23.607 C57.972,23.446 58.291,23.495 58.458,23.689 C58.819,24.106 58.425,26.332 56.235,26.332 C53.291,26.332 53.025,22.446 53.616,18.395 C53.004,18.745 52.141,19.121 50.935,19.456 C51.380,20.062 51.684,20.757 51.684,21.525 C51.684,24.104 49.449,26.343 45.625,26.343 C42.963,26.343 41.107,25.166 41.107,23.195 C41.107,21.132 43.008,19.194 46.860,18.762 C47.012,18.745 47.161,18.727 47.307,18.708 C46.379,18.235 44.977,17.567 44.752,16.380 C43.874,16.726 42.198,17.144 39.593,16.849 C41.037,23.582 37.046,26.334 33.609,26.334 C30.839,26.334 29.133,25.084 29.133,22.020 C29.133,20.515 29.928,18.395 31.156,16.626 C30.261,16.878 29.044,17.029 27.452,16.849 C28.897,23.582 24.906,26.334 21.469,26.334 C18.699,26.334 16.992,25.084 16.992,22.020 C16.992,18.955 20.295,13.331 23.826,13.331 C25.084,13.331 25.829,14.033 26.388,14.569 C27.021,15.177 30.770,15.936 33.353,14.296 C33.353,14.296 33.353,14.298 33.353,14.298 C34.175,13.699 35.063,13.331 35.966,13.331 C37.225,13.331 37.969,14.033 38.529,14.569 C39.155,15.170 43.337,15.924 45.440,14.373 C46.127,13.694 47.229,13.331 48.411,13.331 C51.044,13.331 50.199,16.813 47.466,16.813 C47.466,16.813 48.660,17.337 49.777,18.259 C53.211,17.419 54.022,16.143 54.022,16.143 C54.022,16.143 54.022,16.144 54.022,16.144 C54.197,15.329 54.467,14.351 54.777,13.334 C52.769,13.363 51.723,13.051 51.723,12.442 C51.723,11.654 53.620,11.245 55.545,10.958 C56.328,8.645 57.101,6.620 57.198,6.370 C57.416,5.808 60.676,5.108 61.019,5.108 C61.335,5.108 61.610,5.458 61.461,5.802 C60.701,7.564 59.987,9.051 59.335,10.440 C60.935,10.243 62.188,10.212 61.968,10.987 ZM23.751,16.141 C21.741,16.141 20.370,19.211 20.370,20.659 C20.370,21.595 20.892,22.789 22.457,22.789 C24.436,22.789 25.539,20.884 25.633,19.432 C25.761,17.452 24.886,16.141 23.751,16.141 ZM35.892,16.141 C33.881,16.141 32.511,19.211 32.511,20.659 C32.511,21.595 33.033,22.789 34.598,22.789 C36.577,22.789 37.679,20.884 37.773,19.432 C37.902,17.452 37.027,16.141 35.892,16.141 ZM49.077,19.877 C48.915,19.907 48.748,19.935 48.577,19.963 C46.978,20.225 44.876,20.357 44.787,22.025 C44.748,22.766 45.444,23.517 46.592,23.517 C48.277,23.517 49.639,22.591 49.639,21.229 C49.639,20.682 49.436,20.253 49.077,19.877 ZM10.830,18.686 C13.582,26.684 17.002,28.365 20.641,28.365 C24.281,28.365 25.882,26.674 26.531,26.674 C26.749,26.674 26.945,26.821 27.033,27.087 C27.743,29.241 25.582,34.598 19.500,33.955 C13.397,33.311 9.406,24.706 7.989,20.461 C7.177,24.003 5.403,26.682 2.692,26.682 C1.463,26.682 0.004,25.654 0.004,23.781 C0.004,21.522 2.103,20.602 3.963,19.573 C4.886,19.063 5.561,18.481 5.561,17.874 C5.561,17.288 5.059,17.030 4.727,17.030 C3.942,17.030 3.109,17.350 1.924,17.738 C1.761,17.791 1.589,17.825 1.399,17.675 C0.845,17.299 1.680,15.032 3.893,14.178 C5.089,13.716 8.151,13.090 10.191,17.150 C11.990,15.764 17.326,11.381 17.326,8.183 C17.326,4.026 10.961,6.515 8.768,7.806 C3.566,10.870 3.199,12.859 2.400,12.859 C1.562,12.859 1.656,10.866 1.720,10.364 C2.220,6.435 4.900,2.167 7.953,2.167 C9.336,2.167 9.575,3.012 9.575,3.012 C9.575,3.012 11.274,-0.009 14.640,-0.009 C16.699,-0.009 16.040,1.656 16.040,1.656 C16.040,1.656 17.075,0.996 18.859,0.996 C20.644,0.996 22.350,2.527 20.371,4.367 C20.371,4.367 22.695,4.599 22.695,7.129 C22.695,13.546 12.957,17.828 10.830,18.686 Z" id="path-1" class="cls-2" fill-rule="evenodd"></path> </svg></p><div id="roost-empty-wrapper"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="roost-empty-bell"> <style type="text/css"> .st1 { display:none;} .st2 { display:inline;} .st3 { fill: none;stroke:#A7A9AB;stroke-width:5.000000e-02;stroke-miterlimit:10;stroke-dasharray:0.1001,0.1001;} .st4 { display:inline;fill:none;stroke:#A7A9AB;stroke-width:5.000000e-02;stroke-miterlimit:10;stroke-dasharray:0.1;} </style> <g id="Layer_3"> <g> <path class="st0" d="M28,21.7c0-2.5-1.1-5.4-3.1-7.6c-1.9-2.1-3.4-1.9-3.4-3.6C21.5,9.7,20.8,9,20,9s-1.5,0.7-1.5,1.5c0,1.6-1.6,1.4-3.4,3.6c-2,2.2-3.1,5.1-3.1,7.6c0,2.7-2,2.5-2,4.3c0,2.5,3.9,4,10,4s10-1.5,10-4C30,24.2,28,24.4,28,21.7z"></path> <path class="st0" d="M22.5,30.9C21.6,31,21,31,20,31s-1.6,0-2.5-0.1c-0.1,0-0.2,0.1-0.2,0.2S18,33,20,33s2.8-1.7,2.8-1.9S22.6,30.9,22.5,30.9z"></path> </g> </g> <g id="Circles" class="st1"> <g class="st2"> <circle class="st3" cx="20" cy="30" r="3"></circle> </g> <circle class="st4" cx="28" cy="26" r="2"></circle> <circle class="st4" cx="12" cy="26" r="2"></circle> <circle class="st4" cx="20" cy="10.5" r="1.5"></circle> <circle class="st4" cx="20" cy="19" r="7"></circle> <circle class="st4" cx="17.5" cy="31.1" r="0.2"></circle> <circle class="st4" cx="22.5" cy="31.1" r="0.3"></circle> </g> </svg><p id="roost-empty-message">No new notifications</p></div></div><iframe style="display: none;" src="/roost_worker.js"></iframe><iframe style="display: none;" src="https://go.goroost.com/api/frame/register?prompt=true&amp;appKey=dpkenj3mneetr9ozzoiqxehbxtr5zvqv"></iframe></body></html>

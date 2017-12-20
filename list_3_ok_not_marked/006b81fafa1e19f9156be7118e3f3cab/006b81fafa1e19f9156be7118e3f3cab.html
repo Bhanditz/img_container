@@ -1,0 +1,298 @@
+<html><head><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//bat.bing.com/bat.js" async=""></script><script type="text/javascript" src="https://cdn-ssl.vegasworld.com/fx/js/lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    // set the robots text based on whether we're on the test site or not
+    var sCurrentPage = window.location.toString().toLowerCase();
+    var bTestSite = (sCurrentPage.indexOf("minisage.com") > -1);
+    if (bTestSite) {
+        document.write("<META name=robots content=\"" + "noindex, nofollow\"" + ">");
+    }
+    else {
+        document.write("<META name=robots content=\"" + "index, follow\"" + ">");
+    }
+
+    var redirectPlatform = 0; // see ValuesPlatform.java
+    var bIsTablet = false;
+    var bIsPhone = false;
+
+    function IsVisitorTablet(a) {
+        bIsTablet = false;
+        if (a.indexOf('iPad') > -1) {
+            bIsTablet = true;
+            redirectPlatform = 1;
+        }
+        if (a.indexOf('Touch') > -1) {
+            bIsTablet = true;
+            redirectPlatform = 3;
+        }
+        if (a.indexOf('Kindle') > -1) {
+            bIsTablet = true;
+            redirectPlatform = 3;
+        }
+        if (a.indexOf('Android') > -1 && a.indexOf('Mobile') == -1) {
+            bIsTablet = true;
+            redirectPlatform = 2;
+        }
+
+        if (a.indexOf('MSIE') > -1) bIsTablet = false;
+        if (a.indexOf('Windows NT') > -1) bIsTablet = false;
+        if (!bIsTablet) redirectPlatform = 0;
+        return bIsTablet;
+    }
+
+    function IsVisitorPhone(a) {
+        bIsPhone = false;
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) {
+            bIsPhone = true;
+            redirectPlatform = 5;
+        }
+        if (a.toLowerCase().indexOf('iphone') > -1 || a.toLowerCase().indexOf('ipod') > -1) {
+            redirectPlatform = 4;
+        }
+        if (a.indexOf('MSIE') > -1) bIsPhone = false;
+        if (a.indexOf('Windows NT') > -1) bIsPhone = false;
+        if (!bIsPhone) redirectPlatform = 0;
+        return bIsPhone;
+    }
+
+    function trackMobileRedirect(funnelid) {
+        var stage = 16; // see ValuesAccountCreation.java
+		$.ajax({
+			url: "https://www.vegasworld.com:443/fx/accountCreationTracking?stage=" + stage + "&funnelid=" + funnelid + "&platform=" + redirectPlatform,
+			type: "POST"
+		});
+	}
+
+    // detect mobile devices and redirect if found
+    if (IsVisitorTablet(navigator.userAgent)) {
+        trackMobileRedirect(100);
+        window.location = 'https://cdn-ssl.vegasworld.com/fx/mobile/html/tablet.htm';
+    }
+    else if (IsVisitorPhone(navigator.userAgent)) {
+        trackMobileRedirect(200);
+        window.location = 'https://cdn-ssl.vegasworld.com/fx/mobile/html/mobile.htm';
+    }
+</script><meta name="robots" content="index, follow">
+
+
+
+	<title>Vegas World - Play Online Casino Games for Fun at Vegas World</title>
+	<link rel="stylesheet" href="https://cdn-ssl.vegasworld.com/fx/css/frontpage.css?v=257.6304.14-a-main-2017-12-17">
+	<!--Bing ad pixel-->
+	<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4009188"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+	<noscript><img src="//bat.bing.com/action/0?ti=4009188&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+	<script>
+		window.uetq = window.uetq || [];
+		window.uetq.push({ 'ec': 'FrontPageViewed' });
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google AdWords: 877474720 -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-877474720"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag()
+		{dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-877474720');
+	</script>
+	<!-- Event snippet for InstallNew conversion page -->
+	<script>
+		gtag('event', 'conversion', {'send_to': 'AW-877474720/byLACNnqv3gQoOe0ogM'});
+	</script>
+
+	<script type="text/javascript" language="javascript">
+		// init google analytics
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', "UA-33789642-4", 'auto');
+		ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+	</script>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/877474720/?random=1513769332407&amp;cv=8&amp;fst=1513769332407&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;eid=376635470%2C659238991&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1000&amp;u_aw=1920&amp;u_cd=24&amp;u_his=1&amp;u_tz=180&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;data=event%3Dgtag.config&amp;gtm=abe&amp;frm=0&amp;url=https%3A%2F%2Fwww.vegasworld.com%2Ffx%2F%3Fenv%3Dfxhome&amp;tiba=Vegas%20World%20-%20Play%20Online%20Casino%20Games%20for%20Fun%20at%20Vegas%20World&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://www.googleadservices.com/pagead/conversion/877474720/?random=1513769332421&amp;cv=8&amp;fst=1513769332421&amp;num=1&amp;label=byLACNnqv3gQoOe0ogM&amp;bg=ffffff&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1000&amp;u_aw=1920&amp;u_cd=24&amp;u_his=1&amp;u_tz=180&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;data=event%3Dconversion&amp;gtm=abe&amp;frm=0&amp;url=https%3A%2F%2Fwww.vegasworld.com%2Ffx%2F%3Fenv%3Dfxhome&amp;tiba=Vegas%20World%20-%20Play%20Online%20Casino%20Games%20for%20Fun%20at%20Vegas%20World&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style></head>
+<body ondragstart="return false;" ondrop="return false;">
+<div id="scalingDiv" class="scalingDiv">
+	<div id="contentDiv" class="contentDiv" style="visibility: visible; transform: translate(-50%, -50%) scale(0.738462);">
+		<div id="background" class="background" style="background-image: url(&quot;https://cdn-ssl.vegasworld.com/i/assets/textures/jpg/vg/en/768/login/sign_in/frames/default_web.jpg&quot;);">
+			<div class="logo">
+				<img src="https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/1080/shared/logos/main_logo_900.png?v=257.6304.14-a-main-2017-12-17" class="logoImage button" onclick="gotoFrontPage('2')">
+			</div>
+			<div class="signinContainer button">
+				<a id="enablePluginSignIn" class="signIn secondary" onclick="gotoFrontPage('6')">
+					Sign In
+				</a>
+			</div>
+			<div class="buttonContainer">
+				<h1>FREE Slots, Poker,<br>Blackjack, Bingo and more!</h1>
+				<div>
+					<img src="https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/play_baked/up.png?v=257.6304.14-a-main-2017-12-17" id="playbutton" onmouseover="playbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/play_baked/over.png?v=257.6304.14-a-main-2017-12-17'" onmouseout="playbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/play_baked/up.png?v=257.6304.14-a-main-2017-12-17'" onmousedown="playbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/play_baked/down.png?v=257.6304.14-a-main-2017-12-17'" class="button" onclick="gotoFrontPage('2')">
+				</div>
+				<div class="altLogin">
+					<img src="https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/facebook/up.png?v=257.6304.14-a-main-2017-12-17" id="facebookbutton" onmouseover="facebookbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/facebook/over.png?v=257.6304.14-a-main-2017-12-17'" onmouseout="facebookbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/facebook/up.png?v=257.6304.14-a-main-2017-12-17'" onmousedown="facebookbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/facebook/down.png?v=257.6304.14-a-main-2017-12-17'" class="button" onclick="facebookLogin()">
+				</div>
+				<div class="mobile">
+					<img src="https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/ios/up.png?v=257.6304.14-a-main-2017-12-17" id="iosbutton" onmouseover="iosbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/ios/over.png?v=257.6304.14-a-main-2017-12-17'" onmouseout="iosbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/ios/up.png?v=257.6304.14-a-main-2017-12-17'" onmousedown="iosbutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/ios/down.png?v=257.6304.14-a-main-2017-12-17'" class="button" onclick="onAppStore()">
+					<img src="https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/google/up.png?v=257.6304.14-a-main-2017-12-17" id="googlebutton" onmouseover="googlebutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/google/over.png?v=257.6304.14-a-main-2017-12-17'" onmouseout="googlebutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/google/up.png?v=257.6304.14-a-main-2017-12-17'" onmousedown="googlebutton.src='https://cdn-ssl.vegasworld.com/i/assets/textures/png/vg/en/768/login/sign_in/buttons/google/down.png?v=257.6304.14-a-main-2017-12-17'" class="button" onclick="onGooglePlay()">
+				</div>
+				</div>
+			<nav>
+				<ul>
+					<li><a href="http://forums.vegasworld.com/forums" target="_blank">Forum</a></li>
+					<li><a href="https://vegasworld.zendesk.com" target="_blank">Help</a></li>
+					<li><a href="https://www.vegasworld.com:443/fx/links/terms.jsp" target="_blank">Terms</a></li>
+					<li><a href="https://www.vegasworld.com:443/fx/links/privacy.jsp" target="_blank">Privacy</a></li>
+					<li><a href="http://www.flowplay.com/games/" target="_blank">About Us</a></li>
+					<li><a href="https://www.vegasworld.com:443/fx/links/affiliates.jsp" target="_blank">Affiliates</a></li>
+					</ul>
+			</nav>
+			<div class="legal">
+				Intended for an adult audience and does not offer real money gambling or an opportunity to win real money or prizes.
+Practice or success at social gambling does not imply future success at real money gambling. All rights reserved FlowPlay, Inc.</div>
+		</div>
+	</div>
+</div>
+<script>
+	scaleToBrowser();
+	function scaleToBrowser() {
+		var contentDiv = $("#contentDiv");
+		var contentHeight = contentDiv.outerHeight();
+		var contentWidth = contentDiv.outerWidth();
+		var scale = Math.min(document.body.clientWidth / contentWidth, document.body.clientHeight / contentHeight);
+		contentDiv.css({transform: "translate(-50%, -50%) scale(" + scale + ")"});
+		contentDiv.css({visibility: "visible"});
+		window.addEventListener("resize", function (event) {
+			var scale = Math.min(document.body.clientWidth / contentWidth, document.body.clientHeight / contentHeight);
+			contentDiv.css({transform: "translate(-50%, -50%) scale(" + scale + ")"});
+		});
+	}
+
+	loadBackgroundVariant();
+	function loadBackgroundVariant() {
+		var alt = 'null';
+		var background = document.getElementById("background");
+		if (alt == "1") {
+			background.style.backgroundImage = "url(https://cdn-ssl.vegasworld.com/i/assets/textures/jpg/vg/en/768/login/sign_in/frames/variant1_web.jpg)";
+		}
+		else if (alt == "2") {
+			background.style.backgroundImage = "url(https://cdn-ssl.vegasworld.com/i/assets/textures/jpg/vg/en/768/login/sign_in/frames/variant2_web.jpg)";
+		}
+		else if (alt == "3") {
+			background.style.backgroundImage = "url(https://cdn-ssl.vegasworld.com/i/assets/textures/jpg/vg/en/768/login/sign_in/frames/variant3_web.jpg)";
+		}
+		else {
+			background.style.backgroundImage = "url('https://cdn-ssl.vegasworld.com/i/assets/textures/jpg/vg/en/768/login/sign_in/frames/default_web.jpg')";
+		}
+	}
+
+	trackAccountCreation();
+	function trackAccountCreation() {
+		var stage = 15; // see ValuesAccountCreation.java
+		$.ajax({
+			url: "https://www.vegasworld.com:443/fx/accountCreationTracking?stage=" + stage,
+			type: "POST"
+		});
+	}
+
+	function gotoFrontPage(frontpage) {
+		window.location = "./?frontpage=" + frontpage;
+	}
+
+	window.fbAsyncInit = function () {
+		FB.init({
+			appId: "258487454227504",
+			frictionlessRequests: true,
+			version: "v2.8"
+		});
+		facebookGetLoginStatus();
+	}
+
+	function facebookLogin() {
+		FB.login(facebookGetLoginStatus);
+	}
+
+	function facebookGetLoginStatus() {
+		FB.getLoginStatus(statusChangeCallback);
+	}
+
+	function msnLogin() {
+		window.open("https://login.live.com/oauth20_authorize.srf?client_id=000000004413D956&redirect_uri=http://zonecasino.vegasworld.com/fx/zoneauthenticate&response_type=code&scope=wl.basic");
+		window.location="http://zone.msn.com/en/casino/zone.htm";
+	}
+
+	function statusChangeCallback(response) {
+		console.log('statusChangeCallback');
+		console.log(response);
+		if (response.status === 'connected') {
+			// set cookies for auto login
+			setCookie("rememberMe", "true");
+			setCookie("fUseFacebookSignIn", "true");
+			setCookie("facebook_loginid", response.authResponse.accessToken);
+			gotoFrontPage(0);
+		}
+	}
+
+	function setCookie(key, value) {
+		var expires = new Date();
+		expires.setTime(expires.getTime() + (4 * 365 * 24 * 60 * 60 * 1000));
+		document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+	}
+
+	function onAppStore() {
+		window.open("https://control.kochava.com/v1/cpi/click?campaign_id=kovegas-world-casino-tablet-ios-k0wnnvhq23e207ead6cab&network_id=185&site_id=none-provided&device_id=device_id&click_id=##CLICKID##", "_blank");
+	}
+
+	function onGooglePlay() {
+		window.open("https://control.kochava.com/v1/cpi/click?campaign_id=kovegas-world-fx-9gc1f07c86c215c8&network_id=185&site_id=none-provided&device_id=device_id&click_id=##CLICKID##", "_blank");
+	}
+
+	// load facebook asynchronously
+	(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<script src="https://cdn-ssl.vegasworld.com/fx/hx/html5/release/bin/vegasworld.js?env=fxhome&amp;v=257.6304.14-b-core-2017-12-17">
+</body>
+
+
+<script type="text/javascript">
+(function () {
+	var source = FP.web.getCookie("source");
+	if (!source) return;
+
+
+	if (source.indexOf("valueclick") != -1) {
+		$('body').append('<iframe src="/pixels/valueclick_retargeting.jsp?' + source + '" frameborder="0" scrolling="no" width="1" height="1"></iframe>');
+	}
+	else if (source.indexOf("nanigans") != -1) {
+		$('body').append('<img style="display:none" src="http://api.nanigans.com/event.php?app_id=47961&type=visit&name=landing" />');
+	}
+	else if (source.indexOf("aolpromo") != -1) { // || source.indexOf("aolcpm") != -1 || source.indexOf("aolcpc") != -1
+		$('body').append('<img src="http://leadback.advertising.com/adcedge/lb?site=695501&betr=VegasWorldHPvisitors=[+]VegasWorldHPvisitors[8760]" width="1" height="1" border="0">');
+	}
+	else if (source.indexOf("yahoopromo") != -1) {
+		$('body').append('<iframe src="/pixels/yahoo_retargetting.jsp?' + source + '" frameborder="0" scrolling="no" width="1" height="1"></iframe>');
+	}
+	else if (source.indexOf("underdog") != -1) {
+		$('body').append('<img src="http://rt.udmserve.net/udm/fetch.tg?ev367=a;dt=3;" style="display: none;" border="0" height="1" width="1" alt="Underdogmedia"/>');
+	}
+
+}());
+</script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.36175254417735747"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.035133618374508235" alt="" src="https://bat.bing.com/action/0?ti=4009188&amp;Ver=2&amp;mid=cbe60d66-d387-5509-5c48-56d27665989e&amp;evt=pageLoad&amp;sid=2b84150e-1&amp;pi=0&amp;lg=en-US&amp;sw=1920&amp;sh=1080&amp;sc=24&amp;tl=Vegas World - Play Online Casino Games for Fun at Vegas World&amp;p=https%3A%2F%2Fwww.vegasworld.com%2Ffx%2F%3Fenv%3Dfxhome&amp;r=&amp;msclkid=N&amp;rn=854647" width="0" height="0"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.24409268910175663" alt="" src="https://bat.bing.com/action/0?ti=4009188&amp;Ver=2&amp;mid=cbe60d66-d387-5509-5c48-56d27665989e&amp;ec=FrontPageViewed&amp;evt=custom&amp;sid=2b84150e-0&amp;msclkid=N&amp;rn=137278" width="0" height="0"></div>
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="https://staticxx.facebook.com/connect/xd_arbiter/r/lY4eZXm_YWu.js?version=42#channel=f2d05f9fb38ab36&amp;origin=https%3A%2F%2Fwww.vegasworld.com" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>

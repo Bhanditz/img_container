@@ -1,0 +1,259 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/assets.luckyseat.com/favicon.png" type="image/x-icon">
+
+
+    <title>LUCKY SEAT LOTTERY RESULTS</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600" rel="stylesheet" type="text/css">
+      <link href="https://s3.amazonaws.com/assets.luckyseat.com/assets/css/toolkit-startup.css" rel="stylesheet">
+      <link href="https://s3.amazonaws.com/assets.luckyseat.com/assets/css/application-startup.css" rel="stylesheet">
+
+      <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type="text/javascript">
+        var $SCRIPT_ROOT = "";
+      </script>
+
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+    .loader {
+      height: 4px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-color: #ddd;
+      display:none;
+    }
+    .loader:before{
+      display: block;
+      position: absolute;
+      content: "";
+      left: -200px;
+      width: 200px;
+      height: 4px;
+      background-color: #2980b9;
+      animation: loading 2s linear infinite;
+    }
+
+    @keyframes loading {
+        from {left: -200px; width: 30%;}
+        50% {width: 30%;}
+        70% {width: 70%;}
+        80% { left: 50%;}
+        95% {left: 120%;}
+        to {left: 100%;}
+    }
+    </style>
+  </head>
+
+
+<body>
+
+
+
+
+<div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <ul class="nav nav-bordered nav-stacked flex-column">
+    <!--
+    <li class="nav-header">CONTACT US</li>
+    <li class="nav-item">
+      <a class="nav-link active" href="http://www.luckyseat.com/entrants.php">Lottery Entrants</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.luckyseat.com/promoters.php">Event Promoters</a>
+    </li>
+    -->
+    <li class="nav-divider"></li>
+    <li class="nav-header">LEGAL</li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.luckyseat.com/privacy.php">Privacy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.luckyseat.com/terms.php">Terms</a>
+    </li>
+  </ul>
+</div>
+
+<div class="stage" id="stage">
+
+
+
+
+<script type="text/javascript">
+  $(function() {
+
+    var submit_form = function(e) {
+      $( '.loader' ).css('display','block');
+      $.getJSON($SCRIPT_ROOT + '/_win_check', {
+        a: $('input[name="a"]').val(),
+      }, function(data) {
+
+        $('#result').text(data.result);
+        $('input[name=a]').focus().select();
+        $( '.loader' ).css('display','none');
+      });
+      return false;
+    };
+    $('a#calculate').bind('click', submit_form);
+    $('input[type=text]').bind('keydown', function(e) {
+      if (e.keyCode == 13) {
+        submit_form(e);
+      }
+    });
+    $('input[name=a]').focus();
+
+
+
+
+  });
+</script>
+<div class="">
+
+
+      <div class="container py-4 fixed-top app-navbar">
+  <div class="top-header">
+       <div class="top-header-content">
+  <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">
+    <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-target="#stage" data-toggle="stage" data-distance="-250">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand mr-auto" href="/">
+      <img src="https://s3.amazonaws.com/assets.luckyseat.com/assets/img/logo.png">
+    </a>
+
+    <div class="hidden-sm-down text-uppercase">
+      <ul class="navbar-nav">
+        <li class="nav-item px-1">
+          <a class="nav-link" href="https://www.luckyseat.com/lottery.php">Find a lottery</a>
+        </li>
+
+      </ul>
+          </div>
+
+        </nav>
+                 </div>
+       </div>
+
+      </div>
+
+      </div>
+      <div class="container">
+        <div class="ccol-lg-10">
+        <h3 class="mrgntop">RESULT CHECK</h3>
+         <p class="mk-6">Enter your email address below to see if you won!</p>
+         <p class="mk-8">Even if you entered for several shows you only need to check once. We'll tell you your results for the latest drawing of all of our lotteries.</p>
+<p>
+  <input size="75" name="a" type="text"><br>
+  </p>
+
+<p><a href="#" id="calculate"><button class="btn btn-third">Click here for results</button></a></p>
+    <div class="loader"></div>
+    <div id="load-spacer" style="height:300px;padding-top:20px">
+    <p class="mk-8"><span id="result"></span></p></div>
+
+    <div class="row app-marketing-grid mrgntop2">
+          <div class="col-md-3 px-4 mb-5">
+              <h4></h4>
+              <p class="mk-7"></p>
+              <p class="mk-8"></p>
+          </div>
+          <div class="col-md-5 px-4 mb-5 mrgntop3">
+            <p class="mk-8"></p>
+          </div>
+
+                <div class="col-md-4 px-4 mb-5 mrgntop3">
+
+          </div>
+
+        </div>
+</div>
+</div>
+<!-- <script>
+    $( '#calculate' ).click(function() {
+      $( '.loader' ).css('display','block');
+    });
+</script> -->
+
+
+<div class="block block-inverse app-footer">
+ <div class="container">
+       <a href="http://www.luckyseat.com/"><img src="https://s3.amazonaws.com/assets.luckyseat.com/assets/img/footer-logo.png" style="margin-bottom:20px;"></a>
+    <div class="row">
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+
+          <li class="mb-2"><h6 class="text-uppercase">FOLLOW US</h6></li>
+          <li class="text-muted">
+            <a href="https://www.facebook.com/luckyseattickets/" target="_blank"><img src="https://s3.amazonaws.com/assets.luckyseat.com/assets/img/fb.png"></a><a href="https://twitter.com/lucky_seat" target="_blank"><img src="https://s3.amazonaws.com/assets.luckyseat.com/assets/img/twitter.png"></a>
+          </li>
+        </ul>
+      </div>
+      <!--
+      <div class="col-md-2 offset-md-1 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">CONTACT US</h6></li>
+          <a href="http://www.luckyseat.com/entrants.php"><li class="text-muted">Lottery Entrants</li></a>
+          <a href="http://www.luckyseat.com/promoters.php"><li class="text-muted">Event Promoters</li></a>
+        </ul>
+      </div>
+      -->
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">LEGAL</h6></li>
+          <a href="http://www.luckyseat.com/privacy.php"><li class="text-muted">Privacy</li></a>
+         <a href="http://www.luckyseat.com/terms.php"> <li class="text-muted">Terms</li></a>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row text-muted">
+        © 2017 Jujamcyn Theaters Productions, LLC d/b/a Lucky Seat. All rights reserved.
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="https://s3.amazonaws.com/assets.luckyseat.com/assets/js/jquery.min.js"></script>
+<script src="https://s3.amazonaws.com/assets.luckyseat.com/assets/js/tether.min.js"></script>
+<script src="https://s3.amazonaws.com/assets.luckyseat.com/assets/js/toolkit.js"></script>
+<script src="https://s3.amazonaws.com/assets.luckyseat.com/assets/js/application.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-93169438-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body></html>

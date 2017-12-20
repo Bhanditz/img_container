@@ -1,0 +1,1015 @@
+<html ng-app="casino" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <base href="/">
+        <title ng-bind="page.title + ' ' + page.snippet_title" class="ng-binding">LimoPlay Casino – Play in Luxury. </title>
+        <meta name="description" content="Welcome to LimoPlay Casino where it’s all about luxury. Play like a boss with over 600 casino games, make easy transactions with Bitcoin, and enjoy incredible bonuses!">
+        <meta name="keywords" content="LimoPlay Casino, Online Casino, Bitcoin Casino">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- inject:app-style:css --><link rel="stylesheet" href="/css/app.css?62738705b50674dd1d8896077250e8fa"><!-- endinject -->
+        <meta name="lavapay-verification" content="fc472a61-770e-452c-b9de-15064edcdd74">
+        <meta name="google-site-verification" content="2FLCZgGJre1p4th64z12pNhJrstQebx32iYtW89H0ZY">
+
+        <link rel="shortcut icon" href="/resources/images/favicon.ico" type="image/png">
+    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-NT9HK3"></script><script type="text/javascript" src="https://a09c77cc-d50a-439a-aa58-310c5514920a.snippet.antillephone.com/apg-seal.js"></script></head>
+    <body class="page-home"><div id="loading-bar-spinner"><div class="spinner-icon"></div></div><div id="loading-bar"><div class="bar" style="width: 100%;"><div class="peg"></div></div></div>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-69300558-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+        <div class="ng-isolate-scope">
+    <style type="text/css">
+        @-webkit-keyframes preloader {
+            0% {
+                background-position: 0 74%
+            }
+            50% {
+                background-position: 100% 27%
+            }
+            100% {
+                background-position: 0 74%
+            }
+        }
+
+        @-moz-keyframes preloader {
+            0% {
+                background-position: 0 74%
+            }
+            50% {
+                background-position: 100% 27%
+            }
+            100% {
+                background-position: 0 74%
+            }
+        }
+
+        @keyframes preloader {
+            0% {
+                background-position: 0 74%
+            }
+            50% {
+                background-position: 100% 27%
+            }
+            100% {
+                background-position: 0 74%
+            }
+        }
+
+        .cssload-fond {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+        }
+
+        .cssload-container-general {
+            animation: cssload-animball_two 1.15s infinite;
+            -o-animation: cssload-animball_two 1.15s infinite;
+            -ms-animation: cssload-animball_two 1.15s infinite;
+            -webkit-animation: cssload-animball_two 1.15s infinite;
+            -moz-animation: cssload-animball_two 1.15s infinite;
+            width: 43px;
+            height: 43px;
+        }
+
+        .cssload-internal {
+            width: 43px;
+            height: 43px;
+            position: absolute;
+        }
+
+        .cssload-ballcolor {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+        }
+
+        .cssload-ball_1, .cssload-ball_2, .cssload-ball_3, .cssload-ball_4 {
+            position: absolute;
+            animation: cssload-animball_one 1.15s infinite ease;
+            -o-animation: cssload-animball_one 1.15s infinite ease;
+            -ms-animation: cssload-animball_one 1.15s infinite ease;
+            -webkit-animation: cssload-animball_one 1.15s infinite ease;
+            -moz-animation: cssload-animball_one 1.15s infinite ease;
+        }
+
+        .cssload-ball_1 {
+            background-color: rgb(203, 32, 37);
+            top: 0;
+            left: 0;
+        }
+
+        .cssload-ball_2 {
+            background-color: rgb(248, 179, 52);
+            top: 0;
+            left: 23px;
+        }
+
+        .cssload-ball_3 {
+            background-color: rgb(0, 160, 150);
+            top: 23px;
+            left: 0;
+        }
+
+        .cssload-ball_4 {
+            background-color: rgb(151, 191, 13);
+            top: 23px;
+            left: 23px;
+        }
+
+        @keyframes cssload-animball_one {
+            0% {
+                position: absolute;
+            }
+            50% {
+                top: 12px;
+                left: 12px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            100% {
+                position: absolute;
+            }
+        }
+
+        @-o-keyframes cssload-animball_one {
+            0% {
+                position: absolute;
+            }
+            50% {
+                top: 12px;
+                left: 12px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            100% {
+                position: absolute;
+            }
+        }
+
+        @-ms-keyframes cssload-animball_one {
+            0% {
+                position: absolute;
+            }
+            50% {
+                top: 12px;
+                left: 12px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            100% {
+                position: absolute;
+            }
+        }
+
+        @-webkit-keyframes cssload-animball_one {
+            0% {
+                position: absolute;
+            }
+            50% {
+                top: 12px;
+                left: 12px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            100% {
+                position: absolute;
+            }
+        }
+
+        @-moz-keyframes cssload-animball_one {
+            0% {
+                position: absolute;
+            }
+            50% {
+                top: 12px;
+                left: 12px;
+                position: absolute;
+                opacity: 0.5;
+            }
+            100% {
+                position: absolute;
+            }
+        }
+
+        @keyframes cssload-animball_two {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(360deg) scale(1.3);
+            }
+            100% {
+                transform: rotate(720deg) scale(1);
+            }
+        }
+
+        @-o-keyframes cssload-animball_two {
+            0% {
+                -o-transform: rotate(0deg) scale(1);
+            }
+            50% {
+                -o-transform: rotate(360deg) scale(1.3);
+            }
+            100% {
+                -o-transform: rotate(720deg) scale(1);
+            }
+        }
+
+        @-ms-keyframes cssload-animball_two {
+            0% {
+                -ms-transform: rotate(0deg) scale(1);
+            }
+            50% {
+                -ms-transform: rotate(360deg) scale(1.3);
+            }
+            100% {
+                -ms-transform: rotate(720deg) scale(1);
+            }
+        }
+
+        @-webkit-keyframes cssload-animball_two {
+            0% {
+                -webkit-transform: rotate(0deg) scale(1);
+            }
+            50% {
+                -webkit-transform: rotate(360deg) scale(1.3);
+            }
+            100% {
+                -webkit-transform: rotate(720deg) scale(1);
+            }
+        }
+
+        @-moz-keyframes cssload-animball_two {
+            0% {
+                -moz-transform: rotate(0deg) scale(1);
+            }
+            50% {
+                -moz-transform: rotate(360deg) scale(1.3);
+            }
+            100% {
+                -moz-transform: rotate(720deg) scale(1);
+            }
+        }
+
+    </style>
+    <!-- ngIf: show_preloader -->
+</div>
+        <!-- ngIf: game_url -->
+
+        <div class="main">
+            <div>
+<header class="clearfix">
+    <div class="inner clearfix">
+        <a href="/" class="logo">
+            <img src="./resources/images/logo.png?1252" alt="">
+        </a>
+        <div class="navbar navbar-default col-lg-9 col-md-9 col-sm-12 col-xs-12" ng-class="{'open_menu': $root.sidebar.top_nav.visible}">
+            <div class="navbar-header" ng-click="$root.sidebar.top_nav.visible = !$root.sidebar.top_nav.visible"></div>
+
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav ng-isolate-scope" type="top-menu">
+    <li><a class="main_menu_item is-home" href="" ui-sref="home({lang:'en'})"></a></li>
+    <!-- ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/games" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.games({lang:'en'})" ng-bind="item.title">Games</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/promotions" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'promotions', lang:'en'})" ng-bind="item.title">Promotions</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/banking" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'banking', lang:'en'})" ng-bind="item.title">Banking</a></li><!-- end ngRepeat: item in menu -->
+    <li class="mobile-auth">
+        <div type="authTopHeader" class="ng-isolate-scope">
+    <div access-level="accessLevels.anon">
+        <a class="login_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+        <a class="register_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up">Sign Up</a>
+    </div>
+
+    <div class="user-room" access-level="accessLevels.user" style="display: none;">
+
+
+        <div class="user ng-scope" dropdown="" on-toggle="toggled(open)" ng-controller="ProfileRoutes">
+            <div class="user__name ng-binding" dropdown-toggle="" aria-haspopup="true" aria-expanded="false"> <div class="user__menu"></div></div>
+
+            <ul class="user__menu-list dropdown-menu" role="menu">
+                <li class="user__menu-item icon-account">
+                    <a href="/profile" target="_self" class="ng-binding">My Account</a>
+                </li>
+                <li class="user__menu-item icon-bonuse">
+                    <a href="/profile/bonuses/actual" target="_self" class="ng-binding">Bonuses</a>
+                </li>
+                <li class="user__menu-item icon-bets">
+                    <a href="/profile/bets" target="_self" class="ng-binding">My Bets</a>
+                </li>
+                <li class="user__menu-item icon-history">
+                    <a href="/profile/bonuses" target="_self" class="ng-binding">History</a>
+                </li>
+                <li class="user__menu-item icon-logout">
+                    <a href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self" class="ng-scope ng-binding">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="header-balance">
+
+                    <li><div class="balance-selector ng-isolate-scope">
+    <div class="balance-name">Current balance</div>
+    <span class="dropdown">
+            <!-- ngRepeat: balance in balances -->
+            <!-- ngIf: balances.length > 1 -->
+    </span>
+</div></li>
+                    <li><span class="auth-block ng-isolate-scope">
+        <a class="button is-deposit ng-scope ng-binding" ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            Sign Up
+        </a>
+
+        <a class="button is-deposit ng-scope ng-binding" access-level="accessLevels.user" target="_self" ng-href="" ng-controller="ProfileRoutes" style="display: none;">
+           Deposit
+        </a>
+</span></li>
+                    <li><a class="button is-black ng-scope ng-binding" href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self">Sign Out</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+    </li>
+</ul>
+            </div>
+        </div>
+
+        <div class="header-user-block">
+            <div type="authTopHeader" class="ng-isolate-scope">
+    <div access-level="accessLevels.anon">
+        <a class="login_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+        <a class="register_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up">Sign Up</a>
+    </div>
+
+    <div class="user-room" access-level="accessLevels.user" style="display: none;">
+
+
+        <div class="user ng-scope" dropdown="" on-toggle="toggled(open)" ng-controller="ProfileRoutes">
+            <div class="user__name ng-binding" dropdown-toggle="" aria-haspopup="true" aria-expanded="false"> <div class="user__menu"></div></div>
+
+            <ul class="user__menu-list dropdown-menu" role="menu">
+                <li class="user__menu-item icon-account">
+                    <a href="/profile" target="_self" class="ng-binding">My Account</a>
+                </li>
+                <li class="user__menu-item icon-bonuse">
+                    <a href="/profile/bonuses/actual" target="_self" class="ng-binding">Bonuses</a>
+                </li>
+                <li class="user__menu-item icon-bets">
+                    <a href="/profile/bets" target="_self" class="ng-binding">My Bets</a>
+                </li>
+                <li class="user__menu-item icon-history">
+                    <a href="/profile/bonuses" target="_self" class="ng-binding">History</a>
+                </li>
+                <li class="user__menu-item icon-logout">
+                    <a href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self" class="ng-scope ng-binding">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="header-balance">
+
+                    <li><div class="balance-selector ng-isolate-scope">
+    <div class="balance-name">Current balance</div>
+    <span class="dropdown">
+            <!-- ngRepeat: balance in balances -->
+            <!-- ngIf: balances.length > 1 -->
+    </span>
+</div></li>
+                    <li><span class="auth-block ng-isolate-scope">
+        <a class="button is-deposit ng-scope ng-binding" ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            Sign Up
+        </a>
+
+        <a class="button is-deposit ng-scope ng-binding" access-level="accessLevels.user" target="_self" ng-href="" ng-controller="ProfileRoutes" style="display: none;">
+           Deposit
+        </a>
+</span></li>
+                    <li><a class="button is-black ng-scope ng-binding" href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self">Sign Out</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+        </div>
+    </div>
+</header>
+    <div class="under-header">
+
+        <div class="inner clearfix">
+            <div class="navbar navbar-default col-lg-9 col-md-9 col-sm-12 col-xs-12" ng-class="{'open_menu': $root.sidebar.top_nav.visible}">
+                <div class="navbar-header" ng-click="$root.sidebar.top_nav.visible = !$root.sidebar.top_nav.visible"> </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav ng-isolate-scope" type="top-menu">
+    <li><a class="main_menu_item is-home" href="" ui-sref="home({lang:'en'})"></a></li>
+    <!-- ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/games" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.games({lang:'en'})" ng-bind="item.title">Games</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/promotions" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'promotions', lang:'en'})" ng-bind="item.title">Promotions</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="main_menu_item ng-binding" href="/banking" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'banking', lang:'en'})" ng-bind="item.title">Banking</a></li><!-- end ngRepeat: item in menu -->
+    <li class="mobile-auth">
+        <div type="authTopHeader" class="ng-isolate-scope">
+    <div access-level="accessLevels.anon">
+        <a class="login_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+        <a class="register_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up">Sign Up</a>
+    </div>
+
+    <div class="user-room" access-level="accessLevels.user" style="display: none;">
+
+
+        <div class="user ng-scope" dropdown="" on-toggle="toggled(open)" ng-controller="ProfileRoutes">
+            <div class="user__name ng-binding" dropdown-toggle="" aria-haspopup="true" aria-expanded="false"> <div class="user__menu"></div></div>
+
+            <ul class="user__menu-list dropdown-menu" role="menu">
+                <li class="user__menu-item icon-account">
+                    <a href="/profile" target="_self" class="ng-binding">My Account</a>
+                </li>
+                <li class="user__menu-item icon-bonuse">
+                    <a href="/profile/bonuses/actual" target="_self" class="ng-binding">Bonuses</a>
+                </li>
+                <li class="user__menu-item icon-bets">
+                    <a href="/profile/bets" target="_self" class="ng-binding">My Bets</a>
+                </li>
+                <li class="user__menu-item icon-history">
+                    <a href="/profile/bonuses" target="_self" class="ng-binding">History</a>
+                </li>
+                <li class="user__menu-item icon-logout">
+                    <a href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self" class="ng-scope ng-binding">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="header-balance">
+
+                    <li><div class="balance-selector ng-isolate-scope">
+    <div class="balance-name">Current balance</div>
+    <span class="dropdown">
+            <!-- ngRepeat: balance in balances -->
+            <!-- ngIf: balances.length > 1 -->
+    </span>
+</div></li>
+                    <li><span class="auth-block ng-isolate-scope">
+        <a class="button is-deposit ng-scope ng-binding" ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            Sign Up
+        </a>
+
+        <a class="button is-deposit ng-scope ng-binding" access-level="accessLevels.user" target="_self" ng-href="" ng-controller="ProfileRoutes" style="display: none;">
+           Deposit
+        </a>
+</span></li>
+                    <li><a class="button is-black ng-scope ng-binding" href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self">Sign Out</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+    </li>
+</ul>
+                </div>
+            </div>
+
+            <div class="header-user-block">
+                <div type="authTopHeader" class="ng-isolate-scope">
+    <div access-level="accessLevels.anon">
+        <a class="login_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+        <a class="register_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up">Sign Up</a>
+    </div>
+
+    <div class="user-room" access-level="accessLevels.user" style="display: none;">
+
+
+        <div class="user ng-scope" dropdown="" on-toggle="toggled(open)" ng-controller="ProfileRoutes">
+            <div class="user__name ng-binding" dropdown-toggle="" aria-haspopup="true" aria-expanded="false"> <div class="user__menu"></div></div>
+
+            <ul class="user__menu-list dropdown-menu" role="menu">
+                <li class="user__menu-item icon-account">
+                    <a href="/profile" target="_self" class="ng-binding">My Account</a>
+                </li>
+                <li class="user__menu-item icon-bonuse">
+                    <a href="/profile/bonuses/actual" target="_self" class="ng-binding">Bonuses</a>
+                </li>
+                <li class="user__menu-item icon-bets">
+                    <a href="/profile/bets" target="_self" class="ng-binding">My Bets</a>
+                </li>
+                <li class="user__menu-item icon-history">
+                    <a href="/profile/bonuses" target="_self" class="ng-binding">History</a>
+                </li>
+                <li class="user__menu-item icon-logout">
+                    <a href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self" class="ng-scope ng-binding">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="header-balance">
+
+                    <li><div class="balance-selector ng-isolate-scope">
+    <div class="balance-name">Current balance</div>
+    <span class="dropdown">
+            <!-- ngRepeat: balance in balances -->
+            <!-- ngIf: balances.length > 1 -->
+    </span>
+</div></li>
+                    <li><span class="auth-block ng-isolate-scope">
+        <a class="button is-deposit ng-scope ng-binding" ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            Sign Up
+        </a>
+
+        <a class="button is-deposit ng-scope ng-binding" access-level="accessLevels.user" target="_self" ng-href="" ng-controller="ProfileRoutes" style="display: none;">
+           Deposit
+        </a>
+</span></li>
+                    <li><a class="button is-black ng-scope ng-binding" href="" ng-click="login.logout()" ng-controller="LoginCtrl" target="_self">Sign Out</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="promo_box_main clearfix">
+                <!-- ngIf: state.current.name == 'home' && $root.data.window.innerWidth > 768 --><div class="main_banner_empty main_banner ng-scope ng-isolate-scope" user-access="{$root.data.user.email ? 'user': 'anon'}" category="slider-index-top" ng-if="state.current.name == 'home' &amp;&amp; $root.data.window.innerWidth > 768">
+    <div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel-fade carousel ng-isolate-scope" ng-swipe-right="prev()" ng-swipe-left="next()" data-interval="3000">
+    <ol class="carousel-indicators ng-hide" ng-show="slides.length > 1">
+        <!-- ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope active"></li><!-- end ngRepeat: slide in slides track by $index -->
+    </ol>
+    <div class="carousel-inner" ng-transclude="">
+        <!-- ngRepeat: slide in slides --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-scope ng-isolate-scope active" ng-transclude="" ng-repeat="slide in slides" active="slide.active">
+            <img class="img-responsive ng-scope" ng-src="/system/comfy/cms/files/files/000/000/557/original/limo-betchan-eng.jpg" style="margin:auto;" src="/system/comfy/cms/files/files/000/000/557/original/limo-betchan-eng.jpg">
+            <div class="main-slider-inner ng-scope">
+                <div ng-bind-html="content" text="" class="ng-binding ng-isolate-scope ng-scope"></div>
+            </div>
+        </div><!-- end ngRepeat: slide in slides -->
+    </div>
+    <a class="left carousel-control ng-hide" ng-click="prev()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control ng-hide" ng-click="next()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div><!-- end ngIf: state.current.name == 'home' && $root.data.window.innerWidth > 768 -->
+                <!-- ngIf: state.current.name == 'home' && $root.data.window.innerWidth <= 768 -->
+                <!-- ngIf: state.current.name != 'home' && $root.data.window.innerWidth > 768 -->
+                <!-- ngIf: state.current.name != 'home' && $root.data.window.innerWidth <= 768 -->
+                <div class="winners-line">
+                    <div class="casino-filter-inner" casino-games-filter="0">
+                        <ul class="winners__list ng-isolate-scope" name="latest_winners" template="latest_winners" limit="4">
+    <!-- ngRepeat: game in gamesData.data.winners.latest | limitTo: limit_count -->
+</ul>
+                        <!-- ngRepeat: game in filters.games | filter: {identifier: 'isoftbet/JackpotRango'} | limitTo: limit_count -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner clearfix">
+                <casino-notification></casino-notification>
+
+                <!-- uiView: --><div ui-view="" autoscroll="false" class="ng-scope"><!-- uiView: --><ui-view class="ng-scope"><div class="ng-scope">
+    <div class="content_area games_area clearfix ng-isolate-scope" ng-class="{'open_menu': left_col}" ng-init="query = ''; filter_favorites = false" name="games_list" filters="{collection: 'home', provider: false}" template="game_page" limit="32">
+
+    <div class="games__wrap">
+        <button class="aside_toggler" ng-click="left_col = !left_col"></button>
+        <sidebar class="left_col">
+            <h4>Search</h4>
+            <ul class="left_menu games__menu games__search">
+                <li>
+                    <div limit="10" class="ng-isolate-scope">
+    <input id="search" autocomplete="off" placeholder="Find your game" ng-model="search" name="search" class="search__input ng-pristine ng-untouched ng-valid ng-empty" auto-fill-sync="" type="text">
+    <ul class="ing-search-complite ng-scope ng-hide" ng-show="search.length &amp;&amp; (filters.games | gameTitle: search).length" ng-controller="Game">
+        <!-- ngRepeat: game in filters.games | gameTitle: search | limitTo: limit_count -->
+    </ul>
+
+    <i ng-click="left_col = !left_col" class="fonticon fa fa-search games__search-ico"></i>
+</div>
+                </li>
+
+            </ul>
+            <h4 class="ng-binding">Games</h4>
+            <ul class="left_menu games__menu games__filter">
+
+                <li><a ng-click="filters.changeFilter({collectionOrder: 'novelty'})" class="games__filter-item is-new ng-binding" ng-class="{current: filters.data.collectionOrder == 'novelty'}">New</a></li>
+                <li><a ng-click="filters.changeFilter({collectionOrder: 'popularity'})" class="games__filter-item is-popular ng-binding" ng-class="{current: filters.data.collectionOrder == 'popularity'}">Most Popular</a></li>
+                <li><a ng-click="filters.changeFilter({collectionOrder: filters.data.collection})" class="games__filter-item is-jackpot ng-binding current" ng-class="{current: filters.data.collectionOrder == filters.data.collection}">Featured</a></li>
+                <li access-level="accessLevels.user" style="display: none;"><a ng-click="filter_favorites = !filter_favorites" class="games__filter-item is-favorite ng-binding" ng-class="{current: filter_favorites}">My favorites</a></li>
+            </ul>
+
+            <ul class="left_menu games__menu">
+                <!-- ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'all'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.all">All Games</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'card'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.card">Card Games</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'roulette'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.roulette">Roulette</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'slots'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.slots">Slots</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'poker'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.poker">Poker Games</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'video_poker'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.video_poker">Video Poker</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'casual'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.casual">Casual</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'lottery'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.lottery">Lottery</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections --><li ng-repeat="filter_collection in gamesData.data.collections" ng-class="{current: filters.data.collection == 'jackpot'}" class="ng-scope">
+                    <a class="left_menu_link ng-scope ng-binding" href="" ng-click="stateGo('app.games_category', {category: filter_collection.id, lang: $root.currentLocale, provider: false})" translate="games.categories.jackpot">Jackpot Games</a>
+
+                </li><!-- end ngRepeat: filter_collection in gamesData.data.collections -->
+            </ul>
+
+            <ul class="left_menu games__menu">
+                <li ng-class="{current: filters.data.provider == false}" class="current">
+                    <a class="left_menu_link ng-binding" href="" ng-click="stateGo('app.games', {category: 'all', lang: $root.currentLocale, provider: false})">All Providers</a>
+                </li>
+                <!-- ngRepeat: filter_provider in gamesData.data.providers -->
+            </ul>
+
+            <!--<div class="live-dealer">
+                <img src="./resources/images/live-dealer.png" />
+                <span>
+                    Live Dealer
+                </span>
+            </div>-->
+        </sidebar>
+
+        <div class="content clearfix">
+            <div class="backdrop" ng-click="left_col = !left_col"></div>
+            <div class="fake-height" access-level="$root.accessLevels.anon"></div>
+            <div class="catalog__list-account" access-level="$root.accessLevels.user" style="display: none;">
+                <div ng-bind-html="content" type="main-view-user-links" class="ng-binding ng-isolate-scope ng-scope"><ul ng-controller="ProfileRoutes" class="ng-scope">
+  <li><a class="catalog__list-account-item _account" ng-href="/profile" target="_self" href="/profile">
+    <i></i>
+    <span class="ng-binding">My Account</span>
+    </a>
+  </li>
+
+
+  <li><a class="catalog__list-account-item _deposit" ng-href="" target="_self">
+    <i></i>
+    <span class="ng-binding">Deposit</span>
+    </a>
+  </li>
+  <li><a class="catalog__list-account-item _bonus" ng-href="/profile/bonuses" target="_self" href="/profile/bonuses">
+    <i></i>
+    <span class="ng-binding">History</span>
+    </a>
+  </li>
+</ul></div>
+            </div>
+            <div class="catalog_list ng-scope" ng-controller="Game">
+                <!-- ngIf: gamesData.data.collections --><h1 class="catalog__list-heading ng-binding ng-scope" ng-if="gamesData.data.collections"></h1><!-- end ngIf: gamesData.data.collections -->
+
+                <div infinite-scroll="loadMore(12)" class="ng-isolate-scope">
+                    <!-- ngRepeat: game in filters.games | favoriteGames: favorites.get_list() : filter_favorites | gameTitle: query | limitTo: limit_count track by game.identifier -->
+                </div>
+            </div>
+            <!-- ngIf: $root.page.content --><div class="page_description ng-binding ng-scope" ng-if="$root.page.content" ng-bind-html="$root.page.content | html"><div>
+    <p>LimoPlay Casino is all about style and comfort, with a wide variety of incredible online casino games and a lavish theme because we want you to experience the grandest casino gaming experience. We always like to make our players comfortable so we made payments and cash outs even easier as we accept Bitcoin! This is just the beginning because LimoPlay Casino wants you to ride in prestige, and spoil you like a true VIP. <br>
+        Buckle up for the ride of a lifetime. Take a peek at all the games we offer, and all the bonuses that you can get. Sit back, relax, and let us drive you to your next big win!
+    </p>
+</div>
+<div class="index-hidden" id="page_description" aria-expanded="false" ng-class="{'is-opened': isOpened}">
+    <h1>
+        Play in Style
+    </h1>
+    <h2>
+        Table Games
+    </h2>
+
+   <p>
+    <strong>Have a seat and test your skills with LimoPlay’s classic casino table games.</strong>
+    </p>
+   <p>
+    </p><h4>
+        Blackjack
+    </h4>
+   <p></p>
+   
+   <p>
+   Nothing beats a classic here in LimoPlay Casino, that’s why we’re giving you different types of blackjack games from Blackjack Surrender to Pontoon, if you like to play with strategy and skill, then come on over to the tables, and see if Lady Luck is on your side. In addition, as LimoPlay believes in fair play our Blackjack games are provably fair. You can read all about provable fairness here – now it’s time to start playing! 
+   </p>
+   <p>
+   </p><h4>
+        Roulette
+    </h4>
+   <p></p> 
+<p>
+The classic casino experience is now within reach with LimoPlay’s Roulette games, and add to the fact that our Roulette games are provably fair, LimoPlay ensures fair play as we combine class with a hint of prestige, so let the wheel spin and take all the glory!
+</p>
+   <p>
+   </p><h4>
+        Baccarat
+    </h4>
+   <p></p>  
+   
+   <p>
+    We like to keep great things as they are, so our version of Baccarat is sure to give players new, and skilled, an authentic feel of what it’s like to be playing on the tables. LimoPlay’s Baccarat is provably fair which ensures a decent and fun playing experience. So, think you’ve got the skills? Play on!
+   </p>
+   
+<p>
+</p><h2>
+        Slots
+    </h2>
+<p></p>
+    
+<p>
+
+        <strong>Pull the lever and get a chance to win BIG!</strong>
+</p>
+<p>
+ </p><h4>
+        Progressive Slots
+    </h4>
+<p></p>
+   <p>
+   Our array of Progressive Slots will surely make you an all-time VIP, and give you the opportunity to win big because our Progressive Slots we’ll give you a whole new level of winning. You’ve got nothing to lose, so don’t wait, just click play and we’ll drive you to the biggest jackpots!
+   </p>
+   
+   <p>
+   </p><h4>
+        Vegas Slots and Video Slots
+    </h4>
+
+   <p></p>
+ <p>
+   LimoPlay’s Vegas Slots and Video Slots will take you to the bright neon lights of Las Vegas, and what’s great about it is that you get to experience the glory of Vegas right on the screen of your computer or mobile phone.
+ </p>
+ 
+ <p>
+ </p><h2>
+        Live Dealers
+    </h2> 
+ <p></p>     
+    
+  <p>
+  <strong>If you’re looking for interaction, than our live dealers will surely provide you with everything you need to experience realistic casino gaming at its finest.</strong> 
+  </p> 
+<p>
+ You can enjoy the authentic casino experience here in LimoPlay Casino with our dealers of your choice. You can ask them freely about the rules and strategy of the game, it’s just like playing at a real casino game floor.
+</p>
+ 
+ <p>
+ </p><h4>
+        Video Poker
+    </h4>
+  <p></p>
+  
+  <p>
+  Play like a VIP with our wide variety of Video Poker games such as Deuces Wild, Aces and Face, Jacks or Better, and so much more! Powered by game providers such as Betsoft and SoftSwiss, our Video Poker Games are fast and reliable to give you more focus on your playing. 
+  </p>
+   
+<p>
+ </p><h2>
+        Step Inside and Let Us Drive
+    </h2>
+<p></p>
+   
+<p>
+ We keep it sleek and classy here in LimoPlay Casino that’s why we want to give you a taste of what we have waiting for you. Just like a glass of champagne that first sip says it all, and with our regular promotions you’ll surely keep coming back for more – go ahead, sit back and take that first sip.
+</p>
+   
+  <p>
+   </p><h4>
+        Reload Bonus Monday
+    </h4>
+  <p></p>     
+    
+<p>
+ We don’t believe in the Monday Blues because we want you to start your week right, and no one’s going to do that better than LimoPlay Casino. So, sign up here, and get ready for Monday Fever!
+</p>
+   
+<p>
+  </p><h4>
+        Free Spins Tuesday
+    </h4>
+<p></p>
+  
+  <p>
+  Free Spins Tuesday is another chance for you to make the best out of your week. It doesn’t get any better than this.<br>
+        We did say that this is just an appetizer. If you want to taste the true meaning of class then sign up now, and we’ll drive you to bigger bonuses and prizes that are within reach!
+  </p>
+   
+   <p>
+ </p><h2>
+        Payments and Cash Outs Made Easy
+    </h2>  
+   <p></p>
+    
+<p>
+ LimoPlay accepts payments in several currencies including: EUR, USD, BTC, GBP, AUD and CAD. We also accept VISA and MasterCard as well as various web wallets, but the great thing is that we accept Bitcoin as the currency for deposit and withdrawal transactions. Now, you won’t ever have to worry about international payments and safety because with Bitcoin, your money is secured and controlled by you.
+</p>
+    
+</div>
+
+
+
+
+
+
+
+
+</div><!-- end ngIf: $root.page.content -->
+            <!-- ngIf: state.current.name == 'home' --><span ng-if="state.current.name == 'home'" class="page_description_collapse ng-scope" type="button" data-toggle="collapse" data-target="#page_description" aria-expanded="false" aria-controls="page_description" ng-click="isOpened = !isOpened">
+                Read more
+            </span><!-- end ngIf: state.current.name == 'home' -->
+        </div>
+    </div>
+
+</div>
+</div>
+</ui-view></div>
+            </div>
+
+
+            <div class="pay_link_wrap">
+                <div class="footer_panel">
+                    <span class="hidden-md hidden-sm hidden-xs clock-widget ng-isolate-scope" id="clockWidget">
+    <span class="time-area ng-binding">14:33</span>
+</span>
+
+                    <div class="pay_links providers footer-providers">
+                        <a href="http://softswiss.com" target="_blank" class="pay_link ng-isolate-scope"><img src="resources/images/icon/providers/white/softswiss_casino.svg"></a>
+                        <span class="pay_link"><img src="resources/images/icon/providers/white/amatic.svg"></span>
+                        <span class="pay_link"><img src="resources/images/icon/providers/white/microgaming.svg"></span>
+                        <span class="pay_link"><img src="resources/images/icon/providers/white/endorphina.svg"></span>
+                        <span class="pay_link"><img src="resources/images/icon/providers/white/netent.svg"></span>
+                        <span class="pay_link"><a href="http://www.askgamblers.com/online-casinos/limoplay-casino-review/" rel="nofollow"><img src="resources/images/icon/responsibility/askgamblers_red.svg"></a></span>
+                    </div>
+                </div>
+            </div>
+            <footer>
+    <div class="footer__logo">
+        <img src="./resources/images/footer-logo.png" alt="">
+    </div>
+
+
+    <div class="inner">
+        <ul class="foo_menu ng-isolate-scope" type="bottom-menu">
+    <li><a class="foo_menu_item ng-scope current" href="" translate="frontend.links.home" ui-sref="home({lang:'en'})" ui-sref-active="current">Home</a></li>
+    <li><a class="foo_menu_item ng-scope" href="/games" translate="frontend.links.casino_games" ui-sref="app.games({lang:'en'})" ui-sref-active="current">Casino Games</a></li>
+    <!-- ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/about-us" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'about-us', lang:'en'})" ng-bind="item.title">About LimoPlay</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/affiliate-program" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'affiliate-program', lang:'en'})" ng-bind="item.title">Affiliate Program</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/how-to-play" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'how-to-play', lang:'en'})" ng-bind="item.title">How To Play</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/bitcoin-games" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'bitcoin-games', lang:'en'})" ng-bind="item.title">Bitcoin Games</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/privacy" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'privacy', lang:'en'})" ng-bind="item.title">Privacy Policy</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/terms-and-conditions" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'terms-and-conditions', lang:'en'})" ng-bind="item.title">T &amp; C</a></li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope"><a class="foo_menu_item ng-binding" href="/complaints" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="app.external({id:'complaints', lang:'en'})" ng-bind="item.title">Complaints</a></li><!-- end ngRepeat: item in menu -->
+</ul>
+        <div class="foo_cntnt_item socials">
+            <div ng-bind-html="content" type="footer-social" class="ng-binding ng-isolate-scope ng-scope"><div class="foo_cntnt_item socials">
+  <a class="fonticon fa fa-facebook" href="https://www.facebook.com/limoplay" title="Follow us on facebook"></a>
+</div></div>
+        </div>
+
+        <div class="foo_content">
+                <div class="foo_content_left">
+
+                    <div ng-bind-html="content" type="footer-icons-block" class="ng-binding ng-isolate-scope ng-scope"><div class="pay_links payments" ng-init="icon_directory = 'black'">
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/visa.svg"></span>
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/mastercard.svg"></span>
+  <!--span class="pay_link _small"><img src="resources/images/icon/payments/black/diners.svg"/></span-->
+  <!--span class="pay_link _small"><img src="resources/images/icon/payments/black/maestro.svg"/></span-->
+  <!--span class="pay_link _small"><img src="resources/images/icon/payments/black/unionpay.svg"/></span-->
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/paysafecard.svg"></span>
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/skrill.svg"></span>
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/neteller.svg"></span>
+  <span class="pay_link _small"><img src="/system/comfy/cms/files/files/000/000/539/original/zimpler.svg"></span>
+  <span class="pay_link _small"><img src="resources/images/icon/payments/black/trustly.svg?2"></span>
+  						
+  
+
+                    </div>
+                    <div class="pay_links security" ng-init="icon_directory = 'black'">
+                        <span class="pay_link _medium"><img src="resources/images/icon/responsibility/black/18plus.svg"></span>
+                        <span class="pay_link _small"><a href="http://www.softswiss.com/" target="_blank"><img src="resources/images/icon/providers/black/softswiss_casino.svg"></a></span>
+                        <span class="pay_link _medium"><a href="http://www.gaminglicences.com/pages/validate.php?lid=8048-S0608799"><img src="resources/images/icon/security/black/curacao.svg"></a></span>
+                      <span class="pay_link _small"><a href="/system/comfy/cms/files/files/000/000/027/original/RNG_Certificate_SoftSwiss_limoplay_160915.pdf" target="_self"><img src="resources/images/icon/security/black/rng.svg"></a></span>
+                        <span class="pay_link _small"><a href="/about-us/what-is-provably-fair"><img src="resources/images/icon/security/black/provablyfair.svg"></a></span>
+                        <span class="pay_link _small"><a href="/system/comfy/cms/files/files/000/000/027/original/RNG_Certificate_SoftSwiss_limoplay_160915.pdf" target="_self"><img src="resources/images/icon/security/black/itech_labs.svg"></a></span>
+                        <span class="pay_link _small"><img src="resources/images/icon/security/black/ssl.svg"></span>
+                        <span class="pay_link _small"><img src="resources/images/icon/security/black/safe_secure.svg"></span>
+                        
+                    </div></div>
+
+                </div>
+                <div class="foo_content_right">
+                    <div class="footer_right_text">
+                        <div ng-bind-html="content" type="footer-right-text" class="ng-binding ng-isolate-scope ng-scope"><strong>Welcome to LimoPlay Casino!</strong>
+<p>Welcome to LimoPlay Casino where it’s all about luxury. Play like a boss with over 600 casino games, make easy transactions with Bitcoin, and enjoy incredible bonuses!</p>
+</div>
+                    </div>
+                </div>
+        </div>
+
+        <div ng-bind-html="content" class="footer-content ng-binding ng-isolate-scope ng-scope" type="footer-content"><div class="footer-content">
+<div class="antillephone-wrp">
+    <external-antillephone class="ng-isolate-scope"><!-- ngIf: $ctrl.AntillephoneService.data.id && $ctrl.AntillephoneService.available --><div id="apg-seal-container" ng-if="$ctrl.AntillephoneService.data.id &amp;&amp; $ctrl.AntillephoneService.available" data-apg-seal-id="a09c77cc-d50a-439a-aa58-310c5514920a" data-apg-image-size="128" data-apg-image-type="basic-small" class="ng-scope"><div style="display: block;position: relative;overflow: hidden;max-width: 128px;min-width: 32px;">      <a target="_blank" id="apg-seal-link" href="https://validator.antillephone.com/validate?domain=www.limoplay.com&amp;seal_id=a09c77cc-d50a-439a-aa58-310c5514920a">        <img style="width: 100%;height: auto;" src="https://a09c77cc-d50a-439a-aa58-310c5514920a.snippet.antillephone.com/spacer-92fd5ced0.png">        <img style="min-height: 100%;position: absolute;top: 0;left: 0;max-width: none;max-height: 100%;" src="https://a09c77cc-d50a-439a-aa58-310c5514920a.snippet.antillephone.com/apg-seal-basic-small-92fd5ced0.png">      </a>      </div></div><!-- end ngIf: $ctrl.AntillephoneService.data.id && $ctrl.AntillephoneService.available -->
+</external-antillephone>
+   <div class="antillephone-copyright">
+<p>
+  <span class="colortext"> LimoPlay</span> is owned and operated by Direx N.V., a company registered and established under the laws of Curacao and its wholly owned subsidiary, Direx Limited, registered address Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia, Cyprus.  Direx N.V. is licensed and regulated by Antillephone N.V.   Direx N.V.’s registration number is 131879 and its registered address is E-Commerce Park Vredenberg, Curacao. 
+
+</p>
+     </div>
+</div>
+</div>
+
+
+
+       </div>
+
+
+    </div>
+</footer>
+        </div>
+        <div ng-bind-html="content" type="slide-left-user-links" class="ng-binding ng-isolate-scope ng-scope">  <div class="slide-panel _nav ng-scope" access-level="$root.accessLevels.user" ng-controller="ProfileRoutes" style="display: none;">
+            <a class="slide-panel__item _account" ng-href="/profile" target="_self" href="/profile">
+                <i></i>
+                <span class="ng-binding">My Account</span>
+            </a>
+            <a class="slide-panel__item _deposit" ng-href="" target="_self">
+                <i></i>
+                <span class="ng-binding">Deposit</span>
+            </a>
+            <a class="slide-panel__item _bonus" ng-href="/profile/bonuses" target="_self" href="/profile/bonuses">
+                <i></i>
+                <span class="ng-binding">History</span>
+            </a>
+
+        </div></div>
+        
+        <div casino-side-bar="" class="slide-panel _help" ng-init="$root.sidebar.isHelpPanelOpened = {visible: false}">
+            <a href="" class="help-panel-trigger" ng-class="{'_opened': $root.sidebar.isHelpPanelOpened.visible}" ng-click="$root.sidebar.isHelpPanelOpened.visible = !$root.sidebar.isHelpPanelOpened.visible">
+            
+            </a>
+           
+            <div class="help-panel" ng-class="{'_opened': $root.sidebar.isHelpPanelOpened.visible}">
+                <ul>
+                    <li class="help-link _faq"><a href="/faq">F.A.Q</a></li>
+                    <li class="help-link _support"><a href="/support">Support</a></li>
+                    <li class="help-link _live"><a onclick="LC_API.open_chat_window();return false;" class="livechatlink">Live Help</a></li>
+                </ul>
+            </div>
+        </div>
+           
+        <div casino-side-bar="" class="slide-panel _lang" ng-init="$root.sidebar.isLangPanelOpened = {visible: false}">
+            <a href="" class="lang-panel-trigger" ng-class="{'_opened': $root.sidebar.isLangPanelOpened.visible}" ng-click="$root.sidebar.isLangPanelOpened.visible = !$root.sidebar.isLangPanelOpened.visible">
+                <!-- ngIf: !$root.sidebar.isLangPanelOpened.visible --><div class="lang-panel-current ng-scope ng-isolate-scope" ng-if="!$root.sidebar.isLangPanelOpened.visible">
+    <span class="lang-current-name ng-binding">en</span>
+    <span class="flag flag-gb"></span>
+</div><!-- end ngIf: !$root.sidebar.isLangPanelOpened.visible -->
+            </a>
+           
+            <div class="lang-panel" ng-class="{'_opened': $root.sidebar.isLangPanelOpened.visible}">
+                <div class="foo_cntnt_item language_selector ng-isolate-scope">
+    <div>
+        <ul>
+            <!-- ngRepeat: (num, value) in locales --><li ng-repeat="(num, value) in locales" class="ng-scope">
+                <i class="flag flag-gb"></i>
+                <a ng-click="changeLocale(value.code);" class="ng-binding">
+                    English
+                </a>
+            </li><!-- end ngRepeat: (num, value) in locales --><li ng-repeat="(num, value) in locales" class="ng-scope">
+                <i class="flag flag-ru"></i>
+                <a ng-click="changeLocale(value.code);" class="ng-binding">
+                    Русский
+                </a>
+            </li><!-- end ngRepeat: (num, value) in locales -->
+
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+
+    <div class="mobile-login">
+        <div access-level="accessLevels.anon">
+            <a class="login_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+            <a class="register_lnk ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up">Sign Up</a>
+        </div>
+    </div>
+        <!--<casino-snippet type="google-analytics"></casino-snippet>-->
+     
+    
+    <script src="/js/lib.js?0f4025ca702fd3c1c552a214c629e22e"></script><!-- endinject -->
+    <!-- inject:app:js --><script src="/js/app.js?d02597392f6a81db9b0ee6d0f1167f85"></script><!-- endinject -->
+    <!-- inject:templates:js --><script src="/js/templates.js?bd7b49fa2f9ae3a021242d49c688e001"></script><!-- endinject -->
+
+</body><!-- inject:lib:js --></html>

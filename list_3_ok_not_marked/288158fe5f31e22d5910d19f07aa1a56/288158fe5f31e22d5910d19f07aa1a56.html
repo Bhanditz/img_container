@@ -1,0 +1,461 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="generator" content="Tapestry Application Framework, version 4.1.6-SNAPSHOT">
+<meta http-equiv="content" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Risk Free Online Poker - Play Online Texas Holdem - Free Poker Games - PurePlay</title>
+
+
+	<meta http-equiv="Pragma" content="no-cache">
+
+
+		<meta name="Description" content="Play risk free online poker at PurePlay! Free poker games including Texas Holdem, 7 Card Stud, Omaha and Omaha Hi Lo. No credit card required and no deposits. Win cash prizes and never lose money! Unlimited poker tournaments for one low monthly fee.">
+		<meta name="Keywords" content="poker, online poker, poker online, free, free poker, pureplay, freepoker, free online poker, online texas holdem, free texas hold em, free texas holdem, texas holdem, texas holdem free, hold em, texas hold em, texasholdem, hold'em, holdem, play poker, poker sites, wsop, world series of poker, poker rule, free poker tournament, ace, pocket aces, tournament, poker tournament, free poker tournament, poker book, 7 card stud, 5 card stud, omaha, hi, high, lo, low, hi/lo, hi/low, poker rooms, poker rules, party poker, partypoker, fulltiltpoker, pokerstars, poker stars, poker chips">
+	
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/static/tacos-jquery-js/facebox/facebox.js"></script>
+<link media="screen" rel="stylesheet" type="text/css" href="/assets/static/tacos-jquery-js/facebox/facebox.css">
+<script type="text/javascript" src="/assets/283a9a5659e0a8775ea1ebebb20ee566/com/betzip/script/djLib.js"></script>
+<link rel="stylesheet" type="text/css" href="//static.pureplay.com/app/betzip-player/style/global.va6f62a611c82e6848bb1008bfa084a2f.css">
+<link rel="stylesheet" type="text/css" href="//static.pureplay.com/app/betzip-player/style/minisite.v0aa03056af02202ff50e942254c88616.css">
+<link rel="stylesheet" type="text/css" href="//static.pureplay.com/app/betzip-player/style/page/BasicMini.v46428b84fde8a923e9c9a6a1d1dec24a.css">
+</head>
+
+
+
+<body id="BasicMini">
+<script type="text/javascript"><!--
+if(typeof(basicMini) == "undefined") basicMini = {};
+
+basicMini.showVoop = function(voopName) {
+	var voop = $("#" + voopName);
+	voop.css("display", "block");
+	return false;
+}
+
+basicMini.hideVoop = function(voopName) {
+	var voop = $("#" + voopName);
+	voop.css("display", "none");
+	return false;
+}
+
+basicMini.becomeFacebookFan = function(url) {
+	window.open(url, "_blank", "height=600,width=800,resizable=yes,scrollbars=yes");
+	return true;
+}
+
+basicMini.troubleshooting = function(url) {
+	window.open(url, "_blank", "height=770,width=1045,resizable=yes,scrollbars=yes");
+	return true;
+}
+if(typeof(inlineDialog) == "undefined") inlineDialog = {};
+
+	// add close box to top-right of element
+	inlineDialog.addCloseBox = function(element, eltname) {
+		var closer = document.createElement("a");
+		closer.href = "#";
+		closer.className = "inlineDialogCloser";
+		closer.onclick = 
+			function () {
+				var parentarea = document.getElementById(eltname);
+				if (parentarea)
+					parentarea.style.display = "none";
+			};
+			
+	    var closebox = document.createElement("img");
+	    closebox.src = "//static.pureplay.com/app/betzip-player/media/component/InlineDialogLink/closebox.v53a94496c398eaa1b9394eb9e68143d5.jpg";
+	    closebox.alt = "close";
+	
+		closer.appendChild(closebox);
+		element.appendChild(closer);
+	}
+
+	inlineDialog.addTitleHeader = function(element, titleText) {
+		var title = document.createTextNode(titleText);
+		var wrapper = document.createElement("div");
+		wrapper.className = "inlineDialogTitle";
+		wrapper.appendChild(title);
+		element.appendChild(wrapper);
+	}
+
+	inlineDialog.createIframeInDialog = function(srcUri, id, w, h) {
+		var HORIZONTAL_EXTRA = 8;
+		var VERTICAL_EXTRA = 30;
+	
+		var winHeight = (h && parseInt(h) > 0) ? parseInt(h) : document.documentElement.clientHeight - 100;
+		var winWidth = (w && parseInt(w) > 0) ? parseInt(w) : document.documentElement.clientWidth - 100;
+		if (winWidth > 750)
+			winWidth = 750;
+		
+		var newDialog = document.createElement("div");
+		newDialog.className = "inlineDialog";	
+		newDialog.id = id;
+		newDialog.style.width = winWidth + HORIZONTAL_EXTRA + "px";
+		newDialog.style.height = winHeight + VERTICAL_EXTRA + "px";
+		
+		var newIframe = document.createElement("iframe");
+		newIframe.width = winWidth;
+		newIframe.height = winHeight;
+		newIframe.frameBorder = 0;
+		newIframe.scrolling = "yes";
+		newIframe.marginHeight = 0;
+		newIframe.marginWidth = 0;
+		newIframe.src = srcUri;
+		
+		newDialog.appendChild(newIframe);
+		return newDialog;
+	}
+
+	inlineDialog.openInlineDialog = function(dialogId, pageUri, titleStr, pageHeight, pageWidth) {
+		var inlineDialogName = dialogId + "_dialog";
+		var dialog = document.getElementById(inlineDialogName);
+		if (dialog)
+			dialog.style.display = "block";
+		else {
+			dialog = inlineDialog.createIframeInDialog(pageUri, inlineDialogName, pageWidth, pageHeight);
+			if (titleStr)
+				inlineDialog.addTitleHeader(dialog, titleStr);
+			inlineDialog.addCloseBox(dialog, inlineDialogName);
+			window.scrollTo(0, 0);
+			document.body.appendChild(dialog);
+		}
+				
+		// replace currently visible inlinedialog
+		if (dialog != inlineDialog.currentlyVisibleDialog) {
+			if (inlineDialog.currentlyVisibleDialog)
+				inlineDialog.currentlyVisibleDialog.style.display = "none";
+			inlineDialog.currentlyVisibleDialog = dialog;
+		}
+	}
+
+
+
+
+	inlineDialog.openInlineDialog_termslink = function() {
+		inlineDialog.openInlineDialog("termslink", "/player/help/TermsDialog.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886", "Terms & Conditions", "", "");
+		return false;
+	}
+function openFlashClient(url) {
+		var win = window.open(url, "_blank", "height=768,width=1044,scrollbars=yes,resizable=yes,status=no,toolbar=no,menubar=no");
+		if (win != null)
+			win.focus();
+			
+	  	
+		
+		return false;
+	}
+	
+	function refreshPage() {
+		document.location.href = "";
+	}
+
+inlineDialog.openInlineDialog_termslink_1 = function() {
+		inlineDialog.openInlineDialog("termslink_1", "/player/help/TermsDialog.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886", "Terms & Conditions", "", "");
+		return false;
+	}
+inlineDialog.openInlineDialog_aboutuslink = function() {
+		inlineDialog.openInlineDialog("aboutuslink", "/player/help/AboutUsDialog.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886", "About Us", "", "");
+		return false;
+	}
+inlineDialog.openInlineDialog_privacylink = function() {
+		inlineDialog.openInlineDialog("privacylink", "/player/help/PrivacyDialog.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886", "Privacy Policy", "", "");
+		return false;
+	}
+// --></script>
+
+<script type="text/javascript">
+  function gaTrackClick(name) {}
+  function gaTrackEvent(name) {}
+  function gaFlagSession(flagName) {}
+  function gaTrackView(name) {}
+</script>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39590270-1', 'pureplay.com');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+	<script type="text/javascript">
+		// for gStateChanged
+		var gOtherStateValue = -1;
+		// for countryChanged
+		var gUnitedStates = 212;
+	</script>
+	<script type="text/javascript">//<![CDATA[
+//<!--
+// global methods for site pages
+
+var gBrowserInfo;
+
+function gSimpleStateChanged(stateFld, countryFld, countryrowname) {
+	gStateChanged(stateFld, countryFld, countryrowname, "block");
+}
+
+// shows or hides "countryrow" depending on the value in the "state" pulldown
+function gStateChanged(stateFld, countryFld, countryrowname, showvalue) {
+	var stateselect = document.getElementById(stateFld);
+	var selstate = stateselect.selectedIndex;
+	var selstateid = stateselect.options[selstate].value;
+	var countryrow = document.getElementById(countryrowname);
+	if (selstateid == gOtherStateValue) 
+		countryrow.style.display = showvalue;
+	else {
+		countryrow.style.display = "none";
+		var countryField = document.getElementById(countryFld);
+		if (countryField)
+			countryField.selectedIndex = 0;
+	}
+}
+
+// note parts of this function are inlined in MainLobby.js
+function gBrowserSniff() {
+	if (gBrowserInfo)
+		return gBrowserInfo;
+		
+	var ua = navigator.userAgent.toLowerCase(); 
+	gBrowserInfo = {};
+	gBrowserInfo.isOpera = (ua.indexOf('opera') != -1); 
+	gBrowserInfo.isIE = (ua.indexOf('msie') != -1 && !this.isOpera && (ua.indexOf('webtv') == -1) ); 
+
+	gBrowserInfo.isWin = (ua.indexOf('win') != -1);
+	gBrowserInfo.isMac = (ua.indexOf('mac') != -1);
+	return gBrowserInfo;
+}
+
+function gSetFieldFocus(fldname) {
+	var inp = document.getElementById(fldname); 
+	if (inp) 
+		inp.focus();
+}
+//-->
+//]]>
+</script>
+
+
+<div id="doc">
+	
+	<div id="bd">
+
+	
+
+		
+	
+	<div id="wrapper">
+		<img src="//static.pureplay.com/app/betzip-player/media/page/BasicMini/homepage-20171121.v1304363c0d2dc5e9dda15e21683c77d9.jpg" usemap="#homePageMap" alt="homePage" class="bgimg" width="951" height="520" border="0">
+	<div id="tcwrapper">
+		<div id="nopurchasenecessary">*NO PURCHASE NECESSARY TO WIN.  
+		<span id="tc">See 
+
+<a tabindex="-1" id="termslink" onclick="return inlineDialog.openInlineDialog_termslink();" href="#">Terms &amp; Conditions</a> for details.</span></div>
+	</div>
+		
+	<map name="homePageMap">
+	  	<!--<area shape="rect" coords="479,314,605,360" href="javascript:void(0)" jwcid="newuser@MainLobbyPlayNowButton" startpage="registration"/>-->
+		<!--<area shape="rect" coords="646,314,819,358" href="javascript:void(0)" jwcid="returninguser@MainLobbyPlayNowButton"/>-->
+ 		<!--<area shape="rect" coords="844,270,910,282" href="javascript:void(0)" onclick="return basicMini.showVoop('howitworksvoop');"/>-->
+		<!--<area shape="rect" coords="698,431,763,445" href="javascript:void(0)" jwcid="@PageLink" page="player/registration/TwoChoices" alt=""-->
+			<!--renderer="ognl:@org.apache.tapestry.contrib.link.AreaLinkRenderer@SHARED_INSTANCE"/>-->
+        <!--<a jwcid="facebookfan@DirectLink" listener="listener:fbFanClick" stateful="false"-->
+			<!--name="http://www.facebook.com/pages/PurePlay-Poker/169612095568"-->
+			<!--onclick="return basicMini.becomeFacebookFan(this.name);"-->
+			<!--<area shape="rect" coords="20,426,319,464" href="javascript:void(0)" /></a>-->
+        <!--<a jwcid="troubleshooting@DirectLink" listener="listener:troubleClick" stateful="false"-->
+           <!--name="https://rockyou.zendesk.com/hc/en-us/articles/115001640772"-->
+           <!--onclick="return basicMini.troubleshooting(this.name);"-->
+                <!--<area shape="rect" coords="539,454,761,484" href="javascript:void(0)" /></a>-->
+
+        <area href="http://player.pureplay.com/cwml/lobby/start.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886?startpage=registration" target="_blank" onclick="return openFlashClient(this.href);" id="newuser" shape="rect" coords="447,363,619,417">
+        <area href="http://player.pureplay.com/cwml/lobby/start.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886" target="_blank" onclick="return openFlashClient(this.href);" id="returninguser" shape="rect" coords="626,363,832,417">
+        <!--<area shape="rect" coords="844,270,910,282" href="javascript:void(0)" onclick="return basicMini.showVoop('howitworksvoop');"/>-->
+        <area id="PageLink" shape="rect" coords="695,455,785,470" alt="" href="/player/registration/TwoChoices.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886">
+        <a id="facebookfan" onclick="return basicMini.becomeFacebookFan(this.name);" name="http://www.facebook.com/pages/PurePlay-Poker/169612095568" href="/player/registration/BasicMini,facebookfan.sdirect"><area shape="rect" coords="20,457,310,497" href="javascript:void(0)"></a>
+        <a id="troubleshooting" onclick="return basicMini.troubleshooting(this.name);" name="https://rockyou.zendesk.com/hc/en-us/articles/115001640772" href="/player/registration/BasicMini,troubleshooting.sdirect"><area shape="rect" coords="525,474,743,494" href="javascript:void(0)"></a>
+    </map>
+	
+		<div id="howitworksvoop" class="voop">
+			<div class="voopheader">
+				<a href="#" onclick="return basicMini.hideVoop('howitworksvoop');" class="voopclose"><img src="//static.pureplay.com/app/betzip-player/media/page/BasicMini/x.v11cedfd1c9bac42206f86a26a369621c.jpg"></a>
+				<div class="cleardiv">&nbsp;</div>
+			</div>
+			<div class="voopcontent">
+				<div class="paraheader">How it Works</div>
+				<div class="para">
+					Come to PurePlay Casino and Win Big without the Risk!
+				</div>
+				<div class="para">
+					Play at the world’s largest online social casino destination site for FREE!  Join millions of players 
+					and win at over 100 exciting games including Multiplayer Poker, Slots, Blackjack, Bingo, Video Poker, 
+					Roulette and more!  Take your winnings and use them anywhere in the casino.  See if you can advance 
+					through over 50 levels of game play unlocking new games and free bonuses to become a high roller.  Or 
+					head to our poker tournaments and play free poker for real cash without the risk of losing any of your 
+					money – Over $100,000 paid monthly!  
+				</div>
+				<div class="para">
+					New players start with 10,000 play money chips and receive free daily log in bonuses. You can also purchase 
+					chips to advance levels and unlock games faster or go straight to the high stakes play money poker tables. 
+				</div>
+				<style>
+	#chippackages {
+		border-top:1px solid #000;
+		border-left:1px solid #000;
+	}
+	
+	#chippackagetitle {
+		color:#fff;
+		background-color:#000;
+		font-weight:bold;
+		text-align:center;
+		padding:2px;
+	}
+	
+	.price, .chips {
+		border-bottom:1px solid #000;
+		border-right:1px solid #000;
+		padding:1px 5px;
+	}
+</style>
+
+<if id="If_2">
+		</if><table id="chippackages" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+			<td id="chippackagetitle" colspan="2">Play Money Packages</td>
+		</tr>
+	
+
+	
+		<tr class="even" id="Any">
+			<td class="price">
+				$20 Package
+			</td>
+			<td class="chips">
+				125,000 Play Money Chips
+			</td>
+		</tr>
+	
+		<tr class="odd" id="Any_0">
+			<td class="price">
+				$50 Package
+			</td>
+			<td class="chips">
+				350,000 Play Money Chips
+			</td>
+		</tr>
+	
+		<tr class="even" id="Any_1">
+			<td class="price">
+				$100 Package
+			</td>
+			<td class="chips">
+				800,000 Play Money Chips
+			</td>
+		</tr>
+	
+	
+		<tr class="odd" id="Any_2">
+			<td class="price">
+				VIP Package: $24.99 per month
+			</td>
+			<td class="chips">
+				$165,000 Play Money Chips per month 
+				plus other <a id="PageLink_0" href="/player/registration/TwoChoices.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886" target="_blank">member benefits</a>
+			</td>
+		</tr> 
+	
+</tbody></table>
+		
+				
+				<div class="para">
+					Play money chips are for entertainment purposes only and are not refundable, exchangeable, replaceable, redeemable or transferable for real-world funds or prizes under any circumstances.
+				</div>
+				<div class="paraheader">How to Win Cash</div>
+				<div class="para">
+					PurePlay offers poker tournaments which award $100,000 per month in cash prizes.  These tournaments are 100% free to enter.  Basic members are given instant access to a limited number of these tournaments, and can enter the remaining tournaments by simply sending a postcard to PurePlay requesting free entry.  
+					VIP members have instant access to all cash tournaments and do not need to send postcards.
+					See terms and conditions for details. Poker is currently the only game on PurePlay where you can win cash and other prizes of value.
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="expl">Welcome to PurePlay,
+ 		the online poker room where you can play poker and win cash prizes with no risk! Play online Texas Holdem, 
+ 		the featured game of the World Series of Poker, as well as many other free poker games. Unlike online casinos, 
+ 		PurePlay allows you to play online poker and win big without the risk of gambling.<br><br>
+		So, whether you dream of hosting a poker party, playing Texas Holdem in the World Series of Poker 
+		or becoming the next big poker star, PurePlay is the place to play risk free online poker!
+	</div></div><div id="footer">
+		<div id="copyrightstring">
+			©2017 PurePlay.com  All rights reserved.
+		</div>
+		<div id="footerlinks">
+			
+
+<a tabindex="-1" id="termslink_1" onclick="return inlineDialog.openInlineDialog_termslink_1();" href="#">Terms &amp; Conditions</a>			
+			<span class="separator">|</span>
+			
+			
+			
+			
+
+<a tabindex="-1" id="aboutuslink" onclick="return inlineDialog.openInlineDialog_aboutuslink();" href="#">About Us</a>			
+			<span class="separator">|</span>
+			
+			<a target="_blank" class="footerlink" href="/player/help/PressRoom.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886?page=player%2Fhelp%2FContactUs" id="Any_3">Contact Us</a>	
+			<span class="separator">|</span>
+			
+			
+
+<a tabindex="-1" id="privacylink" onclick="return inlineDialog.openInlineDialog_privacylink();" href="#">Privacy Policy</a>			
+			<span class="separator">|</span>
+			
+			<a id="PageLink_1" class="footerlink" href="/player/help/PressRoom.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886" target="_blank">Press Room</a>
+			<span class="separator">|</span>
+			<a target="_blank" class="footerlink" href="/player/help/PressRoom.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886?page=player%2Fhelp%2FAdvertiseAtPurePlay" id="Any_4">Advertise</a>
+
+
+			<span id="footer_memberarea">
+				<span class="separator">|</span>
+				
+					
+					
+					
+						
+						
+							<a id="PageLink_2" class="footerlink" href="/player/login/SiteLogin.html;jsessionid=001AF13815FCD20DB2E25FF4FAF56886">Member Login</a>
+						
+					
+				
+			</span>
+		</div>
+		<img src="//static.pureplay.com/app/betzip-player/media/component/SiteBorder/over_18_white.v013715eb3fcd52a04adcde468f4159cf.gif" id="over18white" alt="Over 18 only">
+		<!--<img jwcid="@Image" id="betterbusinesswhite" image="media:/media/component/SiteBorder/better_business_bureau_white.gif" alt="Accredited by the Better Business Bureau"/>-->
+		<img src="//static.pureplay.com/app/betzip-player/media/component/SiteBorder/100_percent_legal_white.v408e87b18ad0e1f9edcc8bd338b6b19c.gif" id="percentlegalwhite" alt="U.S. Based and 100% Legal">
+		<img src="//static.pureplay.com/app/betzip-player/media/page/BasicMini/over_18_black.vfd541f509a93a7a35e65029d1f674de3.gif" id="over18black" alt="Over 18 only">
+		<!--<img jwcid="@Image" id="betterbusinessblack" image="media:/media/page/BasicMini/better_business_bureau_black.gif" alt="Accredited by the Better Business Bureau"/>-->
+		<img src="//static.pureplay.com/app/betzip-player/media/page/BasicMini/100_percent_legal_black.ve4c20b81dfe789b1cf5526362e4fa0b7.gif" id="percentlegalblack">
+
+	</div>
+</div>
+<div style="clear:both"></div>
+
+<script type="text/javascript"><!--
+tapestry.addOnLoad(function(e) {
+});
+// --></script>
+
+
+
+
+
+	
+	
+	
+</body></html>

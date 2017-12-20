@@ -1,0 +1,2294 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<style>
+
+    /*@import url('https://fonts.googleapis.com/css?family=Open+Sans'); /* subset (at least in chrome) is automatic */*/
+
+    /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');  /* subset (at least in chrome) is automatic */*/
+
+body {
+    font-family: 'Open Sans', "Helvetica Neue", sans-serif; /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size:15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+                                                                                                                       /* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+</style>
+
+<script async="" src="//www.google-analytics.com/analytics.js" style="color: rgb(0, 0, 0);"></script><script>
+    var GeoServer = "https://geo.storyboardthat.com";
+    var StripeJSKey = "pk_live_XJJF9ZNxKZAVtu0F6ILLvokx";
+
+    var OnJsLoaded = []; // for js methods that need to run after libraries are lazyloaded
+
+    setTimeout(function ()
+    {
+        try {
+            swal.setDefaults(
+                {
+                confirmButtonText: "ОК",
+                    cancelButtonText: "Отмена",
+                });
+        } catch (e) {
+
+        }
+
+    }, 5000);
+
+    function WritePrettyDate(utcDate, placementId)
+    {
+        var d = new Date(utcDate);
+        var offset = (new Date().getTimezoneOffset() / 60) * -1
+        d.setHours(d.getHours() + offset);
+
+        var prettyDate = d.toLocaleDateString() + ", " + d.toLocaleTimeString();
+
+        document.getElementById(placementId).textContent = prettyDate;
+    }
+
+    function popup(mylink, windowname)
+    {
+        if (!window.focus) return true;
+        var href;
+        if (typeof (mylink) == 'string')
+            href = mylink;
+        else
+            href = mylink.href;
+        window.open(href, windowname, 'width=800,height=800,scrollbars=yes');
+        return false;
+    }
+
+    function trackEvent(category, action, label, value)
+    {
+        try
+        {
+            ga('send', 'event', category, action, label, value);  // value is a number.
+        }
+        catch (err)
+        { }
+    }
+
+    function trackVirtualPageView(url)
+    {
+        try
+        {
+
+            ga('send', 'pageview', url);
+        }
+        catch (err)
+        { }
+    }
+
+    function trackExternalLink(title)
+    {
+        trackEvent('Outbound Links', 'Click', title, 0);
+    }
+
+    //https://raw.githubusercontent.com/rgrove/lazyload/master/lazyload.js
+    LazyLoad = function (e) { function u(t, n) { var r = e.createElement(t), i; for (i in n) { if (n.hasOwnProperty(i)) { r.setAttribute(i, n[i]) } } return r } function a(e) { var t = r[e], n, o; if (t) { n = t.callback; o = t.urls; o.shift(); i = 0; if (!o.length) { n && n.call(t.context, t.obj); r[e] = null; s[e].length && l(e) } } } function f() { var n = navigator.userAgent; t = { async: e.createElement("script").async === true }; (t.webkit = /AppleWebKit\//.test(n)) || (t.ie = /MSIE|Trident/.test(n)) || (t.opera = /Opera/.test(n)) || (t.gecko = /Gecko\//.test(n)) || (t.unknown = true) } function l(i, o, l, p, d) { var v = function () { a(i) }, m = i === "css", g = [], y, b, w, E, S, x; t || f(); if (o) { o = typeof o === "string" ? [o] : o.concat(); if (m || t.async || t.gecko || t.opera) { s[i].push({ urls: o, callback: l, obj: p, context: d }) } else { for (y = 0, b = o.length; y < b; ++y) { s[i].push({ urls: [o[y]], callback: y === b - 1 ? l : null, obj: p, context: d }) } } } if (r[i] || !(E = r[i] = s[i].shift())) { return } n || (n = e.head || e.getElementsByTagName("head")[0]); S = E.urls.concat(); for (y = 0, b = S.length; y < b; ++y) { x = S[y]; if (m) { w = t.gecko ? u("style") : u("link", { href: x, rel: "stylesheet" }) } else { w = u("script", { src: x }); w.async = false } w.className = "lazyload"; w.setAttribute("charset", "utf-8"); if (t.ie && !m && "onreadystatechange" in w && !("draggable" in w)) { w.onreadystatechange = function () { if (/loaded|complete/.test(w.readyState)) { w.onreadystatechange = null; v() } } } else if (m && (t.gecko || t.webkit)) { if (t.webkit) { E.urls[y] = w.href; h() } else { w.innerHTML = '@import "' + x + '";'; c(w) } } else { w.onload = w.onerror = v } g.push(w) } for (y = 0, b = g.length; y < b; ++y) { n.appendChild(g[y]) } } function c(e) { var t; try { t = !!e.sheet.cssRules } catch (n) { i += 1; if (i < 200) { setTimeout(function () { c(e) }, 50) } else { t && a("css") } return } a("css") } function h() { var e = r.css, t; if (e) { t = o.length; while (--t >= 0) { if (o[t].href === e.urls[0]) { a("css"); break } } i += 1; if (e) { if (i < 200) { setTimeout(h, 50) } else { a("css") } } } } var t, n, r = {}, i = 0, s = { css: [], js: [] }, o = e.styleSheets; return { css: function (e, t, n, r) { l("css", e, t, n, r) }, js: function (e, t, n, r) { l("js", e, t, n, r) } } }(this.document)
+
+    var pleaseWaitMessage = "Пожалуйста, Подождите ...";
+</script>
+
+<script>/*! lazysizes - v4.0.0-rc3 */
+!function(a,b){var c=b(a,a.document);a.lazySizes=c,"object"==typeof module&&module.exports&&(module.exports=c)}(window,function(a,b){"use strict";if(b.getElementsByClassName){var c,d,e=b.documentElement,f=a.Date,g=a.HTMLPictureElement,h="addEventListener",i="getAttribute",j=a[h],k=a.setTimeout,l=a.requestAnimationFrame||k,m=a.requestIdleCallback,n=/^picture$/i,o=["load","error","lazyincluded","_lazyloaded"],p={},q=Array.prototype.forEach,r=function(a,b){return p[b]||(p[b]=new RegExp("(\\s|^)"+b+"(\\s|$)")),p[b].test(a[i]("class")||"")&&p[b]},s=function(a,b){r(a,b)||a.setAttribute("class",(a[i]("class")||"").trim()+" "+b)},t=function(a,b){var c;(c=r(a,b))&&a.setAttribute("class",(a[i]("class")||"").replace(c," "))},u=function(a,b,c){var d=c?h:"removeEventListener";c&&u(a,b),o.forEach(function(c){a[d](c,b)})},v=function(a,d,e,f,g){var h=b.createEvent("CustomEvent");return e||(e={}),e.instance=c,h.initCustomEvent(d,!f,!g,e),a.dispatchEvent(h),h},w=function(b,c){var e;!g&&(e=a.picturefill||d.pf)?e({reevaluate:!0,elements:[b]}):c&&c.src&&(b.src=c.src)},x=function(a,b){return(getComputedStyle(a,null)||{})[b]},y=function(a,b,c){for(c=c||a.offsetWidth;c<d.minSize&&b&&!a._lazysizesWidth;)c=b.offsetWidth,b=b.parentNode;return c},z=function(){var a,c,d=[],e=[],f=d,g=function(){var b=f;for(f=d.length?e:d,a=!0,c=!1;b.length;)b.shift()();a=!1},h=function(d,e){a&&!e?d.apply(this,arguments):(f.push(d),c||(c=!0,(b.hidden?k:l)(g)))};return h._lsFlush=g,h}(),A=function(a,b){return b?function(){z(a)}:function(){var b=this,c=arguments;z(function(){a.apply(b,c)})}},B=function(a){var b,c=0,d=125,e=666,g=e,h=function(){b=!1,c=f.now(),a()},i=m?function(){m(h,{timeout:g}),g!==e&&(g=e)}:A(function(){k(h)},!0);return function(a){var e;(a=a===!0)&&(g=44),b||(b=!0,e=d-(f.now()-c),0>e&&(e=0),a||9>e&&m?i():k(i,e))}},C=function(a){var b,c,d=99,e=function(){b=null,a()},g=function(){var a=f.now()-c;d>a?k(g,d-a):(m||e)(e)};return function(){c=f.now(),b||(b=k(g,d))}},D=function(){var g,l,m,o,p,y,D,F,G,H,I,J,K,L,M=/^img$/i,N=/^iframe$/i,O="onscroll"in a&&!/glebot/.test(navigator.userAgent),P=0,Q=0,R=0,S=-1,T=function(a){R--,a&&a.target&&u(a.target,T),(!a||0>R||!a.target)&&(R=0)},U=function(a,c){var d,f=a,g="hidden"==x(b.body,"visibility")||"hidden"!=x(a,"visibility");for(F-=c,I+=c,G-=c,H+=c;g&&(f=f.offsetParent)&&f!=b.body&&f!=e;)g=(x(f,"opacity")||1)>0,g&&"visible"!=x(f,"overflow")&&(d=f.getBoundingClientRect(),g=H>d.left&&G<d.right&&I>d.top-1&&F<d.bottom+1);return g},V=function(){var a,f,h,j,k,m,n,p,q,r=c.elements;if((o=d.loadMode)&&8>R&&(a=r.length)){f=0,S++,null==K&&("expand"in d||(d.expand=e.clientHeight>500&&e.clientWidth>500?500:370),J=d.expand,K=J*d.expFactor),K>Q&&1>R&&S>2&&o>2&&!b.hidden?(Q=K,S=0):Q=o>1&&S>1&&6>R?J:P;for(;a>f;f++)if(r[f]&&!r[f]._lazyRace)if(O)if((p=r[f][i]("data-expand"))&&(m=1*p)||(m=Q),q!==m&&(y=innerWidth+m*L,D=innerHeight+m,n=-1*m,q=m),h=r[f].getBoundingClientRect(),(I=h.bottom)>=n&&(F=h.top)<=D&&(H=h.right)>=n*L&&(G=h.left)<=y&&(I||H||G||F)&&(d.loadHidden||"hidden"!=x(r[f],"visibility"))&&(l&&3>R&&!p&&(3>o||4>S)||U(r[f],m))){if(ba(r[f]),k=!0,R>9)break}else!k&&l&&!j&&4>R&&4>S&&o>2&&(g[0]||d.preloadAfterLoad)&&(g[0]||!p&&(I||H||G||F||"auto"!=r[f][i](d.sizesAttr)))&&(j=g[0]||r[f]);else ba(r[f]);j&&!k&&ba(j)}},W=B(V),X=function(a){s(a.target,d.loadedClass),t(a.target,d.loadingClass),u(a.target,Z),v(a.target,"lazyloaded")},Y=A(X),Z=function(a){Y({target:a.target})},$=function(a,b){try{a.contentWindow.location.replace(b)}catch(c){a.src=b}},_=function(a){var b,c=a[i](d.srcsetAttr);(b=d.customMedia[a[i]("data-media")||a[i]("media")])&&a.setAttribute("media",b),c&&a.setAttribute("srcset",c)},aa=A(function(a,b,c,e,f){var g,h,j,l,o,p;(o=v(a,"lazybeforeunveil",b)).defaultPrevented||(e&&(c?s(a,d.autosizesClass):a.setAttribute("sizes",e)),h=a[i](d.srcsetAttr),g=a[i](d.srcAttr),f&&(j=a.parentNode,l=j&&n.test(j.nodeName||"")),p=b.firesLoad||"src"in a&&(h||g||l),o={target:a},p&&(u(a,T,!0),clearTimeout(m),m=k(T,2500),s(a,d.loadingClass),u(a,Z,!0)),l&&q.call(j.getElementsByTagName("source"),_),h?a.setAttribute("srcset",h):g&&!l&&(N.test(a.nodeName)?$(a,g):a.src=g),f&&(h||l)&&w(a,{src:g})),a._lazyRace&&delete a._lazyRace,t(a,d.lazyClass),z(function(){(!p||a.complete&&a.naturalWidth>1)&&(p?T(o):R--,X(o))},!0)}),ba=function(a){var b,c=M.test(a.nodeName),e=c&&(a[i](d.sizesAttr)||a[i]("sizes")),f="auto"==e;(!f&&l||!c||!a[i]("src")&&!a.srcset||a.complete||r(a,d.errorClass))&&(b=v(a,"lazyunveilread").detail,f&&E.updateElem(a,!0,a.offsetWidth),a._lazyRace=!0,R++,aa(a,b,f,e,c))},ca=function(){if(!l){if(f.now()-p<999)return void k(ca,999);var a=C(function(){d.loadMode=3,W()});l=!0,d.loadMode=3,W(),j("scroll",function(){3==d.loadMode&&(d.loadMode=2),a()},!0)}};return{_:function(){p=f.now(),c.elements=b.getElementsByClassName(d.lazyClass),g=b.getElementsByClassName(d.lazyClass+" "+d.preloadClass),L=d.hFac,j("scroll",W,!0),j("resize",W,!0),a.MutationObserver?new MutationObserver(W).observe(e,{childList:!0,subtree:!0,attributes:!0}):(e[h]("DOMNodeInserted",W,!0),e[h]("DOMAttrModified",W,!0),setInterval(W,999)),j("hashchange",W,!0),["focus","mouseover","click","load","transitionend","animationend","webkitAnimationEnd"].forEach(function(a){b[h](a,W,!0)}),/d$|^c/.test(b.readyState)?ca():(j("load",ca),b[h]("DOMContentLoaded",W),k(ca,2e4)),c.elements.length?(V(),z._lsFlush()):W()},checkElems:W,unveil:ba}}(),E=function(){var a,c=A(function(a,b,c,d){var e,f,g;if(a._lazysizesWidth=d,d+="px",a.setAttribute("sizes",d),n.test(b.nodeName||""))for(e=b.getElementsByTagName("source"),f=0,g=e.length;g>f;f++)e[f].setAttribute("sizes",d);c.detail.dataAttr||w(a,c.detail)}),e=function(a,b,d){var e,f=a.parentNode;f&&(d=y(a,f,d),e=v(a,"lazybeforesizes",{width:d,dataAttr:!!b}),e.defaultPrevented||(d=e.detail.width,d&&d!==a._lazysizesWidth&&c(a,f,e,d)))},f=function(){var b,c=a.length;if(c)for(b=0;c>b;b++)e(a[b])},g=C(f);return{_:function(){a=b.getElementsByClassName(d.autosizesClass),j("resize",g)},checkElems:g,updateElem:e}}(),F=function(){F.i||(F.i=!0,E._(),D._())};return function(){var b,c={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0};d=a.lazySizesConfig||a.lazysizesConfig||{};for(b in c)b in d||(d[b]=c[b]);a.lazySizesConfig=d,k(function(){d.init&&F()})}(),c={cfg:d,autoSizer:E,loader:D,init:F,uP:w,aC:s,rC:t,hC:r,fire:v,gW:y,rAF:z}}});</script>
+
+
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config)
+        {
+            function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;) i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a), i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t
+        }({
+            instrumentationKey: "249a9bd3-888c-44d4-8d9d-7141472c976d"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script>
+    <script src="https://www.atmrum.net/rum.js"></script>
+    <script>
+    OnJsLoaded.push(function() {rum.start("cbd2b70d10f74f7c805262abcc7c244a");})
+    </script>
+
+
+
+
+
+
+<script>
+    LazyLoad.css(['/content/css/sbt-bootstrap.min.css?time=636492802616843762'], null);
+</script><style class="lazyload" charset="utf-8">@import "/content/css/sbt-bootstrap.min.css?time=636492802616843762";</style>
+
+<title>Лотерея Ширли Джексон | Лотереи Резюме</title>
+
+
+<meta name="description" content="Наш гид учитель имеет планы уроков &amp; мероприятия для лотереи Ширли Джексон. Делают лотереи короткий рассказ анализ, сделать схему участка, и более">
+<meta name="keywords" content="лотереи, лотереи Ширли Джексоне, лотерейного руководство учителя, план лотереи урока, лотереи статьи, лотереи Нью-Йоркер, лотерейных деятельности, лотереи краткий анализ рассказа">
+<meta property="og:title" content="Лотерея Ширли Джексон | Лотереи Резюме">
+<meta property="og:type" content="company">
+<meta property="og:url" content="http://www.storyboardthat.com/ru/teacher-guide/%D0%BB%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F-%D1%88%D0%B8%D1%80%D0%BB%D0%B8-%D0%B4%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD">
+<meta property="og:image" content="https://sbt.blob.core.windows.net/site-images/ela/the-lottery.png">
+<meta property="og:description" content="Наш гид учитель имеет планы уроков &amp; мероприятия для лотереи Ширли Джексон. Делают лотереи короткий рассказ анализ, сделать схему участка, и более">
+<meta property="og:site_name" content="Storyboard That">
+<meta property="fb:app_id" content="218706961566573">
+<meta property="fb:admins" content="514497400">
+<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+   More info: h5bp.com/b/378 -->
+<meta name="author" content="Clever Prototypes, LLC">
+<meta http-equiv="copyright" content="Copyright 2017 Clever Prototypes, LLC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="HandheldFriendly" content="true"><!-- old BB -->
+<meta name="MobileOptimized" content="width"> <!-- old IE -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Storyboard That">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@StoryboardThat">
+<meta name="twitter:creator" content="@StoryboardThat">
+<meta name="twitter:title" content="Лотерея Ширли Джексон | Лотереи Резюме">
+<meta name="twitter:description" content="Наш гид учитель имеет планы уроков &amp; мероприятия для лотереи Ширли Джексон. Делают лотереи короткий рассказ анализ, сделать схему участка, и более">
+    <meta name="twitter:image" content="https://sbt.blob.core.windows.net/site-images/ela/the-lottery.png">
+    <meta name="twitter:image:alt" content="Лотерея Ширли Джексон | Лотереи Резюме">
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/nlflnngknijojboglnnkonkcenocjepa">
+
+
+<link rel="Publisher" href="https://plus.google.com/102659178269071238974">
+
+<link rel="canonical" href="http://www.storyboardthat.com/ru/teacher-guide/%D0%BB%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F-%D1%88%D0%B8%D1%80%D0%BB%D0%B8-%D0%B4%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD">
+
+<link rel="shortcut icon" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon.ico">
+
+<link rel="apple-touch-icon" sizes="57x57" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-152x152.png">
+
+<link rel="icon" type="image/png" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//sbt.blob.core.windows.net/site-images/site-pages/favicons/favicon-16x16.png" sizes="16x16">
+
+<meta name="application-name" content="Storyboard That">
+<meta name="msapplication-TileColor" content="#E8F5FF">
+<meta name="msapplication-TileImage" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-70x70.png">
+<meta name="msapplication-square144x144logo" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-144x144.png">
+<meta name="msapplication-square150x150logo" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-150x150.png">
+<meta name="msapplication-square310x310logo" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-310x310.png">
+<meta name="msapplication-wide310x150logo" content="//sbt.blob.core.windows.net/site-images/site-pages/favicons/mstile-310x150.png">
+
+
+
+
+        <link rel="alternate" hreflang="en" href="http://www.storyboardthat.com/teacher-guide/the-lottery-by-shirley-jackson">
+        <link rel="alternate" hreflang="es" href="http://www.storyboardthat.com/es/teacher-guide/la-loter%c3%ada">
+        <link rel="alternate" hreflang="fr" href="http://www.storyboardthat.com/fr/teacher-guide/la-loterie-de-shirley-jackson">
+        <link rel="alternate" hreflang="de" href="http://www.storyboardthat.com/de/teacher-guide/die-lotterie-von-shirley-jackson">
+        <link rel="alternate" hreflang="it" href="http://www.storyboardthat.com/it/teacher-guide/la-lotteria-di-shirley-jackson">
+        <link rel="alternate" hreflang="nl" href="http://www.storyboardthat.com/nl/teacher-guide/de-loterij-van-shirley-jackson">
+        <link rel="alternate" hreflang="pt" href="http://www.storyboardthat.com/pt/teacher-guide/a-loteria-por-shirley-jackson">
+        <link rel="alternate" hreflang="he" href="http://www.storyboardthat.com/he/teacher-guide/%d7%94%d7%94%d7%92%d7%a8%d7%9c%d7%94-%d7%99%d7%93%d7%99-%d7%a9%d7%99%d7%a8%d7%9c%d7%99-%d7%92'%d7%a7%d7%a1%d7%95%d7%9f">
+        <link rel="alternate" hreflang="ar" href="http://www.storyboardthat.com/ar/teacher-guide/%d8%a7%d9%84%d9%8a%d8%a7%d9%86%d8%b5%d9%8a%d8%a8-%d9%85%d9%86-%d9%82%d8%a8%d9%84-%d8%b4%d9%8a%d8%b1%d9%84%d9%8a-%d8%ac%d8%a7%d9%83%d8%b3%d9%88%d9%86">
+        <link rel="alternate" hreflang="hi" href="http://www.storyboardthat.com/hi/teacher-guide/%e0%a4%b6%e0%a4%b0%e0%a5%8d%e0%a4%b2%e0%a5%80-%e0%a4%9c%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%a8-%e0%a4%a8%e0%a5%87-%e0%a4%b2%e0%a5%89%e0%a4%9f%e0%a4%b0%e0%a5%80">
+        <link rel="alternate" hreflang="ru" href="http://www.storyboardthat.com/ru/teacher-guide/%d0%bb%d0%be%d1%82%d0%b5%d1%80%d0%b5%d1%8f-%d1%88%d0%b8%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b5%d0%ba%d1%81%d0%be%d0%bd">
+        <link rel="alternate" hreflang="da" href="http://www.storyboardthat.com/da/teacher-guide/lotteriet-af-shirley-jackson">
+        <link rel="alternate" hreflang="sv" href="http://www.storyboardthat.com/sv/teacher-guide/lotteriet-av-shirley-jackson">
+        <link rel="alternate" hreflang="fi" href="http://www.storyboardthat.com/fi/teacher-guide/lottery-shirley-jackson">
+        <link rel="alternate" hreflang="no" href="http://www.storyboardthat.com/no/teacher-guide/lotteri-av-shirley-jackson">
+        <link rel="alternate" hreflang="tr" href="http://www.storyboardthat.com/tr/teacher-guide/lottery-taraf%c4%b1ndan-shirley-jackson">
+        <link rel="alternate" hreflang="pl" href="http://www.storyboardthat.com/pl/teacher-guide/loteria-przez-shirley-jackson">
+        <link rel="alternate" hreflang="ro" href="http://www.storyboardthat.com/ro/teacher-guide/loteria-de-shirley-jackson">
+        <link rel="alternate" hreflang="cs" href="http://www.storyboardthat.com/cs/teacher-guide/loterie-shirley-jackson">
+        <link rel="alternate" hreflang="sk" href="http://www.storyboardthat.com/sk/teacher-guide/loteria-od-shirleyho-jacksona">
+        <link rel="alternate" hreflang="hu" href="http://www.storyboardthat.com/hu/teacher-guide/a-szerencsej%c3%a1t%c3%a9k-shirley-jackson">
+        <link rel="alternate" hreflang="hr" href="http://www.storyboardthat.com/hr/teacher-guide/lutrija-po-shirley-jacksonu">
+        <link rel="alternate" hreflang="bg" href="http://www.storyboardthat.com/bg/teacher-guide/%d0%bb%d0%be%d1%82%d0%b0%d1%80%d0%b8%d1%8f%d1%82%d0%b0-%d0%be%d1%82-%d1%88%d1%8a%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b0%d0%ba%d1%81%d1%8a%d0%bd">
+        <link rel="alternate" hreflang="lt" href="http://www.storyboardthat.com/lt/teacher-guide/loterija-shirley-jackson">
+        <link rel="alternate" hreflang="sl" href="http://www.storyboardthat.com/sl/teacher-guide/loterija-s-shirley-jackson">
+        <link rel="alternate" hreflang="lv" href="http://www.storyboardthat.com/lv/teacher-guide/loterij%c4%81-shirley-jackson">
+        <link rel="alternate" hreflang="et" href="http://www.storyboardthat.com/et/teacher-guide/lottery-shirley-jackson">
+<!--Google Analytics (centralized)-->
+
+
+
+<script>
+    (function (i, s, o, g, r, a, m)
+    {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
+        {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    //var canonical_link;
+    //try
+    //{
+    //    canonical_link = jQuery('link[rel=canonical]').attr('href').split(location.hostname)[1] || undefined;
+    //}
+    //catch (e)
+    //{
+    //    canonical_link = undefined;
+    //}
+
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30881432-1']);
+    _gaq.push(['_addOrganic', 'google', 'q', true, 'google images', '/imgres?']);
+    _gaq.push(['_setSiteSpeedSampleRate', 10]);
+    _gaq.push(['_trackPageview']);
+
+    ga('create', 'UA-30881432-1', 'auto');
+</script>
+
+        <script>
+            var locationUrl = "http://www.storyboardthat.com" + "/ru/teacher-guide/the-lottery-by-shirley-jackson";
+        //_gaq.push(['location', locationUrl]); 
+        //_gaq.push(['title', '']);
+        ga('set', 'location', locationUrl);
+        ga('set', 'title', 'New Title');
+        </script>
+
+
+<script>
+    
+    ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Google Translate-->
+<meta name="google-translate-customization" content="b48ad1e3754d78ce-163611a472da88ae-g9428d2ea18090eae-16">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" class="lazyload" charset="utf-8"></script><script src="/sbtjs/corefiles.min.js?time=636492802616843762" class="lazyload" charset="utf-8"></script><script src="/sbtjs/mimified/masonryjs.min.js" class="lazyload" charset="utf-8"></script><script src="//fast.appcues.com/824.js" class="lazyload" charset="utf-8"></script><script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" class="lazyload" charset="utf-8"></script><script src="//www.quickrubric.com/bundles/quick-rubric?time=636492802616843762" class="lazyload" charset="utf-8"></script><link rel="stylesheet" type="text/css" href="https://fast.appcues.com/3.19.0/container.css"></head>
+<body><div class="cc_banner-wrapper "><div class="cc_banner cc_container cc_container--open"><a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">Понял!</a><p class="cc_message">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам лучший опыт на нашем веб-сайте <a data-cc-if="options.link" target="_self" class="cc_more_info" href="http://www.storyboardthat.com/about/privacy">Больше информации</a></p></div></div>
+    <!-- Fixed navbar -->
+    <header class="navbar navbar-default sbt-nav" role="navigation">
+        <div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="/*border-color:white;*/">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/ru" title="Перейти на главную страницу">
+                    <img src="//sbt.blob.core.windows.net/site-images/site-pages/favicons/storyboard-that-logo-260x46.png" style="width:260px; height:46px;">
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse navbar-right" style="/*margin:0 auto; text-align:center*/">
+                <ul class="nav navbar-nav" style="/*margin:0 auto; text-align:center*/">
+                    <li><a href="https://www.storyboardthat.com/ru/%d1%80%d0%b0%d1%81%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%ba%d0%b0-%d1%82%d0%b2%d0%be%d1%80%d0%b5%d1%86" title="Создайте свой собственный раскадровки!" style="" class="">Создание Раскадровки</a></li>
+                    <li><a href="https://www.storyboardthat.com/ru/%d0%bf%d0%be%d0%ba%d1%83%d0%bf%d0%ba%d0%b0" title="Просмотр Цены и Покупка Storyboard That" style="" class="">Ценообразование</a></li>
+                    <li><a href="https://www.storyboardthat.com/my-account" title="Перейти к вашей учетной записи" style="" class="">Мой Аккаунт</a></li>
+                    <li>
+
+<script>
+    var IsUserLoggedOn = false;
+    var HandleLoginCloseFunction = null;
+    var SpecialSignOut = null;
+</script>
+
+        <a id="nav-logoff-button" title="Выйти из Storyboard That" onclick="signOutBS(); return false;" class="btn btn-default btn-login" style="display: none">Выйти</a>
+    <a id="nav-logon-button" title="Storyboard That в Storyboard That" class="btn btn-warning btn-login" href="https://www.storyboardthat.com/account/logon">Вход в Систему</a>
+
+
+
+</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+
+<div class="top-callout-bar">
+    <div class="row">
+        <div class="col-md-12 ">
+            <span style="text-align:left; font-size:.95em; float:left; color:white; padding-left:0px; font-weight:bold; margin-left:-10px;">СОЗДАНО 5000000 СОЗДАННЫЕ ИСТОРИИ!</span>
+            <span style="float:right">
+                <b style="font-size:.95em">БЕСПЛАТНАЯ ПРОБНАЯ ВЕРСИЯ</b>
+
+                <a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/learn-more-%d0%be-%d0%ba%d0%bb%d0%b0%d1%81%d1%81%d0%b5-%d0%b8%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5" class="btn btn-xs btn-default">Для Учителей </a>
+                <a href="/ru/%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81/team-%d0%b8-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%b8%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5" class="btn btn-xs btn-default">Для Бизнеса </a>
+                <a href="/ru/%d1%84%d0%b8%d0%bb%d1%8c%d0%bc" class="btn btn-xs btn-default">Для Пленки </a>
+                
+            </span>
+        </div>
+    </div>
+</div>
+
+
+    </header>
+
+
+<style>@charset "UTF-8";appcues,appcues>.appcues-progress,appcues>cue,appcues>header{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;width:100%}.appcues-backdrop,.appcues-skip>a,.appcues-social-buttons,appcues>header{text-align:center}.appcues-button,appcues>header .logo{-moz-user-select:-moz-none;-ms-user-select:none}appcues cue>section,appcues-layer{filter:alpha(enabled=false);outline:0!important}@-moz-keyframes dim{0%{opacity:0}100%{opacity:.7}}@-webkit-keyframes dim{0%{opacity:0}100%{opacity:.7}}@keyframes dim{0%{opacity:0}100%{opacity:.7}}@-moz-keyframes zoomIn{0%{-moz-transform:scale(.8);transform:scale(.8);opacity:0}95%{opacity:1}100%{-moz-transform:scale(1);transform:scale(1)}}@-webkit-keyframes zoomIn{0%{-webkit-transform:scale(.8);transform:scale(.8);opacity:0}95%{opacity:1}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes zoomIn{0%{-moz-transform:scale(.8);-ms-transform:scale(.8);-webkit-transform:scale(.8);transform:scale(.8);opacity:0}95%{opacity:1}100%{-moz-transform:scale(1);-ms-transform:scale(1);-webkit-transform:scale(1);transform:scale(1)}}@-moz-keyframes slideInRight{0%{-moz-transform:translateX(-300px);transform:translateX(-300px);opacity:0}95%{opacity:1}100%{-moz-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes slideInRight{0%{-webkit-transform:translateX(-300px);transform:translateX(-300px);opacity:0}95%{opacity:1}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInRight{0%{-moz-transform:translateX(-300px);-ms-transform:translateX(-300px);-webkit-transform:translateX(-300px);transform:translateX(-300px);opacity:0}95%{opacity:1}100%{-moz-transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}}@-moz-keyframes slideInUp{0%{-moz-transform:translateY(200px);transform:translateY(200px);opacity:0}95%{opacity:1}100%{-moz-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes slideInUp{0%{-webkit-transform:translateY(200px);transform:translateY(200px);opacity:0}95%{opacity:1}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInUp{0%{-moz-transform:translateY(200px);-ms-transform:translateY(200px);-webkit-transform:translateY(200px);transform:translateY(200px);opacity:0}95%{opacity:1}100%{-moz-transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);transform:translateX(0)}}@-moz-keyframes bounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.25)}70%{transform:scale(.9)}100%{transform:scale(1)}}@-webkit-keyframes bounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.25)}70%{transform:scale(.9)}100%{transform:scale(1)}}@keyframes bounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.25)}70%{transform:scale(.9)}100%{transform:scale(1)}}@-moz-keyframes bounceOut{0%{transform:scale(1)}30%{transform:scale(.9)}50%{transform:scale(1.25)}70%{opacity:1}100%{opacity:0;transform:scale(.3)}}@-webkit-keyframes bounceOut{0%{transform:scale(1)}30%{transform:scale(.9)}50%{transform:scale(1.25)}70%{opacity:1}100%{opacity:0;transform:scale(.3)}}@keyframes bounceOut{0%{transform:scale(1)}30%{transform:scale(.9)}50%{transform:scale(1.25)}70%{opacity:1}100%{opacity:0;transform:scale(.3)}}body.appcues-active{overflow:hidden}appcues{min-height:100%;height:100%;overflow-y:auto;box-sizing:border-box;font-size:14px;display:none;padding:40px 0;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483547}@media screen and (max-device-width:480px){appcues{padding:10px}appcues[data-pattern-type=left]{padding:0}}appcues.active{display:block}appcues>.appcues-progress,appcues>cue,appcues>header{margin:0 auto;box-sizing:border-box;max-width:650px}appcues>header{margin:0 auto 20px}appcues>header h1{font-size:22px}appcues>header .logo{margin-bottom:20px;-webkit-user-select:none;user-select:none}appcues>.appcues-progress{height:6px;-moz-border-radius-topleft:3px;-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-moz-border-radius-topright:3px;-webkit-border-top-right-radius:3px;border-top-right-radius:3px}appcues cue:first-of-type [data-step=prev],appcues.cue-step-0 [data-step=prev]{display:none}appcues[data-pattern-type=left]{padding-top:0;padding-bottom:0;min-width:95%;right:initial}appcues[data-pattern-type=left]>.appcues-progress,appcues[data-pattern-type=left]>cue,appcues[data-pattern-type=left]>header{margin:0}appcues[data-pattern-type=left].active{-moz-animation:slideInRight .6s ease-out;-webkit-animation:slideInRight .6s ease-out;animation:slideInRight .6s ease-out;-moz-animation-fill-mode:forward;-webkit-animation-fill-mode:forward;animation-fill-mode:forward}appcues[data-pattern-type=modal].active{-moz-animation:zoomIn .6s ease;-webkit-animation:zoomIn .6s ease;animation:zoomIn .6s ease;-moz-animation-fill-mode:forward;-webkit-animation-fill-mode:forward;animation-fill-mode:forward}appcues[data-pattern-type=banner]{padding-top:0;padding-bottom:0;height:auto;max-height:60px;min-height:30px!important;top:auto!important;overflow-y:hidden!important;border-top:1px solid #ddd}appcues[data-pattern-type=banner]>.appcues-progress,appcues[data-pattern-type=banner]>.appcues-skip,appcues[data-pattern-type=banner]>cue,appcues[data-pattern-type=banner]>header{margin:0!important;max-width:none}appcues[data-pattern-type=banner]>.appcues-progress,appcues[data-pattern-type=banner]>cue,appcues[data-pattern-type=banner]>header{padding:10px 120px!important}appcues[data-pattern-type=banner]>.appcues-progress,appcues[data-pattern-type=banner]>cue hr,appcues[data-pattern-type=banner]>cue img{display:none!important;visibility:hidden!important}appcues[data-pattern-type=banner]>cue{position:static;max-width:940px;margin:auto!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important}appcues[data-pattern-type=banner]>cue p{margin-bottom:5px}appcues[data-pattern-type=banner]>cue .appcues-actions{padding:10px 20px;text-align:right}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left,appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right{width:auto}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left .appcues-button,appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right .appcues-button{font-size:0;width:17px;height:17px}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left .appcues-button:after,appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left .appcues-button:before,appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right .appcues-button:after,appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right .appcues-button:before{border:none;left:0;font-size:20px}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right .appcues-button{padding-right:0;-moz-border-radius-topleft:0;-webkit-border-top-left-radius:0;border-top-left-radius:0;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-right .appcues-button:after{content:"▶";position:absolute;top:0;bottom:0;padding:8px 10px;line-height:20px}appcues cue,appcues cue header{position:relative}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left .appcues-button{padding-left:0;-moz-border-radius-topright:0;-webkit-border-top-right-radius:0;border-top-right-radius:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-right-radius:0;border-bottom-right-radius:0}appcues[data-pattern-type=banner]>cue .appcues-actions .appcues-actions-left .appcues-button:before{padding-left:6px!important}appcues[data-pattern-type=banner] .appcues-skip a{right:auto;left:0;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px}appcues[data-pattern-type=banner].active{-moz-animation:slideInUp .6s ease-out;-webkit-animation:slideInUp .6s ease-out;animation:slideInUp .6s ease-out;-moz-animation-fill-mode:forward;-webkit-animation-fill-mode:forward;animation-fill-mode:forward;min-height:50px;background-color:#fff}appcues cue{background-color:#fff;padding:20px 20px 80px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;-moz-box-shadow:0 0 6px #aaa;-webkit-box-shadow:0 0 6px #aaa;box-shadow:0 0 6px #aaa;display:none;min-height:400px;color:#888}appcues cue.active{display:block}appcues cue>section{margin:0!important;padding:0!important;border:0!important;font-size:100%!important;font:inherit!important;vertical-align:baseline!important;display:block!important;line-height:1!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;opacity:1;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;box-sizing:content-box!important;-moz-border-radius:0!important;-webkit-border-radius:0;border-radius:0!important;overflow-x:visible!important;overflow-y:visible!important;max-width:100%}.appcues-skip>a,appcues cue .appcues-actions{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}appcues cue img{max-width:100%}appcues cue header h2{font-weight:600;font-size:18px;margin:0 0 15px;color:#333}@media screen and (max-device-width:480px){appcues cue header h2{text-align:center}}appcues cue p{margin:0 0 15px}appcues cue strong{font-weight:700;color:#6f6f6f}appcues cue .appcues-actions{position:absolute;bottom:0;left:0;box-sizing:border-box;padding:20px;width:100%}appcues cue .appcues-actions-left,appcues cue .appcues-actions-right{width:50%;display:inline-block}appcues cue .appcues-actions-left{text-align:left}appcues cue .appcues-actions-right{text-align:right}appcues[data-pattern-type=modal] cue,appcues[data-pattern-type=left] cue{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}appcues[data-pattern-type=left] cue{min-height:100%;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-right-radius:0;border-bottom-right-radius:0;padding-top:26px}appcues .form-field input,appcues .form-field textarea,appcues .step-action-form input,appcues .step-action-form textarea{border:1px solid #DDD;font-size:14px;padding:8px;width:95%}appcues .form-field label.label-display,appcues .step-action-form label.label-display{font-size:14px;font-weight:700;margin:15px 0 5px;display:block}appcues .form-field label.field-option,appcues .step-action-form label.field-option{display:block;font-weight:400;margin:0}appcues .form-field label.field-option input[type=radio],appcues .step-action-form label.field-option input[type=radio]{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}appcues .form-field label.field-option input[type=radio]+span::before,appcues .step-action-form label.field-option input[type=radio]+span::before{content:"";display:inline-block;width:.7em;height:.7em;vertical-align:-.05em;border-radius:2em;border:.1em solid #fff;box-shadow:0 0 0 .15em #888;margin-right:.7em;transition:.5s ease all}appcues .form-field label.field-option input[type=radio]:checked+span::before,appcues .step-action-form label.field-option input[type=radio]:checked+span::before{background:#5cb85c;box-shadow:0 0 0 .15em #888}.appcues-button[data-step=prev]:before,.appcues-button[data-step=next]:after{position:absolute;top:0;bottom:0;padding:8px 10px;line-height:20px}.appcues-button{background-color:#ccc;cursor:pointer;padding:8px 18px;color:#fff;font-weight:700;display:inline-block;position:relative;-webkit-font-smoothing:antialiased;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;-webkit-user-select:none;user-select:none;-moz-transition:background-color .2s ease-out,color .2s ease-out;-o-transition:background-color .2s ease-out,color .2s ease-out;-webkit-transition:background-color .2s ease-out,color .2s ease-out;transition:background-color .2s ease-out,color .2s ease-out}.appcues-button:hover{text-decoration:none;color:#000;background-color:#dedede}.appcues-button.appcues-button-success{background-color:#5cb85c}.appcues-button.appcues-button-success:hover{background-color:#75c375}.appcues-button.appcues-button-success.disabled{background-color:#eaf6ea}.appcues-button[data-step=prev]{padding-left:45px}.appcues-button[data-step=prev]:before{left:0;content:"◀";border-right:1px solid #fff}.appcues-button[data-step=next]{padding-right:45px}.appcues-button[data-step=next]:after{right:0;content:"▶";border-left:1px solid #fff}.appcues-steps{position:absolute;top:0;right:0;color:#888}@media screen and (max-device-width:480px){.appcues-steps{display:none}}.appcues-progress{background-color:#ddd;overflow:hidden;border:1px solid #ccc}appcues[data-pattern-type=modal] .appcues-progress{border:none}appcues[data-pattern-type=left] .appcues-progress{border:none;border-radius:0;position:absolute;top:0;z-index:1}.appcues-progress-bar-success{background-color:#5cb85c;height:100%;width:0;-moz-border-radius-topright:3px;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;-moz-transition:width .7s ease-out .4s;-o-transition:width .7s ease-out .4s;-webkit-transition:width .7s ease-out;-webkit-transition-delay:.4s;transition:width .7s ease-out .4s}.appcues-progress-bar-success[aria-valuenow='100']{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}appcues[data-pattern-type=left] .appcues-progress-bar-success{-moz-border-radius-topright:0;-webkit-border-top-right-radius:0;border-top-right-radius:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-right-radius:0;border-bottom-right-radius:0}.appcues-skip{width:100%;max-width:650px;position:relative;margin:0 auto}appcues[data-pattern-type=left] .appcues-skip{position:absolute;margin:6px 0}.appcues-skip>a{cursor:pointer;display:block;background-color:#ddd;color:#888;opacity:.3;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;padding:3px 10px 5px;position:absolute;right:0;font-size:23px;line-height:1;top:0;z-index:10;width:35px;box-sizing:border-box;-moz-transition:opacity .2s ease-out;-o-transition:opacity .2s ease-out;-webkit-transition:opacity .2s ease-out;transition:opacity .2s ease-out}.appcues-skip>a:hover{opacity:1;color:#222}.appcues-backdrop{top:0;right:0;bottom:0;left:0;color:#888;font-weight:300;font-size:larger;padding:15px}.appcues-backdrop-top{top:0;bottom:auto}.appcues-backdrop-right{right:0;left:auto;top:0;bottom:0;position:fixed}.appcues-backdrop-bottom{bottom:0;top:auto}.appcues-backdrop-left{left:0;right:auto;top:0;bottom:0;position:fixed}body.appcues-blocker{visibility:hidden!important}.appcues-noscroll{overflow:hidden}.appcues-responsive-embed{position:relative;padding-bottom:56.25%;overflow:hidden;max-width:100%;height:auto;display:block}.appcues-responsive-embed embed,.appcues-responsive-embed iframe,.appcues-responsive-embed object{position:absolute;top:0;left:0;width:100%;height:100%}.appcues-social-button{display:inline-block;padding:8px 10px;line-height:20px;color:#fff;font-weight:700;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-user-select:-moz-none;-ms-user-select:none;-webkit-user-select:none;user-select:none;-moz-transition:background-color .2s ease-out;-o-transition:background-color .2s ease-out;-webkit-transition:background-color .2s ease-out;transition:background-color .2s ease-out}.appcues-social-button:hover{cursor:pointer;text-decoration:none;color:#fff}.appcues-social-button+.appcues-social-button{margin-left:10px}.appcues-button-twitter{background-color:#46c0fb}.appcues-button-twitter:hover{background-color:#23b4fa}.appcues-button-facebook{background-color:#4863ae}.appcues-button-facebook:hover{background-color:#3e5595}.appcues-backdrop,.appcues-backdrop-bottom,.appcues-backdrop-left,.appcues-backdrop-right,.appcues-backdrop-top{position:fixed;background-color:#eee;z-index:2147483546;-moz-transition:opacity 1s linear;-o-transition:opacity 1s linear;-webkit-transition:opacity 1s linear;transition:opacity 1s linear}.appcues-backdrop[data-pattern-type=modal],.appcues-backdrop[data-pattern-type=left],appcues-layer .coachmarks .appcues-backdrop{opacity:.7;background-color:#000;-moz-animation:dim .7s linear;-webkit-animation:dim .7s linear;animation:dim .7s linear;-moz-animation-fill-mode:forward;-webkit-animation-fill-mode:forward;animation-fill-mode:forward}appcues cue .rating-options{display:table;width:100%}appcues cue .rating-option{cursor:pointer;display:table-cell;font-weight:400;text-align:center;min-width:9%}appcues cue .rating-option span{background-color:#eee;display:block;margin:5px;padding:10px;border:1px solid #eee;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}appcues cue .rating-option span:hover{background-color:#888;border:1px solid #777;color:#fff}appcues cue .rating-option input[type=radio]{display:none}appcues cue .rating-option input[type=radio]:checked+span{background-color:#6eb5e5;border:1px solid #429fde;color:#fff}appcues cue .rating-labels{width:100%}appcues cue .rating-labels .left,appcues cue .rating-labels .right{display:inline-block;width:50%}appcues cue .rating-labels .left small,appcues cue .rating-labels .right small{margin:2px 5px}appcues cue .rating-labels .right{text-align:right}appcues cue label.field-option{display:block;font-weight:400;margin:5px 0;padding:5px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}appcues cue label.field-option input[type=radio]{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}appcues cue label.field-option input[type=radio]+span::before{content:"";display:inline-block;width:.8em;height:.8em;vertical-align:-.05em;border-radius:1em;border:.125em solid #fff;box-shadow:0 0 0 .15em #888;margin-right:.7em;transition:.5s ease all}appcues cue label.field-option input[type=radio]:checked+span::before{background:#5cb85c;box-shadow:0 0 0 .25em #888}appcues cue a.add-field-option{color:#888;font-size:12px;display:block;margin-top:10px;margin-left:9px}appcues cue .form-field.appcues-error label{color:#EB6E5E}appcues cue .form-field.appcues-error ul.messages{color:#EB6E5E;list-style:none;margin:5px 0;padding:0}appcues cue .form-field.appcues-error ul.messages li{display:block}appcues cue .form-field.appcues-error input[type=text],appcues cue .form-field.appcues-error textarea{border-color:#EB6E5E}.appcues-powered-by{position:fixed;bottom:16px;left:16px;padding:1px 6px;border-radius:3px;font-family:Helvetica Neue,Helvetica,sans-serif;color:#858585;background-color:#fff;display:table;opacity:.8;z-index:9999999;-moz-box-shadow:0 1px 5px rgba(0,0,0,.2);-webkit-box-shadow:0 1px 5px rgba(0,0,0,.2);box-shadow:0 1px 5px rgba(0,0,0,.2)}.appcues-powered-by svg{height:1.4em}.appcues-powered-by a{text-decoration:none}.appcues-powered-by .powered-by-content{display:table-row;transition:opacity .3s ease;padding-left:2px}.appcues-powered-by .powered-by-content .logo-container,.appcues-powered-by .powered-by-content .powered-by-text{display:table-cell;vertical-align:middle;text-align:center}.appcues-powered-by .powered-by-content .logo-container{padding-right:.2em;padding-left:.2em;padding-top:.4em}.appcues-powered-by .powered-by-content .poweredby-text-top{font-size:6px;padding:8px 0 0 3px;line-height:.5;text-transform:uppercase}.appcues-powered-by .powered-by-content .poweredby-text-bottom{padding:0 3px 3px;font-size:12px}.appcues-powered-by .powered-by-content .powered-by-text-logo{font-size:1.1em}appcues-status{bottom:0;left:0;background-color:rgba(20,28,36,.9);border:1px solid #141c24;color:#b4bcc2;min-width:320px;max-width:500px;position:fixed;z-index:1000;border-top-right-radius:3px}appcues-status a.apc-close{color:#666;cursor:pointer;float:right;line-height:14px}appcues-status a.apc-close:hover{color:#888;text-decoration:none}appcues-status .apc-header,appcues-status .apc-status{border-bottom:1px solid #141c24;padding:10px}appcues-status .apc-header h5,appcues-status .apc-status h5{color:inherit;font-size:14px;margin:0}appcues-status .apc-header h5 small,appcues-status .apc-status h5 small{margin-left:1em}appcues-status .apc-header small,appcues-status .apc-status small{color:#6b7983}appcues-status .apc-icon{float:left;font-size:24px;margin-right:10px;text-align:right;width:24px}appcues-status .apc-good .apc-icon{color:#27ae60}appcues-status .apc-bad .apc-icon{color:#c0392b}appcues-status .apc-summary{margin-top:5px}appcues-status .apc-details{background-color:rgba(127,140,141,.4);display:none;margin:5px -5px -5px;max-height:400px;overflow:auto;padding:4px}appcues-status .apc-details table,appcues-status .apc-details table tr,appcues-status .apc-details table tr td{background:0 0;border:0;color:inherit;padding:0;margin:0}appcues-status .apc-details table{width:100%}appcues-status .apc-details table tr td{padding:2px 0}appcues-status .apc-details table tr td.apc-property{padding-right:8px;text-align:right;vertical-align:top}appcues-status .apc-footer{font-size:small;padding:10px 0}appcues-status .apc-footer a{color:#4baad3}appcues-status .apc-footer a:hover{color:#3098c5}appcues-layer{margin:0!important;padding:0!important;border:0!important;font-size:100%!important;font:inherit!important;vertical-align:baseline!important;display:block!important;line-height:1!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;opacity:1;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;box-sizing:content-box!important;-moz-border-radius:0!important;-webkit-border-radius:0;border-radius:0!important;overflow-x:visible!important;overflow-y:visible!important;position:static}appcues-layer .appcues-powered-by-wrapper{position:fixed;bottom:0;right:0;height:100px;z-index:999999999999999}appcues-layer .appcues-powered-by-wrapper.hidden{display:none}appcues-layer .appcues-hotspot>iframe,appcues-layer .coachmark>iframe,appcues-layer .hotspot>iframe{margin:0!important;padding:0!important;vertical-align:baseline!important;display:block!important;box-shadow:none!important;filter:alpha(enabled=false);box-sizing:content-box!important;outline:0!important;overflow-x:visible!important;overflow-y:visible!important}appcues-layer .hotspots{position:static}appcues-layer .appcues-hotspot,appcues-layer .hotspot{position:absolute;top:50%;left:50%}appcues-layer .appcues-hotspot.appcues-animated,appcues-layer .hotspot.appcues-animated{transition:top .1s,left .1s}appcues-layer .beacon,appcues-layer .beacon .beacon-inner{transition:transform .1s;transform-origin:12px 12px 0}appcues-layer .appcues-hotspot .beacon,appcues-layer .appcues-hotspot.hotspot-fixed,appcues-layer .hotspot .beacon,appcues-layer .hotspot.hotspot-fixed{z-index:999999999999998}appcues-layer .appcues-hotspot>iframe,appcues-layer .hotspot>iframe{border:0!important;font-size:100%!important;font:inherit!important;line-height:1!important;opacity:1;border-radius:0!important;position:absolute;z-index:999999999999999;background-color:transparent;min-width:280px;min-height:75px}appcues-layer .appcues-hotspot>iframe.align-top,appcues-layer .hotspot>iframe.align-top{bottom:100%;left:-128px}appcues-layer .appcues-hotspot>iframe.align-top-top,appcues-layer .hotspot>iframe.align-top-top{bottom:100%;bottom:-12px}appcues-layer .appcues-hotspot>iframe.align-top-right,appcues-layer .hotspot>iframe.align-top-right{bottom:100%;left:-12px}appcues-layer .appcues-hotspot>iframe.align-top-bottom,appcues-layer .hotspot>iframe.align-top-bottom{bottom:100%;top:-12px}appcues-layer .appcues-hotspot>iframe.align-top-left,appcues-layer .hotspot>iframe.align-top-left{bottom:100%;right:-12px}appcues-layer .appcues-hotspot>iframe.align-right,appcues-layer .hotspot>iframe.align-right{left:100%;top:0}appcues-layer .appcues-hotspot>iframe.align-right-top,appcues-layer .hotspot>iframe.align-right-top{left:100%;bottom:-12px}appcues-layer .appcues-hotspot>iframe.align-right-right,appcues-layer .hotspot>iframe.align-right-right{left:100%;left:-12px}appcues-layer .appcues-hotspot>iframe.align-right-bottom,appcues-layer .hotspot>iframe.align-right-bottom{left:100%;top:-12px}appcues-layer .appcues-hotspot>iframe.align-right-left,appcues-layer .hotspot>iframe.align-right-left{left:100%;right:-12px}appcues-layer .appcues-hotspot>iframe.align-bottom,appcues-layer .hotspot>iframe.align-bottom{top:100%;left:-128px}appcues-layer .appcues-hotspot>iframe.align-bottom-top,appcues-layer .hotspot>iframe.align-bottom-top{top:100%;bottom:-12px}appcues-layer .appcues-hotspot>iframe.align-bottom-right,appcues-layer .hotspot>iframe.align-bottom-right{top:100%;left:-12px}appcues-layer .appcues-hotspot>iframe.align-bottom-bottom,appcues-layer .hotspot>iframe.align-bottom-bottom{top:100%;top:-12px}appcues-layer .appcues-hotspot>iframe.align-bottom-left,appcues-layer .hotspot>iframe.align-bottom-left{top:100%;right:-12px}appcues-layer .appcues-hotspot>iframe.align-left,appcues-layer .hotspot>iframe.align-left{right:100%;top:0}appcues-layer .appcues-hotspot>iframe.align-left-top,appcues-layer .hotspot>iframe.align-left-top{right:100%;bottom:-12px}appcues-layer .appcues-hotspot>iframe.align-left-right,appcues-layer .hotspot>iframe.align-left-right{right:100%;left:-12px}appcues-layer .appcues-hotspot>iframe.align-left-bottom,appcues-layer .hotspot>iframe.align-left-bottom{right:100%;top:-12px}appcues-layer .appcues-hotspot>iframe.align-left-left,appcues-layer .hotspot>iframe.align-left-left{right:100%;right:-12px}appcues-layer .beacon{position:relative;cursor:pointer}appcues-layer .beacon:hover{animation-fill-mode:backwards;transform:scale(1.25)}appcues-layer .beacon:hover .beacon-inner{transform:scale(1.5)}appcues-layer .beacon:active,appcues-layer .beacon:focus{animation-fill-mode:backwards;transform:scale(.75)}appcues-layer .beacon:active:after,appcues-layer .beacon:focus:after{transform:scale(1.8)}appcues-layer .beacon.bounce-in{animation:bounceIn .5s linear}appcues-layer .beacon.bounce-out{animation:bounceOut .5s ease-in;animation-fill-mode:both}appcues-layer .beacon .beacon-outer{-moz-transform-origin:11px 11px;-ms-transform-origin:11px 11px;-webkit-transform-origin:11px 11px;transform-origin:11px 11px}@keyframes appcues-beacon-pulse{0%{stroke-width:22;-moz-transform:scale(.1);-ms-transform:scale(.1);-webkit-transform:scale(.1);transform:scale(.1)}25%{-moz-transform:scale(1);-ms-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);stroke-width:.5}100%,30%{stroke-width:0}}appcues-layer .beacon .hotspot-animation-pulse{-moz-animation:appcues-beacon-pulse 3s ease-out infinite;-webkit-animation:appcues-beacon-pulse 3s ease-out infinite;animation:appcues-beacon-pulse 3s ease-out 2s infinite}appcues-layer .beacon-container{width:24px;max-width:24px;position:relative}appcues-layer .appcues-backdrop,appcues-layer .appcues-backdrop-bottom,appcues-layer .appcues-backdrop-left,appcues-layer .appcues-backdrop-right,appcues-layer .appcues-backdrop-top{position:fixed;background-color:#eee;z-index:2147483546;transition:opacity 1s linear}appcues-layer .appcues-backdrop[data-pattern-type=modal],appcues-layer .appcues-backdrop[data-pattern-type=left],appcues-layer .coachmarks .appcues-backdrop{opacity:.7;background-color:#000;animation:dim .7s linear;animation-fill-mode:forward}appcues-layer .coachmark{position:absolute;z-index:2147483547}appcues-layer .coachmark>iframe{border:0!important;font-size:100%!important;font:inherit!important;line-height:1!important;opacity:1;border-radius:0!important;position:absolute;z-index:2147483647;width:280px!important}appcues-layer .coachmark:before{content:"";border-bottom:1px solid #fff;position:absolute;width:30px}appcues-layer .coachmark:after{content:"";border-left:1px solid #fff;height:60px;position:absolute}appcues-layer .coachmark.content-top:after,appcues-layer .coachmark.content-top:before{bottom:100%}appcues-layer .coachmark.content-bottom:after,appcues-layer .coachmark.content-bottom:before{top:100%}appcues-layer .coachmark.content-align-left:before{left:0}appcues-layer .coachmark.content-align-center:before{left:50%;margin-left:-15px}appcues-layer .coachmark.content-align-right:before{right:0}appcues-layer .coachmark.content-align-left:after{left:15px}appcues-layer .coachmark.content-align-center:after{left:50%}appcues-layer .coachmark.content-align-right:after{right:15px}appcues-layer .coachmark.content-right:after,appcues-layer .coachmark.content-right:before{left:100%}appcues-layer .coachmark.content-left:after,appcues-layer .coachmark.content-left:before{right:100%}appcues-layer .coachmark.content-left:before,appcues-layer .coachmark.content-right:before{width:60px}appcues-layer .coachmark.content-left:after,appcues-layer .coachmark.content-right:after{height:30px}appcues-layer .coachmark.content-align-top:before{top:15px}appcues-layer .coachmark.content-align-middle:before{top:50%}appcues-layer .coachmark.content-align-bottom:before{bottom:15px}appcues-layer .coachmark.content-align-top:after{top:0}appcues-layer .coachmark.content-align-middle:after{top:50%;margin-top:-15px}appcues-layer .coachmark.content-align-bottom:after{bottom:0}appcues-layer .coachmark.content-top iframe{bottom:100%;margin-bottom:60px!important}appcues-layer .coachmark.content-right iframe{left:100%;margin-left:60px!important}appcues-layer .coachmark.content-bottom iframe{top:100%;margin-top:60px!important}appcues-layer .coachmark.content-left iframe{right:100%;margin-right:60px!important}appcues-layer .coachmark.content-align-top iframe{top:0}appcues-layer .coachmark.content-align-middle iframe{top:50%}appcues-layer .coachmark.content-align-bottom iframe{bottom:0}appcues-layer .coachmark.content-align-left iframe{left:0}appcues-layer .coachmark.content-align-center iframe{left:50%}appcues-layer .coachmark.content-align-right iframe{right:0}appcues-layer .coachmarks .appcues-actions{position:fixed;bottom:20px;width:100%;text-align:center;z-index:2147483647}appcues-container.fullscreen{position:fixed;top:0;left:0;width:100%;height:100%}appcues-container.ontop{z-index:999999999999999}</style><style>.rubric-editor,.rubric-selector{padding-left:20px;padding-right:20px;max-width:2000px;margin:0 auto}.rubric-selector-container{padding:0 20px 20px 20px}.editable-textarea{width:100%}.editable-controls{width:100%}.rubric-title-area{padding:0 20px 20px 20px;background-color:#1e5a9f;color:#fff}.rubric-cell-text{min-height:14px}.rubric-selector-top-bar{padding-top:10px;background-color:#1e5a9f;color:#fff}.rubric-viewer-description{padding:10px;background-color:#1e5a9f;color:#fff}.rubric-title-area-header{font-weight:500}.rubric-column-header,.table-striped>tbody>tr:nth-child(odd)>.rubric-column-header .qr-table-striped>tbody>tr:nth-child(odd)>.rubric-column-header{background-color:#d9dcde}.rubric-editor-controls{background-color:#1e5a9f;padding:10px 0}.rubric-selector-controls{background-color:#1e5a9f;padding:10px 0 0 0}.rubric-editor-delete-icon{color:#d9534f}.rubric-editor-footer{background-color:#d9dcde;padding:5px 0;text-align:center;font-weight:bold}.rubric-viewer-footer{background-color:#d9dcde;padding:5px 5px;font-weight:normal}.rubric-editor-header,.rubric-viewer-header,.rubric-selector-header{background-color:#ebf0f0;background-color:#d9dcde;padding:5px 0;text-align:center;font-weight:500;font-size:1.5em}.rubric-header-text{font-size:1.2em;font-weight:bold;min-height:40px}.rubric-header-side{border-right:1px solid #ddd}.rubric-editor-wrapper,.rubric-viewer-wrapper,.rubric-selector-wrapper{border:1px solid gray;background-color:#fff}.rubric-viewer-wrapper,.rubric-selector-wrapper{padding:0 15px}.rubric-column-header-text{text-align:center}.rubric-row-header-text{font-weight:bold}pre.rubric-editor-cell-text,pre.rubric-header-text{color:#121212;-ms-word-wrap:normal;word-wrap:normal;-ms-word-break:normal;word-break:normal;overflow-wrap:normal;font-family:"Open Sans","Helvetica Neue",sans-serif}pre.rubric-editor-cell-text{display:none}.rubric-editor-preview-text{display:block;padding:9.5px;margin:0 0 10px;line-height:1.428571429;color:#333;-ms-word-wrap:normal;word-wrap:normal;-ms-word-break:normal;word-break:normal;overflow-wrap:normal;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px;min-height:114px}.rubric-selector-row-odd{border-top:1px solid #ddd;background-color:none}.rubric-selector-row-even{border-top:1px solid #ddd;background-color:#f9f9f9}.rubric-selector-header{border-top:1px solid #ddd;background-color:#f9f9f9}.rubric-selector-cell{padding:8px}.rubric-no-rubrics{margin:50px auto;padding:50px;width:80%;background-color:#ececec}@media only screen and (max-width:800px){#no-more-tables table,#no-more-tables thead,#no-more-tables tbody,#no-more-tables th,#no-more-tables td,#no-more-tables tr{display:block}#no-more-tables thead tr{position:absolute;top:-9999px;left:-9999px}#no-more-tables tr{border:1px solid #ccc}#no-more-tables td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%;white-space:normal;text-align:left}#no-more-tables td:before{position:absolute;top:6px;left:6px;width:45%;padding-right:10px;white-space:nowrap;text-align:left;font-weight:bold}#no-more-tables td:before{content:attr(data-title)}}.qr-table{width:100%;margin-bottom:0;background-color:#fff}.qr-table thead>tr>th,.qr-table tbody>tr>th,.qr-table tfoot>tr>th,.qr-table thead>tr>td,.qr-table tbody>tr>td,.qr-table tfoot>tr>td{padding:8px;line-height:1.428571429;vertical-align:top;border-top:1px solid #ddd}.qr-table thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.qr-table caption+thead tr:first-child th,.qr-table colgroup+thead tr:first-child th,.qr-table thead:first-child tr:first-child th,.qr-table caption+thead tr:first-child td,.qr-table colgroup+thead tr:first-child td,.qr-table thead:first-child tr:first-child td{border-top:0}.qr-table tbody+tbody{border-top:2px solid #ddd}.qr-table .qr-table{background-color:#fff}.qr-table-condensed thead>tr>th,.qr-table-condensed tbody>tr>th,.qr-table-condensed tfoot>tr>th,.qr-table-condensed thead>tr>td,.qr-table-condensed tbody>tr>td,.qr-table-condensed tfoot>tr>td{padding:5px}.qr-table-bordered{border:1px solid #ddd}.qr-table-bordered>thead>tr>th,.qr-table-bordered>tbody>tr>th,.qr-table-bordered>tfoot>tr>th,.qr-table-bordered>thead>tr>td,.qr-table-bordered>tbody>tr>td,.qr-table-bordered>tfoot>tr>td{border:1px solid #ddd}.qr-table-bordered>thead>tr>th,.qr-table-bordered>thead>tr>td{border-bottom-width:2px}.qr-table-striped>tbody>tr:nth-child(odd)>td,.qr-table-striped>tbody>tr:nth-child(odd)>th{background-color:#f9f9f9}.qr-table-hover>tbody>tr:hover>td,.qr-table-hover>tbody>tr:hover>th{background-color:#f5f5f5}.qr-table>thead>tr>td.active,.qr-table>tbody>tr>td.active,.qr-table>tfoot>tr>td.active,.qr-table>thead>tr>th.active,.qr-table>tbody>tr>th.active,.qr-table>tfoot>tr>th.active,.qr-table>thead>tr.active>td,.qr-table>tbody>tr.active>td,.qr-table>tfoot>tr.active>td,.qr-table>thead>tr.active>th,.qr-table>tbody>tr.active>th,.qr-table>tfoot>tr.active>th{background-color:#f5f5f5}.qr-table>thead>tr>td.success,.qr-table>tbody>tr>td.success,.qr-table>tfoot>tr>td.success,.qr-table>thead>tr>th.success,.qr-table>tbody>tr>th.success,.qr-table>tfoot>tr>th.success,.qr-table>thead>tr.success>td,.qr-table>tbody>tr.success>td,.qr-table>tfoot>tr.success>td,.qr-table>thead>tr.success>th,.qr-table>tbody>tr.success>th,.qr-table>tfoot>tr.success>th{background-color:#dff0d8;border-color:#d6e9c6}.qr-table-hover>tbody>tr>td.success:hover,.qr-table-hover>tbody>tr>th.success:hover,.qr-table-hover>tbody>tr.success:hover>td{background-color:#d0e9c6;border-color:#c9e2b3}.qr-table>thead>tr>td.danger,.qr-table>tbody>tr>td.danger,.qr-table>tfoot>tr>td.danger,.qr-table>thead>tr>th.danger,.qr-table>tbody>tr>th.danger,.qr-table>tfoot>tr>th.danger,.qr-table>thead>tr.danger>td,.qr-table>tbody>tr.danger>td,.qr-table>tfoot>tr.danger>td,.qr-table>thead>tr.danger>th,.qr-table>tbody>tr.danger>th,.qr-table>tfoot>tr.danger>th{background-color:#f2dede;border-color:#eed3d7}.qr-table-hover>tbody>tr>td.danger:hover,.qr-table-hover>tbody>tr>th.danger:hover,.qr-table-hover>tbody>tr.danger:hover>td{background-color:#ebcccc;border-color:#e6c1c7}.qr-table>thead>tr>td.warning,.qr-table>tbody>tr>td.warning,.qr-table>tfoot>tr>td.warning,.qr-table>thead>tr>th.warning,.qr-table>tbody>tr>th.warning,.qr-table>tfoot>tr>th.warning,.qr-table>thead>tr.warning>td,.qr-table>tbody>tr.warning>td,.qr-table>tfoot>tr.warning>td,.qr-table>thead>tr.warning>th,.qr-table>tbody>tr.warning>th,.qr-table>tfoot>tr.warning>th{background-color:#fcf8e3;border-color:#fbeed5}.qr-table-hover>tbody>tr>td.warning:hover,.qr-table-hover>tbody>tr>th.warning:hover,.qr-table-hover>tbody>tr.warning:hover>td{background-color:#faf2cc;border-color:#f8e5be}@media(max-width:768px){.qr-table-responsive{width:100%;margin-bottom:15px;overflow-x:scroll;overflow-y:hidden;border:1px solid #ddd}.qr-table-responsive>.qr-table{margin-bottom:0;background-color:#fff}.qr-table-responsive>.qr-table>thead>tr>th,.qr-table-responsive>.qr-table>tbody>tr>th,.qr-table-responsive>.qr-table>tfoot>tr>th,.qr-table-responsive>.qr-table>thead>tr>td,.qr-table-responsive>.qr-table>tbody>tr>td,.qr-table-responsive>.qr-table>tfoot>tr>td{white-space:nowrap}.qr-table-responsive>.qr-table-bordered{border:0}.qr-table-responsive>.qr-table-bordered>thead>tr>th:first-child,.qr-table-responsive>.qr-table-bordered>tbody>tr>th:first-child,.qr-table-responsive>.qr-table-bordered>tfoot>tr>th:first-child,.qr-table-responsive>.qr-table-bordered>thead>tr>td:first-child,.qr-table-responsive>.qr-table-bordered>tbody>tr>td:first-child,.qr-table-responsive>.qr-table-bordered>tfoot>tr>td:first-child{border-left:0}.qr-table-responsive>.qr-table-bordered>thead>tr>th:last-child,.qr-table-responsive>.qr-table-bordered>tbody>tr>th:last-child,.qr-table-responsive>.qr-table-bordered>tfoot>tr>th:last-child,.qr-table-responsive>.qr-table-bordered>thead>tr>td:last-child,.qr-table-responsive>.qr-table-bordered>tbody>tr>td:last-child,.qr-table-responsive>.qr-table-bordered>tfoot>tr>td:last-child{border-right:0}.qr-table-responsive>.qr-table-bordered>thead>tr:last-child>th,.qr-table-responsive>.qr-table-bordered>tbody>tr:last-child>th,.qr-table-responsive>.qr-table-bordered>tfoot>tr:last-child>th,.qr-table-responsive>.qr-table-bordered>thead>tr:last-child>td,.qr-table-responsive>.qr-table-bordered>tbody>tr:last-child>td,.qr-table-responsive>.qr-table-bordered>tfoot>tr:last-child>td{border-bottom:0}}@media screen{.print-only{display:none}.screen-only{display:normal}}@media print{.print-only{display:normal}.screen-only{display:none}.rubric-cell-text{text-align:left;font-size:12px}.qr-table td,.qr-table th{background-color:#fff!important}.btn>.caret,.dropup>.btn>.caret{border-top-color:#000!important}.label{border:1px solid #000}.qr-table{border-collapse:collapse!important}.qr-table-bordered th,.qr-table-bordered td{border:1px solid #ddd!important}}.editable-wrap{display:inline-block;white-space:nowrap;margin:0}.editable-wrap .editable-controls,.editable-wrap .editable-error{margin-bottom:0}.editable-wrap .editable-controls>input,.editable-wrap .editable-controls>select,.editable-wrap .editable-controls>textarea{margin-bottom:0}.editable-wrap .editable-input{display:inline-block}.editable-buttons{display:inline-block;vertical-align:top}.editable-buttons button{margin-left:5px}.editable-input.editable-has-buttons{width:auto}.editable-bstime .editable-input input[type="text"]{width:46px}.editable-bstime .well-small{margin-bottom:0;padding:10px}.editable-range output{display:inline-block;min-width:30px;vertical-align:top;text-align:center}.editable-color input[type="color"]{width:50px}.editable-checkbox label span,.editable-checklist label span,.editable-radiolist label span{margin-left:7px;margin-right:10px}.editable-hide{display:none!important}.editable-click,a.editable-click{text-decoration:none;color:#428bca;border-bottom:dashed 1px #428bca}.editable-click:hover,a.editable-click:hover{text-decoration:none;color:#2a6496;border-bottom-color:#2a6496}.editable-empty,.editable-empty:hover,.editable-empty:focus,a.editable-empty,a.editable-empty:hover,a.editable-empty:focus{font-style:italic;color:#d14;text-decoration:none}.popover-wrapper a{display:inline!important}.popover-wrapper{display:inline;position:relative}.popover-wrapper form{position:absolute;top:-53px;background:#fff;border:1px solid #aaa;border-radius:5px;padding:7px;width:auto;display:inline-block;left:50%;margin-left:-110px;z-index:101}.popover-wrapper form:before{content:"";width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #aaa;position:absolute;bottom:-10px;left:100px}.popover-wrapper form:after{content:"";width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-top:9px solid #fff;position:absolute;bottom:-9px;left:101px}</style>
+
+
+
+<script>function _ArticleJS_PrepareArticle() {
+    MakeToc();
+    //StoryboardIds.forEach(ResizeLargeExample);
+    LoadStoryboards();
+    $(window).resize(function () { StoryboardIds.forEach(ResizeLargeExample); });
+    AddPrintResizeHandlers();
+
+    $(function () {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            StoryboardIds.forEach(ResizeLargeExample);
+        });
+    });
+
+    // setTimeout(CleanupGradients, 5 * 1000);
+
+}
+
+function LoadStoryboards() {
+    for (var i = 0; i < StoryboardIds2.length; i++) {
+        LoadStoryboard(StoryboardIds2[i].url, StoryboardIds2[i].guid);
+
+    }
+}
+
+function LoadStoryboard(url, guid) {
+    var response;
+    $.ajax({
+        type: "GET",
+        url: url,
+        async: true,
+        success: function (text) {
+            $("#" + guid).children().first().append(text);
+            ResizeLargeExample(guid);
+        }
+    });
+}
+function AddPrintResizeHandlers() {
+    if ('matchMedia' in window) {
+        window.matchMedia('print').addListener(function (media) {
+            if (media.matches)
+                PrintResize();
+        });
+        window.matchMedia('not print').addListener(function (media) {
+            if (media.matches)
+                StoryboardIds.forEach(ResizeLargeExample);
+        });
+    }
+    else {
+        window.onbeforeprint = PrintResize
+    }
+
+}
+function MakeToc() {
+    var toc = $("#TOC");
+    var anchors = $("[id^=anchor]");
+
+    if (toc == null || toc.length == 0)
+        return;
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+
+        //this is a quick way to remove extra blanks froms class instructions / rubric tabs
+        if (anchor.title == null || anchor.title == "")
+            continue;
+
+        toc.append("<li><a href=\"#" + anchor.id + "\">" + anchor.title + "</a></li>");
+    }
+}
+
+function ResizeLargeExample(id) {
+    var svgExampleContainer = $("#" + id);
+
+
+    var svgExample = $($(svgExampleContainer.children()[0]).children()[0]);
+
+    var maxWidth = parseFloat(Math.min($(window).width(), svgExampleContainer.parent().width()));
+    var svgWidth = parseFloat(svgExample.attr("width"));
+    var svgHeight = parseFloat(svgExample.attr("height"));
+    var scale = (svgWidth > maxWidth ? maxWidth / svgWidth : 1);
+
+    svgExampleContainer.children()[0].setAttributeNS(null, "transform", "scale(" + scale + ")");
+
+    svgExampleContainer.attr("height", scale * svgHeight + "px")
+    svgExampleContainer.attr("width", scale * svgWidth + "px")
+}
+
+function CleanupGradients() {
+    StoryboardIds.forEach(function (id) {
+        SvgHelper.UpdateGradientIds($("#" + id));
+    }
+    );
+}
+
+function PrintResize() {
+    StoryboardIds.forEach(PrintResizeExample);
+
+    //$(".js-masonry").css("height", "");
+    //$(".js-masonry").css("text-align", "center");
+    //$(".masonry-thumbnail").css("position", "");
+}
+
+function PrintResizeExample(id) {
+
+    var svgExampleContainer = $("#" + id);
+    var svgExample = $($(svgExampleContainer.children()[0]).children()[0]);
+
+    //print as wide as page, but no taller than 1200px
+    var maxWidth = parseFloat(Math.min($(window).width(), svgExampleContainer.parent().width()));
+    var maxHeight = 1200;
+    var svgWidth = parseFloat(svgExample.attr("width"));
+    var svgHeight = parseFloat(svgExample.attr("height"));
+
+
+    var xScale = (svgWidth > maxWidth ? maxWidth / svgWidth : 1);
+    var yScale = (svgHeight > maxHeight ? maxHeight / svgHeight : 1);
+    var scale = Math.min(xScale, yScale);
+
+    svgExampleContainer.children()[0].setAttributeNS(null, "transform", "scale(" + scale + ")");
+
+    svgExampleContainer.attr("height", scale * svgHeight + "px")
+    svgExampleContainer.attr("width", scale * svgWidth + "px")
+}
+
+function ChangeExampleImage(url, image) {
+    $("#activity-example").attr("src", image);
+    $("#activity-example-link").attr("href", url);
+}</script>
+
+<script>
+    var StoryboardIds = [];
+    var StoryboardIds2 = [];
+
+    
+    OnJsLoaded.push(function () { _ArticleJS_PrepareArticle(); });
+</script>
+        <div class="visible-print-block" style="text-align:center">
+        http://www.storyboardthat.com/ru/teacher-guide/лотерея-ширли-джексон
+    </div>
+
+
+
+    <div class="title-box" style="background:#1E5A9F">
+        <div class="container">
+
+            <h1 style="text-align:center; color:white">Лотерея <i>Ширли Джексон</i></h1>
+
+
+                <h3 style="text-align:center;color:white">Руководство Учителя по Kristy Littlehale</h3>
+            
+            <div style="text-align:center; padding:10px 0">
+<div style="text-align:center;">
+    <div class="share42init" style="height:30px;text-align:center"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -0px 0 no-repeat" href="#" data-count="twi" onclick="window.open('//twitter.com/intent/tweet?text=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5&amp;url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -24px 0 no-repeat" href="#" data-count="pin" onclick="window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;media=undefined&amp;description=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0');return false" title="Pin It" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -48px 0 no-repeat" href="#" data-count="fb" onclick="window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -72px 0 no-repeat" href="#" data-count="gplus" onclick="window.open('//plus.google.com/share?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Google+" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -96px 0 no-repeat" href="//www.evernote.com/clip.action?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;title=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5" title="Share on Evernote" target="_blank"></a></span></span></div>
+</div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <b></b>
+        </div>
+    </div>
+
+
+    <div class="Article-Location-Box" style="background-color:#F5A133; font-weight:bold; font-style:italic">
+        <div class="container">
+            <i>Найти этот общего базового выровненный Guide Учитель и больше нравится в нашей <a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%88%d0%b0%d1%8f-%d1%81%d1%80%d0%b5%d0%b4%d0%bd%d1%8f%d1%8f-%d1%88%d0%ba%d0%be%d0%bb%d0%b0-ela">средней школы ELA</a> категории!</i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<style>
+    .nav li:before {
+        display: none;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid #313447;
+        margin-bottom: 20px;
+    }
+
+        .nav-tabs.central {
+            text-align: center;
+        }
+
+            .nav-tabs.central li {
+                float: none;
+                display: inline-block;
+            }
+
+        .nav-tabs > li > a {
+            margin-right: 3px;
+            color: #313447;
+            line-height: 1.3;
+            padding: 10px 16px;
+            -webkit-border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+            -webkit-transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+            -moz-transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+            transition: border-left 250ms ease, border-top 250ms ease, border-right 250ms ease;
+        }
+
+            .nav-tabs > li > a:hover {
+                border-color: #9a9ba4 #9a9ba4 #313447;
+                background-color: transparent;
+            }
+
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus {
+            color: #313447;
+            border: 1px solid #313447;
+            border-bottom: 1px solid transparent;
+        }
+
+    .tab-content.central {
+        padding-top: 40px;
+    }
+
+
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        background-color: #1E5A9F;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav-tabs > li > a {
+        color: #2a6496;
+        font-weight: bold;
+    }
+</style>
+
+
+<div class="Article-Content ng-scope" data-ng-app="quickRubricDisplayMod">
+    
+            <div class="container">
+            <br>
+
+
+<div style="text-align:center"> <img src="//sbt.blob.core.windows.net/site-images/ela/the-lottery.png" alt="Планы Уроков Лотереи" title="Лотерея Ширли Джексон"> </div> <div class="article-toc-wide"> <h2>Занятия для Лотерея включают:</h2><ul><li><a href="#anchor_lottery---plot-diagram-">Участок Диаграмма | "Лотерея" Резюме</a></li><li><a href="#anchor_lottery---key-themes--symbols--and-motifs">"Лотерее" темы, символы и Мотивы</a></li><li><a href="#anchor_lottery---twist">"Лотерея" TWIST Графический организатор</a></li></ul></div><div class="white-space-single"></div> 
+
+<p> «Лотерея» Ширли Джексон была настолько противоречивой, что после ее публикации 26 июня 1948 года в <i>The New Yorker</i> читатели отменили свои подписки и набросились на Джексона ненавистью и угрозами. В этой истории началось важное обсуждение того, что происходит, когда старые традиции не развиваются. </p>
+
+<p> Опубликованный всего через три года после окончания Второй мировой войны, история повторяет пугающее соответствие, существовавшее в Германии в течение предыдущего десятилетия. Ходят слухи, что основа для истории Джексона уходит корнями в ее озабоченность по поводу затяжного антисемитизма. </p>
+
+<p> В этой истории поднимаются несколько важных тем для обсуждения учащимися, в том числе опасности слепого следования традициям, менталитету толпы и инверсии динамики семьи нашей культуры. </p> 
+
+
+        </div>
+            <h1 style="text-align:center;  padding:20px 0; font-weight:bold;">Лотерея планы занятий, мероприятия для студентов и графические организаторы</h1>
+            <div class="alternate-color-div">
+                <div class="container">
+
+
+
+
+
+<article>
+
+    <a name="anchor_lottery---plot-diagram-" id="anchor_lottery---plot-diagram-" title="Участок Диаграмма | &quot;Лотерея&quot; Резюме"></a>
+
+    <h2 class="article-section-header">Участок Диаграмма | "Лотерея" Резюме</h2>
+
+
+
+<div class="Teacher-Guide-Assignment-Meta-Data">
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2"><h3 style="margin: 5px 0;">Ссылка на План Урока</h3></div>
+        <div class="col-md-2" style="text-align:right">
+            <a href="/ru/teacher-guide/%d0%bb%d0%be%d1%82%d0%b5%d1%80%d0%b5%d1%8f-%d1%88%d0%b8%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b5%d0%ba%d1%81%d0%be%d0%bd/activity/629" target="_blank"><i class=" icon isbt-print"></i>&nbsp; Печать</a>
+        </div>
+    </div>
+
+    <p><b>Уровень Образования</b> 9-12</p>
+    <p><b>Сложный Уровень</b> 2 (Укрепление / развитие)    </p>
+
+    <p><b>Тип Назначения</b> Индивидуальный или Групповой</p>
+
+        <p><b>Тип Активности:</b> <a href="/ru/articles/e/%d1%81%d1%8e%d0%b6%d0%b5%d1%82%d0%bd%d0%be-%d1%81%d1%85%d0%b5%d0%bc%d0%b0" title="" style="" class="">Сюжет Диаграммы и Повествовательной Дуги</a></p>
+
+    <div style="text-align:center;">
+    <div class="share42init" style="height:30px;text-align:center"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -0px 0 no-repeat" href="#" data-count="twi" onclick="window.open('//twitter.com/intent/tweet?text=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5&amp;url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -24px 0 no-repeat" href="#" data-count="pin" onclick="window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;media=undefined&amp;description=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0');return false" title="Pin It" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -48px 0 no-repeat" href="#" data-count="fb" onclick="window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -72px 0 no-repeat" href="#" data-count="gplus" onclick="window.open('//plus.google.com/share?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Google+" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -96px 0 no-repeat" href="//www.evernote.com/clip.action?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;title=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5" title="Share on Evernote" target="_blank"></a></span></span></div>
+</div>
+
+</div>                <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/629" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+            <br>
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs central tabs" role="tablist">
+                <li class="activity-tab active" role="presentation"><a href="#anchor_lottery---plot-diagram-_activity" aria-controls="home" role="tab" data-toggle="tab">Об этой деятельности</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---plot-diagram-_template" aria-controls="profile" role="tab" data-toggle="tab">Инструкции по Шаблонам и Классам</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---plot-diagram-_rubric" aria-controls="messages" role="tab" data-toggle="tab">Рубрика</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="anchor_lottery---plot-diagram-_activity">
+                    <br>
+                    <p> Обычно она используется для Storyboard That  есть , чтобы помочь студентам создать <a href="/ru/articles/e/%d1%81%d1%8e%d0%b6%d0%b5%d1%82%d0%bd%d0%be-%d1%81%d1%85%d0%b5%d0%bc%d0%b0">участок диаграммы</a> событий из истории. Мало того, что это отличный способ, чтобы научить части сюжета, но это усиливает основные события и помогают студентам развивать более глубокое понимание литературных структур. </p>
+
+<p> Студенты могут создать раскадровку, захватывающую дугу рассказа в работе с шестью ячейками раскадровке, содержащей основные части диаграммы участка. Для каждой ячейки, есть студенты создают сцену , которая следует за историей в последовательности , используя <b>Exposition, конфликты, восходящая Action, климакс, Падающий Действие</b> и <b>разрешение.</b> 
+<br>
+ </p><div style="text-align:center">
+<a href="/ru/articles/e/%d1%81%d1%8e%d0%b6%d0%b5%d1%82%d0%bd%d0%be-%d1%81%d1%85%d0%b5%d0%bc%d0%b0"><img src="//sbt.blob.core.windows.net/site-images/articles/plot-diagram.png" alt="Plot Diagram" title="Plot DIagram"></a>
+<br>
+
+(
+<a href="/ru/articles/e/%d1%81%d1%8e%d0%b6%d0%b5%d1%82%d0%bd%d0%be-%d1%81%d1%85%d0%b5%d0%bc%d0%b0" target="_blank">Read Lesson Plan</a>
+•
+<a href="http://www.zazzle.com/storyboardthat*" target="_blank">Buy Poster</a>
+•
+<a href="https://www.teacherspayteachers.com/Product/Plot-Diagram-Poster-for-Your-Classroom-2433620" target="_blank">Buy PDF</a>
+)
+</div> 
+<br>
+ 
+
+<h3> Лотерейный Участок Диаграмма </h3>
+
+<h4> экспозиция </h4>
+
+<p> Толпа в маленькой деревне собралась на ежегодной лотерее, которая проходит каждый год в конце июня. Каждый глава семьи призван захватить листок бумаги из коробки в центре деревенской площади. Г-н Саммерс отвечает за лотерею. </p>
+<br>
+
+
+<h4> конфликт </h4>
+
+<p> возникает конфликт, когда Тесси Hutchinson понимает своего мужа, Билла, является центром внимания жителей деревни. Листок бумаги, он взял есть что-то на нем. Тесси начинает кричать, что это не справедливо, и что Билл не было дано достаточно времени, чтобы выбрать бумагу, которую он хотел г-ном Саммерсом. </p>
+<br>
+
+
+<h4> Рост действий </h4>
+
+<p> Вся семья Hutchinson, Билл, Тесси, Билл-младший, 12-летний Нэнси, и малыш Маленький Дэви, призываются к ящику. Г-н Саммерс ставит пять листков бумаги в коробке, в том числе один Билл Хатчинсон держал, когда он был выбран. </p>
+<br>
+
+
+<h4> кульминация </h4>
+
+<p> Каждый член семьи Hutchinson рисует листок бумаги из коробки. Все газеты являются пустыми, для Тесси, которая имеет черную точку карандашом на ней, кроме. </p>
+<br>
+
+
+<h4> Падение </h4>
+
+<p> Тесси начинает кричать, что это несправедливо, это не правильно. Сельские жители начинают подбирать камни, они собрались раньше и образуют круг вокруг Тесси. Они хотят, чтобы покончить с этим до полуночи ужин. </p>
+<br>
+
+
+<h4> разрешение </h4>
+
+<p> Как орет Тесси, камень поражает ее на стороне головы. Старик Уорнер, самый старый человек в деревне, призывает жителей деревни на. Сельские жители спускаются на Тесси с камнями. </p>
+<br>
+
+                    <div class="clearfix"></div>
+
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/----------------------------18">Лотерейный Участок Диаграмма</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/----------------------------18">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/----------------------------18.png?utc=131354724292030000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/----------------------------18.png?utc=131354724292030000 1164w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/----------------------------18_w_1000.png 1000w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/----------------------------18_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/----------------------------18_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/----------------------------18_thumb.png 450w" data-sizes="auto" alt="Лотерейный Участок Диаграмма" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/----------------------------18" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/----------------------------18/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/----------------------------18/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---plot-diagram-_template">
+
+                    <p style="text-align:center; font-style:italic">(Эти инструкции полностью настраиваются. После нажатия «Копировать назначение» измените описание назначения в сводке.)</p>
+                    <br>
+                    <h4> Инструкция для студентов </h4>
+
+<p> Создать визуальный сюжет схему лотереи. </p>
+<br>
+<ol>
+	<li> Отделить историю в <b>экспозицию, конфликт, восходящая Action, климакс, Падающий Действие</b> и <b>разрешение.</b> </li>
+	<li> Создать образ, который представляет собой важный момент или набор событий для каждого из сюжетных компонентов. </li>
+	<li> Написать описание каждого из этапов на диаграмме участка. </li></ol>
+<br>
+                    <br><br>
+                    <div class="clearfix"></div>
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/---------------------------------">История Схеме Раскадровки Шаблона</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/---------------------------------">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/---------------------------------.png?utc=131354647136270000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/---------------------------------.png?utc=131354647136270000 1164w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/---------------------------------_w_1000.png 1000w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/---------------------------------_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/---------------------------------_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/---------------------------------_thumb.png 450w" data-sizes="auto" alt="История Схеме Раскадровки Шаблона" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/---------------------------------" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/---------------------------------/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/---------------------------------/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---plot-diagram-_rubric">
+                    <p style="text-align:center; font-style:italic">(Измените эту основную рубрику, перейдя по ссылке ниже. Вы также можете создать свою собственную на <a href="http://www.quickrubric.com/" target="_blank">Quick Rubric</a>.)</p>
+                    <br>
+                    <div data-ng-app="quickRubricDisplayMod">    <quick-rubric author="ru-Examples" title="участок-диаграмма-рубрика--9-12-классы-" class="ng-scope">
+<div id="viewRubricContent" style="">
+    <div data-ng-show="IsValidRubric==false" class="ng-hide">
+        <div class="alert alert-warning">
+            <b>We are unable to find the rubric <i style="color:red" class="ng-binding"></i> by <i style="color:red" class="ng-binding"></i></b>
+            <br>
+            <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                <div style="text-align:center">
+                    <br>
+                    <qr-new-rubric></qr-new-rubric>
+                </div>
+            </div>
+            <div data-ng-show="IsEmbedded">
+                <div style="text-align:center">
+                    <br>
+                    <a href="https://www.quickrubric.com/r#/create-a-rubric" target="_blank" class="btn btn-primary btn-lg">Create a Rubric</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-ng-show="IsValidRubric">
+
+        <div class="print-only" style="text-align:center">
+            <img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-300.png" style="max-width:100%">
+
+        </div>
+        <div class="rubric-viewer-wrapper">
+            <div class="row">
+
+                <div class="rubric-viewer-header rubric-viewer-header-override ng-binding">
+                    
+                </div>
+                <div class="rubric-viewer-description">
+                    <div ng-bind-html="RubricContainer.description| PrettyRubricText" class="ng-binding"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="no-more-tables">
+                    <table class="col-sm-12 qr-table qr-table-bordered qr-table-striped qr-table-condensed cf">
+                        <thead class="rubric row">
+                            <tr>
+                                <th class="" style="width:100%">
+
+                                </th>
+                                <!-- ngRepeat: column in Rubric.columns -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ngRepeat: row in Rubric.rows -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div data-ng-show="IsEmbedded">
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9" style="text-align:left">
+                                    View, Print and Copy this Rubric at <br>
+                                    <a target="_blank" href="https://www.quickrubric.com/r#/qr/ru-Examples/участок-диаграмма-рубрика--9-12-классы-" class="ng-binding">https://www.quickrubric.com/r#/qr/ru-Examples/участок-диаграмма-рубрика--9-12-классы-</a>
+                                </div>
+                                <div class="col-md-3" style="text-align:right; padding-top:5px;">
+                                    <a target="_blank" href="https://www.quickrubric.com"><img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-200.png"></a>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - https://www.quickrubric.com/r#/qr/ru-Examples/участок-диаграмма-рубрика--9-12-классы-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                    <div class="rubric-editor-controls screen-only">
+                        <div class="row ">
+
+                            <div class="col-md-12">
+                                <div style="text-align:center">
+                                    <qr-print-rubric-button print-element-id="viewRubricContent" print-target="Rubric"><button class="btn btn-default btn-lg ng-binding" data-ng-click="printElement()">
+    <i class="fa fa-print"></i> Print Rubric
+</button>
+
+</qr-print-rubric-button>
+
+                                    <qr-edit-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-edit-rubric-button>
+                                    <qr-copy-rubric-button data-ng-show="thereIsAnActiveRubric()" class="ng-hide"></qr-copy-rubric-button>
+                                    <qr-delete-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-delete-rubric-button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9 ng-binding" style="text-align:left">
+                                    Quick Rubric URL: http://www.quickrubric.com/r
+                                </div>
+                                <div class="col-md-3" style="text-align:right">
+                                    <b>View <a href="">My Rubrics</a></b>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - http://www.quickrubric.com/r
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></quick-rubric></div>
+                    <br><br>
+                </div>
+
+            </div>
+
+        </div>
+            <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/629" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+    <div class="clearfix"></div>
+
+
+
+
+
+</article>
+
+
+                    <div class="white-space-single"></div>
+ <div style="text-align:center">
+     <b>
+         <a class="btn btn-warning btn-lg " href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%82-%d0%bc%d0%be%d0%b9-%d0%be%d1%81%d0%b2%d0%be%d0%b1%d0%be%d0%b6%d0%b4%d0%b0%d1%8e%d1%89%d0%b5%d0%b3%d0%be-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81%d1%83%d0%b4" style="font-size:24px;">
+         Начать Бесплатную Пробную Версию
+         <span style="background:none; font-size:20px;" aria-hidden="true" class="icon isbt-triangle"></span></a>
+         </b>
+ </div>
+<div class="white-space-double"></div>
+
+                </div>
+            </div>
+            <div class="">
+                <div class="container">
+
+
+
+
+
+<article>
+
+    <a name="anchor_lottery---key-themes--symbols--and-motifs" id="anchor_lottery---key-themes--symbols--and-motifs" title="&quot;Лотерее&quot; темы, символы и Мотивы"></a>
+
+    <h2 class="article-section-header">"Лотерее" темы, символы и Мотивы</h2>
+
+
+
+<div class="Teacher-Guide-Assignment-Meta-Data">
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2"><h3 style="margin: 5px 0;">Ссылка на План Урока</h3></div>
+        <div class="col-md-2" style="text-align:right">
+            <a href="/ru/teacher-guide/%d0%bb%d0%be%d1%82%d0%b5%d1%80%d0%b5%d1%8f-%d1%88%d0%b8%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b5%d0%ba%d1%81%d0%be%d0%bd/activity/630" target="_blank"><i class=" icon isbt-print"></i>&nbsp; Печать</a>
+        </div>
+    </div>
+
+    <p><b>Уровень Образования</b> 9-12</p>
+    <p><b>Сложный Уровень</b> 3 (Развитие к мастерству)    </p>
+
+    <p><b>Тип Назначения</b> Лицо или Партнер</p>
+
+        <p><b>Тип Активности:</b> <a href="/ru/articles/e/%d1%82%d0%b5%d0%bc%d1%8b-%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%bc%d0%be%d1%82%d0%b8%d0%b2%d1%8b" title="" style="" class="">Темы Символы и Мотивы</a></p>
+
+    <div style="text-align:center;">
+    <div class="share42init" style="height:30px;text-align:center"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -0px 0 no-repeat" href="#" data-count="twi" onclick="window.open('//twitter.com/intent/tweet?text=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5&amp;url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -24px 0 no-repeat" href="#" data-count="pin" onclick="window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;media=undefined&amp;description=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0');return false" title="Pin It" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -48px 0 no-repeat" href="#" data-count="fb" onclick="window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -72px 0 no-repeat" href="#" data-count="gplus" onclick="window.open('//plus.google.com/share?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Google+" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -96px 0 no-repeat" href="//www.evernote.com/clip.action?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;title=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5" title="Share on Evernote" target="_blank"></a></span></span></div>
+</div>
+
+</div>                <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/630" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+            <br>
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs central tabs" role="tablist">
+                <li class="activity-tab active" role="presentation"><a href="#anchor_lottery---key-themes--symbols--and-motifs_activity" aria-controls="home" role="tab" data-toggle="tab">Об этой деятельности</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---key-themes--symbols--and-motifs_template" aria-controls="profile" role="tab" data-toggle="tab">Инструкции по Шаблонам и Классам</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---key-themes--symbols--and-motifs_rubric" aria-controls="messages" role="tab" data-toggle="tab">Рубрика</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="anchor_lottery---key-themes--symbols--and-motifs_activity">
+                    <br>
+                    <div class="pull-right" style="margin:2%"><div style="text-align:center">
+<a href="/ru/articles/e/%d1%82%d0%b5%d0%bc%d1%8b-%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%bc%d0%be%d1%82%d0%b8%d0%b2%d1%8b"><img src="
+//sbt.blob.core.windows.net/site-images/site-pages/education/visual-aids/themes.png" alt="Themes Symbols Motifs" title="Themes, Symbols, &amp; Motifs"></a>
+<br>
+<br>
+(
+<a href="/ru/articles/e/%d1%82%d0%b5%d0%bc%d1%8b-%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%bc%d0%be%d1%82%d0%b8%d0%b2%d1%8b" target="_blank">Read Lesson Plan</a>
+•
+<a href="http://www.zazzle.com/storyboardthat*" target="_blank">Buy Poster</a>
+•
+<a href="https://www.teacherspayteachers.com/Product/Themes-Symbols-and-Motifs-Classroom-Poster-2671059" target="_blank">Buy PDF</a>
+)
+</div>
+</div> 
+
+<p> <a href="/ru/articles/e/%d1%82%d0%b5%d0%bc%d1%8b-%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%bc%d0%be%d1%82%d0%b8%d0%b2%d1%8b">Темы, символы и мотивы</a> оживают , когда вы используете раскадровку. В этой деятельности, студенты будут определить темы и символы из истории, и поддержать их выбор с деталями из текста. В классе деятельности, студенты могут отслеживать богатый тематический запись Джексон использует во всем "лотерее". 
+<br>
+
+
+</p><h3 style="text-align:left"> Темы, Мотивы, и символы, чтобы искать и Обсудить </h3>
+
+<h4> Опасности Слепо следуя традиции, </h4>
+
+<p> Лотерея проводится каждый год в тот же день, и люди знают процесс настолько хорошо, что они только наполовину слушать инструкции мистера Саммерса. Дети очень рады, что они собирают камни. Кажется, что люди забыли большинство других помпой, которая идет вместе с этим событием, кроме важности коробки и побивание камнями. Как называются имена, мистер Адамс замечает старику Warner, самый старый человек в деревне, что другие деревни отказываются от лотереи традиции. Старик Уорнер отвечает, "пакет сумасшедших дураков. Прослушивание молодых людей, ничего не достаточно хорошо для <i>них.</i> Следующая вещь , которую вы знаете, они будут хотеть , чтобы вернуться к жизни в пещерах, никто не будет работать больше, жить так на некоторое время. ... Там <i>всегда</i> была лотерея. "Комментарии Old Man Уорнера , кажется, охватывает важность того, что все деревни место на этой традиции, несмотря на , казалось бы , прогрессивных деревень поблизости. </p>
+<br>
+
+
+<h4> Инверсия семьи динамики </h4>
+
+<p> Эта история превращает динамику семьи с ног на голову. Перед тем как лотереи, семьи, кажется вполне нормальным, стоя вместе или жены собрались вместе обсуждали своих мужей. Когда миссис Хатчинсон обнаруживает, что ее муж Билл нарисовал плохой листок бумаги, она тут же кричит мистер Саммерс, что он не позволил Билл достаточно времени, чтобы сделать правильный листок бумаги, на первый взгляд оборонительную ее мужа. Однако, когда Билл спросил, есть ли какие-либо другие домашние хозяйства Тесси пытается предложить до ее старшей дочери Евы, и мужа Евы Дон. Когда Тесси обнаруживает черную точку на ее листке бумаги, даже ее дети становятся частью толпы. Они ликовал, когда они видят, что они нарисовали пустые документы, и они, кажется, не проявляют заботу о судьбе своей матери. Кто-то даже руки маленькие Davy галька бросать. </p>
+<br>
+
+
+<h4> Mob Mentality </h4>
+
+<p> Горожане регулируются менталитет толпы, которая толкает их охотно участвуют в варварской традиции. Мальчики-подростки тщательно выбираем roundest, гладкие камни в начале истории, и, кажется, наслаждаются дух товарищества, который создает лотерею событие. В конце, когда Тесси выбран в качестве "победителя", женщины, с которыми она была просто поговорив с удовольствием подобрать камни, чтобы бросить на нее. Миссис Данбар расстроен тем, что она не может идти в ногу с толпой, Старик Уорнер призывает толпу на и детей, даже Тесси камень их собственная мать. </p>
+<br>
+
+
+<h4> Коробка </h4>
+
+<p> Коробка представляет собой традицию для жителей деревни. Несмотря на то, что ухудшается и г-н Саммерс обсуждает что делает новый каждый год, жители не любят нарушать традиции. Как ни странно, когда он не используется, он сидит как пылесборником в амбаре мистера Грейвса, или г-н Мартин продуктовый магазин. Это также символ страха; сельские жители не забудьте держаться подальше от него, как он сидит на стуле в квадрате. Они знают, что в коробке являются полоски бумаги, которые будут решать их судьбу. Это делает его символом власти над жизнью и смертью, а также. </p>
+<br>
+
+
+<h4> Камни </h4>
+
+<p> Дети принимают большую осторожность при сборе самые совершенные убийства оружие, камни, которые являются roundest и гладкие они могут найти. Они положили их в кучах и охранять их, как сокровище. Камни дают им власть над чьей-то жизни и смерти, что является существенным моментом в их жизни. Камни являются источником страха, а также силы и духа товарищества, как для человека, который выбран и для тех, кто стремится быть частью толпы, которая растет от переключателя tradition.The от этого очень упорядоченного, структурированного лотерейного розыгрыша с бумаги камней также представляет пугающее изменение деревни от цивилизованной вымолвить жестокости в считанные минуты. </p>
+<br>
+
+
+<h4> Черная точка </h4>
+
+<p> Черная точка представляет собой надвигающуюся смерть. Для Тесси, точка означает, что она была выбрана, чтобы умереть в этой скрученной, праздничное мероприятие. Точка также приводит к концу "справедливость", которую она нашла во всех других лотерей она участвовала в до сих пор. </p>
+<br>
+
+                    <div class="clearfix"></div>
+
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/------------------------21">Лотерее Символы и Мотивы</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/------------------------21">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/------------------------21.png?utc=131354764772430000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/------------------------21.png?utc=131354764772430000 837w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/------------------------21_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/------------------------21_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/------------------------21_thumb.png 450w" data-sizes="auto" alt="Лотерее Символы и Мотивы" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/------------------------21" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/------------------------21/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/------------------------21/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---key-themes--symbols--and-motifs_template">
+
+                    <p style="text-align:center; font-style:italic">(Эти инструкции полностью настраиваются. После нажатия «Копировать назначение» измените описание назначения в сводке.)</p>
+                    <br>
+                    <h4> Инструкция для студентов </h4>
+
+<p> Создание раскадровки, который идентифицирует повторяющиеся темы в "лотерее". Проиллюстрировать экземпляров каждой темы и написать краткое описание каждой ячейки ниже. </p>
+<br>
+<ol>
+	<li> Нажмите кнопку "Использовать этот шаблон" от задания. </li>
+	<li> Определить тему (ы) из "The Lottery" Вы хотите включить и заменить "Тема 1" текст. </li>
+	<li> Создание образа для примера, который представляет эту тему. </li>
+	<li> Написать описание каждого из примеров. </li></ol>
+<br>
+                    <br><br>
+                    <div class="clearfix"></div>
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/--------theme">Шаблон: Theme</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/--------theme">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/--------theme.png?utc=131355012041270000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/--------theme.png?utc=131355012041270000 1647w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------theme_w_1200.png 1200w,
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------theme_w_1000.png 1000w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------theme_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------theme_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/--------theme_thumb.png 450w" data-sizes="auto" alt="Шаблон: Theme" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/--------theme" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/--------theme/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/--------theme/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---key-themes--symbols--and-motifs_rubric">
+                    <p style="text-align:center; font-style:italic">(Измените эту основную рубрику, перейдя по ссылке ниже. Вы также можете создать свою собственную на <a href="http://www.quickrubric.com/" target="_blank">Quick Rubric</a>.)</p>
+                    <br>
+                    <div data-ng-app="quickRubricDisplayMod">    <quick-rubric author="ru-Examples" title="темы--символы-и-мотивы--9-12-классы-" class="ng-scope">
+<div id="viewRubricContent" style="">
+    <div data-ng-show="IsValidRubric==false" class="ng-hide">
+        <div class="alert alert-warning">
+            <b>We are unable to find the rubric <i style="color:red" class="ng-binding"></i> by <i style="color:red" class="ng-binding"></i></b>
+            <br>
+            <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                <div style="text-align:center">
+                    <br>
+                    <qr-new-rubric></qr-new-rubric>
+                </div>
+            </div>
+            <div data-ng-show="IsEmbedded">
+                <div style="text-align:center">
+                    <br>
+                    <a href="https://www.quickrubric.com/r#/create-a-rubric" target="_blank" class="btn btn-primary btn-lg">Create a Rubric</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-ng-show="IsValidRubric">
+
+        <div class="print-only" style="text-align:center">
+            <img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-300.png" style="max-width:100%">
+
+        </div>
+        <div class="rubric-viewer-wrapper">
+            <div class="row">
+
+                <div class="rubric-viewer-header rubric-viewer-header-override ng-binding">
+                    
+                </div>
+                <div class="rubric-viewer-description">
+                    <div ng-bind-html="RubricContainer.description| PrettyRubricText" class="ng-binding"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="no-more-tables">
+                    <table class="col-sm-12 qr-table qr-table-bordered qr-table-striped qr-table-condensed cf">
+                        <thead class="rubric row">
+                            <tr>
+                                <th class="" style="width:100%">
+
+                                </th>
+                                <!-- ngRepeat: column in Rubric.columns -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ngRepeat: row in Rubric.rows -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div data-ng-show="IsEmbedded">
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9" style="text-align:left">
+                                    View, Print and Copy this Rubric at <br>
+                                    <a target="_blank" href="https://www.quickrubric.com/r#/qr/ru-Examples/темы--символы-и-мотивы--9-12-классы-" class="ng-binding">https://www.quickrubric.com/r#/qr/ru-Examples/темы--символы-и-мотивы--9-12-классы-</a>
+                                </div>
+                                <div class="col-md-3" style="text-align:right; padding-top:5px;">
+                                    <a target="_blank" href="https://www.quickrubric.com"><img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-200.png"></a>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - https://www.quickrubric.com/r#/qr/ru-Examples/темы--символы-и-мотивы--9-12-классы-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                    <div class="rubric-editor-controls screen-only">
+                        <div class="row ">
+
+                            <div class="col-md-12">
+                                <div style="text-align:center">
+                                    <qr-print-rubric-button print-element-id="viewRubricContent" print-target="Rubric"><button class="btn btn-default btn-lg ng-binding" data-ng-click="printElement()">
+    <i class="fa fa-print"></i> Print Rubric
+</button>
+
+</qr-print-rubric-button>
+
+                                    <qr-edit-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-edit-rubric-button>
+                                    <qr-copy-rubric-button data-ng-show="thereIsAnActiveRubric()" class="ng-hide"></qr-copy-rubric-button>
+                                    <qr-delete-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-delete-rubric-button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9 ng-binding" style="text-align:left">
+                                    Quick Rubric URL: http://www.quickrubric.com/r
+                                </div>
+                                <div class="col-md-3" style="text-align:right">
+                                    <b>View <a href="">My Rubrics</a></b>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - http://www.quickrubric.com/r
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></quick-rubric></div>
+                    <br><br>
+                </div>
+
+            </div>
+
+        </div>
+            <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/630" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+    <div class="clearfix"></div>
+
+
+
+
+
+</article>
+
+
+                    <div class="white-space-single"></div>
+ <div style="text-align:center">
+     <b>
+         <a class="btn btn-warning btn-lg " href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%82-%d0%bc%d0%be%d0%b9-%d0%be%d1%81%d0%b2%d0%be%d0%b1%d0%be%d0%b6%d0%b4%d0%b0%d1%8e%d1%89%d0%b5%d0%b3%d0%be-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81%d1%83%d0%b4" style="font-size:24px;">
+         Начать Бесплатную Пробную Версию
+         <span style="background:none; font-size:20px;" aria-hidden="true" class="icon isbt-triangle"></span></a>
+         </b>
+ </div>
+<div class="white-space-double"></div>
+
+                </div>
+            </div>
+            <div class="alternate-color-div">
+                <div class="container">
+
+
+
+
+
+<article>
+
+    <a name="anchor_lottery---twist" id="anchor_lottery---twist" title="&quot;Лотерея&quot; TWIST Графический организатор"></a>
+
+    <h2 class="article-section-header">"Лотерея" TWIST Графический организатор</h2>
+
+
+
+<div class="Teacher-Guide-Assignment-Meta-Data">
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2"><h3 style="margin: 5px 0;">Ссылка на План Урока</h3></div>
+        <div class="col-md-2" style="text-align:right">
+            <a href="/ru/teacher-guide/%d0%bb%d0%be%d1%82%d0%b5%d1%80%d0%b5%d1%8f-%d1%88%d0%b8%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b5%d0%ba%d1%81%d0%be%d0%bd/activity/631" target="_blank"><i class=" icon isbt-print"></i>&nbsp; Печать</a>
+        </div>
+    </div>
+
+    <p><b>Уровень Образования</b> 9-12</p>
+    <p><b>Сложный Уровень</b> 4 (сложный / сложный)    </p>
+
+    <p><b>Тип Назначения</b> Индивидуальное Лицо, Партнер или Группа</p>
+
+        <p><b>Тип Активности:</b> <a href="/ru/articles/e/%d1%82%d0%b2%d0%b8%d1%81%d1%82-%d0%b0%d0%bd%d0%b0%d0%bb%d0%b8%d0%b7" title="" style="" class="">Проза Анализ с TWIST</a></p>
+
+    <div style="text-align:center;">
+    <div class="share42init" style="height:30px;text-align:center"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -0px 0 no-repeat" href="#" data-count="twi" onclick="window.open('//twitter.com/intent/tweet?text=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5&amp;url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -24px 0 no-repeat" href="#" data-count="pin" onclick="window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;media=undefined&amp;description=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0');return false" title="Pin It" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -48px 0 no-repeat" href="#" data-count="fb" onclick="window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -72px 0 no-repeat" href="#" data-count="gplus" onclick="window.open('//plus.google.com/share?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Google+" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -96px 0 no-repeat" href="//www.evernote.com/clip.action?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;title=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5" title="Share on Evernote" target="_blank"></a></span></span></div>
+</div>
+
+</div>                <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/631" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+            <br>
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs central tabs" role="tablist">
+                <li class="activity-tab active" role="presentation"><a href="#anchor_lottery---twist_activity" aria-controls="home" role="tab" data-toggle="tab">Об этой деятельности</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---twist_template" aria-controls="profile" role="tab" data-toggle="tab">Инструкции по Шаблонам и Классам</a></li>
+                <li class="activity-tab" role="presentation"><a href="#anchor_lottery---twist_rubric" aria-controls="messages" role="tab" data-toggle="tab">Рубрика</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="anchor_lottery---twist_activity">
+                    <br>
+                    <p> Еще один отличный способ привлечь ваших студентов, через создание раскадровки, посвященных изучению Tone, Word выбор, образность, стиль и тему. Эта деятельность называется с аббревиатурой "твист". В твист, студенты сосредоточиться на конкретном пункте или несколько страниц, чтобы посмотреть глубже в смысл автора. 
+<br>
+ </p><div style="text-align:center">
+<a href="/ru/articles/e/%d1%82%d0%b2%d0%b8%d1%81%d1%82-%d0%b0%d0%bd%d0%b0%d0%bb%d0%b8%d0%b7"><img src="//sbt.blob.core.windows.net/site-images/articles/twist.png" alt="TWIST: Tone, Word Choice, Imagery, Style, Theme" title="TWIST: Tone, Word Choice, Imagery, Style, Theme"></a>
+<br>
+<br>
+(
+<a href="/ru/articles/e/%d1%82%d0%b2%d0%b8%d1%81%d1%82-%d0%b0%d0%bd%d0%b0%d0%bb%d0%b8%d0%b7" target="_blank">Read Lesson Plan</a>
+•
+<a href="http://www.zazzle.com/storyboardthat*" target="_blank">Buy Poster</a>
+•
+<a href="https://www.teacherspayteachers.com/Product/TWIST-Graphic-Organizer-English-Classroom-Poster-2438746">Buy PDF</a>
+)
+</div> 
+<br>
+ 
+
+<p> Используя отрывок из второй страницы истории, где есть намек, что есть что-то больше происходит с этой "лотереи", чем просто удачи, студенты могут изобразить, объяснить и предвещает, что будет происходить в истории, в то время как получить хороший идея голоса автора. </p>
+
+<h3> TWIST Пример для "лотереи" </h3><blockquote class="blockquote-reverse"> <i class="icon isbt-quotes-open pull-left" style="font-size: 2em; margin-right:2%"></i> 
+
+<p> Почтмейстер, мистер Грейвз, вслед за ним, неся трехногий стул, а стул был поставлен в центре площади и г-н Саммерс установить черный ящик на него сверху вниз. Жители деревни держали дистанцию, оставляя пространство между собой и со стулом, и когда мистер Саммерс сказал: "Некоторые из вас соучастников хотят, чтобы дать мне руку?» Была нерешительность перед двумя мужчинами, г-н Мартин и его старший сын , Бакстер, вышел вперед, чтобы держать окно устойчивым на стуле в то время как г-н Саммерс всколыхнула бумаги внутри него. </p> <i class="icon isbt-quotes-close pull-right" style="font-size: 2em"></i> </blockquote> 
+<br>
+
+
+<div class="row">
+
+<div class="col-md-1"></div>
+
+<div class="col-md-10"><table class="table table-striped table-bordered table-vertical">
+<tbody><tr>
+<th class="info"> T </th><td>
+
+<h4> TONE </h4></td><td> Таинственное и предчувствия: жители держат дистанцию ​​от коробки, которая должна быть частью лотереи. Как правило, лотерея это захватывающее событие. </td></tr>
+<tr>
+<th class="info"> W </th><td>
+
+<h4> ВЫБОР СЛОВА </h4></td><td> Расстояние, пространство, колеблясь </td>
+</tr><tr>
+
+</tr><tr>
+<th class="info"> я </th><td>
+
+<h4> IMAGERY </h4></td><td> "...Мистер. Мартин и его старший сын, Бакстер, вышел вперед, чтобы держать окно устойчивым на стуле в то время как г-н Саммерс всколыхнула бумаги внутри него ". </td>
+</tr><tr>
+
+</tr><tr>
+<th class="info"> S </th><td>
+
+<h4> СТИЛЬ </h4></td><td> Автор очень описательный, оставляя ощущение предчувствия и неуверенности, когда она пишет, "Крестьяне держали дистанцию, оставляя пространство между собой и кале ..." </td>
+</tr><tr>
+
+</tr><tr>
+<th class="info"> T </th><td>
+
+<h4> ТЕМЫ </h4></td><td> Существует еще к этому списку, который держит эти бумаги, чем встречает глаз. Возможно, эта лотерея не такая хорошая вещь, в конце концов. Может быть, тема будет указывать на опасности в зависимости от удачи. </td>
+</tr><tr>
+</tr></tbody></table></div>
+
+<div class="col-md-1"></div></div>
+<br>
+
+                    <div class="clearfix"></div>
+
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/--------twist">Лотерея TWIST</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/--------twist">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/--------twist.png?utc=131355024876400000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/--------twist.png?utc=131355024876400000 2058w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------twist_w_1200.png 1200w,
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------twist_w_1000.png 1000w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------twist_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/--------twist_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/--------twist_thumb.png 450w" data-sizes="auto" alt="Лотерея TWIST" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/--------twist" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/--------twist/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/--------twist/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---twist_template">
+
+                    <p style="text-align:center; font-style:italic">(Эти инструкции полностью настраиваются. После нажатия «Копировать назначение» измените описание назначения в сводке.)</p>
+                    <br>
+                    <h4> Инструкция для студентов </h4>
+
+<p> Провести анализ перекручивания выбора из "лотереи". Помните , что TWIST означает <b>Tone, Word Choice, образность, стиль, тема.</b> 
+
+</p><p>
+<br>
+</p><ol>
+	<li> Нажмите кнопку "Использовать этот шаблон" от задания. </li>
+	<li> Выберите любую комбинацию из сцен, персонажей, предметов, и текст, чтобы представлять каждую букву твист. </li>
+	<li> Напишите несколько предложений, описывающих значение или значение изображения. </li>
+	<li> Доработка изображения, редактировать и корректировать свою работу. </li>
+	<li> Сохранить и отправить раскадровку для задания. </li></ol>
+<br>
+                    <br><br>
+                    <div class="clearfix"></div>
+
+
+
+
+
+<div class="thumbnail storyboard-example-large side-corner-tag " style="margin: 35px auto; padding-bottom:10px">
+    <a href="/ru/storyboards/ru-examples/twist-------">TWIST Шаблон</a>
+    <div class="storyboard-example-large-image">
+        <a href="/ru/storyboards/ru-examples/twist-------">
+
+                <img src="" class="lazyload" data-src="http://sbt.blob.core.windows.net/storyboards/ru-examples/twist-------.png?utc=131355026439170000" data-srcset="http://sbt.blob.core.windows.net/storyboards/ru-examples/twist-------.png?utc=131355026439170000 2058w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/twist-------_w_1200.png 1200w,
+http://sbt.blob.core.windows.net/srcset/ru-examples/twist-------_w_1000.png 1000w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/twist-------_w_800.png 800w, 
+http://sbt.blob.core.windows.net/srcset/ru-examples/twist-------_w_600.png 600w, 
+http://sbt.blob.core.windows.net/storyboards/ru-examples/twist-------_thumb.png 450w" data-sizes="auto" alt="TWIST Шаблон" style="max-width:100%">
+
+        </a>
+        <p><span>Пример</span></p>
+
+    </div>
+    <div class="no-print">
+
+        <a href="/ru/storyboards/ru-examples/twist-------" class="btn btn-primary"><span class="button-icon icon isbt-magnifyingglass-plus"></span>&nbsp; Посмотреть Больше</a>
+        <a href="https://www.storyboardthat.com/ru/storyboards/ru-examples/twist-------/copy" class="btn btn-primary"><span class="button-icon icon isbt-copy"></span>&nbsp; Создать Копию</a>
+        <button class="btn btn-primary" onclick="LoadSlideShowDiv('/storyboards/ru-examples/twist-------/slide-show')"><span class="button-icon icon isbt-slide-show"></span>&nbsp; Слайд-шоу</button>
+
+    </div>
+
+</div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="anchor_lottery---twist_rubric">
+                    <p style="text-align:center; font-style:italic">(Измените эту основную рубрику, перейдя по ссылке ниже. Вы также можете создать свою собственную на <a href="http://www.quickrubric.com/" target="_blank">Quick Rubric</a>.)</p>
+                    <br>
+                    <div data-ng-app="quickRubricDisplayMod">    <quick-rubric author="ru-Examples" title="twist-tone--word-choice--образность--стиль--и-тема" class="ng-scope">
+<div id="viewRubricContent" style="">
+    <div data-ng-show="IsValidRubric==false" class="ng-hide">
+        <div class="alert alert-warning">
+            <b>We are unable to find the rubric <i style="color:red" class="ng-binding"></i> by <i style="color:red" class="ng-binding"></i></b>
+            <br>
+            <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                <div style="text-align:center">
+                    <br>
+                    <qr-new-rubric></qr-new-rubric>
+                </div>
+            </div>
+            <div data-ng-show="IsEmbedded">
+                <div style="text-align:center">
+                    <br>
+                    <a href="https://www.quickrubric.com/r#/create-a-rubric" target="_blank" class="btn btn-primary btn-lg">Create a Rubric</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-ng-show="IsValidRubric">
+
+        <div class="print-only" style="text-align:center">
+            <img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-300.png" style="max-width:100%">
+
+        </div>
+        <div class="rubric-viewer-wrapper">
+            <div class="row">
+
+                <div class="rubric-viewer-header rubric-viewer-header-override ng-binding">
+                    
+                </div>
+                <div class="rubric-viewer-description">
+                    <div ng-bind-html="RubricContainer.description| PrettyRubricText" class="ng-binding"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="no-more-tables">
+                    <table class="col-sm-12 qr-table qr-table-bordered qr-table-striped qr-table-condensed cf">
+                        <thead class="rubric row">
+                            <tr>
+                                <th class="" style="width:100%">
+
+                                </th>
+                                <!-- ngRepeat: column in Rubric.columns -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ngRepeat: row in Rubric.rows -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div data-ng-show="IsEmbedded">
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9" style="text-align:left">
+                                    View, Print and Copy this Rubric at <br>
+                                    <a target="_blank" href="https://www.quickrubric.com/r#/qr/ru-Examples/twist-tone--word-choice--образность--стиль--и-тема" class="ng-binding">https://www.quickrubric.com/r#/qr/ru-Examples/twist-tone--word-choice--образность--стиль--и-тема</a>
+                                </div>
+                                <div class="col-md-3" style="text-align:right; padding-top:5px;">
+                                    <a target="_blank" href="https://www.quickrubric.com"><img src="//www.quickrubric.com/Content/images/logos/rectangle/quick-rubric-wide-200.png"></a>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - https://www.quickrubric.com/r#/qr/ru-Examples/twist-tone--word-choice--образность--стиль--и-тема
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-ng-show="IsEmbedded==false" class="ng-hide">
+                    <div class="rubric-editor-controls screen-only">
+                        <div class="row ">
+
+                            <div class="col-md-12">
+                                <div style="text-align:center">
+                                    <qr-print-rubric-button print-element-id="viewRubricContent" print-target="Rubric"><button class="btn btn-default btn-lg ng-binding" data-ng-click="printElement()">
+    <i class="fa fa-print"></i> Print Rubric
+</button>
+
+</qr-print-rubric-button>
+
+                                    <qr-edit-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-edit-rubric-button>
+                                    <qr-copy-rubric-button data-ng-show="thereIsAnActiveRubric()" class="ng-hide"></qr-copy-rubric-button>
+                                    <qr-delete-rubric-button data-ng-show="canDeleteRubric()" class="ng-hide"></qr-delete-rubric-button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="rubric-viewer-footer">
+                        <div class="row">
+
+                            <div class="screen-only">
+                                <div class="col-md-9 ng-binding" style="text-align:left">
+                                    Quick Rubric URL: http://www.quickrubric.com/r
+                                </div>
+                                <div class="col-md-3" style="text-align:right">
+                                    <b>View <a href="">My Rubrics</a></b>
+                                </div>
+                            </div>
+                            <div class="print-only ng-binding" style="text-align:center">
+                                This rubric was created with <b>Quick Rubric</b> and can be found at - http://www.quickrubric.com/r
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></quick-rubric></div>
+                    <br><br>
+                </div>
+
+            </div>
+
+        </div>
+            <br>
+            <div style="text-align:center">
+                <a href="/copy-assignment/631" class="btn btn-lg btn-info" style="font-size:32px;">Назначение Копии</a>
+            </div>
+            <br>
+    <div class="clearfix"></div>
+
+
+
+
+
+</article>
+
+
+                    <div class="white-space-single"></div>
+ <div style="text-align:center">
+     <b>
+         <a class="btn btn-warning btn-lg " href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%82-%d0%bc%d0%be%d0%b9-%d0%be%d1%81%d0%b2%d0%be%d0%b1%d0%be%d0%b6%d0%b4%d0%b0%d1%8e%d1%89%d0%b5%d0%b3%d0%be-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81%d1%83%d0%b4" style="font-size:24px;">
+         Начать Бесплатную Пробную Версию
+         <span style="background:none; font-size:20px;" aria-hidden="true" class="icon isbt-triangle"></span></a>
+         </b>
+ </div>
+<div class="white-space-double"></div>
+
+                </div>
+            </div>
+        <div class="container">
+             
+
+<h2> <i>Резюме лотереи</i> </h2>
+
+<p> В небольшой деревне, где-то в Америке, в теплый летний день (27 июня, если быть точным), 300 жителей начинают собираться на площади. Молодые мальчики из города, свежие из школы на лето, собрали камни в кучи. Медленно семьи стекаются на площадь, и есть ожидание этого ежегодного события, что уходит корнями в глубокие традиции, начатые основателями этого города несколько лет назад. Мистер Саммерс помещает черный ящик, заполненный листами бумаги, на табурет на площади. Коробка так же стара, как и город, и, хотя г-н Саммерс говорит о создании нового человека каждый год, люди неохотно меняют такой важный символ своей традиции, хотя они забыли многие другие части этого ежегодный ритуал. </p>
+
+<p> Когда начинается лотерея, головы каждого домохозяйства подходят к коробке и вынимают из нее лист бумаги. Затем они возвращаются на свое место и ждут всех имен, которые будут называться. Как правило, главами домашних хозяйств являются мужчины; однако, если женщина овдовела, она становится главой семьи, по крайней мере, до тех пор, пока ее старший сын не достигнет 16 лет. </p>
+
+<p> Когда г-н Саммерс дойдет до конца имен, главы домашних хозяйств разворачивают свои документы. Есть шепот, что «у Билла Хатчинсона есть это». Жена Билла, Тесси Хатчинсон, начинает кричать и обвинять мистера Саммерса в том, что он не дает Биллу достаточно времени, чтобы выбрать бумагу, которую он хотел. Остальные женщины упрекают ее, сообщая ей, что все они имеют одинаковый шанс и что она должна быть хорошим видом спорта. Это первый признак читателя, что лотерея не предполагает выигрыша удачи; за этим особым ритуалом есть что-то более зловещее. </p>
+
+<p> Тесси, Билл и их трое детей, Билл-младший, 12-летняя Нэнси и малыш Литтл Дэви, вызваны в ящик. Мистер Саммерс берет бумагу Билла и кладет еще четыре пустых. Он возбуждает их, и каждый член семьи рисует бумагу. Билл, и детские бумаги все пустые, но Тесси отмечена зловещим черным пятном. Она начинает кричать, что это несправедливо или правильно. Читатель начинает понимать цель камней, которые собирают дети. Через несколько мгновений весь город собирает свои камни и окружает Тесси. Тесси продолжает протестовать, возможно, впервые осознав варварство этой уродливой традиции. Однако она не может кричать долго, поскольку история закрывается с горожанами «на нее». </p>
+
+<div class="row">
+
+<div class="col-md-8">
+
+<h2> Основные вопросы для «Лотереи» </h2><ol>
+	<li> Насколько важны традиции для сообщества? Какими целями они служат? </li>
+	<li> При каких обстоятельствах традиция должна быть пересмотрена или прекращена? </li>
+	<li> Что такое соответствие? Когда это хорошо, чтобы соответствовать? Не соглашаться? </li>
+	<li> Что такое бесчеловечность? Откуда мы знаем, что что-то негуманно? </li><ol></ol></ol></div>
+
+<div class="col-md-4"> <div class="amazon-product"><a href="http://amazon.com/dp/0374529531?tag=storythat-20" target="_blank"><img src="//ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL300_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=storythat20&amp;ASIN=0374529531"></a><br><br><a href="http://amazon.com/dp/0374529531?tag=storythat-20" target="_blank">Купить The Lottery by Shirley Jackson на Amazon</a></div> </div> </div>
+
+
+        </div>
+
+
+    <hr>
+
+
+
+
+
+    <div class="no-print">
+        <h3 style="font-weight:bold; font-style:italic">Помогите Storyboard That!</h3>
+        <div style="text-align:center">
+<div style="text-align:center;">
+    <div class="share42init" style="height:30px;text-align:center"><span id="share42"><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -0px 0 no-repeat" href="#" data-count="twi" onclick="window.open('//twitter.com/intent/tweet?text=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5&amp;url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Twitter" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -24px 0 no-repeat" href="#" data-count="pin" onclick="window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;media=undefined&amp;description=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=600, height=300, toolbar=0, status=0');return false" title="Pin It" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -48px 0 no-repeat" href="#" data-count="fb" onclick="window.open('//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Facebook" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -72px 0 no-repeat" href="#" data-count="gplus" onclick="window.open('//plus.google.com/share?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD', '_blank', 'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0');return false" title="Share on Google+" target="_blank"></a></span><span class="share42-item" style="display:inline-block;margin:0 6px 6px 0;height:24px;"><a rel="nofollow" style="display:inline-block;width:24px;height:24px;margin:0;padding:0;outline:none;background:url(/scripts/share42/icons.png) -96px 0 no-repeat" href="//www.evernote.com/clip.action?url=http%3A%2F%2Fwww.storyboardthat.com%2Fru%2Fteacher-guide%2F%25D0%25BB%25D0%25BE%25D1%2582%25D0%25B5%25D1%2580%25D0%25B5%25D1%258F-%25D1%2588%25D0%25B8%25D1%2580%25D0%25BB%25D0%25B8-%25D0%25B4%25D0%25B6%25D0%25B5%25D0%25BA%25D1%2581%25D0%25BE%25D0%25BD&amp;title=%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F%20%D0%A8%D0%B8%D1%80%D0%BB%D0%B8%20%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD%20%7C%20%D0%9B%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D0%B8%20%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5" title="Share on Evernote" target="_blank"></a></span></span></div>
+</div>
+
+        </div>
+        <div class="white-space-single"></div>
+    </div>
+</div>
+
+
+<div class="alternate-color-div no-print" style="">
+    <div class="container">
+
+
+
+
+<div class="white-space-single"></div>
+
+<div style="text-align:center;">
+    <h2 style="color:#1e5a9f; font-weight:bold">Ищете Еще?</h2>
+    <p style="color:#1e5a9f;font-style:italic; font-size:1.2em">Ознакомьтесь с остальной частью наших руководств для учителей и планов уроков!</p>
+
+
+    <br>
+    <b>
+<a href="/ru/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">All Teacher Guides and Lesson Plans </a> 
+•
+<a href="/ru/%d0%b1%d0%bb%d0%be%d0%b3/%d0%b5/%d1%82%d0%b5%d0%bc%d0%b0/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5">Ed Tech Blog</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d1%8b-%d0%b4%d0%bb%d1%8f-%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%80%d0%bd%d1%8b%d1%85-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d0%b5%d0%b9">Elementary School</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d1%8b-%d0%b4%d0%bb%d1%8f-%d1%81%d1%80%d0%b5%d0%b4%d0%bd%d0%b5%d0%b9-%d1%88%d0%ba%d0%be%d0%bb%d1%8b-ela">Middle School ELA</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%88%d0%b0%d1%8f-%d1%81%d1%80%d0%b5%d0%b4%d0%bd%d1%8f%d1%8f-%d1%88%d0%ba%d0%be%d0%bb%d0%b0-ela">High School ELA</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d0%be%d0%b2-%d0%b2-%d0%be%d0%b1%d0%bc%d0%b5%d0%bd-%d0%bd%d0%b0-%d1%83%d1%87%d0%b5%d0%b1%d0%bd%d0%be-%d0%b8%d1%81%d0%bf%d0%b0%d0%bd%d1%81%d0%ba%d0%b8%d0%b9">Foreign Language</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d1%8b-%d0%b4%d0%bb%d1%8f-%d1%81%d0%bf%d0%b5%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d1%8f">Special Ed</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d1%8b-%d0%b4%d0%bb%d1%8f-united-%d0%b3%d0%be%d1%81%d1%83%d0%b4%d0%b0%d1%80%d1%81%d1%82%d0%b2-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f">US History and Social Studies</a>
+•
+<a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%80%d0%be%d0%ba-%d0%bf%d0%bb%d0%b0%d0%bd%d1%8b-%d0%b2-%d0%be%d0%b1%d0%bc%d0%b5%d0%bd-%d0%bd%d0%b0-%d0%bc%d0%b8%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d0%b8">World History</a>
+
+        <br>
+        <br>
+
+        <a href="http://www.zazzle.com/storyboardthat*" target="_blank">Наши Плакаты на Ослеплении</a> •
+        <a href="https://www.teacherspayteachers.com/Store/Storyboard-That" target="_blank">Наши Уроки о Преподавателях Платят Учителям</a> 
+    </b>
+    
+    
+    <div class="white-space-double"></div>
+        <div class="row">
+            <div class="white-space-single"></div>
+ <div style="text-align:center">
+     <b>
+         <a class="btn btn-warning btn-lg " href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%82-%d0%bc%d0%be%d0%b9-%d0%be%d1%81%d0%b2%d0%be%d0%b1%d0%be%d0%b6%d0%b4%d0%b0%d1%8e%d1%89%d0%b5%d0%b3%d0%be-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81%d1%83%d0%b4" style="font-size:24px;">
+         Начать Бесплатную Пробную Версию
+         <span style="background:none; font-size:20px;" aria-hidden="true" class="icon isbt-triangle"></span></a>
+         </b>
+ </div>
+<div class="white-space-double"></div>
+
+        </div>
+
+    
+    <div style="text-align:center">
+        <img class="lazyload" data-src="//sbt.blob.core.windows.net/site-images/articles/education/libraryaward.png" style="max-width:200px;"> 
+    </div>
+</div>
+<div class="white-space-double"></div>
+
+
+
+    </div>
+</div>
+
+
+
+    <div class="visible-print-block" style="text-align:center">
+        http://www.storyboardthat.com/ru/teacher-guide/лотерея-ширли-джексон
+        <br>
+        © 2017 - Clever Prototypes, LLC - Все права защищены.
+
+    </div>
+
+
+<script>
+
+    setTimeout(LoadAppcuesAnonymous, 15* 1000);
+
+    function LoadAppcuesAnonymous()
+    {
+        Appcues.identify({
+            appcuesHero: '//sbt.blob.core.windows.net/site-images/appcues/teacherguide/appcue-lottery.jpg'
+        });
+        Appcues.anonymous();
+    }
+
+
+</script>
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage":
+    {
+        "@type": "WebPage",
+        "@id": "http://www.storyboardthat.com/ru/teacher-guide/%D0%BB%D0%BE%D1%82%D0%B5%D1%80%D0%B5%D1%8F-%D1%88%D0%B8%D1%80%D0%BB%D0%B8-%D0%B4%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD"
+    },
+
+    "headline": "Лотерея &lt;i&gt;Ширли Джексон&lt;/i&gt;",
+
+    "image": 
+    {
+        "@type": "ImageObject",
+        "url": "//sbt.blob.core.windows.net/site-images/ela/the-lottery.png",
+    "width": 600,
+    "height": 339
+    },
+
+    "datePublished": "2015-08-19T15:21:14.1300000",
+
+    "author": 
+    {
+        "@type": "Person",
+        "name": "Storyboard That"
+    },
+    
+    "publisher": 
+    {
+        "@type": "Organization",
+        "name": "Storyboard That",
+        "logo": 
+        {
+            "@type": "ImageObject",
+            "url": "http://sbt.blob.core.windows.net/site-images/site-pages/favicons/apple-touch-icon-60x60.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "description": "Наш гид учитель имеет планы уроков &amp; мероприятия для лотереи Ширли Джексон. Делают лотереи короткий рассказ анализ, сделать схему участка, и более"
+}
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="docked-container-responsive no-print">
+
+    
+
+    <a></a>
+    <a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%81%d1%82%d0%b0%d1%80%d1%82-%d0%bc%d0%be%d0%b9-%d0%be%d1%81%d0%b2%d0%be%d0%b1%d0%be%d0%b6%d0%b4%d0%b0%d1%8e%d1%89%d0%b5%d0%b3%d0%be-%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81%d1%83%d0%b4" title="Start My Free Trial" style=" font-size:18px" class="btn btn-warning">Start My Free Trial <span class="isbt-triangle" style="font-size:.8em"></span></a>
+
+</div>
+
+<script>
+    window.setTimeout(TransitionCTAEven, 45 * 1000);
+
+    function TransitionCTAEven()
+    {
+        var ctaContainer = $(".docked-container-responsive");
+
+        ctaContainer.animate({ backgroundColor: '#F5A133' })
+        $(ctaContainer.find("a")).removeClass("btn-warning").addClass("btn-primary")
+
+        //$("#docked-cta-text").css("color", "black");
+        
+
+        window.setTimeout(TransitionCTAOdd, 45 * 1000);
+    }
+
+    function TransitionCTAOdd()
+    {
+        var ctaContainer = $(".docked-container-responsive");
+
+        ctaContainer.animate({ backgroundColor: '#1E5A9F' })
+        $(ctaContainer.find("a")).removeClass("btn-primary").addClass("btn-warning")
+
+        //$("#docked-cta-text").css("color", "white");
+
+        window.setTimeout(TransitionCTAEven, 45 * 1000);
+    }
+</script>
+
+
+
+
+
+<div class="product-callout-bar no-print" style="background-color:#f2f2f2; border-top:1px solid #c6c6c6">
+    <div class="row">
+        <div class="col-md-12 " style="text-align:center; padding:10px; font-size:1.2em;">
+            <b style="color:black; font-size:24px">
+                Изучите Наши Статьи и Примеры
+            </b>
+            <br>
+            <br>
+            <div class="col-lg-6 col-lg-offset-3">
+
+
+    <form method="post" action="/ru/search">
+
+    <div class="form-group container-fluid">
+        <div class="row">
+
+            <div class="input-group">
+                <input style="width:100%" name="query" class="form-control " placeholder="Напр. Детские товары" type="text">
+
+                <span class="input-group-btn">
+                    <input value="Поиск" class="btn btn-default btn-block" type="submit">
+                </span>
+            </div>
+
+        
+        </div>
+    </div>
+
+    </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 " style="text-align:center; padding:10px; font-size:1.2em;">
+            <b style="color:black;">Ресурсы учителя</b> - <a href="/ru/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">Руководства для учителей и планы уроков</a> 
+ • 
+ <a href="/ru/%d0%b1%d0%bb%d0%be%d0%b3/%d0%b5/%d1%82%d0%b5%d0%bc%d0%b0/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5">Блог Ed Tech</a> 
+ • 
+ <br> <b style="color:black;">Бизнес-ресурсы</b> - <a href="/ru/articles/b/%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">Все деловые ресурсы</a> 
+ • 
+ <a href="/ru/articles/b/%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d1%83%d0%ba%d1%82%d0%b0-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">Разработка продукта</a> 
+ • 
+ <a href="/ru/articles/b/%d0%bf%d0%b5%d1%80%d0%b5%d0%b3%d0%be%d0%b2%d0%be%d1%80%d0%bd%d1%8b%d0%b5-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">Переговоры</a> 
+ • 
+ <a href="/ru/articles/b/%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%82%d1%83%d1%80%d1%8b">Бизнес-рамки</a> 
+<br>
+ <b style="color:black;">Ресурсы фильма</b> - <a href="/ru/articles/f/%d0%ba%d0%b8%d0%bd%d0%be--%d0%b8-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b">Кино и видеоматериалы</a> 
+<br>
+ <b style="color:black;">Иллюстрированные руководства</b> - <a href="/ru/literary-terms">литературные элементы</a> 
+ • 
+ <a href="/ru/genres">Литературные жанры</a> 
+ • 
+ <a href="/ru/shakespeare-plays">Шекспировские пьесы</a> 
+ • 
+ <a href="/ru/biography">Влиятельные люди</a> 
+ • 
+ <a href="/ru/innovations">Инновации</a> 
+ • 
+ <a href="/ru/mythology/%d0%bc%d0%b8%d1%84%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f">Мифология</a> 
+ • 
+ <a href="/ru/space-words">Астрономия</a>
+            <div class="white-space-single"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 " style="text-align:center; padding:10px; font-size:1.2em;">
+            <b style="color:black; font-size:24px">
+                Попробуйте Наши Другие Веб-сайты!
+            </b>
+            <br>
+            <br>
+            <a href="http://www.photosforclass.com" target="_blank">Photos for Class </a> - поиск школьных сейфов, фотографий Creative Commons! ( <i>Это даже цитирует для вас!</i> ) 
+<br>
+ <a href="http://www.quickrubric.com" target="_blank">Quick Rubric </a> - легко создавать и делиться впечатляющими темами!
+            <div class="white-space-single"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="language-selector">
+            <b style="color:white;font-size:24px; font-style:italic">Предпочитаете другой язык?</b>
+    <br>
+    <br>
+    • &nbsp;
+
+            <a href="/teacher-guide/the-lottery-by-shirley-jackson" style="color:white">(English) The Lottery</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/es/teacher-guide/la-loter%c3%ada" style="color:white">(Español) La Lotería</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/fr/teacher-guide/la-loterie-de-shirley-jackson" style="color:white">(Français) La Loterie</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/de/teacher-guide/die-lotterie-von-shirley-jackson" style="color:white">(Deutsch) Die Lotterie</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/it/teacher-guide/la-lotteria-di-shirley-jackson" style="color:white">(Italiana) La Lotteria</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/nl/teacher-guide/de-loterij-van-shirley-jackson" style="color:white">(Nederlands) De Loterij</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/pt/teacher-guide/a-loteria-por-shirley-jackson" style="color:white">(Português) A Loteria</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/he/teacher-guide/%d7%94%d7%94%d7%92%d7%a8%d7%9c%d7%94-%d7%99%d7%93%d7%99-%d7%a9%d7%99%d7%a8%d7%9c%d7%99-%d7%92'%d7%a7%d7%a1%d7%95%d7%9f" style="color:white">(עברית) הלוטו</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/ar/teacher-guide/%d8%a7%d9%84%d9%8a%d8%a7%d9%86%d8%b5%d9%8a%d8%a8-%d9%85%d9%86-%d9%82%d8%a8%d9%84-%d8%b4%d9%8a%d8%b1%d9%84%d9%8a-%d8%ac%d8%a7%d9%83%d8%b3%d9%88%d9%86" style="color:white">(العَرَبِيَّة) اليانصيب</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/hi/teacher-guide/%e0%a4%b6%e0%a4%b0%e0%a5%8d%e0%a4%b2%e0%a5%80-%e0%a4%9c%e0%a5%88%e0%a4%95%e0%a5%8d%e0%a4%b8%e0%a4%a8-%e0%a4%a8%e0%a5%87-%e0%a4%b2%e0%a5%89%e0%a4%9f%e0%a4%b0%e0%a5%80" style="color:white">(हिन्दी) लॉटरी</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/ru/teacher-guide/%d0%bb%d0%be%d1%82%d0%b5%d1%80%d0%b5%d1%8f-%d1%88%d0%b8%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b5%d0%ba%d1%81%d0%be%d0%bd" style="color:white">(ру́сский язы́к) Лотерея</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/da/teacher-guide/lotteriet-af-shirley-jackson" style="color:white">(Dansk) Lotteriet</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/sv/teacher-guide/lotteriet-av-shirley-jackson" style="color:white">(Svenska) Lotteriet</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/fi/teacher-guide/lottery-shirley-jackson" style="color:white">(Suomi) Lottery</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/no/teacher-guide/lotteri-av-shirley-jackson" style="color:white">(Norsk) Lotteriet</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/tr/teacher-guide/lottery-taraf%c4%b1ndan-shirley-jackson" style="color:white">(Türkçe) Piyango</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/pl/teacher-guide/loteria-przez-shirley-jackson" style="color:white">(Polski) Loteria</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/ro/teacher-guide/loteria-de-shirley-jackson" style="color:white">(Româna) Loteria</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/cs/teacher-guide/loterie-shirley-jackson" style="color:white">(Ceština) Loterie</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/sk/teacher-guide/loteria-od-shirleyho-jacksona" style="color:white">(Slovenský) Lotéria</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/hu/teacher-guide/a-szerencsej%c3%a1t%c3%a9k-shirley-jackson" style="color:white">(Magyar) A Lottó</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/hr/teacher-guide/lutrija-po-shirley-jacksonu" style="color:white">(Hrvatski) Lutrija</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/bg/teacher-guide/%d0%bb%d0%be%d1%82%d0%b0%d1%80%d0%b8%d1%8f%d1%82%d0%b0-%d0%be%d1%82-%d1%88%d1%8a%d1%80%d0%bb%d0%b8-%d0%b4%d0%b6%d0%b0%d0%ba%d1%81%d1%8a%d0%bd" style="color:white">(български) Лотарията</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/lt/teacher-guide/loterija-shirley-jackson" style="color:white">(Lietuvos) Loterija</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/sl/teacher-guide/loterija-s-shirley-jackson" style="color:white">(Slovenščina) Loterija</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/lv/teacher-guide/loterij%c4%81-shirley-jackson" style="color:white">(Latvijas) Loterijas</a>
+                <b style="color:#a8aeb4">&nbsp; • &nbsp;</b>
+            <a href="/et/teacher-guide/lottery-shirley-jackson" style="color:white">(eesti) Loterii</a>
+    </div>
+
+
+
+  
+<footer class="no-print">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div style="text-align:center">
+
+                <b><a class="btn btn-warning btn-lg " href="https://www.storyboardthat.com/ru/%d1%80%d0%b0%d1%81%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%ba%d0%b0-%d1%82%d0%b2%d0%be%d1%80%d0%b5%d1%86" style="font-size:24px;">Создание Раскадровки <span class="isbt-triangle" style="font-size:.8em; color:white"></span></a></b>
+            </div>
+        </div>
+    </div>
+    <div class="white-space-double"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-2">
+                <h6>Для Студентов </h6>
+                <ul>
+                    <li><a href="/ru/%d0%ba%d0%bb%d0%b0%d1%81%d1%81/%d0%bf%d1%80%d0%b8%d1%81%d0%be%d0%b5%d0%b4%d0%b8%d0%bd%d0%b8%d1%82%d1%8c%d1%81%d1%8f" title="Нажмите Здесь, Чтобы Присоединиться Классной Комнате" style="" class="">Мой Класс</a></li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-md-2">
+                <h6>Для Учителей</h6>
+                <ul>
+
+                    <li><a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/learn-more-%d0%be-%d0%ba%d0%bb%d0%b0%d1%81%d1%81%d0%b5-%d0%b8%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5" title="Начните две недели БЕСПЛАТНУЮ версию Storyboard That" style="" class="">Бесплатная Пробная Версия</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%80%d0%b0%d0%b9%d0%be%d0%bd-%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d1%8b" title="Окружные Пакеты" style="" class="">Окружные Пакеты</a></li>
+                    <br>
+                    <li><a href="/ru/%d1%81%d1%82%d0%b0%d1%82%d1%8c%d0%b8/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/%d1%83%d1%87%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b" title="Обширные планы уроков и учителей проводники для использования!" style="" class="">Преподаватель Руководства и Планы Уроков</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%b1%d0%bb%d0%be%d0%b3/%d0%b5/%d1%82%d0%b5%d0%bc%d0%b0/%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5" title="Читайте о различных способах применения цифровых рассказывание историй в своем классе" style="" class="">Ed Tech Blog</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%be%d0%b1%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5" title="Идеи для вашего класса" style="" class="">Идеи для вашего класса</a></li>
+                    
+                    
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-md-2">
+                <h6>Для Предприятий</h6>
+                <ul>
+                    <li><a href="/ru/%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81/team-%d0%b8-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%b8%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5" title="Начните две недели БЕСПЛАТНУЮ версию Storyboard That" style="" class="">Бесплатная Пробная Версия</a></li>
+                    <br>
+                    <li><a href="/ru/articles/b/%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%8b" title="" style="" class="">Бизнес Статьи</a></li>
+                    <br>
+                    <li><a href="/ru/%d1%80%d0%b0%d1%81%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%ba%d0%b8-%d1%81%d0%b5%d0%bc%d0%b8%d0%bd%d0%b0%d1%80%d1%8b-%d0%b8-%d1%82%d0%b8%d0%bc%d0%b1%d0%b8%d0%bb%d0%b4%d0%b8%d0%bd%d0%b3%d0%b0-%d0%b4%d0%b5%d1%8f%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d0%b8" title="Узнайте о различных семинарах, специально предназначенные для ваших потребностей" style="" class="">Мастерские</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%b1%d0%b8%d0%b7/%d0%bf%d1%80%d0%b8%d1%81%d0%be%d0%b5%d0%b4%d0%b8%d0%bd%d0%b8%d1%82%d1%8c%d1%81%d1%8f" title="Нажмите здесь, чтобы присоединиться к вашей компании / команды" style="" class="">Присоединяйтесь к Моей Команде</a></li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-md-2">
+                <h6>Помогите</h6>
+                <ul>
+                    <li><a href="/ru/%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c/%d1%80%d0%b0%d1%81%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%ba%d0%b0-creator" title="Получить помощь по использованию раскадровке Creator" style="" class="">Раскадровка Создатель</a></li>
+                    
+                    <br>
+                    
+                    <li><a href="/ru/help-and-faqs/%d0%ba%d0%b0%d0%ba-%d0%ba-%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%b8" title="" style="" class="">Как Напечатать</a></li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-md-2">
+                <h6>Около</h6>
+                <ul>
+                    <li><a href="/ru/%d0%be/%d0%be-%d0%bd%d0%b0%d1%81%2c" title="Узнайте о людях позади StoryboardThat" style="" class="">О нас</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%be/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82" title="Обращайтесь в Storyboard That Team" style="" class="">Свяжитесь с Нами</a></li>
+                    
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-md-2">
+                <h6>Политики</h6>
+                <ul>
+                    
+                    <li><a href="/ru/help-and-faqs/%d1%80%d0%b0%d1%81%d0%ba%d0%b0%d0%b4%d1%80%d0%be%d0%b2%d0%ba%d0%b0-copyright-faq" title="" style="" class="">Авторские Права и Использование Раскадровки</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%be/%d1%83%d1%81%d0%bb%d0%be%d0%b2%d0%b8%d1%8f-%d0%b2-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b8" title="Условия Использования для Storyboard That" style="" class="">Условия Эксплуатации</a></li>
+                    <br>
+                    <li><a href="/ru/%d0%be/%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b4%d0%b5%d0%bd%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d1%8c" title="Storyboard That Политика Конфиденциальности" style="" class="">Политика Конфиденциальности</a></li>
+                    
+                    <br>
+                    <li><a href="/ru/%d0%be/%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b4%d0%bb%d1%8f-%d1%88%d0%ba%d0%be%d0%bb-" title="Конфиденциальность Приложение для Нашего Образовательного Издания" style="" class="">Школа / Студент Конфиденциальности</a></li>
+                </ul>
+                <br>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <br>
+
+
+<br>
+
+<div class="social">
+    <br>
+    <a href="https://www.facebook.com/StoryboardThat" target="_blank" style="font-size:36px; color:white;"><span style="color:white; text-decoration:none;" class="icon isbt-facebook"></span></a>
+    
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/storyboardthat" target="_blank" style="font-size:36px; color:white;"><span style="color:white; text-decoration:none;" class="icon isbt-twitter"></span></a>
+    
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.pinterest.com/storyboardthat/" target=" _blank" style="font-size:36px; color:white;"><span style="color:white; text-decoration:none;" class="icon isbt-pinterest"></span></a>
+
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/storyboardthat/" target="_blank" style="font-size:36px; color:white;"><span style="color:white; text-decoration:none;" class="icon isbt-instagram"></span></a>
+
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://plus.google.com/+storyboardthat" target="_blank" style="font-size:36px; color:white;"><span style="color:white; text-decoration:none;" class="icon isbt-google"></span></a>
+
+    
+</div>
+
+
+
+    <p>© 2017 - Clever Prototypes, LLC - Все права защищены. </p>
+
+</footer>
+
+
+
+
+
+<div id="divLogon"></div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    LazyLoad.js(['//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', '/sbtjs/corefiles.min.js?time=636492802616843762','/sbtjs/mimified/masonryjs.min.js','//fast.appcues.com/824.js','//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js','//www.quickrubric.com/bundles/quick-rubric?time=636492802616843762'], function () {
+        
+        if (typeof OnJsLoaded !== 'undefined')
+        {
+            for (var i in OnJsLoaded)
+            {
+                OnJsLoaded[i]();
+            }
+        }
+    });
+
+</script>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window.cookieconsent_options = {
+        "message": "Этот веб-сайт использует файлы cookie, чтобы обеспечить вам лучший опыт на нашем веб-сайте",
+        "dismiss": "Понял!",
+        "learnMore": "Больше информации",
+        "link": "http://www.storyboardthat.com/about/privacy",
+        "theme": "CookieConsent"
+    };
+</script>
+
+
+
+
+<div></div><script src="//www.atmrum.net/client/v1/atm/fpv2.min.js"></script></body><!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent --></html>

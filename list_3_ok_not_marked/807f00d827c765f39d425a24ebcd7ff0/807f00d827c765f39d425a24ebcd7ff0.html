@@ -1,0 +1,1146 @@
+<html ng-app="hub" class="no-js flash ng-scope" ng-class="{ 'no-scroll' : $root.isNotScrollable }" lang="ru"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<title>Казино Betway - лучшее онлайн-казино с большим выбором игр</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="description" content="Betway Казино предлагает лучшие игры. Блэкджке, рулетка и многое другое на расстоянии пару шагов.">
+	
+	
+
+        <link href="https://casino.betway.com/lobby/ru/" rel="canonical">
+
+            <link href="https://casino.betway.com/lobby/en/" hreflang="en" rel="alternate">
+            <link href="https://casino.betway.com/lobby/da/" hreflang="da" rel="alternate">
+            <link href="https://casino.betway.com/lobby/de/" hreflang="de" rel="alternate">
+            <link href="https://casino.betway.com/lobby/es/" hreflang="es" rel="alternate">
+            <link href="https://casino.betway.com/lobby/fi/" hreflang="fi" rel="alternate">
+            <link href="https://casino.betway.com/lobby/fr/" hreflang="fr" rel="alternate">
+            <link href="https://casino.betway.com/lobby/it/" hreflang="it" rel="alternate">
+            <link href="https://casino.betway.com/lobby/no/" hreflang="no" rel="alternate">
+            <link href="https://casino.betway.com/lobby/pt/" hreflang="pt" rel="alternate">
+            <link href="https://casino.betway.com/lobby/sv/" hreflang="sv" rel="alternate">
+
+	<link rel="stylesheet" href="/lobby/dist/css/casino-1513183423577.css">
+
+	<link rel="shortcut icon" href="/lobby/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="Images/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+    <link rel="manifest" href="/lobby/Otherlevels/package/manifest.json">
+<script language="javascript" type="text/javascript" src="https://casino.betway.com/iojs/latest/logo.js"></script><script language="javascript" type="text/javascript" src="https://mpsnare.iesnare.com/script/logo.js"></script></head>
+
+<body class="desktop flash casino brand-bw logged-out  -page  module-module-helper module-anchor module-account module-authentication module-banking module-cache module-categories module-client module-countdown module-dropdown module-hero module-event module-games module-icons module-keypress module-launch-darkly module-lights module-live-chat module-loyalty module-modal module-promotions module-prompt module-query module-razor-content module-session module-templates module-umbraco-content module-lazy-load module-notification module-ticker module-widget module-navigation module-pjp module-sticky module-width module-winners module-search svg-true platform-default">
+
+	
+
+
+<section ng-controller="webPushController as prompt" ng-switch="prompt.launchDarklyResponse" class="ng-scope">
+
+    <!-- ngSwitchWhen: center-aligned -->
+
+    <!-- ngSwitchWhen: left-aligned -->
+
+    <!-- ngSwitchWhen: full-width -->
+</section>
+
+
+<!-- ngInclude: 'lobby.modal/modal.html' --><div ng-controller="modalCtrl as modal" hub-keypress="" ng-include="'lobby.modal/modal.html'" class="ng-scope"><div class="hub-modal NewTerms" ng-class="{ 'open' : modal.hub$modal.isOpen }"><header class="modal-header cf"><div class="title"><h3 ng-bind-html="modal.hub$modal.title" class="ng-binding"></h3></div><!-- ngIf: !modal.hub$modal.isLocked --><span class="close-icon ng-scope" ng-click="modal.close();" ng-if="!modal.hub$modal.isLocked" alt="Close modal"></span><!-- end ngIf: !modal.hub$modal.isLocked --></header><!-- ngInclude: modal.hub$modal.path --></div></div>
+
+<!-- ngInclude: 'Overlay/overlay.html' --><div class="overlay ng-scope" ng-controller="overlayCtrl as overlay" ng-include="'Overlay/overlay.html'"><div class="loading-icon ng-scope" ng-class="{'loader--on' : overlay.lbm$loader.isOn}"><lbm-loader type="svg" class="ng-isolate-scope"><div class="lbm-loader" ng-switch="type"><!-- ngSwitchWhen: undefined --><!-- ngSwitchWhen: svg --><div ng-switch-when="svg" class="loadingIcon ng-scope"></div><!-- end ngSwitchWhen:  --><div ng-transclude=""><h4 class="lbm-loader__text font-h4 ng-binding ng-scope" ng-bind-html="overlay.loadingText | TrustAsHtml"><p>Идет загрузка...</p></h4></div></div></lbm-loader></div><div ng-class="{ 'lights--on': overlay.hub$lights.isOn,
+                 'locked': overlay.hub$modal.isLocked,
+                 'modal-open': overlay.hub$modal.isOpen,
+                 'pending-hash': overlay.hub$state.pendingHash,
+                 'incomplete-open' : overlay.hub$modal.isOpen &amp;&amp; overlay.hub$modal.id === 'IncompleteGames' }" class="lights ng-scope" ng-click="overlay.closeOverlay()"></div></div>
+
+<!-- ngInclude: 'lobby.regulations/session-reminder.html' --><section ng-controller="sessionReminderCtrl as sessionReminder" ng-include="'lobby.regulations/session-reminder.html'" class="ng-scope"><section class="session-reminder ng-scope ng-hide" ng-show="sessionReminder.hub$sessionReminder.isOpen"><div class="reminder-content"><h2 class="reminder-title ng-binding">Напоминание</h2></div><div class="reminder-body"><p class="reminder-timer ng-binding">Ваше время игры: 03:00</p></div><div class="reminder-buttons"><button class="reminder-button" type="button" ng-click="sessionReminder.continuePlaying()"><span class="ng-binding">Продолжить</span></button> <button class="reminder-button" type="button" ng-click="sessionReminder.openGameHistory()"><span class="ng-binding">История игр </span></button> <button class="reminder-button" type="button" ng-click="sessionReminder.logout()"><span class="ng-binding">Выйти</span></button></div></section></section>
+
+<nav ng-controller="navigationCtrl as nav" class="ng-scope">
+
+    <hub-navigation ua-key="nav.hub$client.uaKey" brands="nav.brands" current-brand="nav.hub$client.subbrand" class="betwayNavigation ng-isolate-scope" ng-class="{ 'pending-hash': nav.hub$state.pendingHash,
+                                'reveal': nav.hub$state.pendingHash &amp;&amp; nav.$state.current.name === 'home.play',
+                                'game-open': nav.$state.current.name === 'home.play' }"><nav><!-- ngRepeat: brand in brands --><a class="brand sports" href="https://sports.betway.com/ru/sports/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">sports</a><!-- end ngRepeat: brand in brands --><a class="brand inplay" href="https://inplay.betway.com/ru/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">in-play</a><!-- end ngRepeat: brand in brands --><a class="brand casino active" href="https://casino.betway.com/lobby/ru/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">casino</a><!-- end ngRepeat: brand in brands --><a class="brand livecasino" href="https://livecasino.betway.com/lobby/ru/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">live casino</a><!-- end ngRepeat: brand in brands --><a class="brand esports" href="https://sports.betway.com/ee" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">esports</a><!-- end ngRepeat: brand in brands --><a class="brand vegas" href="https://vegas.betway.com/lobby/ru/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">vegas</a><!-- end ngRepeat: brand in brands --><a class="brand poker" href="https://poker.betway.com/ru/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">poker</a><!-- end ngRepeat: brand in brands --><a class="brand bingo" href="https://bingo.betway.com/lobby/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">bingo</a><!-- end ngRepeat: brand in brands --><a class="brand blog" href="https://blog.betway.com/" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">blog</a><!-- end ngRepeat: brand in brands --><a class="brand plus" href="https://plus.betway.com/lobby/ru/#/casino" ng-repeat="brand in brands" ng-click="hub$analytics.send(brand.analytics)" ng-class="{ 'active' : brand.id === currentBrand }">plus</a><!-- end ngRepeat: brand in brands --></nav></hub-navigation>    
+</nav>
+
+<div class="betwayNavigation-height-offset"></div>
+
+<!-- uiView: header --><header ui-view="header" class="ng-scope"><div class="betwayHeader ng-scope logged-out" ng-class="{ 'logged-out' : !header.hub$session.isLoggedIn,
+						'pending-hash': header.hub$state.pendingHash,
+						'reveal': header.hub$state.pendingHash &amp;&amp; header.$state.current.name === 'home.play',
+						'game-open': header.$state.current.name === 'home.play' }"><div class="main-view"><a class="link" ui-sref="home.category({ 'categoryId' : 'home' })" ui-sref-opts="{ reload: 'home.category' }" href="#/home"><img alt="logo" class="logo" ng-src="https://images.thebetwaygroup.com/headers/ImageSet3272/3272_mxblms2avq3_Casino.png" ng-click="hub$analytics.send(header.brand.analytics)" src="https://images.thebetwaygroup.com/headers/ImageSet3272/3272_mxblms2avq3_Casino.png"></a><!-- ngIf: header.isPortable --><section class="header-items" ng-class="{ 'ready-reveal' : header.hub$session.isLoggedIn }"><span ng-show="header.hub$session.isLoggedIn" class="has-widgets ng-hide"><div class="widget-item header-account-widget" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'account'  }"><!-- uiView: account --><div ui-view="account" class="ng-scope"><section class="widget account-widget ng-scope" ng-class="{ 'active' : account.hub$interface.widgets.isOpen &amp;&amp; account.hub$interface.widgets.active === 'account' }"><div ng-show="!account.hub$account.isReady" class="loader"></div><!-- ngIf: account.hub$client.type === 'viper' && !account.hub$account.isReady --><div ng-show="account.hub$account.isReady" class="ng-hide"><h3 class="widget-title char-b ng-binding">Мой счет</h3><h4 class="widget-balance char-b ng-binding"></h4><ul class="account-table"><li class="account-row"><span class="table-title ng-binding" ng-bind-html="account.content.cashAccount"><p>Денежный счет</p></span> <span class="table-amount ng-binding"></span></li><li class="account-row"><span class="table-title ng-binding" ng-bind-html="account.content.bonusAccount"><p>Бонусный счет</p></span> <span class="table-amount ng-binding"></span></li><!-- ngIf: account.hub$client.brand === 'bw' --><li class="account-row ng-scope" ng-if="account.hub$client.brand === 'bw'"><span class="table-title ng-binding" ng-bind-html="account.content.bingoBonus"><p>Бинго бонус</p></span> <span class="table-amount ng-binding"></span></li><!-- end ngIf: account.hub$client.brand === 'bw' --></ul><hub-button type="bank" text="account.content.makeADeposit" class="banking ng-isolate-scope"><button class="hub-cta" ng-click="action()"><!-- ngIf: text --><span ng-if="text" ng-bind-html="text" class="ng-binding ng-scope">Сделать депозит</span><!-- end ngIf: text --> <!-- ngIf: !text --></button></hub-button><!-- ngIf: account.hub$client.brand === 'bi' --><!-- ngRepeat: link in account.accountLinks track by $index --><h4 class="widget-link game-history" ng-repeat="link in account.accountLinks track by $index" ng-click="link.action();"><span class="ng-binding">История игр </span></h4><!-- end ngRepeat: link in account.accountLinks track by $index --><h4 class="widget-link transaction-history" ng-repeat="link in account.accountLinks track by $index" ng-click="link.action();"><span class="ng-binding">История транзакций</span></h4><!-- end ngRepeat: link in account.accountLinks track by $index --><h4 class="widget-link responsible-gaming" ng-repeat="link in account.accountLinks track by $index" ng-click="link.action();"><span class="ng-binding">Ответственная игра</span></h4><!-- end ngRepeat: link in account.accountLinks track by $index --><h4 class="widget-link logout-link"><a ng-click="account.logout('ConfirmLogout')" ng-bind-html="account.content.logOut" class="ng-binding">Выйти</a></h4></div></section></div><div class="cf" ng-click="header.openWidget('account');"><img class="icon" src="/lobby/Images/Icons/header/account.png" alt="Account"><div class="text" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'account'  }"><h3 class="title ng-binding" ng-bind-html="header.hub$session.username">loggedOutUser</h3><h4 class="info ng-binding loader" ng-class="{ 'loader' : header.hub$account.data.TotalBalance === undefined }"></h4></div></div></div><div class="widget-item header-tier-widget" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'tier'  }"><!-- uiView: tier --><div ui-view="tier" class="ng-scope"><section class="widget tier-widget ng-scope" ng-class="{ 'active' : tier.hub$interface.widgets.isOpen &amp;&amp; tier.hub$interface.widgets.active === 'tier' }"><div ng-show="!tier.loyaltyHasLoaded" class="loader"></div><div class="user-refresh-data ng-hide" ng-show="tier.manualRefreshData" ng-click="tier.refreshLoyaltyData()"><div class="reload-icon"></div></div><div ng-show="tier.loyaltyHasLoaded &amp;&amp; !tier.manualRefreshData" class="ng-hide"><header><div class="tier-info"><h3 class="tier-color " ng-bind-html="tier.content.currentTier"></h3><h4 ng-bind-html="tier.content.currentTierText" class="ng-binding">Ваш уровень</h4></div><div class="tier-info"><h3 class="tokens ng-binding"></h3><h4 ng-bind-html="tier.content.currentTokensText" class="ng-binding">Уже заработано</h4></div></header><section class="countdown-section cf"><p class="countdown-text ng-binding" ng-bind-html="tier.content.tierCountdown">Чтобы пройти на новый уровень, заработайте необходимое число пунктов до конца срока. До него осталось:</p><table class="timer"><tbody><tr class="numbers"><td class="ng-binding"></td><td>:</td><td class="ng-binding"></td><td>:</td><td class="ng-binding"></td><td>:</td><td class="ng-binding"></td><td></td></tr><tr class="letters"><td class="ng-binding">дней</td><td></td><td class="ng-binding">час.</td><td></td><td class="ng-binding">мин.</td><td></td><td class="ng-binding">сек.</td><td></td></tr></tbody></table></section><!-- ngIf: tier.hub$widget.isOpen && tier.hub$widget.active === 'tier' --><footer><h4 class="widget-link"><span ng-click="tier.openModal('TierTokens')" ng-bind-html="tier.content.tierTokens" class="ng-binding">Жетоны уровня — что это?</span></h4><h4 class="widget-link"><span ng-click="tier.openModal('TierBenefits')" ng-bind-html="tier.content.tierBenefits" class="ng-binding">Привилегии уровня</span></h4></footer></div></section></div><div class="cf" ng-click="header.openWidget('tier');"><img class="icon" ng-src="/lobby/Images/Icons/header/tier_silver.png" alt="Tier" src="/lobby/Images/Icons/header/tier_silver.png"><div class="text" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'tier'  }"><h3 class="title ng-binding" ng-bind-html="header.content.tierText">Ваш уровень</h3><h4 class="info  loader" ng-class="{ 'loader' : !header.hub$session.currentTier }" ng-bind-html="header.content.tier"></h4></div></div></div><div class="widget-item header-points-widget" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'points' }"><!-- uiView: points --><div ui-view="points" class="ng-scope"><section class="widget points-widget ng-scope" ng-class="{ 'active' : loyalty.hub$interface.widgets.isOpen &amp;&amp; loyalty.hub$interface.widgets.active === 'points',
+                     'inactive': loyalty.wd$loyalty.details.loyalty.LoyaltyBalance < 5000 }"><div ng-show="!loyalty.loyaltyHasLoaded" class="loader"></div><!-- ngIf: loyalty.hub$client.type === 'viper' && !loyalty.loyaltyHasLoaded --><!-- ngIf: loyalty.loyaltyHasLoaded --></section></div><div class="cf" ng-click="header.openWidget('points');"><img class="icon" src="/lobby/Images/Icons/header/plus_icon.png" alt="Tier"><div class="text" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'points' }"><h3 class="title ng-binding" ng-bind-html="header.content.plusPointsTitle">Пункты Plus </h3><h4 class="info ng-binding loader" ng-class="{ 'loader' : header.wd$loyalty.details.loyalty.LoyaltyBalance === undefined }"></h4></div></div></div><!-- ngIf: ::header.hub$client.subbrand !== 'plus' --><div class="widget-item header-promotions-widget ng-scope" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'promotions' }" ng-if="::header.hub$client.subbrand !== 'plus'"><!-- uiView: promotions --><div ui-view="promotions" class="ng-scope"><section class="widget promotions-widget ng-scope" ng-class="{ 'active' : promotions.hub$interface.widgets.isOpen &amp;&amp; promotions.hub$interface.widgets.active === 'promotions' }"><div class="container"><div ng-show="!promotions.hub$promotions.isReady[promotions.promotionsSubbrand]" class="loader"></div><!-- ngIf: promotions.hub$client.type === 'viper' && !promotions.hub$promotions.isReady[promotions.promotionsSubbrand] --><!-- ngIf: promotions.hub$promotions.isReady[promotions.promotionsSubbrand] && promotions.data.length --><!-- ngIf: promotions.hub$promotions.isReady[promotions.promotionsSubbrand] && !promotions.data.length --></div></section></div><div class="cf" ng-click="header.openWidget('promotions');"><img class="icon" src="/lobby/Images/Icons/header/promotions.png" alt="Promotions"><div class="text" ng-class="{ 'active' : header.hub$interface.widgets.isOpen &amp;&amp; header.hub$interface.widgets.active === 'promotions' }"><h3 class="title ng-binding" ng-bind-html="header.content.promotionsTitle">Предложения</h3><h4 class="info" ng-switch="header.hub$promotions.isReady[header.hub$client.subbrand]"><!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-binding ng-scope">0 </span><!-- end ngSwitchWhen:  --><!-- ngSwitchWhen: false --></h4></div><!-- ngIf: !header.hub$promotionNotification.seen --><span ng-if="!header.hub$promotionNotification.seen" class="ng-scope"><hub-notification data="header.hub$promotionNotification.count" class="notification ng-isolate-scope" ng-class="{ 'active' : header.hub$promotionNotification.count }"><div class="wrapper"><p class="info ng-binding"></p></div></hub-notification></span><!-- end ngIf: !header.hub$promotionNotification.seen --></div></div><!-- end ngIf: ::header.hub$client.subbrand !== 'plus' --><div class="account-info" ng-click="header.openSidebar('account');"><h3 class="username  char-b">loggedOutUser</h3><h4 class="balance ng-binding"></h4></div></span><section class="login-section" ng-show="!header.hub$session.isLoggedIn" ng-class="{ 'processing' : header.seamlessLogin.isProcessing,
+                                'processing-fail' : header.hub$seamlessLogin.errorSummary,
+                                'show-prompt' : header.hub$state.pendingHash &amp;&amp; !header.seamlessLogin.isProcessing }"><form ng-submit="header.logIn(credentials)" name="login" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength"><!-- ngIf: ::header.hub$client.isDesktop --><div class="login-input-container cf ng-scope" ng-if="::header.hub$client.isDesktop"><div class="login-left"><input name="username" required="true" minlength="2" maxlength="20" placeholder="Имя пользователя" ng-model="$parent.credentials.Username" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength"><label ng-click="header.register()" ng-bind-html="header.content.register" class="ng-binding">Зарегистрироваться</label></div><div class="login-right"><input name="password" minlength="0" maxlength="255" required="true" placeholder="Пароль" ng-model="$parent.credentials.Password" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" type="password"><label ng-click="header.forgotPassword()" ng-bind-html="header.content.forgotPassword" class="ng-binding">Забыли пароль?</label></div></div><!-- end ngIf: ::header.hub$client.isDesktop --><div class="login-button-container"><button class="login-button hub-cta" type="submit" name="submit" ng-disabled="login.$invalid" disabled="disabled"><span class="login-button-text ng-binding" ng-bind-html="header.content.login">Подключиться</span></button></div><!-- ngIf: !header.hub$client.isPortable --><span class="logging-in-text ng-binding ng-scope" ng-if="!header.hub$client.isPortable" ng-bind-html="header.content.loggingIn">Подключаемся...</span><!-- end ngIf: !header.hub$client.isPortable --></form><div class="login-error-message error-prompt ng-hide" ng-show="header.seamlessLogin.isInvalid"><p ng-bind-html="header.seamlessLogin.errorSummary" class="ng-binding"></p><div class="close-button" ng-click="header.closeErrorMessage();">✕</div></div><div class="login-error-message login-prompt ng-hide" ng-show="header.hub$state.pendingHash &amp;&amp; !header.seamlessLogin.isInvalid"><span ng-bind-html="header.content.loginPrompt" class="ng-binding">Подключитесь или регистрируйтесь</span> <button class="hub-cta register-button ng-binding" ng-bind-html="header.content.register" ng-click="header.register()">Зарегистрироваться</button></div></section><section class="header-buttons" ng-class="{ 'ready-reveal' : header.hub$session.isLoggedIn }"><hub-button type="liveChat" class="chat ng-isolate-scope"><button class="hub-cta" ng-click="action()"><!-- ngIf: text --> <!-- ngIf: !text --><span ng-if="!text" ng-bind-html="cta.text" class="ng-binding ng-scope">Свяжитесь с нами</span><!-- end ngIf: !text --></button></hub-button><hub-button type="bank" class="banking ng-isolate-scope"><button class="hub-cta" ng-click="action()"><!-- ngIf: text --> <!-- ngIf: !text --><span ng-if="!text" ng-bind-html="cta.text" class="ng-binding ng-scope">Банк</span><!-- end ngIf: !text --></button></hub-button></section></section></div></div></header>
+
+<div class="betwayHeader-height-offset"></div>
+
+<span ng-controller="complianceCtrl as compliance" class="ng-scope">
+    <!-- ngIf: compliance.hub$client.brand === 'bi' -->
+</span>
+
+<div class="complianceIcons-height-offset"></div>
+
+
+
+<!-- uiView: play --><div ui-view="play" class="ng-scope"><!-- uiView:  --><ui-view class="ng-scope"></ui-view></div>
+
+<div id="swfObject"></div>
+
+        <div class="hub-view main-view">
+
+			<section class="hub-hero">
+
+				<!-- uiView: hero --><section ui-view="hero" class="ng-scope"><!-- ngRepeat: promotion in hero.promotions track by $index --><section class="hero-promotion ng-scope active" ng-repeat="promotion in hero.promotions track by $index" ng-class="{ 'active' : promotion === hero.hub$hero.active }"><img class="hero-image" ng-class="{ 'empty': !promotion.Image }" ng-src="https://images.thebetwaygroup.com/headers/ImageSet3230/3230_jeyfwimhrna_Casino.jpg" src="https://images.thebetwaygroup.com/headers/ImageSet3230/3230_jeyfwimhrna_Casino.jpg"><div class="promotion-content"><div class="hero-text char-b ng-binding" ng-bind-html="promotion.Title"><h1>Бонус приветствия казино до 1000 €/$</h1></div><button class="hub-cta casino" ng-click="hero.submit(promotion);"><div class="promotion-cta-text ng-binding" ng-bind-html="promotion.Message1"><p>Сыграть</p></div></button></div></section><!-- end ngRepeat: promotion in hero.promotions track by $index --><section class="hero-promotion ng-scope" ng-repeat="promotion in hero.promotions track by $index" ng-class="{ 'active' : promotion === hero.hub$hero.active }"><img class="hero-image" ng-class="{ 'empty': !promotion.Image }" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2930/2930_st4qas0r2fs_2930_jotnhjm3nl4_language-RU_blackjack.jpg" src="https://images.thebetwaygroup.com/headers/ImageSet2930/2930_st4qas0r2fs_2930_jotnhjm3nl4_language-RU_blackjack.jpg"><div class="promotion-content"><div class="hero-text char-b ng-binding" ng-bind-html="promotion.Title"><h1>Джекпот растет</h1>
+<p>Уже несколько игроков стали миллионерами, благодаря игровому автомату Mega Moolah. Станете ли вы обладателя следующего джекпота?</p></div><button class="hub-cta casino" ng-click="hero.submit(promotion);"><div class="promotion-cta-text ng-binding" ng-bind-html="promotion.Message1">Играть сейчас</div></button></div></section><!-- end ngRepeat: promotion in hero.promotions track by $index --><section class="hero-promotion ng-scope" ng-repeat="promotion in hero.promotions track by $index" ng-class="{ 'active' : promotion === hero.hub$hero.active }"><img class="hero-image" ng-class="{ 'empty': !promotion.Image }" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2931/2931_cl2fpdzo3np_language-EN_Highlander_1860x1000.jpg" src="https://images.thebetwaygroup.com/headers/ImageSet2931/2931_cl2fpdzo3np_language-EN_Highlander_1860x1000.jpg"><div class="promotion-content"><div class="hero-text char-b ng-binding" ng-bind-html="promotion.Title"><h1>Останется только один...</h1>
+<p>Примите участие в борьбе бессмертных и получите свою награду в игровом автомате Highlander™.</p></div><button class="hub-cta casino" ng-click="hero.submit(promotion);"><div class="promotion-cta-text ng-binding" ng-bind-html="promotion.Message1">Играть сейчас</div></button></div></section><!-- end ngRepeat: promotion in hero.promotions track by $index --></section>
+
+                    <section class="hero-widgets ng-scope" ng-controller="heroWidgetsCtrl as heroWidgets" ng-class="{ 'hidden' : !heroWidgets.areVisible }">
+
+                        <span ng-controller="winnersCtrl as winners" class="ng-scope">
+                            <hub-winners-feed class="hub-winners ng-isolate-scope" feed="winners.feed" ua-key="winners.hub$client.uaKey" ng-class="{ 'active' : winners.isVisible }"><section class="winners-feed"><h2 class="winners-title" ng-transclude=""><span class="ng-binding ng-scope">
+
+                                Последние победители
+                            </span></h2><ul class="winner-container"><!-- ngRepeat: winner in feed track by $index --></ul><hr></section></hub-winners-feed>
+					    </span>
+                        <span ng-controller="jackpotCtrl as pjp" class="ng-scope">
+
+                            <hub-pjp data="pjp.data" class="ng-isolate-scope"><div class="jackpot-feed font-h4" ng-click="action()"><h4 class="jackpot-title ng-binding" ng-bind-html="data.content.jackpotTitle"></h4><p hub-ticker="" class="jackpot-ticker ng-isolate-scope" currency="hub$session.currency" value="data.progressiveJackpot"><span class="value ng-binding">$0.00</span></p></div></hub-pjp>
+                        </span>
+                    </section>
+            </section>
+
+                <span ng-controller="myTermsCtrl as terms" ng-class="{ 'hide-terms' : terms.hub$session.isLoggedIn }" class="terms-container ng-scope">
+                    <hub-hero-terms><p class="terms-text ng-binding isLoaded" ng-class="{ 'isLoaded': true }" ng-bind-html="terms.content.termsText">*Только для новых игроков. Необходимо подписаться. 100% бонус на первый депозит, минимальная сумма €/$20. Дополнительные бонусы на второй и третий депозит. Максимальная сумма бонусов €/$1000. Необходимо разыграть бонус 50 раз. Лимиты на выплаты. <a href="https://www.betway.com/ru/policies/bonus/">Oстальные условия</a></p></hub-hero-terms>
+                </span>
+            
+			<!-- uiView: grid --><section ui-view="grid" class="grid-container ng-scope"><div hub-sticky="" offset="419" class="ng-scope"><!-- ngInclude: 'lobby.categories/categories.html' --><section ng-controller="categoriesCtrl as categories" ng-include="'lobby.categories/categories.html'" class="ng-scope"><!-- ngIf: categories.hub$client.subbrand !== 'plus' && !categories.hub$client.isPortable --><header class="header cf ng-scope" ng-class="{ 'loaded' : hub$games.isFinished }" ng-if="categories.hub$client.subbrand !== 'plus' &amp;&amp; !categories.hub$client.isPortable" ng-style="{ 'width' : categories.hub$gamesGrid.width + 'px' }" style="width: 978px;"><div class="categories-list"><ul class="list-items" ng-style="{ 'transform' : 'translateX(-' + (categories.categoryIndex * categories.categoryWidth) + 'px)' }" style=""><!-- ngRepeat: category in hub$games.categories track by $index --></ul></div><button class="home-button" ng-click="categories.changeCategory('home');" wd-analytics="" wdcategory="games grid" wdaction="home icon" wdlabel="home category selected" wdbindevent="click"><div class="icon"></div></button><div class="block"><div class="favourites-container" ng-click="categories.changeCategory('favourites');" ng-class="{ 'active': categories.$state.params.categoryId === 'favourites'}"><button class="favourites-button" ng-class="{ 'active-category': categories.$state.params.categoryId === 'favourites' &amp;&amp; hub$games.data.favourites.length,
+                                'has-favourites': hub$games.data.favourites.length,
+                                'updating': categories.hub$favourites.isUpdating }"><div class="icon"></div><p class="text ng-binding">0</p></button> <span class="favourites-text ng-binding" ng-bind-html="categories.content.favourites">Избранное</span></div><!-- ngIf: categories.hub$client.brand === 'bi' && categories.hub$client.type !== 'viper' --><hub-search><div class="form-container"><form class="search-form ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" name="searchForm" ng-class="{ 'active' : hub$games.isFinished }"><input id="searchGames" class="search-box font-h4 ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" ng-model="categories.searchTerm" ng-focus="categories.openSearch();" ng-change="search(categories.searchTerm)" ng-blur="categories.closeSearch(categories.searchTerm);" ng-minlength="2" maxlength="40" autocomplete="off" placeholder="Искать среди всех игр" name="search" required="" type="search"></form><div class="search-dropdown" hub-keypress="" ng-class="{ 'open' : categories.hub$dropdown.isOpen['search'] }"><p class="search-title ng-binding" ng-bind-html="categories.content.searchInstructions" ng-hide="categories.hub$search.term"><p>Наберите слово, чтобы начать поиск...</p></p><ul class="result-list"><!-- ngRepeat: game in sortedGames track by $index --></ul><div class="no-match ng-hide" ng-show="categories.searchTerm &amp;&amp; sortedGames.length < 1"><p class="text ng-binding" ng-bind-html="categories.content.noMatchFound"><p>Ничего не найдено</p></p><span>:</span> <span class="text ng-binding"></span></div></div></div></hub-search></div><!-- ngRepeat: link in categories.viperLinks --><!-- ngIf: categories.hub$session.isLoggedIn && categories.hub$client.brand === 'bs' --><div class="category-dropdown"><div class="button-container"><input class="button font-h4" ng-click="categories.hub$dropdown.toggle('categories')" ng-blur="categories.hub$dropdown.close('categories')" ng-class="{ 'open': categories.hub$dropdown.isOpen['categories'] }" wd-analytics="" wdcategory="category selector" wdaction="click category" wdlabel="category dropdown selected" wdbindevent="click" value="Категории" type="button"></div><ul class="list-items" ng-class="{ 'open' : categories.hub$dropdown.isOpen['categories'] }"><!-- ngRepeat: category in hub$games.categories track by $index --></ul><div class="clear"></div></div><div class="shadow"></div></header><!-- end ngIf: categories.hub$client.subbrand !== 'plus' && !categories.hub$client.isPortable --><div class="nav-arrow left ng-scope" ng-click="categories.shiftNavigationLeft();"><div class="icon"></div></div><div class="nav-arrow right ng-scope" ng-click="categories.shiftNavigationRight(1);"><div class="icon"></div></div></section><div hub-width=""><!-- uiView: gamesGrid --><section class="grid-ui-view ng-scope" ui-view="gamesGrid"><div class="gamesGrid umbraco-games ng-scope" ng-class="{ 'loaded' : hub$games.isFinished }"><ul class="umbraco-games-grid"><!-- ngRepeat: game in (hub$games.data[gamesGrid.$state.params.categoryId] | limitTo: hub$gamesGrid.limit) track by $index --></ul><div class="loader" ng-show="!hub$games.isFinished"></div><div class="no-favourites ng-hide" ng-show="gamesGrid.$state.params.categoryId === 'favourites' &amp;&amp; !hub$games.data.favourites.length"><p class="text ng-binding" ng-bind-html="gamesGrid.content.noFavouritesFound"><p>Кликните на изображение сердца, чтобы добавить игру в избранное</p></p></div><div class="no-recently-played ng-hide" ng-show="gamesGrid.$state.params.categoryId === 'recently-played' &amp;&amp; !hub$games.data['recently-played'].length"><p class="text ng-binding" ng-bind-html="gamesGrid.content.noRecentlyPlayed"><p>No recent games found</p></p></div></div></section></div></div></section>
+        </div>
+             <section ng-controller="regionsCtrl as regions" class="ng-scope">
+
+                <!-- ngIf: !regions.hub$session.isLoggedIn --><div class="welcome-regions ng-scope isLoaded" ng-class="{ 'isLoaded': true }" ng-if="!regions.hub$session.isLoggedIn">
+
+﻿
+
+
+
+
+
+<ul class="regions-list">
+            <li class="region-item cf ng-isolate-scope" wd-scroll-class="" trigger="reveal"><div class="triggerWrapper" ng-class="{'reveal' : elementWasReached }" ng-transclude="">
+
+                <div class="content-container ng-scope">
+
+                    <img class="main-image" src="https://images.thebetwaygroup.com/headers/ImageSet3204/3204_rjampkkszvs_language-en_casino1.png" alt="Welcome Bonus">
+                    <div class="content">
+                        <div class="body">
+
+                            <h2>Бонус приветствия</h2>
+<p>Казино Betway поможет вам выиграть, поэтому все новые игроки получают бонус за регистрацию до 1000$/€. Сделайте свой первый депозит и мы немедленно его удвоим. Сделайте еще два депозита и получите еще больше!</p>
+<p><strong>1-й депозит</strong><br>Сделайте первый депозит и получите 100% бонус до 250$/€</p>
+<p><strong>2-й депозит</strong><br>Сделайте второй депозит и получите 25% бонус до 250$/€</p>
+<p><strong>3-й депозит</strong><br>Сделайте третий депозит и получите 50% бонус до 500$/€</p>
+<p><strong>Воспользуйтесь этими предложениями и получите дополнительные 1000$/€ для игры!</strong></p>
+<p><a href="https://casino.betway.com/ru/policies/bonus/">Правила и условия</a></p>
+
+                        </div>
+                        <div class="region-cta" ng-click="regions.launchRegister(&quot;0&quot;, &quot;<p>Здравствуй, бонус!</p>&quot;)">
+                            <div class="slant-box">
+                                <div class="slant"></div>
+                                <img class="icon" src="/images/i-playingCards.png" alt="Palying Cards">
+                            </div>
+                            <div class="text">
+                                <p>Здравствуй, бонус!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li class="region-item cf ng-isolate-scope" wd-scroll-class="" trigger="reveal"><div class="triggerWrapper" ng-class="{'reveal' : elementWasReached }" ng-transclude="">
+
+                <div class="content-container ng-scope">
+
+                    <img class="main-image" src="https://images.thebetwaygroup.com/headers/ImageSet3205/3205_e4g5z0u0eel_EN_region2.png" alt="Welcome Bonus">
+                    <div class="content">
+                        <div class="body">
+
+                            <h2><a href="https://casino.betway.com/ru/online-roulette/">Рулетка</a></h2>
+<p>Самая традиционная игра казино. Независимо от вашего бюджета и навыков игры, в казино Betway вы найдете тот вид <a href="https://casino.betway.com/ru/online-roulette/">рулетки</a>, который подходит именно вам.</p>
+<p>Рулетка всегда привлекала множество игроков из-за своей простоты и больших выигрышей. Поэтому, если желаете выиграть – испробуйте свою удачу в этой игре.</p>
+
+                        </div>
+                        <div class="region-cta" ng-click="regions.launchRegister(&quot;1&quot;, &quot;<p>Пусть крутится рулетка!</p>&quot;)">
+                            <div class="slant-box">
+                                <div class="slant"></div>
+                                <img class="icon" src="/images/i-playingCards.png" alt="Palying Cards">
+                            </div>
+                            <div class="text">
+                                <p>Пусть крутится рулетка!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li class="region-item cf ng-isolate-scope" wd-scroll-class="" trigger="reveal"><div class="triggerWrapper" ng-class="{'reveal' : elementWasReached }" ng-transclude="">
+
+                <div class="content-container ng-scope">
+
+                    <img class="main-image" src="https://images.thebetwaygroup.com/headers/ImageSet3206/3206_kbpovftqhrw_betway-179.jpg" alt="Welcome Bonus">
+                    <div class="content">
+                        <div class="body">
+
+                            <h2>Британский игрок выиграл £13 213 838,68</h2>
+<p>Один единственный ход. Столько понадобилось, чтобы выиграть <a href="https://blog.betway.com/other-sports/casino/british-soldier-wins-world-record-jackpot-and-vows-to-spend-it-on-family-first/">более 13 миллионов фунтов в одном из прогрессивных игровых автоматов</a> в нашем казино.</p>
+<p>Хэйвуд, английский солдат из Чешира стал миллионером, сделав ставку всего в 25 пенсов в игровом автомате Mega Moolah. По словам счастливого победителя, он до сих пор не может поверить в свою удачу.</p>
+<p>Джекпот растет изо дня в день. Станете ли вы следующим миллионером нашего казино? <a href="https://casino.betway.com/ru/register/">Есть только один способ ответить на этот вопрос…</a></p>
+
+                        </div>
+                        <div class="region-cta" ng-click="regions.launchRegister(&quot;2&quot;, &quot;<p>Начните свое приключение Betway</p>&quot;)">
+                            <div class="slant-box">
+                                <div class="slant"></div>
+                                <img class="icon" src="/images/i-playingCards.png" alt="Palying Cards">
+                            </div>
+                            <div class="text">
+                                <p>Начните свое приключение Betway</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li class="region-item cf ng-isolate-scope" wd-scroll-class="" trigger="reveal"><div class="triggerWrapper" ng-class="{'reveal' : elementWasReached }" ng-transclude="">
+
+                <div class="content-container ng-scope">
+
+                    <img class="main-image" src="https://images.thebetwaygroup.com/headers/ImageSet3207/3207_yaiwxb3yc0h_Slot%20machine.png" alt="Welcome Bonus">
+                    <div class="content">
+                        <div class="body">
+
+                            <h2><a href="https://casino.betway.com/ru/online-slots/">Игровые автоматы</a></h2>
+<p>Ищете захватывающие игровые автоматы? Вы их нашли! Казино Betway предлагает более 500 игровых автоматов..</p>
+<p>Игровые автоматы появились в 1880-х и вполне понятно, почему они сразу начали пользоваться успехом. Только в игровых автоматах можно выиграть прогрессивный джекпот на несколько миллионов.</p>
+<p>В казино Betway есть <a href="https://casino.betway.com/ru/online-slots/">игровые автоматы</a> на любой вкус – убедитесь в этом сами!</p>
+
+                        </div>
+                        <div class="region-cta" ng-click="regions.launchRegister(&quot;3&quot;, &quot;<p>Внимание, на старт...играйте!</p>&quot;)">
+                            <div class="slant-box">
+                                <div class="slant"></div>
+                                <img class="icon" src="/images/i-playingCards.png" alt="Palying Cards">
+                            </div>
+                            <div class="text">
+                                <p>Внимание, на старт...играйте!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+            <li class="region-item cf ng-isolate-scope" wd-scroll-class="" trigger="reveal"><div class="triggerWrapper" ng-class="{'reveal' : elementWasReached }" ng-transclude="">
+
+                <div class="content-container ng-scope">
+
+                    <img class="main-image" src="https://images.thebetwaygroup.com/headers/ImageSet3208/3208_rj0hpm2ka2o_Blackjack.png" alt="Welcome Bonus">
+                    <div class="content">
+                        <div class="body">
+
+                            <h2><a href="https://casino.betway.com/ru/online-blackjack/">Блэкджек</a></h2>
+<p>Это классика азартных игр. Многие по сей день называют блэкджек двацать одно или очко. Главная задача игры – обыграть дилера, набрав двадцать одно очко.</p>
+<p>Сумеете ли вы выиграть? Узнайте за любым столом <a href="https://casino.betway.com/ru/online-blackjack/">блэкджека </a>в нашем казино или в <a href="https://livecasino.betway.com/ru">Live Casino</a>!</p>
+
+                        </div>
+                        <div class="region-cta" ng-click="regions.launchRegister(&quot;4&quot;, &quot;<p>Обыграйте дилера</p>&quot;)">
+                            <div class="slant-box">
+                                <div class="slant"></div>
+                                <img class="icon" src="/images/i-playingCards.png" alt="Palying Cards">
+                            </div>
+                            <div class="text">
+                                <p>Обыграйте дилера</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></li>
+
+</ul>
+                   
+                </div><!-- end ngIf: !regions.hub$session.isLoggedIn -->
+            </section>
+        <span ng-controller="footerCtrl as footer" ng-show="footer.$stateParams.categoryId === 'home' || footer.hub$client.subbrand !== 'plus'" limit="footer.hub$games.data[footer.hub$games.activeGameRule || footer.$stateParams.categoryId].length" class="ng-scope">
+            <footer class="BWL-mainFooter ng-isolate-scope active" ng-class="{ 'active' : true }" hub-in-view="">
+
+    <div class="BWL-mainFooter__upper">
+
+        <!-- ngInclude: 'lobby.languages/selector.html' --><div class="BWL-mainFooter__upper__languageSelector ng-scope" ng-include="'lobby.languages/selector.html'"><div ng-controller="languagesCtrl as languages" class="ng-scope"><!-- ngIf: languages.hub$languages.length > 1 --><select ng-options="language.text for language in languages.hub$languages track by language.id" ng-if="languages.hub$languages.length > 1" ng-model="languages.currentLanguage" ng-change="languages.changeLanguage()" value="" class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" name=""><option label="Dansk" value="da">Dansk</option><option label="Deutsch" value="de">Deutsch</option><option label="English" value="en">English</option><option label="Español" value="es">Español</option><option label="Français" value="fr">Français</option><option label="Suomi" value="fi">Suomi</option><option label="Italiano" value="it">Italiano</option><option label="Norsk" value="no">Norsk</option><option label="Português" value="pt">Português</option><option label="Русский" value="ru" selected="selected">Русский</option><option label="Svenska" value="sv">Svenska</option></select><!-- end ngIf: languages.hub$languages.length > 1 --></div></div>
+
+		<!-- ngInclude: 'Footer/links.html' --><div class="BWL-footerLinks BWL-mainFooter__upper__footerLinks ng-scope" ng-controller="footerLinksCtrl as footerLinks" ng-include="'Footer/links.html'"><ul class="BWL-mainFooter__upper__footerLinks__list ng-scope"><!-- ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://thebetwaygroup.com/" target="_self" alt="Корпоративный Betway" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://thebetwaygroup.com/" wdbindevent="click" href="https://thebetwaygroup.com/">Корпоративный Betway</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betwaypartners.com/" target="_self" alt="Партнерская программа" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betwaypartners.com/" wdbindevent="click" href="https://betwaypartners.com/">Партнерская программа</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/contact" target="_self" alt="Свяжитесь с нами" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/contact" wdbindevent="click" href="https://betway.com/ru/contact">Свяжитесь с нами</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/help/contact/" target="_self" alt="Чат" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/help/contact/" wdbindevent="click" href="https://betway.com/ru/help/contact/">Чат</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/help/payout-percentages/" target="_blank" alt="Проценты выплат" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/help/payout-percentages/" wdbindevent="click" href="https://betway.com/ru/help/payout-percentages/">Проценты выплат</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/terms/responsible-gaming/" target="_self" alt="Ответственная игра" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/terms/responsible-gaming/" wdbindevent="click" href="https://betway.com/ru/terms/responsible-gaming/">Ответственная игра</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://casino.betway.com/ru/policies/bonus/" target="_self" alt="Правила бонуса казино" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://casino.betway.com/ru/policies/bonus/" wdbindevent="click" href="https://casino.betway.com/ru/policies/bonus/">Правила бонуса казино</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/terms/" target="_self" alt="Правила и условия" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/terms/" wdbindevent="click" href="https://betway.com/ru/terms/">Правила и условия</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="http://www.gambleaware.co.uk/" target="_self" alt="BeGambleAware" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:http://www.gambleaware.co.uk/" wdbindevent="click" href="http://www.gambleaware.co.uk/">BeGambleAware</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/terms/privacy/" target="_self" alt="Конфиденциальность и безопасность" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/terms/privacy/" wdbindevent="click" href="https://betway.com/ru/terms/privacy/">Конфиденциальность и безопасность</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://betway.com/ru/terms/responsible-gaming/" target="_self" alt="18+" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://betway.com/ru/terms/responsible-gaming/" wdbindevent="click" href="https://betway.com/ru/terms/responsible-gaming/">18+</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://casino.betway.com/ru/casino-game-rules/" target="_self" alt="Правила игры в казино" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://casino.betway.com/ru/casino-game-rules/" wdbindevent="click" href="https://casino.betway.com/ru/casino-game-rules/">Правила игры в казино</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://casino.betway.com/ru/casino-games-strategy/" target="_self" alt="Стратегия игры в казино" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://casino.betway.com/ru/casino-games-strategy/" wdbindevent="click" href="https://casino.betway.com/ru/casino-games-strategy/">Стратегия игры в казино</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://casino.betway.com/ru/history-of-casino-games/" target="_self" alt="История казино" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://casino.betway.com/ru/history-of-casino-games/" wdbindevent="click" href="https://casino.betway.com/ru/history-of-casino-games/">История казино</a></li><!-- end ngRepeat: item in footerLinks.links --><li class="BWL-mainFooter__upper__footerLinks__listItem ng-scope" ng-repeat="item in footerLinks.links"><a class="BWL-footerLinks__link BWL-footerLinks__link ng-binding" ng-href="https://sports.betway.com/ru/sports/" target="_self" alt="Ставки онлайн" ng-bind-html="item.title | TrustAsHtml" wd-analytics="" wdcategory="Footer Corporate" wdaction="Event: Footer Corporate Links" wdlabel="Footer Corporate Footer Link:https://sports.betway.com/ru/sports/" wdbindevent="click" href="https://sports.betway.com/ru/sports/">Ставки онлайн</a></li><!-- end ngRepeat: item in footerLinks.links --></ul></div>
+
+        <div class="BWL-mainFooter__upper__supportText font-h4 ng-binding" ng-bind-html="footer.content.support"><h3>Помощь</h3><p>Если в дальнейшем не желаете получить наши рекламные предложения, свяжитесь с нашей службой поддержки:</p><p><a href="mailto:support@betway.com">ru-support@betway.com</a></p></div>
+
+        <div class="BWL-mainFooter__upper__logo">
+            <a href="http://www.whufc.com/" target="_blank">
+                <img class="BWL-mainFooter__upper__logo__image" ng-src="https://images.thebetwaygroup.com/headers/ImageSet1522/1522_atgubtokie1_language-RU_WHSponsors.jpg" alt="West Ham Logo" src="https://images.thebetwaygroup.com/headers/ImageSet1522/1522_atgubtokie1_language-RU_WHSponsors.jpg">
+            </a>
+        </div>
+    </div>
+
+    <div class="BWL-mainFooter__partsDivider"></div>
+
+    <div class="BWL-mainFooter__lower">
+
+        <div class="BWL-mainFooter__lower__licenseText">
+
+            <img src="/lobby/Images/betwayLogo.png" alt="Betway Logo">
+            <h4 class="BWL-mainFooter__lower__licenseText__text font-h4 ng-binding" ng-bind-html="footer.content.license"><p>Бренд Betway управляется мальтийской компанией Betway Limited (C39710), зарегистрированной по адресу 9 Empire Stadium Street Gzira GZR 1300. Betway Limited работает в Великобритании по лицензии Комиссии азартных игр Великобритании. Номер лицензии: 000-039372-R-319367-010. Вне Великобритании Betway Limited работает под наблюдением и по лицензии Комиссии азартных игр Республики Мальта (MGA). Номера лицензий: MGA/CL1/302/2006 (выдана 29 июня, 2014 года), MGA/CL1/1258/2016 (выдана 16 ноябрь, 2016 года), MGA/CL2/396/2007 (выдана 30 апреля, 2012 года) и MGA/CL3/302/2006 (выдана 29 июня, 2014 года). Betway Limited также зарегистрировано на <a href="https://betway.com/ru/terms/ibas/" target="_blank">I.B.A.S</a> и является членом <a href="https://betway.com/ru/terms/ESSA/" target="_blank">ESSA</a>.</p></h4>
+        </div>
+
+        <div class="BWL-mainFooter__lower__icons">
+
+			<!-- ngInclude: 'Footer/payment-icons.html' --><div class="BWL-mainFooter__lower__bankingOptions ng-scope" ng-controller="paymentIconsCtrl as paymentIcons" ng-include="'Footer/payment-icons.html'"><ul class="BWL-bankingOptions BWL-mainFooter__region__bankingIcons ng-scope"><!-- ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2012/2012_mjjodkjnbou_bank-icon-credit-cards.jpg&quot;,&quot;alt&quot;:&quot;creditcards&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__creditcards" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2012/2012_mjjodkjnbou_bank-icon-credit-cards.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2012/2012_mjjodkjnbou_bank-icon-credit-cards.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2011/2011_o4hf1enzbpc_bank-icon-visaElectron.jpg&quot;,&quot;alt&quot;:&quot;visaelectron&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__visaelectron" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2011/2011_o4hf1enzbpc_bank-icon-visaElectron.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2011/2011_o4hf1enzbpc_bank-icon-visaElectron.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2428/2428_q5vxn2vlhh5_bank-icon-paypal.jpg&quot;,&quot;alt&quot;:&quot;paypal&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__paypal" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2428/2428_q5vxn2vlhh5_bank-icon-paypal.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2428/2428_q5vxn2vlhh5_bank-icon-paypal.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2430/2430_zy0ncleqgyk_bank-icon-skrill.jpg&quot;,&quot;alt&quot;:&quot;skrill&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__skrill" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2430/2430_zy0ncleqgyk_bank-icon-skrill.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2430/2430_zy0ncleqgyk_bank-icon-skrill.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2427/2427_abeetwtb4bq_bank-icon-neteller.jpg&quot;,&quot;alt&quot;:&quot;neteller&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__neteller" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2427/2427_abeetwtb4bq_bank-icon-neteller.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2427/2427_abeetwtb4bq_bank-icon-neteller.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --><!-- ngIf: icon.imageUrl --><li class="BWL-mainFooter__region__bankingIcons__item ng-scope" ng-repeat="icon in paymentIcons.icons" ng-if="icon.imageUrl" wd-analytics="" wdcategory="Footer Banking" wdaction="Event: Footer Banking icons" wdlabel="Footer Banking :{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2429/2429_dsrdqwmvqbi_bank-icon-paysafecard.jpg&quot;,&quot;alt&quot;:&quot;paysafecard&quot;}" wdbindevent="click"><a ng-href="https://betway.com/ru/help/banking/" class="BWL-bankingOptions__item__url BWL-mainFooter__region__bankingIcons__item__paysafecard" href="https://betway.com/ru/help/banking/"><img alt="payment icon" ng-src="https://images.thebetwaygroup.com/headers/ImageSet2429/2429_dsrdqwmvqbi_bank-icon-paysafecard.jpg" class="BWL-mainFooter__region__bankingIcons__item__image" src="https://images.thebetwaygroup.com/headers/ImageSet2429/2429_dsrdqwmvqbi_bank-icon-paysafecard.jpg" height="35"></a></li><!-- end ngIf: icon.imageUrl --><!-- end ngRepeat: icon in paymentIcons.icons --></ul></div>
+
+			<!-- ngInclude: 'Footer/compliance-icons.html' --><div class="BWL-complianceIcons BWL-mainFooter__lower__complianceIcons ng-scope" ng-controller="footerComplianceIconsCtrl as footerComplianceIcons" ng-include="'Footer/compliance-icons.html'"><!-- ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Gambling commission" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/Betway Gambling Commission Link/" href="/lobby/ru/launch/linkname/Betway Gambling Commission Link/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2418/2418_c3tz3feepin_gamblingcommision.png" class="BWL-complianceIcons__link__image" alt="Gambling commission" src="https://images.thebetwaygroup.com/headers/ImageSet2418/2418_c3tz3feepin_gamblingcommision.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--gambleAware" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/GambleAware/" href="/lobby/ru/launch/linkname/GambleAware/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2419/2419_qghebqizx3w_gambleaware.png" class="BWL-complianceIcons__link__image" alt="gambleAware" src="https://images.thebetwaygroup.com/headers/ImageSet2419/2419_qghebqizx3w_gambleaware.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Ecogra" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="http://www.ecogra.org/certificates/certificate.aspx?cid=246" href="http://www.ecogra.org/certificates/certificate.aspx?cid=246"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2420/2420_uac4t5kne2h_safe-and-fair.png" class="BWL-complianceIcons__link__image" alt="Ecogra" src="https://images.thebetwaygroup.com/headers/ImageSet2420/2420_uac4t5kne2h_safe-and-fair.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--MGA" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/Betway LGA Link/" href="/lobby/ru/launch/linkname/Betway LGA Link/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet1906/1906_eyuhjnzmci5_mga.png" class="BWL-complianceIcons__link__image" alt="MGA" src="https://images.thebetwaygroup.com/headers/ImageSet1906/1906_eyuhjnzmci5_mga.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Ibas" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/Link to IBAS/" href="/lobby/ru/launch/linkname/Link to IBAS/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet1909/1909_alexp4gncqa_ibas.png" class="BWL-complianceIcons__link__image" alt="Ibas" src="https://images.thebetwaygroup.com/headers/ImageSet1909/1909_alexp4gncqa_ibas.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Essa" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/ESSA/" href="/lobby/ru/launch/linkname/ESSA/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2399/2399_anbwkycafcs_Banking_Essa.png" class="BWL-complianceIcons__link__image" alt="Essa" src="https://images.thebetwaygroup.com/headers/ImageSet2399/2399_anbwkycafcs_Banking_Essa.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Responsible Gambling Trust" ng-repeat="icon in footerComplianceIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="/lobby/ru/launch/linkname/Responsible Gambling Trust/" href="/lobby/ru/launch/linkname/Responsible Gambling Trust/"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2656/2656_upkpvixp5s2_language-none_currency-none_whatever.png" class="BWL-complianceIcons__link__image" alt="Responsible Gambling Trust" src="https://images.thebetwaygroup.com/headers/ImageSet2656/2656_upkpvixp5s2_language-none_currency-none_whatever.png" width="auto" height="60"></a><!-- end ngRepeat: icon in footerComplianceIcons.icons --></div>
+            
+            <!-- ngIf: footerSocialIcons.hub$client.brand !== 'be' --><!-- ngInclude: 'Footer/social-icons.html' --><div ng-controller="footerSocialIconsCtrl as footerSocialIcons" ng-if="footerSocialIcons.hub$client.brand !== 'be'" ng-include="'Footer/social-icons.html'" class="ng-scope"><!-- ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Facebook" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="https://www.facebook.com/Betway" href="https://www.facebook.com/Betway"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2421/2421_cavegygtegi_facebook.png" class="BWL-complianceIcons__link__image" alt="Facebook" src="https://images.thebetwaygroup.com/headers/ImageSet2421/2421_cavegygtegi_facebook.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Twitter" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="https://twitter.com/betway" href="https://twitter.com/betway"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2422/2422_2wrtdnjp4dk_twitter.png" class="BWL-complianceIcons__link__image" alt="Twitter" src="https://images.thebetwaygroup.com/headers/ImageSet2422/2422_2wrtdnjp4dk_twitter.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--You Tube" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="https://www.youtube.com/channel/UCzrzOItQbqY7akga3rPRoMw" href="https://www.youtube.com/channel/UCzrzOItQbqY7akga3rPRoMw"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2423/2423_vbedwu3cc3e_youtube.png" class="BWL-complianceIcons__link__image" alt="You Tube" src="https://images.thebetwaygroup.com/headers/ImageSet2423/2423_vbedwu3cc3e_youtube.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Google Plus" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="https://plus.google.com/+betway" href="https://plus.google.com/+betway"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2424/2424_sf1hszx3uz5_googleplus.png" class="BWL-complianceIcons__link__image" alt="Google Plus" src="https://images.thebetwaygroup.com/headers/ImageSet2424/2424_sf1hszx3uz5_googleplus.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--App store" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href="https://itunes.apple.com/gb/app/betway-casino-real-money-roulette/id550442071?mt=8" href="https://itunes.apple.com/gb/app/betway-casino-real-money-roulette/id550442071?mt=8"><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2425/2425_ksaxl3jgkgj_appstore.png" class="BWL-complianceIcons__link__image" alt="App store" src="https://images.thebetwaygroup.com/headers/ImageSet2425/2425_ksaxl3jgkgj_appstore.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --><a class="BWL-complianceIcons__link BWL-complianceIcons__link--Google Store" ng-repeat="icon in footerSocialIcons.icons" wd-analytics="" wdcategory="Footer Compliance" wdaction="Event: Footer Compliance Link" wdlabel="Footer Compliance" wdbindevent="click" ng-href=""><img ng-src="https://images.thebetwaygroup.com/headers/ImageSet2426/2426_yhvjkpwub5z_android.png" class="BWL-complianceIcons__link__image" alt="Google Store" src="https://images.thebetwaygroup.com/headers/ImageSet2426/2426_yhvjkpwub5z_android.png" width="auto" height="32"></a><!-- end ngRepeat: icon in footerSocialIcons.icons --></div><!-- end ngIf: footerSocialIcons.hub$client.brand !== 'be' -->
+        </div>
+    </div>
+</footer>
+        </span>
+            <div ng-class="{ 'isLoaded': true }" class="BWL-mainFooter__lower__languages isLoaded">
+                  
+
+    <span>На других языках:</span>
+                <a href="https://casino.betway.com/lobby/en/">English</a> 
+                <a href="https://casino.betway.com/lobby/da/">Dansk</a> 
+                <a href="https://casino.betway.com/lobby/de/">Deutsch</a> 
+                <a href="https://casino.betway.com/lobby/es/">Español</a> 
+                <a href="https://casino.betway.com/lobby/fi/">Suomi</a> 
+                <a href="https://casino.betway.com/lobby/fr/">Français</a> 
+                <a href="https://casino.betway.com/lobby/it/">Italiano</a> 
+                <a href="https://casino.betway.com/lobby/no/">Norsk</a> 
+                <a href="https://casino.betway.com/lobby/pt/">Português</a> 
+                <a href="https://casino.betway.com/lobby/sv/">Svenska</a> 
+
+
+            </div>
+
+
+<hub-anchor><div class="anchor ng-scope" ng-controller="anchorCtrl as anchor" ng-class="{ 'active' : showButton }" ng-click="anchor.scrollToY(0)"><div class="circle">^</div></div></hub-anchor>
+
+<aside class="hub-messages">
+
+    <div class="last-login-message ng-scope" ng-controller="lastLoginCtrl as lastLogin" ng-class="{ 'show' : lastLogin.isActive &amp;&amp; lastLogin.hub$client.type !== 'viper' &amp;&amp; lastLogin.$state.current.name !== 'home.play' }">
+        <div class="text">
+            <span ng-bind-html="::lastLogin.content.message" class="ng-binding">Ultimo Access al casino' e' avvenuto in data</span>
+            <span ng-bind-html="::lastLogin.content.lastLoginDate" class="ng-binding"></span>
+        </div>
+
+        <div class="close" ng-click="lastLogin.dismiss()"></div>
+    </div>
+
+    <div ng-controller="cookieCtrl as cookies" class="ng-scope">
+
+        <!-- ngIf: !cookies.hub$session.isLoggedIn && cookies.$state.current.name !== 'home.play' --><div class="cookie-disclaimer ng-scope show" wd-cookie-disclaimer="" ng-if="!cookies.hub$session.isLoggedIn &amp;&amp; cookies.$state.current.name !== 'home.play'" ng-class="{ 'show' : !cookies.hub$session.isLoggedIn }"><!-- ngIf: !cookie.isAccepted --><div ng-if="!cookie.isAccepted" ng-transclude="" class="ng-scope">
+
+            <!-- ngIf: !cookies.device.isAndroid --><div class="text ng-binding ng-scope" ng-if="!cookies.device.isAndroid" ng-bind-html="'BUNS.Global.CookieDisclaimer' | Translate"><p>На сайте Betway используются куки-файлы. Ознакомьтесь с <a href="https://betway.com/ru/terms/privacy/">правилами защиты данны</a>, чтобы узнать больше.</p></div><!-- end ngIf: !cookies.device.isAndroid -->
+
+            <!-- ngIf: cookies.device.isAndroid -->
+
+            <div class="close ng-scope" ng-click="cookie.isAccepted = true"></div>
+        </div><!-- end ngIf: !cookie.isAccepted --></div><!-- end ngIf: !cookies.hub$session.isLoggedIn && cookies.$state.current.name !== 'home.play' -->
+    </div>
+</aside>
+
+
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+
+        var isPortable = false;
+        var brandCodeGlobal = "bw";
+        var subbrandGlobal = "casino";
+        var cssSubbrand = "casino";
+        var device = "desktop";
+        var client = "flash";
+        var webConfig = {
+            brand: "bw"
+        };
+	</script>
+	
+
+
+
+    <script src="https://app.launchdarkly.com/snippet/ldclient.min.js" defer=""></script>
+    <script src="/lobby/bower_components/angular/angular.js" defer=""></script>
+    <script src="/lobby/dist/js-production/libs-1513183423577.min.js" onload="﻿
+
+
+
+angular.module('hub.session', [])
+        .factory('hub$session', [&quot;$rootScope&quot;, function($rootScope){
+
+            var service = {
+				bannerTag: '5cdfccab-1927-4cdc-b171-c7e8a933ee6b',
+				casinoId: 1941,
+                currency: '$',
+                isLoggingOut: false,
+                currentTier: '',
+                forceLogin: function(){
+                    $rootScope.loggedInState = &quot;logged-in&quot;;
+                    this.isLoggedIn = true;
+                },
+                isLoggedIn: false,
+		        hasNewTerms: false,
+                nextTier: '',
+                time: 0,
+				username: '' || 'loggedOutUser',
+            };
+
+            $rootScope.loggedInState = service.isLoggedIn ? &quot;logged-in&quot; : &quot;logged-out&quot;;
+            return service;
+        }]);
+
+angular.module('hub.client', [])
+        .constant( 'hub$client', {
+            brand: 'bw',
+			country: 'Russian Federation',
+            isLiveCasino: false ? true : false,
+            isDesktop: true,
+			isMobile: false,
+			ipAddress: '10.249.14.2',
+            isPortable: false,
+			ldKey: '5942a5c8e6e9690bed7dc25a',
+            language: 'ru',
+            protocol: window.location.protocol + &quot;//&quot;,
+			server: 'EPROC-LBY-WEB42',
+            subbrand: 'casino',
+            tld: &quot;.&quot; + window.location.host.split('.').pop(),
+            type: 'flash',
+            uaKey: 'UA-1515961-1'
+        });
+
+angular.module('hub.query', [])
+        .factory(&quot;hub$query&quot;, function(){
+
+			return {
+
+				debug: false,
+                promotions: &quot;&quot;,
+                sessionReminder:{
+                    isActive: &quot;&quot;,
+                    timer:&quot;&quot;
+                }, 
+				spinsport: &quot;&quot;, 
+				endOfMonth: &quot;&quot;,
+				newTerms: &quot;&quot;,
+				newUser: &quot;&quot;,
+				time: &quot;&quot;
+            }
+        });
+
+angular.module('hub.launch-darkly-data', [])
+    .constant( 'hub$launchDarklyData', 
+
+
+{
+    &quot;default&quot; : false,
+    &quot;new-user-banking-pop-up&quot;: false,
+    &quot;lobby-shared-games-endpoint&quot;: false,
+    &quot;lobby-session-reminder&quot; : true,
+    &quot;lobby-confirm-logout&quot;: false,
+    &quot;lobby-recently-played-category&quot;: true,
+    &quot;lobby-remove-winners-feed&quot;: false, 
+    &quot;lobby-show-practice-play-for-slots&quot;: true,
+    &quot;lobby-registration-prompt&quot;: false,
+    &quot;lobby-vegas-search-games&quot;: false,
+    &quot;lobby-new-flag&quot;: false,
+    &quot;lobby-new-terms-pop-up-fix&quot;: true,
+    &quot;lobby-register-link-on-plus&quot;: true,
+
+    //  A/B tests
+    &quot;lobby-otherlevels-a-b-test&quot;: 'default',
+
+});    
+
+angular.module('hub.umbraco-content', [])
+    .constant(&quot;hub$headerContent&quot;, 
+
+
+[{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;sports&quot;,&quot;title&quot;:&quot;sports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;inplay&quot;,&quot;title&quot;:&quot;in-play&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;casino&quot;,&quot;title&quot;:&quot;casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;livecasino&quot;,&quot;title&quot;:&quot;live casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;esports&quot;,&quot;title&quot;:&quot;esports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;vegas&quot;,&quot;title&quot;:&quot;vegas&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;poker&quot;,&quot;title&quot;:&quot;poker&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;bingo&quot;,&quot;title&quot;:&quot;bingo&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;blog&quot;,&quot;title&quot;:&quot;blog&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;plus&quot;,&quot;title&quot;:&quot;plus&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}}]);
+
+angular.module('hub.razor-content', []).value( 'BWL',  
+
+{brandCode:&quot;BW&quot;,subBrand:{id:&quot;casino&quot;,url:&quot;http://casino.betway.com&quot;},locale:{language:&quot;ru&quot;,countryCode:&quot;RU&quot;},currency:{symbol:&quot;$&quot;,iso:&quot;USD&quot;,id:&quot;100&quot;},user:{registeredSubBrandID:&quot;&quot;}} )
+        .constant( 'hub$betwayLogo',        'https://images.thebetwaygroup.com/headers/ImageSet3272/3272_mxblms2avq3_Casino.png')
+        .constant( 'hub$betwayVegasLogo',        'https://images.thebetwaygroup.com/headers/ImageSet3273/3273_dhd0fcd3nkj_vegasNew.png')
+		.constant( 'hub$promotionSubbrands', 
+
+
+[ 
+	{ 
+		id: &quot;sports&quot;, 
+		title: &quot;sports&quot; 
+	}, 
+	{ 
+		id: &quot;casino&quot;, 
+		title: &quot;casino&quot;
+	}, 
+
+        
+            {
+                id: &quot;vegas&quot;,
+                title: &quot;vegas&quot;
+            },
+        
+   
+
+		
+			{
+				id: &quot;bingo&quot;,
+				title: &quot;bingo&quot;
+			}
+		
+] )
+        .constant( 'hub$forgotPasswordLink','/ru/launch/linkname/Casino Forgotten Password/')
+        .constant( 'hub$registerLink',		
+
+
+&quot;/ru/launch/linkname/register casino bw/&quot;)
+		.constant( 'hub$liveChatLink',		 'https://z2.liveper.sn/api/account/88060653/route/campaign/877861732/engagement/877861932' )
+        .value( 'hub$navigationBrands',		 
+
+
+[{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;sports&quot;,&quot;title&quot;:&quot;sports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;inplay&quot;,&quot;title&quot;:&quot;in-play&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;casino&quot;,&quot;title&quot;:&quot;casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;livecasino&quot;,&quot;title&quot;:&quot;live casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;esports&quot;,&quot;title&quot;:&quot;esports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;vegas&quot;,&quot;title&quot;:&quot;vegas&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;poker&quot;,&quot;title&quot;:&quot;poker&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;bingo&quot;,&quot;title&quot;:&quot;bingo&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;blog&quot;,&quot;title&quot;:&quot;blog&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;plus&quot;,&quot;title&quot;:&quot;plus&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}}] )
+        .value( 'hub$translationsData',	     {
+	&quot;lobby - brands&quot;: {
+		&quot;sports&quot;: &quot;sports&quot;,
+		&quot;inplay&quot;: &quot;in-play&quot;,
+		&quot;casino&quot;: &quot;casino&quot;,
+        &quot;livecasino&quot;: &quot;live casino&quot;,
+		&quot;vegas&quot;: &quot;vegas&quot;,
+		&quot;poker&quot;: &quot;poker&quot;,
+		&quot;bingo&quot;: &quot;bingo&quot;,
+		&quot;blog&quot;:  &quot;blog&quot;,
+		&quot;esports&quot;: &quot;esports&quot;,
+		&quot;plus&quot;: &quot;plus&quot;
+	},
+	&quot;lobby - hero&quot;: {
+		&quot;plus title&quot;: &quot;Live Casino&quot;,
+		&quot;plus description&quot;: &quot;Садитесь и играйте&quot;,
+		&quot;plus cta&quot;: &quot;Начать игру&quot;,
+		&quot;plus link&quot;: &quot;https://casino.betway.com/lobby/ru/#/play/759&quot;,
+        &quot;plus mobile link&quot;: &quot;https://sports.betway.com/#/soccer/&quot;,
+        &quot;casino reg terms 1&quot;: &quot;*Только для новых игроков. Необходимо подписаться. 100% бонус на первый депозит, минимальная сумма &amp;euro;/$20. Дополнительные бонусы на второй и третий депозит. Максимальная сумма бонусов &amp;euro;/$1000. Необходимо разыграть бонус 50 раз. Лимиты на выплаты. <a href='https://www.betway.com/ru/policies/bonus/'>Oстальные условия</a>&quot;,
+        &quot;vegas reg terms 1&quot;: &quot;*Только для новых игроков. Необходимо подписаться. 100% бонус на первый депозит, минимальная сумма &amp;euro;/$20. Дополнительные бонусы на второй и третий депозит. Максимальная сумма бонусов &amp;euro;/$1000. Необходимо разыграть бонус 50 раз. Лимиты на выплаты. <a href='https://vegas.betway.com/ru/policies/bonus/'>Oстальные условия </a>&quot;,
+        &quot;plus reg terms 1&quot;: &quot;&amp;shy;&quot;,
+        &quot;livecasino reg terms 1&quot;: &quot;* Только для новых игроков. Необходимо подписаться. 100% бонус на первый депозит. Дополнительные бонусы на второй и третий депозиты. Максимальная сумма &amp;euro;1000. Необходимо разыграть бонус 50 раз. Лимиты на выплаты. <a href='/ru/policies/bonus/'>Остальные правила </a>&quot;
+	},
+    &quot;lobby - header&quot;: {
+        &quot;tierText&quot;: &quot;Ваш уровень&quot;,
+        &quot;tier text&quot;: &quot;&quot;,
+        &quot;plus points text&quot;: &quot;&quot;,
+        &quot;regulation terms IT&quot;: &quot;&quot;
+    },
+    &quot;lobby - common&quot;: {
+        &quot;bank&quot;: &quot;Банк&quot;,
+        &quot;my balance&quot;: &quot;Мой баланс&quot;,
+		&quot;make a deposit&quot;: &quot;Сделать депозит&quot;,
+		&quot;deposit now&quot;: &quot;&quot;,
+		&quot;thank you&quot;: &quot;&quot;,
+		&quot;not now&quot;: &quot;&quot;,
+		&quot;live chat&quot;: &quot;Свяжитесь с нами&quot;,
+        &quot;login&quot;: &quot;Подключиться&quot;,
+		&quot;register&quot;: &quot;Зарегистрироваться&quot;,
+		&quot;forgot password&quot;: &quot;Забыли пароль?&quot;,
+		&quot;username&quot;: &quot;Имя пользователя&quot;,
+		&quot;password&quot;: &quot;Пароль&quot;,
+		&quot;logout&quot;: &quot;Выйти&quot;,
+		&quot;loading&quot;: &quot;Идет загрузка...&quot;,
+        &quot;logging in&quot;: &quot;Подключаемся...&quot;,
+		&quot;login prompt&quot;: &quot;Подключитесь или регистрируйтесь&quot;,
+        &quot;ok&quot;: &quot;&quot;,
+        &quot;welcome&quot;: &quot;желанный,&quot;,
+        &quot;sign up now text&quot;: &quot;Sign Up&quot;,
+        &quot;sign up now description&quot;: &quot;Sign up now&quot;
+    },
+	&quot;lobby - winners&quot;: {
+		&quot;recent winners&quot;: &quot;Последние победители&quot;,
+    },
+    &quot;lobby - jackpots&quot;: {
+		&quot;progressive jackpots&quot;: &quot;<p>Сумма джекпота</p>&quot;,
+    },
+    &quot;lobby - account&quot;: {
+        &quot;my account&quot;: &quot;Мой счет&quot;,
+		&quot;cash account&quot;: &quot;<p>Денежный счет</p>&quot;,
+		&quot;bonus account&quot;: &quot;<p>Бонусный счет</p>&quot;,
+		&quot;bingo bonus&quot;: &quot;<p>Бинго бонус</p>&quot;,
+		&quot;game history&quot;: &quot;История игр &quot;,
+		&quot;transaction history&quot;: &quot;История транзакций&quot;,
+		&quot;responsible gaming&quot;: &quot;Ответственная игра&quot;,
+        &quot;player protection IT&quot;: &quot;&quot;,
+        &quot;account number IT&quot;: &quot;&quot;,
+        &quot;concessionaireId IT&quot;: &quot;&quot;,
+        &quot;tax code IT&quot;: &quot;&quot;,
+        &quot;expiry date IT&quot;: &quot;&quot;,
+        &quot;account Deactivated&quot;: &quot;Il tuo conto è stato disattivato. <br>Contatta l'assistenza clienti per maggiori informazioni.&quot;,
+        &quot;account Closed&quot;: &quot;Il tuo conto è stato chiuso. A causa delle normative, puoi aprire un nuovo conto solo 15 giorni dopo la chiusura del precedente.<br> Per ulteriori informazioni, contatta il servizio di assistenza del casinò.&quot;,
+        &quot;account Blocked&quot;: &quot;Il tuo conto è stato bloccato. Contatta l'assistenza clienti per maggiori informazioni.&quot;,
+        &quot;account Dormant&quot;: &quot;Il tuo conto è dormiente. Contatta l'assistenza clienti per maggiori informazioni.&quot;
+	},
+	&quot;lobby - points&quot;: {
+		&quot;plus points&quot;: &quot;Пункты Plus &quot;,
+		&quot;my plus points&quot;: &quot;Мои пункты Plus&quot;,
+		&quot;redeeming plus points&quot;: &quot;Обмен пунктов Plus<br>&quot;,
+		&quot;collecting plus points&quot;: &quot;Как получить пункты?&quot;,
+		&quot;full terms&quot;: &quot;Правила и условия&quot;,
+		&quot;step 1&quot;: &quot;<p>Пункты Plus для обмена:</p>&quot;,
+		&quot;step 2&quot;: &quot;&quot;,
+		&quot;ready&quot;: &quot;<p>Обменять</p>&quot;,
+		&quot;disabled&quot;: &quot;<p>К сожалению, на вашем счете не достаточно пунктов Plus, чтобы совершить обмен.</p>&quot;,
+		&quot;success&quot;: &quot;<p>Готово!</p>&quot;,
+		&quot;casino option&quot;: &quot;Кредиты казино&quot;,
+		&quot;bingo option&quot;: &quot;Бинго бонусы&quot;,
+		&quot;sports option&quot;: &quot;Бесплатные ставки&quot;
+    },
+    &quot;lobby - promotions&quot;: {
+		&quot;promotions title&quot;: &quot;Предложения&quot;,
+		&quot;none available&quot;: &quot;Сейчас предложений нет.&quot;
+    },
+    &quot;lobby - tier&quot;: {
+        &quot;more tokens&quot;: &quot;Жетоны уровня — что это?&quot;,
+        &quot;tier benefits&quot;: &quot;Привилегии уровня&quot;,
+		&quot;current tier text&quot;: &quot;Ваш уровень&quot;,
+		&quot;current tokens text&quot;: &quot;Уже заработано&quot;,
+        &quot;Blue&quot;: &quot;Синий&quot;,
+        &quot;Bronze&quot;: &quot;Бронзовый&quot;,
+        &quot;Silver&quot;: &quot;Серебряный&quot;,
+        &quot;Gold&quot;: &quot;Золотой&quot;,
+        &quot;Platinum&quot;: &quot;Платиновый&quot;,
+        &quot;Diamond&quot;: &quot;Diamond<br>&quot;,
+        &quot;Black&quot;: &quot;Черный&quot;,
+        &quot;maintain&quot;: &quot;Maintain&quot;,
+        &quot;progress to&quot;: &quot;Progress to&quot;,
+        &quot;to maintain Blue&quot;: &quot;Needed to maintain Blue&quot;,
+        &quot;to maintain Bronze&quot;: &quot;Needed to Maintain Bronze&quot;,
+        &quot;to maintain Silver&quot;: &quot;Needed to Maintain Silver&quot;,
+        &quot;to maintain Gold&quot;: &quot;Needed to Maintain Gold&quot;,
+        &quot;to maintain Platinum&quot;: &quot;Needed to Maintain Platinum&quot;,
+        &quot;to maintain Black&quot;: &quot;Needed to Maintain Black&quot;,
+        &quot;upgrade to Bronze&quot;: &quot;Needed to Upgrade to Bronze&quot;,
+        &quot;upgrade to Silver&quot;: &quot;Needed to Upgrade to Silver&quot;,
+        &quot;upgrade to Gold&quot;: &quot;Needed to Upgrade to Gold&quot;,
+        &quot;upgrade to Platinum&quot;: &quot;Needed to Upgrade to Platinum&quot;,
+        &quot;upgrade to Black&quot;: &quot;Needed to Upgrade to Black&quot;,
+        &quot;higher tier countdown&quot;: &quot;Чтобы сохранить свой уровень, наберите нужное количество жетонов до конца срока. У вас осталось:&quot;,
+		&quot;lower tier countdown&quot;: &quot;Чтобы пройти на новый уровень, заработайте необходимое число пунктов до конца срока. До него осталось:&quot;,
+	},
+	&quot;lobby - games&quot;: {
+		&quot;play&quot; : &quot;<p>Игра на деньги</p>&quot;,
+		&quot;practice&quot;: &quot;Демо игра&quot;,
+        &quot;new&quot;: &quot;<p>Новинка</p>&quot;,
+		&quot;favourite&quot;: &quot;<p>Избранное</p>&quot;,
+        &quot;favourites&quot;: &quot;Избранное&quot;,
+        &quot;more games title&quot;: &quot;Больше игр -&quot;,
+        &quot;recently played title&quot;: &quot;Недавно игранные&quot;,
+        &quot;play for real&quot;: &quot;<p>Играть</p>&quot;,
+        &quot;select game type&quot;: &quot;Категории&quot;,
+		&quot;no match found&quot;: &quot;<p>Ничего не найдено</p>&quot;,
+		&quot;search all games&quot;: &quot;Искать среди всех игр&quot;,
+        &quot;no favourites found&quot;: &quot;<p>Кликните на изображение сердца, чтобы добавить игру в избранное</p>&quot;,
+        &quot;no recent games found&quot;: &quot;<p>No recent games found</p>&quot;,
+        &quot;not completed&quot;: &quot;<p>The following games are not complete.</p>&quot;,
+        &quot;incomplete instructions&quot;: &quot;<p>Complete these games in order to start a new game. To complete the game run out of bets you left on hold and then close the game.</p>&quot;,
+        &quot;search instructions&quot;: &quot;<p>Наберите слово, чтобы начать поиск...</p>&quot;
+    },
+	&quot;lobby - date&quot;: {
+		&quot;dd&quot; : &quot;дней&quot;,
+		&quot;hh&quot; : &quot;час.&quot;,
+		&quot;mm&quot; : &quot;мин.&quot;,
+		&quot;ss&quot; : &quot;сек.&quot;
+	},
+    &quot;lobby - modals&quot;: {
+        &quot;my offers&quot;: &quot;<p>Мои предложения</p>&quot;,
+        &quot;casino terms&quot;: &quot;<p><strong>ПРАВИЛА И УСЛОВИЯ ПРЕДЛОЖЕНИЙ</strong></p><p>Игровой счет клиента делиться на денежный и бонусный счета. Средства в бонусном счете нельзя выплатить, но их можно использовать для того, чтобы делать ставки. Игрок не может сделать выплату до тех пор, пока не будут выполнены требования по розыгрышу бонуса или не будет потрачен весь остаток бонусного счета.</p><p>1. Если не указано обратное, то любой бонус должен быть разыгран в казино 30 раз перед тем, как произвести выплату.</p><p>2. Ставки на различных играх в разной мере повлияют на выполнения требования по розыгрышу бонуса.</p><p><strong>100%</strong> – игровые автоматы и игры<br><strong>50%</strong> - настольный покер, Red Dog, рулетка (кроме American Roulette), Casino War, Sic Bo<br><strong>10%</strong> - Video/Power покер (кроме All Aces Video/Power), блэкджек (кроме классического блэкджека), Craps и Baccarats<br><strong>2%</strong> – классический блэкджек, All Aces Video/Power покер</p><p><strong>300%</strong> - спортивные ставки с коэффициентом 1,75 и выше<br><strong>100%</strong> - спортивные ставки с коэффициентом от 1,3 до 1,74<br><strong>0%</strong> - ставки в спортивном тотализаторе с коэффициентом ниже 1,29</p><p>Если вы играете в исключенные игры (0%) до выполнения требований по розыгрышу бонуса казино, то соглашаетесь с тем, что казино сохраняет за собой право аннулировать любые выигрыши с этих игр по своему усмотрению.</p><p>Заметьте! Ставки сделанные в режиме Gamble игровых автоматов и Double в играх видео-покера не идут в счет выполнения требований по розыгрышу бонуса.<br>3. Выигрыши со ставок на бонусные деньги, сделанные после того, как выполнены требования по розыгрышу бонуса, зачисляются на денежный счет частями по 10€/$.</p><p>a) Бонус можно разыграть, делая ставки на настоящие деньги. Ставки вначале снимаются с денежного счета. При отсутствии остатка на денежном счету используется бонусный счет.</p><p>б) Выигрыши со ставок, сделанных с денежного счета будут зачислены на денежный счет. Выигрыши со ставок, сделанных с бонусного счета будут зачислены на бонусный счет.</p><p>в) Выигрыши по ставкам, сделанным с бонусного счета, вначале пополняют остаток бонусного счета за вычетом каких-либо передвижений между бонусным и денежным счетами, а остаток зачисляется на денежный счет.</p><p>4. Игрок не может вывести деньги со счета казино до того, как будут выполнены требования по розыгрышу или разыгран весь остаток бонусного счета. Если вы желаете выплатить первоначальный бонус, при этом потеряв все выигрыши от бонуса и сам бонус, то свяжитесь со службой поддержки.</p><p>5. Чтобы быть в праве получить любые предложения или бонусы, игрок должен использовать валюту, которая является главной в его стране проживания, где находиться регистрированный адрес игрок и от куда он играет. Если данная валюта не доступна, разрешено использовать USD или CAD, или EUR. Заметьте: только игроки, проживающие в Великобритании могут использовать GBP на своем счету. Казино имеет право задержать любые бонусы и выигрыши, если данное правило не соблюдено.</p><p>6. Перед проведением выплат ваша игровая история будет проверена, чтобы удостоверится, что игра была честной. В рамках этих правил нечестной игрой считаются ставки с одинаковыми, равными нулю или низкими лимитами, и хеджевые ставки в течении оборота бонуса. В случае, если будет установлено, что игра была нечестной, мы имеем право задержать выплаты и конфисковать выигрыши.</p><p><strong>Последние изменения</strong>:17.08.2015, 14:00 GMT.</p>&quot;,
+        &quot;bingo terms&quot;: &quot;<p><strong>ПРАВИЛА БИНГО БОНУСОВ (BBZ)</strong></p><p>1. Для покупки бинго билетов сначала используются средства с денежного счета. Средства с бонусного счета используются только когда на денежном счете недостаточно денег. <br>2. Если клиент играет как в бинго, так и в казино, то в силе следующие правила:<br>а) Если игрок выполнил все требования по отыгрыванию бонуса, выигрыши от бинго игр, которые получены за средства с денежного или бонусного счета (Bbz), будут зачислены на денежный счет. <br>б) Если игрок не выполнил все требования по отыгрыванию бонуса выигрыши от бинго игр, которые получены за средства с денежного или бонусного счета (Bbz), будут зачислены на бонусный счет казино до того, как достигнута полученная бонусная сумму. Остальная часть бонуса будет зачислена на денежный счет. <br>3. Бинго бонусы в силе 14 дней, считая с дня, когда они зачислены на счет игрока. <br>4. Число бинго билетов, которое можно приобрести за средства с бонусного бинго счета, ограничено. Betway в праве ввести любые изменения в правила в любой момент.</p><p>Последние изменения: 05.05.2015, 17:12 GMT.<br></p>&quot;,
+        &quot;sports terms&quot;: &quot;<p><strong>Правила бесплатных ставок</strong></p><p>1. Если не указано иначе, срок годности бесплатной ставки - 7 дней с момента ее зачисления на игровой счет.</p><p>2. Бесплатную ставку нельзя разделить; ее нужно использовать одной суммой. Основная сумма бесплатной ставки не будет включена в сумму возможного выигрыша.</p><p>3. Бесплатную ставку нельзя использовать для систем ставок (например, Trixie, Patent, Yankee).</p><p>4. Если ставка, сделанная с помощью бесплатной ставки, будет аннулирована, бесплатная ставка будет возвращена игроку.</p><p>5. Компенсации за неиспользованные бесплатные ставки не будут выдаваться.</p><p>6. Максимальный выигрыш, выплачиваемый с бесплатной ставки, равен 20 000 €/$ (или эквиваленту в другой валюте).</p><p>7. Ставка типа Победа/Место, сделанная бесплатной ставкой, будет считаться одной ставкой, в которую включена ставка на победу и ставка на место. Чтобы игрок смог получить выигрыш с такой ставки, общая сумма выигрыша должна быть больше суммы использованной бесплатной ставки.</p><p>8. Использование бесплатной ставки не дает игроку права на просмотр прямых трансляций спортивных соревнований в тотализаторе Betway.</p><p>9. Эти правила распространяются на все бонусы и предложения доступные в спортивном тотализаторе, кроме бонуса приветствия (бесплатной ставки). Если вам необходима дополнительная информация, пожалуйста, свяжитесь с нашей службой поддержки.</p><p>10. Также как любые другие взаимоотношения с Betway.com, все предложения подчинены общими правилами и условиями пользования Betway.</p><p>11. Если не указано иначе, клиент должен разыграть сумму совершенного депозита по крайней мере один раз, перед тем, как будет выплачен за этот депозит положенный бонус.</p><p>12. Во всех вопросах, связанных с бонусами и предложениями, решающее слово принадлежит Betway, также Betway вправе по своему усмотрению отменить или прервать действие любого предложения. Нарушители правил и условий использования бонусов, могут лишиться права впредь получать бонусы.</p><p>13. Перед подтверждением любых выплат, мы проверим игровую историю клиента, чтобы убедится, что клиент играл честно и не нарушал наших правил и условий. Если будет установлено, что нарушены правила наших предложений или что клиент, самостоятельно или в сговоре с другими лицами (доказательством чему могут служить, например, одинаковые ставки на одни и те же события/коэффициенты в нескольких игровых счетах), делал ставки, которые, благодаря использованному бонусу, бесплатной ставке, возможности Cash Out, повышенному коэффициенту или другой акции, гарантируют клиенту выигрыш, не зависимо от фактического исхода события/матча, на который сделана ставка, Betway вправе аннулировать эти ставки, задержать выплаты и/или конфисковать выигрыши с таких ставок. Также Betway вправе вернуть бесплатные ставки и бонусы выданные клиенту.</p><p><strong>Последние изменения:</strong> 20.03.2015, 14:00 GMT.</p>&quot;,
+        &quot;back&quot;: &quot;<p>назад</p>&quot;,
+        &quot;tier benefits title&quot;: &quot;<p>Что такое Betway Plus?<br></p>&quot;,
+        &quot;tier benefits text&quot;: &quot;<p>Betway Plus - это программа лояльности, которая вознаграждает игроков в казино, тотализаторе и бинго.</p><p>Каждый раз, когда вы играете в Betway, вы зарабатываете жетоны уровня и пункты Plus. От количества набранных жетонов зависит ваш уровень лояльности, а пункты Plus можно обменять на различные бонусы в казино, бинго или спортивном тотализаторе. Узнать свой уровень лояльности и количество заработанных пунктов Plus вы можете, подключившись к своему счету, в правом верхнем углу экрана.</p><p><strong>Жетоны уровня:</strong> от них зависит ваш уровень лояльности. Вы зарабатываете жетоны уровня каждый раз, когда играете в Betway. За каждые 10 &amp;euro;, потраченные на ставки, вы получите 5 жетонов. Чем выше ваш уровень, тем выгоднее вам доступные бонусы и предложения. Уровень лояльности зависит от количества жетонов, заработанных течение предыдущего месяца.</p><p><strong>Пункты Plus:</strong> эти пункты вы тоже получаете за свою игру. Количество заработанных пунктов зависит от типа вами выбранной игры. Их можно обменять на различные бонусы, но только количеством, кратным 5000 пунктов.</p><p><strong>Бонусные пункты Plus:</strong> дополнительные пункты Plus, которые вы получаете за свой уровень лояльности. Например, на уровне лояльности Бронза, клиент получает 10% бонусных пунктов, а на уровне Черный &amp;mdash; 80%.</p><p><strong>Обмен пунктов Plus:</strong> как только вы набрали 5000 пунктов, вы можете их обменять на бонусы казино или бинго, или бесплатную ставку в спортивном тотализаторе. Для этого подключитесь к своему счету и откройте раздел пунктов Plus. Там вы сможете указать, сколько пунктов хотите обменять и на что.</p><p>Чтобы узнать больше, посетите раздел <a href='https://plus.betway.com/lobby/ru/#/faqs'>часто задаваемых вопросов</a>.</p><p><a href='https://promo.betway.com/ru/promotions/terms-and-conditions/?promoid=106751' target='_blank'>*Правила и условия</a></p>&quot;,
+		&quot;benefits disclaimer&quot;: &quot;&quot;,
+        &quot;terms link&quot;: &quot;*правила и условия&quot;,
+        &quot;terms title&quot;: &quot;Правила и условия&quot;,
+        &quot;account status - Deactivated&quot;: &quot;&quot;,
+        &quot;account status - Closed&quot;: &quot;&quot;,
+        &quot;account status - Blocked&quot;: &quot;&quot;,
+        &quot;account status - Dormant&quot;: &quot;&quot;,
+        &quot;session concluding text&quot;: &quot;La sessione di gioco si concluderà in &quot;,
+        &quot;earn plus points text&quot;: &quot;<p>Зарабатывая жетоны уровня, игрок будет достигать более высокого уровня. Чем выше уровень, тем лучше бонус и привилегии. <br>Число заработанных жетонов зависит от ставок, сделанных игроком. Чем больше сумма, вложенная в игру Betway, тем больше жетонов уровня вы получаете. <br>За каждые €10, которые потрачены на ставки, игрок получает 5 жетонов уровня*.<br>* <strong>Ставки в разных играх делают разный взнос на баланс пунктов:</strong></p>&quot;,
+        &quot;casino header&quot;: &quot;<p><strong>Казино</strong></p>&quot;,
+		&quot;sports header&quot;: &quot;<p><strong>Спорт </strong></p>&quot;,
+        &quot;bingo header&quot;: &quot;<p><strong>Бинго</strong></p>&quot;,
+        &quot;points explained&quot; : &quot;<p><strong>Играйте во что пожелаете, Betway вас вознаградит.</strong></p><p>Когда вы заработаете 5000 пунктов Plus, сможете обменять их на один из ниже указанных бонусов:</p><p> </p><ul><li><strong>Кредиты казино &amp;euro;10 (они будут зачислены на ваш бонусный счет)<br /></strong>Эти кредиты можно использовать как в казино, так и спортивном тотализаторе. <br /><a href='/Modals/BonusCreditsTerms'>Нажмите здесь, чтобы ознакомиться с правилами</a>.</li></ul><ul><li><strong>Бинго бонус &amp;euro;10 (он будет зачислен на ваш бонусный счет)<br /></strong>Этот бонус вы можете использовать в бинго играх.<br />В силе общие бинго правила. <br /><a href='/Modals/BingoTerms'>Нажмите здесь, чтобы ознакомиться с правилами</a>.</li></ul><ul><li><strong>Бесплатная ставка &amp;euro;3 (она будет зачислена на счет бесплатных ставок)<br /></strong>Бесплатную ставку можно использовать только в спортивном тотализаторе. <br />В силе общие правила бесплатных ставок. <br /><a href='/Modals/FreeBetsTerms'>Нажмите здесь, чтобы ознакомиться с правилами</a>.</li></ul><p> </p><p>Пункты Plus в силе только 90 дней, считая с того момента, <span style='text-decoration: underline;'><strong>когда они заработаны</strong></span>. <br />Пункты Plus можно обменять частями по 5000.</p>&quot;,
+        &quot;how to get plus points&quot; : &quot;<p><strong>Пункты Plus</strong> — это пункты лояльности, которые наши клиенты получают за свою игру. Заработанные пункты можно обменять на различные бонусы.</p><p>Количество заработанных пунктов зависит от уровня лояльности клиента и типа игры.</p><p>Обменять пункты Plus на бонусы можно только единицам по <strong>5000 пунктов</strong>.</p><p>Пункты Plus <strong>действуют 90 дней</strong> с момента, когда они заработаны.</p><p>Чтобы узнать больше о пунктах Plus, загляните в раздел <strong><a data-mce-href='https://plus.betway.com/lobby/ru/#/faqs' href='https://plus.betway.com/lobby/ru/#/faqs'>часто задаваемых вопросов</a></strong>.</p>&quot;
+    },
+    &quot;lobby - modal titles&quot;: {
+        &quot;Login&quot;: &quot;Подключиться&quot;,
+        &quot;PromoTerms&quot;: &quot;Правила и условия&quot;,
+        &quot;GameHistory&quot;: &quot;История игр &quot;,
+        &quot;TransactionHistory&quot;: &quot;История транзакций&quot;,
+        &quot;TierTokens&quot;: &quot;Жетоны уровня — что это?&quot;,
+        &quot;TierBenefits&quot;: &quot;Привилегии уровня&quot;,
+        &quot;CollectingPlusPoints&quot;: &quot;Как получить пункты?&quot;,
+        &quot;RedeemingPlusPoints&quot;: &quot;Обмен пунктов Plus<br>&quot;,
+        &quot;FullTerms&quot;: &quot;Правила и условия&quot;,
+        &quot;NewTerms&quot;: &quot;<p>New terms and conditions</p>&quot;,
+        &quot;CasinoTerms&quot;: &quot;<p>Bonus Account - General Terms</p>&quot;,
+        &quot;BingoTerms&quot;: &quot;<p>ПРАВИЛА БИНГО БОНУСОВ (BBZ) </p>&quot;,
+        &quot;SportsTerms&quot;: &quot;<p>Free Bets - General Terms</p>&quot;,
+        &quot;HelpFile&quot;: &quot;&quot;,
+        &quot;SessionReminder&quot;: &quot;<p>Tempo di gioco terminato </p>&quot;,
+		&quot;IncompleteGames&quot;: &quot;&quot;
+    },
+    &quot;lobby - new terms modal&quot;: {
+        &quot;general terms&quot;: &quot;<h1>Betway &amp;ndash; правила использования (Правила)</h1><p>Соблюдение этих правил обязательно, если пользуетесь услугами <a href='https://betway.com/.' target='_blank'>https://betway.com/.</a></p><p>Используя услуги Betway, вы подтверждаете, что прочли и поняли эти правила, и знаете, что их выполнение для вас обязательно.</p><p>Если вы не согласны с каким-либо пунктом этих правил, вы обязаны немедленно прекратить использование нашего программного обеспечения и удалить его со своего компьютера, ноутбука или мобильного устройства.</p><p>После того, как вы отметите поле &amp;ldquo;Да, я согласен с этими правилами&amp;rdquo; во время регистрации, вы обязаны соблюдать эти правила, а также этим подтверждаете свое согласие с нашими правилами обработки личных данных, правилами и условиями акций и предложений, и другими правилами, а также дополнениями к упомянутым правилам (далее в тексте &amp;ldquo;Правила&amp;rdquo;).</p><p>Вы обязаны соблюдать эти правила, если используйте наши услуги или программное обеспечение или регистрируйте свою информацию у нас.</p><p><strong>Общие термины, употребляемые в правилах:</strong></p><p><strong>&amp;ldquo;Betway&amp;rdquo;</strong> &amp;ndash; бренд и все продукты, которые доступны в мобильной (играя на смартфоне или планшете) или компьютерной версии <a href='https://betway.com/'>https://betway.com/</a> (играя на персональном компьютере или ноутбуке), в том числе спортивный тотализатор, казино, покер, игры.</p><p><strong>&amp;ldquo;Закрытый счет клиента&amp;rdquo;</strong> &amp;ndash; счет, который был закрыт или заблокирован нами или пользователем.</p><p><strong>&amp;ldquo;Клиент(ы)&amp;rdquo;</strong> &amp;ndash; зарегистрированные пользователи, владельцы активного или закрытого счета.</p><p><strong>'Средства клиента'</strong> - все суммы на счету клиента в Betway Limited, в том числе а) депозиты, сделанные на игровой счет клиента Betway; б) выигрыши уже перечисленные или еще не перечисленные на игровой счет клиента в Betway; в) выплаты с программы лояльности и другие бонусы.</p><p><strong>&amp;ldquo;Игры&amp;rdquo;</strong> &amp;ndash; все возможности игры, предоставленные Betway.</p><p><strong>&amp;ldquo;Интеллектуальная собственность&amp;rdquo;</strong> &amp;ndash; регистрированные и не регистрированные торговые знаки и торговые марки, заявки на торговые знаки и регистрированные торговые знаки и все, что с ними связано &amp;ndash; названия доменов, оформление, характерные элементы дизайна, которые отображаются на интернет-сайтах, любые лицензии, защищаемые авторскими правами, а также любая другая интеллектуальная собственность, которая принадлежит нам или используется нами.</p><p><strong>&amp;ldquo;Использование&amp;rdquo;</strong> &amp;ndash; действие, описаное в этих правилах (пункты 3.1. &amp;ndash; 4.11.), посещение Betway, 'игра' в любые игры или использование нашего 'программного обеспечения' любым способом.</p><p><strong>&amp;ldquo;Зарегистрированный клиент&amp;rdquo;</strong> &amp;ndash; лицо, которое зарегистрировано в нашей системе в качестве клиента и которое открыло счет в порядке, описанном в пункте 3.2.</p><p><strong>&amp;ldquo;Услуги&amp;rdquo;</strong> &amp;ndash; предоставление всех программ, которые необходимы для вашего участия.</p><p><strong>&amp;ldquo;Программное обеспечение&amp;rdquo;</strong> &amp;ndash; любое программное обеспечение, принадлежащее нам или используемое нами нa основании лицензии, которое позволяет клиенту участвовать, включая загружаемые, мобильные или Flash версии любого программного обеспечения, предлагаемой на сайте Betway.</p><p><strong>&amp;ldquo;мы/нас/наше&amp;rdquo;</strong> &amp;ndash; во всем, что касается игр &amp;ndash; Betway Limited включая холдинги и родственные предприятия (где допустимо по контексту).</p><p><strong>&amp;ldquo;Сайт&amp;rdquo;</strong> &amp;ndash; <a href='https://betway.com/' target='_blank'>https://betway.com/</a>.</p><p><strong>&amp;ldquo;Вы/ваш/клиент&amp;rdquo;</strong> &amp;ndash; любое лицо, которое посещает сайт Betway и играет здесь размешенные 'игры'.</p><p><strong>1. О Betway</strong></p><p>Бренд Betway управляется мальтийской компанией Betway Limited (рег. номер C39710) зарегистрировaнной по адресу 9 Empire Stadium Street, Gzira GZR 1300, Malta.</p><p>Регистрируя счет в Betway, вы заключаете договор с Betway Limited о получении услуг азартных игр. Все транзакции между клиентом и Betway происходят на Мальте, где находятся основные серверы. Услуги азартных игр предлагает клиентам Betway Limited.</p><p>Относится к клиентам, проживающим в Великобритании: средства клиентов Betway Limited хранятся в особом, для этого предназначенном банковском счете отдельно от средств предприятия. В случае ликвидации или неплатежеспособности Betway Limited, используя эти средства будут соблюдены законы Республики Мальта, но другие меры предосторожности не предусмотрены. Это отвечает базовым правилам Комиссии азартных игр (basic segregation).</p><p>Информация о всех уровнях защиты средств клиента находится на сайте Комиссии азартных игр: <a href='http://www.gamblingcommission.gov.uk/Consumers/Protection-of-customer-funds.aspx' target='_blank'>Комиссии - Защита средств клиента</a>.</p><p>Больше об этом вы можете узнать, ознакомившись с нашими правилами защиты средств игрока.</p><p><strong>2. Лицензия и контроль деятельности</strong></p><p>Относится к клиентам, не проживающим в Великобритании: Betway Limited работает под наблюдением и по лицензии Комиссии азартных игр Республики Мальта MGA (Malta Gaming Authority).   Номера лицензий:</p><p><strong>Казино</strong> - MGA/CL1/302/2006 (выдана 29.06.2014.)<br /><strong>Тотализатор</strong> - MGA/CL2/302/2006 (выдана 30.04.2012.) <br /><strong>Покер/Бинго</strong> - MGA/CL3/396/2007 (выдана 29.06.2014.)</p><p>Относится к клиентам, проживающим в Великобритании: Betway Limited работает под наблюдением и по лицензии Комиссии азартных игр Великобритании (UK Gambling Commission). Номер лицензии: 000-039372-R-319367-005.</p><p><strong>3. Использование услуг Betway</strong></p><p>3.1. Ограничения</p><p>Вы вправе использовать услуги Betway только в том случае, если вы старше 18 лет.</p><p>Лицам, которые моложе 18 лет, не разрешено играть на Betway.</p><p><strong>ЛИЦО НЕ ВПРАВЕ УЧАСТВОВАТЬ ЕСЛИ ЕГО ЮРИСДИКЦИЕЙ ЯВЛЯЕТСЯ: АФГАНИСТАН, АНГОЛА, АВСТРАЛИЯ, БЕЛЬГИЯ, БОСНИЯ И ГЕРЦЕГОВИНА, БОЛГАРИЯ, ДАНИЯ, ФРАНЦИЯ ИЛИ ЕЕ ЗАМОРСКИЕ ТЕРРИТОРИИ, ФЕДЕРАЛЬНАЯ ЗЕМЛЯ ШЛЕЗВИГ-ГОЛЬШТЕЙН, ГРЕЦИЯ, ГРЕНЛАНДИЯ, ГАЙАНА, ВЕНГРИЯ, ИРАН, ИРАК, ИЗРАИЛЬ, ИТАЛИЯ, ЛНДР (ЛАОС НАРОДНАЯ ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА), ЛИТВА, МЕКСИКА, МЬЯНМА, СЕВЕРНАЯ КОРЕЯ, ПАПУА - НОВАЯ ГВИНЕЯ, ФИЛИППИНЫ, РУМЫНИЯ, РОССИЯ, ЮЖНО-АФРИКАНСКАЯ РЕСПУБЛИКА, ИСПАНИЯ, СИРИЯ, ТУРЦИЯ, УГАНДА, США ИЛИ ИХ ЗАМОРСКИЕ ТЕРРИТОРИИ, ВАНУАТУ, ЙЕМЕН.</strong></p><p><strong>СТАВКИ, СДЕЛАННЫЕ ИЗ ЭТИХ ЮРИСДИКЦИЙ БУДУТ АННУЛИРОВАНЫ, А ЛЮБЫЕ ДЕПОЗИТЫ, СДЕЛАННЫЕ ЛИЦАМИ, КОТОРЫЕ НАХОДЯТСЯ, РАБОТАЮТ ИЛИ ПРОЖИВАЮТ В ДАННЫХ ЮРИСДИКЦИЯХ, БУДУТ ВОЗВРАЩЕНЫ, ВЗИМАЯ АДМИНИСТРАТИВНУЮ КОМИССИЮ В РАЗМЕРЕ 10% ОТ ОБЩЕЙ СУММЫ ДЕПОЗИТОВ, НЕ СЧИТАЯ ЛЮБЫЕ КОМИССИОННЫЕ, КОТОРЫЕ МОЖЕТ ВЗИМАТЬ БАНК ИЛИ ФИНАНСОВОЕ УЧРЕЖДЕНИЕ, КОТОРОЕ ПРОИЗВОДИТ ВОЗВРАТ.</strong></p><p><strong>ЕСЛИ ЖИВЕТЕ В БЕЛЬГИЯ, ДАНИИ, ФЕДЕРАЛЬНАЯ ЗЕМЛЯ ШЛЕЗВИГ-ГОЛЬШТЕЙН, ИТАЛИИ ИЛИ ИСПАНИИ, ВЫ МОЖЕТЕ ИГРАТЬ В ОДНОМ ИЗ НАШИХ ЛИЦЕНЗИРОВАННЫХ КАЗИНО:</strong></p><p><strong>БЕЛЬГИЯ</strong> - <a href='http://www.betway.be' target='_blank'>www.betway.be</a><br /><strong>ДАНИЯ</strong> &amp;ndash; <a href='http://www.betway.dk' target='_blank'>www.betway.dk</a><br /><strong>ИТАЛИЯ</strong> &amp;ndash; <a href='http://www.betway.it' target='_blank'>www.betway.it</a><br /><strong>ШЛЕЗВИГ-ГОЛЬШТЕЙН</strong> -<a href='http://www.betwaysh.de' target='_blank'> www.betwaysh.de</a> (Уже скоро)<br /><strong>ИСПАНИЯ</strong> &amp;ndash; <a href='http://www.betway.es' target='_blank'>www.betway.es</a></p><p><strong>ЛИЦА, НАРУШАЮЩИЕ ПУНКТ 3.1 ИЛИ ЛЮБОЙ ДРУГОЙ ПУНКТ ЭТИХ ПРАВИЛ, НЕ ИМЕЮТ ПРАВО ПОЛУЧАТЬ КАКИЕ-ЛИБО ВЫИГРЫШИ. ЛЮБОЕ ЛИЦО, КОТОРОЕ ПРЕДНАМЕРЕННО НАРУШАЕТ ПУНКТ 3.1 ЭТИХ ПРАВИЛ, МОЖЕТ БЫТЬ ПРИВЛЕЧЕНО К УГОЛОВНОЙ ОТВЕТСТВЕННОСТИ.</strong></p><p>3.2. Проверка личных данных</p><p>Чтобы играть на Betway, необходимо открыть игровой счет. В ходе регистрации счета, вам придется указать данные о себе, среди которых: имя, фамилия, адрес, дата рождения и другие.</p><p>Перед обработкой вами заказанных выплат, мы вправе запросить у вас документы, подтверждающие ваш возраст и адрес, указанные при регистрации счета. Выплаты не будут обработаны до тех пор, пока мы не получим все необходимые документы. Подробнее об этом можете читать в разделе регистрации на нашем сайте. В числе необходимых документов:</p><p>i. копия паспорта, водительских прав или удостоверения личности;<br />ii. копия счета за услуги или товары, который подтверждает ваш адрес (не старше 3х месяцев), например счет за электричество или телекоммуникационные услуги;<br />iii. Копия кредитной, дебетной карты или выписка с финансового счета (важно: выписка с финансового счета должна показывать депозит и не может быть старше 3 месяцев).</p><p>3.3. Подтверждение</p><p>Выплаты могут быть отправлены только регистрированным клиентом. Вы подтверждайте свое согласие с тем, что мы и наши представители вправе по мере необходимости проводить проверку ваших личных данных и вашего права распоряжаться средствами, которые находятся на вашем счету Betway.</p><p>Относится к клиентам, проживающим в Великобритании: если вам не удастся подтвердить свои данные в течении 72 часов после первого депозита на Betway:</p><p>a) ваш свет будет заблокирован;<br />b) вы не сможете играть, до того, как подтвердите свои данные.</p><p>Также мы в праве задержать средства на вашем счете Betway до того момента, когда вы подтвердите свои данные. Если во время проверки окажется, что вы еще не достигли совершеннолетия Betway вернет все депозиты, но аннулирует выигрыши и бонусы.</p><p>3.4. Риск</p><p>Вы согласны с тем, что риск и ответственность за решение играть на Betway лежит на вас. Также вы подтвеождаете то, что используете Betway для развлечения, а не профессиональной деятельности.</p><p>3.5. Приемлемое использование</p><p>Вы обязуетесь соблюдать законы и правила, которые связаны с использованием наших программ и услуг. Мы не несем ответственности за вами совершенные противозаконные действия с нашими программами или услугами. Подтверждая свое согласие с этими правилами, вы также соглашаетесь по мере своих возможностей сотрудничать с нами для того, чтобы обеспечить соблюдение упомянутых законов и правил.</p><p><strong>4. Ваш счет</strong></p><p>4.1. Один счет</p><p>Вы можете открыть и пользоваться только одним игровым счетом. Если вы откроете более одной учетной записи, мы вправе приостановить их действие до тех пор, пока не будут объединены все вам принадлежащие счета и их остатки. После этого, мы закроем все ваши счета, кроме одного, который останется в вашем распоряжении.</p><p>4.2. Точность данных</p><p>Мы просим вас следить за тем, чтобы ваши регистрационные данные оставались точными и актуальными. Если у вас изменился адрес, адрес электронной почты, номер телефона или другие данные, пожалуйста, свяжитесь с нами, чтобы обновить эту информацию.</p><p>4.3. Пароль</p><p>При регистрации счета, вы должны выбрать имя пользователя и пароль. Советуем держать эту информацию в тайне. Любые транзакции на вашем счету останутся в силе, если подтверждены вводом правильного имени пользователя и пароля.</p><p>4.4. Проверка банковских реквизитов</p><p>Если вы используйте на Betway кредитную или дебетовую карту, банковский счет или счет в системе электронных платежей, имя его владельца должно быть таким же, как имя, указанное при регистрации на сайте Betway. Если это не так, счет будет немедленно заблокирован. В таком случае, вам следует связаться с нашей службой поддержки.</p><p>4.5. Отказ от ответственности</p><p>Betway не несёт ответственности за ущерб или убытки, которые возникли или возможно возникнут в связи с нашими услугами. В том числе, задержки или перерывы в работе или передаче данных, потери данных, злоупотребления сайтом или его содержанием, или любые ошибки или упущения в содержании сайта. Betway вправе закрыть или заблокировать ваш счет.</p><p>4.6. Неактивные и заброшенные счета</p><p>4.6.1. Неактивные счета</p><p>Betway будет считать игровой счет неактивным после 12 месяцев с момента последнего подключения к данному счету.</p><p>Для клиентов, которые живут в Великобритании: C неактивного счета будет взиматься ежемесячная плата в 5 &amp;pound; на покрытие административных расходов. Эта плата будет взиматься до того момента, когда на счету больше не останется средств или счет снова станет активным, или останется неактивным более 30 месяцев. Первый раз эта плата будет снята с игрового счета в конце 12-го месяца, считая с момента последнего подключения.</p><p>Для клиентов, которые не живут в Великобритании: C неактивного счета будет взиматься ежемесячная плата в 5 &amp;euro; на покрытие административных расходов. Эта плата будет взиматься до того момента, когда на счету больше не останется средств или счет снова станет активным, или останется неактивным более 30 месяцев. Первый раз эта плата будет снята с игрового счета в конце 12-го месяца, считая с момента последнего подключения.</p><p>4.6.2. Заброшенные счета</p><p>Для клиентов, которые живут в Великобритании: если игровой счет останется неактивным более 30 месяцев, он будет признан заброшенным и будет закрыт/блокирован. счет будет неактивен более 30 месяцев, счет будет закрыт. Если на данном счету будут средства, Betway постарается связаться с клиентом и вернуть ему остаток счета. Если это не удастся, остаток счета будет обнулен. перечислен Комиссии азартных игр Республики Мальта MGA (Malta Gaming Authority).</p><p>Для клиентов, которые не живут в Великобритании: если игровой счет останется неактивным более 30 месяцев, он будет признан заброшенным и будет закрыт/блокирован. счет будет неактивен более 30 месяцев, счет будет закрыт. Если на данном счету будут средства, Betway постарается связаться с клиентом и вернуть ему остаток счета. Если это не удастся, остаток счета будет перечислен Комиссии азартных игр Республики Мальта MGA (Malta Gaming Authority).</p><p>4.7 Переводы между счетами клиентов</p><p>Перевод денежных средств между отдельными игровыми счетами строго запрещен.</p><p>4.8. Проценты</p><p>За остаток по счету не начисляются и не выплачиваются проценты.</p><p>4.9. Блокировка счета</p><p>Betway вправе по своему усмотрению закрыть или прекратить действие игрового счета по следующим причинам:</p><p>- если вы получили выигрыши незаконно, <br />- если вы нарушили правила использования счета.</p><p>В таком случае Betway оповестит вас о принятом решении по электронному адресу, если будет необходимо конфисцировать выигрыши, вся информация будет отправлена MGA, или если вы живете в Великобритании, то Комиссии азартных игр Великобритании. В то время, когда ваш счет заблокирован у вас не будет возможности совершать действия, связанные со счетом.</p><p>4.10. Закрытие счета на время и на совсем</p><p>Если вы желаете закрыть свой счет на время или насовсем, свяжитесь со<a href='https://betway.com/ru/contact/' target='_blank'> службой поддержки</a>. Правила, которые регулируют вопросы, связанные с закрытием счета найдете под пунктом 8.2 и в <a href='https://betway.com/ru/terms/responsible-gaming/' target='_blank'>правилах ответственной игры</a>, пункте 3.2.</p><p>4.11. Игра в долг</p><p>Игра в долг (в кредит) на Betway строго запрещена.</p><p><strong>5. Депозиты и выплата средств</strong></p><p>5.1. Подтверждение данных</p><p>Перед совершением выплаты с вашего игрового счета, вам необходимо предоставить Betway копии документов, подтверждающих ваши данные и подписанное соглашение об игровых услугах.</p><p>5.2. Кредитоспособность</p><p>Betway вправе проверять кредитоспособность игроков, использующих кредитные/дебетовые карточки, на основе данных, предоставленных при регистрации, привлекая для этой цели сторонние предприятия.</p><p>5.3. Копии</p><p>Владелец счета ответствен за создание и хранение копий списка своих транзакций, а также правил и условий использования сайта.</p><p>5.4. Выплаты</p><p>Согласно с правилами Betway, минимальная сумма вывлаты &amp;euro;10 (или эквивалент в другой валюте), выплаты будут проведены на те же методы платежей, с которых совершены депозиты на данный игровой счет. Как указано в параграфе 4.4 этих правил, совершать депозиты на игровой счет можно только с тех кредитных/дебетовых карточек, банковских счетов и счетов в системах электронных платежей, которые зарегистрированы на имя владельца данного игрового счета.</p><p>Заметьте, что из-за необходимости проверить данные клиента, могут возникнуть задержки с обработкой выплат.</p><p>Важно! В связи с правилами Комиссии азартных игра Республики Мальта MGA, для клиента, который не живет в Великобритании,  сделав выплату, которая превышает &amp;euro;2000 (или эквивалент в другой валюте), казино необходимо провести проверку личных данных.</p><p>5.5. Обновление данных</p><p>Чтобы изменить или добавить новые методы платежей, свяжитесь со службой поддержки.</p><p>5.6 Ограничение на выплату выигрышей от бесплатных предложений</p><p>Betway имеет право ограничить выплату выигрыша с бинго бонусов (Bbz)/ бесплатные билеты/ бесплатных бонусов/бесплатных ставок/бесплатных спинов 100$/&amp;euro; или для других стран на сумму эквивалентную $100. Это ограничение в силе, если клиент получил упомянутые бинго бонусы (Bbz)/ бесплатные билеты/ бесплатных бонусов/бесплатных ставок/бесплатных спинов без предварительного депозита, если в правилах и условиях конкретного предложения не указано иначе.</p><p><strong>6. Бонусы</strong></p><p>6.1. Отдельные правила и условия</p><p>Наши акции и предложения бонусов могут действовать согласно отдельным правилам и условиям. Клиенты должны использовать полученные бонусы согласно с правилами и условиями конкретной акции или предложения, в рамках которого бонус получен.</p><p>С правилами и условиями использования бонусов можно ознакомиться:</p><p>Бонусы спортивного тотализатора - <a href='https://sports.betway.com/ru/help/bonus-promotions' target='_blank'>https://sports.betway.com/ru/help/bonus-promotions</a><br />Бонусы казино - <a href='https://casino.betway.com/ru/terms/bonus/' target='_blank'>https://casino.betway.com/ru/terms/bonus/</a><br />Бонусы бинго - <a href='https://bingo.betway.com/ru/terms/bonus/' target='_blank'>https://bingo.betway.com/terms/bonus/</a><br />Бонусы покера - <a href='https://poker.betway.com/ru/promo/' target='_blank'>https://poker.betway.com/ru/promo/</a></p><p>В случае разногласий между этими правилами и правилами акции или предложения, правила и условия акции или предложения имеют преимущественную силу.</p><p>Бинго бонусы/бесплатные бонусы/бесплатные ставки/бонусы бесплатных спинов нельзя перевести или выплатить.</p><p>6.2. Право отмены</p><p>Betway вправе по своему усмотрению отменить акции, бонусы и специальные предложения. Также казино имеет право ограничить выплату выигрыша с бинго бонусов (Bbz)/бесплатных бонусов/бесплатных ставок/бесплатных спинов как это описано в пункте 5.6.</p><p><strong>7. Защита данных</strong></p><p>Betway считает своим долгом защищать личные данные своих клиентов. Betway соблюдает действующие законы и правила по защите личных данных. Если у вас возникли неясности о вопросах защиты личных данных, то вы можете прочитать больше в правилах о Защита личных данных.</p><p>Заметьте, что правила о <a href='https://www.betway.com/ru/terms/privacy/' target='_blank'>Защите личных данных</a> связаны с данными правилами вы соглашаетесь с ними во время регистрации.</p><p>Выразив согласие с перенесением игрового счета в Betway Limited, клиент также подтверждает свое согласие с тем, что вместе с игровым счетом будут перенесены остаток счета и персональные данные, в том числе имя, фамилия, дата и год рождения, использованные методы платежей, контактная информация, история переписки и звонков, история транзакций и посещений.</p><p>Также клиент подтверждает свое согласие получать от Betway Limited рекламные рассылки и маркетинговые извещения по электронной почте, почте, посредством СМС или других сообщений. От получения любых из этих материалов можно отказаться. Для этого нужно связаться со службой <a href='https://betway.com/ru/contact/' target='_blank'>поддержки клиентов</a>.</p><p><strong>8. Ответсвенная игра</strong></p><p>8.1. Политика отвественной игры</p><p>Betway делает все возможное, чтобы сделать вашу игру по возможности приятней. При этом мы понимаем, что для некоторых клиентов азартные игры могут стать причиной проблем. Мы полностью поддерживаем политику ответственных азартных игр и принимаем меры для того, чтобы вы и далее могли наслаждаться безопасной игрой, не теряя контроля.</p><p>Нажмите здесь, чтобы ознакомиться с нашей политикой <a href='https://betway.com/ru/terms/responsible-gaming' target='_blank'>отвественной игры</a>.</p><p>8.2. Исключение.</p><p>Также клиенты могут исключить себя из игры на определенный срок. Подробней вы сможете узнать в правилах политики <a href='https://betway.com/ru/terms/responsible-gaming' target='_blank'>отвественной игры</a>.</p><p><strong>9. Защита клиентов</strong></p><p>9.1. Правила</p><p>Мы желаем, чтобы игра в Betway была безопасной и ответственной, поэтому мы стараемся быстро решить любые проблемы, которые могут повлиять на клиентов. Мы разработали подробные правила защиты клиентов, с которыми вы можете ознакомиться здесь, а также список средств для обеспечения более безопасной игры.</p><p>9.2 Возможности выиграть</p><p>Betway гарантирует, что, в зависимости от игры, клиентам в выигрышах выплачиваются в среднем 92% от суммы, вложенной в игру. Этот процент выплат игр казино или RTP (Return To Player) рассчитывается как отношение между суммой ставок и выигрышами. RTP это средний, долгосрочный показатель, который зависит от настроек генератора случайных чисел, но в среднем в играх Betway он превышает 95%.</p><p>Чтобы гарантировать защиту интересов наших клиентов, аудиторы eCOGRA ежемесячно проверяют процент выплат Betway, после чего публикуют свои результаты.</p><p><a href='http://www.ecogra.org/certificates/certificate.aspx?cid=246' target='_blank'>Нажмите здесь</a>, чтобы ознакомиться с последними отчетами eCOGRA.</p><p>9.3 Шансы на выигрыш в разных играх</p><p>Нажмите здесь, чтобы узнать RTP дла каждой игры Betway.</p><p><strong>10. Интеллектуальная собственность</strong></p><p>10.1. Вы подтверждаете свое согласие с тем, что все права на интеллектуальную собственность принадлежат нам или переданы нам по лицензии. Использование нашей интеллектуальной собственности без предварительно полученного письменного согласия запрещено. Вы согласны не копировать, не воспроизводить, не публиковать, не выставлять, не распространять, не использовать в коммерческих целях и не вносить какие-либо изменения в нашу интеллектуальную собственность, а также не содействовать в выше перечисленных действиях третьим лицам.</p><p>10.2. Вы подтверждаете свое согласие с тем, что все материалы на сайте Betway доступны ему лишь для личного, некоммерческого использования. Использование любых материалов или содержания в других целях строго запрещено.</p><p>10.3. Мы предоставляем вам право загрузить и использовать программное обеспечение для того, чтобы принять участие в играх и использовать наши услуги согласно этим правилам и условиям. Все права на программное обеспечение защищены и вы можете использовать программное обеспечение лишь в соответствии с нашими условиями.</p><p><strong>11. Сбои и технические неполадки</strong></p><p>11.1. Без гарантий</p><p>Как услуги, так и программное обеспечение предоставляются &amp;ldquo;как есть&amp;rdquo;. Мы не гарантируем удовлетворяющее требованиям качество, пригодность к использованию, укомплектованность и качество услуг или программного обеспечения.</p><p>11.2. Технические неполадки</p><p>Мы не несем ответственности за отклонения в работе, сбои телекоммуникаций или подключения к интернету, а также попытки клиента участвовать в играх, используя методы или способы, нами не предусмотренные.</p><p>По техническим причинам (например, из за менее скоростного подключения к интернету или меньших мощностей использованный устройств), играя в режиме peer-to-peer, клиент может оказаться в проигрышной ситуации.</p><p>Трансляции, доступные в Betway, могут проходить с задержкой. Из за этого, в других местах может быть доступна более актуальная информация о соответствующих событиях.</p><p>11.3. Сообщения о неполадках</p><p>Мы не можем всегда гарантировать безотказную работу наших услуг, но мы обязуемся по возможности исправлять погрешности, о которых нам сообщают. Если замечена ошибка, клиент должен сообщить о ней по телефону или на электронную почту нашей службы поддержки клиентов.</p><p>11.4. Компьютерные вирусы</p><p>Не смотря на то, что мы прилагаем все возможные усилия, чтобы программное обеспечение и файлы не содержали компьютерных вирусов, мы не можем дать гарантию, что программное обеспечение и файлы не содержат таковых. Защита своих систем является ответственностью клиента, который должен обеспечить возможность вернуть любые данные или программы, которые могут быть потеряны в следствии вируса.</p><p>11.5. Приостановка услуг</p><p>Мы вправе по своему усмотрению приостановить действие всех или части наших услуг. Мы можем, но не обязаны заранее сообщить клиенту о таком перерыве. Мы приложим все усилия, чтобы восстановить услуги по возможности быстрее.</p><p>11.6. Отмена ставок</p><p>В случае сбоя системы все сделанные ставки будут аннулированы. Мы не несем ответственности за убытки, причиненные такими сбоями.</p><p>11.7. Жалобы</p><p>Надо прислать или заявить нам о жалобах в течении 3 месяцев после того, как появилась проблема.</p><p><strong>Важно!</strong> Для того, чтобы ваша жалоба дошла до правильного адресата, используйте ниже указанные адреса:</p><p><strong>Для клиентов,которые живут в Великобритании:</strong></p><p>Эл. адрес: <a href='mailto:ukmanager@betway.com' target='_blank'>ukmanager@betway.com</a><br />Почтовый адрес: Betway Limited, PO Box 70417, London, NW1W 7LN</p><p><strong>Для клиентов,которые не живут в Великобритании:</strong></p><p>Эл. адрес: <a href='mailto:manager@betway.com' target='_blank'>manager@betway.com</a><br />Почтовый адрес: Betway Limited, PO Box 29, Malta Post, Gzira, GZR-1300, MALTA</p><p>Убедитесь в том, что в своем письме вы написали:</p><p>a) Свое имя пользователя Betway <br />b) ваше имя и фамилия, которые указали при регистрации<br />c) Детальное описание проблемы/жалобы<br />d) Дату и время в которые появилась данная проблема/жалоба</p><p>Если не будут соблюдены вышеуказанные требования, существует риск, что жалоба/просьба не будет своевременно рассмотрена и решена.</p><p>После получения жалобы/просьбы, будет сделано все возможное, чтобы на ее решение ушло не больше месяца. Если по каким-то причинам, вы останетесь не довольным предложенным решением, вы можете обратится к другим организациям &amp;ndash; подробней в пункте 14.2.</p><p>Если у вас есть повод для подозрений другого игрока в мошенничестве, пожалуйста, информируйте Betway об этом, следуя такому же процессу жалоб.</p><p>11.8. Изменения</p><p>Betway в праве по своему усмотрению удалять, менять или добавлять новые игры или программное обеспечение. Мы не несем ответственности за убытки, которые могут возникнуть в результате упомянутых изменений, и вы отказываетесь от любых претензий к нам по этому вопросу.</p><p><strong>12 Гарантии и ограничение ответственности</strong></p><p>12.1. Отказ от претензий</p><p>Вы согласны не требовать от наших директоров, менеджеров, сотрудников, акционеров, агентов и партнеров, наших родственных компаний ответственности и возмещения любых убытков, трат, компенсации ущерба (прямого, косвенного или другого) возникшего в следствии вашего участия, в том числе:</p><p>(i) при посещении, использовании или повторном использовании сайта;</p><p>(ii) при использовании или повторном использовании сайта при помощи средств телекоммуникаций;</p><p>(iii) при использовании или повторном использовании любых материалов полученных на сайте или от любого другого источника;</p><p>(iv) при подключении, использовании или повторном использовании сервера Betway;</p><p>(v) при попытке или совершении депозита на счет Betway;</p><p>(vi) при игре или размещении ставок на Betway;</p><p>(vii) при принятии и использовании любого выигрыша или приза от Betway;</p><p>(viii) при использовании или повторном использовании программного обеспечения Betway.</p><p>12.2. Ограниченная ответственность</p><p>Ни мы, ни наши директора, менеджеры, сотрудники, акционеры, агенты, партнеры, наши родственные компаний не несут ответственности за убытки или ущерб, нанесенный по какой бы то не было причине, прямой или косвенной, вне зависимости от суммы убытков (даже в случаях, когда мы были информированы клиентом о возможности таких убытков или ущерба).</p><p>12.3. Ссылки</p><p>Betway не несет ответственности за потери, убытки или ущерб связанный с использованием ссылок, доступных на наших сайтах. Betway не несет ответственности за содержание сайтов, ссылки на которые доступны на наших сайтах или в наших услугах.</p><p>12.4. Халатность</p><p>Эти правила не освобождают нас от ответственности за мошенничество, смерть или увечья возникшие в результате нашей халатности.</p><p><strong>13. Доступность предложений</strong></p><p>13.1. Доступность предложений</p><p>13.1.1. Если клиент нарушает правила использования любого предложения, Betway вправе аннулировать все бонусы, бесплатные ставки или денежные награды, предоставленные этому клиенту. Также Betway вправе аннулировать выигрыши со ставок, сделанных на средства, полученные в результате нарушения правил.</p><p>13.1.2. Клиент, нарушивший правила, будет должен покрыть любые разумные административные расходы связанные с устранением нарушения или возвратом предоставленных бонусов, бесплатных ставок или денежных наград. Также клиенту возможно будет необходимо подтвердить свои данные, предоставив нам документы, подтверждающие его личность.</p><p>13.1.3. На одно лицо, хозяйство, семью, почтовый адрес, адрес электронной почты, номер кредитной карточки или одну общедоступную компьютерную сеть (на пример, библиотеку, университет, школу) в рамках одного предложения полагается один бонус. Все предложения Betway созданы в развлекательных целях и мы вправе по своему усмотрению ограничить возможности клиентов ими воспользоваться или лишить клиентов уже предоставленных предложений. Betway вправе по своему усмотрению аннулировать любое предложение или отказать клиенту в праве им воспользоваться.</p><p><strong>14. Поддержка, законы, разногласия и жалобы</strong></p><p>14.1. Поддержка</p><p>В случае любых вопросов, неясностей или проблем, служба поддержки клиентов всегда готова помочь. Свяжитесь со службой поддержки клиентов по электронной почте <a href='mailto:ru-support@betway.com'>ru-support@betway.com</a></p><p>14.2. Решение разногласий/услуги ODR (Online Dispute Resolution)</p><p>Если вы не довольны нашим процессом решения разногласий (как указано в пункте 11.7), и считаете, что Betway не решил вопрос, то вы можете обратиться к одной из этих организаций. Предлагаем вам связаться с ниже указанными организациями ADR. Также вы можете обратиться в Европейскую комиссию ODR (Online Dispute Resolution), которая передаст вашу просьбу соответствующему отделу в ADR.</p><p>После получения жалобы/просьбы, будет сделано все возможное, чтобы решить вопрос не позже, чем в течении месяца. Если по какой-то причине вы не довольны предоставленным решением, предлагаем вам связаться с ниже указанными организациями ADR.</p><p>Организации ADR выполняют работу независимого арбитра в случаях если:</p><p>a) жалоба клиента рассмотрена в Betway;<br />b) решение вопроса зашло в тупик.</p><p>Организации ADR, которые доступны игрокам, проживающим в Великобритании:</p><p>&amp;bull;<strong> IBAS</strong> &amp;ndash; только со спортивным тотализатором связанные жалобы;<br />&amp;bull; <strong>eCOGRA</strong> &amp;ndash; только жалобы связанные с казино/бинго/покером.</p><p>Организации ADR, которые доступны игрокам, проживающим в других странах:</p><p>&amp;bull; <strong>MGA</strong> &amp;ndash; все жалобы; <br />&amp;bull; <strong>eCOGRA</strong> &amp;ndash; все жалобы.</p><p><strong>Важно!</strong> ADR бесплатная услуга. Решение, принятое организацией ADR будет считаться заключительным решением, если во время рассмотра жалобы обе стороны будут предоставлены в одинаковой мере.</p><p><a href='http://www.ibas-uk.com/ibas_help.php' target='_blank'>Нажмите здесь</a>, чтобы получить более подробную информацию о IBAS и заполнить <a href='http://www.ibas-uk.com/adjudicationForm.php' target='_blank'>форму жалоб IBAS</a>.</p><p><a href='http://www.ecogra.org/srs/policies_procedures.php' target='_blank'>Нажмите здесь</a>, чтобы получить более подробную информацию о eCOGRA&amp;rsquo;s заполнить <a href='http://www.ecogra.org/srs/dispute.php' target='_blank'>форму жалоб eCOGRA</a>.</p><p><a href='http://www.mga.org.mt/support/online-gaming-support/' target='_blank'>Нажмите здесь</a>, чтобы получить более подробную информацию о службе поддержки MGA. <a href='http://www.mga.org.mt/support/online-gaming-support/' target='_blank'>Здесь</a> вы можете заполнить форму жалоб.</p><p><a href='http://ec.europa.eu/odr' target='_blank'>Нажмите здесь</a>, чтобы получить более подробную информацию о Европейской комиссии ODR. <a href='http://ec.europa.eu/odr' target='_blank'>Здесь</a> вы можете заполнить форму жалоб.</p><p>14.3 Законодательство и юрисдикция</p><p>Настоящие правила и условия регулируются и толкуются в соответствии с законодательством Республики Мальты. Вы соглашаетесь с тем, что все споры (в том числе претензии отправителя и встречные), которые могут возникнуть в связи с действием, толкованием или исполнением этих правил будут решены в судах Республики Мальты.</p><p><strong>15. Финансовые вопросы</strong></p><p>15.1. Проценты</p><p>Betway не является финансовым учреждением и поэтому за средства на игровых счетах не подсчитывается и не выплачивается процентная ставка.</p><p>15.2. Юридические консультации</p><p>Betway не предоставляет консультации по налоговым или юридическим вопросах. Клиенты, у которых возникли вопросы этого рода, должны связаться со специалистами.</p><p>15.3. Арбитражные транзакции</p><p>Использование систем Betway для проведения арбитражных валютных операций строго запрещено. Если у Betway возникнут основания полагать, что клиент нарушил это правило, любая прибыль, полученная в результате арбитражных транзакций будет конфискована без предупреждения.</p><p>15.4. Борьба с отмыванием денег</p><p>Использование систем Betway для легализации незаконно полученных средств строго запрещено. Использование наших сайтов для любых незаконных действий или мошенничества (в том числе отмывания денег) запрещено законодательством. Если у Betway возникнет основание полагать, что вы вовлечены в незаконную деятельность или мошенничество, в том числе, отмывание денег, или нарушили эти правила и условия любым другим образом, вы будете лишены доступа к нашем сайтам и ваш счет будет немедленно блокирован. В этом случае Betway вправе конфисковать любые средства, которые находятся на вашем игровом счету. Также Betway вправе информировать ответственные органы, другие предприятия, компании кредитных карточек, компании онлайн-платежей и другие финансовые учреждения о вашей личности и возможных нарушениях. Вы обязаны содействовать расследованию любых инцидентов такого рода.</p><p><strong>16. Другие условия</strong></p><p>16.1. Согласие</p><p>Выразив свое согласие с этими правилами и условиями вы подтверждаете, что сознаете риск потери денег в ходе участия в азартных играх на нашем сайте и берете на себя всю ответственность за возможные убытки. Вы подтверждаете, что полностью ответственны за свое решение участвовать в азартных играх на нашем сайте и обещаете не выдвигать претензий против Betway или наших партнеров, директоров, менеджеров или сотрудников.</p><p>16.2. Право участвовать</p><p>Сотрудники Betway, обладателей и держателей лицензий, распространителей, рекламных или других агентств, медийных партнеров и члены их семей не вправе участвовать в играх на нашем сайте.</p><p>16.3. Закрытие счета</p><p>16.3.1. Betway вправе по своему усмотрению без предупреждения закрыть ваш счет. В таком случае остаток вашего счета будет выплачен на вашу кредитную или дебетовую карточку, или расчетный счет.</p><p>16.3.2. В некоторых случаях Betway вправе по своему усмотрению аннулировать любые выигрыши и конфисковать остаток счета:</p><p>i. Если у вас более одного активного игрового счета Betway;<br />ii. Если имя, указанное вами на игровом счету Betway не совпадает с именем владельца кредитной/дебетовой карточки, банковского счета или счета в системе электронных платежей, использованным для депозитов на данный игровой счет;<br />iii. Если при регистрации на Betway вы указали неточную или ложную информацию о себе;<br />iv. Если вы не достигли совершеннолетия и не проживаете в Великобритании (на жителей Великобритании действует параграф 3.3.);<br />v. Если вы преднамеренно или непреднамеренно допустили, что третье лицо играет на вашем счету Betway;<br />vi. Если вы играли в Betway не ради развлечения, a по договору с другими игроками, как член группы, клуба, координировали свои ставки с другими игроками и.т.п. Услуги Betway предназначены только для развлечения, потому в случае нарушения этого правила мы также вправе ограничить выигрыши в правилах Betway установленной суммой максимальной выплаты одному игроку;<br />vii. Если вы опротестовали депозиты (т.н. &amp;ldquo;chargeback&amp;rdquo;) сделанные с вашей кредитной карточки на ваш игровой счет Betway;<br />viii. Если вы играйте в сговоре с другими игроками, занимаетесь мошенничеством, отмыванием денег или другой незаконной деятельностью;<br />ix. Если Betway имеет основание полагать, что вы использовали систему (компьютеры, программное обеспечение или другие устройства), созданную с целью победить игровые системы казино.</p><p>16.3.3. Если есть основания полагать, что клиент нарушил одно или несколько из в параграфе 16.3.2. перечисленных условий, то, дополнительно к блокировке или закрытию игрового счета, Betway вправе конфисковать часть или весь остаток счета, и взыскать с клиента суммы выплат, бонусов, выигрышей и прочие, которые получены в следствие нарушения выше указанных условий. В таком случае, личные данные клиента будут переданы соответствующим органам или третьим сторонам. Условия, описанные в этом разделе правил не в малейшей мере не ограничивает действие других параграфов данных правил и условий.</p><p>16.4. Реклама и маркетинг</p><p>Принимая любые призы или выигрыши от Betway, вы подтверждаете свое согласие с тем, чтобы мы в рамках закона использовали ваше имя в рекламных мероприятиях без дополнительной компенсации.</p><p>16.5. Целостность соглашения</p><p>Данные правила и условия являются полным и целостным соглашением между вами и Betway. Это соглашение заменяет и включает в себя все ранее заключенные соглашения и контракты между вами и Betway об использовании услуг нашего казино. Betway вправе по своему усмотрению дополнить или изменить данные правила без предупреждения. Любые изменения будут проведены по усмотрению руководства казино и вступят в силу незамедлительно.</p><p>Относится к клиентам, которые проживают в Великобритании: в случаее изменений в правилах, подключившись к своему счету, клиент получит осведомление об изменениях. Клиент должен согласиться с правилами, чтобы продолжать использование услуг Betway.</p><p>16.6. Приоритет казино</p><p>В случае, если информация об исходе ставки в клиент-программе казино клиента будет отличаться от данных доступных на сервере Betway, правильными и действительными будут признаны данные доступные на сервере Betway.</p><p>16.7. Налоги</p><p>Клиент лично отвечает за уплату любых налогов за призы/выигрыши полученные от Betway.</p><p>16.8. Форс-мажор</p><p>Betway не отвечает за невыполнение обязанностей описанных в правилах и условиях или задержки с их выполнением, если они произошли из за форс-мажорных обстоятельств.</p><p>16.9. Ограничение интерпретации</p><p>Данные правила и условия не создают партнерство, трест или какую-либо другую форму общего предприятия между вами и Betway.</p><p>16.10. Делимость</p><p>Если любой из параграфов данных правил и условий будет компетентным лицом признан недействительным, противозаконным или неосуществимым, данный параграф будет исключен из данных правил и условий, а остальные нормы правил и условий останутся в силе в полной мере, на сколько это соответствует законам. В таких случаях, параграф, признанный недействительным или неосуществимым, будет исправлен согласно требованиям законодательства, чтобы как можно точнее было отражено изначальное намерение Betway.</p><p>16.11. Дополнительное правило тотализатора</p><p>С этими правилами связаны отдельные правила <a href='https://sports.betway.com/ru/help/bet-help'>спортивного тотализатора</a>. Они включают информацию о том, как и на что можно делать ставки, типах ставок, максимальных выигрышах по видам спорта и прочие данные..</p><p>16.12. Толкование правил и условий</p><p>Мы считаем эти правила и условия ясными. Если у вас возникнут какие-либо вопросы по поводу данных правил или наших услуг, пожалуйста, <a href='https://www.betway.com/ru/contact/' target='_blank'>свяжитесь со службой поддержки</a>.</p><p>Заметьте, что в интересах клиентов и Betway, корреспонденция и телефонные разговоры могут быть записаны.</p><p>16.13. Ограничения</p><p>Эти предложения распространяются только на вас, их нельзя передать третьим лицам, без письменного согласия. Мы в праве по своим усмотрениям и без предупреждения передать третьим лицам любые из наших прав или обязательств, которые указаны в этом документы.</p><p>16.14. Передача собственности</p><p>В том случае, если поменяется владелец компании, заведение будет частично или полностью продано или произойдет слияние компаний, то ваш игровой счет и с ним связанные данные могут быть среди собственности, которое будет передано новому владельцу. В таком случае мы проинформируем вас о ваших возможностях посредством эл. почты или на нашей веб-странице.</p><p><em><strong>Послед</strong><strong>ние изменения</strong> 09.08.2017, 11:00 GMT.</em></p>&quot;,
+        &quot;accept&quot;: &quot;I accept terms and conditions&quot;,
+        &quot;accepting&quot;: &quot;Accepting terms&quot;,
+        &quot;accepting failed&quot;: &quot;Sorry something has gone wrong, please try again.&quot;
+    },
+	&quot;lobby - home&quot;: {
+		&quot;grid title&quot;: &quot;Новейшие предложения Betway Plus&quot;
+	},
+	&quot;lobby - faqs&quot;: {
+		&quot;faqs&quot;: &quot;<p><strong>Жетоны уровня</strong></p><p><strong>Что такое жетоны уровня?</strong><br>Жетоны уровня используются для того, чтобы установить уровень лояльности клиента и ему соответствующие бонусы и предложения.</p><p><strong>Как зарабатывать жетоны уровня?</strong><br>Клиенты Betway зарабатывают жетоны уровня, делая ставки в любых продуктах Betway.</p><p><strong>Для чего нужны жетоны уровня?</strong><br>Играя и собирая жетоны уровня, уровень лояльности клиента будет расти, и игрок получит доступ к более выгодным бонусам и предложениям.</p><p><strong>Как обменять жетоны уровня?</strong><br>В отличие от пунктов Plus, жетоны уровня нельзя обменять на кредиты казино или другие бонусы.</p><p><strong>Где найти информацию о моем уровне?</strong><br>Информацию о своем уровне лояльности, а также том сколько жетонов уровня надо заработать чтобы пройти на новый уровень, найдете на своем экране Betway Plus на правой стороне.</p><p><strong>Как долго в силе жетоны уровня?</strong><br>Жетоны уровня в силе только один календарный месяц. Ваш уровень лояльности будет зависеть от того, сколько жетонов уровня вы заработаете до завершения месяца – в зависимости от вашего результата вы получите или более высокий уровень, останетесь на том же уровне или спуститесь на один уровень.</p><p><strong>Как происходит переход на новый уровень?</strong><br>Когда вы заработаете необходимое число жетонов, вы сразу перейдете на новый уровень. Вы его сохраните один календарный месяц, если только по ходу месяца не заработаете более высокий уровень.</p><p><strong>Сколько жетонов уровня можно заработать, потратив €10?</strong><br>Игровые автоматы              До 5 жетонов<br>Настольные игры казино     До 2,5 жетонов<br>Тотализатор                       До 2,5 жетонов<br>Бинго                                До 10 жетонов</p><p> </p><p><strong>PLUS ПУНКТЫ</strong></p><p><strong>Что такое Plus пункты?</strong><br>Пункты Plus это валюта Betway, которую клиенты получают, делая ставки в любых продуктах Betway. Заработанные пункты можно обменять на казино или бинго бонусы или бесплатные ставки в тотализаторе.</p><p><strong>Как зарабатывать пункты Plus?</strong><br>Клиенты Betway зарабатывают пункты Plus, участвуя в акциях и используя предложения. Также бонусные Plus пункты в виде бонуса за уровень лояльности – чем выше уровень, тем больше дополнительных пунктов Plus.</p><p><strong>Что такое бонусные Plus пункты?</strong><br>Бонусные пункты Plus это дополнительные пункты, которые вы получаете в зависимости от уровня лояльности.</p><p>-Бронзовый уровень: 10% дополнительные пунктов Plus<br>-Серебряный уровень: 25% дополнительные пунктов Points<br>-Золотой уровень: 50% a дополнительные пунктов Plus<br>-Платиновый уровень: 75% дополнительные пунктов Plus<br>-Черный уровень: 80% дополнительные пунктов Plus</p><p><strong>Как использовать пункты Plus?</strong><br>Пункты Plus можно обменять на бонусы казино или бинго, спортивные ставки в тотализаторе.</p><p><strong>Чего стоят мои пункты Plus?</strong><br>5000 пунктов Plus           кредиты казино €10<br>5000 пунктов Plus           бесплатная ставка в спорте €3 <br>5000 пунктов Plus           бинго бонус €10</p><p><em>Валюта системы Plus пунктов – евро. Если вы используете другую валюту, то их стоимость будет определена, используя курс валюты соответствующего дня.</em></p><p><strong>Как узнать, сколько пунктов Plus вы заработали и как их обменять?</strong><br>Информацию о своих пунктах, а также том сколько пунктов вы можете обменять, найдете на своем экране Betway Plus на правой стороне.</p><p><strong>Как долго в силе пункты Plus?</strong><br>Пункты Plus в силе 3 месяца, считая с момента, когда они заработаны.</p><p><strong>Сколько пунктов Plus надо заработать, чтобы их обменять?</strong><br>Пункты Plus можно обменять только суммами по 5000. Если вы еще не набрали необходимое число пунктов или желаете оставить их на потом, в вашем распоряжении 90 дней, считая с момента, когда они заработаны.</p><p> </p>&quot;
+	},
+	&quot;lobby - events&quot;: {
+		&quot;title&quot;: &quot;<h2>Победители </h2><p><br></p>&quot;,
+		&quot;event 1 title&quot;: &quot;<h3>Путешествие с Betway</h3>&quot;,
+		&quot;event 2 title&quot;: &quot;Лошадиные бега&quot;,
+		&quot;event 3 title&quot;: &quot;<h3>Футбольная Премьерлига </h3>&quot;,
+		&quot;event 1 text&quot;: &quot;<p>Солнце. Море. Белый песок. Двенадцать победителей нашей акции VIP путешествие в Кейп Таун могли от души насладиться этим и многим другим, например, экскурсией на Столовую Гору, посещение винных погребов и поездке на Harley Davidson.</p><p>Вот, что нам рассказали участники путешествия:</p><p><em>‘Первоклассная гостиница и захватывающая программа мероприятий, лучше этого были только остальные участники путешествия. Незабываемое приключение!’</em> - Амарпал</p><p><em>‘Это путешествие было безупречно организовано, не была забыта ни одна мелочь. Было жалко уежать.’</em> - Сэм</p><p><em>‘Это было фантастически! Отличная гостиница, салон спа, экскурсии. Очень внимательные и полезные руководители путешествия, которые позаботились о том, чтобы мы могли насладиться каждым моментом.’</em> - Давид<br></p>&quot;,
+		&quot;event 2 text&quot;: &quot;<p>Аскот. Челтнем. Эйнтри. Честер. В календаре лошадиных скачек нет более важных мероприятий и Betway тесно связано с каждым из них – являясь спонсором таких скачек как Queen Mother Champion Chase, а также предоставляя своим игрокам наблюдать за скачками на месте.<br>Вот, что говорят Betway VIP игроки о пережитом:</p><p><br>‘Это просто фантастика! Наши места были у самой финишной линии, еда и напитки были отличными. Сделал пару удачных ставок – это всегда приятно.’ – Ричард (Doncaster-Lincoln Meeting)</p><p>‘Вид с наших мест был непревзойденный. Блюда были изысканными и шампанское лилось рекой!’ – Гарри (Chester Races)</p><p>‘Это был наш первый раз на скачках Аскот. Думаю, что ничего не сравниться с пережитым.’ – Эндрю (Royal Ascot – Ladies’ Day)</p>&quot;,
+		&quot;event 3 text&quot;: &quot;<p>Самая популярная футбольная лига планеты. Стадион мирового класса. И команда, достойная всего этого.</p><p>Являясь главным спонсором Вест Хэм Юнайтед, Betway дает своим VIP-клиентам возможность стать свидетелями того, как команда пишет новую страницу в истории клуба.</p><p>В нашей VIP-ложе вы сможете насладиться изысканными блюдами до начала матча, а потом плечом к плечу вместе с легендами клуба и знаменитостями следить за ходом матча английской Премьер-лиги.</p><p>‘<em>Это был третий раз, когда я участвовал в мероприятии Betway. Как обычно я и моя спутница отлично провели время.</em>’ – Саймон (West Ham vs. Bournemouth)</p><p>‘<em>Отличный вечер! VIP ложа была замечательной. Нам понравилась еда и обслуживание. Мы встретили Тони Коти. Мой внук этому очень порадовался. Спасибо вам за это приглашение.</em>’ – Даррен (West Ham vs. Sunderland)</p><p></p>&quot;
+	},
+	&quot;lobby - benefits&quot;: {
+		&quot;tier benefits&quot;: &quot;<p>Betway Plus - это программа лояльности, которая вознаграждает игроков в казино, тотализаторе и бинго.</p><p>Каждый раз, когда вы играете в Betway, вы зарабатываете жетоны уровня и пункты Plus. От количества набранных жетонов зависит ваш уровень лояльности, а пункты Plus можно обменять на различные бонусы в казино, бинго или спортивном тотализаторе. Узнать свой уровень лояльности и количество заработанных пунктов Plus вы можете, подключившись к своему счету, в правом верхнем углу экрана.</p><p><strong>Жетоны уровня:</strong> от них зависит ваш уровень лояльности. Вы зарабатываете жетоны уровня каждый раз, когда играете в Betway. За каждые 10 &amp;euro;, потраченные на ставки, вы получите 5 жетонов. Чем выше ваш уровень, тем выгоднее вам доступные бонусы и предложения. Уровень лояльности зависит от количества жетонов, заработанных течение предыдущего месяца.</p><p><strong>Пункты Plus:</strong> эти пункты вы тоже получаете за свою игру. Количество заработанных пунктов зависит от типа вами выбранной игры. Их можно обменять на различные бонусы, но только количеством, кратным 5000 пунктов.</p><p><strong>Бонусные пункты Plus:</strong> дополнительные пункты Plus, которые вы получаете за свой уровень лояльности. Например, на уровне лояльности Бронза, клиент получает 10% бонусных пунктов, а на уровне Черный &amp;mdash; 80%.</p><p><strong>Обмен пунктов Plus:</strong> как только вы набрали 5000 пунктов, вы можете их обменять на бонусы казино или бинго, или бесплатную ставку в спортивном тотализаторе. Для этого подключитесь к своему счету и откройте раздел пунктов Plus. Там вы сможете указать, сколько пунктов хотите обменять и на что.</p><p>Чтобы узнать больше, посетите раздел <a href='https://plus.betway.com/lobby/ru/#/faqs'>часто задаваемых вопросов</a>.</p><p><a href='https://promo.betway.com/ru/promotions/terms-and-conditions/?promoid=106751' target='_blank'>*Правила и условия</a></p>&quot;,
+		&quot;tier benefits title&quot;: &quot;<p>Что такое Betway Plus?<br></p>&quot;,
+		&quot;benefits disclaimer&quot;: &quot;&quot;,
+	},
+	&quot;lobby - footer&quot;: {
+		&quot;license&quot;: &quot;<p>Бренд Betway управляется мальтийской компанией Betway Limited (C39710), зарегистрированной по адресу 9 Empire Stadium Street Gzira GZR 1300. Betway Limited работает в Великобритании по лицензии Комиссии азартных игр Великобритании. Номер лицензии: 000-039372-R-319367-010. Вне Великобритании Betway Limited работает под наблюдением и по лицензии Комиссии азартных игр Республики Мальта (MGA). Номера лицензий: MGA/CL1/302/2006 (выдана 29 июня, 2014 года), MGA/CL1/1258/2016 (выдана 16 ноябрь, 2016 года), MGA/CL2/396/2007 (выдана 30 апреля, 2012 года) и MGA/CL3/302/2006 (выдана 29 июня, 2014 года). Betway Limited также зарегистрировано на <a href='https://betway.com/ru/terms/ibas/' target='_blank'>I.B.A.S</a> и является членом <a href='https://betway.com/ru/terms/ESSA/' target='_blank'>ESSA</a>.</p>&quot;,
+		&quot;support&quot;: &quot;<h3>Помощь</h3><p>Если в дальнейшем не желаете получить наши рекламные предложения, свяжитесь с нашей службой поддержки:</p><p><a href='mailto:support@betway.com'>ru-support@betway.com</a></p>&quot;,
+	},
+	&quot;lobby - viper&quot;: {
+		&quot;settings ES&quot;: &quot;&quot;
+	},
+	&quot;lobby - regulations&quot;: {
+		&quot;session reminder&quot;: &quot;Напоминание&quot;,
+		&quot;time played&quot;: &quot;Ваше время игры:&quot;,
+		&quot;help file&quot;: &quot;&quot;,
+		&quot;continue&quot;: &quot;Продолжить&quot;,
+        &quot;last logged in&quot;: &quot;Ultimo Access al casino' e' avvenuto in data&quot;,
+		&quot;license IT&quot;: &quot;Betway Limited - Concessione 15216&quot;
+	},
+	&quot;lobby - filter&quot;: {
+		&quot;My Offers&quot;: &quot;Для вас&quot;,
+        &quot;Filter Offers&quot;: &quot;Фильтр предложений:&quot;,
+        &quot;Money Back Specials&quot;: &quot;Возврат ставок&quot;,
+        &quot;Money Back Special&quot;: &quot;Возврат ставок&quot;,
+        &quot;Price Boosts&quot;: &quot;Повышенные коэффициенты&quot;,
+        &quot;Enhanced Multiples&quot;: &quot;Лучшие коэффициенты гарантированы &quot;,
+        &quot;Best Odds Guaranteed&quot;: &quot;Best Odds Guaranteed &quot;,
+        &quot;X-Sells&quot;: &quot;Monthly Bonus Pass&quot;,
+        &quot;Free Bet&quot;: &quot;Бесплатные ставки &quot;,
+        &quot;Bonus (Wagering)&quot;: &quot;Бонусы (разыграть)&quot;,
+        &quot;Match Bonus&quot;: &quot;Бонусы на депозит&quot;,
+        &quot;Free Spins&quot;: &quot;Бесплатные спины&quot;,
+        &quot;Free Credits&quot;: &quot;Бесплатные кредиты&quot;,
+        &quot;Plus Points&quot;: &quot;Пункты Plus&quot;,
+        &quot;Bingo Bonus&quot;: &quot;Бинго бонусы&quot;,
+        &quot;Match Bonus + Free Spins&quot;: &quot;Бонус на депозит + бесплатные спины &quot;,
+        &quot;Free Credits + Match Bonus&quot;: &quot;Бесплатные кредиты + бонус на депозит&quot;,
+
+        &quot;Leaderboard&quot;: &quot;Таблица лидеров&quot;,
+        &quot;Cashback&quot;: &quot;Денежный бонус&quot;,
+        &quot;Live Casino&quot;: &quot;Live Casino&quot;,
+        &quot;Gift Drop&quot;: &quot;Gift Drop&quot;,
+        &quot;Christmas&quot;: &quot;Prize Draw&quot;,
+        &quot;Race Against Time&quot;: &quot;Большая пасхальная акция&quot;,
+        &quot;ADHOC1&quot;: &quot;4 To Score&quot;,
+        &quot;ADHOC2&quot;: &quot;Early Winner&quot;,
+        &quot;ADHOC3&quot;: &quot;New Game&quot;,
+        &quot;ADHOC4&quot;: &quot;Prize Draw&quot;,
+
+        &quot;Livecasino Adhoc 1&quot;: &quot;Power Cards&quot;,
+        &quot;Livecasino Adhoc 2&quot;: &quot;rfg&quot;,
+        &quot;Livecasino Adhoc 3&quot;: &quot;hj&quot;,
+        &quot;Livecasino Adhoc 4&quot;: &quot;Lucky draw&quot;,
+        &quot;Casino Adhoc 1&quot;: &quot; Casino Cash Giveaway&quot;,
+        &quot;Casino Adhoc 2&quot;: &quot;Match Bonus and Bonus Spins&quot;,
+        &quot;Casino Adhoc 3&quot;: &quot;Bonus Spins&quot;,
+        &quot;Casino Adhoc 4&quot;: &quot;Progressive Jackpot&quot;,
+        &quot;Bonus Spins&quot;: &quot;&quot;,
+        &quot;Bonus Credits&quot;: &quot;&quot;,
+
+        &quot;Football&quot;: &quot;Футбол&quot;,
+        &quot;Horse Racing&quot;: &quot;Horse Racing&quot;,
+        &quot;Tennis&quot;: &quot;Теннис&quot;,
+        &quot;Golf&quot;: &quot;Гольф&quot;,
+        &quot;Cricket&quot;: &quot;&quot;,
+        &quot;Darts&quot;: &quot;&quot;,
+        &quot;Basketball&quot;: &quot;Баскетбол&quot;,
+        &quot;Baseball&quot;: &quot;Бейсбол&quot;,
+        &quot;American Football&quot;: &quot;Американский футбол&quot;,
+        &quot;Ice Hockey&quot;: &quot;Хоккей&quot;,
+        &quot;US Sports&quot;: &quot;Страховка&quot;,
+        &quot;Rugby Union&quot;: &quot;Регби-15&quot;,
+        &quot;Rugby League&quot;: &quot;&quot;,
+        &quot;Snooker&quot;: &quot;&quot;,
+        &quot;UFC&quot;: &quot;&quot;,
+        &quot;Boxing&quot;: &quot;&quot;,
+        &quot;GAA&quot;: &quot;&quot;,
+        &quot;Volleyball&quot;: &quot;&quot;,
+        &quot;Handball&quot;: &quot;&quot;,
+        &quot;Motor Sport&quot;: &quot;&quot;,
+        &quot;Olympics&quot;: &quot;&quot;
+    }
+} )
+        .value( 'hub$heroPromotions',            ﻿
+
+[{&quot;Title&quot;:&quot;<h1>Бонус приветствия казино до 1000 &amp;euro;/$</h1>&quot;,&quot;Type&quot;:&quot;Batch&quot;,&quot;Image&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet3230/3230_jeyfwimhrna_Casino.jpg&quot;,&quot;CallToAction&quot;:{&quot;Type&quot;:&quot;register&quot;,&quot;Link&quot;:&quot;&quot;,&quot;MobileUrl&quot;:&quot;&quot;,&quot;DesktopUrl&quot;:&quot;&quot;},&quot;Sport&quot;:&quot;&quot;,&quot;SubCategoryKey&quot;:&quot;&quot;,&quot;GroupKey&quot;:&quot;&quot;,&quot;Message1&quot;:&quot;<p>Сыграть</p>&quot;,&quot;Analytics&quot;:{&quot;category&quot;:&quot;Hero CTA Logged Out&quot;,&quot;action&quot;:&quot;casino Hero CTA Click Register&quot;,&quot;label&quot;:&quot;Redirect to register page&quot;}},{&quot;Title&quot;:&quot;<h1>Джекпот растет</h1>\n<p>Уже несколько игроков стали миллионерами, благодаря игровому автомату Mega Moolah. Станете ли вы обладателя следующего джекпота?</p>&quot;,&quot;Type&quot;:&quot;Batch&quot;,&quot;Image&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2930/2930_st4qas0r2fs_2930_jotnhjm3nl4_language-RU_blackjack.jpg&quot;,&quot;CallToAction&quot;:{&quot;Type&quot;:&quot;custom&quot;,&quot;Link&quot;:&quot;&quot;,&quot;MobileUrl&quot;:&quot;&quot;,&quot;DesktopUrl&quot;:&quot;https://casino.betway.com/lobby/ru/#/play/371&quot;},&quot;Sport&quot;:&quot;&quot;,&quot;SubCategoryKey&quot;:&quot;&quot;,&quot;GroupKey&quot;:&quot;&quot;,&quot;Message1&quot;:&quot;Играть сейчас&quot;,&quot;Analytics&quot;:{&quot;category&quot;:&quot;Hero CTA&quot;,&quot;action&quot;:&quot;https://casino.betway.com/lobby/ru/#/play/371&quot;,&quot;label&quot;:&quot;<h1>Джекпот растет</h1>\n<p>Уже несколько игроков стали миллионерами, благодаря игровому автомату Mega Moolah. Станете ли вы обладателя следующего джекпота?</p>_Играть сейчас&quot;}},{&quot;Title&quot;:&quot;<h1>Останется только один...</h1>\n<p>Примите участие в борьбе бессмертных и получите свою награду в игровом автомате Highlander&amp;trade;.</p>&quot;,&quot;Type&quot;:&quot;Batch&quot;,&quot;Image&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2931/2931_cl2fpdzo3np_language-EN_Highlander_1860x1000.jpg&quot;,&quot;CallToAction&quot;:{&quot;Type&quot;:&quot;custom&quot;,&quot;Link&quot;:&quot;&quot;,&quot;MobileUrl&quot;:&quot;&quot;,&quot;DesktopUrl&quot;:&quot;https://casino.betway.com/lobby/ru/#/play/1717&quot;},&quot;Sport&quot;:&quot;&quot;,&quot;SubCategoryKey&quot;:&quot;&quot;,&quot;GroupKey&quot;:&quot;&quot;,&quot;Message1&quot;:&quot;Играть сейчас&quot;,&quot;Analytics&quot;:{&quot;category&quot;:&quot;Hero CTA&quot;,&quot;action&quot;:&quot;https://casino.betway.com/lobby/ru/#/play/1717&quot;,&quot;label&quot;:&quot;<h1>Останется только один...</h1>\n<p>Примите участие в борьбе бессмертных и получите свою награду в игровом автомате Highlander&amp;trade;.</p>_Играть сейчас&quot;}}] )
+        .value( 'hub$languages',			 
+[{&quot;text&quot;:&quot;Dansk&quot;,&quot;id&quot;:&quot;da&quot;},{&quot;text&quot;:&quot;Deutsch&quot;,&quot;id&quot;:&quot;de&quot;},{&quot;text&quot;:&quot;English&quot;,&quot;id&quot;:&quot;en&quot;},{&quot;text&quot;:&quot;Español&quot;,&quot;id&quot;:&quot;es&quot;},{&quot;text&quot;:&quot;Français&quot;,&quot;id&quot;:&quot;fr&quot;},{&quot;text&quot;:&quot;Suomi&quot;,&quot;id&quot;:&quot;fi&quot;},{&quot;text&quot;:&quot;Italiano&quot;,&quot;id&quot;:&quot;it&quot;},{&quot;text&quot;:&quot;Norsk&quot;,&quot;id&quot;:&quot;no&quot;},{&quot;text&quot;:&quot;Português&quot;,&quot;id&quot;:&quot;pt&quot;},{&quot;text&quot;:&quot;Русский&quot;,&quot;id&quot;:&quot;ru&quot;},{&quot;text&quot;:&quot;Svenska&quot;,&quot;id&quot;:&quot;sv&quot;}] )
+        .value( 'hub$menuItems',				 
+{
+	account:{
+		id:&quot;account&quot;,
+		title: &quot;Мой счет&quot;
+	},
+
+	tier:{
+		id: &quot;tier&quot;,
+		title: &quot;Мой уровень&quot;,
+	},
+
+	points: {
+		id: &quot;points&quot;,
+		title: &quot;Мои пункты Plus&quot;
+	}
+} )
+
+
+		.value( 'BrandNavSitesValue',		
+
+
+[{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;sports&quot;,&quot;title&quot;:&quot;sports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;inplay&quot;,&quot;title&quot;:&quot;in-play&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;casino&quot;,&quot;title&quot;:&quot;casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;livecasino&quot;,&quot;title&quot;:&quot;live casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;esports&quot;,&quot;title&quot;:&quot;esports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;vegas&quot;,&quot;title&quot;:&quot;vegas&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;poker&quot;,&quot;title&quot;:&quot;poker&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;bingo&quot;,&quot;title&quot;:&quot;bingo&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;blog&quot;,&quot;title&quot;:&quot;blog&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;plus&quot;,&quot;title&quot;:&quot;plus&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}}] )
+		.value( 'FooterComplianceValue',	
+[{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2418/2418_c3tz3feepin_gamblingcommision.png&quot;,&quot;alt&quot;:&quot;Gambling commission&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/Betway Gambling Commission Link/&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2419/2419_qghebqizx3w_gambleaware.png&quot;,&quot;alt&quot;:&quot;gambleAware&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/GambleAware/&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2420/2420_uac4t5kne2h_safe-and-fair.png&quot;,&quot;alt&quot;:&quot;Ecogra&quot;,&quot;url&quot;:&quot;http://www.ecogra.org/certificates/certificate.aspx?cid=246&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet1906/1906_eyuhjnzmci5_mga.png&quot;,&quot;alt&quot;:&quot;MGA&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/Betway LGA Link/&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet1909/1909_alexp4gncqa_ibas.png&quot;,&quot;alt&quot;:&quot;Ibas&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/Link to IBAS/&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2399/2399_anbwkycafcs_Banking_Essa.png&quot;,&quot;alt&quot;:&quot;Essa&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/ESSA/&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2656/2656_upkpvixp5s2_language-none_currency-none_whatever.png&quot;,&quot;alt&quot;:&quot;Responsible Gambling Trust&quot;,&quot;url&quot;:&quot;/lobby/ru/launch/linkname/Responsible Gambling Trust/&quot;}] )
+        .value( 'FooterSocialValue',		
+[{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2421/2421_cavegygtegi_facebook.png&quot;,&quot;alt&quot;:&quot;Facebook&quot;,&quot;url&quot;:&quot;https://www.facebook.com/Betway&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2422/2422_2wrtdnjp4dk_twitter.png&quot;,&quot;alt&quot;:&quot;Twitter&quot;,&quot;url&quot;:&quot;https://twitter.com/betway&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2423/2423_vbedwu3cc3e_youtube.png&quot;,&quot;alt&quot;:&quot;You Tube&quot;,&quot;url&quot;:&quot;https://www.youtube.com/channel/UCzrzOItQbqY7akga3rPRoMw&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2424/2424_sf1hszx3uz5_googleplus.png&quot;,&quot;alt&quot;:&quot;Google Plus&quot;,&quot;url&quot;:&quot;https://plus.google.com/+betway&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2425/2425_ksaxl3jgkgj_appstore.png&quot;,&quot;alt&quot;:&quot;App store&quot;,&quot;url&quot;:&quot;https://itunes.apple.com/gb/app/betway-casino-real-money-roulette/id550442071?mt=8&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2426/2426_yhvjkpwub5z_android.png&quot;,&quot;alt&quot;:&quot;Google Store&quot;,&quot;url&quot;:&quot;&quot;}] )
+		.value( 'BrandNavSitesValue',		
+
+
+[{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;sports&quot;,&quot;title&quot;:&quot;sports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;inplay&quot;,&quot;title&quot;:&quot;in-play&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;casino&quot;,&quot;title&quot;:&quot;casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;livecasino&quot;,&quot;title&quot;:&quot;live casino&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;esports&quot;,&quot;title&quot;:&quot;esports&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;vegas&quot;,&quot;title&quot;:&quot;vegas&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;poker&quot;,&quot;title&quot;:&quot;poker&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;bingo&quot;,&quot;title&quot;:&quot;bingo&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;blog&quot;,&quot;title&quot;:&quot;blog&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}},{&quot;Properties&quot;:{&quot;HeaderBrandLink&quot;:[{&quot;caption&quot;:&quot;plus&quot;,&quot;title&quot;:&quot;plus&quot;,&quot;link&quot;:&quot;&quot;,&quot;analytics&quot;:{&quot;category&quot;:&quot;&quot;,&quot;action&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;}}]}}] )
+		.value( 'RightMenuItemsValue',		
+[&quot;availablePromotions&quot;,&quot;balance&quot;,&quot;tier&quot;,&quot;redeem&quot;,&quot;logOut&quot;] )
+		.value( 'BankingDataValue',			
+[{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2012/2012_mjjodkjnbou_bank-icon-credit-cards.jpg&quot;,&quot;alt&quot;:&quot;creditcards&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2011/2011_o4hf1enzbpc_bank-icon-visaElectron.jpg&quot;,&quot;alt&quot;:&quot;visaelectron&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2428/2428_q5vxn2vlhh5_bank-icon-paypal.jpg&quot;,&quot;alt&quot;:&quot;paypal&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2430/2430_zy0ncleqgyk_bank-icon-skrill.jpg&quot;,&quot;alt&quot;:&quot;skrill&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2427/2427_abeetwtb4bq_bank-icon-neteller.jpg&quot;,&quot;alt&quot;:&quot;neteller&quot;},{&quot;imageUrl&quot;:&quot;https://images.thebetwaygroup.com/headers/ImageSet2429/2429_dsrdqwmvqbi_bank-icon-paysafecard.jpg&quot;,&quot;alt&quot;:&quot;paysafecard&quot;}] )
+		.value( 'LanguagesValue',			
+[{&quot;text&quot;:&quot;Dansk&quot;,&quot;id&quot;:&quot;da&quot;},{&quot;text&quot;:&quot;Deutsch&quot;,&quot;id&quot;:&quot;de&quot;},{&quot;text&quot;:&quot;English&quot;,&quot;id&quot;:&quot;en&quot;},{&quot;text&quot;:&quot;Español&quot;,&quot;id&quot;:&quot;es&quot;},{&quot;text&quot;:&quot;Français&quot;,&quot;id&quot;:&quot;fr&quot;},{&quot;text&quot;:&quot;Suomi&quot;,&quot;id&quot;:&quot;fi&quot;},{&quot;text&quot;:&quot;Italiano&quot;,&quot;id&quot;:&quot;it&quot;},{&quot;text&quot;:&quot;Norsk&quot;,&quot;id&quot;:&quot;no&quot;},{&quot;text&quot;:&quot;Português&quot;,&quot;id&quot;:&quot;pt&quot;},{&quot;text&quot;:&quot;Русский&quot;,&quot;id&quot;:&quot;ru&quot;},{&quot;text&quot;:&quot;Svenska&quot;,&quot;id&quot;:&quot;sv&quot;}] )
+		.value( 'menuData',					
+		{
+			balance: {
+				id:&quot;balance&quot;,
+				title: 'My balance',
+				hoverTitle: &quot;<p>Мой счет</p>&quot;,
+				icon: 'Images/Icons/bunsMe/myBalance',
+				hovering: false,
+				type: 'modules',
+				content: 'account',
+				url: 'account'
+			},
+
+			tier: {
+				id: &quot;tier&quot;,
+				title: 'Tier',
+				hoverTitle: &quot;<p>Мой уровень</p>&quot;,
+				icon: 'Images/Icons/bunsMe/tier',
+				hovering: false,
+				type: 'modules',
+				content: 'tier',
+				url: 'tier'
+			},
+
+			redeem: {
+				id: &quot;redeem&quot;,
+				title: 'Redeem',
+				hoverTitle: &quot;<p>Мои пункты Plus</p>&quot;,
+				icon: 'Images/Icons/bunsMe/redeemPoints',
+				hovering: false,
+				type: 'modules',
+				content: 'points',
+				url: 'points'
+			},
+
+			availablePromotions: {
+				id: &quot;availablePromotions&quot;,
+				title: 'Available promotions',
+				hoverTitle: &quot;<p>Предложения</p>&quot;,
+				icon: 'Images/Icons/bunsMe/availablePromotions',
+				hovering: false,
+				type: 'modules',
+				content: 'availablePromotions',
+				url: 'promotions'
+			},
+
+			promotions: {
+				id: &quot;promotions&quot;,
+				title: 'Promotions',
+				hoverTitle: &quot;<p>Предложения</p>&quot;,
+				icon: 'Images/Icons/bunsMe/promotions',
+				hovering: false,
+				type: 'modules',
+				content: 'Promotions',
+				url: 'promotions'
+			},
+
+			tierBenefits: {
+				id: &quot;tierBenefits&quot;,
+				title: 'Tier Benefits',
+				hoverTitle: &quot;<p>Что такое Betway Plus?<br></p>&quot;,
+				icon: 'Images/Icons/bunsMe/promotions',
+				hovering: false,
+				type: 'modules',
+				content: 'TierBenefits',
+				url: 'benefits'
+			},
+			
+			events: {
+				id: &quot;events&quot;,
+				title: 'Events',
+				hoverTitle: &quot;<p>Победители</p>&quot;,
+				icon: 'Images/Icons/bunsMe/events',
+				hovering: false,
+				type: 'modules',
+				content: 'Events',
+				url: 'events'
+			},
+
+			faqs: {
+				id: &quot;faqs&quot;,
+				title: 'FAQs',
+				hoverTitle: &quot;<p>ЧАВО</p>&quot;,
+				icon: 'Images/Icons/bunsMe/faqs',
+				hovering: false,
+				type: 'modules',
+				content: 'FAQs',
+				url: 'faqs'
+			},
+
+			logOut: {
+				id: &quot;logOut&quot;,
+				title: 'Log out',
+				hoverTitle: &quot;<p>Выйти</p>&quot;,
+				icon: 'Images/Icons/bunsMe/logout',
+				hovering: false,
+				type: 'redirect',
+				content: '/lobby/ru/logout',
+				url: 'logout'
+			}
+		}
+ )
+		.value( 'RedeemOptionsValue',		[
+	{
+		id: &quot;casino&quot;,
+		name: &quot;Casino&quot;,
+		title: &quot;Кредиты казино&quot;,
+		ProductTypeId: 1
+	},
+	{
+		id: &quot;bingo&quot;,
+		name: &quot;Bingo&quot;,
+		title: &quot;Бинго бонусы&quot;,
+		ProductTypeId: 2
+	},
+	{
+		id: &quot;sports&quot;,
+		name: &quot;Sports&quot;,
+		title: &quot;Бесплатные ставки&quot;,
+		ProductTypeId: 4
+	}
+] )
+		.value( 'PlusLinksValue',			
+
+
+
+[{&quot;id&quot;:&quot;promotions&quot;,&quot;title&quot;:&quot;Предложения&quot;,&quot;url&quot;:&quot;sports&quot;},{&quot;id&quot;:&quot;tierBenefits&quot;,&quot;title&quot;:&quot;Что такое Betway Plus?&quot;,&quot;url&quot;:&quot;benefits&quot;},{&quot;id&quot;:&quot;events&quot;,&quot;title&quot;:&quot;Победители&quot;,&quot;url&quot;:&quot;events&quot;},{&quot;id&quot;:&quot;faqs&quot;,&quot;title&quot;:&quot;ЧАВО&quot;,&quot;url&quot;:&quot;faqs&quot;}] )
+		.value( 'FooterLinks',				
+[{&quot;link&quot;:&quot;https://thebetwaygroup.com/&quot;,&quot;title&quot;:&quot;Корпоративный Betway&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betwaypartners.com/&quot;,&quot;title&quot;:&quot;Партнерская программа&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/contact&quot;,&quot;title&quot;:&quot;Свяжитесь с нами&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/help/contact/&quot;,&quot;title&quot;:&quot;Чат&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/help/payout-percentages/&quot;,&quot;title&quot;:&quot;Проценты выплат&quot;,&quot;target&quot;:&quot;_blank&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/terms/responsible-gaming/&quot;,&quot;title&quot;:&quot;Ответственная игра&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://casino.betway.com/ru/policies/bonus/&quot;,&quot;title&quot;:&quot;Правила бонуса казино&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/terms/&quot;,&quot;title&quot;:&quot;Правила и условия&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;http://www.gambleaware.co.uk/&quot;,&quot;title&quot;:&quot;BeGambleAware&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/terms/privacy/&quot;,&quot;title&quot;:&quot;Конфиденциальность и безопасность&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://betway.com/ru/terms/responsible-gaming/&quot;,&quot;title&quot;:&quot;18+&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://casino.betway.com/ru/casino-game-rules/&quot;,&quot;title&quot;:&quot;Правила игры в казино&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://casino.betway.com/ru/casino-games-strategy/&quot;,&quot;title&quot;:&quot;Стратегия игры в казино&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://casino.betway.com/ru/history-of-casino-games/&quot;,&quot;title&quot;:&quot;История казино&quot;,&quot;target&quot;:&quot;_self&quot;},{&quot;link&quot;:&quot;https://sports.betway.com/ru/sports/&quot;,&quot;title&quot;:&quot;Ставки онлайн&quot;,&quot;target&quot;:&quot;_self&quot;}] )
+
+		.constant( 'PlusHeroImage',		'https://images.thebetwaygroup.com/headers/ImageSet1773/1773_pkgqpuvchdp_language-RU_MegaMoolah_ru.jpg')
+		.constant( 'MyTierTable1',				'https://images.thebetwaygroup.com/headers/ImageSet2237/2237_rqtbsdlkpfw_language-RU_table1.png')
+		.constant( 'MyTierTable2',				'https://images.thebetwaygroup.com/headers/ImageSet2238/2238_msgfvw5q3oo_language-RU_table2.png')
+		.constant( 'MyTierTable3',				'https://images.thebetwaygroup.com/headers/ImageSet2239/2239_lkrahkdwd1m_language-RU_table3.png')
+		.constant( 'EventsImage',				'https://images.thebetwaygroup.com/headers/ImageSet1985/1985_xrt5bj3nt1k_Language-EN_beach_1500x1000.jpg')
+		.constant( 'Event1Image',				'https://images.thebetwaygroup.com/headers/ImageSet1986/1986_hth3cp5b3qn_Language-EN_bikers_1500x1000.jpg')
+		.constant( 'Event2Image',				'https://images.thebetwaygroup.com/headers/ImageSet1987/1987_fv1bvozxqxn_Language-EN_Horse_Racing_Bg.jpg')
+		.constant( 'Event3Image',				'https://images.thebetwaygroup.com/headers/ImageSet1988/1988_gq05o0jvf2k_DES_6383_West_Ham.jpg')
+		.constant( 'EventsImageMobile',		'https://images.thebetwaygroup.com/headers/ImageSet2119/2119_s0elloabqpc_Language-EN_beach_600x400.jpg')
+		.constant( 'Event1ImageMobile',		'https://images.thebetwaygroup.com/headers/ImageSet2120/2120_bwumglquaer_Language-EN_bikers_600x400.jpg')
+		.constant( 'Event2ImageMobile',		'https://images.thebetwaygroup.com/headers/ImageSet2121/2121_gmfclzt55jh_WindsorPark-Chelt8.jpg')
+		.constant( 'Event3ImageMobile',        'https://images.thebetwaygroup.com/headers/ImageSet2122/2122_420u5jlpnor_language-en_currency-none_westhamwinner.jpg')
+		.constant( 'TierBenefitsTable',		'https://images.thebetwaygroup.com/headers/ImageSet2246/2246_kcs4emv2ps1_language-RU_TierBenefitsRedesignRUv2.jpg')
+		.constant( 'WestHamLogo',				'https://images.thebetwaygroup.com/headers/ImageSet1522/1522_atgubtokie1_language-RU_WHSponsors.jpg')
+		.value( 'ResponsibleGamingLink',	'/ru/launch/linkname/responsible gaming bw/' )
+		.value( 'ResponsibleGamingTool',	'/ru/launch/linkname/responsible gaming tool bw/' )
+		.value( 'Username',					'' )
+		.value( 'CasinoId',                 '1941')
+		.value( 'isLoggedIn',				'False' )
+		.value( 'TranslationValue',			{
+	&quot;BUNS&quot; : {
+		&quot;Global&quot; : {
+			&quot;CookieDisclaimer&quot;:&quot;<p>На сайте Betway используются куки-файлы. Ознакомьтесь с <a data-mce-href='https://betway.com/ru/terms/privacy/' href='https://betway.com/ru/terms/privacy/'>правилами защиты данны</a>, чтобы узнать больше.</p>&quot;
+		},
+		
+		&quot;Tier&quot; : {
+			&quot;Title&quot;: &quot;Мой уровень&quot;
+		},
+		&quot;Redeem&quot; : {
+			&quot;Title&quot;: &quot;Мои пункты Plus&quot;
+		}
+		
+	},
+	&quot;Common&quot; : {
+		&quot;loading&quot;: &quot;<p>Идет загрузка...</p>&quot;,
+		&quot;accountInfo&quot;: &quot;Account Information&quot;,
+		&quot;personalInfo&quot;: &quot;Personal Information&quot;,
+		&quot;contactInfo&quot;: &quot;Contact Information&quot;,
+		&quot;next&quot;: &quot;Дальше&quot;,
+		&quot;backto&quot;: &quot;Назад&quot;
+	},
+	&quot;Sidebar&quot; : {
+		&quot;plusPoints&quot;: &quot;<p>Пункты Plus </p>&quot;,
+		&quot;Account&quot;: {
+			&quot;GameHistory&quot; : &quot;<p>История игр </p>&quot;,
+			&quot;TransactionHistory&quot;: &quot;<p>История транзакций</p>&quot;,
+			&quot;ResponsibleGaming&quot; : &quot;<p>Ответственная игра</p>&quot;,
+			&quot;MakeADeposit&quot; : &quot;<p>Сделать депозит</p>&quot;,
+			&quot;CashBalance&quot; : &quot;<p>Денежный счет</p>&quot;,
+			&quot;BonusAccount&quot; : &quot;<p>Бонусный счет</p>&quot;,
+			&quot;CasinoBalance&quot; : &quot;&quot;,
+			&quot;BingoBonus&quot; : &quot;<p>Бинго бонус</p>&quot;,
+			&quot;Total&quot; : &quot;<p>Всего</p>&quot;
+		},
+		&quot;Redeem&quot;: {
+			&quot;step1&quot;: &quot;<p>Пункты Plus для обмена:</p>&quot;,
+			&quot;step2&quot;: &quot;<p>Кредиты казино или бесплатные ставки на спорт:</p>&quot;,
+			&quot;stateReady&quot;: &quot;<p>Обменять</p>&quot;,
+			&quot;stateDisabled&quot;: &quot;<p>К сожалению, на вашем счете не достаточно пунктов Plus, чтобы совершить обмен.</p>&quot;,
+			&quot;statePending&quot;: &quot;<p>Меняем...</p>&quot;,
+			&quot;stateRefreshing&quot;: &quot;<p>Обновляем данные...</p>&quot;,
+			&quot;stateComplete&quot;: &quot;<p>Готово!</p>&quot;,
+			&quot;CollectingPlusPoints&quot;:&quot;<p>Как получить пункты?</p>&quot;,
+			&quot;RedeemingPlusPoints&quot;:&quot;<p>Обмен пунктов Plus<br></p>&quot;
+		},
+		&quot;Tier&quot;: {
+			&quot;BlueTitle&quot;: &quot;<p>Синий</p>&quot;,
+            &quot;BronzeTitle&quot;: &quot;<p>Бронзовый</p>&quot;,
+			&quot;SilverTitle&quot;: &quot;<p>Серебряный</p>&quot;,
+			&quot;GoldTitle&quot;: &quot;<p>Золотой</p>&quot;,
+			&quot;PlatinumTitle&quot;: &quot;<p>Платиновый</p>&quot;,
+			&quot;DiamondTitle&quot;: &quot;<p>Diamond<br></p>&quot;,
+			&quot;BlackTitle&quot;: &quot;<p>Черный</p>&quot;,
+			&quot;MaintainTitle&quot;: &quot;&quot;,
+			&quot;BlueInfo&quot;: &quot;<p>Продолжайте играть, чтобы заработать достаточно жетонов уровня для следующего уровня (<strong>Бронзовый</strong>) и получите более выгодные бонусы и предложения.</p>&quot;,
+			&quot;OtherInfo&quot;: &quot;<p>Участвуя в программе Betway Plus, вы получите более высокий бонус за свои пункты Plus, а также особые призы и выгодные предложения. </p>&quot;,
+			&quot;PointsRequired&quot;: &quot;<p>Надо заработать:</p>&quot;,
+			&quot;CurrentText&quot;: &quot;<p>Ваш уровень</p>&quot;,
+			&quot;NextText&quot;: &quot;<p>Следующий уровень:</p>&quot;,
+			&quot;CurrentInfo&quot;: &quot;<p>Уже заработано</p>&quot;,
+			&quot;MaintainInfo&quot;: &quot;<p>Сохраните свой нынешний бонус и уровень. </p>&quot;,
+			&quot;NextInfo&quot;: &quot;<p>Пройдите на новый уровень, чтобы получить более выгодные бонусы.</p>&quot;,
+			&quot;HigherTiers&quot;: &quot;<p>Чем выше уровень, тем лучше бонус за ваши пункты Plus.</p>&quot;,
+			&quot;HigherTierCountdown&quot;: &quot;<p>Чтобы сохранить свой уровень, наберите нужное количество жетонов до конца срока. У вас осталось:</p>&quot;,
+			&quot;LowerTierCountdown&quot;: &quot;<p>Чтобы пройти на новый уровень, заработайте необходимое число пунктов до конца срока. До него осталось:</p>&quot;,
+			&quot;MoreTier&quot;: &quot;<p>Жетоны уровня — что это?</p>&quot;,
+			&quot;MoreTierBenefits&quot;: &quot;<p>Привилегии уровня</p>&quot;
+		}
+	},
+	&quot;Modal&quot;: {
+		&quot;Terms&quot; : &quot;<p>Правила и условия</p>&quot;
+	}
+} )
+		.value( 'isMobile',					false )
+		.value( 'isTablet',					false )
+		.value( 'lbm$isPortable',           false )
+		.value( 'lbm$isLoggedIn', false )
+
+		.factory(&quot;lbm$referrer&quot;, ['wd$client', 'lbm$cache', function(wd$client, lbm$cache){
+
+			var referrer = {
+			    query: {
+			        brand : '',
+			        language: '' || wd$client.language,
+			        origin: '',
+			        mock: '',
+					loader: '',
+                    callbackUrl: '',
+                    xmas:'',
+                    category:'',
+					newTerms: ''
+			    },
+			    arguments: {
+			        username: '',
+			        password: ''
+			    },
+			    session: {
+			        promotion: {
+			            subbrand: lbm$cache.get(&quot;$promotion&quot;)? lbm$cache.get(&quot;$promotion&quot;).subbrand : null,
+			            id: lbm$cache.get(&quot;$promotion&quot;)? lbm$cache.get(&quot;$promotion&quot;).id : null
+			        }
+			    },
+				hasPrevURL: ''
+			};
+
+			var cacheReferrer = function(){
+
+			    if(window.location.pathname.indexOf(&quot;promotions&quot;) > -1 ){
+			        lbm$cache.flush();
+			    } else if(lbm$cache.get(&quot;$referrer&quot;) &amp;&amp; !referrer.query.origin){
+
+			        // assigns session properties to service properties
+			        referrer.query.origin = lbm$cache.get(&quot;$referrer&quot;).origin;
+			        referrer.query.brand = lbm$cache.get(&quot;$referrer&quot;).brand;
+			        return false;
+			    }
+			    referrer.query.brand = referrer.query.brand || 'sports';
+
+			    lbm$cache.set(&quot;$referrer&quot;, { origin: referrer.query.origin, brand: referrer.query.brand });
+			}
+
+			cacheReferrer();
+
+			return referrer;
+        }]);
+" defer=""></script>
+        <script src="/lobby/dist/js-production/main-1513183423577.min.js" defer=""></script>
+
+
+
+
+<!-- GA -->
+<script defer="">
+    (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments); }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m); })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+</script>
+
+<!-- tracking -->
+
+
+        <script type="text/javascript">
+            ((function(e,t){e.onload=function(){var n=function(){var e=t.createElement("iframe");e.src="https://servedby.flashtalking.com/container/6812;47107;5278;iframe/?spotName=Pageview_Asynch&U1=5cdfccab-1927-4cdc-b171-c7e8a933ee6b&U2=bG9nZ2VkT3V0VXNlcg==;&U3=https://casino.betway.com/lobby/ru/&cachebuster="+Math.random()*1e6;e.style.cssText="position: absolute;visibility: hidden;width: 1px;height: 1px;";t.body.appendChild(e)};if(t.readyState==="complete"){n()}else{if(typeof e.addEventListener!=="undefined"){t.addEventListener("DOMContentLoaded",n,!1)}else{e.attachEvent("onload",n,!1)}}}})(window,document))
+        </script>
+        <script src="/lobby/Otherlevels/package/js/otherlevels.js"></script>
+        <script src="/lobby/Iovation/static_wdp.js" defer=""></script>
+        <script type="text/javascript" src="/iojs/latest/dyn_wdp.js" defer=""></script>
+        <script type="text/javascript" src="https://mpsnare.iesnare.com/snare.js" defer=""></script>
+        <script src="/lobby/Iovation/vengeIovation.js" defer=""></script>
+
+
+
+<iframe src="https://servedby.flashtalking.com/container/6812;47107;5278;iframe/?spotName=Pageview_Asynch&amp;U1=5cdfccab-1927-4cdc-b171-c7e8a933ee6b&amp;U2=bG9nZ2VkT3V0VXNlcg==;&amp;U3=https://casino.betway.com/lobby/ru/&amp;cachebuster=437829.5331933928" style="position: absolute; visibility: hidden; width: 1px; height: 1px;"></iframe></body></html>

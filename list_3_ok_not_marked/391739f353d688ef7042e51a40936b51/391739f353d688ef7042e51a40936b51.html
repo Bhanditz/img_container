@@ -1,0 +1,745 @@
+<html><head id="ctl00_Head1"><title>
+	NC Education Lottery
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta http-equiv="Content-Language" content="en">
+
+		<!--[if lte IE 9]>
+			<meta http-equiv="refresh" content="0; URL=http://www.mozilla.org/" />
+		<![endif]-->
+
+		<meta charset="ISO-8859-1"><meta http-equiv="Cache-control" content="no-cache"><meta name="keywords" content="North Carolina Education Lottery, Lottery, Powerball, Mega Millions, NCEL, Lucke-Rewards, North Carolina"><meta name="description" content="The official website of the North Carolina Education Lottery"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="msapplication-config" content="/Site/GFX/Favicon/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" sizes="180x180" href="/Site/GFX/Favicon/apple-touch-icon.png"><link rel="icon" type="image/png" href="/Site/GFX/Favicon/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/Site/GFX/Favicon/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="/Site/GFX/Favicon/manifest.json"><link rel="mask-icon" href="/Site/GFX/Favicon/safari-pinned-tab.svg" color="#00a8e1"><link rel="shortcut icon" href="/Site/GFX/Favicon/favicon.ico"><link href="/Site/CSS/default.css" rel="stylesheet" type="text/css" media="screen"><link href="/Site/CSS/wrapper.css" rel="stylesheet" type="text/css" media="screen"><link href="/Site/CSS/mid.css" rel="stylesheet" type="text/css" media="screen"><link href="/Site/CSS/themes.css" rel="stylesheet" type="text/css" media="screen"><link href="/Site/CSS/elements.css" rel="stylesheet" type="text/css" media="screen">
+
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NLSSPHH"></script><script src="/Site/JS/svg4everybody-2.0.0.min.js" type="text/javascript"></script>
+		<script src="/Site/JS/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="/Site/JS/jquery.cycle2.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			svg4everybody(); // run it now or whenever you are ready
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 1){  
+					$('.TOP').addClass("ss");
+				}
+				else{
+					$('.TOP').removeClass("ss");
+				}
+			});
+			$(document).ready(function () {
+				//dashOpen
+				$('#user').click(function () {
+					$('#user').toggleClass('dashOpen');
+					$('#dashboard').toggleClass('dashOpen');
+					$('body').toggleClass('dashOpen');
+					$('#options').removeClass('optionsopen');//also closes options menu if open
+				});
+				//optionsopen
+				$('#optionstrigger').click(function () {
+					$('#options').toggleClass('optionsopen');
+					$(this).toggleClass('optionstriggeropen');
+				});
+			});
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-15349622-3"></script>
+		<script type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-15349622-3');
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NLSSPHH');</script>
+		<!-- End Google Tag Manager -->
+
+		
+
+	<script type="text/javascript">
+			$(function () {
+				$('.band-hero, .cycle-slideshow, .slidediv, .slideimg').css({ 'height': ($(window).width() * 5 / 16) + 'px' });
+			$(window).resize(function () {
+				$('.band-hero, .cycle-slideshow, .slidediv, .slideimg').css({ 'height': ($(window).width() * 5 / 16) + 'px' });
+			});
+		});
+	</script>
+
+</head>
+	<body id="ctl00_BodyId">
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLSSPHH"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+
+		<form name="aspnetForm" method="post" action="/" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNjcxNjMzMDQPZBYCZg9kFgICAQ9kFgICARBkZBYEAgMPZBYCAgMPZBYCZg9kFgJmD2QWAmYPFQEoaHR0cHM6Ly9yZXdhcmRzLm5jbG90dGVyeS5jb20vbG90dG8vY2FydGQCBw9kFgQCAw9kFgJmDxYCHgRUZXh0BaYWPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9Nb2JpbGVBcHAiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX1NjYW4tSXRfVGlja2V0Q2hlY2tlcl9SZXZpc2VkLmpwZyIgYWx0PSJNb2JpbGUgQXBwIj48L2E+PC9kaXY+DQo8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL0tlbm9Ib3ciPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX0ludHJvLUtlbm8uanBnIiBhbHQ9IkNhcm9saW5hIEtlbm8gaXMgSGVyZSI+PC9hPjwvZGl2Pg0KPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9XaGVyZVRvUGxheSI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfQXZhaWwtS2Vuby5qcGciIGFsdD0iV2hlcmUgdG8gUGxheSBDYXJvbGluYSBLZW5vIj48L2E+PC9kaXY+DQo8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL1NjcmF0Y2hPZmYiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX0ZpcnN0VHVlc19EZWNlbWJlcjIwMTcuanBnIiBhbHQ9IkZpcnN0IFR1ZXNkYXkiPjwvYT48L2Rpdj4NCjwhLS0gPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9QbGF5Ij48aW1nIGNsYXNzPSJzbGlkZWltZyIgc3JjPSIvQ29udGVudC9JbWFnZXMvQmFubmVyL1JPVF9CdXlOb3dPbmxpbmVQbGF5XzEyODB4NDAwLmpwZyIgYWx0PSJCdXkgTm93OiBPbmxpbmUgUGxheSI+PC9hPjwvZGl2PiAtLT4NCjxkaXYgY2xhc3M9InNsaWRlZGl2Ij48YSBocmVmPSJodHRwczovL3Jld2FyZHMubmNsb3R0ZXJ5LmNvbS9sb3R0by9kcmF3I1Bvd2VyYmFsbCI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfSmFja3BvdEZldmVyX1BCLU1NLmpwZyIgYWx0PSJKYWNrb3QgRmV2ZXI6IFBvd2VyYmFsbCBhbmQgTWVnYSBNaWxsaW9ucyI+PC9hPjwvZGl2Pg0KPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9Qcm9tb3Rpb25zIj48aW1nIGNsYXNzPSJzbGlkZWltZyIgc3JjPSIvQ29udGVudC9JbWFnZXMvQmFubmVyL1JPVF9EZWNlbWJlcjIwMTcuanBnIiBhbHQ9IkpvbGx5IEphY2twb3QiPjwvYT48L2Rpdj4NCjxkaXYgY2xhc3M9InNsaWRlZGl2Ij48YSBocmVmPSIvUHJvbW90aW9ucyI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1QtUXVpY2tDYXNoLTEwMDAuanBnIiBhbHQ9IlF1aWNrIENhc2giPjwvYT48L2Rpdj4NCjxkaXYgY2xhc3M9InNsaWRlZGl2Ij48YSBocmVmPSIvU2NyYXRjaE9mZkRldGFpbD9nbj01ODYiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX1N1cGVyVGlja2V0MjAxNy5qcGciIGFsdD0iU3VwZXIgVGlja2V0Ij48L2E+PC9kaXY+DQo8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL1Byb21vdGlvbnMiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX0V4dHJlbWVNaWxsaW9uc18ybmRDaGFuY2VfRHJhd0RhdGUuanBnIiBhbHQ9IkV4dHJlbWUgTWlsbGlvbnMgRHJhdyBEYXRlIj48L2E+PC9kaXY+DQo8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL1BsYXlSZXNwb25zaWJseSI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfUkdfVG95c05vdFRpY2tldHMuanBnIiBhbHQ9IlJlc3BvbnNpYmxlIEdhbWluZyI+PC9hPjwvZGl2Pg0KDQoNCg0KPCEtLSA8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL0x1Y2t5Rm9yTGlmZSI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfTEZMLmpwZyIgYWx0PSJMdWNreSBmb3IgTGlmZSI+PC9hPjwvZGl2PiAtLT4NCjwhLS0gPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9Qcm9tb3Rpb25zIj48aW1nIGNsYXNzPSJzbGlkZWltZyIgc3JjPSIvQ29udGVudC9JbWFnZXMvQmFubmVyL1JPVF8kMzBfMm5kQ2huLmpwZyIgYWx0PSJFeHRyZW1lIE1pbGxpb25zIFNlY29uZCBDaGFuY2UiPjwvYT48L2Rpdj4gLS0+DQo8IS0tIDxkaXYgY2xhc3M9InNsaWRlZGl2Ij48YSBocmVmPSIvUHJvbW90aW9ucyI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfV2Fsa2luZ0RlYWRfU2Vjb25kQ2hhbmNlLmpwZyIgYWx0PSJUaGUgV2Fsa2luZyBEZWFkIFNlY29uZCBDaGFuY2UiPjwvYT48L2Rpdj4gLS0+DQo8IS0tIDxkaXYgY2xhc3M9InNsaWRlZGl2Ij48YSBocmVmPSIvUHJvbW90aW9ucyI+PGltZyBjbGFzcz0ic2xpZGVpbWciIHNyYz0iL0NvbnRlbnQvSW1hZ2VzL0Jhbm5lci9ST1RfSmVlcFNlY29uZENoYW5jZS5qcGciIGFsdD0iSmVlcCBTZWNvbmQgQ2hhbmNlIj48L2E+PC9kaXY+IC0tPg0KPCEtLSA8ZGl2IGNsYXNzPSJzbGlkZWRpdiI+PGEgaHJlZj0iL1Byb21vdGlvbnMiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX011bHRpcGxpZXJTZWNvbmRDaGFuY2UuanBnIiBhbHQ9IlggVGhlIENhc2ggU2Vjb25kIENoYW5jZSI+PC9hPjwvZGl2PiAtLT4NCjwhLS0gPGRpdiBjbGFzcz0ic2xpZGVkaXYiPjxhIGhyZWY9Ii9NZWdhTWlsbGlvbnMiPjxpbWcgY2xhc3M9InNsaWRlaW1nIiBzcmM9Ii9Db250ZW50L0ltYWdlcy9CYW5uZXIvUk9UX01lZ2FNaWxsaW9uc19BZnRlck9jdDI4LmpwZyIgYWx0PSJNZWdhIE1pbGxpb25zIj48L2E+PC9kaXY+IC0tPmQCFQ9kFgJmDxYCHgtfIUl0ZW1Db3VudAICFgRmD2QWCAIBDxYCHwAFB0V2ZW5pbmdkAgIPFQEPVHVlc2RheSwgRGVjIDE5ZAIDDxYCHwAFMDx1c2UgeGxpbms6aHJlZj0iL1NpdGUvR0ZYL2ljb25zLnN2ZyNzdmdNb29uIiAvPmQCBA8VBQE0ATYBMQE2AjE3ZAIBD2QWCAIBDxYCHwAFB0RheXRpbWVkAgIPFQEPVHVlc2RheSwgRGVjIDE5ZAIDDxYCHwAFLzx1c2UgeGxpbms6aHJlZj0iL1NpdGUvR0ZYL2ljb25zLnN2ZyNzdmdTdW4iIC8+ZAIEDxUFATYBMgEwATUCMTNkZBZGpllFnUR8sbr0HRWG66lSDhyB8uJqjwnZGGD/dKaI" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xnJoMKXzCOfaDibtTHrZc-Wj0lCnGEhHRdXogfsCIPkpwEgp_Pda8JSMrx-OuYC2P4BzxODvcP8EwUwHMH2zKzkIMI8QrjBg9kQ0dHn90M41&amp;t=636403334294818574" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=l9quNqZM09VX-NBH4AXO6LoPVo9XtJgTTZi6LPSj7x8-6b24-wzull6Dkc0XOdh-i2HV49_OTmIt83VWodxj11b-AaJOZizNhM-SawqJ2UQ39EPsyZaAvtRKAS1eENeQTcmWxgDmWkVXeC5xWD-2b5lg15wzV9BzLHh7wyqioT9_OAjfpAL7rrnc80pX6jOi0&amp;t=3d6efc1f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=poP7Rj7O2ZWD-3LC18csL6Eo5EjxOtjSidXC8jgGVlpVUnWmZK1IwxiSXm-bGAI6jHohCIoGGLjB2QbSDVJdpwptwmn42GwGVq-ohTMvtTEZeiqgtQuJaXDlkZgslqWcp1DF7FYKutBojrYOStmEDTwqdqexdISRJld1F7HEBWDxHh9XanbwJ1hmQMINAY1P0&amp;t=3d6efc1f" type="text/javascript"></script>
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="84412C77" type="hidden">
+</div>
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+			<div class="TOP">
+
+				<div id="ctl00_topNavDiv" class="topNav">
+					<div>
+
+						<div class="topLogo">
+							<a href="/Home">
+								<svg class="svgNCELStdHz" preserveAspectRatio="xMidYMid">
+									<use xlink:href="/Site/GFX/logos.svg#svgNCELStdHz"></use>
+								</svg>
+								<svg class="svgNCELHorz" preserveAspectRatio="xMidYMid">
+									<use xlink:href="/Site/GFX/logos.svg#svgNCELHorz"></use>
+								</svg>
+								<svg class="svgNCELBubble" preserveAspectRatio="xMidYMid">
+									<use xlink:href="/Site/GFX/logos.svg#svgNCELBubble"></use>
+								</svg>
+							</a>
+						</div>
+						<input id="navTrigger" class="navTrigger" type="checkbox">
+						<label for="navTrigger" onclick=""></label>
+						<nav>
+							<ul>
+								<li><a href="/Play" title="PLAY">PLAY&nbsp;NOW</a>
+									<ul>
+										<li><a id="ctl00_hlOnlinePlay" href="https://rewards.nclottery.com/lotto/draw">Online Play</a></li>
+										<li><a href="/Lucke-Rewards">Lucke-Rewards</a></li>
+										<li><a href="/WhereToPlay">Where to Play</a></li>
+										<li><a href="/PlayAtThePump">Play at the Pump</a></li>
+										<li><a href="/Promotions">Promotions &amp; Drawings</a></li>
+
+									</ul>
+								</li>
+								<li><a href="/Games" title="GAMES">GAMES</a>
+									<ul>
+										<li><a href="/Powerball">Powerball</a></li>
+										<li><a href="/MegaMillions">Mega Millions</a></li>
+										<li><a href="/LuckyForLife">Lucky For Life</a></li>
+										<li><a href="/Cash5">Cash 5</a></li>
+										<li><a href="/Pick4">Pick 4</a></li>
+										<li><a href="/Pick3">Pick 3</a></li>
+										<li><a href="/Keno">Keno</a></li>
+										<li><a href="/ScratchOff">Scratch-Offs</a></li>
+
+									</ul>
+								</li>
+								<li><a href="/Win" title="WIN">WIN</a>
+									<ul>
+										<li><a href="/Winners">Winners</a></li>
+										<li><a href="/DidYouWin">Did You Win?</a></li>
+										<li><a href="/ClaimPrizes">Claim Prizes</a></li>
+										<li><a href="/LuckyNumbers">Lucky Numbers</a></li>
+
+									</ul>
+								</li>
+								<li><a href="/Impact" title="IMPACT">IMPACT</a>
+									<ul>
+										<li><a href="/Education">Education</a></li>
+										<li><a href="/Economic">Economic</a></li>
+										<li><a href="/Sponsorship">Sponsorship</a></li>
+										<li><a href="/Events">Events</a></li>
+
+									</ul>
+								</li>
+								<li><a href="/About" title="ABOUT">ABOUT</a>
+									<ul>
+										<li><a href="/CorporateSocialResponsibility">Corporate Social Responsibility</a></li>
+										<li><a href="/Commission">Commission</a></li>
+										<li><a href="/Media">Media</a></li>
+										<li><a href="/Careers">Careers</a></li>
+										<li><a href="/Retailers">For Retailers</a></li>
+										<li><a href="/Business">Business Opportunities</a></li>
+										<li><a href="/NewsBlog">News Blog</a></li>
+
+									</ul>
+								</li>
+								<li><a href="/PlayResponsibly" title="PLAY RESPONSIBLY">PLAY RESPONSIBLY</a></li>
+							</ul>
+						</nav>
+						<div class="topAux">
+							
+
+		<a href="https://rewards.nclottery.com/lotto/cart" class="buttonCart" title="Cart">
+			<svg class="svgIcon svgCart" preserveAspectRatio="xMidYMid">
+				<use xlink:href="/Site/GFX/icons.svg#svgCart"></use>
+			</svg>
+		</a>
+
+		<a href="/SignIn" class="buttonLogin" title="Sign In">
+			<svg class="svgIcon svgUser" preserveAspectRatio="xMidYMid">
+				<use xlink:href="/Site/GFX/icons.svg#svgUser"></use>
+			</svg>
+			<span>Sign&nbsp;In</span>
+		</a>
+	
+
+						</div>
+
+					</div>
+				</div>
+				<!-- end topnav -->
+
+				
+	
+
+
+			</div>
+			<!-- end TOP -->
+
+			<div class="MID">
+
+				
+	
+
+	<div class="band band-hero" style="height: 315px;">
+
+		<div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="6000" data-cycle-pause-on-hover="true" data-cycle-slides="> div" data-cycle-swipe="true" data-cycle-prev=".cycle-prev" data-cycle-next=".cycle-next" data-cycle-swipe-fx="scrollHorz" _data-cycle-pager=".hero-pager" _data-cycle-pager-template="<span><svg class='svgIcon svgStar' preserveAspectRatio='xMidYMid'><use xlink:href='/Site/GFX/icons.svg#svgStar' /></svg></span>" style="height: 315px;"><div class="slidediv cycle-slide cycle-sentinel" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; visibility: hidden; height: 315px;"><a href="/MobileApp" style="visibility: hidden;"><img class="slideimg" src="/Content/Images/Banner/ROT_Scan-It_TicketChecker_Revised.jpg" alt="Mobile App" style="height: 315px; visibility: hidden;"></a></div>
+			<!-- prev/next links -->
+			<span class="cycle-prev"></span>
+			<span class="cycle-next"></span>
+
+			
+
+
+
+<!-- <div class="slidediv"><a href="/Play"><img class="slideimg" src="/Content/Images/Banner/ROT_BuyNowOnlinePlay_1280x400.jpg" alt="Buy Now: Online Play"></a></div> -->
+
+
+
+
+
+
+
+
+
+<!-- <div class="slidediv"><a href="/LuckyForLife"><img class="slideimg" src="/Content/Images/Banner/ROT_LFL.jpg" alt="Lucky for Life"></a></div> -->
+<!-- <div class="slidediv"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_$30_2ndChn.jpg" alt="Extreme Millions Second Chance"></a></div> -->
+<!-- <div class="slidediv"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_WalkingDead_SecondChance.jpg" alt="The Walking Dead Second Chance"></a></div> -->
+<!-- <div class="slidediv"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_JeepSecondChance.jpg" alt="Jeep Second Chance"></a></div> -->
+<!-- <div class="slidediv"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_MultiplierSecondChance.jpg" alt="X The Cash Second Chance"></a></div> -->
+<!-- <div class="slidediv"><a href="/MegaMillions"><img class="slideimg" src="/Content/Images/Banner/ROT_MegaMillions_AfterOct28.jpg" alt="Mega Millions"></a></div> -->
+
+		<div class="slidediv cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; visibility: visible; height: 315px;"><a href="/MobileApp"><img class="slideimg" src="/Content/Images/Banner/ROT_Scan-It_TicketChecker_Revised.jpg" alt="Mobile App" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 99; visibility: hidden; height: 315px;"><a href="/KenoHow"><img class="slideimg" src="/Content/Images/Banner/ROT_Intro-Keno.jpg" alt="Carolina Keno is Here" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden; height: 315px;"><a href="/WhereToPlay"><img class="slideimg" src="/Content/Images/Banner/ROT_Avail-Keno.jpg" alt="Where to Play Carolina Keno" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden; height: 315px;"><a href="/ScratchOff"><img class="slideimg" src="/Content/Images/Banner/ROT_FirstTues_December2017.jpg" alt="First Tuesday" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 95; visibility: hidden; height: 315px;"><a href="https://rewards.nclottery.com/lotto/draw#Powerball"><img class="slideimg" src="/Content/Images/Banner/ROT_JackpotFever_PB-MM.jpg" alt="Jackot Fever: Powerball and Mega Millions" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden; height: 315px;"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_December2017.jpg" alt="Jolly Jackpot" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 93; visibility: hidden; height: 315px;"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT-QuickCash-1000.jpg" alt="Quick Cash" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 92; visibility: hidden; height: 315px;"><a href="/ScratchOffDetail?gn=586"><img class="slideimg" src="/Content/Images/Banner/ROT_SuperTicket2017.jpg" alt="Super Ticket" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 91; visibility: hidden; height: 315px;"><a href="/Promotions"><img class="slideimg" src="/Content/Images/Banner/ROT_ExtremeMillions_2ndChance_DrawDate.jpg" alt="Extreme Millions Draw Date" style="height: 315px;"></a></div><div class="slidediv cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 90; visibility: hidden; height: 315px;"><a href="/PlayResponsibly"><img class="slideimg" src="/Content/Images/Banner/ROT_RG_ToysNotTickets.jpg" alt="Responsible Gaming" style="height: 315px;"></a></div></div>
+
+	</div>
+
+	
+
+	
+
+
+
+
+	
+
+	
+
+	<div class="band" style="padding-top: 1rem;">
+		<div>
+			<div class="box-group thirds">
+				
+
+<style type="text/css">
+
+	@keyframes pulse { 50% { background:transparent; color:#000;} }
+
+	.box.Powerball .prize, 
+	.box.Powerball .cash { background:transparent; color:#000; }
+		.box.Powerball .prize.pulsing,
+		.box.Powerball .cash.pulsing { background:#cf102d; color:#ffffff; animation-name:pulse; animation-iteration-count:4; animation-duration:2s; }
+
+</style>
+
+<div id="ctl00_MainContent_ResultsPowerball_ResultsBlockPowerball" class="box cloudfx results-box Powerball">
+
+	<svg class="svgLogo svgPowerball" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgPowerballRed"></use></svg>
+
+	<p class="label-drawdate">Latest Draw</p>
+
+	<span id="ctl00_MainContent_ResultsPowerball_lblPBDrawDate" class="drawdate">Saturday, Dec 16</span>
+
+	<div class="ball-row">
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall1" class="ball">9</span>
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall2" class="ball">35</span>
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall3" class="ball">37</span>
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall4" class="ball">50</span>
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall5" class="ball">63</span>
+		<span id="ctl00_MainContent_ResultsPowerball_lblPBBall6" class="ball powerball">11</span>
+	</div>
+
+	<span id="ctl00_MainContent_ResultsPowerball_lblPowerPlay" class="powerplay">POWERPLAY <span>X2</span></span>
+
+	<p class="label-prize">Jackpot Estimate</p>
+
+	<span id="ctl00_MainContent_ResultsPowerball_lblPBJackpot" class="prize pulsing">$269 Million</span>
+	<span id="ctl00_MainContent_ResultsPowerball_lblPBCash" class="cash pulsing">Cash Value $171.3 Million</span>
+
+	<p class="label-drawdatenext">Next Drawing</p>
+	
+	<span id="ctl00_MainContent_ResultsPowerball_lblPBDrawDateNext" class="drawdatenext">Wednesday, Dec 20</span>
+
+	<div class="box-foot">
+		<a id="ctl00_MainContent_ResultsPowerball_hlPowerballBuy" class="button" href="https://rewards.nclottery.com/lotto/draw#Powerball">Buy Now</a>
+		<a id="ctl00_MainContent_ResultsPowerball_hlPBpayout" class="button" href="/Powerball">Game Info</a>
+	</div>
+</div>
+				
+
+<style type="text/css">
+
+	@keyframes pulse { 50% { background:transparent; color:#000;} }
+
+	.box.MegaMillions .prize,
+	.box.MegaMillions .cash { background:transparent; color:#000; }
+		.box.MegaMillions .prize.pulsing,
+		.box.MegaMillions .cash.pulsing { background:#1a428a; color:#fff; animation-name:pulse; animation-iteration-count:4; animation-duration:2s; }
+
+</style>
+
+<div class="box cloudfx results-box MegaMillions">
+
+	<svg class="svgLogo svgMegaMillions" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgMegaMillions"></use></svg>
+
+	<p class="label-prize">Latest Draw</p>
+
+	<span id="ctl00_MainContent_ResultsMegaMillions_lblMMDrawDate" class="drawdate">Tuesday, Dec 19</span>
+	 
+	<div class="ball-row">
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall1" class="ball">28</span>
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall2" class="ball">37</span>
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall3" class="ball">39</span>
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall4" class="ball">42</span>
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall5" class="ball">58</span>
+		<span id="ctl00_MainContent_ResultsMegaMillions_lblMMBall6" class="ball megaball">2</span>
+	</div>
+
+	<span id="ctl00_MainContent_ResultsMegaMillions_lblMegaplier" class="megaplier">MEGAPLIER <span>X3</span></span>
+
+	<p class="label-prize">Jackpot Estimate</p>
+
+	<span id="ctl00_MainContent_ResultsMegaMillions_lblMMPrize" class="prize pulsing">$247 Million</span>
+	<span id="ctl00_MainContent_ResultsMegaMillions_lblMMCash" class="cash pulsing">Cash Value $155.2 Million</span>
+
+	<p class="label-drawdatenext">Next Drawing</p>
+
+	<span id="ctl00_MainContent_ResultsMegaMillions_lblMMDrawDateNext" class="drawdatenext">Friday, Dec 22</span>
+
+	<div class="box-foot">
+		<a id="ctl00_MainContent_ResultsMegaMillions_hlMegaMillionsBuy" class="button" href="https://rewards.nclottery.com/lotto/draw#MegaMillions">Buy Now</a>
+		<a id="ctl00_MainContent_ResultsMegaMillions_hlMMpayout" class="button" href="/MegaMillions">Game Info</a>
+	</div>
+
+</div>
+				
+
+<div class="box cloudfx results-box LuckyForLife">
+
+	<svg class="svgLogo svgLuckyForLife" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgLuckyForLife"></use></svg>
+
+	<p class="label-drawdate">Latest Draw</p>
+
+	<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LDrawdate" class="drawdate">Monday, Dec 18</span>
+
+	<div class="ball-row">
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall1" class="ball">13</span>
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall2" class="ball">16</span>
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall3" class="ball">21</span>
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall4" class="ball">29</span>
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall5" class="ball">32</span>
+		<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LBall6" class="ball luckyball">17</span>
+	</div>
+	<span class="megaplier">&nbsp;</span>
+
+	<p class="label-prize">Top Prizes</p>
+
+	<p class="prize" style="font-size:1.5rem;">$1,000<span style="font-weight:normal;">/day for life or</span></p>
+	<p class="prize" style="font-size:1.5rem;">$25,000<span style="font-weight:normal;">/year for life.</span></p>
+
+	<p class="label-drawdatenext">Next Drawing</p>
+
+	<span id="ctl00_MainContent_ResultsLuckyForLife_lblL4LDrawDateNext" class="drawdatenext">Thursday, Dec 21</span>
+
+	<div class="box-foot">
+		<a id="ctl00_MainContent_ResultsLuckyForLife_hlLuckyForLifeBuy" class="button" href="https://rewards.nclottery.com/lotto/draw#LuckyForLife">Buy Now</a>
+		<a id="ctl00_MainContent_ResultsLuckyForLife_hlL4Lpayout" class="button" href="/LuckyForLife">Game Info</a>
+	</div>
+
+</div>
+				
+
+<style type="text/css">
+
+	@keyframes pulse { 50% { background:transparent; color:#000;} }
+
+	.box.Cash5 .prize { background:transparent; color:#000; }
+	.box.Cash5 .prize.pulsing { background:#94368d; color:#ffffff; animation-name:pulse; animation-iteration-count:4; animation-duration:2s; }
+
+</style>
+
+<div class="box cloudfx results-box Cash5">
+	<svg class="svgLogo" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgCash5"></use></svg>
+
+	<p class="label-drawdate">Latest Draw</p>
+
+	<span id="ctl00_MainContent_ResultsCash5_lblC5DrawDate" class="drawdate">Tuesday, Dec 19</span>
+
+	<div class="ball-row">
+		<span id="ctl00_MainContent_ResultsCash5_lblC5Ball1" class="ball">11</span>
+		<span id="ctl00_MainContent_ResultsCash5_lblC5Ball2" class="ball">27</span>
+		<span id="ctl00_MainContent_ResultsCash5_lblC5Ball3" class="ball">28</span>
+		<span id="ctl00_MainContent_ResultsCash5_lblC5Ball4" class="ball">33</span>
+		<span id="ctl00_MainContent_ResultsCash5_lblC5Ball5" class="ball">39</span>
+	</div>
+
+	<p class="label-prize">Top Prize Estimate</p>
+
+	<span id="ctl00_MainContent_ResultsCash5_lblC5Prize" class="prize">$50,000 </span>
+
+	<p class="label-drawdatenext" style="">Next Drawing</p>
+
+	<span id="ctl00_MainContent_ResultsCash5_lblC5DrawDateNext" class="drawdatenext">Wednesday, Dec 20</span>
+
+	<div class="box-foot">
+		<a id="ctl00_MainContent_ResultsCash5_hlCash5Buy" class="button" href="https://rewards.nclottery.com/lotto/draw#Cash5">Buy Now</a>
+		<a id="ctl00_MainContent_ResultsCash5_hlCash5payout" class="button" href="/Cash5">Game Info</a>
+	</div>
+</div>
+				<div class="box cloudfx results-box Pick4">
+					<svg class="svgLogo svgPick4" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgPick4"></use></svg>
+					
+
+			<p class="label-drawdate">Latest Evening Draw</p>
+					
+			<p class="drawdate">Tuesday, Dec 19</p>
+
+			<div class="ball-row">
+				<span class="slot">
+					<svg class="svgIcon svgSlot" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/icons.svg#svgMoon"></use></svg>
+				</span>
+				<span class="ball">4</span>
+				<span class="ball">6</span>
+				<span class="ball">1</span>
+				<span class="ball">6</span>
+				<span class="sumitup">17</span>
+			</div>
+
+	
+
+			<p class="label-drawdate">Latest Daytime Draw</p>
+					
+			<p class="drawdate">Tuesday, Dec 19</p>
+
+			<div class="ball-row">
+				<span class="slot">
+					<svg class="svgIcon svgSlot" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/icons.svg#svgSun"></use></svg>
+				</span>
+				<span class="ball">6</span>
+				<span class="ball">2</span>
+				<span class="ball">0</span>
+				<span class="ball">5</span>
+				<span class="sumitup">13</span>
+			</div>
+
+	
+					<div class="box-foot">
+						<a href="/WhereToPlay" id="ctl00_MainContent_findStorePick4" class="button" title="Find Store">Find Store</a>
+						<a href="/Pick4" class="button" title="Game Info">Game Info</a>
+					</div>
+				</div>
+				<div class="box cloudfx results-box Pick3">
+					<svg class="svgLogo svgPick3" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgPick3"></use></svg>
+					
+
+		<p class="label-drawdate">Latest Evening Draw</p>
+
+		<p class="drawdate">Tuesday, Dec 19</p>
+
+		<div class="ball-row">
+			<span class="slot">
+				<svg class="svgIcon svgSlot" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/icons.svg#svgMoon"></use></svg>
+			</span>
+			<span class="ball">7</span>
+			<span class="ball">5</span>
+			<span class="ball">2</span>
+			
+			<span class="sumitup">14</span>
+		</div>
+
+		
+
+	
+
+		<p class="label-drawdate">Latest Daytime Draw</p>
+
+		<p class="drawdate">Tuesday, Dec 19</p>
+
+		<div class="ball-row">
+			<span class="slot">
+				<svg class="svgIcon svgSlot" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/icons.svg#svgSun"></use></svg>
+			</span>
+			<span class="ball">4</span>
+			<span class="ball">1</span>
+			<span class="ball">3</span>
+			
+			<span class="sumitup">8</span>
+		</div>
+
+		
+
+	
+					<div class="box-foot">
+						<a href="/WhereToPlay" id="ctl00_MainContent_findStorePick3" class="button" title="Find Store">Find Store</a>
+						<a href="/Pick3" class="button" title="Game Info">Game Info</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="box-group whole">
+				<div class="box cloudfx results-box Keno parts">
+					<div class="part" style="padding-top:0.5rem;">
+						<svg class="svgLogo svgKeno" preserveAspectRatio="xMidYMid"><use xlink:href="/Site/GFX/logos.svg#svgKeno"></use></svg>
+					</div>
+					<div class="part">
+						<h3>Win up to $100,000 every 5 minutes</h3>
+						<h5>Big Thrills Served Fast.</h5>
+						<div class="box-foot">
+							<a href="/WhereToPlay" id="ctl00_MainContent_A1" class="button" title="Find Store">Find Store</a>
+							<a href="/Keno" class="button" title="Results">Results</a>
+							<a href="/KenoHow" class="button" title="Game Info">How to Play</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+		
+
+	<div class="band cloud BlogFeaturette">
+		<div>
+			<div class="box-group thirds ds">
+				<div class="box parts BlogWidget" style="text-align: left;">
+					
+
+<div class="part">
+
+	<img class="blog-image" id="blogImage" alt="Image" src="/ImageHandler.ashx?&amp;name=BigTicketTee_640x480_hasc.jpg&amp;w=300">
+
+</div>
+
+<div class="part">
+
+	<h5 class="blog-label">News Blog: Featured</h5>
+
+	<h1 class="blog-title">
+		<a id="ctl00_MainContent_BlogDetailsAll_BlogDetailsTitle" href="/NewsBlogDetails/2017/12/19/Big-Money-Meet-the-BIG-TICKET-TEE">Big Money, Meet the BIG TICKET TEE</a></h1>
+
+	<h6 class="blog-attr">
+		December 19, 2017
+	</h6>
+
+	<p class="blog-blurb">
+		Head over to our Facebook page and comment or like the pinned post about the “Big Money - Big Ticket Tee Giveaway” for a chance to win one of the limited edition tees along with one of our $10 Big Money scratch-offs.</p>
+
+</div>
+
+				</div>
+				<div class="box BlogRecent" style="text-align: left;">
+					<h5 class="BlogRecent-intro">Recent Posts <a href="/NewsBlog" style="float: right;">More&nbsp;<span class="dbl">›</span></a></h5>
+					
+		<h6 class="BlogRecent-date">December 19, 2017</h6>
+		<p class="BlogRecent-title"><a id="ctl00_MainContent_BlogRecentAll_BlogDataList_ctl00_BodyHyperLink" href="/NewsBlogDetails/2017/12/19/Mtdot-Olive-man-has-Mega-100000-win-right-before-the-holidays-">Mt. Olive man has ‘Mega’ $100,000 win right before the holidays </a></p>
+	
+		<h6 class="BlogRecent-date">December 19, 2017</h6>
+		<p class="BlogRecent-title"><a id="ctl00_MainContent_BlogRecentAll_BlogDataList_ctl01_BodyHyperLink" href="/NewsBlogDetails/2017/12/19/Big-Money-Meet-the-BIG-TICKET-TEE">Big Money, Meet the BIG TICKET TEE</a></p>
+	
+		<h6 class="BlogRecent-date">December 19, 2017</h6>
+		<p class="BlogRecent-title"><a id="ctl00_MainContent_BlogRecentAll_BlogDataList_ctl02_BodyHyperLink" href="/NewsBlogDetails/2017/12/19/-Christmas-tree-search-leads-Haywood-County-woman-to-200000-lottery-win-"> Christmas tree search leads Haywood County woman to $200,000 lottery win </a></p>
+	
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="band">
+		<div>
+			<div class="box-group halves">
+				<div class="box green grad dots-light parts">
+					<div class="part">
+						<img src="/Content/Images/smartphone_right.png" alt="NCLottery App" style="max-width: 120px;">
+					</div>
+					<div class="part">
+						<h1>Buy &amp; Scan</h1>
+						<h2>NC lottery Official Mobile App</h2>
+						<h3>Buy Tickets, Scan Tickets for Winners, Scan Tickets to Collect Points &amp; Enter Drawings</h3>
+						<div class="box-foot">
+							<a href="/MobileApp" class="button">Learn More</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="box midnight grad stars-dark parts">
+					<div class="part">
+						<div>
+							<svg preserveAspectRatio="xMidYMid" style="width: 100%; height: 16rem; max-width: 18rem;">
+								<use xlink:href="/Site/GFX/logos.svg#svgLucke-Rewards"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="part">
+						<h1>Lucke-Rewards</h1>
+						<h2 style="padding-left: 10%; padding-right: 10%;">Earn points &amp; Enter drawings for cash and other prizes</h2>
+						<div class="box-foot">
+							<a href="/Lucke-Rewards" class="button">Learn More</a><a id="ctl00_MainContent_hlCollectPoints" class="button" href="https://rewards.nclottery.com/pia">Enter Tickets</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+			</div>
+			<!-- end MID -->
+
+			<div class="BOT">
+
+				<div class="botNav">
+					<div>
+
+						<a href="/Home"><svg class="svgLogo" preserveAspectRatio="xMidYMid">
+							<use xlink:href="/Site/GFX/logos.svg#svgNCELHrzHolder"></use>
+						</svg></a>
+						<div class="social">
+							<span>
+								<a href="http://facebook.com/nclottery" class="social_facebook" title="Find Us on Facebook">
+									<svg class="svgFacebook" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgFacebook"></use>
+									</svg>
+								</a>
+							</span>
+							<span>
+								<a href="http://twitter.com/nclottery" class="social_twitter" title="Follow Us on Twitter">
+									<svg class="svgTwitter" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgTwitter"></use>
+									</svg>
+								</a>
+							</span>
+							<span>
+								<a href="http://instagram.com/nclottery" class="social_instagram" title="Follow Us on Instagram">
+									<svg class="svgInstagram" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgInstagram"></use>
+									</svg>
+								</a>
+							</span>
+							<span>
+								<a href="http://www.youtube.com/ncedulottery" class="social_youtube" title="Watch Us on YouTube">
+									<svg class="svgYouTube" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgYouTube"></use>
+									</svg>
+								</a>
+							</span>
+							<span><a href="/RSS" class="social_rss" title="NCEL RSS Feeds">
+								<svg class="svgRSS" preserveAspectRatio="xMidYMid">
+									<use xlink:href="/Site/GFX/icons.svg#svgRSS"></use>
+								</svg></a>
+							</span>
+						</div>
+						<nav>
+							<span><a href="/WhereToPlay">Where to Play</a></span>
+							<span><a href="/Contact">Contact</a></span>
+							<span><a href="/Videos">Videos</a></span>
+							<span><a href="/Business">Business Opportunities</a></span>
+							<span><a href="/Retailers">For Retailers</a></span>
+							<span><a href="/Help">Help &amp; Info</a></span>
+							<span><a href="/Rules">Rules &amp; Terms</a></span>
+							<span><a href="/Privacy">Privacy</a></span>
+							<span><a href="/Disclaimer">Disclaimer</a></span>
+						</nav>
+
+						<p class="legal">Every effort has been made to ensure that the winning numbers posted on this website are accurate; however, no valid claim may be based on information contained herein. In the event of a discrepancy between the numbers posted on this website and the official winning numbers, the official winning numbers as certified by the Multi-State Lottery Association and/or the NCEL shall control. All materials on this Website are owned by or licensed to the NCEL. Materials on this Website may not be modified in any way or reproduced or publicly displayed, performed or distributed or otherwise used for any public or commercial purpose without the express written consent of the NCEL. Copyright © 2006-2017. The North Carolina Education Lottery. All rights reserved.</p>
+
+						<p style="text-align:center;padding-top:0.75rem;font-size:0.75em;">Buy &amp; Scan with the NC Lottery Official Mobile App – Now with Ticket Checker!</p>
+
+						<p style="text-align:center;margin-top:0;padding-top:0;">
+
+							<a href="/MobileApp" class="button-complex light">
+								<span class="icon">
+									<svg class="svgIcon Apple" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgApple"></use>
+									</svg>
+								</span>
+								<span class="text-label-small">Available on the</span><br>
+								<span class="text-label-big">App Store</span>
+							</a>
+							&nbsp;
+							<a href="/MobileAppAndroid" class="button-complex light">
+								<span class="icon">
+									<svg class="svgIcon Android" preserveAspectRatio="xMidYMid">
+										<use xlink:href="/Site/GFX/icons.svg#svgAndroid"></use>
+									</svg>
+								</span>
+								<span class="text-label-small">Available for</span><br>
+								<span class="text-label-big">Android</span>
+							</a>
+
+						</p>
+
+					</div>
+				</div>
+				<!-- end botnav -->
+
+			</div>
+			<!-- end BOT -->
+
+		</form>
+
+	
+
+</body></html>

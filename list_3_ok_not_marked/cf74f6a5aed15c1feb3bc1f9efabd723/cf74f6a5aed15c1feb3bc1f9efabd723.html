@@ -1,0 +1,601 @@
+<html><head>
+    <base href="/poker/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.3b56370a470a746134aca4acf3ec83f4.css">
+    <link rel="stylesheet" href="assets/assets/fonts/icons/ignition-poker/ignition-poker-cards.5d3e2109540cc51f063eab57f4d29c4d.css">
+    <link rel="apple-touch-icon" href="assets/branded/favicons/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/branded/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/branded/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/branded/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/branded/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/branded/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/branded/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/branded/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/branded/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/branded/favicons/apple-icon-180x180.png">
+    <title>Ignition Casino Poker</title>
+    <style>
+        @font-face {
+            font-family: 'icons-pokerface';
+            src: url('assets/assets/fonts/icons/pokerface/icons-pokerface.eot');
+            src: url('assets/assets/fonts/icons/pokerface/icons-pokerface.eot#iefix') format('embedded-opentype'),
+            url('assets/assets/fonts/icons/pokerface/icons-pokerface.ttf') format('truetype'),
+            url('assets/assets/fonts/icons/pokerface/icons-pokerface.woff') format('woff'),
+            url('assets/assets/fonts/icons/pokerface/icons-pokerface.svg#icons-pokerface') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'icons-pokerbodog';
+            src: url('assets/assets/fonts/icons/pokerbodog/icons-pokerbodog.eot');
+            src: url('assets/assets/fonts/icons/pokerbodog/icons-pokerbodog.eot#iefix') format('embedded-opentype'),
+            url('assets/assets/fonts/icons/pokerbodog/icons-pokerbodog.ttf') format('truetype'),
+            url('assets/assets/fonts/icons/pokerbodog/icons-pokerbodog.woff') format('woff'),
+            url('assets/assets/fonts/icons/pokerbodog/icons-pokerbodog.svg#icons-pokerbodog') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'roboto';
+            font-style: normal;
+            font-weight: 200;
+            src: url('assets/assets/fonts/roboto/robotoLight.eot');
+            src: url('assets/assets/fonts/roboto/robotoLight.woff2') format('woff2'),
+            url('assets/assets/fonts/roboto/robotoLight.eot?#iefix') format('embedded-opentype'),
+            url('assets/assets/fonts/roboto/robotoLight.woff') format('woff'),
+            url('assets/assets/fonts/roboto/robotoLight.ttf') format('truetype'),
+            url('assets/assets/fonts/roboto/robotoLight.svg#robotoLight') format('svg');
+        }
+
+        @font-face {
+            font-family: 'roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url('assets/assets/fonts/roboto/robotoRegular.eot');
+            src: url('assets/assets/fonts/roboto/robotoRegular.woff2') format('woff2'),
+            url('assets/assets/fonts/roboto/robotoRegular.eot?#iefix') format('embedded-opentype'),
+            url('assets/assets/fonts/roboto/robotoRegular.woff') format('woff'),
+            url('assets/assets/fonts/roboto/robotoRegular.ttf') format('truetype'),
+            url('assets/assets/fonts/roboto/robotoRegular.svg#robotoRegular') format('svg');
+        }
+
+        @font-face {
+            font-family: 'roboto';
+            font-style: normal;
+            font-weight: 600;
+            src: url('assets/assets/fonts/roboto/robotoBold.eot');
+            src: url('assets/assets/fonts/roboto/robotoBold.woff2') format('woff2'),
+            url('assets/assets/fonts/roboto/robotoBold.eot?#iefix') format('embedded-opentype'),
+            url('assets/assets/fonts/roboto/robotoBold.woff') format('woff'),
+            url('assets/assets/fonts/roboto/robotoBold.ttf') format('truetype'),
+            url('assets/assets/fonts/roboto/robotoBold.svg#robotoBold') format('svg');
+        }
+
+        .initial-spinner-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 5;
+        }
+    </style>
+<style>input {
+  -webkit-user-select: text;
+  
+  -moz-user-select: text;
+  
+  -ms-user-select: text;
+  
+  user-select: text;
+   }
+
+html, body {
+  height: 100%;
+  color: #263238;
+  background-color: #e0ded9; }
+
+.navbar-fixed-top .navbar > :not(.brand-logo)[header-right] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0; }
+  .navbar-fixed-top .navbar > :not(.brand-logo)[header-right] .balance-value {
+    text-align: right; }
+
+main.content {
+  margin-top: 47px;
+  background-color: #e0ded9;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  @media screen and (min-width: 769px) {
+    main.content {
+      margin-top: 62px; } }
+
+.menu-btn.open {
+  background-color: #E6E6E9; }
+
+body .max-container {
+  max-width: none; }
+
+.brand-logo {
+  background: #ffffff;
+  padding-left: 13px;
+  padding-right: 8px; }
+  .brand-logo img {
+    max-height: 32px;
+    width: 100%; }
+
+bx-toast-notification {
+  position: absolute;
+  z-index: 11; }
+
+pkr-footer-banner {
+  z-index: 11; }
+  pkr-footer-banner .bold {
+    font-weight: bold; }
+  pkr-footer-banner .normal {
+    font-weight: normal; }
+  pkr-footer-banner .custom-cta {
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px; }
+
+bx-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  bx-site .footer-links {
+    margin-bottom: 0; }
+
+@media screen and (orientation: landscape) {
+  pkr-footer-banner {
+    display: none !important; } }
+
+@media screen and (orientation: portrait) {
+  bx-site .sticky-footer-visible .footer-links {
+    margin-bottom: 50px; } }
+
+.custom-tab.primary li:hover:not(.active) {
+  background-color: inherit; }
+
+pkr-footer {
+  z-index: 1; }
+
+.footer-links .links-container li a.active, .footer-links .links-container li a:hover {
+  background: inherit; }
+
+.footer-links .disclaimer-container .img-responsive {
+  max-width: 200px; }
+
+.navbar-fixed-top .navbar > :not(.brand-logo), .brand-logo, .custom-menu:not(.inverse) li {
+  background: #ffffff; }
+
+.navbar.max-container, .custom-menu.primary {
+  color: #263238; }
+
+.footer-links {
+  background: #ffffff; }
+  .footer-links .links-container li a {
+    color: #263238; }
+
+.custom-menu:not(.inverse) li:not(:first-of-type) {
+  box-shadow: inset 0 1px 0 0 #CECED3; }
+
+.custom-separator.vertical:before {
+  border-left: solid 1px #CECED3; }
+
+.pkr-row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .pkr-row:before {
+    content: " ";
+    display: table; }
+  .pkr-row:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  .pkr-row [class*=pkr-col-] {
+    padding: 0 15px;
+    display: block;
+    float: left;
+    min-height: 1px; }
+  .pkr-row .pkr-col-12 {
+    width: 100%; }
+  .pkr-row .pkr-col-6 {
+    width: 50%; }
+</style><style>[_nghost-c2]     .bx-notification-container {
+           z-index: 99999;
+           height: 100%;
+        }</style><style>[_nghost-c5] {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; }</style><style>.max-container[_ngcontent-c3] {
+  background: #ffffff; }
+
+nav.navbar.max-container[_ngcontent-c3] {
+  border-bottom: 1px solid #CECED3; }
+  nav.navbar.max-container[_ngcontent-c3]   .navigation-container[_ngcontent-c3] {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0; }</style><style>[_nghost-c4] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  [_nghost-c4]   .menu-container[_ngcontent-c4] {
+    background: #ffffff;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    overflow: auto; }
+    @media screen and (orientation: portrait) {
+      [_nghost-c4]   .menu-container[_ngcontent-c4] {
+        height: calc(100vh - (50px + 47px)); } }
+    @media screen and (orientation: landscape) {
+      [_nghost-c4]   .menu-container[_ngcontent-c4] {
+        height: calc(100vh - 47px); } }
+    @media screen and (min-width: 769px) {
+      [_nghost-c4]   .menu-container[_ngcontent-c4] {
+        height: calc(100vh - 62px); } }
+    [_nghost-c4]   .menu-container.open[_ngcontent-c4] {
+      left: 0; }
+    [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4] {
+      padding: 0; }
+      [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4]   a[_ngcontent-c4] {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 14px; }
+        [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4]   a.no-icon[_ngcontent-c4] {
+          font-size: 12px; }
+      [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li.thicker-grey-line[_ngcontent-c4] {
+        box-shadow: 0 2px 0 0 #CECED3 inset !important; }
+      [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li.thicker-orange-line[_ngcontent-c4] {
+        box-shadow: 0 3px 0 0 #FF6900 inset !important; }
+      [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4]   .icon.icon-new-window[_ngcontent-c4] {
+        color: #75767C;
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        margin: auto 0; }
+    [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4]:first-child {
+      border-top: 2px solid #CECED3; }
+    [_nghost-c4]   .menu-container[_ngcontent-c4]   .custom-menu[_ngcontent-c4]   li[_ngcontent-c4]:last-child {
+      border-bottom: 2px solid #CECED3; }
+  [_nghost-c4]   .logout-button[_ngcontent-c4] {
+    line-height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #ffffff; }
+    [_nghost-c4]   .logout-button[_ngcontent-c4]   .icon-logout[_ngcontent-c4] {
+      margin-left: 10px; }
+
+pkr-header[_nghost-c4]   .menu-container[_ngcontent-c4], pkr-header   [_nghost-c4]   .menu-container[_ngcontent-c4] {
+  margin-top: 47px; }
+  @media screen and (min-width: 769px) {
+    pkr-header[_nghost-c4]   .menu-container[_ngcontent-c4], pkr-header   [_nghost-c4]   .menu-container[_ngcontent-c4] {
+      margin-top: 62px; } }</style><style>[_nghost-c7] {
+            display: block;
+        }</style><style>[_nghost-c8] {
+  overflow: hidden;
+  display: block;
+  padding: 5px; }
+  [_nghost-c8]   .h2-heading[_ngcontent-c8] {
+    color: #1f2e35; }
+  [_nghost-c8]     bx-panel.cash-zone-filter-panel .bx-panel {
+    color: #1f2e35;
+    border: none;
+    box-shadow: none; }
+    [_nghost-c8]     bx-panel.cash-zone-filter-panel .bx-panel .bx-panel-header {
+      padding: 15px 10px 12px;
+      border-bottom: 1px solid #cfcfd4; }
+    [_nghost-c8]     bx-panel.cash-zone-filter-panel .bx-panel div[panel-content] {
+      background-color: #ffffff;
+      padding: 0 15px 12px; }
+    [_nghost-c8]     bx-panel.cash-zone-filter-panel .bx-panel .bx-panel-footer {
+      padding: 1em 10px;
+      border-top: 1px solid #cfcfd4; }
+  [_nghost-c8]     pkr-alert-notification pkr-alert .bx-notification-container {
+    margin-top: 10px; }
+  [_nghost-c8]   form[_ngcontent-c8]   bx-tab2[_ngcontent-c8]   input[type="radio"][_ngcontent-c8] {
+    display: none; }
+  [_nghost-c8]   form[_ngcontent-c8]   bx-tab2[_ngcontent-c8]   .icon[_ngcontent-c8] {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  [_nghost-c8]   form[_ngcontent-c8]   bx-tab2[_ngcontent-c8]   span[_ngcontent-c8] {
+    vertical-align: middle; }
+  [_nghost-c8]   form[_ngcontent-c8]   h3[_ngcontent-c8] {
+    margin: 10px auto 9px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  [_nghost-c8]     .custom-tab.primary bx-tab2.disabled {
+    color: #999999; }
+    [_nghost-c8]     .custom-tab.primary bx-tab2.disabled li:hover {
+      background-color: #ffffff; }
+  [_nghost-c8]     .custom-tab.primary li {
+    padding: 3px 0 0;
+    height: 40px;
+    line-height: 32px;
+    margin-bottom: 3px; }
+  [_nghost-c8]   pkr-buy-in[_ngcontent-c8]     .custom-tab bx-tab2 {
+    width: 33.333%; }
+  [_nghost-c8]   pkr-buy-in[_ngcontent-c8]     .custom-tab.primary li {
+    height: 82px;
+    line-height: normal;
+    white-space: normal; }
+  [_nghost-c8]   bx-toggle[_ngcontent-c8]     .custom-toggle {
+    margin-top: 7px; }
+    [_nghost-c8]   bx-toggle[_ngcontent-c8]     .custom-toggle label {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }</style><style>.bx-panel[_ngcontent-c11] {
+  border: 1px solid #C3C3C9;
+  box-shadow: 0 0 2px #C2C2C8; }
+  .bx-panel[_ngcontent-c11]   .bx-panel-header[_ngcontent-c11] {
+    background-color: #FFFFFF;
+    padding: 0.5em 1.5em;
+    border-bottom: 4px solid #DDDDE0; }
+    .bx-panel[_ngcontent-c11]   .bx-panel-header[_ngcontent-c11]     .bx-panel-header-title {
+      font-size: 1.5em;
+      color: #000000; }
+  .bx-panel[_ngcontent-c11]   .bx-panel-footer[_ngcontent-c11] {
+    padding: 1em 1.5em;
+    background-color: #FFFFFF;
+    border-top: 1px solid #C3C3C9; }</style><style></style><style>[_nghost-c13]     .fullWidth {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+[_nghost-c13]     .fullWidth li {
+  width: 100%;
+  display: block;
+  text-align: center; }</style></head>
+<body>
+<bx-site-preloader ng-version="4.0.2">
+        <!---->
+        <bx-site waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <bx-toast-notification name="messageOverlay" _nghost-c2="">
+        <!---->
+    </bx-toast-notification>
+        <!----><pkr-header _nghost-c3="">
+        <div _ngcontent-c3="" class="navbar-wrapper navbar-fixed-top">
+            <nav _ngcontent-c3="" class="navbar max-container">
+                <aside _ngcontent-c3="" class="navigation-container">
+                    <pkr-menu header-left="" _nghost-c4="">
+        <button _ngcontent-c4="" class="menu-btn" type="button" hidden="">
+            <i _ngcontent-c4="" class="icon icon-back"></i>Back
+        </button>
+        <span _ngcontent-c4="" class="custom-separator vertical"></span>
+        <button _ngcontent-c4="" class="menu-btn" id="pqa-menu-btn" type="button">
+            <i _ngcontent-c4="" class="icon icon-menu"></i>Open
+        </button>
+        <span _ngcontent-c4="" class="custom-separator vertical"></span>
+        <!---->
+    </pkr-menu>
+                </aside>
+                <a class="brand-logo" header-center="" id="pqa-header-logo" href="/poker/">
+                <!----><img src="assets/branded/images/header-logo.svg">
+                <!---->
+            </a>
+                <aside class="user-info" header-right="">
+                <div class="login-container">
+                    <!----><a class="custom-cta primary" id="pqa-login-button" role="button">Login</a><!---->
+                </div>
+                <!---->
+            </aside>
+            </nav>
+        </div>
+    </pkr-header>
+        <main class="content">
+            <router-outlet></router-outlet><pkr-home _nghost-c7="" ng-version="4.0.2"><pkr-cash-zone-filter _ngcontent-c7="" filtertitle="filters.title" _nghost-c8="">
+        <!---->
+    <!----><div _ngcontent-c8="" class="pkr-row">
+        <div _ngcontent-c8="" class="pkr-col-12">
+            <form _ngcontent-c8="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                <bx-panel _ngcontent-c8="" class="cash-zone-filter-panel" _nghost-c11="" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <div _ngcontent-c11="" class="bx-panel">
+            <div _ngcontent-c11="" class="bx-panel-header">
+                <span _ngcontent-c11="" class="bx-panel-header-title"></span>
+                <div _ngcontent-c8="" panel-header="">
+                        <h2 _ngcontent-c8="" class="h2-heading">Start Playing Now</h2>
+                    </div>
+            </div>
+            <div _ngcontent-c11="">
+                <!----><div _ngcontent-c8="" panel-content="">
+                        <div _ngcontent-c8="" class="pkr-row">
+                            <div _ngcontent-c8="" class="pkr-col-12">
+                                <pkr-alert-notification _ngcontent-c8="" _nghost-c12="">
+        <!---->
+    </pkr-alert-notification>
+                            </div>
+                        </div>
+                        <div _ngcontent-c8="" class="pkr-row">
+                            <div _ngcontent-c8="" class="pkr-col-12 type-filter">
+                                <h3 _ngcontent-c8="">GAME TYPE</h3>
+                                <bx-tabs2 _ngcontent-c8="" groupname="modes" _nghost-c13="">
+        <ul _ngcontent-c13="" class="custom-tab primary max-container" role="list">
+            
+                                    <!----><bx-tab2 _ngcontent-c8="" waiting-for-files-to-load="success!" style="visibility: inherit;" class="fullWidth">
+        <li role="button" title="" class="active">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <i _ngcontent-c8="" class="icon icon-cash"></i>
+                                        <span _ngcontent-c8="">Cash</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" waiting-for-files-to-load="success!" style="visibility: inherit;" class="fullWidth">
+        <li role="button" title="">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <i _ngcontent-c8="" class="icon icon-crono"></i>
+                                        <span _ngcontent-c8="">Zone</span>
+                                    </li></bx-tab2>
+                                
+        </ul>
+    </bx-tabs2>
+                            </div>
+                        </div>
+                        <!----><div _ngcontent-c8="" class="pkr-row">
+                            <!----><div _ngcontent-c8="" class="pkr-col-12 game-filter">
+                                <h3 _ngcontent-c8="">CARD GAME</h3>
+                                <bx-tabs2 _ngcontent-c8="" groupname="games" _nghost-c13="">
+        <ul _ngcontent-c13="" class="custom-tab primary max-container" role="list">
+            
+                                    <!----><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="" class="active">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">Hold'em</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">Omaha</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">Omaha hi/lo</span>
+                                    </li></bx-tab2>
+                                
+        </ul>
+    </bx-tabs2>
+                            </div>
+                        </div><div _ngcontent-c8="" class="pkr-row">
+                            <!---->
+                        </div>
+                        <!----><div _ngcontent-c8="" class="pkr-row">
+                            <!----><div _ngcontent-c8="" class="pkr-col-6 limit-filter">
+                                <h3 _ngcontent-c8="">LIMIT</h3>
+                                <bx-tabs2 _ngcontent-c8="" groupname="limit" _nghost-c13="">
+        <ul _ngcontent-c13="" class="custom-tab primary max-container" role="list">
+            
+                                    <!----><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="NL" class="active">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">No</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="PL">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">Pot</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth" waiting-for-files-to-load="success!" style="visibility: inherit;">
+        <li role="button" title="FL">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">Fixed</span>
+                                    </li></bx-tab2>
+                                
+        </ul>
+    </bx-tabs2>
+                            </div>
+                            <!----><div _ngcontent-c8="" class="pkr-col-6 seats-filter">
+                                <h3 _ngcontent-c8="">NUMBER OF SEATS</h3>
+                                <bx-tabs2 _ngcontent-c8="" groupname="seats" _nghost-c13="">
+        <ul _ngcontent-c13="" class="custom-tab primary max-container" role="list">
+            
+                                    <!----><bx-tab2 _ngcontent-c8="" class="fullWidth">
+        <li role="button" title="Two">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">2</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth">
+        <li role="button" title="Six" class="active">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">6</span>
+                                    </li></bx-tab2><bx-tab2 _ngcontent-c8="" class="fullWidth">
+        <li role="button" title="Nine">
+                                        <input _ngcontent-c8="" class="ng-untouched ng-pristine ng-valid" type="radio">
+                                        <span _ngcontent-c8="">9</span>
+                                    </li></bx-tab2>
+                                
+        </ul>
+    </bx-tabs2>
+                            </div>
+                        </div><div _ngcontent-c8="" class="pkr-row">
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+            </div>
+            <div _ngcontent-c11="" class="bx-panel-footer">
+                <div _ngcontent-c8="" panel-footer="">
+                        <!---->
+                            <div _ngcontent-c8="" class="pkr-row">
+                                <div _ngcontent-c8="" class="pkr-col-12">
+                                    <button _ngcontent-c8="" class="custom-cta primary" type="submit">
+                                        <!---->
+                                        <!----><span _ngcontent-c8="">LOGIN</span><!---->
+                                    </button>
+                                </div>
+                            </div>
+                        
+                        <!---->
+                    </div>
+            </div>
+        </div>
+    </bx-panel>
+            </form>
+        </div>
+    </div></pkr-cash-zone-filter></pkr-home>
+        </main>
+        <pkr-footer class="sticky-footer-visible">
+        <footer class="footer-links">
+            <div class="hide-scroll">
+                <ul class="links-container" role="list">
+                    <!----><li role="link">
+                        <a href="/help/poker">HELP</a>
+                    </li><li role="link">
+                        <a href="/?pushdown=contact-us">CONTACT US</a>
+                    </li><li role="link">
+                        <a href="/terms-of-use">TERMS &amp; CONDITIONS</a>
+                    </li><li role="link">
+                        <a href="/help/mobile-poker/houserules">RULES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="disclaimer-container">
+                <!----><img class="img-responsive" src="assets/branded/images/header-logo.svg">
+                
+            </div>
+        </footer>
+    </pkr-footer>
+        <pkr-footer-banner _nghost-c5="">
+        <div _ngcontent-c5="" class="pkr-row">
+            <div _ngcontent-c5="" class="col-3-3">
+                
+            <!----><button class="custom-cta primary">
+                    <span class="normal">NOT A MEMBER YET?</span>
+                <span class="bold">JOIN NOW!</span>
+            </button>
+            <!---->
+        
+            </div>
+        </div>
+    </pkr-footer-banner>
+    </bx-site>
+    </bx-site-preloader>
+<script src="assets/js/bundle.5bfc28e9d5c68627d8764ca8260bdf3d.js"></script>
+
+
+</body></html>

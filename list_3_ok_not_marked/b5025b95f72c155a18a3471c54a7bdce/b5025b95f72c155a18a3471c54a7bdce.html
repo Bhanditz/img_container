@@ -1,0 +1,651 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="http://www.oracul-ac.ru/media/img/favicon.ico" type="image/x-icon" rel="icon">
+    <title>Слоты-Казино ORACUL</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="В казино ORACUL представлено самое современное поколение игровых автоматов с самыми прогрессивными информационными технологиями, динамичным дизайном и прогрессивными джекпотами.">
+
+    <link rel="stylesheet" href="/media/css/style25.css" type="text/css" media="screen, projection">
+    <script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2"></script>
+    <script src="/media/js/jquery.slots.js"></script>
+    <script type="text/javascript" src="/media/player/jquery.jplayer.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.root li:first-child').addClass("first-child");
+            $('.root li:last-child').addClass("last-child");
+            $(".toogle_poker").toggle(
+                    function () {
+                        $(".content_toogle_poker").slideDown();
+                    },
+                    function () {
+                        $(".content_toogle_poker").slideUp();
+                    }
+            );
+            $('.add_text_restor').click(function (event) {
+                if ($(this).next().is(':hidden')) {
+                    $(this).addClass("open").next().slideDown();
+                }
+                else {
+                    $(this).removeClass("open").next().slideUp();
+                }
+            });
+
+            $('#photo').innerfade({speed: 'slow', timeout: 4000, type: 'sequence', containerheight: '220px'});
+            $('.header_menu').hover(
+                    function () {
+                        $('.root_li').stop().animate({'paddingTop': '0px'}, 50, function () {
+                            $('.children').css({'display': 'block'});
+                        });
+                    },
+                    function () {
+                        $('.children').css({'display': 'none'});
+                        $('.root_li').stop().animate({'paddingTop': '25px'}, 100);
+
+                    }
+            );
+
+            $(".navmenu-v").hover(
+                    function () {
+                        $(this).stop().find('ul').stop(true, true).slideDown('50');
+                    },
+                    function () {
+                        $(this).stop().find('ul').stop(true, true).slideUp('50');
+                    }
+            );
+
+
+            setTimeout(function () {
+                $('#scroller1').slots({
+                    speed: 2000,
+                    timeout: 4000
+                });
+            }, 0);
+
+            setTimeout(function () {
+                $('#scroller2').slots({
+                    speed: 2000,
+                    timeout: 4000
+                });
+            }, 1000);
+
+            setTimeout(function () {
+                $('#scroller3').slots({
+                    speed: 2000,
+                    timeout: 4000
+                });
+            }, 2000);
+
+
+            var arr = $(".baner_all a");
+
+            var n = 0;
+            setInterval(function () {
+                n += 1;
+                if (n > (arr.length - 1)) {
+                    n = 0;
+                }
+                $('.sec a img').attr('src', $(".baner_all a img").eq(n).attr('src'));
+                $('.sec a').attr('href', $(".baner_all a").eq(n).attr('href'));
+            }, 5500);
+        });
+    </script>
+    
+<script type="text/javascript" src="/media/js/jquery.innerfade.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34804457-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+
+
+<div id="wrapper">
+    <div id="header">
+        <div class="header_logo">
+            <div class="cap"></div>
+            <a href="/ru/" class="logo"><img src="/media/img/logo_ru.png" alt=""></a>
+            <ul class="top_menu">
+                
+                    
+                        <li class="navmenu-v"><a href="/ru/gest/"> Гостевая</a>
+                    
+                
+                    <ul>
+                        
+                    
+                        <li class="navmenu-v"><a href="/ru/rules/">Правила посещения</a>
+                    
+                
+                </li>
+                
+                    
+                        <li class="navmenu-v"><a href="/ru/law/">Правовая информация</a>
+                    
+                
+                </li>
+                
+                    
+                        <li class="navmenu-v"><a href="/ru/info/">Социальная ответственность</a>
+                    
+                
+                </li>
+                
+                    </ul>
+                
+                </li>
+                
+                    
+                        <li class="navmenu-v"><a href="/ru/faq/">FAQ</a>
+                    
+                
+                </li>
+                
+
+                <li class="sound">
+                    <div class="player">
+                        <div id="jquery_jplayer_2" class="jp-jplayer" style="background-color: rgb(0, 0, 0);"><img id="jp_poster_0" style="width: 85px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata"></audio></div>
+                        <div class="jp-audio">
+                            <div id="jp_interface_2" class="jp-interface">
+                                <ul class="jp-controls">
+                                    <li><a href="#" class="jp-stop" tabindex="1">stop</a></li>
+                                    <li><a href="#" class="jp-play" tabindex="1">play</a></li>
+                                    <li><a href="#" class="jp-pause" tabindex="1" style="display: none;">pause</a></li>
+                                </ul>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    
+                        <a href="/en/slots/" class="en">English </a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="slide_show">
+            <div class="slides">
+                <ul id="photo" style="position: relative; height: 220px;" class="innerfade">
+                    
+
+                        
+                            <li style="z-index: 13; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/279/"><img src="/media/uploads/events/Hanna/1024x225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 12; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/275/"><img src="/media/uploads/events/Lubeh/1024х225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 11; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/273/"><img src="/media/uploads/events/3 7 TUZ/1024x225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 10; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/272/"><img src="/media/uploads/events/safe/double1024x225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 9; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/271/"><img src="/media/uploads/events/safe/1024x225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 8; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/269/"><img src="/media/uploads/events/Nepara/1024х225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 7; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/265/"><img src="/media/uploads/events/kvartira/1024х225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 6; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/231/"><img src="/media/uploads/events/hotel NY/1024х225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+                            <li style="display: none; z-index: 5; position: absolute;"><a href="http://www.oracul-casino.com/ru/event/192/"><img src="/media/uploads/events/ops jan/1024х225.jpg" alt=""></a></li>
+                        
+
+                    
+
+                        
+
+                    
+                    /
+                    <li style="display: none; z-index: 4; position: absolute;"><img src="/media/uploads/slide/slide01.jpg" alt=""></li>
+                    <li style="display: none; z-index: 3; position: absolute;"><img src="/media/uploads/slide/slide02.jpg" alt=""></li>
+                    <li style="display: none; z-index: 2; position: absolute;"><img src="/media/uploads/slide/slide04.jpg" alt=""></li>
+                    <li style="display: none; z-index: 1; position: absolute;"><img src="/media/uploads/slide/slide06.jpg" alt=""></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="header_menu">
+            <div class="menu_wrapper">
+                <ul class="root">
+                    
+                        <li class="root_li first-child">
+                            <a href="/ru/casino/">
+                                Казино
+                                
+                                    </a><ul class="children"><a href="/ru/casino/">
+                                        
+                        </a><li><a href="/ru/casino/">
+                            </a><a href="/ru/games/">
+                                Игры
+                                
+                                    <ul class="children">
+                                        
+                                    </ul>
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li>
+                            <a class="menu_curent" href="/ru/slots/">
+                                Cлот-зал
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li class="last-child">
+                            <a href="/ru/poker/">
+                                Турнирный  покер
+                                
+                            </a>
+                        </li>
+
+                    
+                                    </ul>
+                                
+                            
+                        </li>
+
+                    
+                        <li class="root_li">
+                            <a href="/ru/hotels/">
+                                Отель 
+                                
+                                    <ul class="children">
+                                        
+                                    </ul>
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li class="root_li">
+                            <a href="/ru/restaurant/">
+                                Ресторан
+                                
+                                    </a><ul class="children"><a href="/ru/restaurant/">
+                                        
+                        </a><li class="last-child"><a href="/ru/restaurant/">
+                            </a><a href="/ru/bars/">
+                                Блюда от шеф-повара
+                                
+                            </a>
+                        </li>
+
+                    
+                                    </ul>
+                                
+                            
+                        </li>
+
+                    
+                        <li class="root_li">
+                            <a href="/ru/events/">
+                                Афиша
+                                
+                                    </a><ul class="children"><a href="/ru/events/">
+                                        
+                        </a><li><a href="/ru/events/">
+                            </a><a href="/ru/current/">
+                                Текущие мероприятия
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li>
+                            <a href="/ru/past/">
+                                Фотоотчет
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li class="last-child">
+                            <a href="/ru/online/">
+                                On-line трансляции
+                                
+                            </a>
+                        </li>
+
+                    
+                                    </ul>
+                                
+                            
+                        </li>
+
+                    
+                        <li class="root_li">
+                            <a href="/ru/transfer/">
+                                Трансфер
+                                
+                                    </a><ul class="children"><a href="/ru/transfer/">
+                                        
+                        </a><li><a href="/ru/transfer/">
+                            </a><a href="/ru/rout/">
+                                Автолайнеры
+                                
+                            </a>
+                        </li>
+
+                    
+                        <li class="last-child">
+                            <a href="/ru/map/">
+                                Проложить маршрут
+                                
+                            </a>
+                        </li>
+
+                    
+                                    </ul>
+                                
+                            
+                        </li>
+
+                    
+                        <li class="root_li last-child">
+                            <a href="/ru/contacts/">
+                                Контакты
+                                
+                            </a>
+                        </li>
+
+                    
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- #header-->
+    <div id="middle">
+        
+            <div id="container">
+                
+    <div class="content" id="content">
+        <div class="content_wrapper">
+            <p><strong>Игровые автоматы (слоты)</strong> - наиболее популярное развлечение среди азартных игр, привлекающее простыми правилами и возможностью выиграть значительный денежный приз. Казино ORACUL представляет новое поколение игровых автоматов, отличающихся самыми прогрессивными информационными технологиями, динамичным дизайном и прогрессивными джекпотами.</p>
+<p>&nbsp;</p>
+<p>Вас ждут популярные и полюбившиеся всеми игры Sizzling Hot, Book Of Ra, Lucky Lady's Charm, Dolphin's Pearl, The Monkey Game, Columbus, Pharaon's Gold и другие игры от производителя Novomatic, а также Fruit Cocktail, Crazy Monkey, Resident и другие игры от производителя Igrosoft. В казино ORACUL для Вас представлены игры производителей Novomatic, Atronic, Belatra, Igrosoft, Mega Jack и другие.</p>
+
+            <div class="slides">
+                <ul id="slides" style="position: relative; height: 220px;" class="innerfade">
+                    <li style="z-index: 4; position: absolute; display: list-item;"><img src="/media/uploads/slots/slot1.jpg" alt=""></li>
+                    <li style="z-index: 3; position: absolute; display: none;"><img src="/media/uploads/slots/slot2.jpg" alt=""></li>
+                    <li style="z-index: 2; position: absolute; display: none;"><img src="/media/uploads/slots/slot3.jpg" alt=""></li>
+                    <li style="z-index: 1; position: absolute; display: none;"><img src="/media/uploads/slots/slot4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $('#slides').innerfade({speed:'slow', timeout:4000, type:'sequence', containerheight:'220px' });
+    </script>
+
+                <!-- #content-->
+            </div>
+            
+    <div class="sidebar" id="sideLeft">
+        <div class="menu">
+            <h1>Казино</h1>
+            <ul class="menu_item">
+                
+                    
+                        <li>
+                            <a href="/ru/games/">
+                                Игры
+                                
+                                    <ul class="children">
+                                        
+                                    </ul>
+                                
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li class="menu_curent_it">
+                            <a href="/ru/slots/">
+                                Cлот-зал
+                                
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a href="/ru/poker/">
+                                Турнирный  покер
+                                
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+            
+            <div class="time"></div>
+            
+            
+            
+            
+                <br>
+                <div class="baner_all">
+                <a style="display: none" href="/ru/shop/2/"><img class="baner_lucaro" src="/media/images/baner-shop.gif" alt=""></a>
+                <a style="display: none" href="/ru/iphone/"><img class="baner_lucaro" src="/media/images/baner-AppStoreOracul.gif" alt=""></a>
+                <a style="display: none" href="/ru/lucaro/"><img class="baner_lucaro" src="/media/images/baner-LUCARO.gif" alt=""></a>
+                </div>
+            
+            
+            
+            
+           
+
+        </div>
+
+    </div>
+
+        
+    </div>
+
+    <!-- #middle-->
+    
+        <div class="clear"></div>
+        <div id="sliders">
+            <div class="main_event">
+                <div id="scroller1" class="scrollable"><div class="items" style="margin-top: -400px;">
+                        
+                            <a href="/ru/event/279/">
+                                <img src="/media//uploads/events/Hanna/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/272/">
+                                <img src="/media//uploads/events/safe/double320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/265/">
+                                <img src="/media//uploads/events/kvartira/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/118/">
+                                <img src="/media//uploads/events/Big_Battle/BigBattle_320x95px.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                    </div>
+                    <div class="items">
+                        
+                            <a href="/ru/event/279/">
+                                <img src="/media//uploads/events/Hanna/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/272/">
+                                <img src="/media//uploads/events/safe/double320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/265/">
+                                <img src="/media//uploads/events/kvartira/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/118/">
+                                <img src="/media//uploads/events/Big_Battle/BigBattle_320x95px.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                    </div>
+                </div>
+                <div id="scroller2" class="scrollable"><div class="items" style="margin-top: -300px;">
+                        
+                            <a href="/ru/event/275/">
+                                <img src="/media//uploads/events/Lubeh/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/271/">
+                                <img src="/media//uploads/events/safe/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/231/">
+                                <img src="/media//uploads/events/hotel NY/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                    </div>
+                    <div class="items">
+                        
+                            <a href="/ru/event/275/">
+                                <img src="/media//uploads/events/Lubeh/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/271/">
+                                <img src="/media//uploads/events/safe/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/231/">
+                                <img src="/media//uploads/events/hotel NY/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                    </div>
+                </div>
+                <div id="scroller3" class="scrollable">
+                    <div class="items">
+                        <!--<a target="_blank" href="http://issuu.com/casinooracul/docs/lucaro_6_issuu">
+                            <img width="320" height="95" src="/media/img/slide/slidesmall.jpg" alt="">
+                        </a> -->
+                        
+                            <a href="/ru/event/273/">
+                                <img src="/media//uploads/events/3 7 TUZ/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/269/">
+                                <img src="/media//uploads/events/Nepara/320х95.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                            <a href="/ru/event/192/">
+                                <img src="/media//uploads/events/ops jan/320х128.jpg" alt="" width="320" height="95">
+                            </a>
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+            </div>
+
+        </div>
+
+    
+    <div id="footer">
+        <div class="icon_footer">
+            <a class="facebook" href="http://www.facebook.com/#!/profile.php?id=100001849078563" target="_blank"></a>
+            <a class="youtube" href="https://www.youtube.com/channel/UCdn5192q_oPwKWIlLDFEyOg" target="_blank"></a>
+            <a class="twitter" href="http://twitter.com/#!/ORACULcasino" target="_blank"></a>
+            <a class="kontakt" href="http://vkontakte.ru/casino_oracul" target="_blank"></a>
+            <a class="google" href="https://plus.google.com/113574660360802405886" target="_blank"></a>
+            <a class="insta" href="http://instagram.com/casino_oracul" target="_blank"> </a>
+            <div class="clear"></div>
+            <div> &nbsp;© 2010-2015 Oracul gambling-house</div>
+        </div>
+        <div class="copy_legal">*Первое казино открытое на территории игорной зоны 'Азов-Сити' в соответствии с законом №244 'О государственном регулировании деятельности по организации и проведению азартных игр и о внесении изменений в некоторые законодательные акты Российской Федерации', принятым 20.12.2006 года. Информация предназначена для лиц старше 18 лет.</div>
+        <div class="copy_right"><a class="" href="/ru/iphone/">
+            <img src="/media/img/App-Store-logo-ru.png" alt="" width="120">
+        </a></div>
+    </div>
+    <!-- #footer -->
+</div>
+<!-- #wrapper -->
+
+<script type="text/javascript" src="/media/player/player.js"></script>
+
+<script type="text/javascript">
+    var play_start = readCookie('play');
+    var audioPlaylist = new Playlist("2", [
+        
+    ], {
+        ready: function () {
+            audioPlaylist.displayPlaylist();
+            var param;
+            if (play_start == 'no') {
+                param = false;
+            } else {
+                param = true;
+            }
+            audioPlaylist.playlistInit(param); // Parameter is a boolean for autoplay.
+            $(this).jPlayer("volume", 0.14);
+        },
+        ended: function () {
+            audioPlaylist.playlistNext();
+        },
+        play: function () {
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "/media/player",
+        supplied: "mp3"
+    });
+</script>
+<script type="text/javascript" src="/media/js/jquery.innerfade.js"></script>
+
+
+
+</body></html>

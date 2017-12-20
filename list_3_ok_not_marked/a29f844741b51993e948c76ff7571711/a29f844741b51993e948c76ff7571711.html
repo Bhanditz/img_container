@@ -1,0 +1,1738 @@
+<html ng-app="dasist" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <base href="/">
+    <title ng-bind="(page.game_title || page.title) + (page.game_title || page.title ? ' | ' : 'DasistCasino.com') + page.snippet_title" class="ng-binding">Online Casino Deutschland - Germany's best online casino for euro and bitcoin.   | Das ist Casino</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="casino online, casino online spielen, bitcoin casino, bitcoin roulette, play games for bitcoins, bitcoin casino no deposit bonus, free spins, amatic bitcoin casino">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="icon" href="/resources/images/favicon.png?2" type="image/png">
+    <link rel="shortcut icon" href="/resources/images/favicon.png?2" type="image/png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" async="" src="https://cdn.livechatinc.com/tracking.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K35BV9"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- inject:lib:js --><script src="/js/lib.js?d018ff6191acf33c2b59aa97368369ee"></script><!-- endinject -->
+    <!-- inject:app:js --><script src="/js/app.js?db3a65864b2b56191d65d5bd6b0ee50a"></script><!-- endinject -->
+    <!-- inject:templates:js --><script src="/js/templates.js?a55d5e6608654118421b6b1d7c01371f"></script><!-- endinject -->
+    <!-- inject:app-style:css --><link rel="stylesheet" href="/css/app.css?ebc95da43416e4da5838b3dd32f05fa1"><!-- endinject -->
+
+
+<script type="text/javascript" src="https://135b07c4-2d4b-458c-aa22-bc705250205d.snippet.antillephone.com/apg-seal.js"></script><link rel="manifest" href="/manifest.json"><script async="" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" type="text/javascript"></script><style type="text/css">#livechat-full {height: 440px !important;}</style></head>
+<body class="page- device-desktop page- page-home lang-en"><nav id="menu" class="mnav mm-menu mm-border-none mm-theme-black mm-offcanvas" menu-config="extensions : ['border-none', 'theme-black'],
+					navbar : false"><div class="mm-panels"><div class="mm-panel mm-opened mm-current" id="mm-1"><ul class="wrapper mm-listview">
+        <li class="ng-isolate-scope" type="mobile">
+    <ul class="mm-inset mm-nolistview mm-nopanel">
+        <li class="mobile-auth">
+            <div access-level="accessLevels.anon" class="clearboth button-block">
+                <a class="register-link ng-scope" href="/users/sign_up" ng-controller="AuthModal" ui-sref="app.users_sign_up({lang:'en'})" translate="frontend.links.sign_up">Sign Up</a>
+                <a class="login-link ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+            </div>
+            <div access-level="accessLevels.user" class="clearboth" style="display: none;">
+                <div class="user__name" dropdown-toggle="">
+                    <span class="name ng-binding"></span>
+                </div>
+                <div class="user__balance">
+                    <div class="balance-selector balance-selector_mob ng-isolate-scope" type="balance_menu_mobile">
+    <!-- ngRepeat: balance in balances | filter: {code: data.user.currency} -->
+</div>
+                </div>
+
+                <div class="btn-group">
+                    <span type="header_deposit" class="ng-isolate-scope">
+    <a access-level="accessLevels.user" target="_self" ng-href="" ng-controller="ProfileRoutes" class="ng-scope" style="display: none;">
+        <button class="btn btn-header-deposit ng-binding">Deposit</button>
+    </a>
+</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
+
+        <li class="left-menu-mobile left-menu-mobile_general-menu ng-isolate-scope" template="left-menu-mobile" type="left-menu-mobile">
+    <ul class="mm-inset mm-nolistview mm-nopanel">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngRepeat: item in menu --><li class="mobile-left-menu ng-scope" ng-repeat="item in menu">
+            <a ng-class="{'current': item.path == state.current.page_name || state.includes('app.cms', {path: item.path})}" ui-sref="home({lang:'en'})" class="left-menu-home current" ng-bind="item.title" href="">Home</a>
+        </li><!-- end ngRepeat: item in menu --><li class="mobile-left-menu ng-scope" ng-repeat="item in menu">
+            <a ng-class="{'current': item.path == state.current.page_name || state.includes('app.cms', {path: item.path})}" ui-sref="app.external({id:'promotions', lang:'en'})" class="left-menu-promotions" ng-bind="item.title" href="/promotions">Promotions</a>
+        </li><!-- end ngRepeat: item in menu --><li class="mobile-left-menu ng-scope" ng-repeat="item in menu">
+            <a ng-class="{'current': item.path == state.current.page_name || state.includes('app.cms', {path: item.path})}" ui-sref="app.external({id:'adventure', lang:'en'})" class="left-menu-adventure" ng-bind="item.title" href="/adventure">Adventure</a>
+        </li><!-- end ngRepeat: item in menu --><li class="mobile-left-menu ng-scope" ng-repeat="item in menu">
+            <a ng-class="{'current': item.path == state.current.page_name || state.includes('app.cms', {path: item.path})}" ui-sref="app.external({id:'payments', lang:'en'})" class="left-menu-payments" ng-bind="item.title" href="/payments">Payments</a>
+        </li><!-- end ngRepeat: item in menu --><li class="mobile-left-menu ng-scope" ng-repeat="item in menu">
+            <a ng-class="{'current': item.path == state.current.page_name || state.includes('app.cms', {path: item.path})}" ui-sref="app.external({id:'faq', lang:'en'})" class="left-menu-faq" ng-bind="item.title" href="/faq">Faq</a>
+        </li><!-- end ngRepeat: item in menu -->
+        <li class="mobile-left-menu">
+            <a href="" access-level="accessLevels.user" class="btn-logout ng-scope ng-binding" ng-click="login.logout()" ng-controller="LoginCtrl" style="display: none;">Sign Out</a>
+        </li>
+    </ul>
+</li>
+        <li class="left-menu-mobile ng-isolate-scope" name="game_list" template="mobile-collections">
+    <ul class="mm-inset mm-nolistview mm-nopanel">
+        <li class="mobile-left-menu">
+            <a href="" ui-sref="home({lang: $root.currentLocale})" ng-class="{'is-current': $root.state.current.page_name == 'home'}" class="ing-games-filter top-games casino-games-filter-scroll ng-scope is-current" data-text="top games" translate="frontend.games_list.lobby" translate-default="Lobby">Lobby</a>
+        </li>
+        <!-- ngRepeat: filtered_collection in gamesData.data.collections --><li ng-repeat="filtered_collection in gamesData.data.collections" class="mobile-left-menu ng-scope">
+            <!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><a href="/games/slot" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" ui-sref="app.games({category: filtered_collection.id, provider: 'false', currency: false, lang: $root.currentLocale})" ng-class="{'is-current': state.includes('app.games_category', {category: filtered_collection.id})}" class="ng-binding ng-scope">Slots</a><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') -->
+        </li><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><li ng-repeat="filtered_collection in gamesData.data.collections" class="mobile-left-menu ng-scope">
+            <!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><a href="/games/live_dealer" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" ui-sref="app.games({category: filtered_collection.id, provider: 'false', currency: false, lang: $root.currentLocale})" ng-class="{'is-current': state.includes('app.games_category', {category: filtered_collection.id})}" class="ng-binding ng-scope">Live Dealer</a><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') -->
+        </li><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><li ng-repeat="filtered_collection in gamesData.data.collections" class="mobile-left-menu ng-scope">
+            <!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><a href="/games/jackpot" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" ui-sref="app.games({category: filtered_collection.id, provider: 'false', currency: false, lang: $root.currentLocale})" ng-class="{'is-current': state.includes('app.games_category', {category: filtered_collection.id})}" class="ng-binding ng-scope">Jackpot Games</a><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') -->
+        </li><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><li ng-repeat="filtered_collection in gamesData.data.collections" class="mobile-left-menu ng-scope">
+            <!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><a href="/games/table_" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" ui-sref="app.games({category: filtered_collection.id, provider: 'false', currency: false, lang: $root.currentLocale})" ng-class="{'is-current': state.includes('app.games_category', {category: filtered_collection.id})}" class="ng-binding ng-scope">Table Games </a><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') -->
+        </li><!-- end ngRepeat: filtered_collection in gamesData.data.collections -->
+    </ul>
+</li>
+
+    </ul></div></div></nav><div id="mm-0" class="mm-page mm-slideout"><div>
+    <!-- ngIf: show_preloader -->
+    <!-- ngIf: game_url -->
+</div><div class="main">
+
+    <div class="notification_wrap ng-isolate-scope" template="top_sidebar">
+  <div class="notification">
+    <span name="latest_winners_top" template="latest_winners_top" limit="1" class="ng-isolate-scope">
+    <!-- ngRepeat: game in gamesData.data.winners.latest | limitTo: limit_count --><p class="notification__message ng-binding ng-scope" ng-repeat="game in gamesData.data.winners.latest | limitTo: limit_count">
+
+        Trixi0307 just won <span class="ng-binding">€2.44</span> in
+        <a href="" ng-controller="Game" ng-click="openGame.modalByCurrency(game.data)" class="notification__game ng-scope ng-binding">Divine Fortune</a></p><!-- end ngRepeat: game in gamesData.data.winners.latest | limitTo: limit_count -->
+</span>
+  </div>
+</div>
+
+    <header class="header" ng-init="$root.sidebar.top_menu.visible = false">
+
+    <div class="header__mobile-menu">
+        <a href="#menu" class="mnav-toggle"></a>
+    </div>
+
+    <div class="header__logo">
+        <img class="logo-before" src="/resources/images/home_white.png">
+        <a href="/"></a>
+    </div>
+
+    <div class="header__center">
+        <ul class="header__menu ng-isolate-scope" template="top-menu" type="top-menu-v2">
+    <!-- ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope">
+        <a href="/promotions" ui-sref="app.external({id:'promotions', lang:'en'})" ng-bind="item.title" class="ng-binding">Promotions</a>
+    </li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope">
+        <a href="/adventure" ui-sref="app.external({id:'adventure', lang:'en'})" ng-bind="item.title" class="ng-binding">Adventure</a>
+    </li><!-- end ngRepeat: item in menu --><li ng-repeat="item in menu" class="ng-scope">
+        <a href="/payments" ui-sref="app.external({id:'payments', lang:'en'})" ng-bind="item.title" class="ng-binding">Payments</a>
+    </li><!-- end ngRepeat: item in menu -->
+</ul>
+    </div>
+    <div class="header__subnav" ng-init="$root.sidebar.searchOpen.visible = false">
+        <div class="header__search" ng-class="{'is-open': $root.sidebar.searchOpen.visible}" ng-click="$root.sidebar.searchOpen.visible = !$root.sidebar.searchOpen.visible">
+            <div class="header__search-input ng-isolate-scope" ng-click="$event.stopPropagation();" ng-class="{'is-open': $root.sidebar.searchOpen.visible}" name="games_list_autocomplete" template="games_autocomplete">
+    <div class="input" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <input ng-model="search" placeholder="Find your game" class="text_input ng-pristine ng-untouched ng-valid ng-empty" type="text">
+    </div>
+    <ul class="dropdown-menu ng-hide" ng-show="search.length &amp;&amp; (filters.games | gameTitle: search).length">
+        <!-- ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Mega Fortune
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Cosmic Fortune
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Butterfly Staxx
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Good Girl, Bad Girl
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Emoji Planet
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Copy Cats
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                An escape from Alcatraz
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Treasure Room
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                Lucky Drink
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 --><li ng-repeat="game in filters.games | gameTitle: search | limitTo: 10" class="ng-scope">
+            <a ng-controller="Game" ng-click="openGame.modalByCurrency(game);" target="_self" class="ng-scope ng-binding">
+                It Came From Venus JP Plus
+            </a>
+        </li><!-- end ngRepeat: game in filters.games | gameTitle: search | limitTo: 10 -->
+    </ul>
+</div>
+        </div>
+        <div class="default-selector balance-selector ng-isolate-scope ng-hide" ng-class="{'single': balances.length == 1}" ng-hide="!$root.data.user.email">
+    <span class="dropdown">
+            <!-- ngRepeat: balance in balances | filter: {code: data.user.currency} -->
+
+            <!-- ngIf: balances.length > 1 -->
+    </span>
+</div>
+        <a access-level="accessLevels.user" class="payments__button payments__button_header ng-scope ng-binding" target="_self" ng-href="" ng-controller="ProfileRoutes" style="display: none;">
+            Deposit
+        </a>
+        <span access-level="accessLevels.user" style="display: none;">
+            <div class="default-selector balance-selector game-show ng-isolate-scope">
+    <span class="dropdown">
+            <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link">
+                <a class="ng-binding"></a>
+                <span class="caret"></span>
+            </span>
+
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <!-- ngRepeat: game_by_currency in game.currencies -->
+            </ul>
+    </span>
+</div>
+        </span>
+
+        <div class="header__lang">
+            <div class="locales ng-isolate-scope" dropdown="" template="header_locales">
+        <div class="locales__selector" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+            <i class="flag flag-gb"></i>
+        </div>
+        <ul role="menu" class="dropdown-menu">
+            <!-- ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-de"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-gr"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-tr"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-se"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope ng-hide">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-fi"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope ng-hide">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-nn"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope ng-hide">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-pt"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope ng-hide">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-fr"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1" class="ng-scope ng-hide">
+                <a ng-click="changeLocale(value.code);">
+                    <i class="flag flag-it"></i>
+                </a>
+            </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales -->
+        </ul>
+</div>
+        </div>
+        <!-- ngInclude: --><ng-include src="'/app/Layout/Header/hamburger-menu.html'" class="ng-scope"><div class="header__ham ng-scope" dropdown="">
+    <!-- ngIf: $root.data.user.email -->
+    <!-- ngIf: !$root.data.user.email --><div ng-if="!$root.data.user.email" class="icon ng-scope" translate="frontend.links.login" translate-default="Login" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Login</div><!-- end ngIf: !$root.data.user.email -->
+    <div ng-controller="HamburgerController" class="ng-scope">
+        <div class="hamburger ng-scope" ng-controller="LoginCtrl" ng-class="{'is-open': $root.sidebar.hamOpen.visible, 'is-user': $root.data.user.email}" role="menu">
+            <!--div class="hamburger__close" ng-click="$event.stopPropagation();"></div-->
+            <div class="hamburger__left">
+                <!-- ngIf: !$root.data.user.email --><div class="hamburger__tabs ng-scope ng-isolate-scope" ng-if="!$root.data.user.email" justified="true">
+  <ul class="nav nav-tabs nav-justified" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude="">
+                    <li ng-class="{active: active, disabled: disabled}" class="ng-scope ng-isolate-scope active">
+  <a href="" ng-click="select()" tab-heading-transclude="" class="ng-binding"></a>
+</li>
+                    <!--tab>
+                        <tab-heading class="hamburger__title">{{'frontend.links.sign_up' | translate}}</tab-heading>
+                        <casino-form-registration columns="1" checkbox-after="1" template="hamburger_registration"></casino-form-registration>
+                    </tab-->
+                </ul>
+  <div class="tab-content">
+    <!-- ngRepeat: tab in tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+    
+                        <!--tab-heading class="hamburger__title">{{'frontend.links.login' | translate}}</tab-heading-->
+                        <form class="hamburger__login ng-pristine ng-valid ng-scope ng-valid-email" method="post" ng-submit="login.submit(true)" ng-controller="LoginCtrl" id="sign_up_panel_new_user" accept-charset="UTF-8">
+                            <div class="form-group" ng-click="$event.stopPropagation();">
+                                <input class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" placeholder="Email" ng-class="{'error':login.errors.password}" ng-model="login.data.user.email" value="" tabindex="1" name="user[email]" id="sign_in_panel_user_email" type="email">
+
+                                <!-- ngRepeat: (error_key, error_value) in login.errors.password -->
+                            </div>
+                            <div class="form-group" ng-click="$event.stopPropagation();">
+                                <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" ng-class="{'error':login.errors.password}" ng-model="login.data.user.password" tabindex="2" name="user[password]" id="sign_in_panel_user_password" type="password">
+                            </div>
+                            <!--div class="hamburger__agreements">
+                            </div-->
+                            <div class="hamburger__bottom">
+                                <a class="ng-scope" href="/users/password/new" ui-sref="app.users_password_new({lang:'en'})" translate="frontend.links.forgot_password">Forgot Your Password?</a>
+                                <button type="submit" class="hamburger__button ng-binding">Login</button>
+                            </div>
+                        </form>
+                    </div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div><!-- end ngIf: !$root.data.user.email -->
+                <!-- ngIf: $root.data.user.email -->
+
+            </div>
+            <div class="hamburger__right">
+                <ul class="hamburger__list ng-isolate-scope" type="main-menu">
+    <!-- ngRepeat: item in menu --><li class="hamburger__list-item is-promotions" ng-repeat="item in menu">
+        <a href="/promotions" ui-sref="app.external({id:'promotions', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Promotions</a>
+    </li><!-- end ngRepeat: item in menu --><li class="hamburger__list-item is-adventure" ng-repeat="item in menu">
+        <a href="/adventure" ui-sref="app.external({id:'adventure', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Adventure</a>
+    </li><!-- end ngRepeat: item in menu --><li class="hamburger__list-item is-payments" ng-repeat="item in menu">
+        <a href="/payments" ui-sref="app.external({id:'payments', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Payments</a>
+    </li><!-- end ngRepeat: item in menu --><li class="hamburger__list-item is-faq" ng-repeat="item in menu">
+        <a href="/faq" ui-sref="app.external({id:'faq', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Faq</a>
+    </li><!-- end ngRepeat: item in menu -->
+    <li class="hamburger__list-item is-chat">
+        <a ng-href="" target="_self">Live Chat</a>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+</div></ng-include>
+    </div>
+
+</header>
+
+    <casino-notification></casino-notification>
+
+    <!-- ngIf: state.current.name == 'home' || state.current.page_name == 'games_category' || state.current.page_name == 'games' --><section class="slider-section ng-scope" ng-if="state.current.name == 'home' || state.current.page_name == 'games_category' || state.current.page_name == 'games'">
+        <div>
+            <div class="slider-desktop">
+                <div ng-bind-html="content" type="home-accordion" class="slider-wrap ng-binding ng-isolate-scope ng-scope"><div class="accordion horizontal" ng-init="select = 1">
+  <section id="about" ng-class="{'active' : select == 1}" class="active">
+    <h2><a href="" ng-click="select = 1">Welcome bonuses</a></h2>
+    <div class="content" style="background-image: url('/system/comfy/cms/files/files/000/000/565/original/main-first-en.jpg')"></div>
+  </section>
+  <section id="about" ng-class="{'active' : select == 2}">
+    <h2><a href="" ng-click="select = 2">Second Deposit bonus</a></h2>
+    <div class="content" style="background-image: url('/system/comfy/cms/files/files/000/000/567/original/mainN-second-en.jpg')"></div>
+  </section>
+  <section id="about" ng-class="{'active' : select == 3}">
+    <h2><a href="" ng-click="select = 3">Third Deposit bonus</a></h2>
+    <div class="content" style="background-image: url('/system/comfy/cms/files/files/000/000/568/original/mainN-third-en.jpg')"></div>
+  </section>
+</div>
+
+</div>
+            </div>
+            <div class="slider-mobile slider-wrap ng-isolate-scope" category="slider-index-top-mobile" template="slider_top_mobile">
+    <div class="main_banner">
+        <div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel-fade carousel ng-isolate-scope" ng-swipe-right="prev()" ng-swipe-left="next()" data-interval="3000">
+    <ol class="carousel-indicators" ng-show="slides.length > 1">
+        <!-- ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope"></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="ng-scope active"></li><!-- end ngRepeat: slide in slides track by $index -->
+    </ol>
+    <div class="carousel-inner" ng-transclude="">
+            <!-- ngRepeat: slide in slides --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-scope ng-isolate-scope" ng-transclude="" ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="/system/comfy/cms/files/files/000/000/432/original/pad_roul-en.png" style="margin:auto;" class="ng-scope" src="/system/comfy/cms/files/files/000/000/432/original/pad_roul-en.png">
+                <div class="main-slider-inner ng-scope">
+                    <div ng-bind-html="content" text="" class="ng-binding ng-isolate-scope ng-scope"></div>
+                </div>
+
+            </div><!-- end ngRepeat: slide in slides --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center ng-scope ng-isolate-scope active" ng-transclude="" ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="/system/comfy/cms/files/files/000/000/429/original/pad_vip-en.png" style="margin:auto;" class="ng-scope" src="/system/comfy/cms/files/files/000/000/429/original/pad_vip-en.png">
+                <div class="main-slider-inner ng-scope">
+                    <div ng-bind-html="content" text="" class="ng-binding ng-isolate-scope ng-scope"></div>
+                </div>
+
+            </div><!-- end ngRepeat: slide in slides -->
+        </div>
+    <a class="left carousel-control" ng-click="prev()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" ng-click="next()" ng-show="slides.length > 1"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+    </div>
+</div>
+        </div>
+        <div class="user-block-wrap ng-isolate-scope" ng-class="{'_user' : $root.user.data.email}">
+    <!-- ngIf: !$root.data.user.email --><div ng-if="!$root.data.user.email" class="guest ng-scope">
+        <div class="title ng-binding">
+            Welcome, we're happy you're here
+            <div class="four-sec-block">
+                <div class="time-block ng-scope" translate="frontend.caption.four_sec_block.four_sec">4 sec</div>
+                <div class="sign-up-block ng-scope" translate="frontend.caption.four_sec_block.sign_up">sign up</div>
+            </div>
+        </div>
+        <form ng-submit="submit(true)" accept-charset="UTF-8" template="slider_registration" checkbox-after="1" columns="1" class="ng-pristine ng-valid ng-isolate-scope">
+    <!-- ngRepeat: fields in registrationFields --><div ng-repeat="fields in registrationFields" class="slider__form-row ng-scope">
+        <!-- ngRepeat: field in fields --><!-- ngIf: field.field != 'password_confirmation' --><div ng-class="{'checkbox': data.localData.type =='checkbox', 'form-group': data.localData.type !='checkbox', 'has-error':errors}" class="ng-scope form-group">
+
+    <label class="control-label">
+        <span translate="activerecord.attributes.user.email" class="ng-scope">Email</span>
+        <sup ng-show="data.required" title="required">*</sup>
+</label>
+<input class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" placeholder="Email" ng-model="value" min="data.length.minimum" max="data.length.maximum" autocomplete="off" auto-fill-sync="" type="email">
+
+
+    <!-- ngRepeat: (error_key, error_value) in errors -->
+</div><!-- end ngIf: field.field != 'password_confirmation' --><!-- end ngRepeat: field in fields --><!-- ngIf: field.field != 'password_confirmation' --><div ng-class="{'checkbox': data.localData.type =='checkbox', 'form-group': data.localData.type !='checkbox', 'has-error':errors}" class="ng-scope form-group">
+
+    <label class="control-label">
+        <span translate="activerecord.attributes.user.password" class="ng-scope">Password</span>
+        <sup ng-show="data.required" title="required">*</sup>
+</label>
+<input class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" ng-model="value" min="data.length.minimum" max="data.length.maximum" autocomplete="off" auto-fill-sync="" type="password">
+
+
+    <!-- ngRepeat: (error_key, error_value) in errors -->
+</div><!-- end ngIf: field.field != 'password_confirmation' --><!-- end ngRepeat: field in fields --><!-- ngIf: field.field != 'password_confirmation' --><!-- end ngRepeat: field in fields --><!-- ngIf: field.field != 'password_confirmation' --><div ng-class="{'checkbox': data.localData.type =='checkbox', 'form-group': data.localData.type !='checkbox', 'has-error':errors}" class="ng-scope form-group">
+
+    <div class="profile_currency-wrap">
+    <div class="dropdown">
+        <button class="form-control dropdown-toggle labeled-control" tabindex="17" data-toggle="dropdown" type="button">
+            <span class="name opacity ng-binding">
+                Currency
+            </span>
+            <span class="mycaret"></span>
+        </button>
+
+        <ul class="dropdown-menu currency-dropdown" role="menu">
+            <!-- ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">EUR</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">USD</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">BTC</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">RUB</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">SEK</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">NOK</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index --><li ng-repeat="(key, currency) in data.inclusion.in track by $index" ng-click="$parent.value = key" class="ng-scope">
+                <a class="dropdown-menu-item" href="">
+                    <span class="name ng-binding" ng-bind="currency">AUD</span>
+                </a>
+            </li><!-- end ngRepeat: (key, currency) in data.inclusion.in track by $index -->
+        </ul>
+    </div>
+</div>
+
+    <!-- ngRepeat: (error_key, error_value) in errors -->
+</div><!-- end ngIf: field.field != 'password_confirmation' --><!-- end ngRepeat: field in fields -->
+    </div><!-- end ngRepeat: fields in registrationFields -->
+    <div class="slider__agreements">
+        <!-- ngRepeat: fields in registrationFieldsCheckbox --><div ng-repeat="fields in registrationFieldsCheckbox" class="ng-scope">
+            <!-- ngRepeat: field in fields --><div ng-class="{'checkbox': data.localData.type =='checkbox', 'form-group': data.localData.type !='checkbox', 'has-error':errors}" class="ng-scope checkbox">
+
+    <input placeholder="I am  years old and I accept the " ng-init="value = data.localData.default" ng-model="value" id="profile_age_terms_acceptance" auto-fill-sync="" class="ng-pristine ng-untouched ng-valid ng-empty" type="checkbox">
+<label class="control-label" for="profile_age_terms_acceptance">
+    <span ng-bind-html="label" class="ng-binding">I am 18 years old and I accept the <a href="/en/terms" target="_blank">Terms and Conditions</a></span> <sup ng-show="data.required" title="required" class="ng-hide">*</sup>
+</label>
+
+
+
+    <!-- ngRepeat: (error_key, error_value) in errors -->
+</div><!-- end ngRepeat: field in fields -->
+        </div><!-- end ngRepeat: fields in registrationFieldsCheckbox -->
+    </div>
+    <div ng-bind-html="content" type="right-registration-info" class="slider__form-row info ng-binding ng-isolate-scope ng-scope"><div class="col">
+  <div class="orange">1000+</div>
+  <div>Games</div>
+</div>
+<div class="col">
+  <div class="orange">24/7</div>
+  <div>Support</div>
+</div>
+<div class="col">
+  <div class="orange">Fast</div>
+  <div>Cash out</div>
+</div>
+<div class="col">
+  <div class="orange">100%</div>
+  <div>Secure</div>
+</div>
+</div>
+    <div class="slider__button">
+        <button type="submit" translate="frontend.links.sign_up" class="ng-scope">Sign Up</button>
+        <a class="login-link login-mobile ng-scope" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in">Sign In</a>
+    </div>
+</form>
+    </div><!-- end ngIf: !$root.data.user.email -->
+    <!-- ngIf: $root.data.user.email -->
+</div>
+        <div ng-bind-html="content" type="right-registration-info" class="our-advantage ng-binding ng-isolate-scope ng-scope"><div class="col">
+  <div class="orange">1000+</div>
+  <div>Games</div>
+</div>
+<div class="col">
+  <div class="orange">24/7</div>
+  <div>Support</div>
+</div>
+<div class="col">
+  <div class="orange">Fast</div>
+  <div>Cash out</div>
+</div>
+<div class="col">
+  <div class="orange">100%</div>
+  <div>Secure</div>
+</div>
+</div>
+    </section><!-- end ngIf: state.current.name == 'home' || state.current.page_name == 'games_category' || state.current.page_name == 'games' -->
+
+    <!-- uiView: --><div ui-view="" autoscroll="false" class="ng-scope"><!-- uiView: --><ui-view class="ng-scope"><div class="ng-scope">
+    <section class="payments">
+        <div class="text-center mobile-friendly"><img src="/resources/images/mobile-friendly.png" alt="mobile-friendly"></div>   
+        <div class="payments__title">100% Secure</div>
+        <div ng-nicescroll="" nice-option="{
+                cursorcolor: &quot;rgba(0, 0, 0, .1)&quot;,
+                cursorborder: &quot;1px solid rgb(204, 204, 204);&quot;,
+                cursorborderradius: &quot;2px&quot;,
+                cursorwidth: &quot;2&quot;,
+                horizrailenabled: true,
+                cursoropacitymin: &quot;.5&quot;,
+                railpadding: {right: 1, bottom: 1}
+            }" style="overflow: hidden;" tabindex="0">
+            <div ng-bind-html="content" type="payments-icons-v2" class="ng-binding ng-isolate-scope ng-scope"><ul class="payments__list">
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/responsiblegaming.svg" class="" alt="" src="/resources/images/icon/responsibility/black/responsiblegaming.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/18plus.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/18plus.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamanon.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamanon.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamblers_anonymous.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamblers_anonymous.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gambling_therapy.svg" class="" alt="" src="/resources/images/icon/responsibility/black/gambling_therapy.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamcare.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamcare.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/visa.svg" class="" alt="" src="/resources/images/icon/payments/black/visa.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/mastercard.svg" class="" alt="" src="/resources/images/icon/payments/black/mastercard.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/btc_accepted.svg" class="" alt="" src="/resources/images/icon/payments/black/btc_accepted.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/cubits.svg" class="" alt="" src="/resources/images/icon/payments/black/cubits.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/neteller.svg" class="small" alt="" src="/resources/images/icon/payments/black/neteller.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/paysafecard.svg" class="" alt="" src="/resources/images/icon/payments/black/paysafecard.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/skrill.svg" class="small" alt="" src="/resources/images/icon/payments/black/skrill.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/trustly.svg" class="" alt="" src="/resources/images/icon/payments/black/trustly.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/zimpler.svg" class="" alt="" src="/resources/images/icon/payments/black/zimpler.svg">
+  </li>
+
+</ul>
+</div>
+        </div>
+    </section>
+
+    <div class="index-games-container">
+        <div class="index-games">
+            <div class="games-list-wrap">
+                <div class="games-list" ng-init="limit = 6">
+                    <div class="games-list__col games-caption">
+                        <div class="games-caption__icon is-new">
+                            <span class="icon"></span>
+                            <span class="label ng-binding">New Games</span>
+                        </div>
+                        <div class="game-blocks game-blocks-home" name="top_games" filters="{collection: 'new'}" template="home_page" limit="limit">
+    <!-- ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/quickfire/MGS_PickaFortune.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/quickfire/MGS_PickaFortune.png" alt="quickfire/MGS_PickaFortune" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="quickfire/MGS_PickaFortune" ng-src="https://cdn2.softswiss.net/i/s2/quickfire/MGS_PickaFortune.png" src="https://cdn2.softswiss.net/i/s2/quickfire/MGS_PickaFortune.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Pick a Fortune</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/nyx/NotEnoughKittens.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/nyx/NotEnoughKittens.png" alt="nyx/NotEnoughKittens" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="nyx/NotEnoughKittens" ng-src="https://cdn2.softswiss.net/i/s2/nyx/NotEnoughKittens.png" src="https://cdn2.softswiss.net/i/s2/nyx/NotEnoughKittens.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Not Enough Kittens</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/belatra/NeptunesKingdom.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/belatra/NeptunesKingdom.png" alt="belatra/NeptunesKingdom" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="belatra/NeptunesKingdom" ng-src="https://cdn2.softswiss.net/i/s2/belatra/NeptunesKingdom.png" src="https://cdn2.softswiss.net/i/s2/belatra/NeptunesKingdom.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Neptune's Kingdom</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/pragmatic/WildSpells.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/pragmatic/WildSpells.png" alt="pragmatic/WildSpells" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="pragmatic/WildSpells" ng-src="https://cdn2.softswiss.net/i/s2/pragmatic/WildSpells.png" src="https://cdn2.softswiss.net/i/s2/pragmatic/WildSpells.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Wild Spells</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/nyx/LightningGems.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/nyx/LightningGems.png" alt="nyx/LightningGems" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="nyx/LightningGems" ng-src="https://cdn2.softswiss.net/i/s2/nyx/LightningGems.png" src="https://cdn2.softswiss.net/i/s2/nyx/LightningGems.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Lightning Gems</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/wolfcub_not_mobile_sw.png" alt="netent/wolfcub_not_mobile_sw" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/wolfcub_not_mobile_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/wolfcub_not_mobile_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/wolfcub_not_mobile_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Wolf Cub</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count -->
+</div>
+                    </div>
+                    <div class="games-list__col games-caption">
+                        <div class="games-caption__icon is-hot">
+                            <span class="icon"></span>
+                            <span class="label ng-binding">Most Popular</span>
+                        </div>
+                        <div class="game-blocks game-blocks-home" name="new_games" filters="{collection: 'most_popular'}" template="home_page" limit="limit">
+    <!-- ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/netent/wildrockets_sw.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/wildrockets_sw.png" alt="netent/wildrockets_sw" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/wildrockets_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/wildrockets_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/wildrockets_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Wild Rockets</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/amatic/WildRespin.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/amatic/WildRespin.png" alt="amatic/WildRespin" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="amatic/WildRespin" ng-src="https://cdn2.softswiss.net/i/s2/amatic/WildRespin.png" src="https://cdn2.softswiss.net/i/s2/amatic/WildRespin.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Wild Respin</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/pragmatic/QueenOfGold.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/pragmatic/QueenOfGold.png" alt="pragmatic/QueenOfGold" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="pragmatic/QueenOfGold" ng-src="https://cdn2.softswiss.net/i/s2/pragmatic/QueenOfGold.png" src="https://cdn2.softswiss.net/i/s2/pragmatic/QueenOfGold.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Queen of Gold</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/softswiss/PlatinumLightning.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/softswiss/PlatinumLightning.png" alt="softswiss/PlatinumLightning" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="softswiss/PlatinumLightning" ng-src="https://cdn2.softswiss.net/i/s2/softswiss/PlatinumLightning.png" src="https://cdn2.softswiss.net/i/s2/softswiss/PlatinumLightning.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Platinum Lightning</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="https://cdn2.softswiss.net/i/s2/netent/starburst_not_mobile_sw.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/starburst_not_mobile_sw.png" alt="netent/starburst_not_mobile_sw" loading="true" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/starburst_not_mobile_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/starburst_not_mobile_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/starburst_not_mobile_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Starburst</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/pragmatic/DragonKingdom.png" alt="pragmatic/DragonKingdom" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 --><div class="game-top-label ng-scope" ng-if="(game.collections | filter: 'popular').length > 0">Hot</div><!-- end ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="pragmatic/DragonKingdom" ng-src="https://cdn2.softswiss.net/i/s2/pragmatic/DragonKingdom.png" src="https://cdn2.softswiss.net/i/s2/pragmatic/DragonKingdom.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Dragon Kingdom</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count -->
+</div>
+                    </div>
+                    <div class="games-list__col games-caption">
+                        <div class="games-caption__icon is-best">
+                            <span class="icon"></span>
+                            <span class="label ng-binding">Top Games</span>
+                        </div>
+                        <div class="game-blocks game-blocks-home" name="we_like_games" filters="{collection: 'we_like'}" template="home_page" limit="limit">
+    <!-- ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/amatic/DragonsPearl.png" alt="amatic/DragonsPearl" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="amatic/DragonsPearl" ng-src="https://cdn2.softswiss.net/i/s2/amatic/DragonsPearl.png" src="https://cdn2.softswiss.net/i/s2/amatic/DragonsPearl.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Dragons Pearl</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/softswiss/WestTown.png" alt="softswiss/WestTown" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="softswiss/WestTown" ng-src="https://cdn2.softswiss.net/i/s2/softswiss/WestTown.png" src="https://cdn2.softswiss.net/i/s2/softswiss/WestTown.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">West Town</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/gunsnroses_not_mobile_sw.png" alt="netent/gunsnroses_not_mobile_sw" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/gunsnroses_not_mobile_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/gunsnroses_not_mobile_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/gunsnroses_not_mobile_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Guns N' Roses</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/amatic/BookOfFortune.png" alt="amatic/BookOfFortune" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="amatic/BookOfFortune" ng-src="https://cdn2.softswiss.net/i/s2/amatic/BookOfFortune.png" src="https://cdn2.softswiss.net/i/s2/amatic/BookOfFortune.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Book Of Fortune</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/softswiss/BookOfPyramids.png" alt="softswiss/BookOfPyramids" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="softswiss/BookOfPyramids" ng-src="https://cdn2.softswiss.net/i/s2/softswiss/BookOfPyramids.png" src="https://cdn2.softswiss.net/i/s2/softswiss/BookOfPyramids.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Book of Pyramids</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/spacewars_sw.png" alt="netent/spacewars_sw" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/spacewars_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/spacewars_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/spacewars_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Space Wars</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count -->
+</div>
+                    </div>
+                    <div class="games-list__col games-caption">
+                        <div class="games-caption__icon is-price">
+                            <span class="icon"></span>
+                            <span class="label ng-binding">Jackpot Games</span>
+                        </div>
+                        <div class="game-blocks game-blocks-home" name="jackpots" filters="{collection: 'jackpots'}" template="home_page" limit="limit">
+    <!-- ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/megafortune_not_mobile_sw.png" alt="netent/megafortune_not_mobile_sw" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/megafortune_not_mobile_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/megafortune_not_mobile_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/megafortune_not_mobile_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' --><span class="games-block__jackpot ng-binding ng-scope" ng-if="game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'">
+            €3,479,495.89
+        </span><!-- end ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Mega Fortune</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/netent/cosmicfortune_sw.png" alt="netent/cosmicfortune_sw" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="netent/cosmicfortune_sw" ng-src="https://cdn2.softswiss.net/i/s2/netent/cosmicfortune_sw.png" src="https://cdn2.softswiss.net/i/s2/netent/cosmicfortune_sw.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' --><span class="games-block__jackpot ng-binding ng-scope" ng-if="game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'">
+            €27,899.97
+        </span><!-- end ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Cosmic Fortune</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/egt/100Cats.png" alt="egt/100Cats" loading="false" style="opacity: 1;">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="egt/100Cats" ng-src="https://cdn2.softswiss.net/i/s2/egt/100Cats.png" src="https://cdn2.softswiss.net/i/s2/egt/100Cats.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">100 Cats</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/egt/ActionMoney.png" alt="egt/ActionMoney" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="egt/ActionMoney" ng-src="https://cdn2.softswiss.net/i/s2/egt/ActionMoney.png" src="https://cdn2.softswiss.net/i/s2/egt/ActionMoney.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Action Money</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/egt/AztecGlory.png" alt="egt/AztecGlory" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="egt/AztecGlory" ng-src="https://cdn2.softswiss.net/i/s2/egt/AztecGlory.png" src="https://cdn2.softswiss.net/i/s2/egt/AztecGlory.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">Aztec Glory</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count --><!-- ngInclude: '/app/Games/_game_item.html' --><div ng-repeat="game in filters.games | limitTo: limit_count" ng-include="'/app/Games/_game_item.html'" class="ng-scope"><div class="games-block ng-scope">
+    <span ng-click="openGame.modalByCurrency(game);" ng-controller="Game" class="ng-scope">
+        <img class="games-block__image show-animated" src="/resources/images/blank/220_103.png" casino-lazy-src="https://cdn2.softswiss.net/i/s2/egt/2Dragons.png" alt="egt/2Dragons" loading="false">
+    </span>
+
+    <div class="labels">
+        <!-- ngIf: (game.collections | filter: 'new').length > 0 --><div class="game-new-label ng-binding ng-scope" ng-if="(game.collections | filter: 'new').length > 0">New</div><!-- end ngIf: (game.collections | filter: 'new').length > 0 -->
+        <!-- ngIf: (game.collections | filter: 'popular').length > 0 -->
+
+    </div>
+
+    <div class="games-block__wrap">
+        <img class="games-block__image" alt="egt/2Dragons" ng-src="https://cdn2.softswiss.net/i/s2/egt/2Dragons.png" src="https://cdn2.softswiss.net/i/s2/egt/2Dragons.png">
+        <!-- ngIf: $root.data.user.email -->
+        <!-- ngIf: game | gameJackpotByCurrency : $root.data.user.currency : 'EUR' -->
+
+        <div class="games-block__action ng-scope" ng-controller="Game">
+            <span class="games-block__name ng-binding">2 Dragons</span>
+            <div class="games-block__buttons ng-scope" ng-controller="AuthModal">
+                <a href="" class="games-block__button is-red ng-binding" ng-click="$root.data.user.email ? openGame.modalByCurrency(game) : auth_modal.showLogin();">
+                    Play now
+                </a>
+                <a href="" class="games-block__button is-gray ng-scope" ng-click="openGame.modalByCurrency(game, 'FUN');" translate="frontend.links.play_for_fun">Play for Fun</a>
+            </div>
+        </div>
+    </div>
+</div></div><!-- end ngRepeat: game in filters.games | limitTo: limit_count -->
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="games-load">
+                <a href="" ng-click="limit = limit + 6" ng-hide="limit > 100" class="ng-binding">
+                    Load More Games
+                </a>
+            </div>
+        </div>
+
+        <div class="home-right-panel ng-scope" ng-controller="AuthModal">
+            <a target="_self" ng-click="!$root.data.user.email ? auth_modal.showLogin() : false" ng-href="" ng-controller="ProfileRoutes" class="ng-scope"><img src="/resources/images/bicoin-friendly.png"></a>
+            <!-- ngInclude: '/app/Home/_home_right_panel.html' --><div ng-include="'/app/Home/_home_right_panel.html'" class="panel-group ng-scope" id="right-accardion"><div class="panel ng-scope">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#right-accardion" href="" data-target="#right-panel-games" aria-expanded="true" translate="frontend.caption.games" class="ng-scope">Games</a>
+        </div>
+    </div>
+    <div id="right-panel-games" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <ul class="right__menu ng-isolate-scope" name="right_collections" template="right-collections">
+    <li><a href="" class="ing-games-filter right-games ng-scope" ng-class="{'is-current': filters.collection == 'home'}" ui-sref="home" translate="frontend.games_list.lobby" translate-default="Lobby">Lobby</a>
+    </li>
+    <!-- ngRepeat: filtered_collection in gamesData.data.collections --><!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><li ng-repeat="filtered_collection in gamesData.data.collections" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" class="ng-scope">
+        <a href="/games/slot" class="ing-games-filter right-games ng-scope" ng-class="{'is-current': filters.collection == filtered_collection.id}" ui-sref="app.games({category: filtered_collection.id})" ui-sref-opts="{inherit: false}" translate="games.categories.slot" translate-default="Slots">Slots</a>
+    </li><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><li ng-repeat="filtered_collection in gamesData.data.collections" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" class="ng-scope">
+        <a href="/games/live_dealer" class="ing-games-filter right-games ng-scope" ng-class="{'is-current': filters.collection == filtered_collection.id}" ui-sref="app.games({category: filtered_collection.id})" ui-sref-opts="{inherit: false}" translate="games.categories.live_dealer" translate-default="Live Dealer">Live Dealer</a>
+    </li><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><li ng-repeat="filtered_collection in gamesData.data.collections" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" class="ng-scope">
+        <a href="/games/jackpot" class="ing-games-filter right-games ng-scope" ng-class="{'is-current': filters.collection == filtered_collection.id}" ui-sref="app.games({category: filtered_collection.id})" ui-sref-opts="{inherit: false}" translate="games.categories.jackpot" translate-default="Jackpot Games">Jackpot Games</a>
+    </li><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><!-- end ngRepeat: filtered_collection in gamesData.data.collections --><!-- ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><li ng-repeat="filtered_collection in gamesData.data.collections" ng-if="filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' &amp;&amp; $root.data.user.currency == 'BTC')" class="ng-scope">
+        <a href="/games/table_" class="ing-games-filter right-games ng-scope" ng-class="{'is-current': filters.collection == filtered_collection.id}" ui-sref="app.games({category: filtered_collection.id})" ui-sref-opts="{inherit: false}" translate="games.categories.table_" translate-default="Table Games ">Table Games</a>
+    </li><!-- end ngIf: filtered_collection.id != 'btc_games' ||  (filtered_collection.id == 'btc_games' && $root.data.user.currency == 'BTC') --><!-- end ngRepeat: filtered_collection in gamesData.data.collections -->
+</ul>
+
+            <div ng-bind-html="content" type="right-game-banner" class="ng-binding ng-isolate-scope ng-scope"><div class="title">Recommended games of the month</div>
+<div ng-controller="GamesBlock" class="ng-scope">
+  <a href="" ng-controller="Game" ng-click="openGame.modalByCurrency((filters.games | filter:{title:'Platinum Lightning'})[0])" class="ng-scope">
+	<img src="/system/comfy/cms/files/files/000/000/452/original/PlatinumLightning.png">
+  </a>
+   <a href="" ng-controller="Game" ng-click="openGame.modalByCurrency((filters.games | filter:{title:'Domnitors'})[0])" class="ng-scope">
+	<img src="/system/comfy/cms/files/files/000/000/453/original/Domnitors.png">
+  </a>
+</div></div>
+        </div>
+    </div>
+</div>
+<div class="panel ng-scope">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#right-accardion" href="" data-target="#right-panel-providers" translate="frontend.caption.providers" class="ng-scope">Providers</a>
+        </div>
+    </div>
+    <div id="right-panel-providers" class="panel-collapse collapse">
+        <div class="panel-body">
+            <ul class="right__menu ng-isolate-scope" name="right_providers" template="right-providers">
+    <li ng-class="{current: filters.data.provider == false}" class="current">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: false, category: 'all'})" href="/games">
+            All Providers</a>
+    </li>
+    <!-- ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'amatic'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/amatic">
+            Amatic</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'amaya'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/amaya">
+            Amaya</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'belatra'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/belatra">
+            Belatra</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'booming'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/booming">
+            Booming Games</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'bsg'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/bsg">
+            Betsoft Gaming</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'egt'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/egt">
+            EGT</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'elk'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/elk">
+            ELK</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'endorphina'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/endorphina">
+            Endorphina</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'evolution'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/evolution">
+            Evolution</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'ezugi'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/ezugi">
+            Ezugi</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'gameart'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/gameart">
+            GameArt</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'habanero'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/habanero">
+            Habanero</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'igaming2go'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/igaming2go">
+            Igaming2go</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'isoftbet'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/isoftbet">
+            iSoftBet</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'mrslotty'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/mrslotty">
+            MrSlotty</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'netent'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/netent">
+            Netent</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'nextgen'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/nextgen">
+            NextGen Gaming</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'playngo'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/playngo">
+            Play'n GO</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'pragmatic'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/pragmatic">
+            Pragmatic Play</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'quickfire'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/quickfire">
+            Quickfire</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'softswiss'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/softswiss">
+            SoftSwiss</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'spinomenal'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/spinomenal">
+            Spinomenal</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'thunderkick'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/thunderkick">
+            Thunderkick</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') --><li ng-repeat="filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id')" ng-class="{current: filters.data.provider == 'yggdrasil'}" class="ng-scope">
+        <a class="ing-games-filter right-games ng-binding" ui-sref="app.games({provider: filter_provider.id, category: 'all'})" href="/games/all/yggdrasil">
+            Yggdrasil</a>
+
+    </li><!-- end ngRepeat: filter_provider in $root.data.window._.sortBy(gamesData.data.providers, 'id') -->
+
+
+</ul>
+        </div>
+    </div>
+</div>
+<div class="panel ng-scope">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#right-accardion" href="" data-target="#right-panel-payments" translate="frontend.caption.payments" class="ng-scope">Payments</a>
+        </div>
+    </div>
+    <div id="right-panel-payments" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div ng-bind-html="content" type="right-payments" class="ng-binding ng-isolate-scope ng-scope"><ul class="right__menu" ng-init="payments = ['cards', 'visa','mastercard','qiwi', 'yandex','skrill', 'trustly','neteller','paysafecard', 'sofort','bitcoin','cubits','zimpler']">
+  
+  <!-- ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            cards
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            visa
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            mastercard
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            qiwi
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            yandex
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            skrill
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            trustly
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            neteller
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            paysafecard
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            sofort
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            bitcoin
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            cubits
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments --><li ng-repeat="filter_payment in payments" class="ng-scope">
+    <!-- ngIf: !$root.data.user.email --><a ng-controller="AuthModal" ng-if="!$root.data.user.email" href="" class="payment-link ng-scope ng-binding" ng-click="auth_modal.showRegistration()">
+            zimpler
+        </a><!-- end ngIf: !$root.data.user.email -->
+
+    <!-- ngIf: $root.data.user.email -->
+  </li><!-- end ngRepeat: filter_payment in payments -->
+</ul></div>
+        </div>
+    </div>
+</div>
+<div class="panel ng-scope">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#right-accardion" href="" data-target="#right-panel-support" translate="frontend.caption.contact" class="ng-scope">Contact us</a>
+        </div>
+    </div>
+    <div id="right-panel-support" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div ng-bind-html="content" type="right-support-text" class="ng-binding ng-isolate-scope ng-scope"><p>We at DasIstCasino understand how important it is to help players in hard situations. That’s why our support service is available 24/7 via live chat or email. To talk to a customer support representative just open the live chat or leave a message through the form below.</p>
+<p>Please, fill the information below. All fields are required.</p></div>
+
+            <div id="contact-form" ng-controller="Support" class="ng-scope">
+                <form novalidate="novalidate" method="post" id="new_contact" class="support ng-pristine ng-valid ng-valid-email" ng-submit="support.submit();">
+
+                    <div class="support__row">
+                        <label for="contact_email" class="ng-binding">
+                            Email
+                            <sup title="required">*</sup>
+                        </label>
+                        <input ng-model="support.data.contact.email" id="contact_email" class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" type="email">
+                        <!-- ngRepeat: (error_key, error_value) in support.errors.email -->
+                    </div>
+
+                    <div class="support__row">
+                        <label for="contact_content" class="ng-binding">
+                            Message
+                            <sup title="required">*</sup>
+                        </label>
+                        <textarea rows="8" name="contact[content]" id="contact_content" cols="50" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="support.data.contact.content"></textarea>
+                        <!-- ngRepeat: (error_key, error_value) in support.errors.content -->
+                    </div>
+
+                    <div id="contact_submit_action">
+                        <button translate="frontend.contact.labels.send" name="submit" type="submit" class="support__button ng-scope">Send</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<a href="" class="live_support ng-scope" onclick="LC_API.open_chat_window({source:'button'});return false;" translate="frontend.caption.live_support">Live Support</a></div>
+        </div>
+    </div>
+
+    <section class="payments-mobile">
+        <div class="text-center mobile-friendly"><img src="/resources/images/mobile-friendly.png" alt="mobile-friendly"></div> 
+        <div class="payments__title">100% Secure</div>
+        <div ng-nicescroll="" nice-option="{
+                cursorcolor: &quot;rgba(0, 0, 0, .1)&quot;,
+                cursorborder: &quot;1px solid rgb(204, 204, 204);&quot;,
+                cursorborderradius: &quot;2px&quot;,
+                cursorwidth: &quot;2&quot;,
+                horizrailenabled: true,
+                cursoropacitymin: &quot;.5&quot;,
+                railpadding: {right: 1, bottom: 1}
+            }" style="overflow: hidden;" tabindex="1">
+            <div ng-bind-html="content" type="payments-icons-v2" class="ng-binding ng-isolate-scope ng-scope"><ul class="payments__list">
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/responsiblegaming.svg" class="" alt="" src="/resources/images/icon/responsibility/black/responsiblegaming.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/18plus.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/18plus.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamanon.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamanon.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamblers_anonymous.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamblers_anonymous.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gambling_therapy.svg" class="" alt="" src="/resources/images/icon/responsibility/black/gambling_therapy.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/responsibility/black/gamcare.svg" class="large" alt="" src="/resources/images/icon/responsibility/black/gamcare.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/visa.svg" class="" alt="" src="/resources/images/icon/payments/black/visa.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/mastercard.svg" class="" alt="" src="/resources/images/icon/payments/black/mastercard.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/btc_accepted.svg" class="" alt="" src="/resources/images/icon/payments/black/btc_accepted.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/cubits.svg" class="" alt="" src="/resources/images/icon/payments/black/cubits.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/neteller.svg" class="small" alt="" src="/resources/images/icon/payments/black/neteller.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/paysafecard.svg" class="" alt="" src="/resources/images/icon/payments/black/paysafecard.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/skrill.svg" class="small" alt="" src="/resources/images/icon/payments/black/skrill.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/trustly.svg" class="" alt="" src="/resources/images/icon/payments/black/trustly.svg">
+  </li>
+  <li class="payments__item">
+    <img ng-src="/resources/images/icon/payments/black/zimpler.svg" class="" alt="" src="/resources/images/icon/payments/black/zimpler.svg">
+  </li>
+
+</ul>
+</div>
+        </div>
+    </section>
+</div></ui-view></div>
+
+   <footer>
+    <div class="footer-top">
+        <div class="footer-top__container">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <a href="/">
+                        <img src="../resources/images/footer/footer-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="footer__menu ng-isolate-scope" type="bottom-menu-v2" template="bottom-menu">
+    <!-- ngRepeat: item in menu --><div class="footer__menu-item ng-scope" ng-repeat="item in menu" ng-class="{'is-current': state.includes('app.cms', {path: item.path})}">
+        <a href="/terms" ui-sref="app.external({id:'terms', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Terms &amp; Conditions</a>
+    </div><!-- end ngRepeat: item in menu --><div class="footer__menu-item ng-scope" ng-repeat="item in menu" ng-class="{'is-current': state.includes('app.cms', {path: item.path})}">
+        <a href="/affiliate-program" ui-sref="app.external({id:'affiliate-program', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Affiliate Program</a>
+    </div><!-- end ngRepeat: item in menu --><div class="footer__menu-item ng-scope" ng-repeat="item in menu" ng-class="{'is-current': state.includes('app.cms', {path: item.path})}">
+        <a href="/faq" ui-sref="app.external({id:'faq', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Faq</a>
+    </div><!-- end ngRepeat: item in menu --><div class="footer__menu-item ng-scope" ng-repeat="item in menu" ng-class="{'is-current': state.includes('app.cms', {path: item.path})}">
+        <a href="/about" ui-sref="app.external({id:'about', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">About</a>
+    </div><!-- end ngRepeat: item in menu --><div class="footer__menu-item ng-scope" ng-repeat="item in menu" ng-class="{'is-current': state.includes('app.cms', {path: item.path})}">
+        <a href="/bonus-terms" ui-sref="app.external({id:'bonus-terms', lang:'en'})" ng-bind="item.title" ng-click="scrollPageTo()" class="ng-binding">Bonus Terms</a>
+    </div><!-- end ngRepeat: item in menu -->
+    <span class="footer__menu-last"></span>
+</div>
+            </div>
+            <div class="footer__right">
+                <ul class="footer__locales ng-isolate-scope" template="footer_locales">
+    <li class="footer__locales-item is-active">
+        <span class="ng-binding">en</span>
+    </li>
+    <!-- ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">de</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">gr</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">tr</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">sv</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope ng-hide" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">fi</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope ng-hide" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">nn</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope ng-hide" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">pt</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope ng-hide" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">fr</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales --><!-- ngIf: num != localeIndex --><li class="footer__locales-item ng-scope ng-hide" ng-repeat="(num, value) in locales" ng-if="num != localeIndex" ng-show="['en', 'de', 'ru', 'el', 'tr', 'sv'].indexOf(value.code) > -1">
+        <a href="" ng-click="changeLocale(value.code);">
+            <span class="ng-binding">it</span>
+        </a>
+    </li><!-- end ngIf: num != localeIndex --><!-- end ngRepeat: (num, value) in locales -->
+</ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__left">
+            <ul class="footer__sochial">
+                <li><a class="footer__sochial-link is-fb" href="https://www.facebook.com/dasistcasino/"></a></li>
+                <li><a class="footer__sochial-link is-twitter" href="https://twitter.com/DasistCasino"></a></li>
+            </ul>
+            <div class="footer__copy">© DasistCasino.com</div>
+        </div>
+        <div class="footer__center">
+            <div ng-bind-html="content" type="footer-text" class="ng-binding ng-isolate-scope ng-scope"><div class="antillephone-wrp">
+    <external-antillephone class="ng-isolate-scope"><!-- ngIf: $ctrl.AntillephoneService.data.id && $ctrl.AntillephoneService.available --><div id="apg-seal-container" ng-if="$ctrl.AntillephoneService.data.id &amp;&amp; $ctrl.AntillephoneService.available" data-apg-seal-id="135b07c4-2d4b-458c-aa22-bc705250205d" data-apg-image-size="128" data-apg-image-type="basic-small" class="ng-scope"><div style="display: block;position: relative;overflow: hidden;max-width: 128px;min-width: 32px;">      <a target="_blank" id="apg-seal-link" href="https://validator.antillephone.com/validate?domain=www.dasistcasino.com&amp;seal_id=135b07c4-2d4b-458c-aa22-bc705250205d">        <img style="width: 100%;height: auto;" src="https://135b07c4-2d4b-458c-aa22-bc705250205d.snippet.antillephone.com/spacer-92fd5ced0.png">        <img style="min-height: 100%;position: absolute;top: 0;left: 0;max-width: none;max-height: 100%;" src="https://135b07c4-2d4b-458c-aa22-bc705250205d.snippet.antillephone.com/apg-seal-basic-small-92fd5ced0.png">      </a>      </div></div><!-- end ngIf: $ctrl.AntillephoneService.data.id && $ctrl.AntillephoneService.available -->
+</external-antillephone>
+   <div class="antillephone-copyright">
+Dasistcasino.com is owned and operated by Direx N.V., a company registered and established under the laws of Curacao and its wholly owned subsidiary, Direx Limited, registered address Stasinou 1, MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia, Cyprus. Direx N.V.  licensedand regulated by Antillephone N.V. Direx N.V.’s registration number is 131879 and its registered address is E-Commerce Park Vredenberg, Curaçao.
+   </div>
+</div>
+
+
+</div>
+            <div class="footer-image">
+                <img src="/resources/images/home_black.png">
+            </div>
+        </div>
+        <div class="footer__right">
+            <span time-zone="0" class="ng-isolate-scope">
+    <!-- ngIf: time.current --><div class="clock ng-scope" id="clockWidget" ng-if="time.current">
+        <span class="clock__time ng-binding" ng-bind="$parent.time.current">11:31</span>
+    </div><!-- end ngIf: time.current -->
+</span>
+            <span class="ng-isolate-scope">
+    <!-- ngIf: currency --><div class="bit-calc ng-scope" ng-if="currency">
+        <span class="bit-calc__input ng-binding">1</span> <span>BTC = </span>
+        <span class="bit-calc__input ng-binding">17056.00</span> <span>USD</span>
+    </div><!-- end ngIf: currency -->
+</span>
+        </div>
+    </div>
+</footer>
+</div><div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="padding-right: 1px; padding-bottom: 1px; width: 2px; z-index: auto; cursor: default; position: absolute; top: 515.6px; left: 1005px; height: 52px; display: none; opacity: 0.650713;"><div style="position: relative; top: 0px; float: right; width: 2px; height: 53px; background-color: rgba(0, 0, 0, 0.1); background-clip: padding-box; border-radius: 2px;" class="nicescroll-cursors"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 2px; z-index: auto; top: 565.6px; left: 220px; position: absolute; cursor: default; display: block; width: 788px; opacity: 0.650713;"><div style="position: absolute; top: 0px; height: 2px; width: 509px; background-color: rgba(0, 0, 0, 0.1); background-clip: padding-box; border-radius: 2px; left: 0px;" class="nicescroll-cursors"></div></div><div id="ascrail2001" class="nicescroll-rails nicescroll-rails-vr" style="padding-right: 1px; padding-bottom: 1px; width: 2px; z-index: auto; cursor: default; position: absolute; top: 0px; left: -3px; height: 0px; display: none;"><div style="position: relative; top: 0px; float: right; width: 2px; height: 0px; background-color: rgba(0, 0, 0, 0.1); background-clip: padding-box; border-radius: 2px;" class="nicescroll-cursors"></div></div><div id="ascrail2001-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 2px; z-index: auto; top: -3px; left: 0px; position: absolute; cursor: default; display: none;"><div style="position: absolute; top: 0px; height: 2px; width: 0px; background-color: rgba(0, 0, 0, 0.1); background-clip: padding-box; border-radius: 2px;" class="nicescroll-cursors"></div></div></div>
+<casino-compoints ng-hide="true" class="ng-isolate-scope ng-hide"><div class="status-points">
+    <span class="status-points-label">Status Points: </span>
+    <span class="status-points-value ng-binding"> SP</span>
+</div>
+<div class="comp-points">
+    <span class="comp-points-label">Redeemable Comp Points: </span>
+    <span class="comp-points-value ng-binding"> CP</span>
+</div>
+</casino-compoints>
+
+
+
+
+
+
+
+
+<script src="https://secure.livechatinc.com/licence/8370151/v2/get_dynamic_config.js?t=1513769475932&amp;referrer=&amp;url=https%3A%2F%2Fwww.dasistcasino.com%2F&amp;params=&amp;jsonp=__lc_data_669841"></script><div id="mm-blocker" class="mm-slideout"></div><script src="https://secure.livechatinc.com/licence/g8370151_1/v2/get_dynamic_config.js?t=1513769476506&amp;referrer=&amp;url=https%3A%2F%2Fwww.dasistcasino.com%2F&amp;params=&amp;jsonp=__lc_data_305817&amp;groups=1"></script><script src="https://secure.livechatinc.com/licence/g8370151_1/v2/get_static_config.1.48101.23.23.1606.259.315.55.23.1.1.1.2.js?&amp;jsonp=__lc_data_static_config&amp;groups=1"></script><script src="https://secure.livechatinc.com/licence/8370151/localization.en.1.9001647f83a4c4ce7baeede29e070418_a3249642b04e4a2a687e38bb72bb42e1.js?jsonp=__lc_lang"></script><script id="livechat-ping" src="https://secure.livechatinc.com/licence/g8370151_1/v2/ping?t=1513769477040&amp;data=%7B%22visitor%22%3A%7B%22id%22%3A%22S1513769476.7bf2588abc%22%2C%22group%22%3A1%7D%2C%22page%22%3A%7B%22title%22%3A%22Online%20Casino%20Deutschland%20-%20Germany's%20best%20online%20casino%20for%20euro%20and%20bitcoin.%20%7C%20Das%20ist%20Casino%22%2C%22url%22%3A%22https%3A%5C%2F%5C%2Fwww.dasistcasino.com%5C%2F%22%7D%2C%22script_version%22%3A%7B%22tracking_env%22%3A%22production%22%2C%22tracking_version%22%3A%2220171219141018%22%7D%7D&amp;jsonp=__lc_ping_189613"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 75px; height: 105px; overflow: hidden; visibility: visible; z-index: 2147483639; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden; opacity: 1; transform: translateY(0%);"><iframe src="about:blank" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" allowtransparency="true" title="LiveChat Minimized Widget" frameborder="0"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view({source:'minimized click'});return false" style="position: absolute;display: block;visibility: hidden;height: 16px;padding: 0 4px;line-height: 16px;background: #f00;color: #fff;font-size: 10px;text-decoration: none;font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;border-radius: 3px;box-shadow: 0 -1px 0px #f00, -1px 0 0px #f00, 1px 0 0px #f00, 0 1px 0px #f00, 0 0 2px #000;border-top: 1px solid #f99;width: 16px;border-radius: 50%;box-shadow: none;border-top: 0;padding: 0;text-align: center;font-family: 'Lato', sans-serif;top: 23px;right: 8px"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; background: transparent none repeat scroll 0% 0%; border: 0px none; transition: transform 0.2s ease-in-out 0s; backface-visibility: hidden;"><iframe src="https://secure.livechatinc.com/licence/g8370151_1/open_chat.cgi?groups=1&amp;embedded=1&amp;newWebserv=undefined&amp;__lc_vv=2&amp;unique_group=1&amp;session_id=S1513769476.7bf2588abc&amp;server=secure.livechatinc.com#https://www.dasistcasino.com/" id="livechat-full-view" name="livechat-full-view" title="LiveChat Widget" scrolling="no" allowtransparency="true" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px none; padding: 0px; margin: 0px; float: none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;" frameborder="0"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="background-color: rgb(0, 0, 0); position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%;"></div></body></html>

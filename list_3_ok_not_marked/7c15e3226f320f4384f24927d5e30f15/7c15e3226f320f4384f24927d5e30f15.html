@@ -1,0 +1,368 @@
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>Игра в покер на реальные деньги</title>
+<meta name="description" content="Чтобы начать играть в покер в Мобильном Покерном Клубе на реальные деньги, достаточно активировать номер своего телефона и внести депозит в размере от $1.">
+  <meta name="keywords" content=" ">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/layout/main/css/main.min.css?92" media="screen">
+<link rel="stylesheet" type="text/css" href="/layout/main/css/print.css" media="print">
+
+<meta id="og_title" property="og:title" content="Игра в покер на реальные деньги">
+<meta id="og_description" property="og:description" content="Чтобы начать играть в покер в Мобильном Покерном Клубе на реальные деньги, достаточно активировать номер своего телефона и внести депозит в размере от $1.">
+<meta property="og:image" content="http://mobilepokerclub.ru/layout/main/img/logo_soc.png">
+
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="layout/main/css/ie6.css" media="screen" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="layout/main/css/ie7.css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript" async="" src="http://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery.download.form.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+$(document).ready(function () {
+
+	$(".first-level").hover(
+		function () {
+		  //show submenu
+		  $('ul', this).slideDown(100);
+
+		},
+		function () {
+		  //hide submenu
+		  $('ul', this).slideUp(100);
+		}
+	);
+
+	$(".ellipsis-parrent-containter").click(function() {
+		if('none' == $(".ellipsis-hide-containter").css('display')) {
+			$(".ellipsis-parrent-containter").css('background','none')
+			$(".ellipsis-hide-containter").css('display','block')
+		}
+		else {
+			$(".ellipsis-parrent-containter").css('background','')
+			$(".ellipsis-hide-containter").css('display','none')
+		}
+	});
+
+});
+function byId(opt_id) {
+  return document.getElementById(opt_id);
+};
+$(window).bind('scroll resize', function(){
+  if($(window).scrollTop()>1) {
+  	$('.top_line').addClass("white_style");
+  	$('.top_line').addClass("fixed");
+  }
+  if($(window).scrollTop()<1) {
+  	$('.top_line').removeClass("white_style");
+  	$('.top_line').removeClass("fixed");
+  }
+});
+</script>
+
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6122172-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+</head>
+<body>
+<div id="block_fade_in" class="popup_overley"></div>
+<div id="block_download_popup" class="download-popup-container">
+	<div class="download-popup-container-scroll">
+		<div class="download-popup-close-button" onclick="$(body).removeClass('no-scroll'); byId('block_download_popup').style.display='none'; byId('block_fade_in').style.display='none';">×</div>
+		<script type="text/javascript">
+
+	var elem_form = {
+	  el_select_1: '#download-device-name',
+	  el_select_2: '#download-device-model',
+		el_download_link: '#download-device-jad-jar-cont',
+		el_select_1_value: '',
+		el_select_2_value: '',
+		el_clone_form: ''
+	}
+
+	function genSelectOptionList(select_el, data) {
+		$(select_el).empty();
+		for(var x = 0; x < data.length; x++) {
+			$(select_el).append('<option value='+data[x][0]+'>'+data[x][1]+'</option>');
+		}		
+	}
+	
+	function getValSelect(id_select_elem) {
+		return $(id_select_elem + " option:selected").val();
+	}
+	
+	function genDownloadLinks(id_cont, el_selected) {
+		$(elem_form.el_download_link).empty();		
+		$(id_cont).append('<a class="download-game-direct-desc-link" href="'+getJarUrl(el_selected)+'" title="">jar</a>&nbsp;');
+		$(id_cont).append('<a class="download-game-direct-desc-link" href="'+getJadUrl(el_selected)+'" title="">jad</a>');		
+	}
+	
+	function getJarUrl(model) {
+		return 'http://dl.mopoclub.com/j2me/handler.php?p=' + model + '&l=ru&a=DIRECTRU&t=jar&vid=';
+	}
+
+	function getJadUrl(model) {
+		return 'http://dl.mopoclub.com/j2me/handler.php?p=' + model + '&l=ru&a=DIRECTRU&t=jad&vid=';
+	}
+
+	$(document).ready(function () {
+		
+		var base_url = 'http://' + document.domain;
+		var email_url = base_url + '/send_link_on_email.php';
+		var sms_url = base_url + '/sms.php';
+
+		var d_form = new DownloadForm('download-emil-form', email_url, 'download-cont-err-text', 'download-link-send', 'download-clear-form-button', "Ошибка при отправке формы");
+		
+		$(d_form.focus_elem).keyup(jQuery.proxy(d_form, "disable_other_fields"));
+		$('.download-clear-form-button').click(jQuery.proxy(d_form, "enable_all_fields"));		
+
+		$('.reload-form').click(jQuery.proxy(d_form, "reload_dwnload_form"));
+
+		$('#getlink-button').click(function(e) {
+
+			if($("#phone").val()) {
+				d_form.add_send_mess('<div class="download-email-sent-cont"><p class="download-email-sent-title">Ваше сообщение успешно отправлено</p><p class="download-email-sent-desc">Если у вас возникнут сложности с установкой,<br />обратитесь в <a class="download-email-sent-desc-link" href="/support.php" title="Служба Поддержки">Службу Поддержки</a></p><p class="download-email-sent-desc">Если вы не получили SMS в течение 2 минут, кликните <span class="reload-form download-email-sent-desc-link">по этой ссылке</span>, чтобы отправить ее на ваш адрес электронной почты. Когда вы получите ссылку в письме, откройте ее с помощью телефона.</p></div>');
+				$('.reload-form').click(jQuery.proxy(d_form, "reload_dwnload_form"));
+				d_form.req_url = sms_url;
+				if(!d_form.verif_phone_num($("#phone").val())) {
+					d_form.resp("Телефон не соответствует формату");
+					return false;
+				}
+			}
+			else if($("#email").val()) {
+				d_form.add_send_mess('<div class="download-email-sent-cont"><p class="download-email-sent-title">Мы отправили вам письмо</p><p class="download-email-sent-desc">Откройте его на устройстве, чтобы скачать игру.<br />Если у вас возникнут сложности с установкой,<br />обратитесь в <a class="download-email-sent-desc-link" href="/support.php" title="Служба Поддержки">Службу Поддержки</a><br />Если вы не получили письмо,<br />проверьте его в папке спам<br />и добавьте емайл<br />noreply@mobilepokerclub.com<br />в свой список контактов.</p></div>');
+				d_form.req_url = email_url;
+			}
+			else {
+				if(d_form.reload_form) {
+					d_form.resp("Заполните пустое поле");					
+				}
+				else {
+					d_form.resp("Заполните одно из полей");					
+				}
+				return false;
+			}
+
+			d_form.request();
+			e.preventDefault();
+		});
+
+		
+		var json_date = {"nokia":[["ne50","206"],["ne50","208"],["ne50","215"],["ne50","220"],["ne50","220"],["ne50","222"],["ne50","225"],["ne50","225"],["ne50","230"],["ne50","230"],["ne50","301"],["Nokia_640x360","500"],["ne50","515"],["Nokia_640x360","603"],["Nokia_640x360","700"],["Nokia_640x360","701"],["Nokia_640x360","808 PureView"],["ne50","2710"],["ne50","3120 classic"],["n6600","3230"],["n6600","3250"],["ne50","3600 slide"],["ne50","3610 fold"],["ne50","3710"],["ne50","3720"],["ne50","5000"],["ne50","5220 XpressMusic"],["Nokia_640x360","5228"],["Nokia_640x360","5230"],["Nokia_640x360","5232"],["Nokia_640x360","5233"],["Nokia_640x360","5235"],["Nokia_640x360","5250"],["ne50","5300"],["ne50","5310"],["ne50","5320 XpressMusic"],["ne50","5330"],["Nokia_640x360","5530"],["ne50","5610"],["ne50","5700"],["Nokia_640x360","5800"],["ne50","6110"],["ne50","6120"],["ne50","6121"],["ne50","6124"],["ne50","6124 classic"],["ne50","6126"],["ne50","6131"],["ne50","6133"],["ne50","6210"],["ne50","6210 Navigator"],["ne50","6212 classic"],["ne50","6220 classic"],["ne50","6220 classic"],["ne50","6233"],["ne50","6234"],["n6600","6260"],["ne50","6263"],["ne50","6265"],["ne50","6265i"],["ne50","6267"],["ne50","6270"],["ne50","6275"],["ne50","6275i"],["ne50","6280"],["ne50","6282"],["ne50","6288"],["ne50","6290"],["ne50","6300"],["ne50","6300i"],["ne50","6301"],["ne50","6303"],["ne50","6303i"],["ne50","6500 classic"],["ne50","6500 slide"],["ne50","6555"],["n6600","6600"],["ne50","6600 fold"],["ne50","6600 slide"],["n6600","6620"],["n6600","6630"],["ne50","6650"],["n6600","6670"],["n6600","6680"],["n6600","6681"],["n6600","6682"],["ne50","6700"],["ne50","6710"],["ne50","6730"],["Nokia_320x240","6760 slide"],["ne50","7020"],["ne50","7100 Supernova"],["ne50","7210 Supernova"],["ne50","7230"],["ne50","7310 Supernova"],["ne50","7370"],["ne50","7373"],["ne50","7390"],["ne50","7500"],["ne50","7510 Supernova"],["n6600","7610"],["ne50","7610 Supernova"],["ne50","7900"],["ne50","8600"],["ne50","8800 Arte"],["ne50","8800 Carbon Arte"],["Nokia_320x240","Asha 200"],["Nokia_320x240","Asha 201"],["ne50","Asha 202"],["ne50","Asha 203"],["Nokia_320x240","Asha 205"],["Nokia_320x240","Asha 210"],["ne50","Asha 300"],["Nokia_320x240","Asha 302"],["ne50","Asha 303"],["Nokia_400x240","Asha 305"],["Nokia_400x240","Asha 306"],["Nokia_400x240","Asha 308"],["Nokia_400x240","Asha 309"],["Nokia_400x240","Asha 310"],["Nokia_400x240","Asha 311"],["ne50","Asha 500"],["ne50","Asha 501"],["ne50","Asha 502"],["ne50","Asha 503"],["ne50","C2-01"],["ne50","C2-02"],["ne50","C2-03"],["ne50","C2-05"],["ne50","C2-06"],["Nokia_320x240","C3"],["ne50","C3-01 Touch and Type"],["ne50","C5"],["Nokia_640x360","C5-03"],["Nokia_640x360","C5-05"],["Nokia_640x360","C5-06"],["Nokia_640x360","C6"],["Nokia_640x360","C6-01"],["Nokia_640x360","C7"],["Nokia_320x240","E5"],["Nokia_320x240","E5"],["Nokia_640x360","E6-00"],["Nokia_640x360","E7-00"],["ne50","E50"],["ne50","E51"],["ne50","E55"],["ne60","E60"],["Nokia_320x240","E61"],["Nokia_320x240","E61i"],["Nokia_320x240","E62"],["Nokia_320x240","E63"],["ne50","E65"],["ne50","E66"],["ne60","E70"],["Nokia_320x240","E71"],["Nokia_320x240","E72"],["Nokia_640x360","N8"],["n6600","N70"],["ne50","N71"],["n6600","N72"],["ne50","N73"],["ne50","N75"],["ne50","N76"],["ne50","N78"],["ne50","N79"],["ne60","N80"],["ne50","N81"],["ne50","N82"],["ne50","N85"],["ne60","N90"],["n6600","N91"],["ne50","N92"],["ne50","N93"],["ne50","N93i"],["ne50","N95"],["ne50","N96"],["ne50","N96-3"],["Nokia_640x360","N97"],["Nokia_640x360","N97 mini"],["ne50","Nokia7610Supernova"],["ne50","X2"],["Nokia_320x240","X2-01"],["ne50","X2-02"],["ne50","X2-05"],["ne50","X3-02"],["Nokia_320x240","X5-01"],["Nokia_640x360","X6"],["Nokia_640x360","X7-00"]],"sonyericsson":[["se_k800","Aino (U10i)"],["se_k800","C510"],["se_k800","C901"],["se_k800","C903"],["se_k800","Cedar (J108i)"],["se_k700","D750"],["se_k800","Elm (J10i)"],["se_k700","F305"],["se_k800","Hazel (J20)"],["se_k800","J10i"],["se_k700","K530"],["se_k700","K550"],["se_k700","K600"],["se_k700","K608"],["se_k700","K610"],["se_k700","K618"],["se_k700","K630"],["se_k800","K660"],["se_k700","K700"],["se_k700","K750"],["se_k800","K770"],["se_k800","K790"],["se_k800","K800"],["se_k800","K810"],["se_k800","K818"],["se_k800","K850"],["se_k800","K858"],["se_k800","S500"],["se_k800","S700"],["se_k800","S710"],["se_k800","T650"],["se_k800","T658"],["se_k800","T715"],["se_k700","V600"],["se_k700","V630"],["se_k700","V640"],["se_k700","V800"],["se_k800","W20(Zylo)"],["se_k800","W100i"],["se_k800","W150"],["se_k700","W350"],["se_k700","W380"],["se_k800","W508"],["se_k700","W550"],["se_k800","W580"],["se_k700","W600"],["se_k700","W610"],["se_k700","W660"],["se_k700","W700"],["se_k800","W705"],["se_k700","W710"],["se_k800","W760"],["se_k700","W800"],["se_k700","W810"],["se_k800","W830"],["se_k800","W850"],["se_k800","W880"],["se_k800","W888"],["se_k800","W890"],["se_k800","W898"],["se_k800","W900"],["se_k800","W908"],["se_k800","W910"],["se_k800","W980"],["se_k800","WT13i"],["se_k800","Yari (U100i)"],["se_k700","Z550"],["se_k700","Z555"],["se_k700","Z558"],["se_k700","Z610"],["se_k700","Z710"],["se_k800","Z750"],["se_k800","Z770i"],["se_k700","Z800"],["se_k700","Z1010"]],"samsung":[["sgh_e500","A737"],["sgh_d600","B2710"],["sgh_d600","B3310"],["sgh_d600","B5702"],["sgh_d600","B7300"],["sgh_d600","B7722"],["sgh_e500","C3050"],["sgh_d600","C3200"],["sgh_d600","C3262"],["sgh_d600","C3300"],["sgh_d600","C3300K"],["sgh_d600","C3303"],["sgh_d600","C3303"],["sgh_d600","C3310"],["sgh_d600","C3312"],["sgh_d600","C3322"],["sgh_d600","C3330"],["sgh_d600","C3332"],["sgh_d600","C3350"],["sgh_d600","C3510 (Genoa)"],["sgh_d600","C3520"],["sgh_d600","C3530"],["sgh_d600","C3560"],["sgh_d600","C3592"],["sgh_d600","C3752"],["sgh_d600","C3782"],["sgh_e500","C5130"],["sgh_e500","C5212"],["sgh_d600","C6112"],["sgh_d600","C6712\/StarIIDuos"],["sgh_e500","D500"],["sgh_e500","D520"],["sgh_d600","D600"],["sgh_d600","D608"],["sgh_d600","D800"],["sgh_d600","D820"],["sgh_d600","D828"],["sgh_d600","D840"],["sgh_d600","D900"],["sgh_d600","D908"],["sgh_e500","E200"],["sgh_e500","E380"],["sgh_e500","E388"],["sgh_e500","E390"],["sgh_e500","E490"],["sgh_e500","E500"],["sgh_e500","E530"],["sgh_e500","E570"],["sgh_e500","E720"],["sgh_e500","E730"],["sgh_e500","E740"],["sgh_e500","E760"],["sgh_e500","E770"],["sgh_e500","E780"],["sgh_e500","E788"],["sgh_e500","E790"],["sgh_e500","E830"],["sgh_d600","E840"],["sgh_e500","E870"],["sgh_d600","E898"],["sgh_d600","E900"],["sgh_d600","E2600"],["sgh_d600","E2652W"],["sgh_d600","F330"],["sgh_d600","F490"],["sgh_d600","G400"],["sgh_d600","G600"],["sgh_d600","i560"],["sgh_d600","I8000 (OmniaII)"],["sgh_e500","L170"],["sgh_e500","L310"],["sgh_d600","L770"],["sgh_d600","M3710 (Corby Beat)"],["sgh_e500","P200"],["sgh_e500","P260"],["sgh_d600","P520"],["sgh_d600","P858"],["sgh_e500","S3100"],["sgh_d600","S3332"],["sgh_d600","S3550"],["sgh_e500","S3600"],["sgh_d600","S3770"],["sgh_d600","S3800W"],["sgh_d600","S3802"],["sgh_d600","S5220"],["sgh_d600","S5222\/Star3"],["sgh_d600","S5233S\/Star(TV)"],["sgh_d600","S5233W"],["sgh_d600","S5250\/Wave"],["sgh_d600","S5260\/StarII"],["sgh_d600","S5263"],["sgh_d600","S5292"],["sgh_d600","S5330 (Wave533)"],["sgh_d600","S5333"],["sgh_d600","S5350 (Shark)"],["sgh_d600","S5380"],["sgh_d600","S5560"],["sgh_d600","S5560"],["sgh_d600","S5610"],["sgh_d600","S5611"],["sgh_d600","S5753"],["sgh_d600","S7070"],["sgh_d600","S7220"],["sgh_d600","S7230E"],["sgh_d600","S7250"],["sgh_d600","S7350"],["sgh_d600","S8000"],["sgh_d600","S8300"],["sgh_d600","S8500"],["sgh_d600","S8530"],["sgh_d600","S8600"],["sgh_e500","T429"],["sgh_e500","T509"],["sgh_e500","T619"],["sgh_e500","T709"],["sgh_e500","T729"],["sgh_d600","T809"],["sgh_d600","U600"],["sgh_d600","U900"],["sgh_e500","X700"],["sgh_e500","X708"],["sgh_e500","Z130"],["sgh_e500","Z170"],["sgh_d600","Z510"],["sgh_d600","Z710"]],"motorola":[["moto_v6","A780"],["moto_v6","A910"],["moto_v6","A910i"],["moto_l7","C975"],["moto_l7","C980"],["moto_l7","E550"],["moto_v6","E680i"],["moto_l7","E770"],["moto_v6","E1000"],["moto_l7","KRZR K1"],["moto_v6","KRZR K3"],["moto_v6","KRZR K3m"],["moto_l7","PEBL U6"],["moto_v6","RAZR maxx V6"],["moto_l7","RAZR V3"],["moto_l7","RAZR V3e"],["moto_l7","RAZR V3i"],["moto_l7","RAZR V3t"],["moto_v6","RAZR V3xx"],["moto_l7","RIZR Z3"],["moto_l7","ROKR E1"],["moto_v6","ROKR E2"],["moto_l7","SLVR L7"],["moto_l7","SLVR L7e"],["moto_l7","SLVR L7i"],["moto_l7","SLVR L9"],["moto_l7","SLVR L71"],["moto_l7","SLVR L72"],["moto_l7","V365"],["moto_l7","V975"],["moto_l7","V980"],["moto_v6","V1100"],["moto_l7","W490"],["moto_l7","W510"],["moto_l7","WX400"],["moto_v6","Z8"],["moto_v6","Z10"]],"generic":[["176x208","176x208"],["176x220","176x220"],["240x268","240x268"],["240x320","240x320"],["320x240","320x240"],["352x416","352x416"],["640x360","640x360"]],"WindowsMobile":[["wm_240x268","240x320"]],"android":[["android240x320","240x320"]]};
+		genSelectOptionList(elem_form.el_select_2, json_date[getValSelect(elem_form.el_select_1)]);
+
+		genDownloadLinks(elem_form.el_download_link, json_date[getValSelect(elem_form.el_select_1)][0][0]);
+		
+		$(elem_form.el_select_1).change(function() {
+			genSelectOptionList(elem_form.el_select_2, json_date[getValSelect(elem_form.el_select_1)]);
+			genDownloadLinks(elem_form.el_download_link, json_date[getValSelect(elem_form.el_select_1)][0][0]);
+		});
+
+		$(elem_form.el_select_2).change(function() {
+			genDownloadLinks(elem_form.el_download_link, getValSelect(elem_form.el_select_2));
+		});
+
+	});
+
+</script>
+<div class="download-game-cont">
+	<p class="download-game-title">Чтобы начать играть, воспользуйтесь одним из трех простых способов:</p>
+	<div class="download-game-round-cont">
+		<table class="download-game-variants-cont">
+			<tbody><tr>
+				<td class="download-game-variant-item download-game-variant-1">
+					<div class="download-game-description-cont">
+						<div id="download-link-send" class="mess-send-ok-block"></div>
+						<form id="download-emil-form" class="download-game-feedback-cont" method="post" action="/">	
+							<p class="download-game-description-title">Получите ссылку для скачивания на почту</p>
+							<div class="download-game-feedback-form-row">
+								<label class="download-game-feedback-form-icon download-game-feedback-form-icon-mail">&nbsp;</label>
+								<input id="email" name="email" class="download-game-feedback-form-input" placeholder="Ваш email" type="text">
+								<div class="download-clear-form-button">×</div>
+							</div>
+							<p class="download-game-description-title">или по СМС на телефон</p>
+							<div class="download-game-feedback-form-row download-game-last-row">
+								<label class="download-game-feedback-form-icon download-game-feedback-form-icon-sms">&nbsp;</label>
+									<span class="phone-input-first-symbol">+</span>					
+									<input id="phone" name="phone" class="download-game-feedback-form-input" placeholder="79XXXXXXXXX" type="text">
+									<div class="download-clear-form-button">×</div>
+							</div>
+							<p id="download-cont-err-text" class="download-game-err-message-cont">&nbsp;</p>
+							<input id="getlink-button" class="download-game-feedback-form-button" value="Получить ссылку!" type="submit">
+							<p class="download-game-note-message-cont">Мы будем использовать ваш емайл или номер телефона <strong>только</strong> для отправки ссылки</p>							
+						</form>
+					</div>
+				</td>
+				<td class="download-game-variant-item download-game-variant-2">				
+					<div class="download-game-description-cont">
+						<p class="download-game-description-title">Или распознайте<br>QR код мобильным</p>
+						<div class="download-game-qrcode-cont">
+							<div class="download-game-qrcode-pic-cont">
+								<img class="download-game-qrcode-pic" src="https://chart.googleapis.com/chart?cht=qr&amp;chs=135x135&amp;chld=L|0&amp;chl=http://get.mopoclub.com/DIRECTRU" alt="">
+							</div>
+							<p class="download-game-qrcode-desc">или зайдите<br>со своего устройства по ссылке<span class="download-game-qrcode-desc-link">http://get.mopoclub.com/</span></p>
+					</div>
+				</div></td>
+				<td class="download-game-variant-item download-game-variant-3">
+					<div class="download-game-description-cont">
+						<p class="download-game-description-title">Или скачайте файлы<br>и загрузите на телефон</p>
+						<ul class="download-game-direct-list-cont">
+							<li class="download-game-direct-cont">
+								<p class="download-game-direct-title">Android APK для экранов размером</p>
+								<p class="download-game-direct-desc"><a class="download-game-direct-desc-link" href="http://dl.mopoclub.com/apk/handler.php?a=DIRECTRU">320x480 и выше</a>&nbsp;&nbsp;или&nbsp;&nbsp;<a class="download-game-direct-desc-link" href="http://dl.mopoclub.com/apk/MoPoClub_ru.apk">240x320</a></p>
+								<div class="download-game-direct-icon-adnroid download-game-direct-icon">&nbsp;</div>								
+							</li>
+							<li class="download-game-direct-cont">
+								<p class="download-game-direct-title">JAR или JAD для Java телефонов</p>
+								<div class="download-device-select-cont">
+									<select id="download-device-name" class="download-device-select">
+																																<option class="download-device-select-item" value="nokia">nokia</option>
+																																<option class="download-device-select-item" value="sonyericsson">sonyericsson</option>
+																																<option class="download-device-select-item" value="samsung">samsung</option>
+																																<option class="download-device-select-item" value="motorola">motorola</option>
+																																											<option class="download-device-select-item" value="WindowsMobile">WindowsMobile</option>
+																														</select>
+									<select id="download-device-model" class="download-device-select"><option value="ne50">206</option><option value="ne50">208</option><option value="ne50">215</option><option value="ne50">220</option><option value="ne50">220</option><option value="ne50">222</option><option value="ne50">225</option><option value="ne50">225</option><option value="ne50">230</option><option value="ne50">230</option><option value="ne50">301</option><option value="Nokia_640x360">500</option><option value="ne50">515</option><option value="Nokia_640x360">603</option><option value="Nokia_640x360">700</option><option value="Nokia_640x360">701</option><option value="Nokia_640x360">808 PureView</option><option value="ne50">2710</option><option value="ne50">3120 classic</option><option value="n6600">3230</option><option value="n6600">3250</option><option value="ne50">3600 slide</option><option value="ne50">3610 fold</option><option value="ne50">3710</option><option value="ne50">3720</option><option value="ne50">5000</option><option value="ne50">5220 XpressMusic</option><option value="Nokia_640x360">5228</option><option value="Nokia_640x360">5230</option><option value="Nokia_640x360">5232</option><option value="Nokia_640x360">5233</option><option value="Nokia_640x360">5235</option><option value="Nokia_640x360">5250</option><option value="ne50">5300</option><option value="ne50">5310</option><option value="ne50">5320 XpressMusic</option><option value="ne50">5330</option><option value="Nokia_640x360">5530</option><option value="ne50">5610</option><option value="ne50">5700</option><option value="Nokia_640x360">5800</option><option value="ne50">6110</option><option value="ne50">6120</option><option value="ne50">6121</option><option value="ne50">6124</option><option value="ne50">6124 classic</option><option value="ne50">6126</option><option value="ne50">6131</option><option value="ne50">6133</option><option value="ne50">6210</option><option value="ne50">6210 Navigator</option><option value="ne50">6212 classic</option><option value="ne50">6220 classic</option><option value="ne50">6220 classic</option><option value="ne50">6233</option><option value="ne50">6234</option><option value="n6600">6260</option><option value="ne50">6263</option><option value="ne50">6265</option><option value="ne50">6265i</option><option value="ne50">6267</option><option value="ne50">6270</option><option value="ne50">6275</option><option value="ne50">6275i</option><option value="ne50">6280</option><option value="ne50">6282</option><option value="ne50">6288</option><option value="ne50">6290</option><option value="ne50">6300</option><option value="ne50">6300i</option><option value="ne50">6301</option><option value="ne50">6303</option><option value="ne50">6303i</option><option value="ne50">6500 classic</option><option value="ne50">6500 slide</option><option value="ne50">6555</option><option value="n6600">6600</option><option value="ne50">6600 fold</option><option value="ne50">6600 slide</option><option value="n6600">6620</option><option value="n6600">6630</option><option value="ne50">6650</option><option value="n6600">6670</option><option value="n6600">6680</option><option value="n6600">6681</option><option value="n6600">6682</option><option value="ne50">6700</option><option value="ne50">6710</option><option value="ne50">6730</option><option value="Nokia_320x240">6760 slide</option><option value="ne50">7020</option><option value="ne50">7100 Supernova</option><option value="ne50">7210 Supernova</option><option value="ne50">7230</option><option value="ne50">7310 Supernova</option><option value="ne50">7370</option><option value="ne50">7373</option><option value="ne50">7390</option><option value="ne50">7500</option><option value="ne50">7510 Supernova</option><option value="n6600">7610</option><option value="ne50">7610 Supernova</option><option value="ne50">7900</option><option value="ne50">8600</option><option value="ne50">8800 Arte</option><option value="ne50">8800 Carbon Arte</option><option value="Nokia_320x240">Asha 200</option><option value="Nokia_320x240">Asha 201</option><option value="ne50">Asha 202</option><option value="ne50">Asha 203</option><option value="Nokia_320x240">Asha 205</option><option value="Nokia_320x240">Asha 210</option><option value="ne50">Asha 300</option><option value="Nokia_320x240">Asha 302</option><option value="ne50">Asha 303</option><option value="Nokia_400x240">Asha 305</option><option value="Nokia_400x240">Asha 306</option><option value="Nokia_400x240">Asha 308</option><option value="Nokia_400x240">Asha 309</option><option value="Nokia_400x240">Asha 310</option><option value="Nokia_400x240">Asha 311</option><option value="ne50">Asha 500</option><option value="ne50">Asha 501</option><option value="ne50">Asha 502</option><option value="ne50">Asha 503</option><option value="ne50">C2-01</option><option value="ne50">C2-02</option><option value="ne50">C2-03</option><option value="ne50">C2-05</option><option value="ne50">C2-06</option><option value="Nokia_320x240">C3</option><option value="ne50">C3-01 Touch and Type</option><option value="ne50">C5</option><option value="Nokia_640x360">C5-03</option><option value="Nokia_640x360">C5-05</option><option value="Nokia_640x360">C5-06</option><option value="Nokia_640x360">C6</option><option value="Nokia_640x360">C6-01</option><option value="Nokia_640x360">C7</option><option value="Nokia_320x240">E5</option><option value="Nokia_320x240">E5</option><option value="Nokia_640x360">E6-00</option><option value="Nokia_640x360">E7-00</option><option value="ne50">E50</option><option value="ne50">E51</option><option value="ne50">E55</option><option value="ne60">E60</option><option value="Nokia_320x240">E61</option><option value="Nokia_320x240">E61i</option><option value="Nokia_320x240">E62</option><option value="Nokia_320x240">E63</option><option value="ne50">E65</option><option value="ne50">E66</option><option value="ne60">E70</option><option value="Nokia_320x240">E71</option><option value="Nokia_320x240">E72</option><option value="Nokia_640x360">N8</option><option value="n6600">N70</option><option value="ne50">N71</option><option value="n6600">N72</option><option value="ne50">N73</option><option value="ne50">N75</option><option value="ne50">N76</option><option value="ne50">N78</option><option value="ne50">N79</option><option value="ne60">N80</option><option value="ne50">N81</option><option value="ne50">N82</option><option value="ne50">N85</option><option value="ne60">N90</option><option value="n6600">N91</option><option value="ne50">N92</option><option value="ne50">N93</option><option value="ne50">N93i</option><option value="ne50">N95</option><option value="ne50">N96</option><option value="ne50">N96-3</option><option value="Nokia_640x360">N97</option><option value="Nokia_640x360">N97 mini</option><option value="ne50">Nokia7610Supernova</option><option value="ne50">X2</option><option value="Nokia_320x240">X2-01</option><option value="ne50">X2-02</option><option value="ne50">X2-05</option><option value="ne50">X3-02</option><option value="Nokia_320x240">X5-01</option><option value="Nokia_640x360">X6</option><option value="Nokia_640x360">X7-00</option></select>
+									<p id="download-device-jad-jar-cont" class="download-game-direct-desc"><a class="download-game-direct-desc-link" href="http://dl.mopoclub.com/j2me/handler.php?p=ne50&amp;l=ru&amp;a=DIRECTRU&amp;t=jar&amp;vid=" title="">jar</a>&nbsp;<a class="download-game-direct-desc-link" href="http://dl.mopoclub.com/j2me/handler.php?p=ne50&amp;l=ru&amp;a=DIRECTRU&amp;t=jad&amp;vid=" title="">jad</a></p>
+								</div>								
+								<div class="download-game-direct-icon-java download-game-direct-icon">&nbsp;</div>
+							</li>
+							<li class="download-game-direct-cont">
+								<p class="download-game-direct-title">iPhone, iPad и Windows Phone</p>
+								<p class="download-game-direct-desc-img">
+                  https://playmopo13.com/								</p>
+								<p class="download-game-direct-desc">Чтобы установить игру, зайдите на <span class="download-game-direct-desc-link">https://playmopo13.com/</span> с устройства</p>
+								<div class="download-game-direct-icon-ioswp download-game-direct-icon">&nbsp;</div>
+							</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<p class="download-game-title download-game-bottom-title">Если у вас возникли сложности с установкой игры, обратитесь в нашу <a class="download-game-title-link" href="/support.php">Службу Поддержки</a></p>
+</div>	</div>
+</div>
+<div id="main_block">
+	<div class="page-header">
+		<p class="social-networks-block">
+			<a href="http://www.facebook.com/mopoclub" title="mobilepokerclub в facebook" target="_blank"><i class="soc-icon icon-fb"></i></a>
+			<a href="https://plus.google.com/110628061763863007618?rel=author" title="mobilepokerclub в гугл плюс" target="_blank"><i class="soc-icon icon-gp"></i></a>
+						<a href="http://vk.com/mopoclub_news" title="mobilepokerclub вконтакте" target="_blank"><i class="soc-icon icon-vk"></i></a>
+						<a href="https://twitter.com/#!/mobilepokerclub" title="mobilepokerclub в твиттере" target="_blank"><i class="soc-icon icon-tw"></i></a>
+			<img class="soc-follow-block" src="/layout/main/img/follow_ru.png?33" alt="Мобильный покер клуб в социальных сетях">
+		</p>
+		<p class="leng-switch-block">
+							<a class="leng-button" href="http://mobilepokerclub.com/real-money/">ENG</a>
+							<a class="leng-button selected" href="http://mobilepokerclub.ru/real-money/">РУС</a>
+							<a class="leng-button" href="http://mobilepokerclub.pl/real-money/">POL</a>
+					</p>
+	</div>
+	<ul class="primary-menu">
+					<li class="first-level"><span onclick="byId('block_fade_in').style.display='block'; byId('block_download_popup').style.display='block'; return false;" onmousedown="return false;">Играть</span></li><li class="first-level"><a href="/about-poker-club/" title="О клубе">О клубе</a><ul class="primary-menu-submenu"><li class="other-level"><a href="/about-poker-club/app-review.php" title="Обзор покерного клиента">Обзор покерного клиента</a></li><li class="other-level"><a href="/about-poker-club/system-requirements.php" title="Телефоны и операционные системы">Телефоны и операционные системы</a></li><li class="other-level"><a href="/about-poker-club/promotions.php" title="Акции">Акции</a></li><li class="other-level"><a href="/about-poker-club/loyalty.php" title="Программа лояльности">Программа лояльности</a></li><li class="other-level"><a href="/about-poker-club/tournaments.php" title="Турниры и фрироллы">Турниры и фрироллы</a></li><li class="other-level"><a href="/about-poker-club/rake.php" title="Виды лимитов и таблица рэйков">Виды лимитов и таблица рэйков</a></li><li class="other-level"><a href="/about-poker-club/club-rules.php" title="Правила Клуба">Правила Клуба</a></li></ul></li><li class="first-level"><a href="/how-to-play/" title="Как играть">Как играть</a><ul class="primary-menu-submenu"><li class="other-level"><a href="/how-to-play/poker-hand.php" title="Комбинации покера">Комбинации покера</a></li><li class="other-level"><a href="/how-to-play/glossary-terms.php" title="Словарь терминов">Словарь терминов</a></li><li class="other-level"><a href="/how-to-play/rules-poker/" title="Правила покера">Правила покера</a></li><li class="other-level"><a href="/how-to-play/tournaments-rules/" title="Правила турниров">Правила турниров</a></li><li class="other-level"><a href="/how-to-play/strategy/" title="Стратегии игры в покер">Стратегии игры в покер</a></li></ul></li><li class="first-level selected"><a href="/real-money/" title="Игра на деньги">Игра на деньги</a><ul class="primary-menu-submenu"><li class="other-level"><a href="/real-money/payment-methods.php" title="Виды оплаты">Виды оплаты</a></li><li class="other-level"><a href="/real-money/withdraw.php" title="Вывод средств">Вывод средств</a></li><li class="other-level"><a href="/real-money/safeness.php" title="Безопасность">Безопасность</a></li></ul></li><li class="first-level"><a href="/responsible-gambling.php" title="Ответственная игра">Ответственная игра</a></li><li class="first-level"><a href="/faq.php" title="FAQ">FAQ</a></li><li class="first-level"><a href="/support.php" title="Поддержка">Поддержка</a></li>			</ul>
+
+	<div class="download-block">
+		<a class="logo" href="/"><img src="/layout/main/img/logo_ru.png?33" alt="Mobile Poker Club"></a>
+		<div class="play-button-wrap">
+      <a class="play-button" href="https://playmopo13.com/?a=DIRECTRU&amp;c=_5a3a48527e4f5c2782">Играть в покер</a>
+		  <p class="download-button" onclick="$(body).addClass('no-scroll');byId('block_fade_in').style.display='block'; byId('block_download_popup').style.display='block';return false;" onmousedown="return false;">Скачать на телефон</p>
+    </div>
+	</div>
+	<div class="body_wrapp">
+						<div class="bread-crumbs-container">
+				<a href="/" title="Главная">Главная</a>
+				<span>/</span>
+							</div>
+										
+<h1>Игра на реальные деньги</h1>
+<p>Начать играть в мобильный покер на реальные деньги в нашем Клубе очень просто. Для этого нужно:</p>
+<div class="promotions_block">
+<h2>Активировать номер телефона</h2>
+<p>В разделе Касса-Пополнить счет укажите ваш номер в международном формате и отправьте запрос на получение бесплатного активационного SMS. Введите полученный код в том же разделе (Касса-Пополнить счет).</p>
+<p>Это необходимо для обеспечения дополнительной защиты вашей игровой учетной записи. В случае возможного взлома вашего аккаунта или возникновения спорных финансовых ситуаций, для решения проблемы будет использован указанный при активации телефонный номер.</p>
+</div>
+<div class="promotions_block">
+<h2>Пополнить счет (минимальная сумма пополнения счета – 1$)</h2>
+<p>Понимая потребности пользователей, играющих в покер с мобильных устройств, мы приложили все усилия, чтобы финансовые операции (пополнение счета и вывод средств) можно было осуществлять без использования компьютера, напрямую с телефона или планшета. При этом мы гарантируем высочайший уровень <a href="/deposits/safeness.php" title="Безопасность">безопасности</a>, чтобы вы чувствовали себя уверенно.</p>
+</div>
+<p>Игра за столами ведется на доллары США.</p>
+<p>Подробнее о способах выполнения финансовых операций читайте в разделах <a href="/deposits/payment_methods.php" title="Виды оплаты">Виды оплаты</a> и <a href="/deposits/withdraw.php" title="Вывод средств">Вывод средств</a>.</p>
+<p>Играя в Мобильном Покерном Клубе, вы имеете возможность зарабатывать бесплатные бонусы, принимая участие в постоянных и временных <a href="/about-poker-club/promotions.php" title="Акции и покер бонусы нашего Клуба">акциях</a>.</p>	
+
+</div>
+</div>
+
+<div id="footer_block">
+	<p class="footer_menu"><a href="/terms.php">Условия&nbsp;использования&nbsp;(англ.)</a> | <a href="/privacy.php">Конфиденциальность&nbsp;(англ.)</a> | <a href="/android/">покер для Android</a> | <a href="/iphone-ipad/">покер для iPad iPhone</a> | <a href="/windows-phone/">покер для Windows Phone</a> | <a href="/affiliate_program.php/">Партнерская программа</a></p>
+	<div class="partner">
+    <span class="partner-item partner-visa" title="Visa">&nbsp;</span>
+    <span class="partner-item partner-mastercard" title="Mastercard">&nbsp;</span>
+		<div id="ceg-seal-container" data-ceg-seal-id="4eaab808-fa4c-49b7-9010-434b0a00002a" data-ceg-image-size="128" data-ceg-image-type="basic-small"><div style="display: block;position: relative;overflow: hidden;max-width: 128px;min-width: 32px;">      <a target="_blank" href="https://validator.curacao-egaming.com/validate?domain=mobilepokerclub.ru&amp;seal_id=4eaab808-fa4c-49b7-9010-434b0a00002a">        <img style="width: 100%; height: auto" src="https://4eaab808-fa4c-49b7-9010-434b0a00002a.curacao-egaming.com/sealassets/60dcd0912f7892be915a2ee91c5ef643-basic-small-valid-seal.png">      </a>      </div></div>
+		<a class="partner-item parthenr-resp-gaming" rel="nofollow" href="responsible-gambling.php" title="Responsible Gaming">&nbsp;</a>
+    <a class="partner-item parthenr-gambleaware" target="_blank" rel="nofollow" href="http://www.gambleaware.co.uk/" title="Gambleaware">&nbsp;</a>
+   </div>
+	<p class="copyright_block">© 2017 <a href="http://mobile-poker-club.ru/" title="MOBILE POKER CLUB">Mobile Poker Club</a></p>
+</div>
+<script type="text/javascript">
+	$( ".other-level.selected" ).parent().parent().addClass('selected');
+</script>
+
+
+<!-- Yandex.Metrika target -->
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.play-button.href=').click(function(){
+    yaCounter25328861.reachGoal('PLAYPOKER');
+  $('.first-level').click(function(){
+    yaCounter25328861.reachGoal('DOWNLOAD');
+});
+</script>
+<!-- /Yandex.Metrika target -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25328861 = new Ya.Metrika({id:25328861,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25328861" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script type="text/javascript" src="https://4eaab808-fa4c-49b7-9010-434b0a00002a.curacao-egaming.com/ceg-seal.js"></script>
+
+
+</body></html>

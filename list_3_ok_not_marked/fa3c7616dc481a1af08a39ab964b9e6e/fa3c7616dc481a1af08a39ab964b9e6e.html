@@ -1,0 +1,808 @@
+<html class=" bx-no-touch bx-no-retina bx-firefox bx-boxshadow bx-borderradius bx-flexwrap bx-boxdirection bx-transition bx-transform js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head>
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="http://mc.yandex.ru/metrika/watch.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MK59RLK"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MK59RLK');</script>
+    <!-- End Google Tag Manager -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Aquarius">
+<link href="/bitrix/js/main/core/css/core.css?14056080368964" type="text/css" rel="stylesheet">
+<link href="/bitrix/js/defa.tools/linked_elements.css?1408722990191" type="text/css" rel="stylesheet">
+<link href="/bitrix/templates/.default/components/bitrix/menu/multi/style.css?1493061093583" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="/bitrix/templates/.default/components/bitrix/menu/solutions_submenu/style.css?14930610942742" type="text/css" data-template-style="true" rel="stylesheet">
+<link href="/bitrix/templates/.default/components/bitrix/menu/simple_ul/style.css?1493061094583" type="text/css" data-template-style="true" rel="stylesheet">
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'aqcook','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','USER_ID':'','SERVER_TIME':'1513769470','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'90b67f28fbf20b5314b8c94f93787de0'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?141905353094768"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?141905352435166"></script>
+<script type="text/javascript" src="/bitrix/js/main/json/json2.min.js?14056080363467"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?140560803610330"></script>
+<script type="text/javascript" src="/bitrix/js/main/session.js?14127740343170"></script>
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?140560803693636"></script>
+<script type="text/javascript" src="/bitrix/js/defa.tools/linked_elements.js?14087229905965"></script>
+
+
+<script type="text/javascript" src="/bitrix/templates/.default/components/bitrix/menu/solutions_submenu/script.js?1493061094507"></script>
+<script type="text/javascript">
+bxSession.Expand(1440, '90b67f28fbf20b5314b8c94f93787de0', false, 'e0e3be282c505b010e76eeacae2a9b72');
+</script>
+
+
+    <title>Aquarius</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="MobileOptimized" content="480">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/normalize.min.css">
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/template.css">
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/main.css">
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/responsive.css">
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/programmer.css">
+    <link rel="stylesheet" href="https://unpkg.com/social-likes-next/dist/social-likes_flat.css">
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="/bitrix/templates/rsaquarius/css/ie.css">
+    <![endif]-->
+
+    <script src="/bitrix/templates/rsaquarius/js/modernizr-2.8.0.min.js"></script>
+    <script>
+
+        (function(d, s) {
+
+            if(document.querySelectorAll('news_partners').length){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s);
+                js.src = "https://widgets.mos.ru/cnews/citywidgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                var i = setInterval(function(){
+                    if(window.city_widget && document.readyState === "complete") {
+                        city_widget("240x400", "#news_partners");
+                        clearInterval(i);
+                    }
+                }, 50);
+                setTimeout(function(){clearInterval(i)}, 5000);
+            } else {
+            }
+        }(document, 'script'));
+    </script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.1.11.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/json2.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.selectric.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/fit-columns.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/markerclusterer_packed.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/vendor/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/jquery.BlackAndWhite.js"></script>
+    <script type="text/javascript" src="/bitrix/templates/rsaquarius/js/main.js"></script>
+    <script type="text/javascript">
+        document.ROOT_URL = 'www.aq.ru';
+    </script>
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+</head>
+
+
+<body class="">
+<div class="hide">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK59RLK"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62149674-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</div>
+<div id="page_wr">
+    <div id="page">
+    <header class="header__mob">
+        <div class="logo">
+                            <img src="/images/logo_x2.png" alt="Aquarius">
+                    </div>
+    </header>
+    <header id="header">
+        <div class="header_wrap">
+            <div class="section colored__dark">
+                <div class="container">
+                    <nav class="nav-top">
+                        <ul>
+                            <li class="parent">
+                                <a href="/about/">О компании</a>
+                                
+    <ul>
+                                    <li>
+                    <a href="/about/leadership/">Руководство</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/history/">История компании</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/production/">Производство</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/license/">Лицензии и сертификаты</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/vacancy/">Вакансии</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/press-center/">Пресс-центр</a>
+                </li>
+            
+            </ul>
+                            </li>
+
+                            <li class="parent">
+                                <a href="/partner/">Партнерам</a>
+                                
+    <ul>
+                                    <li>
+                    <a href="/partner/">О сотрудничестве</a>
+                </li>
+            
+                                    <li>
+                    <a href="/partner/registration/">Регистрация</a>
+                </li>
+            
+                                    <li>
+                    <a href="/partner/events/">Календарь мероприятий</a>
+                </li>
+            
+                                    <li>
+                    <a class="lockLink" data-collapse="#enter_block" href="#"><i class="icons-lock"></i>Акции</a>
+                </li>
+            
+                                    <li>
+                    <a class="lockLink" data-collapse="#enter_block" href="#"><i class="icons-lock"></i>Спецпредложения</a>
+                </li>
+            
+                                    <li>
+                    <a class="lockLink" data-collapse="#enter_block" href="#"><i class="icons-lock"></i>Сертификат</a>
+                </li>
+            
+                                    <li>
+                    <a class="lockLink" data-collapse="#enter_block" href="#"><i class="icons-lock"></i>Система заказов</a>
+                </li>
+            
+            </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="/where-buy/">Где купить</a>
+                                <ul>
+                                    <li><a href="/where-buy/partners/">Партнеры</a></li>
+                                    <li><a href="/where-buy/distributors/">Дистрибьюторы</a></li>
+                                    <li><a href="/where-buy/regions/">Региональные представители</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="parent">
+                                <a href="/contacts/">Контакты</a>
+                                
+    <ul>
+                                    <li>
+                    <a href="/contacts/">Компания «Аквариус»</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/aquarius-service/">«А-сервис»</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/regions/">Региональные представители</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/press/">Контакты для прессы</a>
+                </li>
+            
+            </ul>
+                            </li>
+                            <li>
+                                <a href="/about-us/">About us</a>
+                            </li>
+
+                        </ul>
+                                            </nav>
+                    <div class="contacts_top">
+                        <a class="phone" href="tel:+7(495) 729-51-50">+7 (495) 729-51-50</a>
+                        <a href="https://www.facebook.com/2014aquarius" target="_blank" class="btn btn-icon btn-green social-fb"><i class="icon-facebook"></i></a>
+                    </div>
+                    <div class="lk-block pull-right t-right">
+                                                    <a class="btn btn-green" href="#" data-collapse="#enter_block">Вход для партнеров</a>
+                            <div class="enter_block" id="enter_block">
+                                <form method="post" target="_top" class="form-vertical" action="//149.154.71.143/auth/">
+                                    <input value="Y" name="AUTH_FORM" type="hidden">
+                                    <input value="AUTH" name="TYPE" type="hidden">
+                                    <input value="/igrovie-avtomati-na-dengi-mobilnaya-versiya" name="backurl" id="rs_login_backurl" type="hidden">
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input id="enter_user-login" class="txt-fld" name="USER_LOGIN" maxlength="50" value="" size="17" autocomplete="off" placeholder="Логин" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <input id="enter_user-password" class="txt-fld" placeholder="Пароль" name="USER_PASSWORD" maxlength="50" size="17" type="password">
+                                            <span id="show_pass" data-tgl_ttl="Скрыть пароль" title="Посмотреть пароль" data-passtarget="#enter_user-password">Пароль</span>
+                                        </div>
+                                        <div id="errorLoginOut" class="control-notice hide"></div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <label class="stylish_checkbox_type2" for="USER_REMEMBER_frm" title="Запомнить меня на этом компьютере">
+                                                <input id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" type="checkbox">
+                                                Запомнить меня
+                                            </label>
+                                            <a id="forgot_link" class="pull-right" href="/auth/?forgot_password=yes" data-defaulturl="/auth/?forgot_password=yes">Забыли пароль?</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <a href="/partner/registration/" class="btn btn-transparent">Регистрация партнеров</a>
+                                            <input class="btn btn-green pull-right" id="login_now" name="Login" value="Войти" type="submit">
+                                        </div>
+                                    </div>
+                                    <!--div class="control-group" id="errorLoginOut">
+                                    </div-->
+
+                                </form>
+                            </div>
+
+                                            </div>
+                    <div class="pull-right">
+                        <form class="search_block" action="/search/">
+                            <div>
+                                <input name="q" placeholder="Поиск" value="" type="text">
+                                <button type="submit" class="btn btn-icon btn-transparent"><i class="icon-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="span2">
+                            <div class="logo">
+                                                                    <img src="/images/logo.png" alt="Aquarius">
+                                                            </div>
+                        </div>
+                        <div class="span10 text-right">
+                            
+    <div class="nav-main">
+    <ul>
+
+                    <li class="parent">
+
+                    <a href="/solutions/">Решения</a>
+                
+	<div class="submenu">
+		<ul class="cats">
+
+			
+			
+			
+																			<li class="">
+											<a href="/solutions/dlya-virtualizacii/" class="">Для виртуализации</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+						<li class="parent">
+				<a href="/solutions/dlya-obrazovaniya/" class="root-item">Для образования</a>
+
+				<ul class="subcats">
+												<li><a href="/solutions/dlya-obrazovaniya/interaktivnyy-mobilnyy-klass-aquarel-18.html">Интерактивный мобильный компьютерный класс AquaRel</a></li>
+													<li><a href="/solutions/dlya-obrazovaniya/informatsionnyy-terminal-dlya-uchrezhdeniy-obrazovaniya.html">Информационный терминал для образования</a></li>
+													<li><a href="/solutions/dlya-obrazovaniya/sistema-distantsionnogo-obucheniya.html">Система дистанционного обучения</a></li>
+													<li><a href="/solutions/dlya-obrazovaniya/interaktivnyy-klass-podgotovki-k-ege.html">Интерактивный класс подготовки к ЕГЭ</a></li>
+													<li><a href="/solutions/dlya-obrazovaniya/interaktivnye-tsifrovye-laboratorii.html">Интерактивные цифровые лаборатории</a></li>
+													<li><a href="/solutions/dlya-obrazovaniya/shkolnyy-server.html">Школьный сервер</a></li>
+											
+							
+							
+			
+			
+																			<li>
+											<a href="/solutions/dlya-obrazovaniya/mobilnye-pk-dlya-obrazovaniya/">Мобильные компьютеры для образования</a>
+																							<ul>
+																											<li><a href="/solutions/dlya-obrazovaniya/mobilnye-pk-dlya-obrazovaniya/netbuk-transformer-cmp-ne430.html">Ноутбук-трансформер Cmp NE430</a></li>
+																									</ul>
+																					</li>
+									
+								
+							
+							
+							
+							</ul></li>			
+			
+																			<li class="">
+											<a href="/solutions/dlya-zdravookhraneniya/" class="">Для здравоохранения</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+																			<li class="">
+											<a href="/solutions/funktsionalnye-resheniya/" class="">Функциональные решения</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+						<li class="parent">
+				<a href="/solutions/informatsionnaya-bezopasnost/" class="root-item">Информационная безопасность</a>
+
+				<ul class="subcats">
+										
+							
+							
+			
+			
+																			<li>
+											<a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-gosudarstvennoy-tayny/">Решения для защиты государственной тайны</a>
+																							<ul>
+																											<li><a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-gosudarstvennoy-tayny/zashchishchennoe-reshenie-akvarius-bastion-s.html">АРМ в защищенном исполнении «Аквариус-Бастион» (версия С и СС)</a></li>
+																									</ul>
+																					</li>
+									
+								
+							
+							
+							
+			
+			
+																			<li>
+											<a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-konfidentsialnoy-informatsii-i-personalnykh-dannykh/">Решения для защиты конфиденциальной информации и персональных данных</a>
+																							<ul>
+																											<li><a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-konfidentsialnoy-informatsii-i-personalnykh-dannykh/reshenie-akvarius-bastion-k1.html">Защищенное решение Аквариус "Бастион-К1"</a></li>
+																											<li><a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-konfidentsialnoy-informatsii-i-personalnykh-dannykh/zashchishchennoe-reshenie-akvarius-bastion-k3.html">Защищенное решение Аквариус "Бастион-К3"</a></li>
+																											<li><a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-konfidentsialnoy-informatsii-i-personalnykh-dannykh/zashchishchennaya-vychislitelnaya-infrastruktura-akvarius-bastion.html">Защищенная вычислительная инфраструктура «Аквариус-Бастион»</a></li>
+																											<li><a href="/solutions/informatsionnaya-bezopasnost/resheniya-dlya-zashchity-konfidentsialnoy-informatsii-i-personalnykh-dannykh/pak-kontrolya-dostupa-v-internet-aquainspector.html">ПАК контроля доступа в Интернет "AquaInspector"</a></li>
+																									</ul>
+																					</li>
+									
+								
+							
+							
+							
+															</ul></li>							
+							</ul>
+	</div>
+
+            </li>
+
+                        <li class="parent">
+
+                    <a href="/products/">Продукты</a>
+                
+<div class="submenu">
+    <ul class="cats">
+
+                    <li class="parent"><a href="/products/client_devices/">Клиентские устройства</a>
+                                    <ul class="subcats">
+                                                    <li>
+                                <a href="/products/client_devices/office_desctop/">Настольные офисные ПК</a>
+                                                                    <ul>
+                                                                                    <li><a href="/products/client_devices/office_desctop/#series_elite">Elite</a></li>
+                                                                                    <li><a href="/products/client_devices/office_desctop/#series_pro">Professional</a></li>
+                                                                                    <li><a href="/products/client_devices/office_desctop/#series_standard">Standard</a></li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/workstations/">Рабочие станции</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/monoblocks/">Моноблоки</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/notebooks_and_tablet/">Ноутбуки и планшетные ПК</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/thin_clients/">Тонкие клиенты</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/proptected_pc/">Защищенные ПК</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/client_devices/accessoires_client/">Аксессуары</a>
+                                                            </li>
+                                                    <li><a href="/out-of-prod/client_devices/">Снятые с производства</a></li>
+                    </ul>
+                
+            </li>
+                    <li class="parent"><a href="/products/storage/">Системы хранения данных</a>
+                                    <ul class="subcats">
+                                                    <li>
+                                <a href="/products/storage/low-end/">Системы начального уровня (low-end)</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/storage/mid-range/">Системы среднего класса (mid-range)</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/storage/jbod/">Модули расширения JBOD</a>
+                                                            </li>
+                                                    <li><a href="/out-of-prod/storage/">Снятые с производства</a></li>
+                    </ul>
+                
+            </li>
+                    <li class="parent"><a href="/products/servers/">Серверы</a>
+                                    <ul class="subcats">
+                                                    <li>
+                                <a href="/products/servers/tower/">Напольные серверные системы</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/rack1U/">Стоечные серверные системы 1U</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/rack2U/">Стоечные серверные системы 2U</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/industrial-servers/">Промышленные серверы</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/rack3U/">Стоечные серверные системы 3U+</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/multinode-servers/">Многонодовые серверные системы</a>
+                                                            </li>
+                                                    <li>
+                                <a href="/products/servers/accessoires_server/">Аксессуары</a>
+                                                            </li>
+                                                    <li><a href="/out-of-prod/servers/">Снятые с производства</a></li>
+                    </ul>
+                
+            </li>
+            </ul>
+</div>
+            </li>
+
+                        <li>
+
+                    <a href="/services/">Услуги</a>
+                
+            </li>
+
+                        <li>
+
+                    <a href="/projects/">Реализованные проекты</a>
+                
+            </li>
+
+                        <li class="parent">
+
+                    <a href="/support/">Поддержка</a>
+                
+	<div class="submenu">
+		<ul class="cats">
+
+			
+			
+			
+																			<li class="">
+											<a href="/support/download/" class="">Загрузки</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+																			<li class="">
+											<a href="/support/service-centers/" class="">Сервис-центры</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+																			<li class="">
+											<a href="/support/hotline/" class="">Горячая линия</a>
+										</li>
+									
+								
+							
+							
+							
+			
+			
+																			<li class="">
+											<a href="/support/passport/" class="">Паспорт изделий</a>
+										</li>
+									
+								
+							
+							
+							
+							
+							</ul>
+	</div>
+
+            </li>
+
+                        <li>
+
+                    <a href="/videos/">Видеоблог</a>
+                
+            </li>
+
+                        <li>
+
+                    <a href=""></a>
+                
+            </li>
+
+            
+    </ul>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper" class="error_page">
+    <main id="main">
+<div class="section ">
+	<div class="ttl bg_var_1">404</div>
+	<div class="container">
+		<div class="txt">К сожалению страница не найдена, но у нас есть еще много всего интересного. <br>
+			Вы можете перейти на <a href="/">главную страницу</a>, <a href="/search">страницу поиска</a>.</div>
+	</div>
+
+</div>
+</main>
+<div id="buffer_wrap"></div>
+</div>
+<footer id="footer">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="span2">
+                    <div class="ttl">Продукты и услуги</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="/solutions/">Решения</a>
+                </li>
+            
+                                    <li>
+                    <a href="/products/">Продукты</a>
+                </li>
+            
+                                    <li>
+                    <a href="/services/">Услуги</a>
+                </li>
+            
+                                    <li>
+                    <a href="/projects/">Реализованные проекты</a>
+                </li>
+            
+                                    <li>
+                    <a href="/import/">Импортозамещение</a>
+                </li>
+            
+            </ul>
+                </div>
+                <div class="span2">
+                    <div class="ttl">Поддержка</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="/support/">Поддержка продуктов</a>
+                </li>
+            
+                                    <li>
+                    <a href="/support/download/">Загрузки</a>
+                </li>
+            
+                                    <li>
+                    <a href="/support/service-centers/">Сервисные центры</a>
+                </li>
+            
+                                    <li>
+                    <a href="/support/hotline/">Горячая линия</a>
+                </li>
+            
+                                    <li>
+                    <a href="/support/passport/">Паспорт изделий</a>
+                </li>
+            
+            </ul>
+                </div>
+                <div class="span2">
+                    <div class="ttl">Партнерам</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="/partner/">О сотрудничестве</a>
+                </li>
+            
+                                    <li>
+                    <a href="/partner/registration/">Регистрация</a>
+                </li>
+            
+                                    <li>
+                    <a href="/partner/actions/">Акции</a>
+                </li>
+            
+                                    <li>
+                    <a href="/partner/specials/">Спецпредложения</a>
+                </li>
+            
+                                    <li>
+                    <a href="/stock/">Система заказов</a>
+                </li>
+            
+            </ul>
+                </div>
+                <div class="span2">
+                    <div class="ttl">Пресс-центр</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="/about/press-center/news/">Новости</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/press-center/events/">Мероприятия</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/press-center/publications/">Публикации о компании</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/press-center/presentation/">Презентации</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/press-center/press-releases/">Пресс-релизы</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/press/">Контакты для СМИ</a>
+                </li>
+            
+            </ul>
+
+                </div>
+                <div class="span2">
+                    <div class="ttl">О компании</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="/about/">О группе компаний «Аквариус»</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/production/">Производство</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/license/">Лицензии и сертификаты</a>
+                </li>
+            
+                                    <li>
+                    <a href="/about/vacancy/">Работа в компании</a>
+                </li>
+            
+            </ul>
+                </div>
+                <div class="span2">
+                    <div class="ttl">Контакты</div>
+                    
+    <ul>
+                                    <li>
+                    <a href="">+7 495 729-51-50</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/">Карта проезда</a>
+                </li>
+            
+                                    <li>
+                    <a href="mailto:question@aq.ru">question@aq.ru</a>
+                </li>
+            
+                                    <li>
+                    <a href="/contacts/regions/">Региональные представители</a>
+                </li>
+            
+            </ul>
+                    <a class="btn btn-green" href="/support/hotline/">
+                        <i class="icon-support-white"></i><span>Служба техподдержки</span>
+                    </a>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+                <div class="span4 first">
+                  <noindex>  <a target="_blank" href="http://www.ncc.ru/" class="hcc"><img src="/images/hkk.jpg" alt="HKK"></a>
+					  <a href="/terms_of_site/">Условия работы с сайтом</a></noindex>
+                </div>
+                <div class="span4 copyright t-center">
+                    © 2017 Aquarius
+                </div>
+                <div class="span4 creator pull-right">
+					Разработка сайта  — <noindex><a href="http://redsoft.ru" target="_blank"><span class="bwWrapper" style="opacity: 1;"><img src="/images/redsoft.png" alt="redsoft" crossorigin="anonymous" class="BWFilter BWfade" style="top: 3.5px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px); opacity: 1; filter: grayscale(100%);"><img src="/images/redsoft.png" alt="redsoft" crossorigin="anonymous"></span>Redsoft</a></noindex>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="overlay_nav"></div>
+<div id="triggerNav" class="hb">
+    <div class="wb wbT"></div>
+    <div class="wb wbC"></div>
+    <div class="wb wbB"></div>
+</div>
+</div>
+</div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter29865444 = new Ya.Metrika({id:29865444,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/29865444" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div class="tipttl" style="display: none;"></div></body></html>
